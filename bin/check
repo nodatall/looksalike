@@ -14,6 +14,7 @@ checks = [
   [ "JavaScript build", [ "npm", "run", "build" ] ],
   [ "Test database", [ "bin/rails", "db:prepare" ] ],
   [ "Rails loading", [ "bin/rails", "zeitwerk:check" ] ],
+  [ "JavaScript photo rules", [ "npm", "test" ] ],
   [ "Tests", [ "bin/rails", "test" ] ]
 ]
 

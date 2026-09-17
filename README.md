@@ -1,6 +1,6 @@
 # LooksAlike
 
-A furniture photo search demo under development. Rails serves a bundled React and Material UI entry screen. ZIP entry works; upload and example actions are disabled until the search feasibility work is complete. No provider calls or illustrative results are wired into the app.
+A furniture photo search demo under development. Rails serves a bundled React and Material UI entry screen. ZIP entry and local photo selection/compression/preview work. Search and example actions remain disabled until feasibility is complete. No provider calls or illustrative results are wired into the page.
 
 ## Local setup
 
@@ -62,3 +62,21 @@ bin/rails test test/integration/home_test.rb
 ```
 
 The formatting tools exclude the historical mockup, generated assets, dependencies, and private working directories. JavaScript stays JSX without a TypeScript check. GitHub Actions runs the same `bin/check` on pushes and pull requests with Ruby 3.4.10, the pinned Node 22 version, and libvips. No Git hooks are installed.
+
+## Photo and provider boundary
+
+The page uses `app/javascript/search/preparePhoto.js` to check JPEG/PNG/WebP headers before decoding, reject sources over 10 MB or 20 megapixels and animated PNG/WebP, and produce a JPEG of at most 450,000 bytes. The versioned `jpeg-v1` recipe starts at a 1,600-pixel longest edge with fixed quality and resize steps, applies image orientation, and flattens transparency onto white. The preview uses only the prepared image. Replacing it releases the old object URL; canceled work releases its decoded bitmap. No file leaves the browser through this page yet.
+
+The manual fixture tool executes that exact browser module in installed Chrome, blocks external requests, and writes prepared JPEGs plus recipe/dimension/hash/browser metadata without overwriting existing files:
+
+```sh
+npm run prepare:photos -- /tmp/prepared-photos /absolute/path/to/photo.jpg
+```
+
+JPEG bytes may differ across browser encoder versions. Freeze the produced bytes and recorded browser metadata for an experiment; the recipe alone does not promise byte-identical output across machines. This preparation command does not establish provenance or score search results.
+
+`PhotoValidator.call(upload, deadline:)` independently checks image magic, the 450,000-byte limit, dimensions, animation, and complete decoding with libvips. It ignores claimed filenames/MIME and consumes/deletes uploaded Tempfiles on success or failure. It creates no persistent image storage.
+
+`SerpApi::Client` owns fixed HTTPS upload, Lens, and Images requests. Upload validates bytes before dispatch. Pass the **same** `SearchDeadline` to preparation and every provider call; its default is 55 seconds measured monotonically, with remaining socket timeouts and a whole-operation timer. Responses are limited to 2 MB. There are no retries, redirects, polling, or fallback searches. Public errors and object string representations omit sensitive content; Rails filters photo/image/key/reference parameters. Durable spending accounting and route wiring are still required before any live calls.
+
+Normal Ruby tests use WebMock with all external network access disabled. `npm test` exercises header, limit, compression-cap, cleanup, and cancellation rules. `bin/check` runs both JavaScript and Ruby tests. The fixture tool and manual UI probe additionally verify real browser encoding; fixture preparation makes no SerpApi calls.

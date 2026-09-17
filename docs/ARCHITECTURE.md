@@ -6,7 +6,7 @@ This is the boundary contract for LooksAlike's Rails demonstration. A minimal Ra
 
 ## Current System Shape
 
-The current app has an ERB shell mounting one bundled React/Material UI entry screen, the Rails `/up` health endpoint, and SQLite databases under `storage/`. ZIP entry works; upload and example actions are disabled until feasibility is proven. Esbuild runs through jsbundling-rails during asset precompilation, with all browser dependencies and system fonts local. Planning documents and the standalone React/Material UI mockup remain separate. Intended runtime: one Rails web service on Railway, with an ERB page shell, a React/Material UI search screen, and SQLite under the mounted `/app/storage` directory. Build browser assets with esbuild through `jsbundling-rails`. Puma runs directly behind Railway HTTPS, with one worker and at least three threads; Thruster is omitted. The app handles one live furniture search at a time and returns up to six normalized listings from one US Craigslist area selected by ZIP code. No separate frontend, worker, or object-storage service is planned.
+The current app has an ERB shell mounting one bundled React/Material UI entry screen, the Rails `/up` health endpoint, and SQLite databases under `storage/`. ZIP entry and local photo preparation/preview work; search and example actions remain disabled until feasibility is proven. Esbuild runs through jsbundling-rails during asset precompilation, with all browser dependencies and system fonts local. Planning documents and the standalone React/Material UI mockup remain separate. Intended runtime: one Rails web service on Railway, with an ERB page shell, a React/Material UI search screen, and SQLite under the mounted `/app/storage` directory. Build browser assets with esbuild through `jsbundling-rails`. Puma runs directly behind Railway HTTPS, with one worker and at least three threads; Thruster is omitted. The app handles one live furniture search at a time and returns up to six normalized listings from one US Craigslist area selected by ZIP code. No separate frontend, worker, or object-storage service is planned.
 
 ## Module Map
 
@@ -14,6 +14,7 @@ The current app has an ERB shell mounting one bundled React/Material UI entry sc
 | --- | --- | --- | --- |
 | `app/controllers/searches_controller.rb` / create | Validate request, call search flow, map outcomes to HTTP/UI | Rails, search flow | Provider parsing, ranking, quota policy |
 | `app/services/furniture_search.rb` / call | Coordinate upload, queries, normalization, timing, cache, reservations | Injected provider client and store; query/normalizer policy | HTML, browser state, arbitrary URL fetching |
+| `app/services/photo_validator.rb` / call; `app/services/search_deadline.rb` / within | Verify bounded image bytes, consume temporary uploads, enforce the shared monotonic time budget | libvips, IO, clock | Provider queries, persistence, browser state |
 | `app/services/serp_api/client.rb` / upload, lens, images | Fixed SerpApi endpoints, credentials, remaining-deadline timeouts, retries disabled, provider errors | HTTP library and server configuration | Rails views, ranking, persistence policy |
 | `app/models/location_resolver.rb` and bundled location data / resolve | Validate ZIP, resolve representative coordinates, select one approved Craigslist area and canonical Images origin | Plain Ruby, versioned postal data, approved regional centers and overrides | Runtime geocoding calls, user-provided hostnames, listing-distance claims |
 | `app/models/search_query.rb` and `listing_normalizer.rb` / call | Small plain-Ruby query extraction, URL filtering, deduplication, ranking | Standard Ruby/data inputs | Network, credentials, ActiveRecord, UI |
@@ -21,7 +22,7 @@ The current app has an ERB shell mounting one bundled React/Material UI entry sc
 | `app/views/searches/`, `app/javascript/search/`, `app/javascript/search/theme.js` | ERB shell, React upload/ZIP/preview flow, Material UI theme and result presentation | React, Material UI/Emotion, public response contract, same-origin Rails requests | API keys, raw provider payloads, authority over validation or quotas |
 | `test/` and `docs/experiments/` | Offline contracts and bounded manual live evidence | Public component entrypoints, sanitized fixtures | Automatic billable traffic in normal CI |
 
-These are intended locations, not claims that these files exist. Keep orchestration in one meaningful flow rather than splitting each step into a pass-through service.
+Photo validation, shared deadlines, and the SerpApi client/HTTP transport now exist and are tested offline. The browser photo module is shared with `script/prepare_photos.mjs`, which freezes output bytes and metadata for later experiment preparation. The remaining search, location, and persistence locations are planned. Keep orchestration in one meaningful flow rather than splitting each step into a pass-through service.
 
 ## Dependency Rules
 
