@@ -3,6 +3,8 @@ source "https://rubygems.org"
 ruby "3.4.10"
 
 gem "rails", "8.1.3.1"
+# Rails 8.1 passes positional parse options; JSON 3 requires keyword options.
+gem "json", "< 3"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use sqlite3 as the database for Active Record

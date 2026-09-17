@@ -41,7 +41,7 @@ Visual mockup: [See the proposed screen](ui-mockup-looksalike-demo.html).
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The repository now contains the approved plan, interactive mockup, and a working Rails foundation. The search, React integration, and deployment remain in the steps below. SerpApi credentials must be configured in the ignored local environment file before the live experiment.
+The repository now contains the approved plan, interactive mockup, and a working Rails foundation. The bundled React/Material UI entry screen is connected to Rails. Search behavior and deployment remain in the steps below. SerpApi credentials must be configured in the ignored local environment file before the live experiment.
 
 ## Limits visitors will see
 
@@ -67,7 +67,7 @@ The server keeps uploaded photos only while handling the request. The browser re
 
 - [x] Initialize Git with a `main` branch and a `deliver/looksalike-demo` working branch. Save the reviewed planning files as the starting point.
 - [x] Install a supported Ruby version, create the Rails app, and confirm it runs locally.
-- [ ] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
+- [x] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
 - [ ] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
 - [ ] Add one command for the automated code, security, and test checks. Run the same checks in GitHub Actions.
 
