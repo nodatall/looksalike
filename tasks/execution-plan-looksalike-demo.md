@@ -68,8 +68,8 @@ The server keeps uploaded photos only while handling the request. The browser re
 - [x] Initialize Git with a `main` branch and a `deliver/looksalike-demo` working branch. Save the reviewed planning files as the starting point.
 - [x] Install a supported Ruby version, create the Rails app, and confirm it runs locally.
 - [x] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
-- [ ] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
-- [ ] Add one command for the automated code, security, and test checks. Run the same checks in GitHub Actions.
+- [x] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
+- [x] Add one command for the automated code, security, and test checks, with GitHub Actions configured to run it. Verify the hosted run after publishing the repository.
 
 ### 2. Check whether the search idea works
 

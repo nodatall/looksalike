@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+$stdout.sync = true
+ENV["RAILS_ENV"] = "test"
+ENV["LIVE_SEARCH_ENABLED"] = "false"
+ENV["SERPAPI_API_KEY"] = ""
+
+checks = [
+  [ "Ruby style", [ "bin/rubocop" ] ],
+  [ "JavaScript style and lint", [ "npm", "run", "check" ] ],
+  [ "Ruby dependency audit", [ "bin/bundler-audit", "check", "--update" ] ],
+  [ "JavaScript dependency audit", [ "npm", "audit", "--audit-level=low" ] ],
+  [ "Rails security analysis", [ "bin/brakeman", "--quiet", "--no-pager", "--exit-on-warn", "--exit-on-error" ] ],
+  [ "JavaScript build", [ "npm", "run", "build" ] ],
+  [ "Test database", [ "bin/rails", "db:prepare" ] ],
+  [ "Rails loading", [ "bin/rails", "zeitwerk:check" ] ],
+  [ "Tests", [ "bin/rails", "test" ] ]
+]
+
+Dir.chdir(File.expand_path("..", __dir__)) do
+  checks.each do |name, command|
+    puts "\n== #{name} =="
+    abort "Failed: #{name}" unless system(*command)
+  end
+end
+
+puts "\nAll checks passed."

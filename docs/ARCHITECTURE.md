@@ -49,7 +49,7 @@ Test pure location/query/normalizer behavior with small inputs; include leading-
 
 ## Architecture Checks
 
-Use normal Rails loading checks, tests, RuboCop, Brakeman, the JSX bundle build, and asset compilation. Review that only the provider client makes SerpApi network calls and that policy classes do not acquire IO dependencies. Verify Material UI keyboard focus and error states in the browser. No custom architecture-check framework is planned.
+Run `bin/check` for Rails loading checks, Minitest, RuboCop, Biome, Brakeman, dependency audits, and the JSX bundle build. GitHub Actions invokes the same command; production asset compilation remains a deployment build check. Review that only the provider client makes SerpApi network calls and that policy classes do not acquire IO dependencies. Verify Material UI keyboard focus and error states in the browser. No custom architecture-check framework is planned.
 
 ## Accepted Deviations
 

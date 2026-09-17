@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node esbuild.config.mjs"
+    "build": "node esbuild.config.mjs",
+    "check": "biome check --error-on-warnings app/javascript esbuild.config.mjs package.json biome.json",
+    "format": "biome format --write app/javascript esbuild.config.mjs package.json biome.json"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -14,6 +16,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.14",
     "esbuild": "0.28.2"
   },
   "engines": {
