@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This is the proposed greenfield boundary contract for LooksAlike's Rails demonstration. The app is not implemented yet. Read this before adding routes, search policy, provider integration, or persistence; update it with the proven search route after the feasibility experiment.
+This is the boundary contract for LooksAlike's Rails demonstration. A minimal Rails 8.1.3.1 application on Ruby 3.4.10 is implemented; search behavior is still planned. Read this before adding routes, search policy, provider integration, or persistence; update it with the proven search route after the feasibility experiment.
 
 ## Current System Shape
 
-The current files contain planning documents and a standalone React/Material UI mockup. Intended runtime: one Rails web service on Railway, with an ERB page shell, a React/Material UI search screen, and SQLite under the mounted `/app/storage` directory. Build browser assets with esbuild through `jsbundling-rails`. Puma runs directly behind Railway HTTPS, with one worker and at least three threads; Thruster is omitted. The app handles one live furniture search at a time and returns up to six normalized listings from one US Craigslist area selected by ZIP code. No separate frontend, worker, or object-storage service is planned.
+The current app has an ERB placeholder page, the Rails `/up` health endpoint, SQLite databases under `storage/`, and jsbundling-rails ready for the JavaScript setup. Planning documents and the standalone React/Material UI mockup remain separate. Intended runtime: one Rails web service on Railway, with an ERB page shell, a React/Material UI search screen, and SQLite under the mounted `/app/storage` directory. Build browser assets with esbuild through `jsbundling-rails`. Puma runs directly behind Railway HTTPS, with one worker and at least three threads; Thruster is omitted. The app handles one live furniture search at a time and returns up to six normalized listings from one US Craigslist area selected by ZIP code. No separate frontend, worker, or object-storage service is planned.
 
 ## Module Map
 

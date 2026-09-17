@@ -41,7 +41,7 @@ Visual mockup: [See the proposed screen](ui-mockup-looksalike-demo.html).
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The directory contains the plan and an interactive React/Material UI mockup. The Rails app, Git setup, API calls, and deployment remain to be built. A SerpApi key is available to configure locally; it has not been read or used.
+The repository now contains the approved plan, interactive mockup, and a working Rails foundation. The search, React integration, and deployment remain in the steps below. SerpApi credentials must be configured in the ignored local environment file before the live experiment.
 
 ## Limits visitors will see
 
@@ -66,7 +66,7 @@ The server keeps uploaded photos only while handling the request. The browser re
 ### 1. Set up the repository and a working Rails app
 
 - [x] Initialize Git with a `main` branch and a `deliver/looksalike-demo` working branch. Save the reviewed planning files as the starting point.
-- [ ] Install a supported Ruby version, create the Rails app, and confirm it runs locally.
+- [x] Install a supported Ruby version, create the Rails app, and confirm it runs locally.
 - [ ] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
 - [ ] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
 - [ ] Add one command for the automated code, security, and test checks. Run the same checks in GitHub Actions.
@@ -150,7 +150,7 @@ These details preserve the implementation decisions. The steps above should be u
 
 ### Rails and Railway setup
 
-Use Rails 8.1 with the latest compatible security patches. Pin exact Rails and Ruby versions during setup. The current shell uses macOS Ruby 2.6.10; install a project Ruby without changing the system Ruby. Node, Homebrew, Railway CLI, and GitHub CLI are available, but their authentication has not been checked.
+Rails 8.1.3.1 and Ruby 3.4.10 are pinned for this app. Use the installed Homebrew Ruby without changing macOS system Ruby. GitHub and Railway sign-in have been verified; deployment remains a later step.
 
 Use ERB for the page shell and mount one React root for the search screen. Material UI and its default Emotion styling engine provide the controls and theme. Use Rails `jsbundling-rails` with esbuild to compile JSX and bundle pinned npm dependencies during asset preparation. Keep React/Material UI versions compatible and commit the lockfile. There is no separate frontend service, client-side router, or React server rendering. [Material UI setup](https://mui.com/material-ui/getting-started/installation/), [Rails JavaScript bundling](https://github.com/rails/jsbundling-rails)
 
