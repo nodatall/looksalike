@@ -65,7 +65,7 @@ The server keeps uploaded photos only while handling the request. The browser re
 
 ### 1. Set up the repository and a working Rails app
 
-- [ ] Initialize Git with a `main` branch and a `deliver/looksalike-demo` working branch. Save the reviewed planning files as the starting point.
+- [x] Initialize Git with a `main` branch and a `deliver/looksalike-demo` working branch. Save the reviewed planning files as the starting point.
 - [ ] Install a supported Ruby version, create the Rails app, and confirm it runs locally.
 - [ ] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
 - [ ] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
