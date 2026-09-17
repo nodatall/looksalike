@@ -1,0 +1,230 @@
+{
+  "admitted_postal_codes": 41191,
+  "areas": {
+    "approved_directory": 416,
+    "countries": {
+      "GU": 1,
+      "PR": 1,
+      "US": 413,
+      "VI": 1
+    },
+    "worldwide_source": 707
+  },
+  "artifacts": {
+    "areas.json": {
+      "bytes": 199869,
+      "sha256": "1b12329e4ba789a95b167b3b72375e867e0502fc444cce96e9dc069de06f454b"
+    },
+    "geonames-readme.txt": {
+      "bytes": 2893,
+      "sha256": "4e149bfffa351fe3d99690aa48bb05e35035df187ea4933a01b85e983817ffdc"
+    },
+    "postal_codes.tsv": {
+      "bytes": 1588909,
+      "sha256": "87a791215d57facfd99b0c3027ee12bc1a5e722d65dc9053880f62cfe915fd24"
+    }
+  },
+  "importer": {
+    "bytes": 11836,
+    "path": "script/import_locations.py",
+    "sha256": "d0b2e2ad4e2116a94217f55f7fe84382dc16673e1954a52c0846f14d58a927d3"
+  },
+  "mapping_version": "2026-09-17-v1",
+  "origins": {
+    "admitted_cities_by_country": {
+      "GU": 4,
+      "PR": 25,
+      "US": 17934,
+      "VI": 3
+    },
+    "excluded_invalid_coordinates": 0,
+    "excluded_missing_state": [
+      "Blue Eye,United States",
+      "Holly Springs,United States"
+    ],
+    "rules": {
+      "explicit_five_case_override": 5,
+      "nearest_supported_city": 95,
+      "primary_name_match": 316
+    },
+    "source_records": 210946
+  },
+  "overrides": {
+    "bytes": 329,
+    "sha256": "253faeb07b012a60ab84629000847820802c4d29a3533c28252d68be45a921f2"
+  },
+  "postal_coverage": {
+    "AS": {
+      "admitted": 0,
+      "excluded": {
+        "no_verified_craigslist_area": 1
+      },
+      "source_rows": 1,
+      "source_unique_zips": 1
+    },
+    "GU": {
+      "admitted": 21,
+      "excluded": {},
+      "source_rows": 21,
+      "source_unique_zips": 21
+    },
+    "MP": {
+      "admitted": 0,
+      "excluded": {
+        "no_verified_craigslist_area": 3
+      },
+      "source_rows": 3,
+      "source_unique_zips": 3
+    },
+    "PR": {
+      "admitted": 177,
+      "excluded": {},
+      "source_rows": 177,
+      "source_unique_zips": 177
+    },
+    "US": {
+      "admitted": 40977,
+      "excluded": {
+        "military_blank_state": 511,
+        "outside_states_dc": 2
+      },
+      "source_rows": 41490,
+      "source_unique_zips": 41488
+    },
+    "VI": {
+      "admitted": 16,
+      "excluded": {},
+      "source_rows": 16,
+      "source_unique_zips": 16
+    }
+  },
+  "snapshot_date": "2026-09-17",
+  "sources": {
+    "looksalike-areas.json": {
+      "bytes": 164709,
+      "downloaded_on": "2026-09-17",
+      "sha256": "e78b46cf05aef80a5cefacc8a0c16481e9d069b67c7db37c4230eb5df2a3dc37",
+      "url": "https://reference.craigslist.org/Areas"
+    },
+    "looksalike-craigslist-sites.html": {
+      "bytes": 89793,
+      "downloaded_on": "2026-09-17",
+      "sha256": "16cd31d6e3d4f7c1074416490dfb30f86b05c2c3be660d671333e7bfdcb3168a",
+      "url": "https://www.craigslist.org/about/sites"
+    },
+    "looksalike-geonames-AS.zip": {
+      "bytes": 1476,
+      "downloaded_on": "2026-09-17",
+      "postal_member_date": "2026-09-17",
+      "postal_text_bytes": 48,
+      "sha256": "b61f4ae2574863a4f9a140c6186220d71945a73a79bafc6bc166eea46e30df75",
+      "url": "https://download.geonames.org/export/zip/AS.zip"
+    },
+    "looksalike-geonames-GU.zip": {
+      "bytes": 1730,
+      "downloaded_on": "2026-09-17",
+      "postal_member_date": "2026-09-17",
+      "postal_text_bytes": 1102,
+      "sha256": "27c17b15e5fc709591b43511dd928458426b959ab5d6b0749a9e055b7277423e",
+      "url": "https://download.geonames.org/export/zip/GU.zip"
+    },
+    "looksalike-geonames-MP.zip": {
+      "bytes": 1520,
+      "downloaded_on": "2026-09-17",
+      "postal_member_date": "2026-09-17",
+      "postal_text_bytes": 142,
+      "sha256": "6db4ac85ba1a09cc9d4a014b721ac9a82d257cff25028ce1f29365a93834fb83",
+      "url": "https://download.geonames.org/export/zip/MP.zip"
+    },
+    "looksalike-geonames-PR.zip": {
+      "bytes": 3634,
+      "downloaded_on": "2026-09-17",
+      "postal_member_date": "2026-09-17",
+      "postal_text_bytes": 9447,
+      "sha256": "fe14059dcabbc24737aab54c9f888b835efc9b834504c9f76ab081ba6f07ba85",
+      "url": "https://download.geonames.org/export/zip/PR.zip"
+    },
+    "looksalike-geonames-US.zip": {
+      "bytes": 634329,
+      "downloaded_on": "2026-09-17",
+      "postal_member_date": "2026-09-17",
+      "postal_text_bytes": 2668859,
+      "sha256": "43eac86c0121bb5058ab66dc14a856587521ee1c220b6df577d0d8dfac57f7a9",
+      "url": "https://download.geonames.org/export/zip/US.zip"
+    },
+    "looksalike-geonames-VI.zip": {
+      "bytes": 1666,
+      "downloaded_on": "2026-09-17",
+      "postal_member_date": "2026-09-17",
+      "postal_text_bytes": 978,
+      "sha256": "a403fa3f90a8b303cecfc2417446b9a673dcb3c028261703564103ece8b3fb11",
+      "url": "https://download.geonames.org/export/zip/VI.zip"
+    },
+    "looksalike-serpapi-locations.json": {
+      "bytes": 66425288,
+      "downloaded_on": "2026-09-17",
+      "sha256": "59f0866db88b020a7ebb3eec86a5dc3170554b80032acd08277da8c656b07aa6",
+      "url": "https://serpapi.com/locations.json"
+    }
+  },
+  "states_and_dc": [
+    "AK",
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+  ],
+  "unsupported": {
+    "AS": "96799: postal record exists; no verified Craigslist area",
+    "MH": "Outside the states/DC and admitted territory scope",
+    "MP": "96950, 96951, 96952: no explicitly verified area mapping",
+    "UM": "No separately published GeoNames postal file or verified area mapping",
+    "military": "Blank-state APO/FPO rows excluded; normal Hawaii rows for 96860 and 96863 retained"
+  }
+}

@@ -22,7 +22,7 @@ The current app has an ERB shell mounting one bundled React/Material UI entry sc
 | `app/views/searches/`, `app/javascript/search/`, `app/javascript/search/theme.js` | ERB shell, React upload/ZIP/preview flow, Material UI theme and result presentation | React, Material UI/Emotion, public response contract, same-origin Rails requests | API keys, raw provider payloads, authority over validation or quotas |
 | `test/` and `docs/experiments/` | Offline contracts and bounded manual live evidence | Public component entrypoints, sanitized fixtures | Automatic billable traffic in normal CI |
 
-Photo validation, shared deadlines, and the SerpApi client/HTTP transport now exist and are tested offline. The browser photo module is shared with `script/prepare_photos.mjs`, which freezes output bytes and metadata for later experiment preparation. The remaining search, location, and persistence locations are planned. Keep orchestration in one meaningful flow rather than splitting each step into a pass-through service.
+Photo validation, shared deadlines, the SerpApi client/HTTP transport, and the plain-Ruby location resolver now exist and are tested offline. `script/import_locations.py` derives the server-only `data/locations/` postal lookup and approved area/origin catalog from explicit public snapshots; the resolver loads the small artifacts once per process. The browser photo module is shared with `script/prepare_photos.mjs`, which freezes output bytes and metadata for later experiment preparation. The remaining search and persistence locations are planned. Keep orchestration in one meaningful flow rather than splitting each step into a pass-through service.
 
 ## Dependency Rules
 

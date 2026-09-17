@@ -82,7 +82,7 @@ Try Google Lens alone first, restricted to the Craigslist area selected by the Z
 Spend at most **15 search attempts** on this comparison: up to five for Lens alone, then up to ten for the two-search approach. Stop testing an approach after two photos fail, because it can no longer pass. Keep up to **two additional attempts** for a final deployment check with a new photo, subject to the account and public limits.
 
 - [x] Build and test the photo compression and API request code without paid calls. Include the 55-second deadline and disable automatic retries.
-- [ ] Build and verify the offline ZIP-to-area lookup, including leading-zero ZIPs and a clear outcome for ZIPs that cannot be located.
+- [x] Build and verify the offline ZIP-to-area lookup, including leading-zero ZIPs and a clear outcome for ZIPs that cannot be located.
 - [ ] Save the five prepared photo/ZIP pairs, selected areas, and exact search rules before testing, so the results can be judged consistently.
 - [ ] Add a search-attempt counter that survives restarts and counts each request before it is sent.
 - [ ] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
