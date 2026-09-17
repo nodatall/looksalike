@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo and a US ZIP code into up to six similar listings from a local Craigslist area.
 
-Approved for implementation. The offline foundation is built. The next step is the live search comparison, which needs a SerpApi key configured in the ignored `.env.local` file. No upload or search API calls have run yet.
+Approved for implementation. The offline foundation is built and the live comparison is complete. Neither search approach passed, so feature work and deployment are paused at the stop condition below. See the [results and proposed diagnostic](../docs/experiments/feasibility-v1/results.md).
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -40,7 +40,7 @@ Visual mockup: [See the proposed screen](ui-mockup-looksalike-demo.html).
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The repository now contains the approved plan, interactive mockup, and a working Rails foundation. The bundled React/Material UI entry screen is connected to Rails. Search behavior and deployment remain in the steps below. SerpApi credentials must be configured in the ignored local environment file before the live experiment.
+The repository now contains the approved plan, interactive mockup, and a working Rails foundation. The bundled React/Material UI entry screen is connected to Rails. SerpApi credentials are configured locally. The first live experiment did not meet the required result quality; the remaining search experience and deployment depend on resolving that finding.
 
 ## Limits visitors will see
 
@@ -84,11 +84,13 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Build and verify the offline ZIP-to-area lookup, including leading-zero ZIPs and a clear outcome for ZIPs that cannot be located.
 - [x] Save the five prepared photo/ZIP pairs, selected areas, and exact search rules before testing, so the results can be judged consistently.
 - [x] Add a search-attempt counter that survives restarts and counts each request before it is sent.
-- [ ] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
+- [x] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
 - [ ] Use the passing one-search approach if possible; otherwise use the passing two-search approach.
 - [ ] Package one successful result as the dated example, including its original ZIP/area, reference photo, and actual listing thumbnails with permission to reuse them.
 
 **If neither approach passes, stop building features and bring back the evidence and the smallest proposed change.** Do not increase the budget, swap marketplaces, or use the example to claim that live uploads work. If we cannot obtain reusable listing images, flag that before promising a complete example.
+
+The September 17 comparison used six search attempts and four uploads. Each approach stopped after two failed cases; the other three photos on each approach remain untested. No displayable listings survived. The linked report proposes two diagnostic requests from the unused budget, subject to agreement before any further calls. The original scores and frozen rules remain unchanged.
 
 ### 3. Put the example online first
 

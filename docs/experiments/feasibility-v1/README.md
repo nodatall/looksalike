@@ -1,8 +1,8 @@
 # Frozen feasibility inputs
 
-Status: **not run**. These are licensed reference photos and offline preparation evidence, not search results or proof of feasibility. No upload or search has been dispatched.
+Status: **stopped after neither route passed**. The live comparison used six search attempts and four separate upload attempts, with zero displayable cards. Both routes stopped at two failed cases; the remaining three cases on each route are untested. Read the [results and proposed diagnostic](results.md) and [recorded live evidence](live-evidence.json). No further calls or feature/deployment work are authorized by this result.
 
-[manifest.json](manifest.json) records the exact image bytes, source URLs and license checks, browser/compressor metadata, ZIP mappings, request templates, and 20 artifact hashes. Its checksum is in [manifest.sha256](manifest.sha256). [rules.md](rules.md) freezes query extraction, destination/thumbnail validation, deduplication, and route ordering. The five cases must remain in this order:
+[manifest.json](manifest.json) records the exact image bytes, source URLs and license checks, browser/compressor metadata, ZIP mappings, request templates, and 26 artifact hashes. Its checksum is in [manifest.sha256](manifest.sha256). The manifest and rules preserve their historical pre-run status and are not live result logs. [rules.md](rules.md) freezes query extraction, destination/thumbnail validation, deduplication, and route ordering. The five cases must remain in this order:
 
 | Reference | ZIP | Selected host | Prepared bytes | Dimensions |
 | --- | --- | --- | ---: | --- |
@@ -28,7 +28,7 @@ Evaluate Lens-only first, then the two-search route only if needed. A route pass
 
 ## Manual operator commands
 
-No live calls have been made. The commands below describe later operator execution; automated tests and the default command remain offline. Run from the repository root with Ruby 3.4.10 on `PATH`. Configure the key privately in `.env.local`; never pass it as a command argument. The tool accepts only the local development environment with no `DATABASE_URL`, including dotenv files. It positively verifies the fixed writable ledger path `storage/feasibility-v1.sqlite3`; it does not create missing parent directories or offer reset/delete commands. Keep that file across restarts. Explicit offline `init` is required once; account/run commands never create a missing ledger. Initialization refuses an existing ledger or live evidence, and offers no force option. Restore the original ledger if it is lost after any attempt.
+The commands below document the completed comparison workflow. Both routes are now stopped; do not initialize a replacement ledger or rerun cases. Further diagnostic execution requires agreement on a revised plan and budget allocation. Automated tests and the default command remain offline. Run from the repository root with Ruby 3.4.10 on `PATH`. Configure the key privately in `.env.local`; never pass it as a command argument. The tool accepts only the local development environment with no `DATABASE_URL`, including dotenv files. It positively verifies the fixed writable ledger path `storage/feasibility-v1.sqlite3`; it does not create missing parent directories or offer reset/delete commands. Keep that file across restarts. Explicit offline `init` is required once; account/run commands never create a missing ledger. Initialization refuses an existing ledger or live evidence, and offers no force option. Restore the original ledger if it is lost after any attempt.
 
 ```sh
 script/experiment                         # Offline hashes/photos/locations; no ledger creation
