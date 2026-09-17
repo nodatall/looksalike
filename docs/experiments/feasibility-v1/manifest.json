@@ -1,0 +1,790 @@
+{
+  "schema_version": 1,
+  "experiment_id": "feasibility-v1",
+  "status": "not_run",
+  "frozen_at": "2026-09-17T20:00:06Z",
+  "purpose": "Frozen inputs and policy only; no calls, scored results or genuine result snapshot are present.",
+  "approach_order": [
+    "lens_only",
+    "lens_then_images"
+  ],
+  "pass_criterion": {
+    "cases_required": 4,
+    "cases_total": 5,
+    "relevant_distinct_accessible_correct_area_listings": 3,
+    "inspect_first_results": 6,
+    "deadline_seconds": 55,
+    "relevance": "Same furniture category with similar shape, material, or style; manually judged without replacing weak results."
+  },
+  "stopping_rules": {
+    "failed_cases_before_route_stop": 2,
+    "later_cases_after_stop": "untested",
+    "use_lens_only_if_it_passes": true,
+    "both_routes_fail": "Stop feature work and report evidence plus the smallest proposed change."
+  },
+  "budget": {
+    "cumulative_comparison_search_attempts": 15,
+    "separate_reserved_final_smoke_attempts": 2,
+    "uploads_counted_separately": true,
+    "uncertain_attempts_count": true,
+    "retries": 0,
+    "prerequisites": [
+      "Durable pre-dispatch attempt ledger",
+      "Current account allowance check"
+    ]
+  },
+  "versions": {
+    "query": "furniture-query-v1",
+    "listing": "craigslist-listings-v1",
+    "mapping": "2026-09-17-v1",
+    "regional_query": "craigslist-area-v1",
+    "compression": "jpeg-v1"
+  },
+  "query_policy": {
+    "categories": [
+      "sofa",
+      "loveseat",
+      "chair",
+      "armchair",
+      "recliner",
+      "chaise",
+      "sectional",
+      "table",
+      "desk",
+      "dresser",
+      "cabinet",
+      "bookcase",
+      "shelf",
+      "bed",
+      "nightstand",
+      "bench",
+      "stool",
+      "ottoman"
+    ],
+    "aliases": {
+      "sofas": "sofa",
+      "loveseats": "loveseat",
+      "chairs": "chair",
+      "armchairs": "armchair",
+      "recliners": "recliner",
+      "chaises": "chaise",
+      "sectionals": "sectional",
+      "tables": "table",
+      "desks": "desk",
+      "dressers": "dresser",
+      "cabinets": "cabinet",
+      "bookcases": "bookcase",
+      "beds": "bed",
+      "nightstands": "nightstand",
+      "stools": "stool",
+      "ottomans": "ottoman",
+      "couch": "sofa",
+      "couches": "sofa",
+      "shelves": "shelf",
+      "bookshelf": "bookcase",
+      "bookshelves": "bookcase",
+      "benches": "bench"
+    },
+    "stopwords": [
+      "a",
+      "an",
+      "and",
+      "are",
+      "as",
+      "at",
+      "be",
+      "by",
+      "for",
+      "from",
+      "in",
+      "is",
+      "it",
+      "of",
+      "on",
+      "or",
+      "that",
+      "the",
+      "this",
+      "to",
+      "with",
+      "your",
+      "you",
+      "buy",
+      "sale",
+      "sell",
+      "selling",
+      "used",
+      "new",
+      "furniture",
+      "craigslist",
+      "item",
+      "items",
+      "near",
+      "set",
+      "pair",
+      "piece",
+      "pieces",
+      "s"
+    ],
+    "max_words": 8,
+    "detailed_rules": "docs/experiments/feasibility-v1/rules.md"
+  },
+  "source_contracts": [
+    "https://serpapi.com/image-api",
+    "https://serpapi.com/google-lens-api",
+    "https://serpapi.com/google-images-api"
+  ],
+  "mapping_provenance": "data/locations/provenance.json",
+  "artifacts": {
+    "app/models/search_query.rb": {
+      "bytes": 2483,
+      "sha256": "df0fe00b7fb0d2f27bc7b880c15d8ff73b2bd18085261eedff1800ef681add6c"
+    },
+    "app/models/listing_normalizer.rb": {
+      "bytes": 4113,
+      "sha256": "6765aa758c34e61800e2f7a3d01533dc252f41d52d15e28611872deb75d76a56"
+    },
+    "app/models/location_resolver.rb": {
+      "bytes": 3190,
+      "sha256": "f1927972d71b4ee2983d39174e507de29e70ae3f9d4e9636e80f91f8610d7540"
+    },
+    "app/javascript/search/preparePhoto.js": {
+      "bytes": 6654,
+      "sha256": "bfe70ab1d4c312b418da4e14269a795248103a762a2dcdb0b726f5cc721df6b1"
+    },
+    "script/prepare_photos.mjs": {
+      "bytes": 3314,
+      "sha256": "48e80f407ebcf97a2bbe0bafdaef66aa2ac09424d2db3f2028b335cf6aa67dac"
+    },
+    "app/services/photo_validator.rb": {
+      "bytes": 3298,
+      "sha256": "dee4b8f265302f98bfb17ab162f85b009bb775d6b3ab945a68270ce7bf85d999"
+    },
+    "app/services/search_deadline.rb": {
+      "bytes": 567,
+      "sha256": "053cdae1f542c524d7e6e8fd4706f670fbcd68ecc08c1a87b957db8f49d8998e"
+    },
+    "app/services/serp_api/client.rb": {
+      "bytes": 3713,
+      "sha256": "39f312d7da4e0cddddc95b2f8bc9d393bfb4c24e301d788c38bc92300205bdc1"
+    },
+    "app/services/serp_api/http_transport.rb": {
+      "bytes": 1443,
+      "sha256": "2e19e19b41a7f5716d595a712c0485dadc3c12f501e76e549c6d1a989e74b55a"
+    },
+    "data/locations/areas.json": {
+      "bytes": 199869,
+      "sha256": "1b12329e4ba789a95b167b3b72375e867e0502fc444cce96e9dc069de06f454b"
+    },
+    "data/locations/postal_codes.tsv": {
+      "bytes": 1588909,
+      "sha256": "87a791215d57facfd99b0c3027ee12bc1a5e722d65dc9053880f62cfe915fd24"
+    },
+    "data/locations/overrides.json": {
+      "bytes": 329,
+      "sha256": "253faeb07b012a60ab84629000847820802c4d29a3533c28252d68be45a921f2"
+    },
+    "data/locations/provenance.json": {
+      "bytes": 5974,
+      "sha256": "51cf3933386d7fdedac56e36edb4b3c95e01389080b40667032013ef03884e19"
+    },
+    "docs/experiments/feasibility-v1/rules.md": {
+      "bytes": 9313,
+      "sha256": "a29ce0bd3cf29b9e94e67cf44d1cfb15e85cc0e24e3081543598f48fa7533828"
+    },
+    "script/verify_experiment.rb": {
+      "bytes": 1443,
+      "sha256": "3b8b3444072ecccd659ee60f2e4c50b6c4eaae911ed850317926d6b1ae281116"
+    },
+    "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg": {
+      "bytes": 287591,
+      "sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+    },
+    "docs/experiments/feasibility-v1/photos/modern-sofa.jpg": {
+      "bytes": 137444,
+      "sha256": "1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87"
+    },
+    "docs/experiments/feasibility-v1/photos/dining-chair.jpg": {
+      "bytes": 353078,
+      "sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da"
+    },
+    "docs/experiments/feasibility-v1/photos/wood-table.jpg": {
+      "bytes": 241167,
+      "sha256": "a31f83305e68e0ea1db2c02a14406f9b92169e1cc85c795e07c87a80b6d30ae6"
+    },
+    "docs/experiments/feasibility-v1/photos/dresser.jpg": {
+      "bytes": 112541,
+      "sha256": "d3c6818dad37ef9ce4b44eefb03b87be57356bd6be048ff3307845e6a3dddfbd"
+    }
+  },
+  "cases": [
+    {
+      "order": 1,
+      "id": "ornate-sofa",
+      "zip": "10001",
+      "status": "not_run",
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg",
+        "bytes": 287591,
+        "sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2",
+        "content_type": "image/jpeg",
+        "width": 1067,
+        "height": 1600
+      },
+      "source": {
+        "creator": "Sueda Dilli",
+        "platform": "Pexels",
+        "page": "https://www.pexels.com/photo/elegant-vintage-sofa-in-bright-sunlit-room-30992355/",
+        "download_url": "https://images.pexels.com/photos/30992355/pexels-photo-30992355.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "bytes": 309831,
+        "sha256": "e25eb14fd8aaa487157580cac14729a177eeb7379eb121f9551c05691c20ce5d",
+        "width": 1200,
+        "height": 1800,
+        "source_sizing": "Downloaded bytes at the explicit recorded URL and dimensions; no separate encoder used before the shared browser preprocessor.",
+        "license": {
+          "name": "Pexels License",
+          "url": "https://www.pexels.com/license/",
+          "reviewed_on": "2026-09-17",
+          "evidence": "Session source review: individual page identified the named creator and a regular free image, without a premium license label.",
+          "reuse_basis": "Free license permits downloading, modifying and using the photo, including this attributed furniture-search research reference; no claim of public-domain status or rights to later listing thumbnails."
+        },
+        "discovery_page": "https://www.pexels.com/photo/elegant-vintage-sofa-in-bright-sunlit-room-30992355/"
+      },
+      "preparation": {
+        "recipe": "jpeg-v1",
+        "quality": 0.86,
+        "reported_browser_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+        "tool": "script/prepare_photos.mjs",
+        "module": "app/javascript/search/preparePhoto.js",
+        "prepared_in_this_session": true
+      },
+      "location": {
+        "zip": "10001",
+        "country": "US",
+        "state": "NY",
+        "place": "New York",
+        "latitude": 40.7484,
+        "longitude": -73.9967,
+        "hostname": "newyork.craigslist.org",
+        "area_name": "new york city",
+        "area_id": 3,
+        "area_latitude": 40.714199,
+        "area_longitude": -74.006401,
+        "search_origin": "New York,New York,United States",
+        "mapping_version": "2026-09-17-v1",
+        "query_version": "craigslist-area-v1",
+        "mapping_rule": "nearest_center"
+      },
+      "requests": {
+        "upload": {
+          "method": "POST",
+          "endpoint": "https://serpapi.com/image",
+          "content_type": "multipart/form-data",
+          "image_source": "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg",
+          "authentication": "runtime only; not recorded"
+        },
+        "lens_only": {
+          "method": "GET",
+          "endpoint": "https://serpapi.com/search.json",
+          "parameters": {
+            "engine": "google_lens",
+            "type": "visual_matches",
+            "q": "site:newyork.craigslist.org",
+            "country": "us",
+            "hl": "en"
+          },
+          "runtime_fields": {
+            "image_id": "private reference returned by this case upload"
+          },
+          "result_array": "visual_matches",
+          "maximum_search_attempts": 1
+        },
+        "lens_then_images": {
+          "lens": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_lens",
+              "type": "all",
+              "country": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "image_id": "private reference returned by this case upload"
+            }
+          },
+          "images": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_images",
+              "location": "New York,New York,United States",
+              "gl": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "q": "SearchQuery.phrase + ' site:newyork.craigslist.org'"
+            },
+            "result_array": "images_results"
+          },
+          "maximum_search_attempts": 2
+        }
+      }
+    },
+    {
+      "order": 2,
+      "id": "modern-sofa",
+      "zip": "94103",
+      "status": "not_run",
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/modern-sofa.jpg",
+        "bytes": 137444,
+        "sha256": "1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87",
+        "content_type": "image/jpeg",
+        "width": 1600,
+        "height": 1067
+      },
+      "source": {
+        "creator": "Phillip Goldsberry",
+        "platform": "Unsplash",
+        "page": "https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q",
+        "download_url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.1.0&q=85&fm=jpg&cs=srgb&w=2400",
+        "bytes": 340773,
+        "sha256": "1eaa2ae5c211ee5e06a9eaf5f8b4ce1aefdc9f027957c248a760d55b49f8e5ee",
+        "width": 2400,
+        "height": 1600,
+        "source_sizing": "Same licensed photo fetched at w=2400, q=85, fm=jpg, cs=srgb (2400x1600); original download exceeded 20MP and was not admitted to preprocessing.",
+        "license": {
+          "name": "Unsplash License",
+          "url": "https://unsplash.com/license",
+          "reviewed_on": "2026-09-17",
+          "evidence": "Session source review: individual page identified the named creator and a regular free image, without a premium license label.",
+          "reuse_basis": "Free license permits downloading, modifying and using the photo, including this attributed furniture-search research reference; no claim of public-domain status or rights to later listing thumbnails."
+        },
+        "discovery_page": "https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q"
+      },
+      "preparation": {
+        "recipe": "jpeg-v1",
+        "quality": 0.86,
+        "reported_browser_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+        "tool": "script/prepare_photos.mjs",
+        "module": "app/javascript/search/preparePhoto.js",
+        "prepared_in_this_session": true
+      },
+      "location": {
+        "zip": "94103",
+        "country": "US",
+        "state": "CA",
+        "place": "San Francisco",
+        "latitude": 37.7725,
+        "longitude": -122.4147,
+        "hostname": "sfbay.craigslist.org",
+        "area_name": "SF bay area",
+        "area_id": 1,
+        "area_latitude": 37.5,
+        "area_longitude": -122.25,
+        "search_origin": "San Francisco,California,United States",
+        "mapping_version": "2026-09-17-v1",
+        "query_version": "craigslist-area-v1",
+        "mapping_rule": "nearest_center"
+      },
+      "requests": {
+        "upload": {
+          "method": "POST",
+          "endpoint": "https://serpapi.com/image",
+          "content_type": "multipart/form-data",
+          "image_source": "docs/experiments/feasibility-v1/photos/modern-sofa.jpg",
+          "authentication": "runtime only; not recorded"
+        },
+        "lens_only": {
+          "method": "GET",
+          "endpoint": "https://serpapi.com/search.json",
+          "parameters": {
+            "engine": "google_lens",
+            "type": "visual_matches",
+            "q": "site:sfbay.craigslist.org",
+            "country": "us",
+            "hl": "en"
+          },
+          "runtime_fields": {
+            "image_id": "private reference returned by this case upload"
+          },
+          "result_array": "visual_matches",
+          "maximum_search_attempts": 1
+        },
+        "lens_then_images": {
+          "lens": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_lens",
+              "type": "all",
+              "country": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "image_id": "private reference returned by this case upload"
+            }
+          },
+          "images": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_images",
+              "location": "San Francisco,California,United States",
+              "gl": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "q": "SearchQuery.phrase + ' site:sfbay.craigslist.org'"
+            },
+            "result_array": "images_results"
+          },
+          "maximum_search_attempts": 2
+        }
+      }
+    },
+    {
+      "order": 3,
+      "id": "dining-chair",
+      "zip": "60601",
+      "status": "not_run",
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/dining-chair.jpg",
+        "bytes": 353078,
+        "sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da",
+        "content_type": "image/jpeg",
+        "width": 1067,
+        "height": 1600
+      },
+      "source": {
+        "creator": "Kelly Miller",
+        "platform": "Unsplash",
+        "page": "https://unsplash.com/photos/BL6XQLZeXpg",
+        "download_url": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=kelly-miller-BL6XQLZeXpg-unsplash.jpg",
+        "bytes": 3638817,
+        "sha256": "341e9eb98db58f3e742a1cff5b70aaf1294628bae69d2a2bba6e2da3b54dc696",
+        "width": 3456,
+        "height": 5184,
+        "source_sizing": "Downloaded bytes at the explicit recorded URL and dimensions; no separate encoder used before the shared browser preprocessor.",
+        "license": {
+          "name": "Unsplash License",
+          "url": "https://unsplash.com/license",
+          "reviewed_on": "2026-09-17",
+          "evidence": "Session source review: individual page inaccessible; free dining-chair discovery entry identified Kelly Miller and linked the exact downloaded file. No premium label was observed there.",
+          "reuse_basis": "Free license permits downloading, modifying and using the photo, including this attributed furniture-search research reference; no claim of public-domain status or rights to later listing thumbnails."
+        },
+        "discovery_page": "https://unsplash.com/s/photos/dining-chair"
+      },
+      "preparation": {
+        "recipe": "jpeg-v1",
+        "quality": 0.86,
+        "reported_browser_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+        "tool": "script/prepare_photos.mjs",
+        "module": "app/javascript/search/preparePhoto.js",
+        "prepared_in_this_session": true
+      },
+      "location": {
+        "zip": "60601",
+        "country": "US",
+        "state": "IL",
+        "place": "Chicago",
+        "latitude": 41.8858,
+        "longitude": -87.6181,
+        "hostname": "chicago.craigslist.org",
+        "area_name": "chicago",
+        "area_id": 11,
+        "area_latitude": 41.849998,
+        "area_longitude": -87.650002,
+        "search_origin": "Chicago,Illinois,United States",
+        "mapping_version": "2026-09-17-v1",
+        "query_version": "craigslist-area-v1",
+        "mapping_rule": "nearest_center"
+      },
+      "requests": {
+        "upload": {
+          "method": "POST",
+          "endpoint": "https://serpapi.com/image",
+          "content_type": "multipart/form-data",
+          "image_source": "docs/experiments/feasibility-v1/photos/dining-chair.jpg",
+          "authentication": "runtime only; not recorded"
+        },
+        "lens_only": {
+          "method": "GET",
+          "endpoint": "https://serpapi.com/search.json",
+          "parameters": {
+            "engine": "google_lens",
+            "type": "visual_matches",
+            "q": "site:chicago.craigslist.org",
+            "country": "us",
+            "hl": "en"
+          },
+          "runtime_fields": {
+            "image_id": "private reference returned by this case upload"
+          },
+          "result_array": "visual_matches",
+          "maximum_search_attempts": 1
+        },
+        "lens_then_images": {
+          "lens": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_lens",
+              "type": "all",
+              "country": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "image_id": "private reference returned by this case upload"
+            }
+          },
+          "images": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_images",
+              "location": "Chicago,Illinois,United States",
+              "gl": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "q": "SearchQuery.phrase + ' site:chicago.craigslist.org'"
+            },
+            "result_array": "images_results"
+          },
+          "maximum_search_attempts": 2
+        }
+      }
+    },
+    {
+      "order": 4,
+      "id": "wood-table",
+      "zip": "02108",
+      "status": "not_run",
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/wood-table.jpg",
+        "bytes": 241167,
+        "sha256": "a31f83305e68e0ea1db2c02a14406f9b92169e1cc85c795e07c87a80b6d30ae6",
+        "content_type": "image/jpeg",
+        "width": 1600,
+        "height": 1067
+      },
+      "source": {
+        "creator": "Leighton Robinson",
+        "platform": "Unsplash",
+        "page": "https://unsplash.com/photos/rectangular-beige-wooden-coffee-table-dQkGg9t-_wU",
+        "download_url": "https://images.unsplash.com/photo-1578962648525-9bed89f4d826?ixlib=rb-4.1.0&q=85&fm=jpg&cs=srgb&w=2400",
+        "bytes": 571540,
+        "sha256": "fa996c217a56da7b19ff76063fd8ceaca5d0198794b803571706b15c13aea2af",
+        "width": 2400,
+        "height": 1600,
+        "source_sizing": "Same licensed photo fetched at w=2400, q=85, fm=jpg, cs=srgb (2400x1600); original download exceeded 20MP and was not admitted to preprocessing.",
+        "license": {
+          "name": "Unsplash License",
+          "url": "https://unsplash.com/license",
+          "reviewed_on": "2026-09-17",
+          "evidence": "Session source review: individual page identified the named creator and a regular free image, without a premium license label.",
+          "reuse_basis": "Free license permits downloading, modifying and using the photo, including this attributed furniture-search research reference; no claim of public-domain status or rights to later listing thumbnails."
+        },
+        "discovery_page": "https://unsplash.com/photos/rectangular-beige-wooden-coffee-table-dQkGg9t-_wU"
+      },
+      "preparation": {
+        "recipe": "jpeg-v1",
+        "quality": 0.86,
+        "reported_browser_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+        "tool": "script/prepare_photos.mjs",
+        "module": "app/javascript/search/preparePhoto.js",
+        "prepared_in_this_session": true
+      },
+      "location": {
+        "zip": "02108",
+        "country": "US",
+        "state": "MA",
+        "place": "Boston",
+        "latitude": 42.3576,
+        "longitude": -71.0684,
+        "hostname": "boston.craigslist.org",
+        "area_name": "boston",
+        "area_id": 4,
+        "area_latitude": 42.358299,
+        "area_longitude": -71.060303,
+        "search_origin": "Boston,Massachusetts,United States",
+        "mapping_version": "2026-09-17-v1",
+        "query_version": "craigslist-area-v1",
+        "mapping_rule": "nearest_center"
+      },
+      "requests": {
+        "upload": {
+          "method": "POST",
+          "endpoint": "https://serpapi.com/image",
+          "content_type": "multipart/form-data",
+          "image_source": "docs/experiments/feasibility-v1/photos/wood-table.jpg",
+          "authentication": "runtime only; not recorded"
+        },
+        "lens_only": {
+          "method": "GET",
+          "endpoint": "https://serpapi.com/search.json",
+          "parameters": {
+            "engine": "google_lens",
+            "type": "visual_matches",
+            "q": "site:boston.craigslist.org",
+            "country": "us",
+            "hl": "en"
+          },
+          "runtime_fields": {
+            "image_id": "private reference returned by this case upload"
+          },
+          "result_array": "visual_matches",
+          "maximum_search_attempts": 1
+        },
+        "lens_then_images": {
+          "lens": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_lens",
+              "type": "all",
+              "country": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "image_id": "private reference returned by this case upload"
+            }
+          },
+          "images": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_images",
+              "location": "Boston,Massachusetts,United States",
+              "gl": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "q": "SearchQuery.phrase + ' site:boston.craigslist.org'"
+            },
+            "result_array": "images_results"
+          },
+          "maximum_search_attempts": 2
+        }
+      }
+    },
+    {
+      "order": 5,
+      "id": "dresser",
+      "zip": "98101",
+      "status": "not_run",
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/dresser.jpg",
+        "bytes": 112541,
+        "sha256": "d3c6818dad37ef9ce4b44eefb03b87be57356bd6be048ff3307845e6a3dddfbd",
+        "content_type": "image/jpeg",
+        "width": 1600,
+        "height": 1067
+      },
+      "source": {
+        "creator": "Oak + Motion",
+        "platform": "Unsplash",
+        "page": "https://unsplash.com/photos/a-picture-hanging-on-a-wall-above-a-dresser-alrNDNIP0VE",
+        "download_url": "https://images.unsplash.com/photo-1690310588492-fc8f92bff323?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=oak-motion-alrNDNIP0VE-unsplash.jpg",
+        "bytes": 708711,
+        "sha256": "4f59f2d90076079d2b0815e90e91e72944ff66d9cfe00892237bada75e2b3e32",
+        "width": 3976,
+        "height": 2651,
+        "source_sizing": "Downloaded bytes at the explicit recorded URL and dimensions; no separate encoder used before the shared browser preprocessor.",
+        "license": {
+          "name": "Unsplash License",
+          "url": "https://unsplash.com/license",
+          "reviewed_on": "2026-09-17",
+          "evidence": "Session source review: individual page identified the named creator and a regular free image, without a premium license label.",
+          "reuse_basis": "Free license permits downloading, modifying and using the photo, including this attributed furniture-search research reference; no claim of public-domain status or rights to later listing thumbnails."
+        },
+        "discovery_page": "https://unsplash.com/photos/a-picture-hanging-on-a-wall-above-a-dresser-alrNDNIP0VE"
+      },
+      "preparation": {
+        "recipe": "jpeg-v1",
+        "quality": 0.86,
+        "reported_browser_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+        "tool": "script/prepare_photos.mjs",
+        "module": "app/javascript/search/preparePhoto.js",
+        "prepared_in_this_session": true
+      },
+      "location": {
+        "zip": "98101",
+        "country": "US",
+        "state": "WA",
+        "place": "Seattle",
+        "latitude": 47.6114,
+        "longitude": -122.3305,
+        "hostname": "seattle.craigslist.org",
+        "area_name": "seattle-tacoma",
+        "area_id": 2,
+        "area_latitude": 47.6064,
+        "area_longitude": -122.331001,
+        "search_origin": "Seattle,Washington,United States",
+        "mapping_version": "2026-09-17-v1",
+        "query_version": "craigslist-area-v1",
+        "mapping_rule": "nearest_center"
+      },
+      "requests": {
+        "upload": {
+          "method": "POST",
+          "endpoint": "https://serpapi.com/image",
+          "content_type": "multipart/form-data",
+          "image_source": "docs/experiments/feasibility-v1/photos/dresser.jpg",
+          "authentication": "runtime only; not recorded"
+        },
+        "lens_only": {
+          "method": "GET",
+          "endpoint": "https://serpapi.com/search.json",
+          "parameters": {
+            "engine": "google_lens",
+            "type": "visual_matches",
+            "q": "site:seattle.craigslist.org",
+            "country": "us",
+            "hl": "en"
+          },
+          "runtime_fields": {
+            "image_id": "private reference returned by this case upload"
+          },
+          "result_array": "visual_matches",
+          "maximum_search_attempts": 1
+        },
+        "lens_then_images": {
+          "lens": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_lens",
+              "type": "all",
+              "country": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "image_id": "private reference returned by this case upload"
+            }
+          },
+          "images": {
+            "method": "GET",
+            "endpoint": "https://serpapi.com/search.json",
+            "parameters": {
+              "engine": "google_images",
+              "location": "Seattle,Washington,United States",
+              "gl": "us",
+              "hl": "en"
+            },
+            "runtime_fields": {
+              "q": "SearchQuery.phrase + ' site:seattle.craigslist.org'"
+            },
+            "result_array": "images_results"
+          },
+          "maximum_search_attempts": 2
+        }
+      }
+    }
+  ],
+  "preparation_corrections": [
+    "Before any dispatch: recognize benches and shelves while excluding misspelled benchs and shelfs; table cases cover both."
+  ]
+}
