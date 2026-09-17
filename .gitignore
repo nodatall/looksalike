@@ -1,0 +1,26 @@
+# Local secrets and personal files
+.env*
+!.env.example
+/config/master.key
+/config/credentials/*.key
+.DS_Store
+* copy.md
+
+# Build dependencies and generated runtime data
+/node_modules/
+/vendor/bundle/
+/.bundle/
+/log/*
+!/log/.keep
+/tmp/*
+!/tmp/.keep
+/storage/*
+!/storage/.keep
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/public/assets/
+/coverage/
+
+# Private working notes and local verification
+/tasks/tmp/
+/agent-scratch/
