@@ -33,6 +33,27 @@ module SerpApi
       "#<SerpApi::Client>"
     end
 
+    # The account endpoint is free; callers must explicitly request this check.
+    def account(deadline:)
+      uri = URI("#{ORIGIN}/account.json")
+      uri.query = URI.encode_www_form(api_key: @api_key)
+      data = perform(uri, Net::HTTP::Get.new(uri), deadline)
+      left = data["total_searches_left"]
+      raise Error.new(:invalid_response) unless left.is_a?(Integer) && left >= 0
+      summary = { "account_status" => data["account_status"] == "Active" ? "Active" : "Inactive", "total_searches_left" => left }
+      %w[plan_searches_left extra_credits this_month_usage last_hour_searches hourly_searches_left account_rate_limit_per_hour].each do |key|
+        value = data[key]
+        summary[key] = value if value.is_a?(Integer) && value >= 0
+      end
+      renewal = data["plan_renewal_date"]
+      summary["plan_renewal_date"] = renewal.is_a?(String) && renewal.match?(/\A[0-9]{4}-[0-9]{2}-[0-9]{2}(?:[ T][0-9]{2}:[0-9]{2}:[0-9]{2}(?: UTC|Z)?)?\z/) ? renewal : nil
+      summary
+    end
+
+    def redact(text)
+      @api_key.empty? ? text : text.gsub(@api_key, "[redacted]")
+    end
+
     def upload(photo:, deadline:)
       validated = PhotoValidator.call(photo, deadline: deadline)
       boundary = "looksalike-#{SecureRandom.hex(16)}"

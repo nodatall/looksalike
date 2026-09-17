@@ -91,4 +91,17 @@ class SerpApi::ClientTest < ActiveSupport::TestCase
     assert_raises(SerpApi::Client::Error) { lens(SerpApi::Client.new(api_key: "", transport: transport)) }
     assert_raises(WebMock::NetConnectNotAllowedError) { lens }
   end
+  test "account summary excludes identities and credentials and validates total allowance" do
+    payload = { "account_status" => "Active", "total_searches_left" => 27, "plan_searches_left" => 2,
+      "extra_credits" => 25, "api_key" => "private-key", "account_email" => "private@example.com",
+      "account_id" => "private-account", "plan_renewal_date" => "2026-10-17 00:00:00 UTC" }
+    summary = client(transport: ->(uri:, **) { assert_equal "/account.json", uri.path; [ 200, payload.to_json ] }).account(deadline: SearchDeadline.new)
+    assert_equal 27, summary["total_searches_left"]
+    assert_equal 25, summary["extra_credits"]
+    refute_match(/private|account_email|account_id|api_key/, summary.to_json)
+    [ nil, "27", -1, 2.5 ].each do |value|
+      payload["total_searches_left"] = value
+      assert_raises(SerpApi::Client::Error) { client(transport: ->(**) { [ 200, payload.to_json ] }).account(deadline: SearchDeadline.new) }
+    end
+  end
 end

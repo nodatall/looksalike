@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+# No inherited DATABASE_URL may redirect this manually operated local tool.
+abort "Experiment requires local development with no DATABASE_URL" if ENV["DATABASE_URL"] || (ENV["RAILS_ENV"] && ENV["RAILS_ENV"] != "development")
+ENV["RAILS_ENV"] = "development"
+require_relative "../config/environment"
+abort "Experiment requires no DATABASE_URL, including local dotenv files" if ENV["DATABASE_URL"]
+
+command = ARGV.shift || "preflight"
+execute = ARGV.delete("--execute")
+allowed = %w[preflight init account run score report export]
+abort "Use preflight, init, account, run, score, report, or export" unless allowed.include?(command)
+# All provider access requires a deliberately supplied execution flag.
+command = "preflight" if %w[account run].include?(command) && !execute
+client = %w[account run].include?(command) ? SerpApi::Client.new : nil
+runner = ExperimentRunner.new(client: client)
+begin
+  result = case command
+  when "preflight" then runner.preflight
+  when "init" then runner.initialize_ledger!
+  when "account" then runner.account!
+  when "run"
+    raise ArgumentError unless ARGV.length == 1
+    runner.run!(route: ARGV.fetch(0))
+  when "score"
+    raise ArgumentError unless ARGV.length == 3
+    path = ARGV.fetch(2)
+    raise ArgumentError unless File.file?(path) && File.size(path) <= 20_000
+    runner.score!(route: ARGV.fetch(0), case_id: ARGV.fetch(1), judgment: JSON.parse(File.read(path)))
+  when "report" then runner.report
+  when "export" then runner.export!
+  end
+  puts JSON.pretty_generate(result)
+rescue ExperimentManifest::Invalid, ExperimentLedger::Error => error
+  warn error.message
+  exit 1
+rescue SerpApi::Client::Error, SearchDeadline::Exceeded
+  warn "Provider operation failed; any reserved search attempt remains spent. Inspect the ledger before proceeding."
+  exit 1
+rescue StandardError
+  warn "Experiment operation failed. No automatic retry was made; inspect the ledger before proceeding."
+  exit 1
+end

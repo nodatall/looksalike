@@ -165,8 +165,8 @@
       "sha256": "053cdae1f542c524d7e6e8fd4706f670fbcd68ecc08c1a87b957db8f49d8998e"
     },
     "app/services/serp_api/client.rb": {
-      "bytes": 3713,
-      "sha256": "39f312d7da4e0cddddc95b2f8bc9d393bfb4c24e301d788c38bc92300205bdc1"
+      "bytes": 4810,
+      "sha256": "ece1b4bda3d2991a8207bccee879f6c7ccca4b4b15e017dea46cfad95bca9710"
     },
     "app/services/serp_api/http_transport.rb": {
       "bytes": 1443,
@@ -193,8 +193,8 @@
       "sha256": "a29ce0bd3cf29b9e94e67cf44d1cfb15e85cc0e24e3081543598f48fa7533828"
     },
     "script/verify_experiment.rb": {
-      "bytes": 1443,
-      "sha256": "3b8b3444072ecccd659ee60f2e4c50b6c4eaae911ed850317926d6b1ae281116"
+      "bytes": 299,
+      "sha256": "785c0a4f0547029e59e7194bc3bd5a0f25d4880677e1338b91da770eefb9c5fc"
     },
     "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg": {
       "bytes": 287591,
@@ -215,6 +215,30 @@
     "docs/experiments/feasibility-v1/photos/dresser.jpg": {
       "bytes": 112541,
       "sha256": "d3c6818dad37ef9ce4b44eefb03b87be57356bd6be048ff3307845e6a3dddfbd"
+    },
+    "app/services/experiment_manifest.rb": {
+      "bytes": 1710,
+      "sha256": "4319ffa86a5b086c3981ac4e180c86a708ef0cf56f45b41908b67c9ebbc050b4"
+    },
+    "app/services/experiment_ledger.rb": {
+      "bytes": 10558,
+      "sha256": "49937a6d42e9bd3c9e1e56d2f035c7b920950b717d80119bc7f4aac7a9373c95"
+    },
+    "app/services/experiment_runner.rb": {
+      "bytes": 4375,
+      "sha256": "2d3b5157955a4ebab955b22d05b9a9ef7e7e7a81741bae79a18fa7c458474b81"
+    },
+    "app/services/furniture_search.rb": {
+      "bytes": 4852,
+      "sha256": "2e6127f843e5eca9f346e2e17bdde249d41fa22153b8e43145b7f93c2542c85c"
+    },
+    "script/experiment": {
+      "bytes": 1963,
+      "sha256": "d0cea6b214ebd8c0e5478873d0fe0398632c0c45ac033700ed772010fb6f42b2"
+    },
+    "config/database.yml": {
+      "bytes": 1123,
+      "sha256": "ae500df37dfcc2b424e7cc36406749f472d2764fe3ffe071aecd762465e82d10"
     }
   },
   "cases": [
@@ -785,6 +809,7 @@
     }
   ],
   "preparation_corrections": [
-    "Before any dispatch: recognize benches and shelves while excluding misspelled benchs and shelfs; table cases cover both."
+    "Before any dispatch: recognize benches and shelves while excluding misspelled benchs and shelfs; table cases cover both.",
+    "Before any live attempt: added explicit offline ledger initialization, immutable pre-dispatch counters, sequential manual execution/scoring, safe free account checking, shared orchestration and manifest verification; updated their source hashes. Existing five prepared inputs, location mapping, query/filter/ranking rules, route parameters and budgets are unchanged. Oversized extracted phrases above 500 bytes fail safely before Images dispatch."
   ]
 }

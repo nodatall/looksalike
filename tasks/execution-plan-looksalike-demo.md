@@ -2,8 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo and a US ZIP code into up to six similar listings from a local Craigslist area.
 
-Please review this before I start.
-Tell me what is wrong, missing, or out of order.
+Approved for implementation. The offline foundation is built. The next step is the live search comparison, which needs a SerpApi key configured in the ignored `.env.local` file. No upload or search API calls have run yet.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -84,7 +83,7 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Build and test the photo compression and API request code without paid calls. Include the 55-second deadline and disable automatic retries.
 - [x] Build and verify the offline ZIP-to-area lookup, including leading-zero ZIPs and a clear outcome for ZIPs that cannot be located.
 - [x] Save the five prepared photo/ZIP pairs, selected areas, and exact search rules before testing, so the results can be judged consistently.
-- [ ] Add a search-attempt counter that survives restarts and counts each request before it is sent.
+- [x] Add a search-attempt counter that survives restarts and counts each request before it is sent.
 - [ ] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
 - [ ] Use the passing one-search approach if possible; otherwise use the passing two-search approach.
 - [ ] Package one successful result as the dated example, including its original ZIP/area, reference photo, and actual listing thumbnails with permission to reuse them.
