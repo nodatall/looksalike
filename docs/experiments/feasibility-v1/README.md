@@ -22,7 +22,7 @@ From the repository root, verify the frozen bytes, rule/data hashes, server imag
 script/verify_experiment.rb
 ```
 
-Normal tests remain offline. This preflight does not dispatch requests, modify the manifest, count paid attempts, or judge relevance. The manual runner reserves durable attempts before dispatch and requires a fresh recorded account allowance.
+Run this historical v1 preflight from Git revision `79e05a3`. It intentionally rejects the later query-policy change. The [query-v2 comparison](../query-v2/README.md) preserves the previous query source and records the approved change separately. Do not update this manifest to accept new rules. Normal tests remain offline. This preflight does not dispatch requests, modify the manifest, count paid attempts, or judge relevance. The manual runner reserves durable attempts before dispatch and requires a fresh recorded account allowance.
 
 Evaluate Lens-only first, then the two-search route only if needed. A route passes with at least four of these five cases yielding at least three relevant, distinct, accessible listings from the correct selected area among the first six, within 55 seconds. Stop a route after two failed cases. The cumulative comparison cap is 15 attempted searches; a separate final smoke cap reserves two more. There are no automatic retries. Record actual judgments, failures, timing, requests, and spending in later evidence without overwriting this frozen manifest. After the first live attempt, any policy/input change requires a new experiment version before more scored calls. Pre-run integration corrections are explicitly recorded in the manifest; the reference bytes and recognition/filter/ranking policy remain unchanged.
 

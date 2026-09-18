@@ -1,0 +1,208 @@
+{
+  "experiment": "query-v2",
+  "manifest_sha256": "2f427d08937dec8cc4d24ab4377b36e83f3e30b57a1967e03919ab968b29e280",
+  "baseline_search_attempts": 8,
+  "replay_attempts": 2,
+  "combined_search_attempts": 10,
+  "combined_ceiling": 10,
+  "additional_uploads": 0,
+  "final_smoke_used": 0,
+  "execution_elapsed_ms": 22721.296,
+  "meaning": "Two saved-phrase Images observations only; not a full route pass or a replacement for historical scores. Reservations count on failure and cache hits.",
+  "attempts": [
+    {
+      "case_id": "modern-sofa",
+      "params_sha256": "bd10b39db1536cfde6256953c66e1df1bc3eae3cab6f34e49b2861178c4cffe9",
+      "reserved_at": "2026-09-18T21:03:06.247524Z",
+      "parameters": {
+        "engine": "google_images",
+        "q": "green velvet sofa site:sfbay.craigslist.org",
+        "location": "San Francisco,California,United States",
+        "gl": "us",
+        "hl": "en"
+      },
+      "observed_at": "2026-09-18T21:03:09.301168Z",
+      "outcome": {
+        "http_status": 200,
+        "provider_status": "Success",
+        "error_present": false,
+        "search_information": {
+          "image_results_state": "Results for exact spelling"
+        },
+        "query_echo_matches": true,
+        "query_echo": "green velvet sofa site:sfbay.craigslist.org",
+        "known_no_results_wording": false,
+        "classification": "results_returned",
+        "normalizer_counts": {
+          "input": 100,
+          "rejected_url": 100,
+          "missing_metadata": 0,
+          "duplicates": 0,
+          "eligible": 0,
+          "limited": 0,
+          "displayed": 0
+        },
+        "candidates": [],
+        "url_reasons": {
+          "wrong_hostname": 100
+        },
+        "destination_hosts": {
+          "www.facebook.com": 5,
+          "www.amazon.com": 4,
+          "www.lowes.com": 1,
+          "www.homedepot.com": 3,
+          "www.bedbathandbeyond.com": 1,
+          "www.lafurniturestore.com": 1,
+          "www.thegoodtrade.com": 1,
+          "www.mycozmo.com": 1,
+          "homeandclosetvintage.com": 1,
+          "s2sofas.co.uk": 1,
+          "www.homary.com": 1,
+          "www.getmycouch.com": 1,
+          "www.instagram.com": 2,
+          "curatedinterior.com": 2,
+          "layered.home.lilysawyer.com": 1,
+          "wehomzfurn.com": 1,
+          "www.livingcozy.com": 1,
+          "vintagesofa.co.uk": 2,
+          "harwinfurn.com": 1,
+          "www.pinterest.com": 3,
+          "www.thecoolist.com": 4,
+          "www.livingroomy.com": 7,
+          "www.daals.com": 2,
+          "www.etsy.com": 3,
+          "magnolia.com": 1,
+          "sofasandstuff.com": 1,
+          "prepfordwife.com": 1,
+          "www.dreamstime.com": 1,
+          "peachmeetspine.com": 1,
+          "www.walmart.com": 1,
+          "www.cb2.com": 1,
+          "www.kfrooms.com": 1,
+          "napoleonrockefeller.com": 1,
+          "ar.pinterest.com": 1,
+          "lessthanperfectlifeofbliss.com": 1,
+          "stockcake.com": 1,
+          "paktameer.com": 2,
+          "www.thenordroom.com": 1,
+          "www.wayfair.com": 4,
+          "lovechicliving.co.uk": 1,
+          "www.idealhome.co.uk": 4,
+          "nz.pinterest.com": 1,
+          "www.digsdigs.com": 3,
+          "www.shophollandhouse.com": 1,
+          "kr.pinterest.com": 1,
+          "www.lorfordsantiques.com": 1,
+          "www.homesandgardens.com": 1,
+          "blackwoodliving.co.nz": 1,
+          "www.furniturechoice.co.uk": 2,
+          "www.barkerandstonehouse.co.uk": 2,
+          "other_hosts": 13
+        },
+        "path_shapes": {
+          "/<segment>/<segment>/<segment>/<number>": 6,
+          "/<segment>/<segment>/<segment>": 11,
+          "/<segment>/<segment>/<number>": 4,
+          "/<segment>/<segment>/<number>/<segment>.html": 1,
+          "/<segment>.html": 1,
+          "/<segment>/<segment>": 38,
+          "/<segment>": 21,
+          "/<segment>/<segment>.html": 1,
+          "/<segment>/<segment>/<segment>/<segment>": 2,
+          "/<segment>/<number>": 5,
+          "/<segment>/<number>/<segment>": 3,
+          "/<number>/<number>/<number>/<segment>": 2,
+          "/<number>/<number>/<segment>.html": 1,
+          "/<segment>/<segment>/<segment>.html": 4
+        },
+        "examples": [
+          "wrong_hostname: www.facebook.com/<segment>/<segment>/<segment>/<number>",
+          "wrong_hostname: www.amazon.com/<segment>/<segment>/<segment>",
+          "wrong_hostname: www.lowes.com/<segment>/<segment>/<number>",
+          "wrong_hostname: www.homedepot.com/<segment>/<segment>/<number>",
+          "wrong_hostname: www.bedbathandbeyond.com/<segment>/<segment>/<number>/<segment>.html",
+          "wrong_hostname: www.lafurniturestore.com/<segment>.html",
+          "wrong_hostname: www.thegoodtrade.com/<segment>/<segment>",
+          "wrong_hostname: www.mycozmo.com/<segment>/<segment>",
+          "wrong_hostname: homeandclosetvintage.com/<segment>/<segment>",
+          "wrong_hostname: s2sofas.co.uk/<segment>"
+        ],
+        "elapsed_ms": 3046.79
+      }
+    },
+    {
+      "case_id": "ornate-sofa",
+      "params_sha256": "08aa6a33b2b78690c7afe20bd2b8f97aacc699a123d9b331388e5a4dde1f2922",
+      "reserved_at": "2026-09-18T21:03:34.200335Z",
+      "parameters": {
+        "engine": "google_images",
+        "q": "antique sofa site:newyork.craigslist.org",
+        "location": "New York,New York,United States",
+        "gl": "us",
+        "hl": "en"
+      },
+      "observed_at": "2026-09-18T21:03:56.890177Z",
+      "outcome": {
+        "http_status": 200,
+        "provider_status": "Success",
+        "error_present": false,
+        "search_information": {
+          "image_results_state": "Results for exact spelling"
+        },
+        "query_echo_matches": true,
+        "query_echo": "antique sofa site:newyork.craigslist.org",
+        "known_no_results_wording": false,
+        "classification": "results_returned",
+        "normalizer_counts": {
+          "input": 100,
+          "rejected_url": 91,
+          "missing_metadata": 0,
+          "duplicates": 7,
+          "eligible": 2,
+          "limited": 0,
+          "displayed": 2
+        },
+        "candidates": [
+          {
+            "listing_id": "7952004554",
+            "title": "Antiques in excellent condition - antiques - by owner - collectibles sale - craigslist",
+            "url": "https://newyork.craigslist.org/brk/atq/7952004554.html",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSumbNZ90U8ClUa3DZ1Kk6kRy_k493FlJa3o7Ic_fM2_Q&s",
+            "location": "Craigslist area: new york city",
+            "location_source": "selected_area"
+          },
+          {
+            "listing_id": "7949332929",
+            "title": "Authentic Eames La Chaise by Vitra - furniture - by owner - sale - craigslist",
+            "url": "https://newyork.craigslist.org/mnh/fuo/7949332929.html",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqv3pdDY5zr-hrnMS_uV21iu2nh0nNV46cwJch4p8Trw&s",
+            "location": "Craigslist area: new york city",
+            "location_source": "selected_area"
+          }
+        ],
+        "url_reasons": {
+          "selected_host_invalid_individual_path": 91,
+          "accepted_url": 9
+        },
+        "destination_hosts": {
+          "newyork.craigslist.org": 100
+        },
+        "path_shapes": {
+          "/d/<segment>/search/<segment>": 7,
+          "/search/<segment>/<segment>": 71,
+          "/<segment>/<segment>/<id>.html": 9,
+          "/search/<segment>": 11,
+          "/d/<segment>/search/<segment>/<segment>": 2
+        },
+        "examples": [
+          "selected_host_invalid_individual_path: newyork.craigslist.org/d/<segment>/search/<segment>",
+          "selected_host_invalid_individual_path: newyork.craigslist.org/search/<segment>/<segment>",
+          "accepted_url: newyork.craigslist.org/<segment>/<segment>/<id>.html",
+          "selected_host_invalid_individual_path: newyork.craigslist.org/search/<segment>",
+          "selected_host_invalid_individual_path: newyork.craigslist.org/d/<segment>/search/<segment>/<segment>"
+        ],
+        "elapsed_ms": 22678.511
+      }
+    }
+  ]
+}

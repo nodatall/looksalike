@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo and a US ZIP code into up to six similar listings from a local Craigslist area.
 
-Approved for implementation. The offline foundation, live comparison, and two-request diagnostic are complete. Neither search approach passed. Feature work and deployment remain paused at the stop condition below. See the [comparison results](../docs/experiments/feasibility-v1/results.md) and [diagnostic findings](../docs/experiments/diagnostic-v1/README.md).
+Approved for implementation. The offline foundation, live comparison, and two-request diagnostic are complete. Neither search approach passed. The simpler query rule is implemented and its two-request test is complete. It produced no relevant matches. Other feature work and deployment remain paused at the stop condition below. See the [comparison results](../docs/experiments/feasibility-v1/results.md) and [diagnostic findings](../docs/experiments/diagnostic-v1/README.md).
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -86,12 +86,17 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Add a search-attempt counter that survives restarts and counts each request before it is sent.
 - [x] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
 - [x] Run the approved two-request diagnostic with the two saved Images queries. Record response classifications and reasons for rejected links, keep the original scores, and stop at eight combined search attempts.
+- [x] Build the approved simpler query rule and test the two recorded sofa phrases with two Images requests. Keep the area and listing checks unchanged, preserve earlier evidence, and stop at ten combined search attempts.
 - [ ] Use the passing one-search approach if possible; otherwise use the passing two-search approach.
 - [ ] Package one successful result as the dated example, including its original ZIP/area, reference photo, and actual listing thumbnails with permission to reuse them.
 
 **If neither approach passes, stop building features and bring back the evidence and the smallest proposed change.** Do not increase the budget, swap marketplaces, or use the example to claim that live uploads work. If we cannot obtain reusable listing images, flag that before promising a complete example.
 
-The September 17 comparison used six search attempts and four uploads. Each approach stopped after two failed cases; the other three photos on each approach remain untested. No displayable listings survived. The two approved diagnostic Images requests brought combined usage to eight of fifteen, with no additional uploads, Lens calls, query changes, or retries. The modern query returned 100 links outside Craigslist; the ornate query returned no images and an error of uncertain cause. The original scores and frozen rules are unchanged. Seven comparison attempts remain unused; further live work requires a specific revised approach and allocation. The separate final two-attempt smoke allowance remains untouched.
+The first comparison used six search attempts and four uploads. Both approaches stopped after two failed cases, leaving three photos untested on each. The two-call diagnostic brought usage to eight attempts and confirmed that the modern query returned links outside Craigslist. The original scores and frozen rules remain unchanged.
+
+The approved [short-query test](../docs/experiments/query-v2/README.md) used two more Images attempts with saved descriptions and the same area restrictions. San Francisco produced no accepted listings. New York produced two candidates, but neither matched the reference. This does not replace the five-case comparison.
+
+Combined usage is **ten of fifteen attempts**. Five remain unused, and the separate two-attempt final smoke allowance is untouched. Any further live test needs a concrete revised approach and allocation.
 
 ### 3. Put the example online first
 
@@ -184,10 +189,10 @@ For phrase extraction:
 
 1. Use the first non-empty Lens related query that contains a furniture category from a small saved word list.
 2. If none qualifies, use the first category term plus descriptive words repeated in at least two of the first eight visual-match titles.
-3. Remove words from a fixed stopword list and limit the phrase to eight words.
+3. Use a common furniture name and at most two distinctive traits, such as color, material, or style. Normalize synonyms, remove duplicate words and marketing text, and drop incomplete terms such as “seater.” Choose the short phrase before making the Images request; do not automatically broaden it and search again.
 4. If this produces no usable phrase, return a weak-recognition outcome.
 
-Save the category list, stopword list, and tie-breaking rules before scoring. Google Images gets the extracted terms and selected site's exact restriction, with US/English settings and a supported city search origin for that area. Pre-resolve and save the area's canonical origin from SerpApi's Locations API during data preparation. Search origin is context, not a distance filter. Order results by keyword overlap, using provider order to break ties. Present the phrase as a tentative “Looks like…” interpretation. [Google Images API](https://serpapi.com/google-images-api), [supported locations](https://serpapi.com/locations-api)
+Save the category and trait vocabularies, aliases, stopwords, and tie-breaking rules before scoring. Google Images gets the extracted terms and selected site's exact restriction, with US/English settings and a supported city search origin for that area. Pre-resolve and save the area's canonical origin from SerpApi's Locations API during data preparation. Search origin is context, not a distance filter. Order results by keyword overlap, using provider order to break ties. Present the phrase as a tentative “Looks like…” interpretation. [Google Images API](https://serpapi.com/google-images-api), [supported locations](https://serpapi.com/locations-api)
 
 Read listing destinations from `visual_matches[].link` or `images_results[].link`, never from image URLs. Accept only HTTP(S) links on the exact selected, approved Craigslist hostname that point to individual listings. Remove duplicates by canonical URL/listing ID. A different Craigslist region is not an acceptable substitute.
 

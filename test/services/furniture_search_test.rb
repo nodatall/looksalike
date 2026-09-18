@@ -83,4 +83,26 @@ class FurnitureSearchTest < ActiveSupport::TestCase
     refute_match(/offline-secret-key|private-upload-reference|private-provider-payload|private@example|foreign-secret|evil.example/, result.to_json)
     assert_equal "chair [URL omitted]", result.dig("excerpts", "related_queries", 0)
   end
+  test "actual short query feeds Images after exactly one upload and one Lens call" do
+    titles = JSON.parse(file_fixture("modern_sofa_titles.json").read)
+    calls = []
+    client = SerpApi::Client.new(api_key: "offline-key", transport: ->(uri:, **) do
+      params = URI.decode_www_form(uri.query.to_s).to_h
+      calls << [ uri.path, params["engine"] ]
+      body = if uri.path == "/image"
+        { "image_id" => "offline-ref" }
+      elsif params["engine"] == "google_lens"
+        { "search_metadata" => { "status" => "Success" }, "visual_matches" => titles.map { |title| { "title" => title } } }
+      else
+        assert_equal "green velvet sofa site:sfbay.craigslist.org", params["q"]
+        assert_equal "San Francisco,California,United States", params["location"]
+        { "search_metadata" => { "status" => "Success" }, "images_results" => [] }
+      end
+      [ 200, body.to_json ]
+    end)
+    result = FurnitureSearch.new(client: client, accounting: ->(*) { }).call(photo: @photo, zip: "94103", route: "lens_then_images")
+    assert_equal "success", result["status"]
+    assert_equal "green velvet sofa", result["interpretation"]
+    assert_equal [ [ "/image", nil ], [ "/search.json", "google_lens" ], [ "/search.json", "google_images" ] ], calls
+  end
 end
