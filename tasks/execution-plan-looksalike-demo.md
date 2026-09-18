@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo and a US ZIP code into up to six similar listings from a local Craigslist area.
 
-Approved for implementation. The offline foundation is built and the live comparison is complete. Neither search approach passed, so feature work and deployment are paused at the stop condition below. See the [results and proposed diagnostic](../docs/experiments/feasibility-v1/results.md).
+Approved for implementation. The offline foundation, live comparison, and two-request diagnostic are complete. Neither search approach passed. Feature work and deployment remain paused at the stop condition below. See the [comparison results](../docs/experiments/feasibility-v1/results.md) and [diagnostic findings](../docs/experiments/diagnostic-v1/README.md).
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -85,12 +85,13 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Save the five prepared photo/ZIP pairs, selected areas, and exact search rules before testing, so the results can be judged consistently.
 - [x] Add a search-attempt counter that survives restarts and counts each request before it is sent.
 - [x] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
+- [x] Run the approved two-request diagnostic with the two saved Images queries. Record response classifications and reasons for rejected links, keep the original scores, and stop at eight combined search attempts.
 - [ ] Use the passing one-search approach if possible; otherwise use the passing two-search approach.
 - [ ] Package one successful result as the dated example, including its original ZIP/area, reference photo, and actual listing thumbnails with permission to reuse them.
 
 **If neither approach passes, stop building features and bring back the evidence and the smallest proposed change.** Do not increase the budget, swap marketplaces, or use the example to claim that live uploads work. If we cannot obtain reusable listing images, flag that before promising a complete example.
 
-The September 17 comparison used six search attempts and four uploads. Each approach stopped after two failed cases; the other three photos on each approach remain untested. No displayable listings survived. The linked report proposes two diagnostic requests from the unused budget, subject to agreement before any further calls. The original scores and frozen rules remain unchanged.
+The September 17 comparison used six search attempts and four uploads. Each approach stopped after two failed cases; the other three photos on each approach remain untested. No displayable listings survived. The two approved diagnostic Images requests brought combined usage to eight of fifteen, with no additional uploads, Lens calls, query changes, or retries. The modern query returned 100 links outside Craigslist; the ornate query returned no images and an error of uncertain cause. The original scores and frozen rules are unchanged. Seven comparison attempts remain unused; further live work requires a specific revised approach and allocation. The separate final two-attempt smoke allowance remains untouched.
 
 ### 3. Put the example online first
 

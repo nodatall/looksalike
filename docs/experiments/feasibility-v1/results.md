@@ -2,7 +2,7 @@
 
 **Neither route passed.** Both stopped after their second failed case, as required by the frozen rules. The four executed cases produced zero displayable cards and zero passing cards. Feature work, a final snapshot, publishing and deployment remain stopped at this gate.
 
-The [recorded evidence](live-evidence.json) contains **6 search attempts and 4 separate upload attempts**: two searches for Lens-only and four for Lens-then-Images. These are durable attempt counts, not verified bills. Nine of the 15 comparison attempts remain unused; the separate two-attempt final smoke allowance is untouched. No failed request was retried and no query or result was substituted.
+The [recorded evidence](live-evidence.json) contains **6 search attempts and 4 separate upload attempts**: two searches for Lens-only and four for Lens-then-Images. These are durable attempt counts, not verified bills. The comparison left nine of its 15 attempts unused; the later diagnostic used two, leaving seven. The separate two-attempt final smoke allowance is untouched. No failed request was retried within the original comparison and no query or result was substituted.
 
 | Route / case | ZIP | Upload (ms) | Lens (ms) | Images (ms) | Total (ms) | Outcome |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
@@ -17,15 +17,15 @@ The evidence does not establish that Craigslist generally cannot work. Rejected 
 
 The failure records also cannot distinguish empty search results from HTTP, service, or parsing errors. SerpApi documents that a successful search with no results can include a top-level `error` field. The current [client](../../../app/services/serp_api/client.rb) classifies every such field as unavailable. A zero-network, injected-transport probe confirmed that HTTP 200 plus `Success` and a documented empty-results `error` becomes `Client::Error` with code `unavailable`. That verified behavior limits diagnosis; it does **not** establish what caused either observed failure. See [SerpApi's status/error contract](https://serpapi.com/api-status-and-error-codes).
 
-## Proposed next step — not authorized or executed
+## Completed follow-up diagnostic
 
-Seek agreement on a revised plan and allocation for one separate diagnostic: **at most two additional Images requests**, using two of the nine unused comparison attempts. This would cap combined usage at **8/15** and leave the final two smoke attempts untouched. Freeze these exact recorded queries and origins, with `engine=google_images`, `gl=us`, and `hl=en`:
+The user approved one separate diagnostic of **two additional Images requests**, using two of the nine unused comparison attempts. Both ran, bringing combined usage to **8/15** and leaving the final two smoke attempts untouched. They used these exact recorded queries and origins, with `engine=google_images`, `gl=us`, and `hl=en`:
 
 | Case | Exact query | Exact location |
 | --- | --- | --- |
 | Ornate sofa / NYC | `sofa antique photos download free settees vintage site:newyork.craigslist.org` | `New York,New York,United States` |
 | Modern sofa / SF | `sofa green velvet seater site:sfbay.craigslist.org` | `San Francisco,California,United States` |
 
-Make no new upload or Lens call, query edit, or automatic retry. Reserve each attempt before dispatch even if a provider cache hit might avoid a bill. Record safe HTTP/status/error classifications, rejection counts, and at most ten sanitized host/path examples, capped at 200 characters each with credentials, query strings and opaque identifiers omitted. Keep exact-area checks and original scoring unchanged. Its purpose is to identify current URL rejection reasons and distinguish empty results from other stage failures; it would not replace these v1 scores or prove that the product is feasible.
+No new upload or Lens call, query edit, or automatic retry occurred. Each attempt was reserved before dispatch. The [diagnostic report](../diagnostic-v1/README.md) and [evidence](../diagnostic-v1/results.json) record response classifications, rejection counts, and sanitized host/path examples. The modern search returned 100 links from other sites, so rejecting them was correct. The ornate search returned HTTP 200 and `Success`, but no images and an unclassified error field. Its cause remains uncertain. Exact-area checks and original scoring are unchanged; neither approach has passed.
 
 The historical [manifest](manifest.json), its checksum, the [rules](rules.md), reference bytes, and existing live evidence remain unchanged. Their `not_run` wording records the pre-run freeze; this report and the separate live evidence describe the completed comparison.
