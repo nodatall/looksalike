@@ -1,6 +1,10 @@
 # LooksAlike
 
-A furniture photo search demo under development. Rails serves a bundled React and Material UI entry screen. ZIP entry and local photo selection/compression/preview work. Search and example actions remain disabled: the [live feasibility comparison](docs/experiments/feasibility-v1/results.md) stopped after neither route passed. Both routes produced zero displayable cards and reached the two-failure early stop. Further feature work and deployment are paused. No provider calls or illustrative results are wired into the page.
+A furniture photo search demo under development, built with Rails, React, and Material UI. The approved flow is photo upload → Google Lens → a short search phrase → US-located eBay listings. It needs no ZIP code. Search and example actions remain disabled in the app while this flow is tested; the current screen still reflects the earlier Craigslist design.
+
+The [full photo-to-eBay test](docs/experiments/ebay-flow-v1/README.md) completed four cases on September 20, 2026. Both sofas passed; the chair and coffee table failed because the extracted phrases selected the wrong furniture type. All calls succeeded within 55 seconds. Testing stopped after two failures, leaving the dresser untested. The next proposed repair is to choose a category supported by multiple Lens titles and preserve names such as “coffee table.” Feature work and deployment remain paused until search quality passes.
+
+This batch used eight searches and four uploads, bringing recorded development usage to 23 searches. The user approved extending the original 15-search limit. Earlier [Craigslist results](docs/experiments/feasibility-v1/results.md), [eBay trials](docs/experiments/ebay-v1/README.md), and the [country-filter diagnostic](docs/experiments/ebay-no-country-v1/README.md) remain unchanged. The eBay request omits the provider country filter; explicit US location is checked in the returned data.
 
 ## Local setup
 

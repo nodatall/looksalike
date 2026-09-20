@@ -1,0 +1,24 @@
+{
+  "case_id": "modern-sofa",
+  "parameters": {
+    "engine": "ebay",
+    "_nkw": "green velvet sofa",
+    "ebay_domain": "ebay.com",
+    "_stpos": "94103",
+    "show_only": "LPickup",
+    "LH_PrefLoc": "Domestic",
+    "_ipg": "25"
+  },
+  "reserved_at": "2026-09-18T22:05:16.135249Z",
+  "outcome": {
+    "http_status": 400,
+    "provider_status": null,
+    "error": "Unsupported LH_PrefLoc: `Domestic`.",
+    "parameters_echo": {},
+    "search_information": {},
+    "classification": "provider_error",
+    "returned_items": 0,
+    "listings": [],
+    "elapsed_ms": 190.216
+  }
+}

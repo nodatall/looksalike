@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/267164727771",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page opened; heading identifies a table lamp, not a furniture table."
+    },
+    {
+      "url": "https://www.ebay.com/itm/336767230153",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page opened; heading identifies a TV stand, not a coffee table."
+    },
+    {
+      "url": "https://www.ebay.com/itm/820060398405",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page opened; heading identifies a TV stand, not a coffee table."
+    },
+    {
+      "url": "https://www.ebay.com/itm/178460986390",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Item page/photo opened. Low farmhouse storage coffee table with white cabinet base and sliding barn door; same furniture type and similar form/style despite a lift-top feature."
+    },
+    {
+      "url": "https://www.ebay.com/itm/168610011007",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page/photo opened. Full-height dining table on four tall legs; different function and silhouette from the low storage coffee table."
+    },
+    {
+      "url": "https://www.ebay.com/itm/287588998887",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page/photo opened. Full-height pedestal dining table; different function and silhouette from the low storage coffee table."
+    }
+  ],
+  "relevant_accessible_count": 1,
+  "scored_at": "2026-09-20T17:53:57Z",
+  "passed": false
+}

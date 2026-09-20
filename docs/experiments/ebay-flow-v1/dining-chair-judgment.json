@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/237069023143",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Opened the item page and verified its heading. This is a cabinet, not a chair; wrong furniture category. No image comparison is needed to establish the category mismatch."
+    },
+    {
+      "url": "https://www.ebay.com/itm/206389271679",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Opened the item page and verified its heading. This is a cabinet, not a chair; wrong furniture category. No image comparison is needed to establish the category mismatch."
+    },
+    {
+      "url": "https://www.ebay.com/itm/158275015853",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Opened the item page and verified its heading. This is a cabinet, not a chair; wrong furniture category. No image comparison is needed to establish the category mismatch."
+    },
+    {
+      "url": "https://www.ebay.com/itm/336182241896",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Opened the item page and verified its heading. This is a cabinet, not a chair; wrong furniture category. No image comparison is needed to establish the category mismatch."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366351877892",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Opened the item page and verified its heading. This is a cabinet, not a chair; wrong furniture category. No image comparison is needed to establish the category mismatch."
+    },
+    {
+      "url": "https://www.ebay.com/itm/237002227555",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Opened the item page and verified its heading. This is a cabinet, not a chair; wrong furniture category. No image comparison is needed to establish the category mismatch."
+    }
+  ],
+  "relevant_accessible_count": 0,
+  "scored_at": "2026-09-20T17:52:15Z",
+  "passed": false
+}

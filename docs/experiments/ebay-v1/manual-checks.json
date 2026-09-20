@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-09-18",
+  "case_id": "ornate-sofa",
+  "reference": "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg",
+  "selection": "First six distinct item links in provider order, no reranking",
+  "method": "Opened each eBay item in the browser, inspected its photo and price, and read the pickup map link. No seller contact or purchase.",
+  "checks": [
+    {"position": 1, "url": "https://www.ebay.com/itm/287516957646", "accessible": true, "price": "$700.00", "pickup_city": "New York, NY", "pickup_zip": "10001", "relevant": false, "reason": "Plain upholstered sofa without the reference's exposed carved frame."},
+    {"position": 2, "url": "https://www.ebay.com/itm/313764202325", "accessible": true, "price": "$2,500.00", "pickup_city": "New York, NY", "pickup_zip": "10001", "relevant": false, "reason": "Mission style with straight wooden slats and angular shape."},
+    {"position": 3, "url": "https://www.ebay.com/itm/377462840300", "accessible": true, "price": "$475.00", "pickup_city": "New York, NY", "pickup_zip": "10010", "relevant": true, "reason": "Curved exposed wood frame and patterned upholstery."},
+    {"position": 4, "url": "https://www.ebay.com/itm/377462853156", "accessible": true, "price": "$1,000.00", "pickup_city": "New York, NY", "pickup_zip": "10010", "relevant": true, "reason": "Curved wood frame, patterned upholstery, and similar overall shape."},
+    {"position": 5, "url": "https://www.ebay.com/itm/277700664931", "accessible": true, "price": "$12,500.00", "pickup_city": "New York, NY", "pickup_zip": "10011", "relevant": false, "reason": "Modern sectional with a different shape and style."},
+    {"position": 6, "url": "https://www.ebay.com/itm/286693235113", "accessible": true, "price": "$850.00", "pickup_city": "New York, NY", "pickup_zip": "10022", "relevant": true, "reason": "Carved frame, curved back, and patterned upholstery."}
+  ],
+  "limitation": "Pickup locations were read manually from listing pages. Search API results supplied only the country. No mileage guarantee or full-route pass."
+}

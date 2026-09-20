@@ -1,34 +1,34 @@
 # LooksAlike visual search demo
 
-Goal: Build a small app that turns a furniture photo and a US ZIP code into up to six similar listings from a local Craigslist area.
+Goal: Build a small app that turns a furniture photo into up to six similar eBay listings located in the United States.
 
-Approved for implementation. The offline foundation, live comparison, and two-request diagnostic are complete. Neither search approach passed. The simpler query rule is implemented and its two-request test is complete. It produced no relevant matches. Other feature work and deployment remain paused at the stop condition below. See the [comparison results](../docs/experiments/feasibility-v1/results.md) and [diagnostic findings](../docs/experiments/diagnostic-v1/README.md).
+The approved direction is nationwide eBay search, with no ZIP field or pickup-only restriction. Google Lens supplies a short phrase, then eBay returns listings. The [full-flow test](../docs/experiments/ebay-flow-v1/README.md) passed for both sofas but failed for the chair and coffee table. All four cases finished within 55 seconds. Testing stopped after two failures; the dresser is untested. The next proposed repair is to choose the furniture category supported by multiple Lens titles and preserve names such as “coffee table.” The app, mockup, and deployment remain pending until search quality passes. Earlier experiments and their scores remain unchanged.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
 
 ## What we are building
 
-The first screen starts with “Find similar items on Craigslist near you.” It has an outlined “ZIP code” field with no asterisk, followed by a photo upload box. The box shows a photo icon and “Upload a furniture photo,” with “or try an example” underneath. Only “example” is clickable.
+The first screen starts with “Find similar furniture on eBay.” It has a photo upload box and no ZIP field. The box shows a photo icon and “Upload a furniture photo,” with “or try an example” underneath. Only “example” is clickable.
 
-Uploading, dropping a photo, or choosing the example fills the same box with a preview. The headline and editable ZIP stay in place. Choosing the example fills an empty ZIP with the example's ZIP and preserves any ZIP already entered. “Find similar items” appears below the preview and stays disabled until a photo and five-digit ZIP are present. The preview remains clickable to replace the photo.
+Uploading, dropping a photo, or choosing the example fills the same box with a preview. The headline stays in place. “Find similar items” appears below the preview and stays disabled until a valid photo is ready. The preview remains clickable to replace the photo.
 
 Submitting shows a loading animation inside the button and keeps the photo visible. Results use this layout:
 
-- A small reference photo beside the one-line heading “Similar Items,” with “Near [ZIP]” directly underneath.
-- “Search again” at the top right. It clears the photo and results, returns to the upload screen, and keeps the ZIP available to edit.
-- Up to six cards in three columns on desktop and two on narrow screens. Each shows a photo, title, location, and listing link. Show a price only when supplied. Use a supplied city or neighborhood; otherwise label the broader location “Craigslist area: [area].”
+- A small reference photo beside the one-line heading “Similar Items.” Omit “Near [ZIP].”
+- “Search again” at the top right. It clears the photo and results and returns to the upload screen.
+- Up to six cards in three columns on desktop and two on narrow screens. Each shows a photo, title, price when supplied, and eBay listing link. Show supplied shipping, pickup, condition, and location details when available. Do not invent a city or imply that a pickup item is nearby.
 - A collapsed “How this search worked” section below the cards. It starts with the black-on-white architecture sketch, then explains each call and its response in short text.
 
 Keep the copy as spare as the mockup. Omit a reference-photo caption, result-count subtitle, and an introduction above the diagram. Mark saved results with a short status and retrieval date, as described below.
 
-Reloading a completed search restores the results, reference thumbnail, ZIP, and whether the explanation was open. It does not upload again or start another search. This lasts for the browser tab's session; it is not a saved-search feature.
+Reloading a completed search restores the results, reference thumbnail, and whether the explanation was open. It does not upload again or start another search. This lasts for the browser tab's session; it is not a saved-search feature.
 
-The app covers furniture on Craigslist across the US. It has one screen, with no accounts, saved searches, alerts, price or distance filters, pagination, or listing-detail pages. We will use SerpApi rather than scrape Craigslist or add an LLM.
+The app covers furniture on eBay located in the US. It has one screen, with no accounts, saved searches, alerts, price or distance filters, pagination, or listing-detail pages. Use SerpApi for Lens and eBay search. Do not add an LLM or scrape marketplace pages in the app.
 
-The ZIP code selects one local Craigslist area. Show its name and hostname in the search explanation. “Near you” means that area; it does not promise a particular mileage or sort listings by distance. An unknown or unmappable ZIP gets a clear error before any paid search.
+Search ebay.com without the provider country filter, then keep only listings explicitly marked as located in the United States. Do not send a ZIP, select a Craigslist area, or restrict results to local pickup. US location does not guarantee delivery to every US address. Visitors check shipping and pickup terms on eBay.
 
-Visual mockup: [See the proposed screen](ui-mockup-looksalike-demo.html).
+Visual mockup: [Earlier screen](ui-mockup-looksalike-demo.html). Updating it for nationwide eBay is pending.
 
 ## Project choices
 
@@ -40,20 +40,20 @@ Visual mockup: [See the proposed screen](ui-mockup-looksalike-demo.html).
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The repository now contains the approved plan, interactive mockup, and a working Rails foundation. The bundled React/Material UI entry screen is connected to Rails. SerpApi credentials are configured locally. The first live experiment did not meet the required result quality; the remaining search experience and deployment depend on resolving that finding.
+The repository contains this plan, the earlier interactive mockup, and a working Rails foundation. The bundled React/Material UI entry screen is connected to Rails. SerpApi credentials are configured locally. Updating the app and mockup to nationwide eBay is pending; the remaining search experience and deployment depend on validating the new flow.
 
 ## Limits visitors will see
 
 | Limit | Behavior |
 | --- | --- |
-| Location | Require a five-digit US ZIP code for live search. Preserve leading zeros and let visitors edit it before searching. |
+| Location | Search for US-located eBay items without asking for a ZIP. Do not promise nearby pickup or delivery eligibility. |
 | Photo size | Accept one JPEG, PNG, or WebP, up to 10 MB and 20 megapixels. Reduce it to at most 450,000 bytes before sending it. |
 | Results | Show up to six distinct listings. Fewer results are acceptable. |
 | Waiting time | Stop the server's work after 55 seconds. Give the browser 65 seconds to receive and show the outcome. |
 | Simultaneous searches | Run one live search at a time. Another visitor gets a prompt “busy” message; the example and saved recent results remain available. |
 | Public API allowance | Allow at most 10 search attempts per day and 180 in any rolling 30 days. |
 | Per-visitor limit | Allow three searches per hour that need fresh results, tracked by browser session/IP address. |
-| Repeated photos | Reuse a successful result for 24 hours, or an empty result for one hour. Show when it was retrieved. |
+| Repeated photos | Reuse a successful result for 24 hours, or an empty result for one hour, using the same search version and US scope. Show when it was retrieved. |
 | Prepared example | Show a dated “Demo snapshot” that uses no API searches and works even when outside services are unavailable. |
 
 A search attempt counts against the limit even if its outcome is uncertain. The app will not retry paid searches automatically. Development experiments and public searches share the account's allowance.
@@ -72,6 +72,8 @@ The server keeps uploaded photos only while handling the request. The browser re
 
 ### 2. Check whether the search idea works
 
+The Craigslist comparison below is historical. Preserve its rules and completed tasks. The pending tasks that follow cover the approved nationwide eBay direction.
+
 Test five fixed photo/ZIP pairs: an ornate sofa in 10001, a modern sofa in 94103, a dining chair in 60601, a wood table in 02108, and a dresser in 98101. Use photos we own or have permission to reuse. Each photo is tested in its assigned area, keeping this comparison to five cases per approach.
 
 Try Google Lens alone first, restricted to the Craigslist area selected by the ZIP code. If that fails, try Lens to produce a search phrase, followed by Google Images in that area. Each approach also needs a separate image-upload request.
@@ -87,16 +89,31 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Run the comparison within its budget and save the results, timings, and reasons for each pass or failure.
 - [x] Run the approved two-request diagnostic with the two saved Images queries. Record response classifications and reasons for rejected links, keep the original scores, and stop at eight combined search attempts.
 - [x] Build the approved simpler query rule and test the two recorded sofa phrases with two Images requests. Keep the area and listing checks unchanged, preserve earlier evidence, and stop at ten combined search attempts.
-- [ ] Use the passing one-search approach if possible; otherwise use the passing two-search approach.
-- [ ] Package one successful result as the dated example, including its original ZIP/area, reference photo, and actual listing thumbnails with permission to reuse them.
+- [x] Run the approved two-request eBay trial with the saved sofa phrases, ZIPs, and pickup filter. Record its parameter rejection and useful antique-sofa results, preserve earlier evidence, and stop at twelve combined attempts. This trial does not authorize switching the app or establish a full-route pass.
+- [x] Complete the approved single nationwide eBay test with `green velvet sofa`, US country filtering, and no ZIP or pickup-only restriction. It timed out at 55 seconds. Stop at thirteen combined attempts.
+- [x] Retry that exact request once with a 110-second diagnostic deadline. It returned HTTP 503 after 90.34 seconds, matching the original request's archived provider failure. Stop at fourteen combined attempts; keep the application's 55-second target unchanged.
+- [x] Run the approved test removing only `_salic=1`. It returned 60 listings in 2.12 seconds; 59 were explicitly US-located. Stop at fifteen combined attempts. This is a query test, not a full-flow or similarity pass.
+- [x] Freeze and run the five-photo Lens-to-eBay comparison, omitting the provider country filter and checking US location locally. Two sofas passed; the chair and coffee table failed. Stop after eight searches and four uploads, leaving the dresser untested.
+- [ ] Pass a fresh five-photo comparison after repairing phrase extraction. The proposed repair and failed cases are recorded in the [full-flow report](../docs/experiments/ebay-flow-v1/README.md); preserve the original scores.
+- [ ] Package one successful nationwide eBay result as the dated example, including its reference photo and actual listing thumbnails with permission to reuse them.
 
-**If neither approach passes, stop building features and bring back the evidence and the smallest proposed change.** Do not increase the budget, swap marketplaces, or use the example to claim that live uploads work. If we cannot obtain reusable listing images, flag that before promising a complete example.
+The preceding Craigslist comparison is historical. Its frozen inputs, two-failure stop rule, budget, scores, and completed tasks remain unchanged. The user has approved replacing that direction with nationwide eBay. For the new full-flow comparison, require at least four of five photos to return three relevant, distinct, accessible US-located listings among the first six, within 55 seconds. Stop after two failed photos. Record short-phrase probes separately; they cannot establish a full-flow pass.
+
+**If the new approach fails, stop feature work and return the evidence and smallest proposed change.** Do not increase the approved live-call allowance or use the example to claim that live uploads work. If we cannot obtain reusable listing images, flag that before promising a complete example.
 
 The first comparison used six search attempts and four uploads. Both approaches stopped after two failed cases, leaving three photos untested on each. The two-call diagnostic brought usage to eight attempts and confirmed that the modern query returned links outside Craigslist. The original scores and frozen rules remain unchanged.
 
 The approved [short-query test](../docs/experiments/query-v2/README.md) used two more Images attempts with saved descriptions and the same area restrictions. San Francisco produced no accepted listings. New York produced two candidates, but neither matched the reference. This does not replace the five-case comparison.
 
-Combined usage is **ten of fifteen attempts**. Five remain unused, and the separate two-attempt final smoke allowance is untouched. Any further live test needs a concrete revised approach and allocation.
+The approved [eBay trial](../docs/experiments/ebay-v1/README.md) used two more attempts. The green-sofa request was rejected because the API did not accept the documented `LH_PrefLoc=Domestic` value. Removing that optional parameter for the antique-sofa request returned 60 listings in 2.52 seconds. Three of the first six looked similar to the reference, and all six pages showed New York pickup locations. The API itself supplied only country-level locations. That trial did not test fresh Lens recognition or the remaining photos; the later full-flow comparison is recorded separately.
+
+The approved [nationwide test](../docs/experiments/ebay-us-v1/README.md) used one further attempt for `green velvet sofa` with `_salic=1`, no ZIP, and no pickup-only filter. It timed out after 55.01 seconds without a completed response. This is inconclusive about inventory, similarity, and country filtering; it is not an empty result or a full-flow pass.
+
+The original request's [archived response](../docs/experiments/ebay-us-v1/archive-diagnosis.json) later confirmed HTTP 503 after 90.11 seconds. The user-approved [identical retry](../docs/experiments/ebay-us-retry-v1/README.md), with a longer diagnostic deadline, also returned HTTP 503 after 90.34 seconds. This nationwide request has now failed twice; the provider's generic error does not identify the cause. Increasing the app deadline would not resolve these failures.
+
+The user-approved [test without the country filter](../docs/experiments/ebay-no-country-v1/README.md) then returned HTTP 200 and 60 listings in 2.12 seconds. All other request parameters were unchanged. The country filter is therefore the likely source of the failures, although the provider's internal cause is unknown. The response marked 59 listings US-located and one Philippines-located. The implementation will omit `_salic` and check the returned location locally; no application code changed in this test. The first six included four sponsored items, and visual relevance remains unreviewed.
+
+Earlier experiments used **15 search attempts**. On September 20, 2026, the user approved further testing, and an account check confirmed 238 searches remaining before the new batch. The [full-flow comparison](../docs/experiments/ebay-flow-v1/README.md) used eight searches and four uploads, bringing recorded development usage to **23 search attempts**. The remaining account balance has not been refreshed. The batch stopped after two failed photos; its unused allowance is not permission to bypass that stop. Additional focused diagnostic batches are authorized within the remaining account allowance; record their purpose and size before dispatch and preserve enough allowance for public use. Keep the separate two-search deployment check reserved. Preserve every prior attempt and frozen experiment; do not reset the ledger.
 
 ### 3. Put the example online first
 
@@ -112,10 +129,10 @@ This checks the hosting setup before we expose paid searches to visitors.
 
 Use the same compression and search rules that passed the experiment.
 
-- [ ] Build the upload, example, and preview flow described above, with compression and clear file errors.
-- [ ] Add ZIP entry, button enablement, and server validation. Select the search area with the tested lookup and include it in the explanation.
+- [ ] Update the mockup and app to the photo-only upload, example, and preview flow above, with compression and clear file errors.
+- [ ] Remove ZIP entry, ZIP validation, area lookup, and nearby wording from the active flow. Enable search once a valid photo is ready.
 - [ ] Connect uploads to the chosen search approach and return up to six valid, distinct listing cards.
-- [ ] Store recent results by photo and location, and show their age when reused.
+- [ ] Store recent results by photo, US scope, and search version, and show their age when reused.
 - [ ] Enforce the spending limits and one-live-search rule, including during simultaneous requests and restarts.
 - [ ] Build the results header and responsive cards described above using Material UI and the shared theme.
 - [ ] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
@@ -125,11 +142,11 @@ Use the same compression and search rules that passed the experiment.
 ### 5. Check the app before release
 
 - [ ] Test the search rules, upload checks, errors, saved results, and spending controls using recorded responses instead of paid API calls.
-- [ ] Verify location coverage across US states and DC, including rural areas, Alaska, Hawaii, leading-zero ZIPs, region boundaries, and unmappable ZIPs. Check that changing ZIP cannot reuse another area's results or relabel a saved example.
+- [ ] Verify that requests omit the provider country filter and that local filtering rejects candidates whose US location cannot be established. Check that cache and browser-storage versions cannot restore old Craigslist or ZIP-based results as eBay results.
 - [ ] Verify that simultaneous requests cannot exceed the limits and that the example and health check still respond during a live search.
 - [ ] Verify that every image in the prepared example loads with external image and API requests blocked.
 - [ ] Walk through uploads, the example, errors, and retries on desktop and mobile, including keyboard-only use.
-- [ ] Check the disabled search button, inline example preview, and ZIP preservation. Verify that reload restores results without a provider call and that “Search again” clears them.
+- [ ] Check photo-based button enablement and the inline example preview. Verify that reload restores results without a provider call and that “Search again” clears them.
 - [ ] Run all automated checks and inspect the public files for secrets, private photos, and misleading claims.
 - [ ] Capture screenshots and a short walkthrough recording.
 
@@ -145,7 +162,7 @@ If search quality, request timing, or storage fails these checks, fix it or retu
 
 ## What “ready” means
 
-The public HTTPS link works without login. Visitors can try the complete example or upload a new photo with a US ZIP code. The location checks, five-case experiment, and final new-photo check have passed.
+The public HTTPS link works without login. Visitors can try the complete example or upload a new photo without a ZIP. The US listing checks, five-photo Lens-to-eBay experiment, and final new-photo check have passed.
 
 The page matches the mockup on desktop and mobile and works with a keyboard. A completed search survives a reload without repeating API calls. Errors explain what happened and offer a useful next action. Recent results and historical examples are labeled clearly.
 
@@ -169,44 +186,36 @@ Run Puma directly behind Railway's HTTPS service, with one worker and at least t
 
 Use a cheap health endpoint. If the intended database volume is missing or unavailable, disable live calls instead of creating a temporary replacement database. Keep the shared component boundaries in [ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 
-### ZIP codes and local areas
+### Nationwide eBay search
 
-Use versioned, reusable offline postal-code data, initially GeoNames US postal data, to resolve a ZIP to a place and representative coordinates. Record the source date, license, attribution, and coverage. Include separately published US territory data where needed; do not assume one country file covers every US ZIP. Keep ZIPs as five-character strings. A format check is separate from a successful lookup. Distinguish malformed input from a ZIP missing in the dataset. [GeoNames postal data](https://download.geonames.org/export/zip/)
+The active flow has no ZIP lookup, geocoding, or Craigslist-area selection. Keep the old location data and code only where historical experiments need them; do not call them from the new search.
 
-Bundle these files with Rails on the server. The browser sends one ZIP and receives the selected area; it does not download the ZIP dataset or the Craigslist-area catalog. Record the imported files' sizes and source dates during setup.
+Use Google Lens with `type=all` to obtain suggestions and visual-match titles. Treat these as possible search terms, not guaranteed descriptions. [Lens API](https://serpapi.com/google-lens-api)
 
-Keep an app-maintained list of US Craigslist areas with display names, approved hostnames, and documented center coordinates. Verify hostnames against the official directory. Use explicit ZIP/area overrides where needed, then choose the nearest regional center to the postal-code coordinates; break equal-distance ties by hostname. This is an approximate area-selection rule, not an official Craigslist boundary map. Record the source of center coordinates separately. Cover all states and DC, audit territory coverage, and report unresolved places before release. No geocoding service is called during a visitor's search. [Craigslist areas](https://www.craigslist.org/about/sites)
+The tested phrase rules below failed the full-flow quality check. The proposed repair is to use agreement across titles for category selection and preserve common compound types. Freeze and verify the revised rules before another scored batch.
 
-Resolve the ZIP before uploading the photo or reserving search allowance. Pass only the resulting approved hostname to the search and listing filter; never construct a host directly from user text. Save the chosen ZIP, area, mapping version, and search origin with the response. Freeze this lookup and its test cases before the paid experiment.
+Tested phrase extraction:
 
-### Search requests and result rules
+1. Use the first non-empty Lens related query containing a known furniture category.
+2. Otherwise, use the first category plus descriptive words repeated in at least two of the first eight visual-match titles.
+3. Keep a common furniture name and at most two useful traits. Normalize synonyms and remove duplicate words, marketing text, and incomplete terms such as “seater.”
+4. Return a weak-recognition outcome if there is no usable phrase. Do not automatically broaden the query and spend another call.
 
-The first candidate is Google Lens with `type=visual_matches`, `q=site:<selected Craigslist hostname>`, and `country=us`. Lens has no documented ZIP or city-origin parameter; the selected hostname supplies the area restriction. That restriction still needs to pass our experiment. Keep provider order and name the selected Craigslist area in the explanation. A descriptive phrase is optional; do not invent an independent recognition result from listing titles. [Lens API](https://serpapi.com/google-lens-api)
+Pass the phrase as `_nkw` to `engine=ebay`, with `ebay_domain=ebay.com`. Omit `_salic`, `_stpos`, `show_only=LPickup`, and `LH_PrefLoc=Domestic`. The country-filtered request failed twice; removing only `_salic` succeeded. Enforce US location using the returned listing fields below. [Observed request comparison](../docs/experiments/ebay-no-country-v1/README.md)
 
-The second candidate uses Lens with `type=all`. Treat its suggestions as possible search terms, not guaranteed descriptions of furniture style.
+Read individual listing destinations from `organic_results[].link`. Accept only HTTPS eBay item links on an explicit allowlist. Remove tracking parameters and duplicates by item ID. Require a title, thumbnail, source link, and supplied evidence that the item is located in the US; omit unknown or non-US locations. Preserve provider order and take up to six valid items. Record every filter and its counts before scoring.
 
-For phrase extraction:
-
-1. Use the first non-empty Lens related query that contains a furniture category from a small saved word list.
-2. If none qualifies, use the first category term plus descriptive words repeated in at least two of the first eight visual-match titles.
-3. Use a common furniture name and at most two distinctive traits, such as color, material, or style. Normalize synonyms, remove duplicate words and marketing text, and drop incomplete terms such as “seater.” Choose the short phrase before making the Images request; do not automatically broaden it and search again.
-4. If this produces no usable phrase, return a weak-recognition outcome.
-
-Save the category and trait vocabularies, aliases, stopwords, and tie-breaking rules before scoring. Google Images gets the extracted terms and selected site's exact restriction, with US/English settings and a supported city search origin for that area. Pre-resolve and save the area's canonical origin from SerpApi's Locations API during data preparation. Search origin is context, not a distance filter. Order results by keyword overlap, using provider order to break ties. Present the phrase as a tentative “Looks like…” interpretation. [Google Images API](https://serpapi.com/google-images-api), [supported locations](https://serpapi.com/locations-api)
-
-Read listing destinations from `visual_matches[].link` or `images_results[].link`, never from image URLs. Accept only HTTP(S) links on the exact selected, approved Craigslist hostname that point to individual listings. Remove duplicates by canonical URL/listing ID. A different Craigslist region is not an acceptable substitute.
-
-Drop results missing a title, thumbnail, or source link. Use only supplied city or neighborhood details for a listing's location. If absent, show the selected area's name with a “Craigslist area” label. Handle broken images visibly and omit similarity percentages.
+Show supplied prices and price ranges accurately. Include condition, shipping, pickup, and location details only when provided. A US listing is not a promise of delivery to every address. Do not fetch listing pages from the app to fill missing fields, invent cities, show similarity percentages, or substitute an unrelated photo. Handle broken images visibly.
 
 ### Experiment records
 
-Before the first scored call, save the compressed image bytes and hashes, assigned ZIPs, mapping version, selected hosts/origins, compression settings, request parameters, phrase rules, URL filters, duplicate rules, and result ordering in an experiment manifest. Verify location lookup, compression limits, and request deadlines offline first.
+Before the new scored comparison, save the compressed image bytes and hashes, compression settings, local US-location rule, request parameters, phrase rules, URL filters, duplicate rules, and result ordering in a new manifest. Verify compression, normalization, spending controls, and request deadlines offline first. Keep the earlier Craigslist manifests and ZIP assignments unchanged as historical records.
 
 Check the account's remaining allowance before starting. The manual experiment uses its own durable counter from the first request, separate from the public app's daily limit. Its step 2 budget applies cumulatively across restarts.
 
 Record sanitized responses, timings, phrase quality, card counts, missing fields, inaccessible links, relevance judgments, and timestamps under `docs/experiments/`. When the early-stop rule applies, mark the remaining photos untested. Do not add custom rescue queries.
 
-Changing the algorithm invalidates the affected scores. Extra tuning needs a revised budget agreed with the user. The sample demonstrates this small test only; it does not establish general accuracy.
+Changing the algorithm invalidates the affected scores. Extra tuning uses the approved remaining monthly allowance in recorded, bounded batches; request a new budget only if that allowance would be exceeded. The sample demonstrates this small test only; it does not establish general accuracy.
 
 ### Uploads and privacy
 
@@ -218,19 +227,19 @@ Clean temporary upload files on success and failure. Do not accept arbitrary ima
 
 ### Saved results and the prepared example
 
-Use browser session storage to restore a completed view: normalized cards, entered ZIP, resolved area, retrieval date, live/cache/snapshot status, sanitized search details, a small reference thumbnail, and the explanation's open state. Keep the upload's original bytes and provider upload ID out of this storage. Restore the previous result as-is, including its date; refreshing must never resubmit the search. An unfinished search is not a completed result and must not restart automatically.
+Use browser session storage to restore a completed view: normalized cards, marketplace and US scope, retrieval date, live/cache/snapshot status, sanitized search details, a small reference thumbnail, and the explanation's open state. Keep the upload's original bytes and provider upload ID out of this storage. Restore the previous result as-is, including its date; refreshing must never resubmit the search. An unfinished search is not a completed result and must not restart automatically.
 
-Validate restored data and handle unavailable or corrupt storage by returning to the usable upload screen. “Search again” clears the saved result and thumbnail while retaining the ZIP in the current form. This browser copy is separate from the server cache and must never authorize calls or bypass limits.
+Validate restored data and handle unavailable or corrupt storage by returning to the usable upload screen. “Search again” clears the saved result and thumbnail. Change the storage version so old Craigslist or ZIP-based views cannot be restored as eBay searches. This browser copy is separate from the server cache and must never authorize calls or bypass limits.
 
-For the saved results in step 4, use a cache key built from the reduced image's SHA-256 hash, ZIP, selected hostname/search origin, mapping version, and search/query version. Keep the original retrieval time and search details. Label a reused response “Cached.”
+For the saved results in step 4, use a cache key built from the reduced image's SHA-256 hash, eBay marketplace, local US-location rule, and search/query version. Keep the original retrieval time and search details. Label a reused response “Cached.”
 
 Apply the expiry times in the limits table. Provider failures must not be stored as successful results.
 
 Save the example as a sanitized response snapshot in the repository. Record the image sources and reuse permission alongside the bundled files. Do not substitute unrelated stock images. Show its label immediately, retain historical listing links, and mark availability unverified. Never use it as the response to an unrelated upload.
 
-Choosing the example fills the existing upload screen; it never opens a different design or submits immediately. The snapshot retains its original ZIP and area. If the visitor entered a different ZIP, offer the choice inline: use the example's ZIP or run a live search for the entered ZIP through the normal limits. Never silently overwrite the entered ZIP or relabel the snapshot as local to it. Loading the saved example needs no artificial wait for API calls.
+Choosing the example fills the existing upload screen and never submits immediately. “Find similar items” then loads the prepared nationwide eBay snapshot with its original retrieval date and search details. It spends no API allowance and needs no artificial wait.
 
-The current mockup uses the selected purple Victorian couch, fills a blank ZIP with 94103, and preserves a ZIP already entered. Its cards and search details are fixed illustrations, not matching search evidence. Public release needs permission to reuse that reference photo or a suitable replacement, plus a genuine recorded result with its original ZIP. Keep the chosen photo's source in the mockup README.
+The earlier mockup uses the selected purple Victorian couch and illustrated Craigslist results. Update its copy, cards, controls, saved state, and diagram together for eBay. Public release needs permission to reuse the reference photo or a suitable replacement, plus a genuine recorded eBay result. Keep source and reuse notes in the mockup README.
 
 ### Spending and simultaneous requests
 
@@ -256,17 +265,16 @@ Give weak recognition, missing metadata/images, and provider errors their own ou
 
 ### How the search explanation works
 
-Start with a black-on-white architecture sketch showing the browser, Rails, local ZIP/area files, and SerpApi. Use sketch-style boxes and labeled arrows, with solid requests and dashed responses. Number only the provider calls. Follow it with an ordered walkthrough of the approach the app used. Both the diagram and details must follow the recorded route and counts, rather than always showing three calls or six results.
+Start with a black-on-white architecture sketch showing the browser, Rails, SerpApi Image, Google Lens, and eBay search. Use sketch-style boxes and labeled arrows, with solid requests and dashed responses. Number only provider calls. Remove the local ZIP/area files and Google Images stage.
 
-Visitors do not choose between search approaches. The mockup illustrates one flow: upload, Lens, Images, and listing selection. That is three SerpApi requests: one upload and two searches. Keep both candidates in the development experiment: test Lens alone first, then Lens followed by Google Images if needed.
+Visitors follow one flow: upload, Lens, eBay, and listing selection. A fresh successful search uses three SerpApi requests: one upload and two searches. Saved results make no new calls.
 
-Begin the walkthrough with the browser's photo-and-ZIP request to Rails, then show these steps:
+Begin with the browser's photo request to Rails, then show:
 
-1. **Choose the local area.** Show the entered ZIP, the selected area, and its approved Craigslist hostname. Explain that this is an offline lookup, with no external request.
-2. **Upload the photo.** Show the reduced photo's format and size, the upload endpoint, and a safe summary of the response. Explain that the returned image reference becomes the input to Lens. Count this as one upload request, separately from searches; do not expose the provider's upload ID or image bytes.
-3. **Search with Google Lens.** Show the search inputs and useful response excerpts. For Lens alone, show how its matches become listing candidates. For the two-search approach, show which returned suggestions or titles produce the next query. Phrase extraction happens locally and is not another API call.
-4. **Search with Google Images, if used.** Show the extracted phrase, site restriction, and search origin, followed by response excerpts that become listing candidates. Omit this call for the Lens-only approach.
-5. **Choose the displayed listings.** Show counts before and after URL checks, duplicate removal, and missing-field checks, then the number displayed. These are local operations, with no external request.
+1. **Upload the photo.** Show the reduced format and size, upload endpoint, and a safe response summary. Explain that the returned reference becomes the input to Lens. Do not expose the upload ID or image bytes.
+2. **Search with Google Lens.** Show useful response excerpts and the short phrase they produced. Phrase extraction is local work, not another API call.
+3. **Search eBay.** Show the phrase, ebay.com marketplace, and response excerpts used for listing cards. Explain the US-location check in the next step. There is no ZIP or pickup-only filter.
+4. **Choose the displayed listings.** Show counts before and after URL, US-location, duplicate, and missing-field checks. This is local processing.
 
 For each external call, show its outcome and measured duration when available. Keep request details sanitized and response excerpts short. Mark failed or skipped stages honestly. Show the retrieval time separately from listing dates; search-attempt counts are not verified bills.
 
@@ -276,10 +284,10 @@ The local mockup uses completed-search wording to preview the finished design. I
 
 The offline checks in step 5 cover extraction, listing URLs, duplicates, missing metadata, errors, cache expiry, and usage accounting. Include browser and server upload limits, actual request counts after network failure, lease recovery, and simultaneous different uploads.
 
-Add one request-level integration flow. The browser walkthrough also checks focus, error announcements, broken images, double submission, and timeout recovery. Check reload after an upload and after the example, including a leading-zero ZIP, open and closed explanations, unavailable storage, and an interrupted search. Restoring a completed view must make zero upload or search calls.
+Add one request-level integration flow. The browser walkthrough also checks focus, error announcements, broken images, double submission, and timeout recovery. Check reload after an upload and after the example, including open and closed explanations, unavailable storage, legacy Craigslist state, and an interrupted search. Restoring a completed view must make zero upload or search calls.
 
-Check the explanation for both search approaches, failures, cached results, and the example. Each call must show how its response feeds the next step; local work must not increase the upload or search counts.
+Check the explanation for the Lens-to-eBay flow, failures, cached results, and the example. Each call must show how its response feeds the next step; local work must not increase the upload or search counts.
 
 Add instructions to refresh recorded responses, experiment results, and the recording to the README contents listed in step 6.
 
-The completed [Pro analysis](tmp/pro-analysis-looksalike-demo.md) records the earlier technical review and seven adopted findings. It predates the later US ZIP, Material UI, reload, and diagram changes; it does not validate those additions. They still need the implementation checks above. Implementation begins after the plan is accepted.
+The completed [Pro analysis](tmp/pro-analysis-looksalike-demo.md) records the earlier technical review and seven adopted findings. It predates the nationwide eBay decision and several UI changes; it does not validate the new flow. The current direction is approved, but implementation and release still require the checks above.

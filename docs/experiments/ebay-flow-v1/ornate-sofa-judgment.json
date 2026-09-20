@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/398401314915",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Live item page and photo opened. Curved carved dark-wood frame, floral upholstery and traditional sofa shape match the reference."
+    },
+    {
+      "url": "https://www.ebay.com/itm/398404835902",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Live item page and photo opened. Carved wood frame, damask upholstery and curved high back closely match the reference style."
+    },
+    {
+      "url": "https://www.ebay.com/itm/236311602453",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Live item page and photo opened. Provincial upholstered sofa with curved exposed carved wood frame; same category and traditional shape."
+    },
+    {
+      "url": "https://www.ebay.com/itm/287536128452",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Live item page and photo opened. These are individual armchairs, not a sofa."
+    },
+    {
+      "url": "https://www.ebay.com/itm/188931188370",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Live item page and photo opened. Vintage upholstered sofa with exposed dark wooden frame and curved arms; simpler carving but similar material and traditional form."
+    },
+    {
+      "url": "https://www.ebay.com/itm/287553158386",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Live item page and photo opened. Blue tufted leather Chesterfield has a substantially different upholstery treatment and lacks the reference carved-frame style; not counted conservatively."
+    }
+  ],
+  "relevant_accessible_count": 4,
+  "scored_at": "2026-09-20T17:41:18Z",
+  "passed": true
+}

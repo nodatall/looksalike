@@ -1,0 +1,35 @@
+{
+  "experiment": "ebay-us-retry-v1",
+  "authorization": "User: try again then? One retry of the same nationwide query.",
+  "frozen_at": "2026-09-19T05:57:53Z",
+  "parameters": {
+    "engine": "ebay",
+    "_nkw": "green velvet sofa",
+    "ebay_domain": "ebay.com",
+    "_salic": "1",
+    "_ipg": "25"
+  },
+  "deadline_seconds": 110,
+  "max_new_attempts": 1,
+  "automatic_retries": 0,
+  "baseline_attempts": 13,
+  "combined_ceiling": 14,
+  "comparison_ceiling": 15,
+  "additional_uploads": 0,
+  "prior_tables": {
+    "identity": "5cde2e65f19a146d42c563585042427053c56cd343c6cf29bf144704404ebd3b",
+    "cases": "eea8e60984922c0eacf151998f9b7773fec9bd7bd1e91376a6ab9dd59a073551",
+    "attempts": "ddd830975c5374226e7680ed30236a2c82883cb122008048674f4f826cfe8f89",
+    "account_checks": "479dc0a061f0d802dd5c83b08a55a33dd22dfb4a5673b6ed7ccf42ea4f99dd4c",
+    "diagnostic_v1_attempts": "41c4ef8c94a25f3ac8216fc3b7d71ebc07146f80079a4ef58b45cc5de5465885",
+    "query_v2_attempts": "8efe19bf2697ee85c9b613fc7c2c77f59d27bdf3f6f3f24a4db6431aebbe4829",
+    "ebay_v1_attempts": "221002420712dad0a90dbecbd6f1edde13741af74b555cbd237cd29dfbf257d3",
+    "ebay_us_v1_attempts": "b9542c6838200b5888fe9afaaac6cb8bb2e024282ac1e549bb09dc9e06915b35"
+  },
+  "files": {
+    "agent-scratch/ebay-us-retry-v1.rb": "70679febc491c20263d05d89befb36f7c1cae7f1b9c15df8ed87e480d5c1d6d8",
+    "agent-scratch/diagnostic-v1.rb": "e6bb2dfcd1d4d0fff0488abc538fa981eb70c0d6c57bf7e00a16fa2cd5484b4e",
+    "agent-scratch/ebay-v1.rb": "fdda5a051d3dab3534706e50171b8fb0f033ef280822a7d6b1dfe0cc5811a16c"
+  },
+  "purpose": "Distinguish a transient provider failure from a repeat failure. The longer diagnostic deadline does not change the application's 55-second target."
+}

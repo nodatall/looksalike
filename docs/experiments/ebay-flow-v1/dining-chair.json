@@ -1,0 +1,2098 @@
+{
+  "case_id": "dining-chair",
+  "manifest_sha256": "49427cda58d6263a0a2e6d32e6482a3074d65e939d63ddea1eb79d48dcd78ab6",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "cabinet",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 690.053
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 4909.77
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 2952.445
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/237069023143",
+        "thumbnail": "https://i.ebayimg.com/images/g/cpUAAeSw~CZqqQzB/s-l500.webp",
+        "sponsored": true,
+        "title": "Rolling Metal Tool Cabinet with Wheels & Hooks, Storage Locker for Home，Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$94.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/206389271679",
+        "thumbnail": "https://i.ebayimg.com/images/g/6TQAAeSw1XdqRqNT/s-l500.webp",
+        "sponsored": true,
+        "title": "TRUMPF Laser Automation Control Cabinet with Allen-Bradley PLC / I/O Components",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$9,995.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/158275015853",
+        "thumbnail": "https://i.ebayimg.com/images/g/584AAeSwNOpqoWyj/s-l500.webp",
+        "sponsored": true,
+        "title": "Justrite 25602 60 Gal Flammable Safety Cabinet w/ 2 Shelves Yellow",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/336182241896",
+        "thumbnail": "https://i.ebayimg.com/images/g/1VIAAeSw~adp3KyD/s-l500.webp",
+        "sponsored": true,
+        "title": "75\" Rolling Metal Garage Cabinet with Locking&Adjustable Shelves for Home/Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/366351877892",
+        "thumbnail": "https://i.ebayimg.com/images/g/DesAAeSwSeRp4crj/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Lockable Storage Cabinet, 16.5\" Deep Metal Garage Cabinets with 4 Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/237002227555",
+        "thumbnail": "https://i.ebayimg.com/images/g/itAAAeSwFz1qfOxV/s-l500.webp",
+        "sponsored": false,
+        "title": "47” Pantry Cabinet, Kitchen Pantry Storage Cabinet with Doors and Adjustable She",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.85"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/237004126215",
+        "thumbnail": "https://i.ebayimg.com/images/g/iL8AAeSwcJ1qmyad/s-l500.webp",
+        "sponsored": false,
+        "title": "Sterilite Storage Cabinet, Garage, Pantry, & Kitchen Organizer, 4 Shelves, Gray",
+        "subtitle": "FREE 1-3 DAY DELIVERY WITH HASSLE-FREE, 30-DAY RETURNS!",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$131.18"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/235097818175",
+        "thumbnail": "https://i.ebayimg.com/images/g/oKIAAOSwBPBljiZ9/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with Lock Tall Garage Cabinet with 2 Doors for Home Office",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$89.99",
+          "to": "$164.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/800679656104",
+        "thumbnail": "https://i.ebayimg.com/images/g/W3IAAeSwyD9qrPdM/s-l500.webp",
+        "sponsored": false,
+        "title": "71 Inch Tall Kitchen Pantry Cabinet Organizer Storage Cabinet with 2 Drawers USA",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/365925347784",
+        "thumbnail": "https://i.ebayimg.com/images/g/Zi4AAeSwgEBo8JRY/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Wall Cabinet, Garage Wall Cabinets With Doors, Locking Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$71.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/235006566020",
+        "thumbnail": "https://i.ebayimg.com/images/g/xLgAAOSwNP9lpy76/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Storage Cabinet with 4 Adjustable Shelves 2 Locking Door for Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$129.99",
+          "to": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/235737486651",
+        "thumbnail": "https://i.ebayimg.com/images/g/PiEAAeSw5Jpp4e7j/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with long handle ,71 Garage Storage Cabinet with Lock",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/307176562875",
+        "thumbnail": "https://i.ebayimg.com/images/g/YlgAAeSw4jxqpkvZ/s-l500.webp",
+        "sponsored": false,
+        "title": "IRIS 9-Drawer Narrow Plastic Storage Drawer Cart with Organizer Top, White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$81.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/406740286148",
+        "thumbnail": "https://i.ebayimg.com/images/g/QYsAAeSwykppqcSK/s-l500.webp",
+        "sponsored": true,
+        "title": "Arden Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$137.84",
+          "to": "$177.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/135473432632",
+        "thumbnail": "https://i.ebayimg.com/images/g/guIAAOSw-s1ncuxO/s-l500.webp",
+        "sponsored": true,
+        "title": "FireKing Turtle Series - Space Saving Vertical File Cabinet - 1-Hour Fire Rated",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/365937447092",
+        "thumbnail": "https://i.ebayimg.com/images/g/EQQAAeSwK19o-JzS/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Locking Cabinet, Garage Wall Cabinet, Steel Storage with Doors and Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$53.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/336803713620",
+        "thumbnail": "https://i.ebayimg.com/images/g/4OAAAeSwVCxqr89O/s-l500.webp",
+        "sponsored": false,
+        "title": "Convenience Concepts Xtra Storage 3-Door Cabinet, Cherry, 16.5\" 3-Door, Cherry",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$85.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/206341382683",
+        "thumbnail": "https://i.ebayimg.com/images/g/MpsAAeSwvkJqK9zT/s-l500.webp",
+        "sponsored": false,
+        "title": "2/3/4/5/6-Tier Foldable Home Storage Cabinet with Magnetic Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$17.95",
+          "to": "$39.36"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/376505882134",
+        "thumbnail": "https://i.ebayimg.com/images/g/abwAAeSw~49orC3k/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 30-Inch Metal Wall Cabinet with Adjustable Shelf for Garage Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$89.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/318803729387",
+        "thumbnail": "https://i.ebayimg.com/images/g/9-kAAeSwpN5qlUG8/s-l500.webp",
+        "sponsored": false,
+        "title": "15 Slot Watch Storage Box Organizer Case Portable watch Display Cabinet Holder",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$15.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/375974781607",
+        "thumbnail": "https://i.ebayimg.com/images/g/PYoAAeSwNdtqoAAN/s-l500.webp",
+        "sponsored": false,
+        "title": "HOMCOM 5-Tier Glass Display Cabinet with 4 Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$67.99",
+          "to": "$75.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/377296756431",
+        "thumbnail": "https://i.ebayimg.com/images/g/mn0AAeSwwQVqPjm3/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 30-Inch Wall-Mounted Metal Cabinet with Adjustable Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/335300494241",
+        "thumbnail": "https://i.ebayimg.com/images/g/I14AAOSw-5dl8SM4/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Cabinet 5 Adjustable Shelves 71H Garage Storage Cabinet with Locking Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$144.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/235373524001",
+        "thumbnail": "https://i.ebayimg.com/images/g/2G4AAeSwkuFp4KFg/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with 2 Doors 5 Shelves,72 Garage Storage Cabinet with Lock",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$174.99",
+          "to": "$184.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/318819217863",
+        "thumbnail": "https://i.ebayimg.com/images/g/LSQAAeSwKVhqmTST/s-l500.webp",
+        "sponsored": false,
+        "title": "3Tier Over The Toilet Storage Rack Cabinet Organizer Shelf No Drill Freestanding",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$18.73"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/366617191726",
+        "thumbnail": "https://i.ebayimg.com/images/g/VK0AAeSwVZ5qhRqJ/s-l500.webp",
+        "sponsored": false,
+        "title": "🍂63\" Kitchen Pantry Cabinet w/Drawers, Hutch Storage Cabinet Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/366573763556",
+        "thumbnail": "https://i.ebayimg.com/images/g/7ckAAeSwS~Jqarp3/s-l500.webp",
+        "sponsored": false,
+        "title": "71\"H Rolling Metal Storage Cabinet Lockable Garage & Office Cabinet with Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/278356919463",
+        "thumbnail": "https://i.ebayimg.com/images/g/XhMAAeSwIcBqoHPd/s-l500.webp",
+        "sponsored": true,
+        "title": "Landa SEA4-30024C, Stainless Steel Cabinet Pressure Washer #1.106-508.2",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,945.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/267756354961",
+        "thumbnail": "https://i.ebayimg.com/images/g/bRAAAeSwuKZqfiBN/s-l500.webp",
+        "sponsored": true,
+        "title": "Master-Bilt DC-10DSE 67\" Stainless Steel Ice Cream Dipping Cabinet",
+        "subtitle": null,
+        "condition": "New – Open box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226959369810",
+        "thumbnail": "https://i.ebayimg.com/images/g/CBoAAeSwTbZqsAZb/s-l500.webp",
+        "sponsored": true,
+        "title": "Durham Mfg 005-95 Prime Cold Rolled Steel, Drawer Bin Cabinet, 12 1/4 In D X 11",
+        "subtitle": "Free Shipping on orders over $100",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$185.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/287258506916",
+        "thumbnail": "https://i.ebayimg.com/images/g/SGMAAeSwv-Rp1N1W/s-l500.webp",
+        "sponsored": true,
+        "title": "Backwoods Cabinetry Shaker Replacement Kitchen | Bathroom Doors and Drawers",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$33.38",
+          "to": "$65.43"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/176921311213",
+        "thumbnail": "https://i.ebayimg.com/images/g/haYAAeSwpPBo90v3/s-l500.webp",
+        "sponsored": false,
+        "title": "Wall Mounted Metal Storage Cabinet Garage Kitchen Wall Cabinet with Flip-Up Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$59.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/326126872258",
+        "thumbnail": "https://i.ebayimg.com/images/g/5iQAAOSwIXJmS1Nu/s-l500.webp",
+        "sponsored": false,
+        "title": "White Shaker RTA Wall Cabinet - Solid Wood, Soft-Close Multiple Sizes Available",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$129.99",
+          "to": "$349.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/203292753513",
+        "thumbnail": "https://i.ebayimg.com/images/g/VNIAAOSw4ehnF0pm/s-l500.webp",
+        "sponsored": false,
+        "title": "Bathroom Wall Cabinet Over Toilet Storage Medicine Cabinet w/2 Doors and Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/257390147149",
+        "thumbnail": "https://i.ebayimg.com/images/g/NwUAAeSw6HNpp6-h/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Metal Storage Cabinet 180 lbs 70.87\" Garage Cabinet Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$215.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/365948311051",
+        "thumbnail": "https://i.ebayimg.com/images/g/168AAeSwvilpAC6z/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Wall Cabinet,Wall Mounted Metal Storage Cabinet for Kitchen, Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$71.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/318848005310",
+        "thumbnail": "https://i.ebayimg.com/images/g/5s8AAeSw5fpqoUYF/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Glass Display Case with Adjustable Shelves, 6-Tier Curio Cabinet with Lights",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$185.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/197951136660",
+        "thumbnail": "https://i.ebayimg.com/images/g/vgEAAeSwQBBpQJaF/s-l500.webp",
+        "sponsored": true,
+        "title": "Valcucine Kitchen Cabinets San Diego Genius Loci w/ New Logica System La Jolla",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49,950.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/397911047634",
+        "thumbnail": "https://i.ebayimg.com/images/g/nAUAAeSwLGBp-LOg/s-l500.webp",
+        "sponsored": true,
+        "title": "solid wood desks home office furniture",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/376524667047",
+        "thumbnail": "https://i.ebayimg.com/images/g/iaMAAeSwGFlqO6Pc/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Metal Wall Storage Cabinet with Flip-Up Door and 120 lbs Shelf Capacity",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$57.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/364615672911",
+        "thumbnail": "https://i.ebayimg.com/images/g/D3YAAeSwLxVqISFV/s-l500.webp",
+        "sponsored": false,
+        "title": "Classic Style Modern Storage Cabinet Free-Standing Storge Shelf For Living Room",
+        "subtitle": "📌Deal 📌Double Layer Green 💲349.99🔥Hurry up❗",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$139.99",
+          "to": "$1,039.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/365937403488",
+        "thumbnail": "https://i.ebayimg.com/images/g/xQ8AAeSwF1lo-JOY/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Wall Cabinets, Wall Mount Storage Cabinet with Doors and Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$82.99",
+          "to": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/178485280455",
+        "thumbnail": "https://i.ebayimg.com/images/g/5OoAAeSw7v5qokbb/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Pantry Cabinet w/ 2 Doors & Adjustable Shelves,46\" Kitchen Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/195823146044",
+        "thumbnail": "https://i.ebayimg.com/images/g/~CgAAOSwOCFkirim/s-l500.webp",
+        "sponsored": false,
+        "title": "Bathroom Floor Cabinet Freestanding Storage Cabinet with 4 Drawer for Home White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$67.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/235391736421",
+        "thumbnail": "https://i.ebayimg.com/images/g/st4AAOSw8IBlqIRS/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with 2 Adjustable Shelves and Locking Doors,Garage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$89.99",
+          "to": "$94.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/303882475465",
+        "thumbnail": "https://i.ebayimg.com/images/g/qokAAeSwvnlqDHxz/s-l500.webp",
+        "sponsored": false,
+        "title": "Admiral Tubular Cam Lock Keyed Alike 5/8 1 1-1/8 RV Cabinet Drawer ToolBox Desk",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$9.99",
+          "to": "$10.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/318301472468",
+        "thumbnail": "https://i.ebayimg.com/images/g/QQkAAeSwrURp-H4b/s-l500.webp",
+        "sponsored": false,
+        "title": "BROTTAR 4-Tier Corner Display Cabinet Curio Cabinet with Doors, 3-Color Lights",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$185.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/157900745989",
+        "thumbnail": "https://i.ebayimg.com/images/g/YssAAeSwHpNqAUUp/s-l500.webp",
+        "sponsored": false,
+        "title": "36\" Wide Large Duty Metal Cabinet, Adjustable Shelves for Kitchen, Pantry, Garag",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.36"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/267496178072",
+        "thumbnail": "https://i.ebayimg.com/images/g/e~AAAeSwDExpLIW3/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Laundry Room Wall Cabinet 2-Tier Cupboard Storage 54 in with 3 Doors White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$131.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/167549853927",
+        "thumbnail": "https://i.ebayimg.com/images/g/f9cAAOSw5fBoB0TZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Wall Mounted Metal Lockable Storage Cabinet Garage Wall Cabinet Tool Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$74.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/287517971991",
+        "thumbnail": "https://i.ebayimg.com/images/g/epMAAeSwB7tqerBK/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Locker Storage Cabinet with 1 Doors，Black,34.5\"*15.75\"*13.78\"",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$75.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/167169909510",
+        "thumbnail": "https://i.ebayimg.com/images/g/asEAAOSwudJnWldN/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Storage Cabinet with Wheels,Rolling Cabinet with 4 Doors for Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/389279876404",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ZkAAeSwysppJBzK/s-l500.webp",
+        "sponsored": false,
+        "title": "24\" x 30\" LED Light Medicine Cabinet Wall Mounted Mirror Cabinet with Sockets",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$119.96"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/157768798458",
+        "thumbnail": "https://i.ebayimg.com/images/g/tzoAAeSwUbhp5dVT/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Glass Display Cabinet with RGB Lights, Tall Figure Display Case with Lock",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/377296230474",
+        "thumbnail": "https://i.ebayimg.com/images/g/cQAAAeSwmqxqPdcD/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Metal Wall Storage Cabinet with Flip-Up Door and 120 lbs Shelf Capacity",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$56.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/318854162443",
+        "thumbnail": "https://i.ebayimg.com/images/g/OOUAAeSwlZFqow25/s-l500.webp",
+        "sponsored": false,
+        "title": "8 Slot Watch Storage Box Organizer Case Portable watch Display Cabinet Holder",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$11.70"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/336496938964",
+        "thumbnail": "https://i.ebayimg.com/images/g/fokAAeSweh9pwgLY/s-l500.webp",
+        "sponsored": false,
+        "title": "69''H Metal Kitchen Pantry Cabinet with Doors and Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/236955142163",
+        "thumbnail": "https://i.ebayimg.com/images/g/sB0AAeSw-~pqYIZQ/s-l500.webp",
+        "sponsored": true,
+        "title": "75\" Rolling Metal Garage Cabinet with Locking&Adjustable Shelves for Garage/Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/237069023143",
+        "thumbnail": "https://i.ebayimg.com/images/g/cpUAAeSw~CZqqQzB/s-l500.webp",
+        "sponsored": true,
+        "title": "Rolling Metal Tool Cabinet with Wheels & Hooks, Storage Locker for Home，Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$94.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/206389271679",
+        "thumbnail": "https://i.ebayimg.com/images/g/6TQAAeSw1XdqRqNT/s-l500.webp",
+        "sponsored": true,
+        "title": "TRUMPF Laser Automation Control Cabinet with Allen-Bradley PLC / I/O Components",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$9,995.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/158275015853",
+        "thumbnail": "https://i.ebayimg.com/images/g/584AAeSwNOpqoWyj/s-l500.webp",
+        "sponsored": true,
+        "title": "Justrite 25602 60 Gal Flammable Safety Cabinet w/ 2 Shelves Yellow",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/336182241896",
+        "thumbnail": "https://i.ebayimg.com/images/g/1VIAAeSw~adp3KyD/s-l500.webp",
+        "sponsored": true,
+        "title": "75\" Rolling Metal Garage Cabinet with Locking&Adjustable Shelves for Home/Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/366351877892",
+        "thumbnail": "https://i.ebayimg.com/images/g/DesAAeSwSeRp4crj/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Lockable Storage Cabinet, 16.5\" Deep Metal Garage Cabinets with 4 Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/237002227555",
+        "thumbnail": "https://i.ebayimg.com/images/g/itAAAeSwFz1qfOxV/s-l500.webp",
+        "sponsored": false,
+        "title": "47” Pantry Cabinet, Kitchen Pantry Storage Cabinet with Doors and Adjustable She",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.85"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6ab01d16fbbebb5f24f9c8a1",
+        "status": "Success",
+        "created_at": "2026-09-20 17:51:18 UTC",
+        "processed_at": "2026-09-20 17:51:18 UTC",
+        "total_time_taken": 4.57
+      },
+      "ebay": {
+        "id": "6ab01d1b6f1e40488bfd5509",
+        "status": "Success",
+        "created_at": "2026-09-20 17:51:23 UTC",
+        "processed_at": "2026-09-20 17:51:23 UTC",
+        "total_time_taken": 2.61
+      }
+    },
+    "interpretation": "cabinet",
+    "query_source": "visual_match_titles",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Restoration & Finishing — Kramer Furniture and Cabinet ...",
+        "Modern Chairs, Back Style: Tight Back at ₹ 1000 in Noida ...",
+        "Connie Clark, Author at Collegeville Institute",
+        "Understanding and using pronouns: 'he' and 'she' Share books ...",
+        "Blog 3 — Husick Psychology",
+        "Senior Advisory Commission — City of Rogers, MN",
+        "American Fancy Sheraton Painted Chair with Rush Seat Mustard ...",
+        "Case Studies | openLCA.org"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "cabinet",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 58,
+      "not_explicit_us": 2
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/237069023143",
+        "thumbnail": "https://i.ebayimg.com/images/g/cpUAAeSw~CZqqQzB/s-l500.webp",
+        "sponsored": true,
+        "title": "Rolling Metal Tool Cabinet with Wheels & Hooks, Storage Locker for Home，Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$94.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/206389271679",
+        "thumbnail": "https://i.ebayimg.com/images/g/6TQAAeSw1XdqRqNT/s-l500.webp",
+        "sponsored": true,
+        "title": "TRUMPF Laser Automation Control Cabinet with Allen-Bradley PLC / I/O Components",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$9,995.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/158275015853",
+        "thumbnail": "https://i.ebayimg.com/images/g/584AAeSwNOpqoWyj/s-l500.webp",
+        "sponsored": true,
+        "title": "Justrite 25602 60 Gal Flammable Safety Cabinet w/ 2 Shelves Yellow",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/336182241896",
+        "thumbnail": "https://i.ebayimg.com/images/g/1VIAAeSw~adp3KyD/s-l500.webp",
+        "sponsored": true,
+        "title": "75\" Rolling Metal Garage Cabinet with Locking&Adjustable Shelves for Home/Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/366351877892",
+        "thumbnail": "https://i.ebayimg.com/images/g/DesAAeSwSeRp4crj/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Lockable Storage Cabinet, 16.5\" Deep Metal Garage Cabinets with 4 Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/237002227555",
+        "thumbnail": "https://i.ebayimg.com/images/g/itAAAeSwFz1qfOxV/s-l500.webp",
+        "sponsored": false,
+        "title": "47” Pantry Cabinet, Kitchen Pantry Storage Cabinet with Doors and Adjustable She",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.85"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/237004126215",
+        "thumbnail": "https://i.ebayimg.com/images/g/iL8AAeSwcJ1qmyad/s-l500.webp",
+        "sponsored": false,
+        "title": "Sterilite Storage Cabinet, Garage, Pantry, & Kitchen Organizer, 4 Shelves, Gray",
+        "subtitle": "FREE 1-3 DAY DELIVERY WITH HASSLE-FREE, 30-DAY RETURNS!",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$131.18"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/235097818175",
+        "thumbnail": "https://i.ebayimg.com/images/g/oKIAAOSwBPBljiZ9/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with Lock Tall Garage Cabinet with 2 Doors for Home Office",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$89.99",
+          "to": "$164.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/800679656104",
+        "thumbnail": "https://i.ebayimg.com/images/g/W3IAAeSwyD9qrPdM/s-l500.webp",
+        "sponsored": false,
+        "title": "71 Inch Tall Kitchen Pantry Cabinet Organizer Storage Cabinet with 2 Drawers USA",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/365925347784",
+        "thumbnail": "https://i.ebayimg.com/images/g/Zi4AAeSwgEBo8JRY/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Wall Cabinet, Garage Wall Cabinets With Doors, Locking Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$71.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/235006566020",
+        "thumbnail": "https://i.ebayimg.com/images/g/xLgAAOSwNP9lpy76/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Storage Cabinet with 4 Adjustable Shelves 2 Locking Door for Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$129.99",
+          "to": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/235737486651",
+        "thumbnail": "https://i.ebayimg.com/images/g/PiEAAeSw5Jpp4e7j/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with long handle ,71 Garage Storage Cabinet with Lock",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/307176562875",
+        "thumbnail": "https://i.ebayimg.com/images/g/YlgAAeSw4jxqpkvZ/s-l500.webp",
+        "sponsored": false,
+        "title": "IRIS 9-Drawer Narrow Plastic Storage Drawer Cart with Organizer Top, White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$81.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/406740286148",
+        "thumbnail": "https://i.ebayimg.com/images/g/QYsAAeSwykppqcSK/s-l500.webp",
+        "sponsored": true,
+        "title": "Arden Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$137.84",
+          "to": "$177.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/135473432632",
+        "thumbnail": "https://i.ebayimg.com/images/g/guIAAOSw-s1ncuxO/s-l500.webp",
+        "sponsored": true,
+        "title": "FireKing Turtle Series - Space Saving Vertical File Cabinet - 1-Hour Fire Rated",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/158098917016",
+        "thumbnail": "https://i.ebayimg.com/images/g/RUsAAeSwARVqXM2s/s-l500.webp",
+        "sponsored": true,
+        "title": "Display Cabinet - Black High Gloss Modern sideboard Cabinet - TV unit",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United Kingdom",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$160.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/365937447092",
+        "thumbnail": "https://i.ebayimg.com/images/g/EQQAAeSwK19o-JzS/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Locking Cabinet, Garage Wall Cabinet, Steel Storage with Doors and Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$53.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/336803713620",
+        "thumbnail": "https://i.ebayimg.com/images/g/4OAAAeSwVCxqr89O/s-l500.webp",
+        "sponsored": false,
+        "title": "Convenience Concepts Xtra Storage 3-Door Cabinet, Cherry, 16.5\" 3-Door, Cherry",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$85.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/206341382683",
+        "thumbnail": "https://i.ebayimg.com/images/g/MpsAAeSwvkJqK9zT/s-l500.webp",
+        "sponsored": false,
+        "title": "2/3/4/5/6-Tier Foldable Home Storage Cabinet with Magnetic Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$17.95",
+          "to": "$39.36"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/376505882134",
+        "thumbnail": "https://i.ebayimg.com/images/g/abwAAeSw~49orC3k/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 30-Inch Metal Wall Cabinet with Adjustable Shelf for Garage Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$89.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/318803729387",
+        "thumbnail": "https://i.ebayimg.com/images/g/9-kAAeSwpN5qlUG8/s-l500.webp",
+        "sponsored": false,
+        "title": "15 Slot Watch Storage Box Organizer Case Portable watch Display Cabinet Holder",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$15.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/375974781607",
+        "thumbnail": "https://i.ebayimg.com/images/g/PYoAAeSwNdtqoAAN/s-l500.webp",
+        "sponsored": false,
+        "title": "HOMCOM 5-Tier Glass Display Cabinet with 4 Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$67.99",
+          "to": "$75.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/377296756431",
+        "thumbnail": "https://i.ebayimg.com/images/g/mn0AAeSwwQVqPjm3/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 30-Inch Wall-Mounted Metal Cabinet with Adjustable Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/335300494241",
+        "thumbnail": "https://i.ebayimg.com/images/g/I14AAOSw-5dl8SM4/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Cabinet 5 Adjustable Shelves 71H Garage Storage Cabinet with Locking Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$144.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/235373524001",
+        "thumbnail": "https://i.ebayimg.com/images/g/2G4AAeSwkuFp4KFg/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with 2 Doors 5 Shelves,72 Garage Storage Cabinet with Lock",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$174.99",
+          "to": "$184.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/318819217863",
+        "thumbnail": "https://i.ebayimg.com/images/g/LSQAAeSwKVhqmTST/s-l500.webp",
+        "sponsored": false,
+        "title": "3Tier Over The Toilet Storage Rack Cabinet Organizer Shelf No Drill Freestanding",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$18.73"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/366617191726",
+        "thumbnail": "https://i.ebayimg.com/images/g/VK0AAeSwVZ5qhRqJ/s-l500.webp",
+        "sponsored": false,
+        "title": "🍂63\" Kitchen Pantry Cabinet w/Drawers, Hutch Storage Cabinet Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/366573763556",
+        "thumbnail": "https://i.ebayimg.com/images/g/7ckAAeSwS~Jqarp3/s-l500.webp",
+        "sponsored": false,
+        "title": "71\"H Rolling Metal Storage Cabinet Lockable Garage & Office Cabinet with Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/278356919463",
+        "thumbnail": "https://i.ebayimg.com/images/g/XhMAAeSwIcBqoHPd/s-l500.webp",
+        "sponsored": true,
+        "title": "Landa SEA4-30024C, Stainless Steel Cabinet Pressure Washer #1.106-508.2",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,945.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/267756354961",
+        "thumbnail": "https://i.ebayimg.com/images/g/bRAAAeSwuKZqfiBN/s-l500.webp",
+        "sponsored": true,
+        "title": "Master-Bilt DC-10DSE 67\" Stainless Steel Ice Cream Dipping Cabinet",
+        "subtitle": null,
+        "condition": "New – Open box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226959369810",
+        "thumbnail": "https://i.ebayimg.com/images/g/CBoAAeSwTbZqsAZb/s-l500.webp",
+        "sponsored": true,
+        "title": "Durham Mfg 005-95 Prime Cold Rolled Steel, Drawer Bin Cabinet, 12 1/4 In D X 11",
+        "subtitle": "Free Shipping on orders over $100",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$185.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/287258506916",
+        "thumbnail": "https://i.ebayimg.com/images/g/SGMAAeSwv-Rp1N1W/s-l500.webp",
+        "sponsored": true,
+        "title": "Backwoods Cabinetry Shaker Replacement Kitchen | Bathroom Doors and Drawers",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$33.38",
+          "to": "$65.43"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/176921311213",
+        "thumbnail": "https://i.ebayimg.com/images/g/haYAAeSwpPBo90v3/s-l500.webp",
+        "sponsored": false,
+        "title": "Wall Mounted Metal Storage Cabinet Garage Kitchen Wall Cabinet with Flip-Up Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$59.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/326126872258",
+        "thumbnail": "https://i.ebayimg.com/images/g/5iQAAOSwIXJmS1Nu/s-l500.webp",
+        "sponsored": false,
+        "title": "White Shaker RTA Wall Cabinet - Solid Wood, Soft-Close Multiple Sizes Available",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$129.99",
+          "to": "$349.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/203292753513",
+        "thumbnail": "https://i.ebayimg.com/images/g/VNIAAOSw4ehnF0pm/s-l500.webp",
+        "sponsored": false,
+        "title": "Bathroom Wall Cabinet Over Toilet Storage Medicine Cabinet w/2 Doors and Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/257390147149",
+        "thumbnail": "https://i.ebayimg.com/images/g/NwUAAeSw6HNpp6-h/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Metal Storage Cabinet 180 lbs 70.87\" Garage Cabinet Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$215.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/365948311051",
+        "thumbnail": "https://i.ebayimg.com/images/g/168AAeSwvilpAC6z/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Wall Cabinet,Wall Mounted Metal Storage Cabinet for Kitchen, Garage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$71.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/318848005310",
+        "thumbnail": "https://i.ebayimg.com/images/g/5s8AAeSw5fpqoUYF/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Glass Display Case with Adjustable Shelves, 6-Tier Curio Cabinet with Lights",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$185.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/197951136660",
+        "thumbnail": "https://i.ebayimg.com/images/g/vgEAAeSwQBBpQJaF/s-l500.webp",
+        "sponsored": true,
+        "title": "Valcucine Kitchen Cabinets San Diego Genius Loci w/ New Logica System La Jolla",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49,950.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/397911047634",
+        "thumbnail": "https://i.ebayimg.com/images/g/nAUAAeSwLGBp-LOg/s-l500.webp",
+        "sponsored": true,
+        "title": "solid wood desks home office furniture",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/376524667047",
+        "thumbnail": "https://i.ebayimg.com/images/g/iaMAAeSwGFlqO6Pc/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Metal Wall Storage Cabinet with Flip-Up Door and 120 lbs Shelf Capacity",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$57.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/364615672911",
+        "thumbnail": "https://i.ebayimg.com/images/g/D3YAAeSwLxVqISFV/s-l500.webp",
+        "sponsored": false,
+        "title": "Classic Style Modern Storage Cabinet Free-Standing Storge Shelf For Living Room",
+        "subtitle": "📌Deal 📌Double Layer Green 💲349.99🔥Hurry up❗",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$139.99",
+          "to": "$1,039.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/365937403488",
+        "thumbnail": "https://i.ebayimg.com/images/g/xQ8AAeSwF1lo-JOY/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Wall Cabinets, Wall Mount Storage Cabinet with Doors and Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$82.99",
+          "to": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/178485280455",
+        "thumbnail": "https://i.ebayimg.com/images/g/5OoAAeSw7v5qokbb/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Pantry Cabinet w/ 2 Doors & Adjustable Shelves,46\" Kitchen Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/195823146044",
+        "thumbnail": "https://i.ebayimg.com/images/g/~CgAAOSwOCFkirim/s-l500.webp",
+        "sponsored": false,
+        "title": "Bathroom Floor Cabinet Freestanding Storage Cabinet with 4 Drawer for Home White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$67.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/235391736421",
+        "thumbnail": "https://i.ebayimg.com/images/g/st4AAOSw8IBlqIRS/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Storage Cabinet with 2 Adjustable Shelves and Locking Doors,Garage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$89.99",
+          "to": "$94.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/303882475465",
+        "thumbnail": "https://i.ebayimg.com/images/g/qokAAeSwvnlqDHxz/s-l500.webp",
+        "sponsored": false,
+        "title": "Admiral Tubular Cam Lock Keyed Alike 5/8 1 1-1/8 RV Cabinet Drawer ToolBox Desk",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$9.99",
+          "to": "$10.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/318301472468",
+        "thumbnail": "https://i.ebayimg.com/images/g/QQkAAeSwrURp-H4b/s-l500.webp",
+        "sponsored": false,
+        "title": "BROTTAR 4-Tier Corner Display Cabinet Curio Cabinet with Doors, 3-Color Lights",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$185.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/157900745989",
+        "thumbnail": "https://i.ebayimg.com/images/g/YssAAeSwHpNqAUUp/s-l500.webp",
+        "sponsored": false,
+        "title": "36\" Wide Large Duty Metal Cabinet, Adjustable Shelves for Kitchen, Pantry, Garag",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.36"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/267496178072",
+        "thumbnail": "https://i.ebayimg.com/images/g/e~AAAeSwDExpLIW3/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Laundry Room Wall Cabinet 2-Tier Cupboard Storage 54 in with 3 Doors White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$131.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/167549853927",
+        "thumbnail": "https://i.ebayimg.com/images/g/f9cAAOSw5fBoB0TZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Wall Mounted Metal Lockable Storage Cabinet Garage Wall Cabinet Tool Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$74.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/287517971991",
+        "thumbnail": "https://i.ebayimg.com/images/g/epMAAeSwB7tqerBK/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Locker Storage Cabinet with 1 Doors，Black,34.5\"*15.75\"*13.78\"",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$75.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/167169909510",
+        "thumbnail": "https://i.ebayimg.com/images/g/asEAAOSwudJnWldN/s-l500.webp",
+        "sponsored": false,
+        "title": "Metal Garage Storage Cabinet with Wheels,Rolling Cabinet with 4 Doors for Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/389279876404",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ZkAAeSwysppJBzK/s-l500.webp",
+        "sponsored": false,
+        "title": "24\" x 30\" LED Light Medicine Cabinet Wall Mounted Mirror Cabinet with Sockets",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$119.96"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/157768798458",
+        "thumbnail": "https://i.ebayimg.com/images/g/tzoAAeSwUbhp5dVT/s-l500.webp",
+        "sponsored": false,
+        "title": "71\" Glass Display Cabinet with RGB Lights, Tall Figure Display Case with Lock",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/377296230474",
+        "thumbnail": "https://i.ebayimg.com/images/g/cQAAAeSwmqxqPdcD/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Metal Wall Storage Cabinet with Flip-Up Door and 120 lbs Shelf Capacity",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$56.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/318854162443",
+        "thumbnail": "https://i.ebayimg.com/images/g/OOUAAeSwlZFqow25/s-l500.webp",
+        "sponsored": false,
+        "title": "8 Slot Watch Storage Box Organizer Case Portable watch Display Cabinet Holder",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$11.70"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/336496938964",
+        "thumbnail": "https://i.ebayimg.com/images/g/fokAAeSweh9pwgLY/s-l500.webp",
+        "sponsored": false,
+        "title": "69''H Metal Kitchen Pantry Cabinet with Doors and Adjustable Shelves",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/206528246973",
+        "thumbnail": "https://i.ebayimg.com/images/g/s64AAeSwSHBqlma4/s-l500.webp",
+        "sponsored": true,
+        "title": "9080 Pressure Sandblasting Cabinet Cartridge Filter Rotary Table Side Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$77.14"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/236955142163",
+        "thumbnail": "https://i.ebayimg.com/images/g/sB0AAeSw-~pqYIZQ/s-l500.webp",
+        "sponsored": true,
+        "title": "75\" Rolling Metal Garage Cabinet with Locking&Adjustable Shelves for Garage/Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 8586.86
+  }
+}
