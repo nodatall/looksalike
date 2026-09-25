@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo into up to six similar eBay listings located in the United States.
 
-The approved direction is nationwide eBay search, with no ZIP field or pickup-only restriction. Google Lens supplies a short phrase, then eBay returns listings. The [full-flow test](../docs/experiments/ebay-flow-v1/README.md) passed for both sofas but failed for the chair and coffee table. All four cases finished within 55 seconds. Testing stopped after two failures; the dresser is untested. The next proposed repair is to choose the furniture category supported by multiple Lens titles and preserve names such as “coffee table.” The app, mockup, and deployment remain pending until search quality passes. Earlier experiments and their scores remain unchanged.
+The approved direction is nationwide eBay search, with no ZIP field or pickup-only restriction. Google Lens supplies a short phrase, then eBay returns listings. The [full-flow test](../docs/experiments/ebay-flow-v1/README.md) passed for both sofas but failed for the chair and coffee table. All four cases finished within 55 seconds. Testing stopped after two failures; the dresser is untested. The approved repair is to choose the furniture category supported by multiple Lens titles and preserve names such as “coffee table.” The app, mockup, and deployment remain pending until search quality passes. Earlier experiments and their scores remain unchanged.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -94,7 +94,8 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Retry that exact request once with a 110-second diagnostic deadline. It returned HTTP 503 after 90.34 seconds, matching the original request's archived provider failure. Stop at fourteen combined attempts; keep the application's 55-second target unchanged.
 - [x] Run the approved test removing only `_salic=1`. It returned 60 listings in 2.12 seconds; 59 were explicitly US-located. Stop at fifteen combined attempts. This is a query test, not a full-flow or similarity pass.
 - [x] Freeze and run the five-photo Lens-to-eBay comparison, omitting the provider country filter and checking US location locally. Two sofas passed; the chair and coffee table failed. Stop after eight searches and four uploads, leaving the dresser untested.
-- [ ] Pass a fresh five-photo comparison after repairing phrase extraction. The proposed repair and failed cases are recorded in the [full-flow report](../docs/experiments/ebay-flow-v1/README.md); preserve the original scores.
+- [x] Repair phrase extraction using the approved voting rule and check saved Lens results without paid calls. Both sofa phrases stay unchanged; the chair and coffee table now keep the correct type.
+- [ ] Run a fresh five-photo comparison with the revised rule, using at most ten searches and five uploads. Keep the same pass criterion and stop after two failures. Preserve the original scores.
 - [ ] Package one successful nationwide eBay result as the dated example, including its reference photo and actual listing thumbnails with permission to reuse them.
 
 The preceding Craigslist comparison is historical. Its frozen inputs, two-failure stop rule, budget, scores, and completed tasks remain unchanged. The user has approved replacing that direction with nationwide eBay. For the new full-flow comparison, require at least four of five photos to return three relevant, distinct, accessible US-located listings among the first six, within 55 seconds. Stop after two failed photos. Record short-phrase probes separately; they cannot establish a full-flow pass.
@@ -192,14 +193,14 @@ The active flow has no ZIP lookup, geocoding, or Craigslist-area selection. Keep
 
 Use Google Lens with `type=all` to obtain suggestions and visual-match titles. Treat these as possible search terms, not guaranteed descriptions. [Lens API](https://serpapi.com/google-lens-api)
 
-The tested phrase rules below failed the full-flow quality check. The proposed repair is to use agreement across titles for category selection and preserve common compound types. Freeze and verify the revised rules before another scored batch.
+Approved phrase extraction repair:
 
-Tested phrase extraction:
+1. Read the first eight Lens result titles. Each title gives at most one vote to each recognized furniture type. Normalize names such as “couch” to “sofa.”
+2. Recognize complete types such as “coffee table” before matching their generic word “table.” A matched compound does not also vote for its generic word.
+3. Choose the unique type with the most votes, only if at least two titles support it. A tie or too little evidence returns weak recognition and skips the eBay request. Related suggestions cannot bypass this rule.
+4. Keep at most two familiar traits repeated in the titles supporting the selected type. Keep the existing trait order and synonym rules. Do not add another search to rescue a weak result.
 
-1. Use the first non-empty Lens related query containing a known furniture category.
-2. Otherwise, use the first category plus descriptive words repeated in at least two of the first eight visual-match titles.
-3. Keep a common furniture name and at most two useful traits. Normalize synonyms and remove duplicate words, marketing text, and incomplete terms such as “seater.”
-4. Return a weak-recognition outcome if there is no usable phrase. Do not automatically broaden the query and spend another call.
+Replay the saved responses offline before the fresh comparison. Freeze the revised policy, prepared photos, and filters under a new experiment identity before live calls. The September 25 approval covers this repair and a bounded comparison of at most ten searches and five uploads, subject to a fresh account check. Keep the two-failure stop, the 55-second deadline, and all earlier evidence unchanged.
 
 Pass the phrase as `_nkw` to `engine=ebay`, with `ebay_domain=ebay.com`. Omit `_salic`, `_stpos`, `show_only=LPickup`, and `LH_PrefLoc=Domestic`. The country-filtered request failed twice; removing only `_salic` succeeded. Enforce US location using the returned listing fields below. [Observed request comparison](../docs/experiments/ebay-no-country-v1/README.md)
 

@@ -25,14 +25,20 @@ class FurnitureSearchTest < ActiveSupport::TestCase
   end
 
   test "weak recognition never makes Images request" do
-    calls = 0
-    client = SerpApi::Client.new(api_key: "offline-key", transport: ->(uri:, **) do
-      calls += 1
-      [ 200, uri.path == "/image" ? '{"image_id":"ref"}' : '{"search_metadata":{"status":"Success"},"visual_matches":[]}' ]
-    end)
-    result = FurnitureSearch.new(client: client, accounting: ->(*) { }).call(photo: @photo, zip: "10001", route: "lens_then_images")
-    assert_equal "weak_recognition", result["status"]
-    assert_equal 2, calls
+    [ [], [ "chair" ], [ "chair", "chair", "table", "table" ] ].each do |titles|
+      calls = 0
+      reserved = []
+      client = SerpApi::Client.new(api_key: "offline-key", transport: ->(uri:, **) do
+        calls += 1
+        payload = { "search_metadata" => { "status" => "Success" }, "related_content" => [ { "query" => "oak chair" } ],
+          "visual_matches" => titles.map { |title| { "title" => title } } }
+        [ 200, uri.path == "/image" ? '{"image_id":"ref"}' : payload.to_json ]
+      end)
+      result = FurnitureSearch.new(client: client, accounting: ->(stage) { reserved << stage }).call(photo: @photo, zip: "10001", route: "lens_then_images")
+      assert_equal "weak_recognition", result["status"]
+      assert_equal 2, calls
+      assert_equal %w[upload lens], reserved
+    end
   end
 
   test "invalid ZIP, photo and expired deadline produce no requests or reservations" do
