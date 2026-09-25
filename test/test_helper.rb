@@ -2,6 +2,7 @@ abort "Tests require RAILS_ENV=test" if ENV["RAILS_ENV"] && ENV["RAILS_ENV"] != 
 ENV["RAILS_ENV"] = "test"
 ENV["DATABASE_URL"] = "sqlite3:#{File.expand_path("../storage/test.sqlite3", __dir__)}"
 ENV["SERPAPI_API_KEY"] = ""
+ENV["OPENAI_API_KEY"] = ""
 ENV["LIVE_SEARCH_ENABLED"] = "false"
 require_relative "../config/environment"
 expected_database = Rails.root.join("storage/test.sqlite3").to_s

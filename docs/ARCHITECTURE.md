@@ -8,6 +8,14 @@ This is the boundary contract for LooksAlike's Rails demonstration. A minimal Ra
 
 The current app has an ERB shell mounting one bundled React/Material UI entry screen, the Rails `/up` health endpoint, and SQLite databases under `storage/`. ZIP entry and local photo preparation/preview work; search and example actions remain disabled until feasibility is proven. Esbuild runs through jsbundling-rails during asset precompilation, with all browser dependencies and system fonts local. Planning documents and the standalone React/Material UI mockup remain separate. Intended runtime: one Rails web service on Railway, with an ERB page shell, a React/Material UI search screen, and SQLite under the mounted `/app/storage` directory. Build browser assets with esbuild through `jsbundling-rails`. Puma runs directly behind Railway HTTPS, with one worker and at least three threads; Thruster is omitted. The app handles one live furniture search at a time and returns up to six normalized listings from one US Craigslist area selected by ZIP code. No separate frontend, worker, or object-storage service is planned.
 
+## Photo fallback boundary
+
+The active plan now targets nationwide eBay with no ZIP or typed description. The Craigslist paths below describe the existing foundation and historical experiments; they do not define the new visitor flow.
+
+The server-only `Vision::Client` handles fixed OpenAI Responses requests. It owns authentication, bounded image requests, response parsing, redaction, and transport errors. The plain-Ruby `PhotoQuery` policy owns the fallback trigger and validates the structured answer; it makes no network calls. `EbayQueryPreparation` accepts the Lens response, prepared photo, injected vision client, shared deadline, and pre-dispatch reservation callback. The caller owns Lens and eBay calls and durable accounting. It calls vision at most once before eBay. Keep this outside the frozen Lens query-v3 policy and historical runners.
+
+Client, transport, query preparation, and policy checks use HTTP stubs and ordinary values. The new manual comparison must own a separate frozen manifest and durable vision-attempt records; normal tests make no paid calls. Public wiring, cache identity, usage caps, and explanation remain pending until quality passes. No generic provider framework or background job is needed.
+
 ## Module Map
 
 | Path / entrypoint | Responsibility | May depend on | Must not own |

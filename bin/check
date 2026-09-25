@@ -5,6 +5,7 @@ ENV["RAILS_ENV"] = "test"
 ENV["DATABASE_URL"] = "sqlite3:#{File.expand_path("../storage/test.sqlite3", __dir__)}"
 ENV["LIVE_SEARCH_ENABLED"] = "false"
 ENV["SERPAPI_API_KEY"] = ""
+ENV["OPENAI_API_KEY"] = ""
 
 checks = [
   [ "Ruby style", [ "bin/rubocop" ] ],
