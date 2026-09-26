@@ -6,11 +6,10 @@ class Vision::ClientTest < ActiveSupport::TestCase
   end
 
   def payload
-    { model: Vision::Client::MODEL, status: "completed", output: [
-      { type: "message", role: "assistant", status: "completed", content: [
-        { type: "output_text", text: { status: "recognized", category: "sofa", traits: [ "carved wood" ] }.to_json }
-      ] }
-    ], usage: { input_tokens: 123, output_tokens: 20, total_tokens: 143, private_field: "secret" } }
+    { model: Vision::Client::MODEL, choices: [
+      { finish_reason: "stop", message: { role: "assistant",
+        content: { status: "recognized", category: "sofa", traits: [ "carved wood" ] }.to_json } }
+    ], usage: { prompt_tokens: 123, completion_tokens: 20, total_tokens: 143, private_field: "secret" } }
   end
 
   def client(transport: nil, api_key: "offline-vision-key")
@@ -23,7 +22,7 @@ class Vision::ClientTest < ActiveSupport::TestCase
     instance.recognize(photo: bytes, deadline: deadline, before_dispatch: before_dispatch)
   end
 
-  test "fixed structured Responses request uses validated inline JPEG and records before dispatch" do
+  test "fixed structured Venice Chat Completions request uses validated inline JPEG and records before dispatch" do
     events = []
     request = stub_request(:post, Vision::Client::ENDPOINT).with do |req|
       events << :dispatch
@@ -31,19 +30,24 @@ class Vision::ClientTest < ActiveSupport::TestCase
       assert_equal "Bearer offline-vision-key", req.headers["Authorization"]
       assert_equal Vision::Client::MODEL, data["model"]
       assert_equal false, data["store"]
-      assert_equal 300, data["max_output_tokens"]
+      assert_equal 300, data["max_completion_tokens"]
+      assert_equal false, data["stream"]
+      assert_equal({ "include_venice_system_prompt" => false, "enable_web_search" => "off", "enable_web_scraping" => false }, data["venice_parameters"])
+      assert_equal %w[max_completion_tokens messages model response_format store stream venice_parameters], data.keys.sort
       refute data.key?("tools")
-      format = data.dig("text", "format")
+      assert_equal "json_schema", data.dig("response_format", "type")
+      format = data.dig("response_format", "json_schema")
       assert_equal true, format["strict"]
-      assert_equal "json_schema", format["type"]
       assert_equal false, format.dig("schema", "additionalProperties")
       assert_equal PhotoQuery::CATEGORIES + [ nil ], format.dig("schema", "properties", "category", "enum")
-      image = data.dig("input", 0, "content", 1)
-      assert_equal "auto", image["detail"]
-      assert_equal photo, Base64.strict_decode64(image["image_url"].delete_prefix("data:image/jpeg;base64,"))
+      assert_equal "user", data.dig("messages", 0, "role")
+      assert_equal "text", data.dig("messages", 0, "content", 0, "type")
+      image = data.dig("messages", 0, "content", 1)
+      assert_equal "image_url", image["type"]
+      assert_equal photo, Base64.strict_decode64(image.dig("image_url", "url").delete_prefix("data:image/jpeg;base64,"))
       true
     end.to_return(status: 200, body: payload.to_json)
-    result = recognize(before_dispatch: ->(metadata) { events << :reserve; assert_equal "0.02", metadata[:reserved_usd]; true })
+    result = recognize(before_dispatch: ->(metadata) { events << :reserve; assert_equal "0.03", metadata[:reserved_usd]; assert_equal "venice", metadata[:provider]; true })
     assert_equal [ :reserve, :dispatch ], events
     assert_equal "sofa", result.answer["category"]
     assert_equal({ "input_tokens" => 123, "output_tokens" => 20, "total_tokens" => 143 }, result.usage)
@@ -80,15 +84,36 @@ class Vision::ClientTest < ActiveSupport::TestCase
   test "rejects malformed incomplete refused or unexpected output shapes safely" do
     cases = [ [ "[]", :invalid_response ], [ "null", :invalid_response ], [ "bad-json", :invalid_response ],
       [ payload.merge(error: { message: "secret" }).to_json, :unavailable ],
-      [ payload.merge(status: "incomplete").to_json, :incomplete ],
-      [ payload.merge(status: "failed").to_json, :invalid_response ],
       [ payload.merge(model: "another-model").to_json, :invalid_response ],
-      [ payload.merge(output: []).to_json, :invalid_response ],
-      [ payload.merge(output: [ { type: "function_call", arguments: "secret" } ]).to_json, :invalid_response ] ]
-    [ { type: "refusal", refusal: "secret" }, { type: "output_text", text: "[]" }, { type: "output_text", text: "secret" } ].each do |content|
+      [ payload.merge(choices: []).to_json, :invalid_response ],
+      [ payload.merge(choices: payload[:choices] * 2).to_json, :invalid_response ],
+      [ payload.merge(choices: [ nil ]).to_json, :invalid_response ] ]
+    { "length" => :incomplete, "content_filter" => :refused, "tool_calls" => :invalid_response,
+      "unknown" => :invalid_response, nil => :invalid_response }.each do |reason, code|
       data = payload
-      data[:output][0][:content] = [ content ]
-      cases << [ data.to_json, content[:type] == "refusal" ? :refused : :invalid_response ]
+      data[:choices][0][:finish_reason] = reason
+      cases << [ data.to_json, code ]
+    end
+    [ [ { role: "assistant", refusal: "secret" }, :refused ],
+      [ { role: "assistant", content: "[]" }, :invalid_response ],
+      [ { role: "assistant", content: "secret" }, :invalid_response ],
+      [ { role: "assistant", content: [] }, :invalid_response ],
+      [ { role: "user", content: "{}" }, :invalid_response ],
+      [ { role: "assistant", content: "{}", tool_calls: [ { secret: "private" } ] }, :invalid_response ],
+      [ { role: "assistant", content: "{}", function_call: { name: "secret" } }, :invalid_response ] ].each do |message, code|
+      data = payload
+      data[:choices][0][:message] = message
+      cases << [ data.to_json, code ]
+    end
+    [ "secret", {}, false, [ { secret: "private" } ] ].each do |tool_calls|
+      data = payload
+      data[:choices][0][:message][:tool_calls] = tool_calls
+      cases << [ data.to_json, :invalid_response ]
+    end
+    [ "secret", {}, false, [] ].each do |function_call|
+      data = payload
+      data[:choices][0][:message][:function_call] = function_call
+      cases << [ data.to_json, :invalid_response ]
     end
     cases.each do |body, code|
       error = assert_raises(Vision::Client::Error) { recognize(client(transport: ->(**) { [ 200, body ] })) }
@@ -123,8 +148,13 @@ class Vision::ClientTest < ActiveSupport::TestCase
     assert_raises(SearchDeadline::Exceeded) do
       recognize(client(transport: ->(**) { flunk "no dispatch" }), deadline: deadline, before_dispatch: ->(_) { now = 16; true })
     end
-    data = payload.merge(usage: { input_tokens: "123", output_tokens: -1, total_tokens: 123 })
-    result = recognize(client(transport: ->(**) { [ 200, data.to_json ] }))
-    assert_equal({ "total_tokens" => 123 }, result.usage)
+    [ nil, [] ].each do |tool_calls|
+      data = payload.merge(usage: { prompt_tokens: "123", completion_tokens: -1, total_tokens: 123 })
+      data[:choices][0][:message][:tool_calls] = tool_calls
+      data[:choices][0][:message][:function_call] = nil
+      result = recognize(client(transport: ->(**) { [ 200, data.to_json ] }))
+      assert_equal "sofa", result.answer["category"]
+      assert_equal({ "total_tokens" => 123 }, result.usage)
+    end
   end
 end

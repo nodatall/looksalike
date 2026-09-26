@@ -41,7 +41,7 @@ class Vision::HttpTransportTest < ActiveSupport::TestCase
 
   def perform(connection, deadline: SearchDeadline.new, max_bytes: 100)
     transport = Vision::HttpTransport.new(http_factory: ->(*) { connection })
-    uri = URI("https://api.openai.com/v1/responses")
+    uri = URI("https://api.venice.ai/api/v1/chat/completions")
     transport.call(uri: uri, request: Net::HTTP::Post.new(uri), deadline: deadline, max_bytes: max_bytes)
   end
 

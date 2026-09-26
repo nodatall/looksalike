@@ -45,6 +45,7 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
       assert_equal "curved legs coffee table", result.query
       assert_equal "vision", result.source
       assert_equal Vision::Client::MODEL, result.metadata[:model]
+      assert_equal "venice", result.metadata[:provider]
       assert_equal [ "curved legs" ], result.metadata[:traits]
       assert_equal 1, client.calls
     end
@@ -85,9 +86,9 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
   test "real client composes with policy and preserves one recorded offline request" do
     reservations = []
     output = { status: "recognized", category: "dining chair", traits: [ "curved back", "wood" ] }
-    body = { model: Vision::Client::MODEL, status: "completed", output: [
-      { type: "message", role: "assistant", status: "completed", content: [ { type: "output_text", text: output.to_json } ] }
-    ], usage: { input_tokens: 123, output_tokens: 20, total_tokens: 143 } }
+    body = { model: Vision::Client::MODEL, choices: [
+      { finish_reason: "stop", message: { role: "assistant", content: output.to_json } }
+    ], usage: { prompt_tokens: 123, completion_tokens: 20, total_tokens: 143 } }
     request = stub_request(:post, Vision::Client::ENDPOINT).to_return(status: 200, body: body.to_json)
     result = EbayQueryPreparation.new(vision_client: Vision::Client.new(api_key: "offline-key")).call(
       lens_response: {}, photo: File.binread(Rails.root.join("test/fixtures/files/photo.jpg")),
@@ -96,9 +97,9 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
     assert_equal "ready", result.status
     assert_equal "curved back wood dining chair", result.query
     assert_equal 1, reservations.size
-    assert_equal "0.02", reservations.first[:reserved_usd]
+    assert_equal "0.03", reservations.first[:reserved_usd]
     assert_equal 143, result.metadata[:usage]["total_tokens"]
-    refute_match(/offline-key|base64|output_text/, result.inspect)
+    refute_match(/offline-key|base64|choices/, result.inspect)
     assert_requested request, times: 1
   end
 

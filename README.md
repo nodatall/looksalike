@@ -28,7 +28,7 @@ Open [localhost:3000](http://localhost:3000). The health check is `/up`. `bin/se
 
 During frontend development, run `npm run build -- --watch` in another terminal and reload the page after changes. Rails remains the only web server.
 
-Development and test load environment configuration through `dotenv-rails`. Copy `.env.example` to `.env.local` only if you do not already have that local file, and keep any key there. Set `SERPAPI_API_KEY` for Lens/eBay and `OPENAI_API_KEY` for the optional photo fallback. Never put either key in browser code or commit it. Normal checks do not need a key. The example lists current Rails settings and planned search limits; those limits are not wired yet. SQLite databases live under `storage/`. Production reads configuration from the host environment.
+Development and test load environment configuration through `dotenv-rails`. Copy `.env.example` to `.env.local` only if you do not already have that local file, and keep any key there. Set `SERPAPI_API_KEY` for Lens/eBay and `VENICE_API_KEY` for the optional photo fallback. Never put either key in browser code or commit it. Normal checks do not need a key. The example lists current Rails settings and planned search limits; those limits are not wired yet. SQLite databases live under `storage/`. Production reads configuration from the host environment.
 
 ## Browser assets
 
@@ -85,7 +85,7 @@ JPEG bytes may differ across browser encoder versions. Freeze the produced bytes
 
 Normal Ruby tests use WebMock with all external network access disabled. `npm test` exercises header, limit, compression-cap, cleanup, and cancellation rules. `bin/check` runs both JavaScript and Ruby tests. The fixture tool and manual UI probe additionally verify real browser encoding; fixture preparation makes no SerpApi calls.
 
-`EbayQueryPreparation` keeps a useful Lens phrase or requests one photo description through `Vision::Client`. `PhotoQuery` checks the structured description before making a phrase. The vision client uses a fixed OpenAI model, sends only a validated reduced JPEG, requires an attempt-reservation callback, and has no retries. It receives at most 15 seconds while preserving 10 seconds for the eBay request. These boundaries are tested with network stubs; the live comparison and durable vision ledger are still pending.
+`EbayQueryPreparation` keeps a useful Lens phrase or requests one photo description through `Vision::Client`. `PhotoQuery` checks the structured description before making a phrase. The vision client uses a fixed Venice model, sends only a validated reduced JPEG, requires an attempt-reservation callback, and has no retries. It receives at most 15 seconds while preserving 10 seconds for the eBay request. These boundaries are tested with network stubs; the live comparison and durable vision ledger are still pending.
 
 ## Frozen experiment preparation
 

@@ -5,11 +5,13 @@ require "uri"
 
 module Vision
   class Client
-    MODEL = "gpt-4.1-mini-2025-04-14".freeze
+    PROVIDER = "venice".freeze
+    MODEL = "qwen3-vl-235b-a22b".freeze
+    TRANSPORT_VERSION = "venice-chat-v1".freeze
     PROMPT_VERSION = "furniture-photo-v1".freeze
-    SCHEMA_VERSION = "furniture-photo-schema-v1".freeze
-    RESERVED_USD = "0.02".freeze
-    ENDPOINT = "https://api.openai.com/v1/responses".freeze
+    SCHEMA_VERSION = "furniture-photo-schema-v2".freeze
+    RESERVED_USD = "0.03".freeze
+    ENDPOINT = "https://api.venice.ai/api/v1/chat/completions".freeze
     MAX_RESPONSE_BYTES = 64_000
     PROMPT = <<~TEXT.freeze
       Identify the main furniture item in this photo for a resale search. Return one allowed category
@@ -55,7 +57,7 @@ module Vision
       end
     end
 
-    def initialize(api_key: ENV["OPENAI_API_KEY"], transport: HttpTransport.new)
+    def initialize(api_key: ENV["VENICE_API_KEY"], transport: HttpTransport.new)
       @api_key = api_key.to_s
       @transport = transport
     end
@@ -66,7 +68,7 @@ module Vision
     alias_method :to_s, :inspect
 
     def self.metadata
-      { model: MODEL, prompt_version: PROMPT_VERSION, schema_version: SCHEMA_VERSION, reserved_usd: RESERVED_USD }
+      { provider: PROVIDER, model: MODEL, transport_version: TRANSPORT_VERSION, prompt_version: PROMPT_VERSION, schema_version: SCHEMA_VERSION, reserved_usd: RESERVED_USD }
     end
 
     # The callback must durably reserve the attempt and return true before dispatch.
@@ -108,12 +110,13 @@ module Vision
         request["Authorization"] = "Bearer #{@api_key}"
         request["Content-Type"] = "application/json"
         request.body = JSON.generate({
-          model: MODEL, store: false, max_output_tokens: 300,
-          input: [ { role: "user", content: [
-            { type: "input_text", text: PROMPT },
-            { type: "input_image", image_url: "data:image/jpeg;base64,#{Base64.strict_encode64(bytes)}", detail: "auto" }
+          model: MODEL, stream: false, store: false, max_completion_tokens: 300,
+          messages: [ { role: "user", content: [
+            { type: "text", text: PROMPT },
+            { type: "image_url", image_url: { url: "data:image/jpeg;base64,#{Base64.strict_encode64(bytes)}" } }
           ] } ],
-          text: { format: { type: "json_schema", name: "furniture_photo", strict: true, schema: SCHEMA } }
+          response_format: { type: "json_schema", json_schema: { name: "furniture_photo", strict: true, schema: SCHEMA } },
+          venice_parameters: { include_venice_system_prompt: false, enable_web_search: "off", enable_web_scraping: false }
         })
         request
       end
@@ -122,26 +125,27 @@ module Vision
         data = JSON.parse(body)
         raise Error.new(:invalid_response) unless data.is_a?(Hash)
         raise Error.new(:unavailable) if data["error"]
-        raise Error.new(:incomplete) if data["status"] == "incomplete"
-        raise Error.new(:invalid_response) unless data["status"] == "completed" && data["model"] == MODEL
-        output = data["output"]
-        raise Error.new(:invalid_response) unless output.is_a?(Array) && output.one? && output.first.is_a?(Hash)
-        message = output.first
-        unless message["type"] == "message" && message["role"] == "assistant" && message["status"] == "completed"
-          raise Error.new(:invalid_response)
-        end
-        content = message["content"]
-        raise Error.new(:invalid_response) unless content.is_a?(Array) && content.one? && content.first.is_a?(Hash)
-        raise Error.new(:refused) if content.first["type"] == "refusal"
-        text = content.first["text"]
-        raise Error.new(:invalid_response) unless content.first["type"] == "output_text" && text.is_a?(String)
+        raise Error.new(:invalid_response) unless data["model"] == MODEL
+        choices = data["choices"]
+        raise Error.new(:invalid_response) unless choices.is_a?(Array) && choices.one? && choices.first.is_a?(Hash)
+        choice = choices.first
+        raise Error.new(:incomplete) if choice["finish_reason"] == "length"
+        raise Error.new(:refused) if choice["finish_reason"] == "content_filter"
+        raise Error.new(:invalid_response) unless choice["finish_reason"] == "stop"
+        message = choice["message"]
+        raise Error.new(:invalid_response) unless message.is_a?(Hash) && message["role"] == "assistant"
+        raise Error.new(:refused) if message["refusal"]
+        raise Error.new(:invalid_response) unless message["tool_calls"].nil? || message["tool_calls"] == []
+        raise Error.new(:invalid_response) unless message["function_call"].nil?
+        text = message["content"]
+        raise Error.new(:invalid_response) unless text.is_a?(String)
         answer = JSON.parse(text)
         raise Error.new(:invalid_response) unless answer.is_a?(Hash)
         usage = {}
         if data["usage"].is_a?(Hash)
-          %w[input_tokens output_tokens total_tokens].each do |key|
+          { "prompt_tokens" => "input_tokens", "completion_tokens" => "output_tokens", "total_tokens" => "total_tokens" }.each do |key, canonical|
             value = data["usage"][key]
-            usage[key] = value if value.is_a?(Integer) && value >= 0
+            usage[canonical] = value if value.is_a?(Integer) && value >= 0
           end
         end
         Result.new(answer: answer, usage: usage.freeze)
