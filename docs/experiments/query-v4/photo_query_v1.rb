@@ -2,7 +2,7 @@
 
 # Pure policy: neither photo bytes nor provider IO belong here.
 class PhotoQuery
-  TRIGGER_VERSION = "photo-fallback-v2"
+  TRIGGER_VERSION = "photo-fallback-v1"
   VERSION = "photo-phrase-v1"
   CATEGORIES = (SearchQuery::CATEGORIES + SearchQuery::COMPOUND_TYPES).freeze
   OPERATORS = %w[and or not site inurl intitle filetype allintext http https www].freeze
@@ -10,15 +10,7 @@ class PhotoQuery
   Result = Data.define(:status, :phrase, :category, :traits)
 
   def self.fallback?(lens_result)
-    !fallback_reason(lens_result).nil?
-  end
-
-  def self.fallback_reason(lens_result)
-    return "missing_phrase" if lens_result.phrase.nil?
-    return "bare_category" if lens_result.phrase == lens_result.category
-    concrete_traits = SearchQuery::TRAITS.values_at(:color, :material).flatten
-    return "no_concrete_trait" if (SearchQuery.query_tokens(lens_result.phrase) & concrete_traits).empty?
-    nil
+    lens_result.phrase.nil? || lens_result.phrase == lens_result.category
   end
 
   def self.call(answer)

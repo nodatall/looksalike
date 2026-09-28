@@ -1,0 +1,88 @@
+{
+  "ornate-sofa": {
+    "counts": {
+      "wrong_category": 18,
+      "different_item": 12,
+      "mixed_categories": 3,
+      "accessory_or_part": 4,
+      "miniature": 1,
+      "missing_furniture_type": 4,
+      "accepted": 18
+    },
+    "original_first_six": [
+      {
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "rejection": null
+      },
+      {
+        "title": "Vintage Baker Furniture Faux Bamboo Cane Console Server Sideboard Sofa Table",
+        "rejection": "wrong_category"
+      },
+      {
+        "title": "Hand-Knotted Floral 100% Silk Vegetable Dye Vintage Hereke Turkish Rug 3x5 Ft",
+        "rejection": "different_item"
+      },
+      {
+        "title": "Vintage Hand-Knotted Semi-Antique Keshan Area Rug | 9'7\" x 12'9\" | 100% Wool",
+        "rejection": "different_item"
+      },
+      {
+        "title": "Victorian Floral Fabric Upholstered Sofa Carved Wood Frame Camelback Rolled",
+        "rejection": null
+      },
+      {
+        "title": "Hollywood Regency Vintage Ornate Sectional",
+        "rejection": null
+      }
+    ],
+    "accepted_first_six": [
+      "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+      "Victorian Floral Fabric Upholstered Sofa Carved Wood Frame Camelback Rolled",
+      "Hollywood Regency Vintage Ornate Sectional",
+      "Ralph Lauren Henredon Chesterfield Tufted Leather Sofa Rare Vintage (Set of 2)",
+      "Vintage double sided Leather Chesterfield Sofa by ￼ Old Hickory Tannery",
+      "Victorian 3-Piece Sofa Set Floral Fabric Upholstery Beige Gold Wood Frame"
+    ]
+  },
+  "dining-chair": {
+    "counts": {
+      "accessory_or_part": 6,
+      "missing_furniture_type": 1,
+      "accepted": 49
+    },
+    "original_first_six": [
+      {
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "rejection": "accessory_or_part"
+      },
+      {
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "rejection": null
+      },
+      {
+        "title": "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+        "rejection": null
+      },
+      {
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "rejection": "accessory_or_part"
+      },
+      {
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "rejection": null
+      },
+      {
+        "title": "Dining Chair Wooden FAS Grade Oak Natural Wood Made In North America Dirt-free",
+        "rejection": null
+      }
+    ],
+    "accepted_first_six": [
+      "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+      "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+      "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+      "Dining Chair Wooden FAS Grade Oak Natural Wood Made In North America Dirt-free",
+      "Vintage Solid Wood Chair ￼",
+      "Rustic Walnut Side Chair"
+    ]
+  }
+}

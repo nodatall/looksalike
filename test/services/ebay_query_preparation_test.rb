@@ -28,11 +28,14 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
     assert_equal "ready", result.status
     assert_equal "wood coffee table", result.query
     assert_equal "lens", result.source
+    assert_equal "coffee table", result.category
+    assert_equal "coffee table", result.metadata[:category]
+    assert_nil result.metadata[:fallback_reason]
     assert_equal 0, client.calls
   end
 
   test "missing and bare category phrases make exactly one vision call with explicit recorder" do
-    [ {}, lens, lens("sofa") ].each do |lens_response|
+    [ {}, lens, lens("sofa"), lens("vintage sofa"), lens("antique chair"), lens("modern dresser"), lens("farmhouse table") ].each do |lens_response|
       callback = ->(_) { true }
       client = Client.new do |photo:, deadline:, before_dispatch:|
         assert_equal "prepared-photo", photo
@@ -44,6 +47,9 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
       assert_equal "ready", result.status
       assert_equal "curved legs coffee table", result.query
       assert_equal "vision", result.source
+      assert_equal "coffee table", result.category
+      assert_equal "coffee table", result.metadata[:category]
+      assert_includes %w[missing_phrase bare_category no_concrete_trait], result.metadata[:fallback_reason]
       assert_equal Vision::Client::MODEL, result.metadata[:model]
       assert_equal "venice", result.metadata[:provider]
       assert_equal [ "curved legs" ], result.metadata[:traits]
@@ -72,6 +78,7 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
       client = Client.new { flunk "no dispatch" }
       result = EbayQueryPreparation.new(vision_client: client).call(lens_response: lens, photo: "photo", deadline: SearchDeadline.new(seconds: seconds), before_vision_dispatch: nil)
       assert_equal "insufficient_time", result.status
+      assert_nil result.category
       assert_equal 0, client.calls
     end
     now = 0.0
@@ -80,6 +87,7 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
     result = EbayQueryPreparation.new(vision_client: client, clock: clock).call(lens_response: lens, photo: "photo", deadline: SearchDeadline.new(clock: clock), before_vision_dispatch: nil)
     assert_equal "timeout", result.status
     assert_nil result.query
+    assert_nil result.category
     assert_equal 1, client.calls
   end
 
@@ -111,6 +119,8 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
       result = EbayQueryPreparation.new(vision_client: client).call(lens_response: lens, photo: "photo", deadline: SearchDeadline.new, before_vision_dispatch: nil)
       assert_equal status, result.status
       assert_nil result.query
+      assert_nil result.category
+      refute result.metadata.key?(:category)
       refute_match(/secret|https/, result.inspect)
       assert_equal 1, client.calls
     end
@@ -118,6 +128,7 @@ class EbayQueryPreparationTest < ActiveSupport::TestCase
     result = EbayQueryPreparation.new(vision_client: client).call(lens_response: lens, photo: "photo", deadline: SearchDeadline.new, before_vision_dispatch: nil)
     assert_equal "refused", result.status
     assert_nil result.query
+    assert_nil result.category
     assert_equal 1, client.calls
   end
 end

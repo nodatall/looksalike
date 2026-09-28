@@ -14,6 +14,8 @@ The active plan now targets nationwide eBay with no ZIP or typed description. Th
 
 The server-only `Vision::Client` handles fixed Venice Chat Completions requests. It owns authentication, bounded image requests, response parsing, redaction, and transport errors. The plain-Ruby `PhotoQuery` policy owns the fallback trigger and validates the structured answer; it makes no network calls. `EbayQueryPreparation` accepts the Lens response, prepared photo, injected vision client, shared deadline, and pre-dispatch reservation callback. The caller owns Lens and eBay calls and durable accounting. It calls vision at most once before eBay. Keep this outside the frozen Lens query-v3 policy and historical runners.
 
+`PhotoQuery` now requires an existing color or material trait to keep the Lens phrase; a style-only phrase takes the same bounded Venice path. `EbayQueryPreparation` exposes the chosen category separately from the search text. The pure `EbayListingFilter` uses that category to reject wrong item types and accessories from already-normalized eBay rows. It makes no network calls and does not rank by similarity. The caller still owns URL/US-location checks, deduplication and taking the first six remaining rows. Promoted rows follow the same rules.
+
 Client, transport, query preparation, and policy checks use HTTP stubs and ordinary values. The new manual comparison must own a separate frozen manifest and durable vision-attempt records; normal tests make no paid calls. Public wiring, cache identity, usage caps, and explanation remain pending until quality passes. No generic provider framework or background job is needed.
 
 ## Module Map

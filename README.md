@@ -6,6 +6,8 @@ The [live Venice comparison](docs/experiments/ebay-flow-v3/README.md) passed the
 
 This batch used ten SerpApi searches, five uploads and three Venice calls, bringing recorded development usage to 39 searches. The account check afterward confirmed 214 searches remaining. Earlier [comparisons](docs/experiments/ebay-flow-v2/README.md) and [country-filter diagnostics](docs/experiments/ebay-no-country-v1/README.md) remain unchanged. eBay requests omit the provider country filter; explicit US location is checked in returned data.
 
+The [focused ornate-sofa retest](docs/experiments/ebay-flow-v4/README.md) improved from two to four relevant results out of six in 12.8 seconds, using the same Venice model. Two were close matches; two shared mainly pattern or style. The revised rules send style-only Lens phrases to Venice and remove wrong item types and accessories before selecting six listings. This used two more searches and one Venice call; the account check confirmed 212 searches remaining. The other four photos have not been rerun under these rules.
+
 The [dated example data](docs/examples/modern-sofa-2026-09-28.json) is prepared. Bundling its listing photos still requires documented reuse permission. The visitor flow, public quotas/cache, example assets and deployment remain unfinished.
 
 ## Local setup
@@ -87,7 +89,7 @@ JPEG bytes may differ across browser encoder versions. Freeze the produced bytes
 
 Normal Ruby tests use WebMock with all external network access disabled. `npm test` exercises header, limit, compression-cap, cleanup, and cancellation rules. `bin/check` runs both JavaScript and Ruby tests. The fixture tool and manual UI probe additionally verify real browser encoding; fixture preparation makes no SerpApi calls.
 
-`EbayQueryPreparation` keeps a useful Lens phrase or requests one photo description through `Vision::Client`. `PhotoQuery` checks the structured description before making a phrase. The vision client uses a fixed Venice model, sends only a validated reduced JPEG, requires an attempt-reservation callback, and has no retries. It receives at most 15 seconds while preserving 10 seconds for the eBay request. These boundaries are tested with network stubs and the completed live comparison. The manual ledger records vision attempts before dispatch; public-route accounting is still pending.
+`EbayQueryPreparation` keeps a Lens phrase with a recognized color or material, or requests one photo description through `Vision::Client`. Style-only phrases such as “vintage sofa” use Venice. It carries the recognized category separately from the search phrase. `EbayListingFilter` removes wrong furniture types, accessories and miniatures from eligible eBay rows before the caller takes six; sponsored items use the same rules. The filter preserves order and reports rejection reasons. Title filtering does not establish visual similarity. `PhotoQuery` checks the structured description before making a phrase. The vision client uses a fixed Venice model, sends only a validated reduced JPEG, requires an attempt-reservation callback, and has no retries. It receives at most 15 seconds while preserving 10 seconds for the eBay request. These boundaries are tested with network stubs and the completed live comparison. The manual ledger records vision attempts before dispatch; public-route accounting is still pending.
 
 ## Frozen experiment preparation
 

@@ -12,6 +12,19 @@ class PhotoQueryTest < ActiveSupport::TestCase
     refute PhotoQuery.fallback?(SearchQuery.call({ "visual_matches" => [ { "title" => "purple sofa" }, { "title" => "purple sofa" } ] }))
   end
 
+  test "style alone triggers vision while concrete Lens colors and materials do not" do
+    SearchQuery::TRAITS[:style].each do |style|
+      lens = SearchQuery.call({ "visual_matches" => Array.new(2) { { "title" => "#{style} sofa" } } })
+      assert PhotoQuery.fallback?(lens), style
+      assert_equal "no_concrete_trait", PhotoQuery.fallback_reason(lens)
+    end
+    [ "purple sofa", "wood vintage sofa", "velvet sofa", "grey modern chair", "wooden coffee table" ].each do |title|
+      lens = SearchQuery.call({ "visual_matches" => Array.new(2) { { "title" => title } } })
+      refute PhotoQuery.fallback?(lens), title
+      assert_nil PhotoQuery.fallback_reason(lens)
+    end
+  end
+
   test "accepts locally checked traits outside historical Lens vocabulary" do
     result = PhotoQuery.call(answer(category: "dining chair", traits: [ "curved back", "wood" ]))
     assert_equal "recognized", result.status
