@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo into up to six similar eBay listings located in the United States.
 
-The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The [latest comparison](../docs/experiments/ebay-flow-v2/README.md) found that broad phrases such as “sofa” and “chair” returned poor matches. The vision-model fallback is implemented and passes offline checks: when Lens cannot supply useful details, the model can inspect the photo and supply a short search phrase. Configure the Venice key before the live comparison; finish the app and deploy it only after search quality passes.
+The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The [latest comparison](../docs/experiments/ebay-flow-v3/README.md) passed the four-of-five search-quality requirement. Venice successfully described three photos when Lens lacked detail. Some results are weak material-only matches, and the ornate sofa still failed. Next, finish the dated example and visitor flow, then verify the public deployment. The example data is prepared; permission to bundle the listing photos remains unverified.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -98,9 +98,9 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Run the fresh five-photo comparison with the revised rule. Stop after two failures: the ornate sofa and chair failed, the modern sofa passed, and the remaining photos were not run. Use six searches and three uploads; preserve the original scores.
 - [x] Add the photo fallback and verify its trigger, output checks, timeout, and errors without paid calls. Visitors never need to type a description.
 - [x] Verify the provider switch to Venice, including its image request and structured-response handling, without paid calls.
-- [ ] Configure the Venice key locally, then test the revised flow on the same five photos. Allow at most five vision calls, ten SerpApi searches, and five uploads; stop after two failed photos.
-- [ ] Pass the existing four-of-five quality requirement before building the remaining app. Keep the earlier reports and scores unchanged.
-- [ ] Package one successful nationwide eBay result as the dated example, including its reference photo and actual listing thumbnails with permission to reuse them.
+- [x] Configure Venice and test the same five photos. Four passed; the ornate sofa failed. Use three vision calls, ten SerpApi searches and five uploads, with no retries.
+- [x] Pass the existing four-of-five quality requirement before building the remaining app. Keep the earlier reports and scores unchanged.
+- [ ] Package the [prepared modern-sofa example](../docs/examples/modern-sofa-2026-09-28.json), including its reference photo and actual listing thumbnails with permission to reuse them. The saved data is ready; listing-image permission and bundled assets are still needed.
 
 The preceding Craigslist comparison is historical. Its frozen inputs, two-failure stop rule, budget, scores, and completed tasks remain unchanged. The user has approved replacing that direction with nationwide eBay. For the new full-flow comparison, require at least four of five photos to return three relevant, distinct, accessible US-located listings among the first six, within 55 seconds. Stop after two failed photos. Record short-phrase probes separately; they cannot establish a full-flow pass.
 
@@ -118,7 +118,9 @@ The original request's [archived response](../docs/experiments/ebay-us-v1/archiv
 
 The user-approved [test without the country filter](../docs/experiments/ebay-no-country-v1/README.md) then returned HTTP 200 and 60 listings in 2.12 seconds. All other request parameters were unchanged. The country filter is therefore the likely source of the failures, although the provider's internal cause is unknown. The response marked 59 listings US-located and one Philippines-located. The implementation will omit `_salic` and check the returned location locally; no application code changed in this test. The first six included four sponsored items, and visual relevance remains unreviewed.
 
-Earlier experiments used **23 search attempts** before the repaired comparison. On September 25, 2026, the fresh account check confirmed 230 searches remaining. The new batch used six searches and three uploads, bringing recorded development usage to **29 search attempts**. The remaining account balance was not refreshed. The batch stopped after two failures; unused allowance cannot bypass that stop. Further focused diagnostic batches are authorized within the remaining account allowance, but must record their purpose and size before dispatch. Preserve every earlier attempt and frozen score, and keep the separate two-search deployment check reserved.
+Earlier experiments used **23 search attempts** before the repaired comparison. On September 25, 2026, the fresh account check confirmed 230 searches remaining. The new batch used six searches and three uploads, bringing recorded development usage to **29 search attempts**. The remaining account balance was not refreshed for that batch. It stopped after two failures; unused allowance could not bypass that stop. Further focused diagnostic batches are authorized within the remaining account allowance, but must record their purpose and size before dispatch. Preserve every earlier attempt and frozen score, and keep the separate two-search deployment check reserved.
+
+The September 28 [Venice comparison](../docs/experiments/ebay-flow-v3/README.md) used ten more searches and five uploads, plus three vision calls. Four of five photos passed within 19 seconds. Recorded development usage is now **39 search attempts**; the post-run account check confirmed **214 searches remaining**. The two-search deployment reserve is untouched. The modern-sofa example data is prepared, but the listing photos still need documented reuse permission before bundling.
 
 ### 3. Put the example online first
 

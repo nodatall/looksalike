@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/147547024855",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Listing opens. Contemporary corduroy cloud sectional lacks the carved frame and ornate shape."
+    },
+    {
+      "url": "https://www.ebay.com/itm/206564197453",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Listing opens. Console table, not a sofa."
+    },
+    {
+      "url": "https://www.ebay.com/itm/256884158923",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Listing opens. Rug, not a sofa."
+    },
+    {
+      "url": "https://www.ebay.com/itm/405093057104",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Listing opens. Rug, not a sofa."
+    },
+    {
+      "url": "https://www.ebay.com/itm/168720978721",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Listing opens; photo shows floral upholstery, curved camelback and carved dark wood frame similar to the reference."
+    },
+    {
+      "url": "https://www.ebay.com/itm/318930273005",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Listing opens; photo shows an ornate exposed frame and curved tufted upholstered seating. Sectional layout differs, but style matches."
+    }
+  ],
+  "relevant_accessible_count": 2,
+  "scored_at": "2026-09-28T20:27:03Z",
+  "passed": false
+}

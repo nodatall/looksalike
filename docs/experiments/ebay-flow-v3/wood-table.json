@@ -1,0 +1,2102 @@
+{
+  "case_id": "wood-table",
+  "manifest_sha256": "4bed77df7331e94845caa1871352f9a03f155e766f782c395837767eb5c5bebe",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "a31f83305e68e0ea1db2c02a14406f9b92169e1cc85c795e07c87a80b6d30ae6"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "farmhouse coffee table",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 557.385
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 2398.538
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 2406.846
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/398420076250",
+        "thumbnail": "https://i.ebayimg.com/images/g/9zsAAeSw8ahqslGe/s-l500.webp",
+        "sponsored": true,
+        "title": "31.50inch Round Coffee Table Black Color Center Table For Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/366685864202",
+        "thumbnail": "https://i.ebayimg.com/images/g/mAUAAeSwgFVqswF-/s-l500.webp",
+        "sponsored": true,
+        "title": "Sturdy Farmhouse Coffee Table for Living Room - Stylish 2-Tier Storage Solution",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$154.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/176801745601",
+        "thumbnail": "https://i.ebayimg.com/images/g/Cw8AAOSwUKZnkLJc/s-l500.webp",
+        "sponsored": true,
+        "title": "39.4'' Lift Top Coffee Table with Storage Farmhouse Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/318045789307",
+        "thumbnail": "https://i.ebayimg.com/images/g/QcgAAeSwNW5pwLLK/s-l500.webp",
+        "sponsored": true,
+        "title": "Rectangular Coffee Table for Living Room 51-Inch Farmhouse Center Cocktail Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$139.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/237095661762",
+        "thumbnail": "https://i.ebayimg.com/images/g/4PQAAeSwkN1qusQr/s-l500.webp",
+        "sponsored": false,
+        "title": "GreenForest Round Corners Coffee Table, Grey Wash, 39.37 Inch, Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$123.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/237095661783",
+        "thumbnail": "https://i.ebayimg.com/images/g/73gAAeSw-bxqusQs/s-l500.webp",
+        "sponsored": false,
+        "title": "VASAGLE Farmhouse Coffee Table, Honey Brown + Rustic White, 31.5D x 31.5W",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$174.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/407247001161",
+        "thumbnail": "https://i.ebayimg.com/images/g/yVgAAeSwSHNqt56x/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Round Wood Coffee Table, Mid-Century Modern, Walnut Farmhouse Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$112.56"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/197921537434",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZOEAAeSw-65pMOeo/s-l500.webp",
+        "sponsored": false,
+        "title": "55-Inch Farmhouse Wood Coffee Table, Large Rectangle Tea Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/318440235324",
+        "thumbnail": "https://i.ebayimg.com/images/g/VEgAAeSwRhhqKoG3/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table Rustic Wood Center Table w/2 Drawers, Spacious Open Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/147532646635",
+        "thumbnail": "https://i.ebayimg.com/images/g/lt0AAeSwWihqkSyn/s-l500.webp",
+        "sponsored": false,
+        "title": "2-Tier Wood Coffee Table Center Table With Storage Shelf Solid Wood Turned Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/178460986390",
+        "thumbnail": "https://i.ebayimg.com/images/g/gpwAAeSwJm1ql9er/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Bench and Sliding Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/178314492954",
+        "thumbnail": "https://i.ebayimg.com/images/g/e~0AAeSwNwVqWD97/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Storage, 47.2\" Farmhouse Coffee Table with 2 Drawers",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/407229479191",
+        "thumbnail": "https://i.ebayimg.com/images/g/UwgAAeSwlOpqrqIh/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Rustic Wood Coffee Table with Open Storage Shelf, Oak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$73.55"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/377456270944",
+        "thumbnail": "https://i.ebayimg.com/images/g/-BkAAeSwALdqkwqa/s-l500.webp",
+        "sponsored": true,
+        "title": "42in Farmhouse Coffee Table Solid Wood 2-Tier Storage Shelf Turned Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/198488844106",
+        "thumbnail": "https://i.ebayimg.com/images/g/OicAAeSwrhNqUHHc/s-l500.webp",
+        "sponsored": true,
+        "title": "39.37-Inch Farmhouse Wood Coffee Table with Large Storage Shelf for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/198522837754",
+        "thumbnail": "https://i.ebayimg.com/images/g/IGgAAeSw-1dqZFfR/s-l500.webp",
+        "sponsored": false,
+        "title": "55'' Farmhouse Wood Coffee Table Rustic Rectangular Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/198319932894",
+        "thumbnail": "https://i.ebayimg.com/images/g/61AAAeSw1Hpp8r4E/s-l500.webp",
+        "sponsored": false,
+        "title": "47'' Solid Wood Coffee Table Center Cocktail Table with Storage for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$208.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/398399057007",
+        "thumbnail": "https://i.ebayimg.com/images/g/5UEAAeSwNyZqqfu2/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Shelf Rustic Brown Modern Farmhouse Wooden Coffee",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$98.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/800652689595",
+        "thumbnail": "https://i.ebayimg.com/images/g/3g4AAeSwwDVqpfd3/s-l500.webp",
+        "sponsored": false,
+        "title": "42.5 in Farmhouse Solid Wood Rectangular Coffee Table Brown w/ Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$65.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/366512618846",
+        "thumbnail": "https://i.ebayimg.com/images/g/dzQAAeSwH2lqKoGq/s-l500.webp",
+        "sponsored": false,
+        "title": "GRAVEE 47\" Farmhouse Coffee Table with 2 Drawers Wood Center Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/377311861049",
+        "thumbnail": "https://i.ebayimg.com/images/g/V1QAAeSwctdpKWhe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Style Living Room Coffee Table w/ Open Storage & Barn Door Refurbished",
+        "subtitle": null,
+        "condition": "Certified - Refurbished",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/198660690362",
+        "thumbnail": "https://i.ebayimg.com/images/g/d3MAAeSw0mVqsyhI/s-l500.webp",
+        "sponsored": false,
+        "title": "39.4\" Square Coffee Table for Living Room, Rustic Brown Farmhouse Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/398376545262",
+        "thumbnail": "https://i.ebayimg.com/images/g/yaEAAeSwSyZqoRiD/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern 39\" Coffee Table for Living Room - 2-Tier Wood Storage, Easy Assembly, Sm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$151.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/800411323166",
+        "thumbnail": "https://i.ebayimg.com/images/g/SR8AAeSw4VJqZksQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with LED Lights Hidden Storage Square Living Room Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$130.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/178463271199",
+        "thumbnail": "https://i.ebayimg.com/images/g/lbAAAeSwHvxqmOSV/s-l500.webp",
+        "sponsored": false,
+        "title": "39.4\" Farmhouse Lift Top Coffee Table with 2 Drawers and Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/198669097368",
+        "thumbnail": "https://i.ebayimg.com/images/g/~B4AAeSwIDJquA3M/s-l500.webp",
+        "sponsored": false,
+        "title": "55\" Coffee Table w/ Storage Shelf, 2-Tone Rectangle Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$175.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/227464113147",
+        "thumbnail": "https://i.ebayimg.com/images/g/~DUAAeSw6Qhqc-Rw/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5in Square Wood Coffee Table Farmhouse Thick Tabletop Sturdy Legs Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$67.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/158229440686",
+        "thumbnail": "https://i.ebayimg.com/images/g/moIAAeSwWIxqkDuT/s-l500.webp",
+        "sponsored": true,
+        "title": "43.3” Farmhouse Coffee Table with Storage Shelf, Rustic Brown Rectangular Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$194.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/366471506171",
+        "thumbnail": "https://i.ebayimg.com/images/g/VEgAAeSwRhhqKoG3/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Coffee Table with 2 Drawers, 47.24 Inch Rustic Wood Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/198001284486",
+        "thumbnail": "https://i.ebayimg.com/images/g/gk8AAeSwLt5pWiJ6/s-l500.webp",
+        "sponsored": true,
+        "title": "47-Inch Farmhouse Coffee Table, Rectangle Accent Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/198362880186",
+        "thumbnail": "https://i.ebayimg.com/images/g/cWAAAeSwrmVqCnF7/s-l500.webp",
+        "sponsored": true,
+        "title": "47.24” Solid Wood Coffee Table Modern Accent Center Tea Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$179.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/318906282715",
+        "thumbnail": "https://i.ebayimg.com/images/g/wl4AAeSwU5Nqszuh/s-l500.webp",
+        "sponsored": false,
+        "title": "Uforic 80x80x45cm Farmhouse Wood Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/177446050100",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ig4AAeSweAVo2OqH/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Lift Top Coffee Table with Storage, Square Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/366669942280",
+        "thumbnail": "https://i.ebayimg.com/images/g/mAgAAeSwfuZqqOUe/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Coffee Table with Top 31.7 in Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$233.76"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/177198122152",
+        "thumbnail": "https://i.ebayimg.com/images/g/tSEAAOSwN7FoT8Rw/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with 2 Fabric Drawers & LED Light, Farmhouse Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/366471506207",
+        "thumbnail": "https://i.ebayimg.com/images/g/VEgAAeSwRhhqKoG3/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table with 2 Drawers Rustic Wood Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198150522011",
+        "thumbnail": "https://i.ebayimg.com/images/g/hIoAAeSwJChppnZ8/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5 Inch Solid Wood Round Coffee Table, 2-Tier Farmhouse Circle Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/176409663630",
+        "thumbnail": "https://i.ebayimg.com/images/g/xM4AAOSwUHVmX9vC/s-l500.webp",
+        "sponsored": true,
+        "title": "Lift Top Coffee Table, Farmhouse Coffee Table Converts to Dining Table (Grey)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$184.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/198466489918",
+        "thumbnail": "https://i.ebayimg.com/images/g/tMkAAeSwFc5qRIx2/s-l500.webp",
+        "sponsored": true,
+        "title": "31.5” Solid Wood Round Coffee Table, 2-Tier Farmhouse Wood Cocktail Accent Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/237055250045",
+        "thumbnail": "https://i.ebayimg.com/images/g/FgUAAeSwZPBqnow8/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Oval Coffee Table for Living Room 2 Tier Farmhouse Coffee Table W/",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$174.03"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/366480300196",
+        "thumbnail": "https://i.ebayimg.com/images/g/jZUAAeSwY3xqL8cK/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table w/ Charging Station&Storage 35.5\" Square Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$168.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/366674283294",
+        "thumbnail": "https://i.ebayimg.com/images/g/rkQAAeSwAwdqq7gE/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Wood Coffee Table with Storage Drawers for Living Room, Brown",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$116.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/227409738108",
+        "thumbnail": "https://i.ebayimg.com/images/g/dzQAAeSwH2lqKoGq/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table with 2 Drawers, 47.2 in Center Table Rustic Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/236157970838",
+        "thumbnail": "https://i.ebayimg.com/images/g/EEQAAeSwmNpptEAZ/s-l500.webp",
+        "sponsored": false,
+        "title": "COZAYH Rustic Farmhouse Round Coffee Table with Geometric Base for Living Room",
+        "subtitle": "FREE 1-3 DAY DELIVERY WITH HASSLE-FREE, 30-DAY RETURNS!",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$114.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/198279810724",
+        "thumbnail": "https://i.ebayimg.com/images/g/-ooAAeSwkXBp3Z5K/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Round Coffee Table for Living Room, Farmhouse Circle Center Cocktail Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/377428500431",
+        "thumbnail": "https://i.ebayimg.com/images/g/w7kAAeSw9XJqhAqk/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Farmhouse Coffee Table 47.2in 2 Drawers Open Shelf Rustic Living Room Base",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$128.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/336809635206",
+        "thumbnail": "https://i.ebayimg.com/images/g/5CcAAeSwMCtqtFjD/s-l500.webp",
+        "sponsored": false,
+        "title": "Ashley Furniture Rectangular Wood Coffee Table Brown/Black Farmhouse 54x40",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/188947167835",
+        "thumbnail": "https://i.ebayimg.com/images/g/1c4AAeSwR2JqrTJ5/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table 31.5d X 31.5w X 17.9h Rustic White Brown Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$185.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/820094088284",
+        "thumbnail": "https://i.ebayimg.com/images/g/U~UAAeSwjLlqnUa3/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Lift Top Coffee Table with Storage, Farmhouse Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$155.55"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/177337538090",
+        "thumbnail": "https://i.ebayimg.com/images/g/CoIAAeSwiq1onV5K/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Lift Top Coffee Table with Storage, Farmhouse Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/198644883969",
+        "thumbnail": "https://i.ebayimg.com/images/g/Hj4AAeSwXYxqqhhR/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Square Coffee Table Farmhouse 2-Tier Center Tea Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/800445093098",
+        "thumbnail": "https://i.ebayimg.com/images/g/LDcAAeSwKs5qblmg/s-l500.webp",
+        "sponsored": false,
+        "title": "LITTLE TREE Modern Coffee Table, 47” Living Room Table, Rectangle Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$288.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/163721345405",
+        "thumbnail": "https://i.ebayimg.com/images/g/cCAAAOSwT~hc9~xo/s-l500.webp",
+        "sponsored": false,
+        "title": "Rustic Reclaimed Wood Coffee Table with Wheels – 40\" Farmhouse Cart Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/389468502917",
+        "thumbnail": "https://i.ebayimg.com/images/g/rU8AAeSwgVxpX0js/s-l500.webp",
+        "sponsored": false,
+        "title": "47 Inch Rectangular Coffee Table, Farmhouse Wooden Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/143636103574",
+        "thumbnail": "https://i.ebayimg.com/images/g/tKkAAOSwn3de7VBg/s-l500.webp",
+        "sponsored": false,
+        "title": "Unique Style LIFT TOP COFFEE TABLE Hidden Storage Rustic Gray Modern Farmhouse",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$119.66"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/407039334088",
+        "thumbnail": "https://i.ebayimg.com/images/g/iQIAAeSwMiBqRIUW/s-l500.webp",
+        "sponsored": false,
+        "title": "Rectangle Lift Top Coffee Table with Storage,Fluted Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$138.80",
+          "to": "$148.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/267194798567",
+        "thumbnail": "https://i.ebayimg.com/images/g/rOkAAeSwUAhn2-Y-/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR 31.5\" Farmhouse Coffee Table Square Table with Open Storage Compartment",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/198290259664",
+        "thumbnail": "https://i.ebayimg.com/images/g/U4cAAeSwcVtp4uUq/s-l500.webp",
+        "sponsored": true,
+        "title": "39.4-Inch Square Coffee Table Farmhouse Center Cocktail Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/820100725250",
+        "thumbnail": "https://i.ebayimg.com/images/g/KRIAAeSwDahqn29K/s-l500.webp",
+        "sponsored": true,
+        "title": "Coffee Table with Storage Shelf,Solid Wood Turned Legs,2-Tier Wood Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/398420076250",
+        "thumbnail": "https://i.ebayimg.com/images/g/9zsAAeSw8ahqslGe/s-l500.webp",
+        "sponsored": true,
+        "title": "31.50inch Round Coffee Table Black Color Center Table For Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/366685864202",
+        "thumbnail": "https://i.ebayimg.com/images/g/mAUAAeSwgFVqswF-/s-l500.webp",
+        "sponsored": true,
+        "title": "Sturdy Farmhouse Coffee Table for Living Room - Stylish 2-Tier Storage Solution",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$154.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/176801745601",
+        "thumbnail": "https://i.ebayimg.com/images/g/Cw8AAOSwUKZnkLJc/s-l500.webp",
+        "sponsored": true,
+        "title": "39.4'' Lift Top Coffee Table with Storage Farmhouse Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/318045789307",
+        "thumbnail": "https://i.ebayimg.com/images/g/QcgAAeSwNW5pwLLK/s-l500.webp",
+        "sponsored": true,
+        "title": "Rectangular Coffee Table for Living Room 51-Inch Farmhouse Center Cocktail Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$139.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/237095661762",
+        "thumbnail": "https://i.ebayimg.com/images/g/4PQAAeSwkN1qusQr/s-l500.webp",
+        "sponsored": false,
+        "title": "GreenForest Round Corners Coffee Table, Grey Wash, 39.37 Inch, Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$123.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/237095661783",
+        "thumbnail": "https://i.ebayimg.com/images/g/73gAAeSw-bxqusQs/s-l500.webp",
+        "sponsored": false,
+        "title": "VASAGLE Farmhouse Coffee Table, Honey Brown + Rustic White, 31.5D x 31.5W",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$174.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abace3edc74d06ca26ecf66",
+        "status": "Success",
+        "created_at": "2026-09-28 20:29:50 UTC",
+        "processed_at": "2026-09-28 20:29:50 UTC",
+        "total_time_taken": 2.09
+      },
+      "ebay": {
+        "id": "6abace41a8dce6e471d07888",
+        "status": "Success",
+        "created_at": "2026-09-28 20:29:53 UTC",
+        "processed_at": "2026-09-28 20:29:53 UTC",
+        "total_time_taken": 1.99
+      }
+    },
+    "lens_interpretation": "farmhouse coffee table",
+    "query_preparation": {
+      "status": "ready",
+      "source": "lens",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v1",
+        "phrase_version": "photo-phrase-v1"
+      }
+    },
+    "interpretation": "farmhouse coffee table",
+    "query_source": "lens",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Amazon.com: Lativo White Wood Wallpaper Wood Grain Contact ...",
+        "Blog - Hightech Furniture Demo",
+        "OUTWEST FURNITURE - CLOSED - Updated September 2026 - 15 ...",
+        "HUGE Deals to be made at our CAIT'S® Mokena Warehouse Estate ...",
+        "Montana White Storage Coffee Table | Bob's Discount ...",
+        "Shop at McGinleys Furniture | humm Ireland",
+        "Laurel Foundry Modern Farmhouse® Lonan Coffee Table ...",
+        "Farmhouse Coffee Table with Sliding Barn Doors & Storage ..."
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "farmhouse coffee table",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 59,
+      "not_explicit_us": 1
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/398420076250",
+        "thumbnail": "https://i.ebayimg.com/images/g/9zsAAeSw8ahqslGe/s-l500.webp",
+        "sponsored": true,
+        "title": "31.50inch Round Coffee Table Black Color Center Table For Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/366685864202",
+        "thumbnail": "https://i.ebayimg.com/images/g/mAUAAeSwgFVqswF-/s-l500.webp",
+        "sponsored": true,
+        "title": "Sturdy Farmhouse Coffee Table for Living Room - Stylish 2-Tier Storage Solution",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$154.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/176801745601",
+        "thumbnail": "https://i.ebayimg.com/images/g/Cw8AAOSwUKZnkLJc/s-l500.webp",
+        "sponsored": true,
+        "title": "39.4'' Lift Top Coffee Table with Storage Farmhouse Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/318045789307",
+        "thumbnail": "https://i.ebayimg.com/images/g/QcgAAeSwNW5pwLLK/s-l500.webp",
+        "sponsored": true,
+        "title": "Rectangular Coffee Table for Living Room 51-Inch Farmhouse Center Cocktail Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$139.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/237095661762",
+        "thumbnail": "https://i.ebayimg.com/images/g/4PQAAeSwkN1qusQr/s-l500.webp",
+        "sponsored": false,
+        "title": "GreenForest Round Corners Coffee Table, Grey Wash, 39.37 Inch, Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$123.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/237095661783",
+        "thumbnail": "https://i.ebayimg.com/images/g/73gAAeSw-bxqusQs/s-l500.webp",
+        "sponsored": false,
+        "title": "VASAGLE Farmhouse Coffee Table, Honey Brown + Rustic White, 31.5D x 31.5W",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 3-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$174.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/407247001161",
+        "thumbnail": "https://i.ebayimg.com/images/g/yVgAAeSwSHNqt56x/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Round Wood Coffee Table, Mid-Century Modern, Walnut Farmhouse Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$112.56"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/197921537434",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZOEAAeSw-65pMOeo/s-l500.webp",
+        "sponsored": false,
+        "title": "55-Inch Farmhouse Wood Coffee Table, Large Rectangle Tea Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/318440235324",
+        "thumbnail": "https://i.ebayimg.com/images/g/VEgAAeSwRhhqKoG3/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table Rustic Wood Center Table w/2 Drawers, Spacious Open Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/147532646635",
+        "thumbnail": "https://i.ebayimg.com/images/g/lt0AAeSwWihqkSyn/s-l500.webp",
+        "sponsored": false,
+        "title": "2-Tier Wood Coffee Table Center Table With Storage Shelf Solid Wood Turned Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/178460986390",
+        "thumbnail": "https://i.ebayimg.com/images/g/gpwAAeSwJm1ql9er/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Bench and Sliding Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/178314492954",
+        "thumbnail": "https://i.ebayimg.com/images/g/e~0AAeSwNwVqWD97/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Storage, 47.2\" Farmhouse Coffee Table with 2 Drawers",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/407229479191",
+        "thumbnail": "https://i.ebayimg.com/images/g/UwgAAeSwlOpqrqIh/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Rustic Wood Coffee Table with Open Storage Shelf, Oak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$73.55"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/377456270944",
+        "thumbnail": "https://i.ebayimg.com/images/g/-BkAAeSwALdqkwqa/s-l500.webp",
+        "sponsored": true,
+        "title": "42in Farmhouse Coffee Table Solid Wood 2-Tier Storage Shelf Turned Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/198488844106",
+        "thumbnail": "https://i.ebayimg.com/images/g/OicAAeSwrhNqUHHc/s-l500.webp",
+        "sponsored": true,
+        "title": "39.37-Inch Farmhouse Wood Coffee Table with Large Storage Shelf for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/820181120836",
+        "thumbnail": "https://i.ebayimg.com/images/g/B4wAAeSwnulquggm/s-l500.webp",
+        "sponsored": true,
+        "title": "GUNAITO Round Lift Top Small Coffee Table with Storage Modern Farmhouse Center T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery Import fees due prior to delivery",
+        "location": "Located in Colombia",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$91.99"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/198522837754",
+        "thumbnail": "https://i.ebayimg.com/images/g/IGgAAeSw-1dqZFfR/s-l500.webp",
+        "sponsored": false,
+        "title": "55'' Farmhouse Wood Coffee Table Rustic Rectangular Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/198319932894",
+        "thumbnail": "https://i.ebayimg.com/images/g/61AAAeSw1Hpp8r4E/s-l500.webp",
+        "sponsored": false,
+        "title": "47'' Solid Wood Coffee Table Center Cocktail Table with Storage for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$208.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/398399057007",
+        "thumbnail": "https://i.ebayimg.com/images/g/5UEAAeSwNyZqqfu2/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Shelf Rustic Brown Modern Farmhouse Wooden Coffee",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$98.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/800652689595",
+        "thumbnail": "https://i.ebayimg.com/images/g/3g4AAeSwwDVqpfd3/s-l500.webp",
+        "sponsored": false,
+        "title": "42.5 in Farmhouse Solid Wood Rectangular Coffee Table Brown w/ Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$65.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/366512618846",
+        "thumbnail": "https://i.ebayimg.com/images/g/dzQAAeSwH2lqKoGq/s-l500.webp",
+        "sponsored": false,
+        "title": "GRAVEE 47\" Farmhouse Coffee Table with 2 Drawers Wood Center Storage Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/377311861049",
+        "thumbnail": "https://i.ebayimg.com/images/g/V1QAAeSwctdpKWhe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Style Living Room Coffee Table w/ Open Storage & Barn Door Refurbished",
+        "subtitle": null,
+        "condition": "Certified - Refurbished",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/198660690362",
+        "thumbnail": "https://i.ebayimg.com/images/g/d3MAAeSw0mVqsyhI/s-l500.webp",
+        "sponsored": false,
+        "title": "39.4\" Square Coffee Table for Living Room, Rustic Brown Farmhouse Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/398376545262",
+        "thumbnail": "https://i.ebayimg.com/images/g/yaEAAeSwSyZqoRiD/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern 39\" Coffee Table for Living Room - 2-Tier Wood Storage, Easy Assembly, Sm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$151.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/800411323166",
+        "thumbnail": "https://i.ebayimg.com/images/g/SR8AAeSw4VJqZksQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with LED Lights Hidden Storage Square Living Room Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$130.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/178463271199",
+        "thumbnail": "https://i.ebayimg.com/images/g/lbAAAeSwHvxqmOSV/s-l500.webp",
+        "sponsored": false,
+        "title": "39.4\" Farmhouse Lift Top Coffee Table with 2 Drawers and Storage Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/198669097368",
+        "thumbnail": "https://i.ebayimg.com/images/g/~B4AAeSwIDJquA3M/s-l500.webp",
+        "sponsored": false,
+        "title": "55\" Coffee Table w/ Storage Shelf, 2-Tone Rectangle Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$175.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/227464113147",
+        "thumbnail": "https://i.ebayimg.com/images/g/~DUAAeSw6Qhqc-Rw/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5in Square Wood Coffee Table Farmhouse Thick Tabletop Sturdy Legs Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$67.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/158229440686",
+        "thumbnail": "https://i.ebayimg.com/images/g/moIAAeSwWIxqkDuT/s-l500.webp",
+        "sponsored": true,
+        "title": "43.3” Farmhouse Coffee Table with Storage Shelf, Rustic Brown Rectangular Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$194.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/366471506171",
+        "thumbnail": "https://i.ebayimg.com/images/g/VEgAAeSwRhhqKoG3/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Coffee Table with 2 Drawers, 47.24 Inch Rustic Wood Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/198001284486",
+        "thumbnail": "https://i.ebayimg.com/images/g/gk8AAeSwLt5pWiJ6/s-l500.webp",
+        "sponsored": true,
+        "title": "47-Inch Farmhouse Coffee Table, Rectangle Accent Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/198362880186",
+        "thumbnail": "https://i.ebayimg.com/images/g/cWAAAeSwrmVqCnF7/s-l500.webp",
+        "sponsored": true,
+        "title": "47.24” Solid Wood Coffee Table Modern Accent Center Tea Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$179.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/318906282715",
+        "thumbnail": "https://i.ebayimg.com/images/g/wl4AAeSwU5Nqszuh/s-l500.webp",
+        "sponsored": false,
+        "title": "Uforic 80x80x45cm Farmhouse Wood Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/177446050100",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ig4AAeSweAVo2OqH/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Lift Top Coffee Table with Storage, Square Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/366669942280",
+        "thumbnail": "https://i.ebayimg.com/images/g/mAgAAeSwfuZqqOUe/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Coffee Table with Top 31.7 in Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$233.76"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/177198122152",
+        "thumbnail": "https://i.ebayimg.com/images/g/tSEAAOSwN7FoT8Rw/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with 2 Fabric Drawers & LED Light, Farmhouse Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/366471506207",
+        "thumbnail": "https://i.ebayimg.com/images/g/VEgAAeSwRhhqKoG3/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table with 2 Drawers Rustic Wood Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198150522011",
+        "thumbnail": "https://i.ebayimg.com/images/g/hIoAAeSwJChppnZ8/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5 Inch Solid Wood Round Coffee Table, 2-Tier Farmhouse Circle Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/176409663630",
+        "thumbnail": "https://i.ebayimg.com/images/g/xM4AAOSwUHVmX9vC/s-l500.webp",
+        "sponsored": true,
+        "title": "Lift Top Coffee Table, Farmhouse Coffee Table Converts to Dining Table (Grey)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$184.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/198466489918",
+        "thumbnail": "https://i.ebayimg.com/images/g/tMkAAeSwFc5qRIx2/s-l500.webp",
+        "sponsored": true,
+        "title": "31.5” Solid Wood Round Coffee Table, 2-Tier Farmhouse Wood Cocktail Accent Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/237055250045",
+        "thumbnail": "https://i.ebayimg.com/images/g/FgUAAeSwZPBqnow8/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Oval Coffee Table for Living Room 2 Tier Farmhouse Coffee Table W/",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$174.03"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/366480300196",
+        "thumbnail": "https://i.ebayimg.com/images/g/jZUAAeSwY3xqL8cK/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table w/ Charging Station&Storage 35.5\" Square Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$168.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/366674283294",
+        "thumbnail": "https://i.ebayimg.com/images/g/rkQAAeSwAwdqq7gE/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Wood Coffee Table with Storage Drawers for Living Room, Brown",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$116.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/227409738108",
+        "thumbnail": "https://i.ebayimg.com/images/g/dzQAAeSwH2lqKoGq/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table with 2 Drawers, 47.2 in Center Table Rustic Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/236157970838",
+        "thumbnail": "https://i.ebayimg.com/images/g/EEQAAeSwmNpptEAZ/s-l500.webp",
+        "sponsored": false,
+        "title": "COZAYH Rustic Farmhouse Round Coffee Table with Geometric Base for Living Room",
+        "subtitle": "FREE 1-3 DAY DELIVERY WITH HASSLE-FREE, 30-DAY RETURNS!",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$114.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/198279810724",
+        "thumbnail": "https://i.ebayimg.com/images/g/-ooAAeSwkXBp3Z5K/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Round Coffee Table for Living Room, Farmhouse Circle Center Cocktail Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/377428500431",
+        "thumbnail": "https://i.ebayimg.com/images/g/w7kAAeSw9XJqhAqk/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Farmhouse Coffee Table 47.2in 2 Drawers Open Shelf Rustic Living Room Base",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$128.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/336809635206",
+        "thumbnail": "https://i.ebayimg.com/images/g/5CcAAeSwMCtqtFjD/s-l500.webp",
+        "sponsored": false,
+        "title": "Ashley Furniture Rectangular Wood Coffee Table Brown/Black Farmhouse 54x40",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/188947167835",
+        "thumbnail": "https://i.ebayimg.com/images/g/1c4AAeSwR2JqrTJ5/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Coffee Table 31.5d X 31.5w X 17.9h Rustic White Brown Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$185.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/820094088284",
+        "thumbnail": "https://i.ebayimg.com/images/g/U~UAAeSwjLlqnUa3/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Lift Top Coffee Table with Storage, Farmhouse Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$155.55"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/177337538090",
+        "thumbnail": "https://i.ebayimg.com/images/g/CoIAAeSwiq1onV5K/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Lift Top Coffee Table with Storage, Farmhouse Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/198644883969",
+        "thumbnail": "https://i.ebayimg.com/images/g/Hj4AAeSwXYxqqhhR/s-l500.webp",
+        "sponsored": false,
+        "title": "31.5\" Square Coffee Table Farmhouse 2-Tier Center Tea Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/800445093098",
+        "thumbnail": "https://i.ebayimg.com/images/g/LDcAAeSwKs5qblmg/s-l500.webp",
+        "sponsored": false,
+        "title": "LITTLE TREE Modern Coffee Table, 47” Living Room Table, Rectangle Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$288.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/163721345405",
+        "thumbnail": "https://i.ebayimg.com/images/g/cCAAAOSwT~hc9~xo/s-l500.webp",
+        "sponsored": false,
+        "title": "Rustic Reclaimed Wood Coffee Table with Wheels – 40\" Farmhouse Cart Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/389468502917",
+        "thumbnail": "https://i.ebayimg.com/images/g/rU8AAeSwgVxpX0js/s-l500.webp",
+        "sponsored": false,
+        "title": "47 Inch Rectangular Coffee Table, Farmhouse Wooden Center Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/143636103574",
+        "thumbnail": "https://i.ebayimg.com/images/g/tKkAAOSwn3de7VBg/s-l500.webp",
+        "sponsored": false,
+        "title": "Unique Style LIFT TOP COFFEE TABLE Hidden Storage Rustic Gray Modern Farmhouse",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$119.66"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/407039334088",
+        "thumbnail": "https://i.ebayimg.com/images/g/iQIAAeSwMiBqRIUW/s-l500.webp",
+        "sponsored": false,
+        "title": "Rectangle Lift Top Coffee Table with Storage,Fluted Coffee Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$138.80",
+          "to": "$148.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/267194798567",
+        "thumbnail": "https://i.ebayimg.com/images/g/rOkAAeSwUAhn2-Y-/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR 31.5\" Farmhouse Coffee Table Square Table with Open Storage Compartment",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/198290259664",
+        "thumbnail": "https://i.ebayimg.com/images/g/U4cAAeSwcVtp4uUq/s-l500.webp",
+        "sponsored": true,
+        "title": "39.4-Inch Square Coffee Table Farmhouse Center Cocktail Table for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/820100725250",
+        "thumbnail": "https://i.ebayimg.com/images/g/KRIAAeSwDahqn29K/s-l500.webp",
+        "sponsored": true,
+        "title": "Coffee Table with Storage Shelf,Solid Wood Turned Legs,2-Tier Wood Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 5407.875
+  }
+}
