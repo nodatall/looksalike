@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import examplePhoto from './assets/victorian-purple-couch.jpg';
 import SearchWalkthrough from './SearchWalkthrough.jsx';
+import SearchLoading, { searchSteps } from './SearchLoading.jsx';
 import {
   Accordion, AccordionDetails, AccordionSummary, Box, Button, Card,
-  CardContent, CircularProgress, CssBaseline, TextField,
-  ThemeProvider, Typography, createTheme, useMediaQuery,
+  CardContent, CssBaseline, TextField,
+  ThemeProvider, Typography, createTheme,
 } from '@mui/material';
 
 const theme = createTheme({
@@ -47,6 +48,9 @@ const items = [
 ];
 const validZip = value => /^[0-9]{5}$/.test(value.trim());
 const resultsStorageKey = 'looksalike.mockup.results.v1';
+// Simulated stage events for this preview. A live flow must supply real events.
+const loadingSteps = searchSteps(true);
+const mockStageMilliseconds = { upload: 800, lens: 4000, vision: 3800, ebay: 3600, filter: 800 };
 
 function restoreResults() {
   try {
@@ -166,15 +170,16 @@ function App() {
   const [photo, setPhoto] = useState(savedResults
     ? { url: savedResults.photoDataUrl, storageUrl: savedResults.photoDataUrl } : null);
   const [explanationExpanded, setExplanationExpanded] = useState(savedResults?.explanationExpanded === true);
-  const [loading, setLoading] = useState(false);
+  const [activeStep, setActiveStep] = useState(0);
   const [dragging, setDragging] = useState(false);
   const [zipError, setZipError] = useState('');
   const [uploadError, setUploadError] = useState('');
   const [status, setStatus] = useState('');
   const fileInput = useRef(null), zipInput = useRef(null), findButton = useRef(null);
   const uploadButton = useRef(null), resultsTitle = useRef(null), firstRender = useRef(true);
+  const loadingTitle = useRef(null), searchVersion = useRef(0);
   const selectionVersion = useRef(0), pendingPhoto = useRef(null), activeURL = useRef(null), timer = useRef(null);
-  const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
+  const loading = screen === 'loading';
 
   function cancelSelection() {
     selectionVersion.current++;
@@ -189,9 +194,9 @@ function App() {
     activeURL.current = null;
   }
   function cancelSearch() {
+    searchVersion.current++;
     clearTimeout(timer.current);
     timer.current = null;
-    setLoading(false);
   }
   function previewPhoto(url = null, storageUrl = null) {
     cancelSearch();
@@ -246,16 +251,31 @@ function App() {
       zipInput.current?.focus();
       return;
     }
+    // Search uses the last complete preview, not an image still being decoded.
+    cancelSelection();
     setZip(zip.trim());
     setRequestedZip(zip.trim());
-    setLoading(true);
-    setStatus('Finding similar items.');
-    timer.current = setTimeout(() => {
-      timer.current = null;
-      setLoading(false);
-      setScreen('results');
-      setStatus('Six illustrative items are ready.');
-    }, 2200);
+    cancelSearch();
+    const version = searchVersion.current;
+    setScreen('loading');
+    function advance(index) {
+      if (version !== searchVersion.current) return;
+      if (index === loadingSteps.length) {
+        timer.current = null;
+        setScreen('results');
+        setStatus('Six illustrative items are ready.');
+        return;
+      }
+      setActiveStep(index);
+      setStatus(`${loadingSteps[index].label}.`);
+      timer.current = setTimeout(() => advance(index + 1), mockStageMilliseconds[loadingSteps[index].id]);
+    }
+    advance(0);
+  }
+  function backToPreview() {
+    cancelSearch();
+    setScreen('entry');
+    setStatus('Search stopped. Your photo is ready.');
   }
   function startOver() {
     cancelSelection(); cancelSearch(); releasePhoto();
@@ -286,21 +306,26 @@ function App() {
       resultsTitle.current?.focus();
       window.scrollTo({ top: 0, behavior: 'instant' });
     }
+    if (screen === 'loading') loadingTitle.current?.focus({ preventScroll: true });
   }, [screen, photo]);
 
   useEffect(() => {
     const preventNavigation = event => event.preventDefault();
     const cleanup = () => {
-      cancelSelection(); releasePhoto(); clearTimeout(timer.current); timer.current = null;
+      cancelSelection(); cancelSearch();
+    };
+    const onPageHide = () => {
+      cleanup();
+      setScreen(current => current === 'loading' ? 'entry' : current);
     };
     document.addEventListener('dragover', preventNavigation);
     document.addEventListener('drop', preventNavigation);
-    window.addEventListener('pagehide', cleanup);
+    window.addEventListener('pagehide', onPageHide);
     return () => {
-      cleanup();
+      cleanup(); releasePhoto();
       document.removeEventListener('dragover', preventNavigation);
       document.removeEventListener('drop', preventNavigation);
-      window.removeEventListener('pagehide', cleanup);
+      window.removeEventListener('pagehide', onPageHide);
     };
   }, []);
 
@@ -352,16 +377,19 @@ function App() {
         </Button>
         <Box sx={{ mt: 2.5, minHeight: 52, display: 'grid', alignItems: 'center' }}>
           {photo ? <Button id="find-button" ref={findButton} variant="contained" disableElevation fullWidth disabled={loading || !validZip(zip)}
-            onClick={search} sx={{ minHeight: 52, fontWeight: 600 }}
-            startIcon={loading ? <CircularProgress size={19} color="inherit" aria-hidden="true"
-              variant={reducedMotion ? 'determinate' : 'indeterminate'} value={75} /> : undefined}>
-            {loading ? 'Finding similar items…' : 'Find similar items'}
+            onClick={search} sx={{ minHeight: 52, fontWeight: 600 }}>
+            Find similar items
           </Button> : <Typography component="p" color="text.secondary" sx={{ fontSize: 13 }}>
             or try an <Button id="example-button" onClick={useExample} sx={{ ...textButton, minWidth: 0, p: '6px 2px', fontSize: 'inherit' }}>example</Button>
           </Typography>}
         </Box>
         {uploadError && <Typography id="upload-error" role="alert" color="error" sx={{ mt: 2, fontSize: 13 }}>{uploadError}</Typography>}
       </Box>
+    </Box>}
+
+    {screen === 'loading' && <Box sx={centeredScreen}>
+      <SearchLoading photo={<Photo photo={photo} />} steps={loadingSteps} activeStep={activeStep}
+        headingRef={loadingTitle} onBack={backToPreview} />
     </Box>}
 
     {screen === 'results' && <Box component="section" aria-labelledby="results-title"

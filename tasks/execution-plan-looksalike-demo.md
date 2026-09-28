@@ -13,7 +13,11 @@ The first screen starts with “Find similar furniture on eBay.” It has a phot
 
 Uploading, dropping a photo, or choosing the example fills the same box with a preview. The headline stays in place. “Find similar items” appears below the preview and stays disabled until a valid photo is ready. The preview remains clickable to replace the photo.
 
-Submitting shows a loading animation inside the button and keeps the photo visible. Results use this layout:
+Submitting opens a loading screen with the photo and “Finding similar items.” A short checklist shows “Uploading photo,” “Identifying furniture,” “Searching eBay,” and “Checking matches.” Show “Checking photo details” between identification and search only when Venice is called. The current step has a spinner; finished steps have checkmarks. Announce each new step to screen readers and respect reduced-motion settings. Do not show a made-up percentage or countdown.
+
+In the live app, update the checklist from actual server progress, not elapsed-time guesses. On failure, stop the progress display, keep the photo, and show the relevant error. The interactive mockup uses timed steps only to preview this design; it makes no provider calls.
+
+Results use this layout:
 
 - A small reference photo beside the one-line heading “Similar Items.” Omit “Near [ZIP].”
 - “Search again” at the top right. It clears the photo and results and returns to the upload screen.
@@ -28,7 +32,7 @@ The app covers furniture on eBay located in the US. It has one screen, with no a
 
 Search ebay.com without the provider country filter, then keep only listings explicitly marked as located in the United States. Do not send a ZIP, select a Craigslist area, or restrict results to local pickup. US location does not guarantee delivery to every US address. Visitors check shipping and pickup terms on eBay.
 
-Visual mockup: [Earlier screen](ui-mockup-looksalike-demo.html). Updating it for nationwide eBay is pending.
+Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). The step-by-step loading screen previews the current search flow; updating the remaining screens for nationwide eBay is pending.
 
 ## Project choices
 
@@ -147,7 +151,9 @@ Use the same compression and search rules that passed the experiment.
 - [ ] Enforce the spending limits and one-live-search rule, including during simultaneous requests and restarts.
 - [ ] Build the results header and responsive cards described above using Material UI and the shared theme.
 - [ ] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
-- [ ] Add understandable loading, empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
+- [x] Add the loading checklist to the interactive mockup, with a visible photo, completed steps, status announcements, and Back.
+- [ ] Connect the loading checklist to actual search stages, including the optional Venice step. Stop it on completion, timeout, or error.
+- [ ] Add understandable empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
 - [ ] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
 
 ### 5. Check the app before release
