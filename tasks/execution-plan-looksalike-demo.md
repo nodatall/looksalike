@@ -108,7 +108,7 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Filter out wrong furniture types and accessories before taking the first six eBay listings. Apply the same checks to promoted items, and keep the remaining provider order.
 - [x] Retest the ornate sofa once with the revised rules: at most two SerpApi searches, one upload and one Venice call, within 55 seconds. Record the original and filtered lists and review every displayed item. Keep earlier scores unchanged; this focused test does not revalidate all five photos.
 - [x] Run the bounded recheck under the revised rules. Stop after the chair and coffee table fail; preserve the two sofa passes and mark the dresser untested.
-- [ ] Reject loose chair spindles while keeping complete spindle-back chairs. Tell Venice to identify furniture even when decorative objects sit on it. Check these repairs with saved responses first.
+- [x] Reject loose chair spindles while keeping complete spindle-back chairs. Tell Venice to identify furniture even when decorative objects sit on it. Check these repairs with saved responses first.
 - [ ] Repeat the five-photo comparison under the repaired rules, with a new frozen batch: at most ten SerpApi searches, five uploads and five Venice calls, with no retries. Keep the four-of-five criterion, two-failure stop and separate deployment reserve.
 - [ ] Package the [prepared modern-sofa example](../docs/examples/modern-sofa-2026-09-28.json), including its reference photo and actual listing thumbnails with permission to reuse them. The saved data is ready; listing-image permission and bundled assets are still needed.
 

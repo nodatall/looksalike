@@ -16,6 +16,8 @@ The server-only `Vision::Client` handles fixed Venice Chat Completions requests.
 
 `PhotoQuery` now requires an existing color or material trait to keep the Lens phrase; a style-only phrase takes the same bounded Venice path. `EbayQueryPreparation` exposes the chosen category separately from the search text. The pure `EbayListingFilter` uses that category to reject wrong item types and accessories from already-normalized eBay rows. It makes no network calls and does not rank by similarity. The caller still owns URL/US-location checks, deduplication and taking the first six remaining rows. Promoted rows follow the same rules.
 
+The title filter's v2 rule rejects loose chair spindles without rejecting complete spindle-back chairs. Venice prompt v2 asks for the complete foreground furniture item and ignores decorations placed on it. Saved responses verify the title repair; recognition accuracy requires a new live comparison. Earlier frozen experiments retain their original policies and scores.
+
 Client, transport, query preparation, and policy checks use HTTP stubs and ordinary values. The new manual comparison must own a separate frozen manifest and durable vision-attempt records; normal tests make no paid calls. Public wiring, cache identity, usage caps, and explanation remain pending until quality passes. No generic provider framework or background job is needed.
 
 ## Module Map

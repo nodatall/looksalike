@@ -59,6 +59,21 @@ class EbayListingFilterTest < ActiveSupport::TestCase
     end
   end
 
+  test "loose chair spindles are parts but complete spindle chairs remain eligible" do
+    [ "Oak Wood Turned Spindle For Chairs",
+      "Antique 1890s Victorian Turned Wood Chair Spindles – Set of 6 – Original",
+      "Unfinished Oak Spindle for Chair | Unstained Wood Spindle, Unpainted Wooden Spin",
+      "Vintage Worn Set Of Three Wooden Chair Spindles For Crafts Decor 13”" ].each do |title|
+      result = EbayListingFilter.call(rows: [ row(title) ], category: "chair")
+      assert_empty result.accepted, title
+      assert_equal "accessory_or_part", result.rejected.first[:reason]
+    end
+    [ "Antique 1874 Chair 19th Century Wooden Turned C Turned Spindle Bow Back",
+      "Spindle Slatback Dining Side Chair", "Spindle back chair", "Chair with replacement spindles" ].each do |title|
+      assert_equal 1, EbayListingFilter.call(rows: [ row(title) ], category: "chair").accepted.length, title
+    end
+  end
+
   test "requires a recognized category and explains unrecognized titles" do
     [ nil, "vintage sofa", "unknown" ].each do |category|
       assert_raises(ArgumentError) { EbayListingFilter.call(rows: [], category: category) }

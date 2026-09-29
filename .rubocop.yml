@@ -11,3 +11,4 @@ AllCops:
     - "public/assets/**/*"
     - "app/assets/builds/**/*"
     - "agent-scratch/**/*"
+    - "docs/experiments/**/source/**/*"

@@ -2,7 +2,7 @@
 
 # Title eligibility only; normalization, country checks and ranking belong to callers.
 class EbayListingFilter
-  VERSION = "ebay-title-filter-v1"
+  VERSION = "ebay-title-filter-v2"
   Result = Data.define(:accepted, :rejected, :counts, :version)
   SOFAS = %w[sofa loveseat sectional chaise].freeze
   CHAIRS = [ "chair", "armchair", "recliner", "dining chair", "office chair", "rocking chair" ].freeze
@@ -36,7 +36,8 @@ class EbayListingFilter
       !(word == "leg" && index.positive? && %w[turned tapered].include?(head[index - 1]) && item_types(head.drop(index + 1)).any?)
     end
     replacement_cushion = head.join(" ").match?(/\breplacement (?:seat |back |cushion )?(?:cushions?|foam)\b/)
-    return "accessory_or_part" if parts.any? || replacement_cushion || head.each_cons(2).any? { |pair| pair == %w[replacement part] }
+    loose_spindle = head.join(" ").match?(/\bspindles?\b.*\bfor chair\b|\bchair spindles\b/)
+    return "accessory_or_part" if parts.any? || replacement_cushion || loose_spindle || head.each_cons(2).any? { |pair| pair == %w[replacement part] }
     return "different_item" if (head & OTHER_ITEMS).any?
     types = item_types(head)
     return "missing_furniture_type" if types.empty?
