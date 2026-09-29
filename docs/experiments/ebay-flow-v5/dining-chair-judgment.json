@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/256989060337",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Loose oak spindle for chair repairs, not a complete chair. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/377465218906",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Set of six loose chair spindles, not complete furniture. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/285424436241",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Complete antique wood chair with turned legs and cross supports; bowed spindle back differs from ladder back. Similar material/style. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/317435155242",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Unfinished loose oak spindle, not a complete chair. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/137190252376",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Complete wood dining side chair with traditional spindle/slat back and cross supports. Black finish and vertical back differ; partial material/style match. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/197457285906",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Three loose chair spindles for crafts, not complete furniture. Listing and photo opened."
+    }
+  ],
+  "relevant_accessible_count": 2,
+  "scored_at": "2026-09-29T23:19:42Z",
+  "passed": false
+}
