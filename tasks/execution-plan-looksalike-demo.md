@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo into up to six similar eBay listings located in the United States.
 
-The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The earlier [five-photo comparison](../docs/experiments/ebay-flow-v3/README.md) passed four cases. The latest [recheck](../docs/experiments/ebay-flow-v5/README.md) stopped after two failures: loose chair spindles passed the filter, and Venice called the coffee-table photo “not furniture.” Both sofas passed; the dresser was not run. Fix these two gaps and recheck before building more app features. The example data is prepared; permission to bundle listing photos remains unverified.
+The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The latest [five-photo comparison](../docs/experiments/ebay-flow-v6/README.md) passed four cases after repairing loose-part filtering and photo recognition. The ornate sofa failed on a Venice timeout. The example data is prepared; permission to bundle listing photos remains unverified. Build the live app while that permission is unresolved, then complete the example and hosting checks before public release.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -109,7 +109,7 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Retest the ornate sofa once with the revised rules: at most two SerpApi searches, one upload and one Venice call, within 55 seconds. Record the original and filtered lists and review every displayed item. Keep earlier scores unchanged; this focused test does not revalidate all five photos.
 - [x] Run the bounded recheck under the revised rules. Stop after the chair and coffee table fail; preserve the two sofa passes and mark the dresser untested.
 - [x] Reject loose chair spindles while keeping complete spindle-back chairs. Tell Venice to identify furniture even when decorative objects sit on it. Check these repairs with saved responses first.
-- [ ] Repeat the five-photo comparison under the repaired rules, with a new frozen batch: at most ten SerpApi searches, five uploads and five Venice calls, with no retries. Keep the four-of-five criterion, two-failure stop and separate deployment reserve.
+- [x] Repeat the five-photo comparison under the repaired rules, with a new frozen batch: at most ten SerpApi searches, five uploads and five Venice calls, with no retries. Keep the four-of-five criterion, two-failure stop and separate deployment reserve.
 - [ ] Package the [prepared modern-sofa example](../docs/examples/modern-sofa-2026-09-28.json), including its reference photo and actual listing thumbnails with permission to reuse them. The saved data is ready; listing-image permission and bundled assets are still needed.
 
 The preceding Craigslist comparison is historical. Its frozen inputs, two-failure stop rule, budget, scores, and completed tasks remain unchanged. The user has approved replacing that direction with nationwide eBay. For the new full-flow comparison, require at least four of five photos to return three relevant, distinct, accessible US-located listings among the first six, within 55 seconds. Stop after two failed photos. Record short-phrase probes separately; they cannot establish a full-flow pass.
@@ -135,6 +135,8 @@ The September 28 [Venice comparison](../docs/experiments/ebay-flow-v3/README.md)
 ### 3. Put the example online first
 
 This checks the hosting setup before we expose paid searches to visitors.
+
+The example still needs documented image permission. Continue the independent server and visitor work in step 4 while it is unresolved. Keep public publishing and deployment pending until the example can be packaged.
 
 - [ ] Create the public GitHub repository and publish the checked starting version.
 - [ ] Deploy the example to Railway with live search switched off.

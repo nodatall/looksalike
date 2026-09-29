@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/167543162009",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. White rectangular storage coffee table with black sliding barn-door rail and brown top; close farmhouse construction/style match, different top and integrated fridge."
+    },
+    {
+      "url": "https://www.ebay.com/itm/178460986390",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. White farmhouse lift-top coffee table with matching barn-door storage bench; partial style/construction match, different multi-piece form."
+    },
+    {
+      "url": "https://www.ebay.com/itm/358791252838",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Dark-grey rectangular farmhouse storage coffee table with brown lift top; partial shape/style match, different color and opening mechanism."
+    },
+    {
+      "url": "https://www.ebay.com/itm/196336381437",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Dark square storage coffee table with barn doors and split lift top; partial farmhouse style match, different footprint and color."
+    },
+    {
+      "url": "https://www.ebay.com/itm/307160379158",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Light rustic wood rectangular coffee table with sliding barn doors and central shelves; close shape/construction match, different finish."
+    },
+    {
+      "url": "https://www.ebay.com/itm/398194388252",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. White farmhouse storage coffee table with black trim, barn-door front and lift top; partial shape/style match, different top and trim."
+    }
+  ],
+  "relevant_accessible_count": 6,
+  "scored_at": "2026-09-29T23:47:59Z",
+  "passed": true
+}

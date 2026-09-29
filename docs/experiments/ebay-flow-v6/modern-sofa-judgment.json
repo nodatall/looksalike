@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/366667704399",
+      "accessible": true,
+      "relevant": false,
+      "notes": "Page and photo accessible. Cream corduroy modular loveseat with ottoman; bulkier silhouette and different upholstery than the green velvet reference. Not relevant."
+    },
+    {
+      "url": "https://www.ebay.com/itm/147117474946",
+      "accessible": true,
+      "relevant": false,
+      "notes": "Page and photo accessible. Brown faux-leather Chesterfield with rolled arms and tufting; different material and shape. Not relevant."
+    },
+    {
+      "url": "https://www.ebay.com/itm/147319743132",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Brown faux-leather convertible sofa; square narrow arms, straight back and raised legs provide a partial modern silhouette match. Color and upholstery differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/168187861932",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Green velvet sofa with straight arms and removable cushions; similar color and material with a different base."
+    },
+    {
+      "url": "https://www.ebay.com/itm/376979009677",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Burnt-orange velvet sofa with narrow straight arms and two back cushions; partial material and modern-shape match, different color."
+    },
+    {
+      "url": "https://www.ebay.com/itm/137732394716",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Green velvet Chesterfield loveseat; partial color and material match, rolled arms and tufting differ."
+    }
+  ],
+  "relevant_accessible_count": 4,
+  "scored_at": "2026-09-29T23:44:04Z",
+  "passed": true
+}

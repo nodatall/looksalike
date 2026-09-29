@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/392723353445",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Upholstered dining side chair with exposed wood frame and turned front legs; partial construction/style match, different back and upholstery."
+    },
+    {
+      "url": "https://www.ebay.com/itm/206455223674",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Beige upholstered accent chair with exposed brown turned posts and legs; partial wood construction and turned-leg style match, different width and upholstery."
+    },
+    {
+      "url": "https://www.ebay.com/itm/198150783503",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Complete light-wood Windsor chairs with turned legs and stretcher supports; partial material/construction match, spindle back differs from ladder back."
+    },
+    {
+      "url": "https://www.ebay.com/itm/198150783542",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Separate four-chair listing of the same Windsor design as the preceding two-chair listing; distinct item ID but no additional design variety. Partial material/construction match."
+    },
+    {
+      "url": "https://www.ebay.com/itm/800623956903",
+      "accessible": true,
+      "relevant": false,
+      "notes": "Page and photo accessible. Large white striped upholstered bobbin accent chair; its bulky upholstered silhouette differs substantially from the bare-wood ladder-back reference. Not relevant."
+    },
+    {
+      "url": "https://www.ebay.com/itm/168015006758",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Dining chairs with exposed pale wood slat backs, turned front legs and dark upholstered seats; partial construction/style match, different color and seat."
+    }
+  ],
+  "relevant_accessible_count": 5,
+  "scored_at": "2026-09-29T23:46:16Z",
+  "passed": true
+}
