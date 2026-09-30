@@ -44,7 +44,7 @@ Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares 
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Example image permission and deployment checks remain pending.
+The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. Example image permission and deployment checks remain pending.
 
 ## Limits visitors will see
 
