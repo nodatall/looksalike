@@ -43,8 +43,8 @@ export default function SearchLoading({ photo, events, headingRef, onBack }) {
         aria-atomic="true"
         sx={{
           position: "absolute",
-          width: 1,
-          height: 1,
+          width: "1px",
+          height: "1px",
           overflow: "hidden",
           clipPath: "inset(50%)",
         }}
@@ -98,8 +98,8 @@ export default function SearchLoading({ photo, events, headingRef, onBack }) {
                   component="span"
                   sx={{
                     position: "absolute",
-                    width: 1,
-                    height: 1,
+                    width: "1px",
+                    height: "1px",
                     overflow: "hidden",
                     clipPath: "inset(50%)",
                   }}
