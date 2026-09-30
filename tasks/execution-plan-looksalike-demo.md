@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo into up to six similar eBay listings located in the United States.
 
-The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The latest [five-photo comparison](../docs/experiments/ebay-flow-v6/README.md) passed four cases after repairing loose-part filtering and photo recognition. The ornate sofa failed on a Venice timeout. The example data is prepared; permission to bundle listing photos remains unverified. Build the live app while that permission is unresolved, then complete the example and hosting checks before public release.
+The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The latest [five-photo comparison](../docs/experiments/ebay-flow-v6/README.md) passed four cases after repairing loose-part filtering and photo recognition. The ornate sofa failed on a Venice timeout. The example uses the bundled licensed green-sofa photo. Choosing it fills the preview; submitting it runs the same server search as an uploaded photo. Saved historical responses remain research and mockup data, not the app’s example results.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -32,7 +32,7 @@ The app covers furniture on eBay located in the US. It has one screen, with no a
 
 Search ebay.com without the provider country filter, then keep only listings explicitly marked as located in the United States. Do not send a ZIP, select a Craigslist area, or restrict results to local pickup. US location does not guarantee delivery to every US address. Visitors check shipping and pickup terms on eBay.
 
-Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares the app's nationwide eBay screens. Uploaded-photo progress uses timers in this preview; the example shows actual dated results.
+Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares the app's nationwide eBay screens. Progress uses timers only in this design preview; its example results are clearly marked as historical. The live app runs a real search for the example photo.
 
 ## Project choices
 
@@ -44,7 +44,7 @@ Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares 
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. Example image permission and deployment checks remain pending.
+The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. The example is being changed to use the real search flow. Deployment checks remain pending.
 
 ## Limits visitors will see
 
@@ -54,11 +54,11 @@ The Rails app and mockup now share the photo-only eBay screen. The app streams r
 | Photo size | Accept one JPEG, PNG, or WebP, up to 10 MB and 20 megapixels. Reduce it to at most 450,000 bytes before sending it. |
 | Results | Show up to six distinct listings. Fewer results are acceptable. |
 | Waiting time | Stop the server's work after 55 seconds. Give the browser 65 seconds to receive and show the outcome. |
-| Simultaneous searches | Run one live search at a time. Another visitor gets a prompt “busy” message; the example and saved recent results remain available. |
+| Simultaneous searches | Run one live search at a time. Another visitor gets a prompt “busy” message. Saved recent results and the upload page remain available; the example follows the same busy rule as other photos. |
 | Public API allowance | Allow at most 10 search attempts per day and 180 in any rolling 30 days. |
 | Per-visitor limit | Allow three searches per hour that need fresh results, tracked by browser session/IP address. |
 | Repeated photos | Reuse a successful result for 24 hours, or an empty result for one hour, using the same search version and US scope. Show when it was retrieved. |
-| Prepared example | Show a dated “Demo snapshot” that uses no API searches and works even when outside services are unavailable. |
+| Example photo | Fill the preview with the bundled licensed sofa photo. Submission uses the same live search, cache, errors, and spending limits as an upload. |
 
 A search attempt counts against the limit even if its outcome is uncertain. The app will not retry paid searches automatically. Development experiments and public searches share the account's allowance.
 
@@ -111,11 +111,11 @@ Spend at most **15 search attempts** on this comparison: up to five for Lens alo
 - [x] Run the bounded recheck under the revised rules. Stop after the chair and coffee table fail; preserve the two sofa passes and mark the dresser untested.
 - [x] Reject loose chair spindles while keeping complete spindle-back chairs. Tell Venice to identify furniture even when decorative objects sit on it. Check these repairs with saved responses first.
 - [x] Repeat the five-photo comparison under the repaired rules, with a new frozen batch: at most ten SerpApi searches, five uploads and five Venice calls, with no retries. Keep the four-of-five criterion, two-failure stop and separate deployment reserve.
-- [ ] Package the [prepared modern-sofa example](../docs/examples/modern-sofa-2026-09-28.json), including its reference photo and actual listing thumbnails with permission to reuse them. The saved data is ready; listing-image permission and bundled assets are still needed.
+- [ ] Make the example submit its licensed photo through the real search flow, with actual progress and current results. Keep historical snapshots out of the app’s search response.
 
 The preceding Craigslist comparison is historical. Its frozen inputs, two-failure stop rule, budget, scores, and completed tasks remain unchanged. The user has approved replacing that direction with nationwide eBay. For the new full-flow comparison, require at least four of five photos to return three relevant, distinct, accessible US-located listings among the first six, within 55 seconds. Stop after two failed photos. Record short-phrase probes separately; they cannot establish a full-flow pass.
 
-**If the new approach fails, stop feature work and return the evidence and smallest proposed change.** Do not increase the approved live-call allowance or use the example to claim that live uploads work. If we cannot obtain reusable listing images, flag that before promising a complete example.
+**If the new approach fails, stop feature work and return the evidence and smallest proposed change.** Do not increase the approved live-call allowance or use the example to claim that live uploads work. Use the licensed example reference. Live result photos load from eBay just as they do for any upload; there is no bundled listing-photo requirement.
 
 The first comparison used six search attempts and four uploads. Both approaches stopped after two failed cases, leaving three photos untested on each. The two-call diagnostic brought usage to eight attempts and confirmed that the modern query returned links outside Craigslist. The original scores and frozen rules remain unchanged.
 
@@ -131,17 +131,15 @@ The user-approved [test without the country filter](../docs/experiments/ebay-no-
 
 Earlier experiments used **23 search attempts** before the repaired comparison. On September 25, 2026, the fresh account check confirmed 230 searches remaining. The new batch used six searches and three uploads, bringing recorded development usage to **29 search attempts**. The remaining account balance was not refreshed for that batch. It stopped after two failures; unused allowance could not bypass that stop. Further focused diagnostic batches are authorized within the remaining account allowance, but must record their purpose and size before dispatch. Preserve every earlier attempt and frozen score, and keep the separate two-search deployment check reserved.
 
-The September 28 [Venice comparison](../docs/experiments/ebay-flow-v3/README.md) used ten more searches and five uploads, plus three vision calls. Four of five photos passed within 19 seconds. Recorded development usage is now **39 search attempts**; the post-run account check confirmed **214 searches remaining**. The two-search deployment reserve is untouched. The modern-sofa example data is prepared, but the listing photos still need documented reuse permission before bundling.
+The September 28 [Venice comparison](../docs/experiments/ebay-flow-v3/README.md) used ten more searches and five uploads, plus three vision calls. Four of five photos passed within 19 seconds. Recorded development usage is now **39 search attempts**; the post-run account check confirmed **214 searches remaining**. The two-search deployment reserve is untouched. At that time the saved example still needed listing-photo permission for bundling. The current live-example decision replaces that offline requirement; this dated response remains historical.
 
-### 3. Put the example online first
+### 3. Put the app online
 
-This checks the hosting setup before we expose paid searches to visitors.
-
-The example still needs documented image permission. Continue the independent server and visitor work in step 4 while it is unresolved. Keep public publishing and deployment pending until the example can be packaged.
+The live app is implemented locally. Finish the example change before publishing, then check hosting with paid searches disabled. With searches disabled, the upload page and health check must remain usable and submission must explain that search is unavailable.
 
 - [ ] Create the public GitHub repository and publish the checked starting version.
 - [x] Build and check the production container locally, including compiled assets, mounted SQLite, restart persistence and missing-volume protection.
-- [ ] Deploy the example to Railway with live search switched off.
+- [ ] Deploy the app to Railway with live search switched off.
 - [ ] Verify that the database is writable and that its records survive a restart and a new deployment.
 - [ ] Use a temporary simulated search to check that Railway permits responses beyond 30 seconds and that the app stops work at its 55-second deadline.
 - [ ] Remove or disable that temporary test route before allowing public live searches.
@@ -161,7 +159,7 @@ Use the same compression and search rules that passed the experiment.
 - [x] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
 - [x] Add the loading checklist to the interactive mockup, with a visible photo, completed steps, status announcements, and Back.
 - [x] Connect the loading checklist to actual search stages, including the optional Venice step. Stop it on completion, timeout, or error.
-- [x] Add understandable empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
+- [ ] Update errors for the live example: keep the photo, explain unavailable or limited searches, and do not offer the example as a way around the same limit.
 - [x] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
 
 The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks remain pending.
@@ -172,14 +170,14 @@ Offline checks passed: 113 Ruby tests, 19 JavaScript tests, lint, builds, depend
 
 - [x] Test the search rules, upload checks, errors, saved results, and spending controls using recorded responses instead of paid API calls.
 - [x] Verify that requests omit the provider country filter and that local filtering rejects candidates whose US location cannot be established. Check that cache and browser-storage versions cannot restore old Craigslist or ZIP-based results as eBay results.
-- [x] Verify that simultaneous requests cannot exceed the limits and that the example and health check still respond during a live search.
-- [ ] Verify that every image in the prepared example loads with external image and API requests blocked.
-- [x] Walk through uploads, the example, errors, and retries on desktop and mobile, including keyboard-only use.
-- [x] Check photo-based button enablement and the inline example preview. Verify that reload restores results without a provider call and that “Search again” clears them.
+- [x] Verify that simultaneous requests cannot exceed the limits and that the upload page and health check still respond during a live search.
+- [ ] Verify that the bundled example reference loads without external requests, and that submitting it uses the normal server search, progress, cache, and error behavior.
+- [ ] Repeat the example walkthrough on desktop and mobile, including errors, keyboard use, and reload, to verify the real search flow.
+- [ ] Recheck the example preview and button, completed-result reload without new calls, and “Search again.” Reject old saved example snapshots.
 - [x] Run all automated checks and inspect the public files for secrets, private photos, and misleading claims.
-- [x] Capture screenshots and a short walkthrough recording.
+- [ ] Refresh screenshots and the walkthrough recording to show the example’s actual search flow.
 
-Local verification is complete. The production container streamed a 34.4-second recorded search, returned a clear timeout at 55.1 seconds, and served the example and health check during search work. Saved responses made no new calls. Screenshots and a timed walkthrough are saved locally. The example still needs reusable listing images before its offline check and public release.
+Local verification is complete. The production container streamed a 34.4-second recorded search, returned a clear timeout at 55.1 seconds, and served the example and health check during search work. Saved responses made no new calls. Screenshots and a timed walkthrough are saved locally. The example’s reference is licensed and bundled. Its new live search behavior still needs verification before publishing.
 
 ### 6. Enable live search and share the demo
 
@@ -193,11 +191,11 @@ If search quality, request timing, or storage fails these checks, fix it or retu
 
 ## What “ready” means
 
-The public HTTPS link works without login. Visitors can try the complete example or upload a new photo without a ZIP. The US listing checks, five-photo comparison with the photo fallback, and final new-photo check have passed.
+The public HTTPS link works without login. Visitors can search from the bundled example photo or upload a new photo without a ZIP. Both use the same server flow and limits. The US listing checks, five-photo comparison with the photo fallback, and final new-photo check have passed.
 
-The page matches the mockup on desktop and mobile and works with a keyboard. A completed search survives a reload without repeating API calls. Errors explain what happened and offer a useful next action. Recent results and historical examples are labeled clearly.
+The page matches the mockup on desktop and mobile and works with a keyboard. A completed search survives a reload without repeating API calls. Errors explain what happened and offer a useful next action. Cached results show their original retrieval dates.
 
-Automated checks pass without paid searches. The database survives deployment changes. The public source, README, and recording explain how the app works and its limits.
+Automated checks pass without paid searches. The database survives deployment changes. The public source, README, and recording explain how the app works and its limits. The example does not promise results when providers or allowance are unavailable.
 
 ## Technical appendix
 
@@ -256,7 +254,7 @@ Give the vision request at most 15 seconds within the shared 55-second deadline,
 
 For the approved one-photo retest, allow one Venice call with a three-cent reservation, one upload and two SerpApi searches. Any later five-photo comparison needs a separate frozen batch; its existing ceiling is five Venice calls and $0.15 in conservatively reserved cost. Reserve three cents before each dispatch and keep uncertain attempts charged to the cap. At the verified catalog rates, even the full 128,000-token input limit plus 300 output tokens costs less than three cents. Record model, prompt/schema version, sanitized output, tokens when reported, and elapsed time. The current catalog lists $0.21 per million input tokens and $1.90 per million output tokens; recheck those rates before the batch. Measure returned usage before publishing a per-search estimate. [Pricing and capabilities](https://docs.venice.ai/models/text)
 
-Before public use, enforce separate vision limits of five calls daily and 90 in a rolling 30 days, with the same no-retry rule. Cache identity includes the trigger policy, provider/model, prompt/schema, and phrase-validation versions. Cached results and the prepared example make no vision calls. API credentials, photo bytes, and raw provider payloads never appear in the explanation or logs.
+Before public use, enforce separate vision limits of five calls daily and 90 in a rolling 30 days, with the same no-retry rule. Cache identity includes the trigger policy, provider/model, prompt/schema, and phrase-validation versions. Cached results make no vision calls. A fresh example search can use Venice under the same trigger and limits as any upload. API credentials, photo bytes, and raw provider payloads never appear in the explanation or logs.
 
 ### Experiment records
 
@@ -278,21 +276,21 @@ SerpApi's Image API accepts these formats up to 500 KB. Its `image_id` expires a
 
 Clean temporary upload files on success and failure. Do not accept arbitrary image URLs or fetch user-supplied URLs from the server. Remove keys, upload bodies, provider upload IDs, and credential-bearing URLs from logs and recorded test data.
 
-### Saved results and the prepared example
+### Saved results and the example photo
 
-Use browser session storage to restore a completed view: normalized cards, marketplace and US scope, retrieval date, live/cache/snapshot status, sanitized search details, a small reference thumbnail, and the explanation's open state. Keep the upload's original bytes and provider upload ID out of this storage. Restore the previous result as-is, including its date; refreshing must never resubmit the search. An unfinished search is not a completed result and must not restart automatically.
+Use browser session storage to restore a completed view: normalized cards, marketplace and US scope, retrieval date, live/cache status, sanitized search details, a small reference thumbnail, and the explanation's open state. Keep the upload's original bytes and provider upload ID out of this storage. Restore only completed live or cached eBay searches, including their original date; refreshing must never resubmit the search. An unfinished search is not a completed result and must not restart automatically.
 
-Validate restored data and handle unavailable or corrupt storage by returning to the usable upload screen. “Search again” clears the saved result and thumbnail. Change the storage version so old Craigslist or ZIP-based views cannot be restored as eBay searches. This browser copy is separate from the server cache and must never authorize calls or bypass limits.
+Validate restored data and handle unavailable or corrupt storage by returning to the usable upload screen. “Search again” clears the saved result and thumbnail. Bump the storage version and reject historical example snapshots alongside old Craigslist or ZIP-based views. This browser copy is separate from the server cache and must never authorize calls or bypass limits.
 
 For the saved results in step 4, use a cache key built from the reduced image's SHA-256 hash, eBay marketplace, local US-location rule, and search/query version. Keep the original retrieval time and search details. Label a reused response “Cached.”
 
 Apply the expiry times in the limits table. Provider failures must not be stored as successful results.
 
-Save the example as a sanitized response snapshot in the repository. Record the image sources and reuse permission alongside the bundled files. Do not substitute unrelated stock images. Show its label immediately, retain historical listing links, and mark availability unverified. Never use it as the response to an unrelated upload.
+Keep the licensed sofa reference bundled in the app, with its source and license recorded. Choosing “example” fills the existing preview and never submits immediately. “Find similar items” sends the reduced photo to the same endpoint as any upload. A fresh search uses the normal allowance and actual progress; an existing server cache entry is clearly marked “Cached.” The app must not substitute a historical snapshot after an error or bypass limits.
 
-Choosing the example fills the existing upload screen and never submits immediately. “Find similar items” then loads the prepared nationwide eBay snapshot with its original retrieval date and search details. It spends no API allowance and needs no artificial wait.
+Keep the sanitized historical response snapshot for research and the standalone design preview only. Preserve its date, historical links, and source notes. Do not bundle or republish listing photos as an offline runtime example.
 
-The earlier mockup uses the selected purple Victorian couch and illustrated Craigslist results. Update its copy, cards, controls, saved state, and diagram together for eBay. Public release needs permission to reuse the reference photo or a suitable replacement, plus a genuine recorded eBay result. Keep source and reuse notes in the mockup README.
+The earlier purple-couch/Craigslist mockup is historical. The current preview uses the licensed green-sofa reference and dated eBay results. Keep its source notes and preview-only wording accurate.
 
 ### Spending and simultaneous requests
 
@@ -302,7 +300,7 @@ Before calling SerpApi, reserve enough allowance for the chosen approach's maxim
 
 Enforce the one-live-search rule through a persisted lock, called a lease. Reject another uncached request before uploading or reserving its search allowance. The lease must last longer than the server deadline plus cleanup time. Recover expired leases without refunding uncertain spend.
 
-Reused results spend no provider allowance. The health endpoint must remain responsive alongside those results and the example.
+Reused results spend no provider allowance. The upload page and health endpoint must remain responsive during search work. The example uses the same lease and allowance checks as any other photo.
 
 ### Deadlines, progress, and errors
 
@@ -334,7 +332,7 @@ Begin with the browser's photo request to Rails, then show:
 
 For each external call, show its outcome and measured duration when available. Keep request details sanitized and response excerpts short. Mark failed or skipped stages honestly. Show the retrieval time separately from listing dates; search-attempt counts are not verified bills.
 
-The local mockup uses completed-search wording to preview the finished design. Its README records that the requests, responses, and counts are modeled; they are not evidence of working API calls. In the live app, cached results and the prepared snapshot show zero new calls, with the original calls, counts, timings, and retrieval date shown separately when recorded. Never present saved or modeled details as a live search that just ran.
+The local mockup models progress with timers and uses a dated snapshot for its example results. Its README makes that distinction explicit; it is not evidence of fresh API calls. In the live app, cached results show zero new calls, with original calls, counts, timings, and retrieval date shown separately. Fresh example searches report their actual calls. Never present saved or modeled details as a live search that just ran.
 
 ### Verification and documentation
 
@@ -342,7 +340,7 @@ The offline checks in step 5 cover extraction, listing URLs, duplicates, missing
 
 Add one request-level integration flow. The browser walkthrough also checks focus, error announcements, broken images, double submission, and timeout recovery. Check reload after an upload and after the example, including open and closed explanations, unavailable storage, legacy Craigslist state, and an interrupted search. Restoring a completed view must make zero upload or search calls.
 
-Check the explanation for the Lens-to-eBay flow, failures, cached results, and the example. Each call must show how its response feeds the next step; local work must not increase the upload, search, or vision-call counts.
+Check the explanation for the Lens-to-eBay flow, failures, cached results, and a fresh example search. Each call must show how its response feeds the next step; local work must not increase the upload, search, or vision-call counts.
 
 Add instructions to refresh recorded responses, experiment results, and the recording to the README contents listed in step 6.
 
