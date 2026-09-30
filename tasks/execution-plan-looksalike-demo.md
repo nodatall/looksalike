@@ -166,18 +166,20 @@ Use the same compression and search rules that passed the experiment.
 
 The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks remain pending.
 
-Offline checks passed: 111 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly and daily limits, timeout recovery and reload. A mobile error-layout repair passed checks with the explanation closed and open. These checks made no paid calls.
+Offline checks passed: 112 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly and daily limits, timeout recovery and reload. Mobile loading and error layouts fit the viewport; broken images leave useful cards and links. These checks made no paid calls.
 
 ### 5. Check the app before release
 
 - [x] Test the search rules, upload checks, errors, saved results, and spending controls using recorded responses instead of paid API calls.
 - [x] Verify that requests omit the provider country filter and that local filtering rejects candidates whose US location cannot be established. Check that cache and browser-storage versions cannot restore old Craigslist or ZIP-based results as eBay results.
-- [ ] Verify that simultaneous requests cannot exceed the limits and that the example and health check still respond during a live search.
+- [x] Verify that simultaneous requests cannot exceed the limits and that the example and health check still respond during a live search.
 - [ ] Verify that every image in the prepared example loads with external image and API requests blocked.
-- [ ] Walk through uploads, the example, errors, and retries on desktop and mobile, including keyboard-only use.
+- [x] Walk through uploads, the example, errors, and retries on desktop and mobile, including keyboard-only use.
 - [x] Check photo-based button enablement and the inline example preview. Verify that reload restores results without a provider call and that “Search again” clears them.
-- [ ] Run all automated checks and inspect the public files for secrets, private photos, and misleading claims.
-- [ ] Capture screenshots and a short walkthrough recording.
+- [x] Run all automated checks and inspect the public files for secrets, private photos, and misleading claims.
+- [x] Capture screenshots and a short walkthrough recording.
+
+Local verification is complete. The production container streamed a 34.4-second recorded search, returned a clear timeout at 55.1 seconds, and served the example and health check during search work. Saved responses made no new calls. Screenshots and a timed walkthrough are saved locally. The example still needs reusable listing images before its offline check and public release.
 
 ### 6. Enable live search and share the demo
 
@@ -213,7 +215,7 @@ The mockup source is `tasks/mockup/main.jsx`; its build command is documented in
 
 Run Puma directly behind Railway's HTTPS service, with one worker and at least three request threads. Omit Thruster from the generated start command because its default timeout conflicts with the planned request length. Mount all production SQLite files at `/app/storage`. Set writable ownership for the app user and prepare the database at startup, after the volume is mounted.
 
-The production image now builds and serves its fingerprinted JavaScript. Local container checks preserved two fixture allowance units, the original cached date and a lease owner through a restart and a new container. A missing volume disabled live search and created no replacement database. Railway checks remain separate and pending.
+The production image now builds and serves its fingerprinted JavaScript. Local container checks preserved two fixture allowance units, the original cached date and a lease owner through a restart and a new container. A missing volume disabled live search and created no replacement database. A recorded long request completed in 34.4 seconds; a forced timeout returned its final error in 55.1 seconds. Health responded within 13 milliseconds during both. Railway checks remain separate and pending.
 
 Use a cheap health endpoint. If the intended database volume is missing or unavailable, disable live calls instead of creating a temporary replacement database. Keep the shared component boundaries in [ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 
@@ -270,6 +272,8 @@ Changing the algorithm invalidates the affected scores. Extra tuning uses the ap
 
 Rails independently checks the bytes, format, dimensions, and size against the photo limits above before contacting SerpApi. Show an actionable error if browser compression cannot meet the limit.
 
+Puma rejects request bodies over 600,000 bytes before Rails buffers them. This allows the reduced photo and multipart fields while keeping the upload bounded.
+
 SerpApi's Image API accepts these formats up to 500 KB. Its `image_id` expires after ten minutes, so a new uncached search uploads the reduced image again. ID expiry does not prove that the provider has deleted the image. [Image API](https://serpapi.com/image-api)
 
 Clean temporary upload files on success and failure. Do not accept arbitrary image URLs or fetch user-supplied URLs from the server. Remove keys, upload bodies, provider upload IDs, and credential-bearing URLs from logs and recorded test data.
@@ -303,6 +307,8 @@ Reused results spend no provider allowance. The health endpoint must remain resp
 ### Deadlines, progress, and errors
 
 The server deadline covers validation, upload, image recognition, and all search calls together. Measure elapsed time with a monotonic clock so clock adjustments cannot extend it. Each network operation receives only the remaining time. Set `Net::HTTP#max_retries = 0` if using that client.
+
+Nested operations share one timer for the same deadline. This prevents a second timeout from interrupting error reporting or cleanup. A separate, shorter Venice deadline still applies when needed.
 
 A browser disconnect does not guarantee that the provider stopped work. Do not automatically switch search approaches after a failure.
 

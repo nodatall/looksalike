@@ -46,7 +46,7 @@ Three operational tables use the application's SQLite database. `search_cache_en
 
 ## Composition roots and runtime entrypoints
 
-Rails exposes home, health and the CSRF-protected multipart search POST. `SearchesController` establishes the session visitor identity before ActionController::Live starts its stream thread. The flow is synchronous in the same Rails process, without a job service. A disconnect stops later stages and leaves committed allowance counted. Controller and flow ensure stream/upload cleanup.
+Rails exposes home, health and the CSRF-protected multipart search POST. Puma caps the complete request body at 600,000 bytes before Rails buffering. `SearchesController` establishes the session visitor identity before ActionController::Live starts its stream thread. The flow is synchronous in the same Rails process, without a job service. A disconnect stops later stages and leaves committed allowance counted. Controller and flow ensure stream/upload cleanup. Each deadline owns one active timer per executing thread, so nested calls cannot raise duplicate timeout exceptions during recovery; shorter independent deadlines retain their own timer.
 
 The server budget is at most 55 seconds, including validation and provider calls. Every transport receives the remaining monotonic budget. Progress reports actual started/completed/failed stages; it never estimates percentage or time remaining.
 
