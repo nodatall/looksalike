@@ -33,6 +33,36 @@ class EbaySearchTest < ActiveSupport::TestCase
     refute_match(/private-ref|offline-key/, result.to_json)
   end
 
+  test "a real shared deadline returns failure and completes cleanup after interrupting nested provider work" do
+    calls, events = [], []
+    store = StoreDouble.new
+    store.define_singleton_method(:release) do |token|
+      sleep 0.01 # Give a queued duplicate timeout time to interrupt cleanup.
+      super(token)
+    end
+    transport = ->(uri:, deadline:, **) do
+      calls << uri.path
+      deadline.within { sleep 1 }
+      flunk "Timed-out provider work must not finish"
+    end
+    photo = Tempfile.new("search-deadline")
+    photo.binmode
+    photo.write(File.binread(file_fixture("photo.jpg")))
+    path = photo.path
+    flow = EbaySearch.new(client: SerpApi::Client.new(api_key: "offline-key", transport: transport), store: store, enabled: true)
+    result = flow.call(photo: photo, session_id: "visitor", ip: "127.0.0.1", deadline: SearchDeadline.new(seconds: 0.1),
+      progress: ->(event) { events << event })
+    assert_equal "deadline", result["status"]
+    assert_equal [ "/image" ], calls
+    assert_equal 2, store.reserved
+    assert_equal "owner", store.released
+    refute File.exist?(path)
+    assert_equal [ "upload" ], result["stages"].map { |entry| entry["stage"] }
+    assert_equal "failed", result["stages"].last["status"]
+    assert_equal "failed", events.last["status"]
+    assert_equal({ "uploads" => 1, "serpapi" => 0, "vision" => 0 }, result["attempts"])
+  end
+
   test "disconnect before the next call closes the photo and keeps the reservation without retry" do
     store = StoreDouble.new
     calls = 0
