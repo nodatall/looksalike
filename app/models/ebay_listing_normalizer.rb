@@ -2,7 +2,7 @@ require "uri"
 
 # Validate item identity and location, then apply the title policy in provider order.
 class EbayListingNormalizer
-  VERSION = "ebay-listings-v2"
+  VERSION = "ebay-listings-v3"
   US_RULE = "explicit-us-v1"
   CREDENTIAL_PARAMETERS = ListingNormalizer::CREDENTIAL_PARAMETERS
   Result = Data.define(:listings, :counts, :version)
@@ -79,7 +79,8 @@ class EbayListingNormalizer
   def self.text(value, length, redact)
     return unless value.is_a?(String) && value.valid_encoding? && value.bytesize <= length * 4
     value = redact.call(value).gsub(/(?:https?|data):\S*/i, "[URL omitted]").gsub(/[[:space:]]+/, " ").strip
-    value if !value.empty? && value.length <= length && !value.match?(/[[:cntrl:]]/)
+    units = value.each_codepoint.sum { |point| point > 0xFFFF ? 2 : 1 }
+    value if !value.empty? && units <= length && !value.match?(/[[:cntrl:]]/)
   end
   private_class_method :text
 

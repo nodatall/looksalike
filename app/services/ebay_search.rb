@@ -180,7 +180,12 @@ class EbaySearch
       text = @client.redact(value)
       text = @vision_client.redact(text)
       text = text.gsub(@image_id, "[reference omitted]") if @image_id && !@image_id.empty?
-      text.gsub(/(?:https?|data):\S*/i, "[URL omitted]").gsub(/[[:cntrl:]]/, " ").strip[0, limit]
+      text = text.gsub(/(?:https?|data):\S*/i, "[URL omitted]").gsub(/[[:cntrl:]]/, " ").strip
+      units = 0
+      text.each_char.take_while do |character|
+        units += character.ord > 0xFFFF ? 2 : 1
+        units <= limit
+      end.join
     end
 
     def elapsed(started)

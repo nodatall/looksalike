@@ -63,6 +63,19 @@ class EbayListingNormalizerTest < ActiveSupport::TestCase
       assert_equal "Used [URL omitted]", listing["condition"]
       assert_equal "Delivery [URL omitted]", listing["shipping"]
     end
+    [ [ "é", 1 ], [ "🪑", 2 ] ].each do |character, units|
+      title = "Wood dining chair " + character * ((300 - "Wood dining chair ".length) / units)
+      assert_equal title, normalize([ row(title: title) ]).listings.first["title"]
+      assert_empty normalize([ row(title: title + character) ]).listings
+      { condition: 100, shipping: 200 }.each do |field, limit|
+        boundary = character * (limit / units)
+        assert_equal boundary, normalize([ row(**{ field => boundary }) ]).listings.first[field.to_s]
+        assert_nil normalize([ row(**{ field => boundary + character }) ]).listings.first[field.to_s]
+      end
+      price = %w[raw from to].to_h { |field| [ field, character * (80 / units) ] }
+      assert_equal price, normalize([ row(price: price) ]).listings.first["price"]
+      assert_nil normalize([ row(price: price.transform_values { |value| value + character }) ]).listings.first["price"]
+    end
     assert_empty normalize([]).listings
     assert_raises(ArgumentError) { normalize(Array.new(101) { row }) }
   end

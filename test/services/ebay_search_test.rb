@@ -33,6 +33,35 @@ class EbaySearchTest < ActiveSupport::TestCase
     refute_match(/private-ref|offline-key/, result.to_json)
   end
 
+  test "public card and summary text use browser length limits without splitting Unicode characters" do
+    [ [ "é", 1 ], [ "🪑", 2 ] ].product([ "Green velvet sofa ", "Green velvet sofa X" ]).each do |(character, units), prefix|
+      summary_title = prefix + character * ((200 - prefix.length) / units)
+      card_title = prefix + character * ((300 - prefix.length) / units)
+      supplied = card_title + character
+      store = StoreDouble.new
+      store.define_singleton_method(:finish) { |**| }
+      transport = ->(uri:, **) do
+        data = if uri.path == "/image"
+          { image_id: "private-ref" }
+        elsif URI.decode_www_form(uri.query).to_h["engine"] == "google_lens"
+          { search_metadata: { status: "Success" }, visual_matches: Array.new(2) { { title: supplied } } }
+        else
+          { search_metadata: { status: "Success" }, organic_results: [ { title: supplied, link: "https://www.ebay.com/itm/123",
+            thumbnail: "https://i.ebayimg.com/images/sofa.jpg", location: "Located in United States" } ] }
+        end
+        [ 200, data.to_json ]
+      end
+      result = EbaySearch.new(client: SerpApi::Client.new(api_key: "offline-key", transport: transport), store: store,
+        enabled: true).call(photo: File.binread(file_fixture("photo.jpg")), session_id: "visitor", ip: "127.0.0.1")
+      assert_equal "success", result["status"]
+      assert_equal card_title, result["listings"].first["title"]
+      %w[lens ebay].each do |stage|
+        titles = result["stages"].find { |entry| entry["stage"] == stage }.dig("summary", "titles")
+        assert_equal Array.new(stage == "lens" ? 2 : 1, summary_title), titles
+      end
+    end
+  end
+
   test "a real shared deadline returns failure and completes cleanup after interrupting nested provider work" do
     calls, events = [], []
     store = StoreDouble.new
