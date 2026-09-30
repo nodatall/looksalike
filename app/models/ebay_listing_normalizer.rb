@@ -2,7 +2,7 @@ require "uri"
 
 # Validate item identity and location, then apply the title policy in provider order.
 class EbayListingNormalizer
-  VERSION = "ebay-listings-v1"
+  VERSION = "ebay-listings-v2"
   US_RULE = "explicit-us-v1"
   CREDENTIAL_PARAMETERS = ListingNormalizer::CREDENTIAL_PARAMETERS
   Result = Data.define(:listings, :counts, :version)
@@ -70,15 +70,15 @@ class EbayListingNormalizer
 
   def self.image_link(value)
     uri = safe_uri(value)
-    return unless uri && uri.host.downcase == "i.ebayimg.com" && !uri.path.empty?
-    uri.fragment = nil
-    uri.to_s
+    return unless uri && value.match?(%r{\Ahttps://i\.ebayimg\.com/[a-zA-Z0-9_~./%-]+\.(?:jpg|jpeg|png|webp)\z}i)
+    return if value.match?(/%(?:2f|5c|2e|00)/i) || value.include?("/../") || value.include?("/./")
+    value
   end
   private_class_method :image_link
 
   def self.text(value, length, redact)
     return unless value.is_a?(String) && value.valid_encoding? && value.bytesize <= length * 4
-    value = redact.call(value).gsub(%r{https?://\S+}, "[URL omitted]").gsub(/[[:space:]]+/, " ").strip
+    value = redact.call(value).gsub(/(?:https?|data):\S*/i, "[URL omitted]").gsub(/[[:space:]]+/, " ").strip
     value if !value.empty? && value.length <= length && !value.match?(/[[:cntrl:]]/)
   end
   private_class_method :text

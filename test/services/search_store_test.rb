@@ -57,6 +57,7 @@ class SearchStoreTest < ActiveSupport::TestCase
     assert_nil fresh_store.lookup("empty")
     assert_not_equal SearchStore.cache_key("photo1"), SearchStore.cache_key("photo2")
     original = SearchStore.cache_key("photo1")
+    stub_const(EbayListingNormalizer, :VERSION, "ebay-listings-v1") { assert_not_equal original, SearchStore.cache_key("photo1") }
     stub_const(EbayListingFilter, :VERSION, "test-next-filter") { assert_not_equal original, SearchStore.cache_key("photo1") }
     stub_const(Vision::Client, :PROMPT_VERSION, "test-next-prompt") { assert_not_equal original, SearchStore.cache_key("photo1") }
   end

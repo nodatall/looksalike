@@ -16,8 +16,15 @@ class EbayListingNormalizerTest < ActiveSupport::TestCase
       "https://www.ebay.com/itm/123?api_key=secret", "https://www.ebay.com/itm/123\\evil" ]
     bad.each { |url| assert_empty normalize([ row(link: url) ]).listings, url }
     [ "https://i.ebayimg.com.evil.test/chair.jpg", "http://i.ebayimg.com/chair.jpg", "https://user@i.ebayimg.com/chair.jpg",
-      "https://i.ebayimg.com:444/chair.jpg", "https://i.ebayimg.com/chair.jpg?X-Amz-Signature=secret" ].each do |url|
+      "https://i.ebayimg.com:444/chair.jpg", "https://i.ebayimg.com/chair.jpg?X-Amz-Signature=secret",
+      "https://i.ebayimg.com/chair.jpg?size=large", "https://i.ebayimg.com/chair.svg", "https://i.ebayimg.com/chair.jpg#photo",
+      "https://i.ebayimg.com/a/../chair.jpg", "https://i.ebayimg.com/a/./chair.jpg", "https://i.ebayimg.com/%2e/chair.jpg",
+      "https://i.ebayimg.com/a%2Fb/chair.jpg", "https://i.ebayimg.com/a%5Cb/chair.jpg", "https://i.ebayimg.com/a%00/chair.jpg" ].each do |url|
       assert_empty normalize([ row(thumbnail: url) ]).listings, url
+    end
+    [ "https://i.ebayimg.com/images/chair.jpg", "https://i.ebayimg.com/images/chair.JPEG",
+      "https://i.ebayimg.com/images/chair.png", "https://i.ebayimg.com/images/chair.webp" ].each do |url|
+      assert_equal url, normalize([ row(thumbnail: url) ]).listings.first["thumbnail"]
     end
     valid = normalize([ row(link: "https://ebay.com/itm/Wood-Chair/123?hash=abc#photo") ]).listings.first
     assert_equal "https://www.ebay.com/itm/123", valid["url"]
@@ -48,6 +55,14 @@ class EbayListingNormalizerTest < ActiveSupport::TestCase
     missing = normalize([ row(price: 100) ]).listings.first
     assert_nil missing["price"]
     assert_nil missing["shipping"]
+    [ "https://example.test/photo", "HTTPS://example.test/photo", "http:example", "HtTpS:", "data:image/jpeg;base64,private", "DATA:private" ].each do |reference|
+      listing = normalize([ row(title: "Wood dining chair #{reference}", price: { "raw" => "$100 #{reference}" },
+        condition: "Used #{reference}", shipping: "Delivery #{reference}") ]).listings.first
+      assert_equal "Wood dining chair [URL omitted]", listing["title"]
+      assert_equal "$100 [URL omitted]", listing.dig("price", "raw")
+      assert_equal "Used [URL omitted]", listing["condition"]
+      assert_equal "Delivery [URL omitted]", listing["shipping"]
+    end
     assert_empty normalize([]).listings
     assert_raises(ArgumentError) { normalize(Array.new(101) { row }) }
   end

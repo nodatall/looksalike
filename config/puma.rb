@@ -30,6 +30,9 @@ raise "Production requires at least three Puma threads" if ENV["RAILS_ENV"] == "
 threads threads_count, threads_count
 workers 0
 
+# Bound the whole multipart body before Rails buffers it; reduced photos are at most 450 KB.
+http_content_length_limit 600_000
+
 # Specifies the `port` that Puma will listen on to receive requests; default is 3000.
 port ENV.fetch("PORT", 3000)
 

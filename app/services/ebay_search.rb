@@ -180,7 +180,7 @@ class EbaySearch
       text = @client.redact(value)
       text = @vision_client.redact(text)
       text = text.gsub(@image_id, "[reference omitted]") if @image_id && !@image_id.empty?
-      text.gsub(%r{https?://\S+}, "[URL omitted]").gsub(/[[:cntrl:]]/, " ").strip[0, limit]
+      text.gsub(/(?:https?|data):\S*/i, "[URL omitted]").gsub(/[[:cntrl:]]/, " ").strip[0, limit]
     end
 
     def elapsed(started)

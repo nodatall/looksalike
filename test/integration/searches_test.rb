@@ -53,7 +53,13 @@ class SearchesTest < ActionDispatch::IntegrationTest
   end
 
   test "CSRF-protected upload streams real ordered stages and cached reload makes no new calls" do
-    upload, lens, ebay = upload_request, lens_request, ebay_request
+    references = [ "https://example.test/photo", "HTTPS://example.test/photo", "http:example", "HtTpS:",
+      "data:image/jpeg;base64,private", "DATA:private" ]
+    titles = references.map { |reference| "Green velvet sofa #{reference}" }
+    rows = titles.each_with_index.map { |title, index| { title: title, link: "https://www.ebay.com/itm/#{index + 100}",
+      thumbnail: "https://i.ebayimg.com/images/#{index}.jpg", location: "Located in United States", price: { raw: "$100" } } }
+    rows << rows.first.merge(link: "https://www.ebay.com/itm/200", title: "Green velvet sofa")
+    upload, lens, ebay = upload_request, lens_request(titles: titles), ebay_request(rows: rows)
     submit
     assert_response :success
     assert_equal "application/x-ndjson", response.media_type
@@ -68,6 +74,10 @@ class SearchesTest < ActionDispatch::IntegrationTest
     assert_equal %w[started complete] * 4, events[0...-1].map { |event| event["status"] }
     assert_equal "skipped", result["stages"].find { |stage| stage["stage"] == "vision" }["status"]
     assert_equal 7, result["stages"].last.dig("summary", "returned")
+    %w[lens ebay].each do |name|
+      assert_equal Array.new(6, "Green velvet sofa [URL omitted]"), result["stages"].find { |stage| stage["stage"] == name }.dig("summary", "titles")
+    end
+    assert_equal Array.new(6, "Green velvet sofa [URL omitted]"), result["listings"].map { |listing| listing["title"] }
     refute_match(/offline-serp-key|offline-vision-key|private-photo-reference|image_id|search_metadata/, response.body)
     assert_equal 2, SearchUsageReservation.where(kind: "serpapi").sum(:units)
     submit
