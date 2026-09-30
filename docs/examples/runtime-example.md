@@ -1,0 +1,9 @@
+# Local modern-sofa example
+
+`app/javascript/search/assets/modern-sofa.jpg` is an exact copy of the licensed reference in `docs/experiments/feasibility-v1/photos/modern-sofa.jpg` (SHA-256 `1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87`). Phillip Goldsberry's Unsplash source and license evidence are recorded in `modern-sofa-2026-09-28.json`. esbuild embeds this reference in the app and standalone mockup.
+
+`app/javascript/search/modernSofa.json` adapts the six recorded cards and sanitized details from that snapshot and `docs/experiments/ebay-flow-v3/modern-sofa.json` to the current view contract. It preserves the original retrieval time (September 28, 2026 at 20:27:20 UTC), historical rule versions, input parameters, supplied timings and original one-upload/two-search/one-Venice-attempt counts. The Lens phrase was unusable; no usable phrase was recorded. It is not replaced with the final Venice phrase. Detailed local filtering rejection counts and duration were not recorded and are explicitly identified as unavailable. Provider references and raw payloads are omitted.
+
+Choosing the example only prepares its preview. Submission replays the snapshot immediately, with `source=snapshot` and zero new calls. Thumbnails use the six recorded remote `i.ebayimg.com` URLs. Their public reuse permission remains unresolved; no listing images have been downloaded or bundled. Listing availability is unverified. Offline packaging and public release remain incomplete.
+
+The browser saves completed success/empty results only, under `looksalike:ebay-us-v1`. Saved data has a strict field whitelist, US/eBay/version/date/URL validation and a JPEG reference bounded to 160px. It contains no upload bytes, provider ID or raw response. Reload restores the view, including explanation state, with zero new calls; unfinished requests never resume. Search again clears the saved view. Storage failures do not prevent using the app.

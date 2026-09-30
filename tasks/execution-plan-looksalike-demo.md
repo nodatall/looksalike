@@ -32,7 +32,7 @@ The app covers furniture on eBay located in the US. It has one screen, with no a
 
 Search ebay.com without the provider country filter, then keep only listings explicitly marked as located in the United States. Do not send a ZIP, select a Craigslist area, or restrict results to local pickup. US location does not guarantee delivery to every US address. Visitors check shipping and pickup terms on eBay.
 
-Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). The step-by-step loading screen previews the current search flow; updating the remaining screens for nationwide eBay is pending.
+Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares the app's nationwide eBay screens. Uploaded-photo progress uses timers in this preview; the example shows actual dated results.
 
 ## Project choices
 
@@ -44,7 +44,7 @@ Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). The step-b
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The repository contains this plan, the earlier interactive mockup, and a working Rails foundation. The bundled React/Material UI entry screen is connected to Rails. SerpApi credentials are configured locally. Updating the app and mockup to nationwide eBay is pending; the remaining search experience and deployment depend on validating the new flow.
+The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Example image permission and deployment checks remain pending.
 
 ## Limits visitors will see
 
@@ -151,30 +151,30 @@ Connect the server search, saved results, limits and progress events first. The 
 
 Use the same compression and search rules that passed the experiment.
 
-- [ ] Update the mockup and app to the photo-only upload, example, and preview flow above, with compression and clear file errors.
-- [ ] Remove ZIP entry, ZIP validation, area lookup, and nearby wording from the active flow. Enable search once a valid photo is ready.
-- [ ] Connect uploads to the chosen search approach and return up to six valid, distinct listing cards.
+- [x] Update the mockup and app to the photo-only upload, example, and preview flow above, with compression and clear file errors.
+- [x] Remove ZIP entry, ZIP validation, area lookup, and nearby wording from the active flow. Enable search once a valid photo is ready.
+- [x] Connect uploads to the chosen search approach and return up to six valid, distinct listing cards.
 - [x] Store recent results by photo, US scope, and search version, retaining their original retrieval date.
 - [x] Enforce the spending limits and one-live-search rule with persisted SQLite reservations and leases, including simultaneous requests and expired-owner recovery.
-- [ ] Build the results header and responsive cards described above using Material UI and the shared theme. Show the original retrieval date when results are reused.
-- [ ] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
+- [x] Build the results header and responsive cards described above using Material UI and the shared theme. Show the original retrieval date when results are reused.
+- [x] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
 - [x] Add the loading checklist to the interactive mockup, with a visible photo, completed steps, status announcements, and Back.
 - [ ] Connect the loading checklist to actual search stages, including the optional Venice step. Stop it on completion, timeout, or error.
 - [ ] Add understandable empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
-- [ ] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
+- [x] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
 
-The server endpoint now accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. It returns sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Browser wiring and hosted persistence checks remain pending.
+The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks remain pending.
 
-Offline server checks passed: 108 Ruby tests, eight JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. These checks made no paid calls.
+Offline checks passed: 108 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly limits and reload. These checks made no paid calls.
 
 ### 5. Check the app before release
 
-- [ ] Test the search rules, upload checks, errors, saved results, and spending controls using recorded responses instead of paid API calls.
-- [ ] Verify that requests omit the provider country filter and that local filtering rejects candidates whose US location cannot be established. Check that cache and browser-storage versions cannot restore old Craigslist or ZIP-based results as eBay results.
+- [x] Test the search rules, upload checks, errors, saved results, and spending controls using recorded responses instead of paid API calls.
+- [x] Verify that requests omit the provider country filter and that local filtering rejects candidates whose US location cannot be established. Check that cache and browser-storage versions cannot restore old Craigslist or ZIP-based results as eBay results.
 - [ ] Verify that simultaneous requests cannot exceed the limits and that the example and health check still respond during a live search.
 - [ ] Verify that every image in the prepared example loads with external image and API requests blocked.
 - [ ] Walk through uploads, the example, errors, and retries on desktop and mobile, including keyboard-only use.
-- [ ] Check photo-based button enablement and the inline example preview. Verify that reload restores results without a provider call and that “Search again” clears them.
+- [x] Check photo-based button enablement and the inline example preview. Verify that reload restores results without a provider call and that “Search again” clears them.
 - [ ] Run all automated checks and inspect the public files for secrets, private photos, and misleading claims.
 - [ ] Capture screenshots and a short walkthrough recording.
 

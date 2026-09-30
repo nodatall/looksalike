@@ -9,6 +9,7 @@ const options = {
   platform: "browser",
   target: ["es2022"],
   jsx: "automatic",
+  loader: { ".jpg": "dataurl" },
   minify: true,
   define: { "process.env.NODE_ENV": '"production"' },
   logLevel: "info",
