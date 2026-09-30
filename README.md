@@ -1,14 +1,32 @@
 # LooksAlike
 
-A furniture photo search demo under development, built with Rails, React, and Material UI. The approved flow is photo upload → Google Lens → a short search phrase → US-located eBay listings. It needs no ZIP code. Search and example actions remain disabled in the app while this flow is tested; the current screen still reflects the earlier Craigslist design.
+A furniture photo search demo built with Rails, React, and Material UI. The flow is photo upload → Google Lens → a short search phrase → US-located eBay listings, with Venice photo recognition when Lens lacks concrete details. It needs no ZIP code. The screen consumes streamed progress, shows eBay cards and restores a valid current-tab result without making new calls. Live search defaults to disabled.
 
-The [live Venice comparison](docs/experiments/ebay-flow-v3/README.md) passed the agreed four-of-five requirement. The modern sofa, chair, coffee table and dresser passed; the ornate sofa failed. All searches finished in 5.4–18.2 seconds. Venice supplied descriptions for three photos in 3.7–4.7 seconds. Some counted results share only material or style, so this small sample does not establish general visual accuracy. The fallback is live-tested but not yet connected to the visitor screen.
+The [September 29 v6 comparison](docs/experiments/ebay-flow-v6/README.md) passed four of five fixed photos: modern sofa, dining chair, coffee table and dresser. The ornate sofa failed when Venice exceeded its 15-second limit, so its eBay search did not run. Measured full-flow times ranged from [5.032 seconds](docs/experiments/ebay-flow-v6/modern-sofa.json) to [33.788 seconds](docs/experiments/ebay-flow-v6/dining-chair.json). Each passing case had at least three relevant, distinct, accessible US-located listings among its original first six. Many matches share only some shape, material or style; this fixed sample does not establish general visual accuracy or current listing availability.
 
-This batch used ten SerpApi searches, five uploads and three Venice calls, bringing recorded development usage to 39 searches. The account check afterward confirmed 214 searches remaining. Earlier [comparisons](docs/experiments/ebay-flow-v2/README.md) and [country-filter diagnostics](docs/experiments/ebay-no-country-v1/README.md) remain unchanged. eBay requests omit the provider country filter; explicit US location is checked in returned data.
+The example uses the [dated result snapshot](docs/examples/modern-sofa-2026-09-28.json) and a bundled licensed green-sofa reference photo. Its listing thumbnails still load remotely; documented reuse permission and offline packaging remain pending. The [runtime example notes](docs/examples/runtime-example.md) record this boundary. Public app and repository URLs are pending; hosted deployment remains unverified.
 
-The [focused ornate-sofa retest](docs/experiments/ebay-flow-v4/README.md) improved from two to four relevant results out of six in 12.8 seconds, using the same Venice model. Two were close matches; two shared mainly pattern or style. The revised rules send style-only Lens phrases to Venice and remove wrong item types and accessories before selecting six listings. This used two more searches and one Venice call; the account check confirmed 212 searches remaining. The other four photos have not been rerun under these rules.
+## Architecture and limits
 
-The [dated example data](docs/examples/modern-sofa-2026-09-28.json) is prepared. Bundling its listing photos still requires documented reuse permission. The visitor flow, public quotas/cache, example assets and deployment remain unfinished.
+```mermaid
+flowchart LR
+  Photo[Photo] --> Browser[Browser JPEG preparation]
+  Browser --> Rails[Rails validation]
+  Rails --> Store[SQLite cache, quota and lease]
+  Store -->|Cache hit| Results[Results and explanation]
+  Store -->|Reserve allowance| Upload[SerpApi upload]
+  Upload --> Lens[Google Lens]
+  Lens -->|Concrete phrase| Ebay[eBay search]
+  Lens -->|Needs details| Venice[Venice recognition]
+  Venice --> Ebay
+  Ebay --> Filter[US location and item filtering]
+  Filter --> Results
+  Example[Dated example in browser] --> Results
+```
+
+Rails streams real progress to the React screen. A fresh completed search uses one upload and two SerpApi search attempts: Lens and eBay. An optional Venice call reserves $0.03 conservatively before dispatch. These are allowance reservations, not verified billed costs; failed work remains counted. Cached results and example replay make zero new provider calls.
+
+Default ceilings are 10 SerpApi units per UTC day and 180 per rolling 30 days, with two units reserved for each fresh search. Each session and IP allows three fresh searches per hour. Venice has separate ceilings of five calls daily and 90 per rolling 30 days. Positive configuration may lower these limits. A single live-search lease prevents concurrent paid flows. Successful results cache for 24 hours; empty results for one hour. The server deadline is 55 seconds, including at most 15 seconds for Venice; the browser aborts after 65 seconds. See [architecture](docs/ARCHITECTURE.md) for the persistence and response contracts.
 
 ## Local setup
 
@@ -32,7 +50,29 @@ Open [localhost:3000](http://localhost:3000). The health check is `/up`. `bin/se
 
 During frontend development, run `npm run build -- --watch` in another terminal and reload the page after changes. Rails remains the only web server.
 
-Development and test load environment configuration through `dotenv-rails`. Copy `.env.example` to `.env.local` only if you do not already have that local file, and keep any key there. Set `SERPAPI_API_KEY` for Lens/eBay and `VENICE_API_KEY` for the optional photo fallback. Never put either key in browser code or commit it. Normal checks do not need a key. The example lists current Rails settings and planned search limits; those limits are not wired yet. SQLite databases live under `storage/`. Production reads configuration from the host environment.
+Development and test load environment configuration through `dotenv-rails`. Copy `.env.example` to `.env.local` only if you do not already have that local file, and keep any key there. Set `SERPAPI_API_KEY` for Lens/eBay and `VENICE_API_KEY` for the optional photo fallback. Never put either key in browser code or commit it. Normal checks do not need a key. `.env.example` lists the enforced search ceilings; configuration may lower them. Development/test SQLite databases live under `storage/`. Production reads configuration from the host environment.
+
+## Production container and Railway
+
+`Dockerfile` pins Ruby 3.4.10 and Node 22.22.3, installs libvips, installs locked dependencies and precompiles the React/Propshaft assets without provider credentials. Node and build tools stay in the build stage. The runtime serves assets through Rails and starts Puma directly, in one process with three request threads by default. Production rejects `RAILS_MAX_THREADS` below three; `WEB_CONCURRENCY` does not enable extra workers. Secrets, local databases, Git data, tasks, scratch work and historical experiment media are excluded from the build context.
+
+Build locally with `docker build -t looksalike:local .`. Before running, supply `SECRET_KEY_BASE` through your runtime secret manager. Do not use `SECRET_KEY_BASE_DUMMY` for a running service. Keep `LIVE_SEARCH_ENABLED=false` while validating startup. For a local lifecycle check with a named volume:
+
+```sh
+docker volume create looksalike-storage
+docker run --rm -p 3000:3000 \
+  -e SECRET_KEY_BASE -e LIVE_SEARCH_ENABLED=false \
+  -e RAILWAY_VOLUME_MOUNT_PATH=/app/storage \
+  -v looksalike-storage:/app/storage looksalike:local
+```
+
+The command passes an already configured `SECRET_KEY_BASE` from your environment without embedding its value. Production assumes HTTPS terminates at the host proxy; `/up` accepts HTTP for health checks.
+
+On Railway, attach a persistent volume at `/app/storage`, configure `SECRET_KEY_BASE`, and keep one service instance. Railway supplies `RAILWAY_VOLUME_MOUNT_PATH` for the attached volume. `railway.json` configures the Dockerfile build, one replica and `/up` health checks. Leave `DATABASE_URL` unset; the only permitted explicit value is `sqlite3:/app/storage/production.sqlite3`. Alternate URL forms, query parameters and external databases fail closed. These settings follow the [Railway configuration reference](https://docs.railway.com/config-as-code/reference) and [volume reference](https://docs.railway.com/volumes/reference).
+
+Startup verifies an actual Linux mount at `/app/storage` before changing its ownership, then drops to the `rails` user. It checks the resolved Rails adapter/path, the environment URL and real write access before `db:prepare`. SQLite, WAL/SHM and journal files stay on the mount; database symlinks are rejected. Repeated preparation preserves existing lease ownership and allowance rows. A missing, wrong or unusable mount skips preparation and disables live search while the upload page, example and `/up` remain available. No replacement database is created in the container filesystem. `SearchStore` repeats this guard before checking out any cache/allowance connection. `/up` confirms the web process is responsive; it does not certify storage or provider readiness.
+
+Only enable live search after checking persistence across restarts, successful mounted database preparation, valid limits and both provider keys. Container checks and hosted Railway timing/persistence evidence are separate; adding these files does not establish a deployment.
 
 ## Browser assets
 
@@ -48,11 +88,13 @@ RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
 
 Run `bin/rails assets:clobber` and `npm run build` before returning to local development so the production manifest does not hide later rebuilds.
 
-The approved screen mockup and execution plan remain under `tasks/`; the mockup contains illustrative results only.
+The screen mockup and execution plan remain under `tasks/`. The standalone mockup imports shared app components and replays the dated example; the production app never imports `tasks/`.
 
 ## Troubleshooting
 
 JSON 3.0.2 rejects the positional options passed by Rails 8.1.3.1 in `ActiveSupport::JSON.decode`. A fresh page worked, but a repeat load with its session cookie failed while rendering CSRF metadata. The Gemfile constrains JSON to the compatible 2.x series; `test/integration/home_test.rb` covers both requests with the same cookie.
+
+An eBay request with `_salic=1` failed twice after about 90 seconds; removing only that country filter returned 60 listings in 2.12 seconds in the [isolated diagnostic](docs/experiments/ebay-no-country-v1/README.md). The filter is a suspected cause, not a proven provider diagnosis. The app omits country, ZIP and pickup parameters and accepts only rows explicitly marked `Located in United States`. A timeout or provider failure does not establish that matching inventory is absent; see the [country-filter failure evidence](docs/experiments/ebay-us-retry-v1/README.md).
 
 ## Checks
 
@@ -73,7 +115,7 @@ The formatting tools exclude the historical mockup, generated assets, dependenci
 
 ## Photo and provider boundary
 
-The page uses `app/javascript/search/preparePhoto.js` to check JPEG/PNG/WebP headers before decoding, reject sources over 10 MB or 20 megapixels and animated PNG/WebP, and produce a JPEG of at most 450,000 bytes. The versioned `jpeg-v1` recipe starts at a 1,600-pixel longest edge with fixed quality and resize steps, applies image orientation, and flattens transparency onto white. The preview uses only the prepared image. Replacing it releases the old object URL; canceled work releases its decoded bitmap. No file leaves the browser through this page yet.
+The page uses `app/javascript/search/preparePhoto.js` to check JPEG/PNG/WebP headers before decoding, reject sources over 10 MB or 20 megapixels and animated PNG/WebP, and produce a JPEG of at most 450,000 bytes. The versioned `jpeg-v1` recipe starts at a 1,600-pixel longest edge with fixed quality and resize steps, applies image orientation, and flattens transparency onto white. The preview uses only the prepared image. Replacing it releases the old object URL; canceled work releases its decoded bitmap. Submitting sends only the prepared JPEG to the Rails search route.
 
 The manual fixture tool executes that exact browser module in installed Chrome, blocks external requests, and writes prepared JPEGs plus recipe/dimension/hash/browser metadata without overwriting existing files:
 
@@ -85,14 +127,14 @@ JPEG bytes may differ across browser encoder versions. Freeze the produced bytes
 
 `PhotoValidator.call(upload, deadline:)` independently checks image magic, the 450,000-byte limit, dimensions, animation, and complete decoding with libvips. It ignores claimed filenames/MIME and consumes/deletes uploaded Tempfiles on success or failure. It creates no persistent image storage.
 
-`SerpApi::Client` owns fixed HTTPS upload, Lens, and Images requests. Upload validates bytes before dispatch. Pass the **same** `SearchDeadline` to preparation and every provider call; its default is 55 seconds measured monotonically, with remaining socket timeouts and a whole-operation timer. Responses are limited to 2 MB. There are no retries, redirects, polling, or fallback searches. Public errors and object string representations omit sensitive content; Rails filters photo/image/key/reference parameters. The manual experiment ledger now enforces durable attempt accounting; public route wiring and production quotas are still planned.
+`SerpApi::Client` owns fixed HTTPS upload, Lens, Images and eBay requests. Upload validates bytes before dispatch. Pass the **same** `SearchDeadline` to preparation and every provider call; its default is 55 seconds measured monotonically, with remaining socket timeouts and a whole-operation timer. Responses are limited to 2 MB. There are no retries, redirects or polling. Public errors and object string representations omit sensitive content; Rails filters photo/image/key/reference parameters. The public route reserves allowance and a single live-search lease in SQLite before dispatch; the separate manual experiment ledger preserves historical attempt accounting.
 
 Normal Ruby tests use WebMock with all external network access disabled. `npm test` exercises header, limit, compression-cap, cleanup, and cancellation rules. `bin/check` runs both JavaScript and Ruby tests. The fixture tool and manual UI probe additionally verify real browser encoding; fixture preparation makes no SerpApi calls.
 
-`EbayQueryPreparation` keeps a Lens phrase with a recognized color or material, or requests one photo description through `Vision::Client`. Style-only phrases such as “vintage sofa” use Venice. It carries the recognized category separately from the search phrase. `EbayListingFilter` removes wrong furniture types, accessories and miniatures from eligible eBay rows before the caller takes six; sponsored items use the same rules. The filter preserves order and reports rejection reasons. Title filtering does not establish visual similarity. `PhotoQuery` checks the structured description before making a phrase. The vision client uses a fixed Venice model, sends only a validated reduced JPEG, requires an attempt-reservation callback, and has no retries. It receives at most 15 seconds while preserving 10 seconds for the eBay request. These boundaries are tested with network stubs and the completed live comparison. The manual ledger records vision attempts before dispatch; public-route accounting is still pending.
+`EbayQueryPreparation` keeps a Lens phrase with a recognized color or material, or requests one photo description through `Vision::Client`. Style-only phrases such as “vintage sofa” use Venice. It carries the recognized category separately from the search phrase. `EbayListingFilter` removes wrong furniture types, accessories and miniatures from eligible eBay rows before the caller takes six; sponsored items use the same rules. The filter preserves order and reports rejection reasons. Title filtering does not establish visual similarity. `PhotoQuery` checks the structured description before making a phrase. The vision client uses a fixed Venice model, sends only a validated reduced JPEG, requires an attempt-reservation callback, and has no retries. It receives at most 15 seconds while preserving 10 seconds for the eBay request. These boundaries are tested with network stubs and the completed live comparison. Public-route and manual-ledger vision reservations both happen before dispatch.
 
-## Frozen experiment preparation
+## Historical research
 
-`SearchQuery` builds a short phrase from a common furniture name and at most two recognized traits, using versioned category and attribute rules. It drops duplicates, marketing terms, and unsupported description words before searching. `ListingNormalizer` validates exact-area Craigslist destinations and credential-free thumbnails, deduplicates listing IDs, and keeps at most six results. Lens-only preserves provider order; the two-search route ranks title-token overlap with stable ties. Both policies are pure Ruby and make no network calls.
+Earlier reports preserve their original requests, policies, attempt ledgers and judgments: [Craigslist feasibility](docs/experiments/feasibility-v1/README.md), [query comparison](docs/experiments/query-v2/README.md), [diagnostic](docs/experiments/diagnostic-v1/README.md), [Venice v3 comparison](docs/experiments/ebay-flow-v3/README.md), [ornate-sofa v4 retest](docs/experiments/ebay-flow-v4/README.md) and [v5 comparison](docs/experiments/ebay-flow-v5/README.md). The current eBay quality evidence is the v6 comparison linked above.
 
-The [feasibility-v1 input set](docs/experiments/feasibility-v1/README.md) contains five licensed reference photos prepared by the real browser compressor, with fixed ZIPs, source provenance, request templates, and rule/data hashes. The historical frozen manifest retains its pre-run status; the separate [results](docs/experiments/feasibility-v1/results.md) and [live evidence](docs/experiments/feasibility-v1/live-evidence.json) record six search attempts, four upload attempts, and both routes stopping without passing. The historical v1 verifier (`script/verify_experiment.rb`) applies to Git revision `79e05a3`; it intentionally refuses the subsequently revised query policy. The [query-v2 comparison](docs/experiments/query-v2/README.md) preserves the old source and freezes the new policy separately. The completed [two-request diagnostic](docs/experiments/diagnostic-v1/README.md) brings combined usage to eight attempts: the modern query returned 100 links outside Craigslist, while the ornate query returned no images and an error of uncertain cause. The approved short-query follow-up used two more attempts (ten total): no accepted San Francisco listings and two New York candidates that failed manual relevance checks. The simpler rule is implemented; the original scores remain unchanged and the feasibility gate is still closed. The [manual operator instructions](docs/experiments/feasibility-v1/README.md#manual-operator-commands) describe explicit account checks, execution, and scoring. Default preflight is entirely offline and creates no ledger.
+The [manual operator instructions](docs/experiments/feasibility-v1/README.md#manual-operator-commands) describe explicit account checks, execution and scoring. The historical v1 verifier applies to Git revision `79e05a3`; it intentionally refuses revised query policies. Default preflight is offline and creates no ledger. Research scores, local application/container checks and hosted deployment evidence remain separate.

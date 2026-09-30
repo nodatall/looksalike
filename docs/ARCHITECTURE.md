@@ -2,11 +2,11 @@
 
 ## Purpose
 
-LooksAlike turns one furniture photo into up to six US-located eBay listings. This document records the implemented server boundaries and the browser/deployment work still pending.
+LooksAlike turns one furniture photo into up to six US-located eBay listings. This document records the implemented server, browser and container boundaries; hosted deployment evidence remains pending.
 
 ## Current system shape
 
-Rails 8.1 on Ruby 3.4 serves an ERB shell and one bundled React/Material UI root. `POST /searches` now runs the eBay flow and streams real progress. `/up` remains a cheap health check. The browser still has the older upload/ZIP screen and needs to consume this new contract. The standalone mockup is separate.
+Rails 8.1 on Ruby 3.4 serves an ERB shell and one bundled React/Material UI root. `POST /searches` runs the eBay flow and streams real progress. `SearchApp` reduces uploads, consumes that NDJSON contract, shows loading stages/eBay cards and restores valid current-tab results. `/up` remains a cheap health check. The standalone mockup imports shared app components; the app never imports `tasks/`.
 
 The server validates the reduced JPEG, checks the cache, reserves allowance and the single live-search lease, uploads to SerpApi, searches Google Lens, asks Venice only when Lens lacks concrete details, searches eBay and filters listings. This flow has no ZIP, description field, arbitrary URL fetch, job queue or object storage. Live calls default to disabled; both provider keys and valid limits are required.
 
@@ -21,8 +21,9 @@ The server validates the reduced JPEG, checks the cache, reserves allowance and 
 | `SearchQuery`, `PhotoQuery`, `EbayQueryPreparation` | Lens phrase, fallback trigger and strict photo-description validation | Upload/eBay traffic or quotas |
 | `EbayListingNormalizer`, `EbayListingFilter` | URL/US eligibility, duplicates, complete-item checks, first-six provider order | Network access or visual ranking |
 | `SearchSettings`, `SearchStore` | Validated ceilings, versioned cache, allowance reservations and lease ownership | HTTP or stored photos |
+| `ProductionStorage`, production startup | Actual mount, resolved SQLite path, write access, ownership and preparation before serving | Provider calls or web-process health |
 | `SearchCacheEntry`, `SearchUsageReservation`, `SearchLease` | Concrete SQLite records | Provider calls |
-| `app/javascript/search/` | Photo reduction and preview; new eBay UI is pending | Credentials or authority over limits |
+| `app/javascript/search/` | Photo reduction, NDJSON parsing, loading/results/explanation, versioned session restoration and dated example adapter | Credentials or authority over limits |
 | `FurnitureSearch`, location/Craigslist policies, `Experiment*` | Existing historical workflows and their original interface | The public eBay route |
 
 ## Dependency rules
@@ -49,7 +50,13 @@ Rails exposes home, health and the CSRF-protected multipart search POST. `Search
 
 The server budget is at most 55 seconds, including validation and provider calls. Every transport receives the remaining monotonic budget. Progress reports actual started/completed/failed stages; it never estimates percentage or time remaining.
 
-The planned host is one Railway service, one Puma process with at least three request threads, and a persistent `/app/storage` volume. Container/startup mount verification, after-mount database preparation and hosted timing/persistence checks are still pending. The store already rejects production storage unless the configured database resolves to `/app/storage/production.sqlite3`, Railway names that volume mount and the directory is writable. Deployment must also verify the mount at startup before enabling live traffic.
+`Dockerfile` pins Ruby 3.4.10 and Node 22.22.3, installs libvips and precompiles the React/Propshaft assets without provider keys. The runtime starts Puma directly with `workers 0` (one process) and at least three request threads. It has no Thruster, frontend server or worker service. `railway.json` defaults to one service replica and `/up` health checks. A real `SECRET_KEY_BASE` is supplied at runtime. Hosted timing/persistence checks remain pending.
+
+Production SQLite is pinned by an explicit Rails URL to `/app/storage/production.sqlite3`. `DATABASE_URL` must be absent/empty or exactly `sqlite3:/app/storage/production.sqlite3`; alternative forms, options and external URLs are rejected even when Rails resolves its explicit configuration safely. `ProductionStorage` checks the resolved adapter/path, exact Railway mount environment, canonical directory, actual Linux `/proc/self/mountinfo` entry and real write access. It rejects database/WAL/SHM/journal symlinks. `SearchStore` calls this guard before obtaining its connection pool, so a failed check cannot create an ephemeral SQLite database or reset allowance.
+
+The root entrypoint changes ownership only after verifying the actual mount, then uses `gosu` to drop to the `rails` user. The app user validates storage/configuration before `db:prepare`, preserving the seeded lease on repeat startup. Missing/wrong/unusable storage skips preparation, forces live search off and still starts the upload page, example and health route. Failed preparation also disables live search. Startup never substitutes another database or creates a Docker volume implicitly. SQLite and its sidecars stay on the attached `/app/storage` volume. `/up` confirms HTTP responsiveness independently of storage/provider readiness.
+
+`.dockerignore` excludes secrets, databases, Git/private state, tests, tasks/scratch work and historical experiment media from the build context/runtime. The licensed reference image under `app/javascript/search/assets/` is permitted.
 
 Esbuild bundles React, Material UI and Emotion through `jsbundling-rails`. Dependencies/fonts remain local. No frontend server, client router or provider key belongs in browser assets.
 
@@ -63,7 +70,9 @@ A normal fresh search reports `attempts: {uploads: 1, serpapi: 2, vision: 0}`; a
 
 Statuses include `success`, `empty`, `disabled`, `busy`, `quota_exceeded`, `visitor_limit`, `vision_limit`, `storage_unavailable`, `configuration_error`, `invalid_photo`, `unclear`, `not_furniture`, `insufficient_time`, `deadline`, `invalid_response` and `provider_unavailable`. Application outcomes use the result status/message; CSRF rejection remains a Rails HTTP error.
 
-The browser still needs the 65-second abort, loading checklist, eBay results, current-tab restoration, new storage version and diagram/explanation. Browser state cannot authorize calls or replace server validation. The public snapshot is pending documented image reuse permission and local bundles; it must make no calls and cannot substitute for an unrelated upload.
+The browser uses a 65-second abort and parses bounded NDJSON lines into loading stages and eBay results. Strict versioned session state restores the current tab after reload without a new search. Invalid/stale state is discarded. The diagram and expandable explanation share the live result metadata. Browser state cannot authorize calls or replace server validation.
+
+The example adapter uses the actual dated modern-sofa snapshot and a bundled licensed green-sofa reference image. It makes no search/provider calls. Listing thumbnails currently load remotely from eBay; documented image reuse permission and local bundles remain pending, so the example is not yet fully offline. Choosing another upload clears example/restored state rather than substituting saved results for that photo.
 
 ## Shared code and testing
 

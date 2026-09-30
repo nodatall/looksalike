@@ -205,7 +205,7 @@ export default function SearchApp({ search = submitPhoto }) {
     setStorageAvailable(saveView(sessionStore(), updated));
   }
   return (
-    <Box component="main" sx={{ minHeight: "100svh", px: { xs: 2, sm: 3 } }}>
+    <Box component="main" sx={{ minHeight: "100svh", minWidth: 0, px: { xs: 2, sm: 3 } }}>
       <input
         ref={input}
         id="photo-input"
@@ -228,14 +228,23 @@ export default function SearchApp({ search = submitPhoto }) {
           onExplanationChange={toggleExplanation}
         />
       ) : (
-        <Box sx={{ minHeight: "100svh", display: "grid", placeItems: "center", py: 5 }}>
+        <Box
+          sx={{
+            minHeight: "100svh",
+            minWidth: 0,
+            display: "grid",
+            gridTemplateColumns: "minmax(0, 1fr)",
+            placeItems: "center",
+            py: 5,
+          }}
+        >
           {screen === "loading" ? (
             <SearchLoading photo={photo?.url} events={events} headingRef={heading} onBack={back} />
           ) : (
             <Box
               component="section"
               aria-label="Choose a furniture photo"
-              sx={{ width: "min(100%, 520px)", textAlign: "center" }}
+              sx={{ width: "min(100%, 520px)", minWidth: 0, maxWidth: "100%", textAlign: "center" }}
             >
               <Typography
                 ref={heading}
@@ -394,6 +403,9 @@ export default function SearchApp({ search = submitPhoto }) {
               elevation={0}
               sx={{
                 mt: 2,
+                width: "min(100%, 520px)",
+                minWidth: 0,
+                maxWidth: "100%",
                 textAlign: "left",
                 bgcolor: "transparent",
                 "&::before": { display: "none" },
@@ -409,7 +421,7 @@ export default function SearchApp({ search = submitPhoto }) {
               >
                 <Typography sx={{ fontSize: 14 }}>How this search worked</Typography>
               </AccordionSummary>
-              <AccordionDetails id="failure-explanation" sx={{ px: 0 }}>
+              <AccordionDetails id="failure-explanation" sx={{ px: 0, minWidth: 0 }}>
                 <SearchWalkthrough result={failure} />
               </AccordionDetails>
             </Accordion>

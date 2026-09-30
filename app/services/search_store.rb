@@ -89,17 +89,15 @@ class SearchStore
 
   private
     def with_database
+      if Rails.env.production?
+        ProductionStorage.validate!(config: ApplicationRecord.connection_db_config)
+      end
       pool = ApplicationRecord.connection_pool
       pool.with_connection do |connection|
         raise Error unless connection.adapter_name == "SQLite"
-        if Rails.env.production?
-          expected = "/app/storage"
-          path = Pathname(ApplicationRecord.connection_db_config.database).expand_path.to_s
-          raise Error unless ENV["RAILWAY_VOLUME_MOUNT_PATH"] == expected && path == "#{expected}/production.sqlite3" && File.writable?(expected)
-        end
         yield
       end
-    rescue ActiveRecord::ActiveRecordError, JSON::ParserError, KeyError, TypeError, ArgumentError
+    rescue ProductionStorage::Unavailable, ActiveRecord::ActiveRecordError, JSON::ParserError, KeyError, TypeError, ArgumentError
       raise Error, cause: nil
     end
 

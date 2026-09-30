@@ -30,4 +30,7 @@ test:
 # ensure the database is located in a persisted volume.
 production:
   <<: *default
-  database: storage/production.sqlite3
+  # Explicit URL prevents Rails from merging an inherited external DATABASE_URL.
+  # Startup and SearchStore additionally reject any unexpected DATABASE_URL.
+  url: sqlite3:/app/storage/production.sqlite3
+  database: /app/storage/production.sqlite3

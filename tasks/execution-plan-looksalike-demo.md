@@ -140,6 +140,7 @@ This checks the hosting setup before we expose paid searches to visitors.
 The example still needs documented image permission. Continue the independent server and visitor work in step 4 while it is unresolved. Keep public publishing and deployment pending until the example can be packaged.
 
 - [ ] Create the public GitHub repository and publish the checked starting version.
+- [x] Build and check the production container locally, including compiled assets, mounted SQLite, restart persistence and missing-volume protection.
 - [ ] Deploy the example to Railway with live search switched off.
 - [ ] Verify that the database is writable and that its records survive a restart and a new deployment.
 - [ ] Use a temporary simulated search to check that Railway permits responses beyond 30 seconds and that the app stops work at its 55-second deadline.
@@ -159,13 +160,13 @@ Use the same compression and search rules that passed the experiment.
 - [x] Build the results header and responsive cards described above using Material UI and the shared theme. Show the original retrieval date when results are reused.
 - [x] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
 - [x] Add the loading checklist to the interactive mockup, with a visible photo, completed steps, status announcements, and Back.
-- [ ] Connect the loading checklist to actual search stages, including the optional Venice step. Stop it on completion, timeout, or error.
-- [ ] Add understandable empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
+- [x] Connect the loading checklist to actual search stages, including the optional Venice step. Stop it on completion, timeout, or error.
+- [x] Add understandable empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
 - [x] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
 
 The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks remain pending.
 
-Offline checks passed: 108 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly limits and reload. These checks made no paid calls.
+Offline checks passed: 111 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly and daily limits, timeout recovery and reload. A mobile error-layout repair passed checks with the explanation closed and open. These checks made no paid calls.
 
 ### 5. Check the app before release
 
@@ -211,6 +212,8 @@ React owns browser interactions and sends requests to same-origin Rails endpoint
 The mockup source is `tasks/mockup/main.jsx`; its build command is documented in `tasks/mockup/README.md`. The generated HTML remains self-contained for direct viewing. Use Material UI's outlined inputs and theme focus states; avoid global focus rules that draw extra rings around inputs or headings. Keyboard focus and validation errors must remain visible.
 
 Run Puma directly behind Railway's HTTPS service, with one worker and at least three request threads. Omit Thruster from the generated start command because its default timeout conflicts with the planned request length. Mount all production SQLite files at `/app/storage`. Set writable ownership for the app user and prepare the database at startup, after the volume is mounted.
+
+The production image now builds and serves its fingerprinted JavaScript. Local container checks preserved two fixture allowance units, the original cached date and a lease owner through a restart and a new container. A missing volume disabled live search and created no replacement database. Railway checks remain separate and pending.
 
 Use a cheap health endpoint. If the intended database volume is missing or unavailable, disable live calls instead of creating a temporary replacement database. Keep the shared component boundaries in [ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 
