@@ -166,7 +166,7 @@ Use the same compression and search rules that passed the experiment.
 
 The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks remain pending.
 
-Offline checks passed: 112 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly and daily limits, timeout recovery and reload. Mobile loading and error layouts fit the viewport; broken images leave useful cards and links. These checks made no paid calls.
+Offline checks passed: 113 Ruby tests, 19 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly and daily limits, timeout recovery and reload. Mobile loading and error layouts fit the viewport; broken images leave useful cards and links. Server results also passed the browser's text and image checks, including Unicode limits. These checks made no paid calls.
 
 ### 5. Check the app before release
 
