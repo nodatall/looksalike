@@ -23,7 +23,7 @@ The server validates the reduced JPEG, checks the cache, reserves allowance and 
 | `SearchSettings`, `SearchStore` | Validated ceilings, versioned cache, allowance reservations and lease ownership | HTTP or stored photos |
 | `ProductionStorage`, production startup | Actual mount, resolved SQLite path, write access, ownership and preparation before serving | Provider calls or web-process health |
 | `SearchCacheEntry`, `SearchUsageReservation`, `SearchLease` | Concrete SQLite records | Provider calls |
-| `app/javascript/search/` | Photo reduction, NDJSON parsing, loading/results/explanation, versioned session restoration and dated example adapter | Credentials or authority over limits |
+| `app/javascript/search/` | Photo reduction, NDJSON parsing, loading/results/explanation, versioned session restoration and licensed example-photo selection | Credentials or authority over limits |
 | `FurnitureSearch`, location/Craigslist policies, `Experiment*` | Existing historical workflows and their original interface | The public eBay route |
 
 ## Dependency rules
@@ -54,7 +54,7 @@ The server budget is at most 55 seconds, including validation and provider calls
 
 Production SQLite is pinned by an explicit Rails URL to `/app/storage/production.sqlite3`. `DATABASE_URL` must be absent/empty or exactly `sqlite3:/app/storage/production.sqlite3`; alternative forms, options and external URLs are rejected even when Rails resolves its explicit configuration safely. `ProductionStorage` checks the resolved adapter/path, exact Railway mount environment, canonical directory, actual Linux `/proc/self/mountinfo` entry and real write access. It rejects database/WAL/SHM/journal symlinks. `SearchStore` calls this guard before obtaining its connection pool, so a failed check cannot create an ephemeral SQLite database or reset allowance.
 
-The root entrypoint changes ownership only after verifying the actual mount, then uses `gosu` to drop to the `rails` user. The app user validates storage/configuration before `db:prepare`, preserving the seeded lease on repeat startup. Missing/wrong/unusable storage skips preparation, forces live search off and still starts the upload page, example and health route. Failed preparation also disables live search. Startup never substitutes another database or creates a Docker volume implicitly. SQLite and its sidecars stay on the attached `/app/storage` volume. `/up` confirms HTTP responsiveness independently of storage/provider readiness.
+The root entrypoint changes ownership only after verifying the actual mount, then uses `gosu` to drop to the `rails` user. The app user validates storage/configuration before `db:prepare`, preserving the seeded lease on repeat startup. Missing/wrong/unusable storage skips preparation, forces live search off and still starts the upload page, example-photo selection and health route. Submitting the example obeys the same disabled-search outcome as an upload. Failed preparation also disables live search. Startup never substitutes another database or creates a Docker volume implicitly. SQLite and its sidecars stay on the attached `/app/storage` volume. `/up` confirms HTTP responsiveness independently of storage/provider readiness.
 
 `.dockerignore` excludes secrets, databases, Git/private state, tests, tasks/scratch work and historical experiment media from the build context/runtime. The licensed reference image under `app/javascript/search/assets/` is permitted.
 
@@ -70,9 +70,11 @@ A normal fresh search reports `attempts: {uploads: 1, serpapi: 2, vision: 0}`; a
 
 Statuses include `success`, `empty`, `disabled`, `busy`, `quota_exceeded`, `visitor_limit`, `vision_limit`, `storage_unavailable`, `configuration_error`, `invalid_photo`, `unclear`, `not_furniture`, `insufficient_time`, `deadline`, `invalid_response` and `provider_unavailable`. Application outcomes use the result status/message; CSRF rejection remains a Rails HTTP error.
 
-The browser uses a 65-second abort and parses bounded NDJSON lines into loading stages and eBay results. Strict versioned session state restores the current tab after reload without a new search. Invalid/stale state is discarded. The diagram and expandable explanation share the live result metadata. Browser state cannot authorize calls or replace server validation.
+The browser uses a 65-second abort and parses bounded NDJSON lines into loading stages and eBay results. Strict session state under `looksalike:ebay-us-v2` accepts only completed live or cache results and restores the current tab after reload without a new search. Invalid state, the old storage key and snapshot results cannot restore in production. The diagram and expandable explanation share the live result metadata. Browser state cannot authorize calls or replace server validation.
 
-The example adapter uses the actual dated modern-sofa snapshot and a bundled licensed green-sofa reference image. It makes no search/provider calls. Listing thumbnails currently load remotely from eBay; documented image reuse permission and local bundles remain pending, so the example is not yet fully offline. Choosing another upload clears example/restored state rather than substituting saved results for that photo.
+Choosing the example prepares the bundled licensed green-sofa reference through the same JPEG preparation as an upload. Find similar items calls the same `submitPhoto` function, streaming actual server progress and preserving normal cache, deadline, cancellation, allowance and error handling. Example and uploaded photos show the same provider/privacy notice. Historical snapshots are not imported by the application entry point.
+
+The standalone mockup alone injects `previewSearch` and enables `preview` on the shared `SearchApp`. Only the explicitly chosen example may return its dated snapshot; other uploads model progress and return a preview-only error. Preview validation may accept `source=snapshot`, saved separately under `looksalike:mockup:ebay-us-v1`. Production protocol validation remains live/cache-only. The historical snapshot and experiment files stay unchanged; remote eBay thumbnails in that preview are unverified and have not been bundled.
 
 ## Shared code and testing
 

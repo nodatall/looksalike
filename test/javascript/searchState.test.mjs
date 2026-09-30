@@ -16,7 +16,7 @@ import {
 const snapshot = JSON.parse(
   await readFile(new URL("../../app/javascript/search/modernSofa.json", import.meta.url)),
 );
-const copy = () => structuredClone(snapshot);
+const copy = () => ({ ...structuredClone(snapshot), source: "cache" });
 function storage() {
   const entries = new Map();
   return {
@@ -73,8 +73,15 @@ test("saved success and empty views replay without requests and preserve the ori
   const previous = globalThis.fetch;
   globalThis.fetch = () => assert.fail("restoration must never make a request");
   try {
-    for (const status of ["success", "empty"]) {
+    for (const [source, status] of [
+      ["live", "success"],
+      ["live", "empty"],
+      ["cache", "success"],
+      ["cache", "empty"],
+    ]) {
       const result = copy();
+      result.source = source;
+      if (source === "live") result.attempts = structuredClone(result.original_attempts);
       if (status === "empty") {
         result.status = status;
         result.listings = [];
@@ -83,7 +90,7 @@ test("saved success and empty views replay without requests and preserve the ori
       const view = { result, reference: null, explanationOpen: true };
       assert.equal(saveView(store, view), true);
       assert.deepEqual(readSavedView(store), view);
-      assert.deepEqual(readSavedView(store).result.attempts, { uploads: 0, serpapi: 0, vision: 0 });
+      assert.deepEqual(readSavedView(store).result.attempts, result.attempts);
       clearSavedView(store);
       assert.equal(readSavedView(store), null);
     }
@@ -108,6 +115,9 @@ test("corrupt, legacy and unsafe completed records cannot be restored", () => {
     },
     (result) => {
       result.source = "other";
+    },
+    (result) => {
+      result.source = "snapshot";
     },
     (result) => {
       result.listings[0].url += "?credential=secret";
@@ -157,6 +167,7 @@ test("corrupt, legacy and unsafe completed records cannot be restored", () => {
     mutate(result);
     assert.equal(validateCompletedResult(result), null);
     const store = storage();
+    assert.equal(saveView(store, { result, reference: null, explanationOpen: false }), false);
     store.setItem(
       STORAGE_KEY,
       JSON.stringify({ version: "ebay-us-v1", result, reference: null, explanationOpen: false }),
@@ -170,7 +181,7 @@ test("corrupt, legacy and unsafe completed records cannot be restored", () => {
     JSON.stringify({ zip: "94103", cards: [] }),
     JSON.stringify({
       version: "ebay-us-v1",
-      result: snapshot,
+      result: copy(),
       reference: null,
       explanationOpen: false,
       original_photo: "private",
@@ -194,19 +205,39 @@ test("corrupt, legacy and unsafe completed records cannot be restored", () => {
           throw new Error("quota");
         },
       },
-      { result: snapshot, reference: null, explanationOpen: false },
+      { result: copy(), reference: null, explanationOpen: false },
     ),
     false,
   );
   assert.equal(
     saveView(storage(), {
-      result: snapshot,
+      result: copy(),
       reference: null,
       explanationOpen: false,
       raw: "private",
     }),
     false,
   );
+});
+
+test("old runtime keys and preview snapshots cannot restore as current runtime results", () => {
+  for (const result of [copy(), snapshot]) {
+    const store = storage();
+    const view = { result, reference: null, explanationOpen: false };
+    store.setItem("looksalike:ebay-us-v1", JSON.stringify({ version: "ebay-us-v1", ...view }));
+    assert.equal(readSavedView(store), null);
+  }
+  const store = storage();
+  const view = { result: snapshot, reference: null, explanationOpen: true };
+  assert.equal(validateCompletedResult(snapshot), null);
+  assert.equal(saveView(store, view), false);
+  assert.equal(saveView(store, view, { preview: true }), true);
+  assert.deepEqual(readSavedView(store, { preview: true }), view);
+  assert.equal(readSavedView(store), null);
+  clearSavedView(store);
+  assert.deepEqual(readSavedView(store, { preview: true }), view);
+  clearSavedView(store, { preview: true });
+  assert.equal(readSavedView(store, { preview: true }), null);
 });
 
 test("only bounded JPEG reference thumbnails may be restored", async () => {
@@ -225,7 +256,7 @@ test("only bounded JPEG reference thumbnails may be restored", async () => {
     assert.equal(safeReference(bad), false);
   const store = storage();
   assert.equal(
-    saveView(store, { result: snapshot, reference: thumbnail, explanationOpen: false }),
+    saveView(store, { result: copy(), reference: thumbnail, explanationOpen: false }),
     true,
   );
   assert.equal(readSavedView(store).reference, thumbnail);

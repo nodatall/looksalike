@@ -1,6 +1,7 @@
 import { inspectPhoto } from "./preparePhoto.js";
 
-export const STORAGE_KEY = "looksalike:ebay-us-v1";
+export const STORAGE_KEY = "looksalike:ebay-us-v2";
+const PREVIEW_STORAGE_KEY = "looksalike:mockup:ebay-us-v1";
 export const STAGES = ["upload", "lens", "vision", "ebay", "filter"];
 const record = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
 export const safeText = (max) => (value) =>
@@ -159,7 +160,7 @@ const isoDate = (value) =>
 const resultFields = {
   version: oneOf("ebay-us-v1"),
   status: oneOf("success", "empty"),
-  source: oneOf("live", "cache", "snapshot"),
+  source: oneOf("live", "cache"),
   marketplace: oneOf("ebay.com"),
   scope: oneOf("us"),
   message: text(300),
@@ -172,7 +173,12 @@ const resultFields = {
   attempts: validCounters,
   original_attempts: validCounters,
 };
-const resultRule = shape(resultFields);
+// Historical results are accepted only by the standalone preview's explicit option.
+const completedRule = (preview) =>
+  shape({
+    ...resultFields,
+    source: preview ? oneOf("live", "cache", "snapshot") : resultFields.source,
+  });
 
 export function validateFailureResult(value) {
   if (
@@ -186,14 +192,14 @@ export function validateFailureResult(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
-export function validateCompletedResult(value) {
+export function validateCompletedResult(value, { preview = false } = {}) {
   if (
-    !resultRule(value) ||
+    !completedRule(preview)(value) ||
     value.version !== "ebay-us-v1" ||
     value.marketplace !== "ebay.com" ||
     value.scope !== "us" ||
     !isoDate(value.retrieved_at) ||
-    !["live", "cache", "snapshot"].includes(value.source) ||
+    !(preview ? ["live", "cache", "snapshot"] : ["live", "cache"]).includes(value.source) ||
     !Array.isArray(value.listings) ||
     !Array.isArray(value.stages) ||
     value.stages.some(
@@ -230,15 +236,15 @@ export function safeReference(value) {
     return false;
   }
 }
-export function readSavedView(storage) {
+export function readSavedView(storage, { preview = false } = {}) {
   try {
-    const raw = storage.getItem(STORAGE_KEY);
+    const raw = storage.getItem(preview ? PREVIEW_STORAGE_KEY : STORAGE_KEY);
     if (!raw || raw.length > 100_000) return null;
     const value = JSON.parse(raw);
     if (
       !shape({
         version: oneOf("ebay-us-v1"),
-        result: resultRule,
+        result: completedRule(preview),
         reference: safeReference,
         explanationOpen: bool,
       })(value) ||
@@ -247,7 +253,7 @@ export function readSavedView(storage) {
       typeof value.explanationOpen !== "boolean"
     )
       return null;
-    const result = validateCompletedResult(value.result);
+    const result = validateCompletedResult(value.result, { preview });
     return result
       ? { result, reference: value.reference, explanationOpen: value.explanationOpen }
       : null;
@@ -255,23 +261,28 @@ export function readSavedView(storage) {
     return null;
   }
 }
-export function clearSavedView(storage) {
+export function clearSavedView(storage, { preview = false } = {}) {
   try {
-    storage.removeItem(STORAGE_KEY);
+    storage.removeItem(preview ? PREVIEW_STORAGE_KEY : STORAGE_KEY);
   } catch {
     /* Private mode may disable storage. */
   }
 }
-export function saveView(storage, view) {
+export function saveView(storage, view, { preview = false } = {}) {
   try {
     if (
-      !shape({ result: resultRule, reference: safeReference, explanationOpen: bool })(view) ||
-      !validateCompletedResult(view.result) ||
+      !shape({ result: completedRule(preview), reference: safeReference, explanationOpen: bool })(
+        view,
+      ) ||
+      !validateCompletedResult(view.result, { preview }) ||
       !safeReference(view.reference) ||
       typeof view.explanationOpen !== "boolean"
     )
       return false;
-    storage.setItem(STORAGE_KEY, JSON.stringify({ version: "ebay-us-v1", ...view }));
+    storage.setItem(
+      preview ? PREVIEW_STORAGE_KEY : STORAGE_KEY,
+      JSON.stringify({ version: "ebay-us-v1", ...view }),
+    );
     return true;
   } catch {
     return false;

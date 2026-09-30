@@ -21,7 +21,6 @@ import SearchLoading from "./SearchLoading";
 import SearchResults from "./SearchResults";
 import SearchWalkthrough from "./SearchWalkthrough";
 import examplePhoto from "./assets/modern-sofa.jpg";
-import snapshot from "./modernSofa.json";
 
 function sessionStore() {
   try {
@@ -30,8 +29,8 @@ function sessionStore() {
     return null;
   }
 }
-export default function SearchApp({ search = submitPhoto }) {
-  const [initial] = useState(() => readSavedView(sessionStore()));
+export default function SearchApp({ search = submitPhoto, preview = false }) {
+  const [initial] = useState(() => readSavedView(sessionStore(), { preview }));
   const [screen, setScreen] = useState(initial ? "results" : "upload");
   const [view, setView] = useState(initial);
   const [restored, setRestored] = useState(Boolean(initial));
@@ -83,7 +82,7 @@ export default function SearchApp({ search = submitPhoto }) {
     preparation.current?.abort();
     preparation.current = null;
     releasePreview();
-    clearSavedView(sessionStore());
+    clearSavedView(sessionStore(), { preview });
     setPhoto(null);
     setView(null);
     setRestored(false);
@@ -138,12 +137,12 @@ export default function SearchApp({ search = submitPhoto }) {
     }, true);
   }
   function complete(result, selected) {
-    const safe = validateCompletedResult(result);
-    if (!safe) throw new Error("The search returned an unreadable result. Try the example.");
+    const safe = validateCompletedResult(result, { preview });
+    if (!safe) throw new Error("The search returned an unreadable result. Please try again later.");
     const completed = { result: safe, reference: selected.reference, explanationOpen: false };
     setView(completed);
     setRestored(false);
-    setStorageAvailable(saveView(sessionStore(), completed));
+    setStorageAvailable(saveView(sessionStore(), completed, { preview }));
     setScreen("results");
     releasePreview();
     setPhoto(null);
@@ -153,18 +152,11 @@ export default function SearchApp({ search = submitPhoto }) {
     const selected = photo;
     setError("");
     setFailure(null);
-    clearSavedView(sessionStore());
-    if (selected.example) {
-      complete(snapshot, selected);
-      return;
-    }
+    clearSavedView(sessionStore(), { preview });
     const controller = new AbortController();
     request.current = controller;
     const timeout = setTimeout(
-      () =>
-        controller.abort(
-          new Error("The search took too long. Replace the photo or try the example."),
-        ),
+      () => controller.abort(new Error("The search took too long. Please try again.")),
       65_000,
     );
     setEvents({});
@@ -172,6 +164,7 @@ export default function SearchApp({ search = submitPhoto }) {
     try {
       const result = await search(selected.blob, {
         signal: controller.signal,
+        example: selected.example,
         csrfToken: document.querySelector('meta[name="csrf-token"]')?.content,
         onStage: (event) => {
           if (mounted.current && request.current === controller && !controller.signal.aborted)
@@ -182,17 +175,13 @@ export default function SearchApp({ search = submitPhoto }) {
       if (!mounted.current || request.current !== controller) return;
       if (!["success", "empty"].includes(result.status)) {
         setFailure(result);
-        throw new Error(
-          result.message || "The search could not finish. Replace the photo or try the example.",
-        );
+        throw new Error(result.message || "The search could not finish. Please try again.");
       }
       complete(result, selected);
     } catch (failure) {
       if (mounted.current && request.current === controller) {
         setScreen("upload");
-        setError(
-          failure.message || "The search could not finish. Replace the photo or try the example.",
-        );
+        setError(failure.message || "The search could not finish. Please try again.");
       }
     } finally {
       clearTimeout(timeout);
@@ -202,7 +191,7 @@ export default function SearchApp({ search = submitPhoto }) {
   function toggleExplanation(open) {
     const updated = { ...view, explanationOpen: open };
     setView(updated);
-    setStorageAvailable(saveView(sessionStore(), updated));
+    setStorageAvailable(saveView(sessionStore(), updated, { preview }));
   }
   return (
     <Box component="main" sx={{ minHeight: "100svh", minWidth: 0, px: { xs: 2, sm: 3 } }}>
@@ -380,8 +369,8 @@ export default function SearchApp({ search = submitPhoto }) {
               </Typography>
               {photo && (
                 <Typography sx={{ fontSize: 12, mt: 1, lineHeight: 1.7 }} color="text.secondary">
-                  {photo.example
-                    ? "Demo snapshot · September 28, 2026"
+                  {preview
+                    ? "This design preview makes no provider calls. A small reference thumbnail stays in this tab with historical example results."
                     : "The reduced photo goes to SerpApi/Google and, when needed, Venice. This app does not save uploads. A small reference thumbnail stays in this tab with completed results."}
                 </Typography>
               )}

@@ -11,6 +11,9 @@ import {
 const snapshot = JSON.parse(
   await readFile(new URL("../../app/javascript/search/modernSofa.json", import.meta.url)),
 );
+// Reuse sanitized fixture fields as a live protocol result, without changing historical data.
+snapshot.source = "live";
+snapshot.attempts = structuredClone(snapshot.original_attempts);
 const stage = (status, extra = {}) => ({ type: "stage", stage: "upload", status, ...extra });
 const line = (event) => `${JSON.stringify(event)}\n`;
 const resultLine = line({ type: "result", result: snapshot });
@@ -57,6 +60,10 @@ test("malformed, truncated and invalid stage/result boundaries reject the respon
     resultLine + resultLine,
     resultLine + line(stage("started")),
     line({ type: "result", result: { ...snapshot, raw_provider: "private" } }),
+    line({
+      type: "result",
+      result: { ...snapshot, source: "snapshot", attempts: { uploads: 0, serpapi: 0, vision: 0 } },
+    }),
   ]) {
     await assert.rejects(readSearchResponse(response(text)), SearchResponseError);
   }
@@ -86,7 +93,7 @@ test("sanitized failed call details survive streaming but cannot become a saved 
     status: "provider_unavailable",
     source: "live",
     retrieved_at: null,
-    message: "The search service is unavailable. Try the example.",
+    message: "The search service is unavailable. Please try again later.",
     listings: [],
     stages: [
       {

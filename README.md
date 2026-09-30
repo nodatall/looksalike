@@ -4,7 +4,7 @@ A furniture photo search demo built with Rails, React, and Material UI. The flow
 
 The [September 29 v6 comparison](docs/experiments/ebay-flow-v6/README.md) passed four of five fixed photos: modern sofa, dining chair, coffee table and dresser. The ornate sofa failed when Venice exceeded its 15-second limit, so its eBay search did not run. Measured full-flow times ranged from [5.032 seconds](docs/experiments/ebay-flow-v6/modern-sofa.json) to [33.788 seconds](docs/experiments/ebay-flow-v6/dining-chair.json). Each passing case had at least three relevant, distinct, accessible US-located listings among its original first six. Many matches share only some shape, material or style; this fixed sample does not establish general visual accuracy or current listing availability.
 
-The example uses the [dated result snapshot](docs/examples/modern-sofa-2026-09-28.json) and a bundled licensed green-sofa reference photo. Its listing thumbnails still load remotely; documented reuse permission and offline packaging remain pending. The [runtime example notes](docs/examples/runtime-example.md) record this boundary. Public app and repository URLs are pending; hosted deployment remains unverified.
+Choosing the example prepares a bundled licensed green-sofa photo. Find similar items submits it through the same live search, cache and limits as an upload, with actual server progress. It does not replay historical results. The [runtime example notes](docs/examples/runtime-example.md) describe the photo license and saved-view boundary. Public app and repository URLs are pending; hosted deployment remains unverified.
 
 ## Architecture and limits
 
@@ -21,10 +21,10 @@ flowchart LR
   Venice --> Ebay
   Ebay --> Filter[US location and item filtering]
   Filter --> Results
-  Example[Dated example in browser] --> Results
+  Example[Licensed example photo] --> Browser
 ```
 
-Rails streams real progress to the React screen. A fresh completed search uses one upload and two SerpApi search attempts: Lens and eBay. An optional Venice call reserves $0.03 conservatively before dispatch. These are allowance reservations, not verified billed costs; failed work remains counted. Cached results and example replay make zero new provider calls.
+Rails streams real progress to the React screen. A fresh completed search uses one upload and two SerpApi search attempts: Lens and eBay. An optional Venice call reserves $0.03 conservatively before dispatch. These are allowance reservations, not verified billed costs; failed work remains counted. Cache hits make zero new provider calls. The example uses the same cache policy as any other photo and needs the same provider calls on a cache miss.
 
 Default ceilings are 10 SerpApi units per UTC day and 180 per rolling 30 days, with two units reserved for each fresh search. Each session and IP allows three fresh searches per hour. Venice has separate ceilings of five calls daily and 90 per rolling 30 days. Positive configuration may lower these limits. A single live-search lease prevents concurrent paid flows. Successful results cache for 24 hours; empty results for one hour. The server deadline is 55 seconds, including at most 15 seconds for Venice; the browser aborts after 65 seconds. See [architecture](docs/ARCHITECTURE.md) for the persistence and response contracts.
 
@@ -70,7 +70,7 @@ The command passes an already configured `SECRET_KEY_BASE` from your environment
 
 On Railway, attach a persistent volume at `/app/storage`, configure `SECRET_KEY_BASE`, and keep one service instance. Railway supplies `RAILWAY_VOLUME_MOUNT_PATH` for the attached volume. `railway.json` configures the Dockerfile build, one replica and `/up` health checks. Leave `DATABASE_URL` unset; the only permitted explicit value is `sqlite3:/app/storage/production.sqlite3`. Alternate URL forms, query parameters and external databases fail closed. These settings follow the [Railway configuration reference](https://docs.railway.com/config-as-code/reference) and [volume reference](https://docs.railway.com/volumes/reference).
 
-Startup verifies an actual Linux mount at `/app/storage` before changing its ownership, then drops to the `rails` user. It checks the resolved Rails adapter/path, the environment URL and real write access before `db:prepare`. SQLite, WAL/SHM and journal files stay on the mount; database symlinks are rejected. Repeated preparation preserves existing lease ownership and allowance rows. A missing, wrong or unusable mount skips preparation and disables live search while the upload page, example and `/up` remain available. No replacement database is created in the container filesystem. `SearchStore` repeats this guard before checking out any cache/allowance connection. `/up` confirms the web process is responsive; it does not certify storage or provider readiness.
+Startup verifies an actual Linux mount at `/app/storage` before changing its ownership, then drops to the `rails` user. It checks the resolved Rails adapter/path, the environment URL and real write access before `db:prepare`. SQLite, WAL/SHM and journal files stay on the mount; database symlinks are rejected. Repeated preparation preserves existing lease ownership and allowance rows. A missing, wrong or unusable mount skips preparation and disables live search while the upload page, example-photo selection and `/up` remain available. Submitting the example follows the same unavailable-search outcome as an upload. No replacement database is created in the container filesystem. `SearchStore` repeats this guard before checking out any cache/allowance connection. `/up` confirms the web process is responsive; it does not certify storage or provider readiness.
 
 Only enable live search after checking persistence across restarts, successful mounted database preparation, valid limits and both provider keys. Container checks and hosted Railway timing/persistence evidence are separate; adding these files does not establish a deployment.
 
@@ -88,7 +88,7 @@ RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
 
 Run `bin/rails assets:clobber` and `npm run build` before returning to local development so the production manifest does not hide later rebuilds.
 
-The screen mockup and execution plan remain under `tasks/`. The standalone mockup imports shared app components and replays the dated example; the production app never imports `tasks/`.
+The screen mockup and execution plan remain under `tasks/`. The standalone mockup imports shared app components and explicitly enables historical example replay in its own session-storage namespace. Uploaded photos never receive those historical results. The production app never imports `tasks/` and accepts only live or cached results.
 
 ## Troubleshooting
 

@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client';
 import { Box, CssBaseline, ThemeProvider, Typography } from '@mui/material';
 import SearchApp from '../../app/javascript/search/SearchApp.jsx';
 import theme from '../../app/javascript/search/theme.js';
+import snapshot from '../../app/javascript/search/modernSofa.json';
 
 function pause(ms, signal) {
   return new Promise((resolve, reject) => {
@@ -12,7 +13,9 @@ function pause(ms, signal) {
   });
 }
 // Timed progress is confined to this standalone design preview.
-async function previewSearch(_blob, { signal, onStage }) {
+async function previewSearch(_blob, { signal, onStage, example }) {
+  signal.throwIfAborted();
+  if (example) return snapshot;
   for (const stage of ['upload', 'lens', 'vision', 'ebay', 'filter']) {
     signal.throwIfAborted();
     onStage({ type: 'stage', stage, status: 'started' });
@@ -23,6 +26,6 @@ async function previewSearch(_blob, { signal, onStage }) {
 }
 createRoot(document.getElementById('root')).render(<ThemeProvider theme={theme}>
   <CssBaseline />
-  <Box sx={{ position: 'absolute', top: 12, left: 16, right: 16 }}><Typography sx={{ fontSize: 11 }} color="text.secondary">Design preview · Uploads model progress with timers. The example replays actual dated results. No provider calls.</Typography></Box>
-  <SearchApp search={previewSearch} />
+  <Box sx={{ position: 'absolute', top: 12, left: 16, right: 16 }}><Typography sx={{ fontSize: 11 }} color="text.secondary">Design preview · Uploads model progress with timers. Only the example replays historical results. No provider calls.</Typography></Box>
+  <SearchApp search={previewSearch} preview />
 </ThemeProvider>);

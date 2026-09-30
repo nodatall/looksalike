@@ -105,7 +105,7 @@ export default function SearchResults({
       {(saved || result.source === "snapshot") && (
         <Typography sx={{ fontSize: 12, mb: 3 }} color="text.secondary">
           {result.source === "snapshot"
-            ? "Demo snapshot"
+            ? "Historical snapshot"
             : restored
               ? "Restored in this tab"
               : "Cached result"}{" "}

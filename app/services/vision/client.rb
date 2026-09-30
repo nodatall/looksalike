@@ -42,13 +42,13 @@ module Vision
 
     class Error < StandardError
       MESSAGES = {
-        unconfigured: "Photo recognition is not available yet. Try the example.",
-        unavailable: "Photo recognition is unavailable. Replace the photo or try the example.",
-        invalid_response: "Photo recognition returned an unreadable answer. Replace the photo or try the example.",
-        refused: "This photo could not be interpreted. Replace the photo or try the example.",
-        incomplete: "Photo recognition did not finish. Replace the photo or try the example.",
+        unconfigured: "Photo recognition is unavailable. Please try again later.",
+        unavailable: "Photo recognition is unavailable. Please try again later.",
+        invalid_response: "Photo recognition returned an unreadable answer. Please try again later.",
+        refused: "This photo could not be interpreted. Choose another furniture photo.",
+        incomplete: "Photo recognition did not finish. Please try again later.",
         invalid_photo: "Choose a prepared JPEG photo no larger than 1600 pixels on either side.",
-        accounting_unavailable: "Photo recognition could not be reserved. Try the example."
+        accounting_unavailable: "Photo recognition could not be reserved. Please try again later."
       }.freeze
       attr_reader :code
 

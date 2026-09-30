@@ -5,17 +5,17 @@ class EbaySearch
   VERSION = "ebay-us-v1"
   class Disconnected < StandardError; end
   MESSAGES = {
-    "disabled" => "Live search is unavailable. Try the example.",
+    "disabled" => "Live search is unavailable. Please try again later.",
     "busy" => "Another search is running. Please try again shortly.",
-    "quota_exceeded" => "The demo has reached its search allowance. Try the example.",
-    "visitor_limit" => "You have reached the hourly search limit. Try the example.",
-    "vision_limit" => "Photo recognition has reached its allowance. Try the example.",
+    "quota_exceeded" => "The demo has reached its search allowance. Please try again later.",
+    "visitor_limit" => "You have reached the hourly search limit. Please try again later.",
+    "vision_limit" => "Photo recognition has reached its allowance. Please try again later.",
     "storage_unavailable" => "Search storage is unavailable. Please try again later.",
-    "configuration_error" => "Live search is unavailable. Try the example.",
+    "configuration_error" => "Live search is unavailable. Please try again later.",
     "invalid_photo" => "This photo could not be processed. Choose another photo.",
-    "unclear" => "We could not identify this furniture. Replace the photo or try the example.",
+    "unclear" => "We could not identify this furniture. Choose another furniture photo.",
     "not_furniture" => "We could not find furniture in this photo. Choose a furniture photo.",
-    "insufficient_time" => "Photo recognition took too long. Replace the photo or try the example.",
+    "insufficient_time" => "Photo recognition took too long. Please try again.",
     "deadline" => "The search took too long. Please try again.",
     "invalid_response" => "The search service returned an unreadable response. Please try again later.",
     "provider_unavailable" => "The search service is unavailable. Please try again later."

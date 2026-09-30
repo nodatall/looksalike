@@ -2,9 +2,7 @@ import { STAGES, validateCompletedResult, validateFailureResult } from "./search
 
 export class SearchResponseError extends Error {
   constructor() {
-    super(
-      "The search response was interrupted or unreadable. Replace the photo or try the example.",
-    );
+    super("The search response was interrupted or unreadable. Please try again.");
   }
 }
 
