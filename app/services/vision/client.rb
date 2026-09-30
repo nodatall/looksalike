@@ -68,6 +68,10 @@ module Vision
     end
     alias_method :to_s, :inspect
 
+    def redact(text)
+      @api_key.empty? ? text : text.gsub(@api_key, "[redacted]")
+    end
+
     def self.metadata
       { provider: PROVIDER, model: MODEL, transport_version: TRANSPORT_VERSION, prompt_version: PROMPT_VERSION, schema_version: SCHEMA_VERSION, reserved_usd: RESERVED_USD }
     end

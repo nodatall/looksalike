@@ -83,6 +83,10 @@ module SerpApi
       search({ engine: "google_images", q: query, location: location, gl: "us", hl: "en" }, deadline)
     end
 
+    def ebay(query:, deadline:)
+      search({ engine: "ebay", _nkw: query, ebay_domain: "ebay.com", _ipg: "25" }, deadline)
+    end
+
     private
       def search(params, deadline)
         uri = URI("#{ORIGIN}/search.json")

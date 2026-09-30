@@ -1,0 +1,54 @@
+require "test_helper"
+
+class EbayListingNormalizerTest < ActiveSupport::TestCase
+  def row(id = "123", **fields)
+    { "title" => "Wood dining chair", "link" => "https://www.ebay.com/itm/#{id}",
+      "thumbnail" => "https://i.ebayimg.com/images/chair.jpg", "location" => "Located in United States" }.merge(fields.stringify_keys)
+  end
+
+  def normalize(rows)
+    EbayListingNormalizer.call(response: { "organic_results" => rows }, category: "chair")
+  end
+
+  test "validates exact item and image destinations before trusting provider rows" do
+    bad = [ "http://www.ebay.com/itm/123", "https://www.ebay.com.evil.test/itm/123", "https://user:pass@www.ebay.com/itm/123",
+      "https://www.ebay.com:444/itm/123", "https://www.ebay.com/sch/123", "https://www.ebay.com/itm/123/extra",
+      "https://www.ebay.com/itm/123?api_key=secret", "https://www.ebay.com/itm/123\\evil" ]
+    bad.each { |url| assert_empty normalize([ row(link: url) ]).listings, url }
+    [ "https://i.ebayimg.com.evil.test/chair.jpg", "http://i.ebayimg.com/chair.jpg", "https://user@i.ebayimg.com/chair.jpg",
+      "https://i.ebayimg.com:444/chair.jpg", "https://i.ebayimg.com/chair.jpg?X-Amz-Signature=secret" ].each do |url|
+      assert_empty normalize([ row(thumbnail: url) ]).listings, url
+    end
+    valid = normalize([ row(link: "https://ebay.com/itm/Wood-Chair/123?hash=abc#photo") ]).listings.first
+    assert_equal "https://www.ebay.com/itm/123", valid["url"]
+  end
+
+  test "filters country identity and complete furniture equally for promoted results in provider order" do
+    rows = [ row("1", sponsored: true), row("1", link: "https://ebay.com/itm/Other-Title/1?hash=abc"),
+      row("2", location: "Located in Canada"), row("3", location: nil), row("4", title: "Loose chair spindles", sponsored: true),
+      row("5", thumbnail: nil), row("6", title: nil) ] + (7..14).map { |id| row(id.to_s) }
+    result = normalize(rows)
+    assert_equal %w[1 7 8 9 10 11], result.listings.map { |item| item["id"] }
+    assert_equal true, result.listings.first["sponsored"]
+    assert_equal 2, result.counts["not_explicit_us"]
+    assert_equal 1, result.counts["duplicate"]
+    assert_equal 2, result.counts["missing_metadata"]
+    assert_equal 1, result.counts["title_rejected"]
+    assert_equal 9, result.counts["accepted"]
+    assert_equal 6, result.counts["displayed"]
+  end
+
+  test "only supplied safe metadata and price ranges survive; empty results are valid" do
+    result = normalize([ row(price: { "raw" => "$100–$200", "from" => { "raw" => "$100" }, "to" => { "raw" => "$200" }, "value" => 100 },
+      condition: "Pre-Owned", shipping: "Free delivery", subtitle: "private") ]).listings.first
+    assert_equal({ "raw" => "$100–$200", "from" => "$100", "to" => "$200" }, result["price"])
+    assert_equal "Pre-Owned", result["condition"]
+    assert_equal "Free delivery", result["shipping"]
+    refute result.key?("subtitle")
+    missing = normalize([ row(price: 100) ]).listings.first
+    assert_nil missing["price"]
+    assert_nil missing["shipping"]
+    assert_empty normalize([]).listings
+    assert_raises(ArgumentError) { normalize(Array.new(101) { row }) }
+  end
+end

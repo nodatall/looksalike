@@ -72,7 +72,8 @@ The server keeps uploaded photos only while handling the request. The browser re
 - [x] Install a supported Ruby version, create the Rails app, and confirm it runs locally.
 - [x] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
 - [x] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
-- [x] Add one command for the automated code, security, and test checks, with GitHub Actions configured to run it. Verify the hosted run after publishing the repository.
+- [x] Add one command for the automated code, security, and test checks, with GitHub Actions configured to run it.
+- [ ] Verify the GitHub Actions run after publishing the repository.
 
 ### 2. Check whether the search idea works
 
@@ -146,19 +147,25 @@ The example still needs documented image permission. Continue the independent se
 
 ### 4. Build the complete visitor experience
 
+Connect the server search, saved results, limits and progress events first. The browser needs that response contract to show real loading updates. Then build the upload and results screens against it.
+
 Use the same compression and search rules that passed the experiment.
 
 - [ ] Update the mockup and app to the photo-only upload, example, and preview flow above, with compression and clear file errors.
 - [ ] Remove ZIP entry, ZIP validation, area lookup, and nearby wording from the active flow. Enable search once a valid photo is ready.
 - [ ] Connect uploads to the chosen search approach and return up to six valid, distinct listing cards.
-- [ ] Store recent results by photo, US scope, and search version, and show their age when reused.
-- [ ] Enforce the spending limits and one-live-search rule, including during simultaneous requests and restarts.
-- [ ] Build the results header and responsive cards described above using Material UI and the shared theme.
+- [x] Store recent results by photo, US scope, and search version, retaining their original retrieval date.
+- [x] Enforce the spending limits and one-live-search rule with persisted SQLite reservations and leases, including simultaneous requests and expired-owner recovery.
+- [ ] Build the results header and responsive cards described above using Material UI and the shared theme. Show the original retrieval date when results are reused.
 - [ ] Restore completed results after a reload in the same tab, without new API calls. Clear that saved view on “Search again.”
 - [x] Add the loading checklist to the interactive mockup, with a visible photo, completed steps, status announcements, and Back.
 - [ ] Connect the loading checklist to actual search stages, including the optional Venice step. Stop it on completion, timeout, or error.
 - [ ] Add understandable empty-result, timeout, busy, and usage-limit messages. Keep the photo visible after an error and offer the example as another action.
 - [ ] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
+
+The server endpoint now accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. It returns sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Browser wiring and hosted persistence checks remain pending.
+
+Offline server checks passed: 108 Ruby tests, eight JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. These checks made no paid calls.
 
 ### 5. Check the app before release
 

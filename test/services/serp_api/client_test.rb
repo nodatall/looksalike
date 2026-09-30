@@ -45,6 +45,14 @@ class SerpApi::ClientTest < ActiveSupport::TestCase
     end
   end
 
+  test "eBay uses the fixed nationwide request without postal pickup or country filters" do
+    request = stub_request(:get, "https://serpapi.com/search.json").with(query: {
+      engine: "ebay", _nkw: "green velvet sofa", ebay_domain: "ebay.com", _ipg: "25", api_key: "offline-test-key"
+    }).to_return(status: 200, body: { search_metadata: { status: "Success" }, organic_results: [] }.to_json)
+    assert_equal [], client.ebay(query: "green velvet sofa", deadline: SearchDeadline.new)["organic_results"]
+    assert_requested request, times: 1
+  end
+
   test "rejects missing upload image ID before it could feed Lens" do
     bytes = Vips::Image.black(2, 2).write_to_buffer(".png")
     assert_raises(SerpApi::Client::Error) { client(transport: ->(**) { [ 200, "{}" ] }).upload(photo: bytes, deadline: SearchDeadline.new) }
