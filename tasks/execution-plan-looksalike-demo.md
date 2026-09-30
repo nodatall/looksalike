@@ -73,7 +73,7 @@ The server keeps uploaded photos only while handling the request. The browser re
 - [x] Add React and Material UI to the Rails-served page, with a JavaScript build that runs locally and during deployment.
 - [x] Add setup instructions, an example configuration without secrets, and rules that keep private files out of Git.
 - [x] Add one command for the automated code, security, and test checks, with GitHub Actions configured to run it.
-- [ ] Verify the GitHub Actions run after publishing the repository.
+- [x] Verify the GitHub Actions run after publishing the repository.
 
 ### 2. Check whether the search idea works
 
@@ -137,11 +137,11 @@ The September 28 [Venice comparison](../docs/experiments/ebay-flow-v3/README.md)
 
 The live app is implemented locally. Finish the example change before publishing, then check hosting with paid searches disabled. With searches disabled, the upload page and health check must remain usable and submission must explain that search is unavailable.
 
-- [ ] Create the public GitHub repository and publish the checked starting version.
+- [x] Create the public GitHub repository and publish the checked starting version.
 - [x] Build and check the production container locally, including compiled assets, mounted SQLite, restart persistence and missing-volume protection.
-- [ ] Deploy the app to Railway with live search switched off.
+- [x] Deploy the app to Railway with live search switched off.
 - [ ] Verify that the database is writable and that its records survive a restart and a new deployment.
-- [ ] Use a temporary simulated search to check that Railway permits responses beyond 30 seconds and that the app stops work at its 55-second deadline.
+- [x] Use a temporary simulated search to check that Railway permits responses beyond 30 seconds and that the app stops work at its 55-second deadline.
 - [ ] Remove or disable that temporary test route before allowing public live searches.
 
 ### 4. Build the complete visitor experience
@@ -172,7 +172,7 @@ Offline checks passed: 113 Ruby tests, 20 JavaScript tests, lint, builds, depend
 - [x] Verify that requests omit the provider country filter and that local filtering rejects candidates whose US location cannot be established. Check that cache and browser-storage versions cannot restore old Craigslist or ZIP-based results as eBay results.
 - [x] Verify that simultaneous requests cannot exceed the limits and that the upload page and health check still respond during a live search.
 - [x] Verify that the bundled example reference loads without external requests, and that submitting it uses the normal server search, progress, cache, and error behavior.
-- [ ] Repeat the example walkthrough on desktop and mobile, including errors, keyboard use, and reload, to verify the real search flow.
+- [x] Repeat the example walkthrough on desktop and mobile, including errors, keyboard use, and reload, to verify the real search flow.
 - [x] Recheck the example preview and button, completed-result reload without new calls, and “Search again.” Reject old saved example snapshots.
 - [x] Run all automated checks and inspect the public files for secrets, private photos, and misleading claims.
 - [x] Refresh screenshots and the walkthrough recording to show the example’s actual search flow.
