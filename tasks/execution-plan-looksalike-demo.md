@@ -44,7 +44,7 @@ Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares 
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. The example now uses the real search flow. Deployment checks remain pending.
+The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. The example now uses the real search flow. Railway timing and persistence checks passed; the real public-photo check returned six cards with Venice. Final review remains pending.
 
 ## Limits visitors will see
 
@@ -140,9 +140,9 @@ The live app is implemented locally. Finish the example change before publishing
 - [x] Create the public GitHub repository and publish the checked starting version.
 - [x] Build and check the production container locally, including compiled assets, mounted SQLite, restart persistence and missing-volume protection.
 - [x] Deploy the app to Railway with live search switched off.
-- [ ] Verify that the database is writable and that its records survive a restart and a new deployment.
+- [x] Verify that the database is writable and that its records survive a restart and a new deployment.
 - [x] Use a temporary simulated search to check that Railway permits responses beyond 30 seconds and that the app stops work at its 55-second deadline.
-- [ ] Remove or disable that temporary test route before allowing public live searches.
+- [x] Remove or disable that temporary test route before allowing public live searches.
 
 ### 4. Build the complete visitor experience
 
@@ -162,7 +162,7 @@ Use the same compression and search rules that passed the experiment.
 - [x] Update errors for the live example: keep the photo, explain unavailable or limited searches, and do not offer the example as a way around the same limit.
 - [x] Add the architecture sketch and concise call-by-call explanation. Show the actual route, useful inputs and responses, and local processing. Count uploads separately from searches, and distinguish new calls from saved details.
 
-The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks remain pending.
+The server endpoint accepts a reduced photo, reserves allowance before calls, and streams actual upload, Lens, optional Venice, eBay and local filtering events. The browser shows these stages, sanitized cards and call details. Saved successful results last 24 hours; empty results last one hour. They retain their original date and make no new calls. Hosted persistence checks passed across a restart and a new deployment.
 
 Offline checks passed: 113 Ruby tests, 20 JavaScript tests, lint, builds, dependency audits and security analysis. A fresh database setup created the required lease, and repeated setup preserved its owner. Browser checks with recorded responses verified uploads, optional Venice progress, cards, the diagram, provider errors, Back, hourly and daily limits, timeout recovery and reload. Mobile loading and error layouts fit the viewport; broken images leave useful cards and links. Server results also passed the browser's text and image checks, including Unicode limits. These checks made no paid calls.
 
@@ -181,10 +181,10 @@ Local verification is complete. The production container streamed a 34.4-second 
 
 ### 6. Enable live search and share the demo
 
-- [ ] Deploy the checked app and enable live searches with the spending controls in place.
-- [ ] Confirm that one previously unseen photo works on the public site within the reserved two-attempt budget and 55-second deadline.
-- [ ] Confirm that the example, error messages, listing links, and usage records still work after a restart or deployment.
-- [ ] Finish the README with the public demo and source links, setup instructions, an architecture diagram, API costs, known limits, and one concrete troubleshooting finding.
+- [x] Deploy the checked app and enable live searches with the spending controls in place.
+- [x] Confirm that one previously unseen photo works on the public site within the reserved two-attempt budget and 55-second deadline.
+- [x] Confirm that the example, error messages, listing links, and usage records still work after a restart or deployment.
+- [x] Finish the README with the public demo and source links, setup instructions, an architecture diagram, API costs, known limits, and one concrete troubleshooting finding.
 - [ ] Complete final review and publish the demo link.
 
 If search quality, request timing, or storage fails these checks, fix it or return to the stop condition in step 2 before calling the demo ready.
@@ -203,7 +203,7 @@ These details preserve the implementation decisions. The steps above should be u
 
 ### Rails and Railway setup
 
-Rails 8.1.3.1 and Ruby 3.4.10 are pinned for this app. Use the installed Homebrew Ruby without changing macOS system Ruby. GitHub and Railway sign-in have been verified; deployment remains a later step.
+Rails 8.1.3.1 and Ruby 3.4.10 are pinned for this app. Use the installed Homebrew Ruby without changing macOS system Ruby. The public GitHub repository and Railway app are configured.
 
 Use ERB for the page shell and mount one React root for the search screen. Material UI and its default Emotion styling engine provide the controls and theme. Use Rails `jsbundling-rails` with esbuild to compile JSX and bundle pinned npm dependencies during asset preparation. Keep React/Material UI versions compatible and commit the lockfile. There is no separate frontend service, client-side router, or React server rendering. [Material UI setup](https://mui.com/material-ui/getting-started/installation/), [Rails JavaScript bundling](https://github.com/rails/jsbundling-rails)
 
@@ -211,9 +211,9 @@ React owns browser interactions and sends requests to same-origin Rails endpoint
 
 The mockup source is `tasks/mockup/main.jsx`; its build command is documented in `tasks/mockup/README.md`. The generated HTML remains self-contained for direct viewing. Use Material UI's outlined inputs and theme focus states; avoid global focus rules that draw extra rings around inputs or headings. Keyboard focus and validation errors must remain visible.
 
-Run Puma directly behind Railway's HTTPS service, with one worker and at least three request threads. Omit Thruster from the generated start command because its default timeout conflicts with the planned request length. Mount all production SQLite files at `/app/storage`. Set writable ownership for the app user and prepare the database at startup, after the volume is mounted.
+Run Puma directly behind Railway's HTTPS service, with one process and at least three request threads. Omit Thruster from the generated start command because its default timeout conflicts with the planned request length. Mount all production SQLite files at `/app/storage`. Set writable ownership for the app user and prepare the database at startup, after the volume is mounted.
 
-The production image now builds and serves its fingerprinted JavaScript. Local container checks preserved two fixture allowance units, the original cached date and a lease owner through a restart and a new container. A missing volume disabled live search and created no replacement database. A recorded long request completed in 34.4 seconds; a forced timeout returned its final error in 55.1 seconds. Health responded within 13 milliseconds during both. Railway checks remain separate and pending.
+The production image now builds and serves its fingerprinted JavaScript. Local container checks preserved two fixture allowance units, the original cached date and a lease owner through a restart and a new container. A missing volume disabled live search and created no replacement database. A recorded long request completed in 34.4 seconds; a forced timeout returned its final error in 55.1 seconds. Health responded within 13 milliseconds during both. Separate Railway checks confirmed a 34.5-second streamed response, a clear 55.3-second timeout, and database records surviving restart and deployment.
 
 Use a cheap health endpoint. If the intended database volume is missing or unavailable, disable live calls instead of creating a temporary replacement database. Keep the shared component boundaries in [ARCHITECTURE.md](../docs/ARCHITECTURE.md).
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-LooksAlike turns one furniture photo into up to six US-located eBay listings. This document records the implemented server, browser and container boundaries; hosted deployment evidence remains pending.
+LooksAlike turns one furniture photo into up to six US-located eBay listings. This document records the implemented server, browser and container boundaries; [hosted deployment evidence](deployment.md) records the Railway checks and real public-photo search.
 
 ## Current system shape
 
@@ -50,7 +50,7 @@ Rails exposes home, health and the CSRF-protected multipart search POST. Puma ca
 
 The server budget is at most 55 seconds, including validation and provider calls. Every transport receives the remaining monotonic budget. Progress reports actual started/completed/failed stages; it never estimates percentage or time remaining.
 
-`Dockerfile` pins Ruby 3.4.10 and Node 22.22.3, installs libvips and precompiles the React/Propshaft assets without provider keys. The runtime starts Puma directly with `workers 0` (one process) and at least three request threads. It has no Thruster, frontend server or worker service. `railway.json` defaults to one service replica and `/up` health checks. A real `SECRET_KEY_BASE` is supplied at runtime. Hosted timing/persistence checks remain pending.
+`Dockerfile` pins Ruby 3.4.10 and Node 22.22.3, installs libvips and precompiles the React/Propshaft assets without provider keys. The runtime starts Puma directly with `workers 0` (one process) and at least three request threads. It has no Thruster, frontend server or worker service. `railway.json` defaults to one service replica and `/up` health checks. A real `SECRET_KEY_BASE` is supplied at runtime. Railway checks confirmed a 34.45-second streamed result, a 55.31-second deadline, responsive health checks and mounted records surviving restart and deployment. See [deployment verification](deployment.md).
 
 Production SQLite is pinned by an explicit Rails URL to `/app/storage/production.sqlite3`. `DATABASE_URL` must be absent/empty or exactly `sqlite3:/app/storage/production.sqlite3`; alternative forms, options and external URLs are rejected even when Rails resolves its explicit configuration safely. `ProductionStorage` checks the resolved adapter/path, exact Railway mount environment, canonical directory, actual Linux `/proc/self/mountinfo` entry and real write access. It rejects database/WAL/SHM/journal symlinks. `SearchStore` calls this guard before obtaining its connection pool, so a failed check cannot create an ephemeral SQLite database or reset allowance.
 
