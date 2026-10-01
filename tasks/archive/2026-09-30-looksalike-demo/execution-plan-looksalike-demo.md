@@ -2,7 +2,7 @@
 
 Goal: Build a small app that turns a furniture photo into up to six similar eBay listings located in the United States.
 
-The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The latest [five-photo comparison](../docs/experiments/ebay-flow-v6/README.md) passed four cases after repairing loose-part filtering and photo recognition. The ornate sofa failed on a Venice timeout. The example uses the bundled licensed green-sofa photo. Choosing it fills the preview; submitting it runs the same server search as an uploaded photo. Saved historical responses remain research and mockup data, not the app’s example results.
+The app will search nationwide eBay listings from a photo, without a ZIP or typed description. The latest [five-photo comparison](../../../docs/experiments/ebay-flow-v6/README.md) passed four cases after repairing loose-part filtering and photo recognition. The ornate sofa failed on a Venice timeout. The example uses the bundled licensed green-sofa photo. Choosing it fills the preview; submitting it runs the same server search as an uploaded photo. Saved historical responses remain research and mockup data, not the app’s example results.
 
 Deliver implementation instruction:
 When asked to implement this doc, load the `$deliver` skill, use this file as the approved execution plan, scan every checkbox, and continue through final review, archive movement, commit, and finalization before the final handoff.
@@ -44,7 +44,7 @@ Visual mockup: [Interactive preview](ui-mockup-looksalike-demo.html). It shares 
 | SQLite | A small database stores recent search results and usage counts. It does not store uploaded photos. |
 | Public GitHub repository | Anyone can read the source and setup instructions. |
 
-The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. The example now uses the real search flow. Railway timing and persistence checks passed; the real public-photo check returned six cards with Venice. Final review remains pending.
+The Rails app and mockup now share the photo-only eBay screen. The app streams real search progress and restores completed results after reload. Provider credentials are configured locally and on Railway. Final local review passed after repairing result validation, upload buffering, timeout cleanup, and mobile loading. The example now uses the real search flow. Railway timing and persistence checks passed; the real public-photo check returned six cards with Venice. The final full-branch review passed; the public demo is live.
 
 ## Limits visitors will see
 
@@ -77,7 +77,7 @@ The server keeps uploaded photos only while handling the request. The browser re
 
 ### 2. Check whether the search idea works
 
-The Craigslist comparison below is historical. Preserve its rules and completed tasks. The pending tasks that follow cover the approved nationwide eBay direction.
+The Craigslist comparison below is historical. Preserve its rules and completed tasks. The tasks that follow cover the approved nationwide eBay direction.
 
 Test five fixed photo/ZIP pairs: an ornate sofa in 10001, a modern sofa in 94103, a dining chair in 60601, a wood table in 02108, and a dresser in 98101. Use photos we own or have permission to reuse. Each photo is tested in its assigned area, keeping this comparison to five cases per approach.
 
@@ -119,19 +119,19 @@ The preceding Craigslist comparison is historical. Its frozen inputs, two-failur
 
 The first comparison used six search attempts and four uploads. Both approaches stopped after two failed cases, leaving three photos untested on each. The two-call diagnostic brought usage to eight attempts and confirmed that the modern query returned links outside Craigslist. The original scores and frozen rules remain unchanged.
 
-The approved [short-query test](../docs/experiments/query-v2/README.md) used two more Images attempts with saved descriptions and the same area restrictions. San Francisco produced no accepted listings. New York produced two candidates, but neither matched the reference. This does not replace the five-case comparison.
+The approved [short-query test](../../../docs/experiments/query-v2/README.md) used two more Images attempts with saved descriptions and the same area restrictions. San Francisco produced no accepted listings. New York produced two candidates, but neither matched the reference. This does not replace the five-case comparison.
 
-The approved [eBay trial](../docs/experiments/ebay-v1/README.md) used two more attempts. The green-sofa request was rejected because the API did not accept the documented `LH_PrefLoc=Domestic` value. Removing that optional parameter for the antique-sofa request returned 60 listings in 2.52 seconds. Three of the first six looked similar to the reference, and all six pages showed New York pickup locations. The API itself supplied only country-level locations. That trial did not test fresh Lens recognition or the remaining photos; the later full-flow comparison is recorded separately.
+The approved [eBay trial](../../../docs/experiments/ebay-v1/README.md) used two more attempts. The green-sofa request was rejected because the API did not accept the documented `LH_PrefLoc=Domestic` value. Removing that optional parameter for the antique-sofa request returned 60 listings in 2.52 seconds. Three of the first six looked similar to the reference, and all six pages showed New York pickup locations. The API itself supplied only country-level locations. That trial did not test fresh Lens recognition or the remaining photos; the later full-flow comparison is recorded separately.
 
-The approved [nationwide test](../docs/experiments/ebay-us-v1/README.md) used one further attempt for `green velvet sofa` with `_salic=1`, no ZIP, and no pickup-only filter. It timed out after 55.01 seconds without a completed response. This is inconclusive about inventory, similarity, and country filtering; it is not an empty result or a full-flow pass.
+The approved [nationwide test](../../../docs/experiments/ebay-us-v1/README.md) used one further attempt for `green velvet sofa` with `_salic=1`, no ZIP, and no pickup-only filter. It timed out after 55.01 seconds without a completed response. This is inconclusive about inventory, similarity, and country filtering; it is not an empty result or a full-flow pass.
 
-The original request's [archived response](../docs/experiments/ebay-us-v1/archive-diagnosis.json) later confirmed HTTP 503 after 90.11 seconds. The user-approved [identical retry](../docs/experiments/ebay-us-retry-v1/README.md), with a longer diagnostic deadline, also returned HTTP 503 after 90.34 seconds. This nationwide request has now failed twice; the provider's generic error does not identify the cause. Increasing the app deadline would not resolve these failures.
+The original request's [archived response](../../../docs/experiments/ebay-us-v1/archive-diagnosis.json) later confirmed HTTP 503 after 90.11 seconds. The user-approved [identical retry](../../../docs/experiments/ebay-us-retry-v1/README.md), with a longer diagnostic deadline, also returned HTTP 503 after 90.34 seconds. This nationwide request has now failed twice; the provider's generic error does not identify the cause. Increasing the app deadline would not resolve these failures.
 
-The user-approved [test without the country filter](../docs/experiments/ebay-no-country-v1/README.md) then returned HTTP 200 and 60 listings in 2.12 seconds. All other request parameters were unchanged. The country filter is therefore the likely source of the failures, although the provider's internal cause is unknown. The response marked 59 listings US-located and one Philippines-located. The implementation will omit `_salic` and check the returned location locally; no application code changed in this test. The first six included four sponsored items, and visual relevance remains unreviewed.
+The user-approved [test without the country filter](../../../docs/experiments/ebay-no-country-v1/README.md) then returned HTTP 200 and 60 listings in 2.12 seconds. All other request parameters were unchanged. The country filter is therefore the likely source of the failures, although the provider's internal cause is unknown. The response marked 59 listings US-located and one Philippines-located. The implementation will omit `_salic` and check the returned location locally; no application code changed in this test. The first six included four sponsored items, and visual relevance remains unreviewed.
 
 Earlier experiments used **23 search attempts** before the repaired comparison. On September 25, 2026, the fresh account check confirmed 230 searches remaining. The new batch used six searches and three uploads, bringing recorded development usage to **29 search attempts**. The remaining account balance was not refreshed for that batch. It stopped after two failures; unused allowance could not bypass that stop. Further focused diagnostic batches are authorized within the remaining account allowance, but must record their purpose and size before dispatch. Preserve every earlier attempt and frozen score, and keep the separate two-search deployment check reserved.
 
-The September 28 [Venice comparison](../docs/experiments/ebay-flow-v3/README.md) used ten more searches and five uploads, plus three vision calls. Four of five photos passed within 19 seconds. Recorded development usage is now **39 search attempts**; the post-run account check confirmed **214 searches remaining**. The two-search deployment reserve is untouched. At that time the saved example still needed listing-photo permission for bundling. The current live-example decision replaces that offline requirement; this dated response remains historical.
+The September 28 [Venice comparison](../../../docs/experiments/ebay-flow-v3/README.md) used ten more searches and five uploads, plus three vision calls. Four of five photos passed within 19 seconds. Recorded development usage is now **39 search attempts**; the post-run account check confirmed **214 searches remaining**. The two-search deployment reserve is untouched. At that time the saved example still needed listing-photo permission for bundling. The current live-example decision replaces that offline requirement; this dated response remains historical.
 
 ### 3. Put the app online
 
@@ -185,7 +185,7 @@ Local verification is complete. The production container streamed a 34.4-second 
 - [x] Confirm that one previously unseen photo works on the public site within the reserved two-attempt budget and 55-second deadline.
 - [x] Confirm that the example, error messages, listing links, and usage records still work after a restart or deployment.
 - [x] Finish the README with the public demo and source links, setup instructions, an architecture diagram, API costs, known limits, and one concrete troubleshooting finding.
-- [ ] Complete final review and publish the demo link.
+- [x] Complete final review and publish the demo link.
 
 If search quality, request timing, or storage fails these checks, fix it or return to the stop condition in step 2 before calling the demo ready.
 
@@ -215,7 +215,7 @@ Run Puma directly behind Railway's HTTPS service, with one process and at least 
 
 The production image now builds and serves its fingerprinted JavaScript. Local container checks preserved two fixture allowance units, the original cached date and a lease owner through a restart and a new container. A missing volume disabled live search and created no replacement database. A recorded long request completed in 34.4 seconds; a forced timeout returned its final error in 55.1 seconds. Health responded within 13 milliseconds during both. Separate Railway checks confirmed a 34.5-second streamed response, a clear 55.3-second timeout, and database records surviving restart and deployment.
 
-Use a cheap health endpoint. If the intended database volume is missing or unavailable, disable live calls instead of creating a temporary replacement database. Keep the shared component boundaries in [ARCHITECTURE.md](../docs/ARCHITECTURE.md).
+Use a cheap health endpoint. If the intended database volume is missing or unavailable, disable live calls instead of creating a temporary replacement database. Keep the shared component boundaries in [ARCHITECTURE.md](../../../docs/ARCHITECTURE.md).
 
 ### Nationwide eBay search
 
@@ -232,7 +232,7 @@ Approved phrase extraction repair:
 
 The completed query-v3 comparison remains frozen. The next comparison uses this Lens policy plus the photo fallback below, with a new manifest and separate attempt records. Keep the same photos, provider ordering, US-location checks, 55-second deadline, quality threshold, and two-failure stop.
 
-Pass the phrase as `_nkw` to `engine=ebay`, with `ebay_domain=ebay.com`. Omit `_salic`, `_stpos`, `show_only=LPickup`, and `LH_PrefLoc=Domestic`. The country-filtered request failed twice; removing only `_salic` succeeded. Enforce US location using the returned listing fields below. [Observed request comparison](../docs/experiments/ebay-no-country-v1/README.md)
+Pass the phrase as `_nkw` to `engine=ebay`, with `ebay_domain=ebay.com`. Omit `_salic`, `_stpos`, `show_only=LPickup`, and `LH_PrefLoc=Domestic`. The country-filtered request failed twice; removing only `_salic` succeeded. Enforce US location using the returned listing fields below. [Observed request comparison](../../../docs/experiments/ebay-no-country-v1/README.md)
 
 Read individual listing destinations from `organic_results[].link`. Accept only HTTPS eBay item links on an explicit allowlist. Remove tracking parameters and duplicates by item ID. Require a title, thumbnail, source link, and supplied evidence that the item is located in the US; omit unknown or non-US locations. Then use the recognized furniture type to reject wrong item types and accessories, including rugs, sofa tables in a sofa search, and replacement legs in a chair search. Apply the same title checks to promoted listings. Preserve the remaining provider order and take up to six items. Record each rejection reason and count before scoring. Title filtering cannot guarantee visual similarity.
 
@@ -344,4 +344,4 @@ Check the explanation for the Lens-to-eBay flow, failures, cached results, and a
 
 Add instructions to refresh recorded responses, experiment results, and the recording to the README contents listed in step 6.
 
-The completed [Pro analysis](tmp/pro-analysis-looksalike-demo.md) records the earlier technical review and seven adopted findings. It predates the nationwide eBay decision and several UI changes; it does not validate the new flow. The current direction is approved, but implementation and release still require the checks above.
+The completed [Pro analysis](../../tmp/pro-analysis-looksalike-demo.md) records the earlier technical review and seven adopted findings. It predates the nationwide eBay decision and several UI changes; it does not validate the new flow. The implementation and hosted checks recorded above validate the released flow.

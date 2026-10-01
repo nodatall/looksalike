@@ -1,6 +1,6 @@
 # Interactive mockup
 
-Run `npm --prefix tasks/mockup run build` to regenerate `tasks/ui-mockup-looksalike-demo.html`.
+The [reviewed preview](../archive/2026-09-30-looksalike-demo/ui-mockup-looksalike-demo.html) is archived with the [completed plan](../archive/2026-09-30-looksalike-demo/execution-plan-looksalike-demo.md). Run `npm --prefix tasks/mockup run build` to create a fresh working preview at `tasks/ui-mockup-looksalike-demo.html`.
 
 The standalone HTML and Rails app share the photo upload, preparation, progress, eBay cards, saved-view validation, and explanation components under `app/javascript/search`. The app never imports from `tasks/`. The mockup injects `previewSearch` and explicitly enables the shared component’s `preview` option. It models progress with timers and makes no provider requests. Only an explicitly chosen example returns historical results; an uploaded image never receives them. The Rails app reads actual NDJSON events from `/searches`: choosing its example fills the photo preview, and submission runs the same search, cache and limits as an upload, with the same provider/privacy notice.
 
