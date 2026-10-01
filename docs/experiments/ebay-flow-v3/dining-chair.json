@@ -1,0 +1,2095 @@
+{
+  "case_id": "dining-chair",
+  "manifest_sha256": "4bed77df7331e94845caa1871352f9a03f155e766f782c395837767eb5c5bebe",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "light wood finish turned legs chair",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 757.13
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 4073.402
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 3745.485
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 9022.691
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": false,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/145232123462",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZskAAeSwPqFps5Sf/s-l500.webp",
+        "sponsored": true,
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$415.61"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/307162866469",
+        "thumbnail": "https://i.ebayimg.com/images/g/IgoAAeSwjPFqmus9/s-l500.webp",
+        "sponsored": true,
+        "title": "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$223.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398432810148",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lm8AAeSwNjpqtzrb/s-l500.webp",
+        "sponsored": false,
+        "title": "Dining Chair Wooden FAS Grade Oak Natural Wood Made In North America Dirt-free",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$135.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/227541676090",
+        "thumbnail": "https://i.ebayimg.com/images/g/8XQAAeSwFd5qF0-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Spindle-Back Dining Chair, Turned Legs, Brown Solid, Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$165.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/136512535728",
+        "thumbnail": "https://i.ebayimg.com/images/g/xY8AAeSwCr1o1tN9/s-l500.webp",
+        "sponsored": false,
+        "title": "1 Vintage wooden chair, carved backrest,plank seat and turned legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/256005041681",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bh0AAeSwYFFo3CRP/s-l500.webp",
+        "sponsored": false,
+        "title": "Decorative Wood Turned Leg With No Finish for Chairs and Sofas Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$33.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/136356759230",
+        "thumbnail": "https://i.ebayimg.com/images/g/EcYAAeSw2J5oqecr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Chair ￼",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/407152733868",
+        "thumbnail": "https://i.ebayimg.com/images/g/maMAAeSwxFVqg~-b/s-l500.webp",
+        "sponsored": false,
+        "title": "Rustic Walnut Side Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$160.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/358725227502",
+        "thumbnail": "https://i.ebayimg.com/images/g/-nEAAeSwx8pqPsTW/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/188501647807",
+        "thumbnail": "https://i.ebayimg.com/images/g/YRkAAeSwPYBqK~qC/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Solid Wood Spindle Back Dining Chair With Turned Legs And Rustic Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/128084271045",
+        "thumbnail": "https://i.ebayimg.com/images/g/tqsAAeSw~bRqoHqv/s-l500.webp",
+        "sponsored": true,
+        "title": "wood chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/318825750028",
+        "thumbnail": "https://i.ebayimg.com/images/g/sbgAAeSwOa9qmvFN/s-l500.webp",
+        "sponsored": true,
+        "title": "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$228.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/407179103712",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DUAAeSwR7pqkyVg/s-l500.webp",
+        "sponsored": false,
+        "title": "Beautiful Wooden Side Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$49.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/198413492053",
+        "thumbnail": "https://i.ebayimg.com/images/g/7q8AAeSwh75qKBaP/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE WOOD ACCENT CHAIR, DK STAINED TURNED WOOD CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/318916959005",
+        "thumbnail": "https://i.ebayimg.com/images/g/s98AAeSwaGNqiGgF/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wooden Spindle Back Dining Chair Varnished Finish 22x21x12 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$30.00",
+          "to": "$42.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/257211639182",
+        "thumbnail": "https://i.ebayimg.com/images/g/FmcAAeSwPN9pGgDw/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Painted Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/178243377899",
+        "thumbnail": "https://i.ebayimg.com/images/g/I1EAAeSw9SlqOEWE/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Wooden Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/206292473931",
+        "thumbnail": "https://i.ebayimg.com/images/g/9MoAAeSwyFxqENTi/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage European-Inspired Turned Wood Accent Chair - Original Price $1,000",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/254767184650",
+        "thumbnail": "https://i.ebayimg.com/images/g/KrYAAOSws3RfkbOI/s-l500.webp",
+        "sponsored": false,
+        "title": "vintage simple wooden chair - local pickup",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$19.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/406748085654",
+        "thumbnail": "https://i.ebayimg.com/images/g/ASMAAeSwnrxpqgVC/s-l500.webp",
+        "sponsored": false,
+        "title": "English Walnut Carved Wood Upholstered Chairs Set of 2",
+        "subtitle": null,
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/318807121494",
+        "thumbnail": "https://i.ebayimg.com/images/g/E10AAeSwqn9qlje8/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Dining Chairs Set of 2, Solid Rubberwood Kitchen & Dining Room Chairs, Fa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$225.96",
+          "to": "$596.08"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/168014364153",
+        "thumbnail": "https://i.ebayimg.com/images/g/gx0AAeSwO7xpRMCK/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Chairs - Cedar Wood. Natural Color",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/186475703379",
+        "thumbnail": "https://i.ebayimg.com/images/g/lpYAAeSwFs9qmoAk/s-l500.webp",
+        "sponsored": false,
+        "title": "ABP8T05 - Set of 2 - Modern Chairs- Wooden Chair Includes Antique Walnut...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$134.36"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/205732525609",
+        "thumbnail": "https://i.ebayimg.com/images/g/h04AAeSwCCloxx6W/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Free Form Wooden Chair Rustic Country Conversation Piece",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/394590920081",
+        "thumbnail": "https://i.ebayimg.com/images/g/of0AAOSwnqtea9HM/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique White Coyana Wooden Seat Back with turned Leg Dining Chair Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/358860999650",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhgAAeSweBdqDX-3/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Wood Chair Antique Upholstered Chair w/ Storage Space Brown & Light Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/206455062087",
+        "thumbnail": "https://i.ebayimg.com/images/g/VtEAAeSw6wpqbJjf/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Nailhead Trim & Turned Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$326.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/278230366583",
+        "thumbnail": "https://i.ebayimg.com/images/g/SJgAAeSwfZRqaSlg/s-l500.webp",
+        "sponsored": true,
+        "title": "2 PCS Wood Chair Antique Upholstered Chair w/ Storage Space Brown & Light Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$134.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/335386245773",
+        "thumbnail": "https://i.ebayimg.com/images/g/O3MAAOSw4Y5mPQ~K/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Side Chair, Dining Chair, Light Blonde, Black, Walnut, New England",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/233398155727",
+        "thumbnail": "https://i.ebayimg.com/images/g/qFIAAOSwJMhXDk6s/s-l500.webp",
+        "sponsored": false,
+        "title": "EXCELLENT CONDITION UPHOLSTERED WOODEN CHAIRS",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$39.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/297778555953",
+        "thumbnail": "https://i.ebayimg.com/images/g/eYkAAeSwzBhpHzjc/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$44.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/226308749443",
+        "thumbnail": "https://i.ebayimg.com/images/g/BWEAAOSww81mx7jW/s-l500.webp",
+        "sponsored": false,
+        "title": "Nice Wood Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$595.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198272242999",
+        "thumbnail": "https://i.ebayimg.com/images/g/ICgAAeSwzM5qVb5D/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Solid Wood Two-Tone Farmhouse Chair in Walnut and Ebony",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$171.82"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/278194131670",
+        "thumbnail": "https://i.ebayimg.com/images/g/DAgAAeSwhZ9qW3ZU/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Gold Metal Legs, Vanity Chair for Makeup Room, Upholste",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$197.67",
+          "to": "$215.37"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/366533334569",
+        "thumbnail": "https://i.ebayimg.com/images/g/lMgAAeSwJ5JqUDwD/s-l500.webp",
+        "sponsored": true,
+        "title": "Oak Solid Wood Side Chair in off white x 2 17.83'' H Excellent condition",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/395191645657",
+        "thumbnail": "https://i.ebayimg.com/images/g/IbsAAOSwSfZlxvbp/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/203413978392",
+        "thumbnail": "https://i.ebayimg.com/images/g/~8kAAOSwELNgitdO/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Square Chairs. 3823",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,904.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/396258977189",
+        "thumbnail": "https://i.ebayimg.com/images/g/bmYAAOSw9ulnK~uf/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage solid wood chair- 37\" tall, 16\" wide, 15\" deep",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$65.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/397072926573",
+        "thumbnail": "https://i.ebayimg.com/images/g/t00AAeSwJAxozZ2G/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chair Comes With Cushion",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/186451755791",
+        "thumbnail": "https://i.ebayimg.com/images/g/BpUAAOSwYVpmS5fH/s-l500.webp",
+        "sponsored": false,
+        "title": "Transitional Style Wooden Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$30.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/195941668554",
+        "thumbnail": "https://i.ebayimg.com/images/g/Mp0AAOSwXilk3~4R/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Side Chair – VGC – GREAT WHITEWASH COLOR – SOLID AND STURDY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$119.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/196110634164",
+        "thumbnail": "https://i.ebayimg.com/images/g/DFYAAOSwEONlakor/s-l500.webp",
+        "sponsored": false,
+        "title": "Bent Wood Side Chair – VGC - Solid Wood - LOVELY CONTEMPORARY CHAIR -Gently Used",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/275320628355",
+        "thumbnail": "https://i.ebayimg.com/images/g/LEkAAOSw8e9iiUev/s-l500.webp",
+        "sponsored": false,
+        "title": "wood chair - used but sturdy",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$10.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/296764617911",
+        "thumbnail": "https://i.ebayimg.com/images/g/RVIAAOSwm4lnFUs7/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$6.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/175625075082",
+        "thumbnail": "https://i.ebayimg.com/images/g/DygAAOSwSbBj1nmV/s-l500.webp",
+        "sponsored": false,
+        "title": "wooden leg chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/398000566674",
+        "thumbnail": "https://i.ebayimg.com/images/g/fuQAAeSwWi9qGInZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Original Stunning Wood Chair With Metal Legs. Beautiful Wood Markings",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/366525563162",
+        "thumbnail": "https://i.ebayimg.com/images/g/UmcAAeSwyk1qS5k8/s-l500.webp",
+        "sponsored": false,
+        "title": "Turned Leg Wood Dining Chair Set of 2 Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/333300281639",
+        "thumbnail": "https://i.ebayimg.com/images/g/nxQAAOSwEDBdWYJv/s-l500.webp",
+        "sponsored": false,
+        "title": "Collectible black painted solid wood chair,very sturdy with carved back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$77.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/820087136283",
+        "thumbnail": "https://i.ebayimg.com/images/g/G~AAAeSw1ihqcMi-/s-l500.webp",
+        "sponsored": false,
+        "title": "MAPLE WOOD CHAIR ONLY19\" BASE X 29\" HIGH W/ 12\" WAVE SEAT",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/167567775637",
+        "thumbnail": "https://i.ebayimg.com/images/g/mPYAAeSwVB1oQ3jq/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Chair Made in Malaysia",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$55.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/165604581888",
+        "thumbnail": "https://i.ebayimg.com/images/g/qcsAAOSwsRdi5tPX/s-l500.webp",
+        "sponsored": false,
+        "title": "6 Chair / wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/820163748361",
+        "thumbnail": "https://i.ebayimg.com/images/g/HTMAAeSw2~5qc529/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Wooden Spindle Back Dining Chair, Brown Solid Medium Wood Tone, Adults",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$32.00",
+          "to": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/236880786556",
+        "thumbnail": "https://i.ebayimg.com/images/g/76EAAeSw8n5qMYAH/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Dark Wood Accent Chair w/ Carved Arms, Upholstered Geometric Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": false,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/145232123462",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZskAAeSwPqFps5Sf/s-l500.webp",
+        "sponsored": true,
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$415.61"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/307162866469",
+        "thumbnail": "https://i.ebayimg.com/images/g/IgoAAeSwjPFqmus9/s-l500.webp",
+        "sponsored": true,
+        "title": "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$223.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398432810148",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lm8AAeSwNjpqtzrb/s-l500.webp",
+        "sponsored": false,
+        "title": "Dining Chair Wooden FAS Grade Oak Natural Wood Made In North America Dirt-free",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$135.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abacdf297c19f1ff2917184",
+        "status": "Success",
+        "created_at": "2026-09-28 20:28:34 UTC",
+        "processed_at": "2026-09-28 20:28:34 UTC",
+        "total_time_taken": 3.73
+      },
+      "ebay": {
+        "id": "6abacdfa55cfe1a4d1ec2133",
+        "status": "Success",
+        "created_at": "2026-09-28 20:28:42 UTC",
+        "processed_at": "2026-09-28 20:28:42 UTC",
+        "total_time_taken": 8.66
+      }
+    },
+    "lens_interpretation": "chair",
+    "query_preparation": {
+      "status": "ready",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v1",
+        "phrase_version": "photo-phrase-v1",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 29,
+          "total_tokens": 1850
+        },
+        "duration_ms": 3767,
+        "category": "chair",
+        "traits": [
+          "light wood finish",
+          "turned legs"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "light wood finish turned legs chair",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Restoration & Finishing — Kramer Furniture and Cabinet ...",
+        "Blog 3 — Husick Psychology",
+        "Connie Clark, Author at Collegeville Institute",
+        "Understanding and using pronouns: 'he' and 'she' Share books ...",
+        "Modern Chairs, Back Style: Tight Back at ₹ 1000 in Noida ...",
+        "Gestalt Therapy and the Empty Chair Technique – Musings in ...",
+        "Brown wooden chair on grass covered plain - Free Photo on ...",
+        "La Boîte à Grenier"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "light wood finish turned legs chair",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 56,
+      "not_explicit_us": 4
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": false,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/145232123462",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZskAAeSwPqFps5Sf/s-l500.webp",
+        "sponsored": true,
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$415.61"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/307162866469",
+        "thumbnail": "https://i.ebayimg.com/images/g/IgoAAeSwjPFqmus9/s-l500.webp",
+        "sponsored": true,
+        "title": "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$223.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398432810148",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lm8AAeSwNjpqtzrb/s-l500.webp",
+        "sponsored": false,
+        "title": "Dining Chair Wooden FAS Grade Oak Natural Wood Made In North America Dirt-free",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$135.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/227541676090",
+        "thumbnail": "https://i.ebayimg.com/images/g/8XQAAeSwFd5qF0-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Spindle-Back Dining Chair, Turned Legs, Brown Solid, Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$165.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/136512535728",
+        "thumbnail": "https://i.ebayimg.com/images/g/xY8AAeSwCr1o1tN9/s-l500.webp",
+        "sponsored": false,
+        "title": "1 Vintage wooden chair, carved backrest,plank seat and turned legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/256005041681",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bh0AAeSwYFFo3CRP/s-l500.webp",
+        "sponsored": false,
+        "title": "Decorative Wood Turned Leg With No Finish for Chairs and Sofas Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$33.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/306904787296",
+        "thumbnail": "https://i.ebayimg.com/images/g/9moAAeSwX9xp723z/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Spindle Back Dining Chair - Traditional Turned Legs - Ships from EU",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in Portugal",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/136356759230",
+        "thumbnail": "https://i.ebayimg.com/images/g/EcYAAeSw2J5oqecr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Chair ￼",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/407152733868",
+        "thumbnail": "https://i.ebayimg.com/images/g/maMAAeSwxFVqg~-b/s-l500.webp",
+        "sponsored": false,
+        "title": "Rustic Walnut Side Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$160.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/358725227502",
+        "thumbnail": "https://i.ebayimg.com/images/g/-nEAAeSwx8pqPsTW/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/188501647807",
+        "thumbnail": "https://i.ebayimg.com/images/g/YRkAAeSwPYBqK~qC/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Solid Wood Spindle Back Dining Chair With Turned Legs And Rustic Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/128084271045",
+        "thumbnail": "https://i.ebayimg.com/images/g/tqsAAeSw~bRqoHqv/s-l500.webp",
+        "sponsored": true,
+        "title": "wood chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/318825750028",
+        "thumbnail": "https://i.ebayimg.com/images/g/sbgAAeSwOa9qmvFN/s-l500.webp",
+        "sponsored": true,
+        "title": "Iris Turned Leg Wood Dining Chair, Set of 2, Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$228.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/407179103712",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DUAAeSwR7pqkyVg/s-l500.webp",
+        "sponsored": false,
+        "title": "Beautiful Wooden Side Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$49.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/198413492053",
+        "thumbnail": "https://i.ebayimg.com/images/g/7q8AAeSwh75qKBaP/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE WOOD ACCENT CHAIR, DK STAINED TURNED WOOD CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/318916959005",
+        "thumbnail": "https://i.ebayimg.com/images/g/s98AAeSwaGNqiGgF/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wooden Spindle Back Dining Chair Varnished Finish 22x21x12 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$30.00",
+          "to": "$42.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/257211639182",
+        "thumbnail": "https://i.ebayimg.com/images/g/FmcAAeSwPN9pGgDw/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Painted Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/178243377899",
+        "thumbnail": "https://i.ebayimg.com/images/g/I1EAAeSw9SlqOEWE/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Wooden Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/206292473931",
+        "thumbnail": "https://i.ebayimg.com/images/g/9MoAAeSwyFxqENTi/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage European-Inspired Turned Wood Accent Chair - Original Price $1,000",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/254767184650",
+        "thumbnail": "https://i.ebayimg.com/images/g/KrYAAOSws3RfkbOI/s-l500.webp",
+        "sponsored": false,
+        "title": "vintage simple wooden chair - local pickup",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$19.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/406748085654",
+        "thumbnail": "https://i.ebayimg.com/images/g/ASMAAeSwnrxpqgVC/s-l500.webp",
+        "sponsored": false,
+        "title": "English Walnut Carved Wood Upholstered Chairs Set of 2",
+        "subtitle": null,
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/318807121494",
+        "thumbnail": "https://i.ebayimg.com/images/g/E10AAeSwqn9qlje8/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Dining Chairs Set of 2, Solid Rubberwood Kitchen & Dining Room Chairs, Fa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$225.96",
+          "to": "$596.08"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/168014364153",
+        "thumbnail": "https://i.ebayimg.com/images/g/gx0AAeSwO7xpRMCK/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Chairs - Cedar Wood. Natural Color",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/186475703379",
+        "thumbnail": "https://i.ebayimg.com/images/g/lpYAAeSwFs9qmoAk/s-l500.webp",
+        "sponsored": false,
+        "title": "ABP8T05 - Set of 2 - Modern Chairs- Wooden Chair Includes Antique Walnut...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$134.36"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/205732525609",
+        "thumbnail": "https://i.ebayimg.com/images/g/h04AAeSwCCloxx6W/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Free Form Wooden Chair Rustic Country Conversation Piece",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/394590920081",
+        "thumbnail": "https://i.ebayimg.com/images/g/of0AAOSwnqtea9HM/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique White Coyana Wooden Seat Back with turned Leg Dining Chair Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/358860999650",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhgAAeSweBdqDX-3/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Wood Chair Antique Upholstered Chair w/ Storage Space Brown & Light Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/206455062087",
+        "thumbnail": "https://i.ebayimg.com/images/g/VtEAAeSw6wpqbJjf/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Nailhead Trim & Turned Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$326.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/278230366583",
+        "thumbnail": "https://i.ebayimg.com/images/g/SJgAAeSwfZRqaSlg/s-l500.webp",
+        "sponsored": true,
+        "title": "2 PCS Wood Chair Antique Upholstered Chair w/ Storage Space Brown & Light Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$134.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/335386245773",
+        "thumbnail": "https://i.ebayimg.com/images/g/O3MAAOSw4Y5mPQ~K/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Side Chair, Dining Chair, Light Blonde, Black, Walnut, New England",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/397382493964",
+        "thumbnail": "https://i.ebayimg.com/images/g/LBEAAeSwy2xpOwEs/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Chair – Multiple Color, shipping included",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery Import fees due prior to delivery",
+        "location": "Located in France",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$180.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/233398155727",
+        "thumbnail": "https://i.ebayimg.com/images/g/qFIAAOSwJMhXDk6s/s-l500.webp",
+        "sponsored": false,
+        "title": "EXCELLENT CONDITION UPHOLSTERED WOODEN CHAIRS",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$39.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/297778555953",
+        "thumbnail": "https://i.ebayimg.com/images/g/eYkAAeSwzBhpHzjc/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$44.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/226308749443",
+        "thumbnail": "https://i.ebayimg.com/images/g/BWEAAOSww81mx7jW/s-l500.webp",
+        "sponsored": false,
+        "title": "Nice Wood Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$595.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198272242999",
+        "thumbnail": "https://i.ebayimg.com/images/g/ICgAAeSwzM5qVb5D/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Solid Wood Two-Tone Farmhouse Chair in Walnut and Ebony",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$171.82"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/278194131670",
+        "thumbnail": "https://i.ebayimg.com/images/g/DAgAAeSwhZ9qW3ZU/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Gold Metal Legs, Vanity Chair for Makeup Room, Upholste",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$197.67",
+          "to": "$215.37"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/366533334569",
+        "thumbnail": "https://i.ebayimg.com/images/g/lMgAAeSwJ5JqUDwD/s-l500.webp",
+        "sponsored": true,
+        "title": "Oak Solid Wood Side Chair in off white x 2 17.83'' H Excellent condition",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/395191645657",
+        "thumbnail": "https://i.ebayimg.com/images/g/IbsAAOSwSfZlxvbp/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/203413978392",
+        "thumbnail": "https://i.ebayimg.com/images/g/~8kAAOSwELNgitdO/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Square Chairs. 3823",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,904.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/396258977189",
+        "thumbnail": "https://i.ebayimg.com/images/g/bmYAAOSw9ulnK~uf/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage solid wood chair- 37\" tall, 16\" wide, 15\" deep",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$65.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/403708289725",
+        "thumbnail": "https://i.ebayimg.com/images/g/OksAAOSwimliojz-/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade wooden chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in Hungary",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$98.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/397072926573",
+        "thumbnail": "https://i.ebayimg.com/images/g/t00AAeSwJAxozZ2G/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chair Comes With Cushion",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/186451755791",
+        "thumbnail": "https://i.ebayimg.com/images/g/BpUAAOSwYVpmS5fH/s-l500.webp",
+        "sponsored": false,
+        "title": "Transitional Style Wooden Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$30.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/195941668554",
+        "thumbnail": "https://i.ebayimg.com/images/g/Mp0AAOSwXilk3~4R/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Side Chair – VGC – GREAT WHITEWASH COLOR – SOLID AND STURDY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$119.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/196110634164",
+        "thumbnail": "https://i.ebayimg.com/images/g/DFYAAOSwEONlakor/s-l500.webp",
+        "sponsored": false,
+        "title": "Bent Wood Side Chair – VGC - Solid Wood - LOVELY CONTEMPORARY CHAIR -Gently Used",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/356858889481",
+        "thumbnail": "https://i.ebayimg.com/images/g/-AAAAOSwwN5mCQkd/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Walnut Wood Chair XX Sec. armchair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in Italy",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$98.12"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/275320628355",
+        "thumbnail": "https://i.ebayimg.com/images/g/LEkAAOSw8e9iiUev/s-l500.webp",
+        "sponsored": false,
+        "title": "wood chair - used but sturdy",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$10.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/296764617911",
+        "thumbnail": "https://i.ebayimg.com/images/g/RVIAAOSwm4lnFUs7/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$6.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/175625075082",
+        "thumbnail": "https://i.ebayimg.com/images/g/DygAAOSwSbBj1nmV/s-l500.webp",
+        "sponsored": false,
+        "title": "wooden leg chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/398000566674",
+        "thumbnail": "https://i.ebayimg.com/images/g/fuQAAeSwWi9qGInZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Original Stunning Wood Chair With Metal Legs. Beautiful Wood Markings",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/366525563162",
+        "thumbnail": "https://i.ebayimg.com/images/g/UmcAAeSwyk1qS5k8/s-l500.webp",
+        "sponsored": false,
+        "title": "Turned Leg Wood Dining Chair Set of 2 Weathered White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/333300281639",
+        "thumbnail": "https://i.ebayimg.com/images/g/nxQAAOSwEDBdWYJv/s-l500.webp",
+        "sponsored": false,
+        "title": "Collectible black painted solid wood chair,very sturdy with carved back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$77.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/820087136283",
+        "thumbnail": "https://i.ebayimg.com/images/g/G~AAAeSw1ihqcMi-/s-l500.webp",
+        "sponsored": false,
+        "title": "MAPLE WOOD CHAIR ONLY19\" BASE X 29\" HIGH W/ 12\" WAVE SEAT",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/167567775637",
+        "thumbnail": "https://i.ebayimg.com/images/g/mPYAAeSwVB1oQ3jq/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Chair Made in Malaysia",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$55.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/165604581888",
+        "thumbnail": "https://i.ebayimg.com/images/g/qcsAAOSwsRdi5tPX/s-l500.webp",
+        "sponsored": false,
+        "title": "6 Chair / wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/820163748361",
+        "thumbnail": "https://i.ebayimg.com/images/g/HTMAAeSw2~5qc529/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Wooden Spindle Back Dining Chair, Brown Solid Medium Wood Tone, Adults",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$32.00",
+          "to": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/236880786556",
+        "thumbnail": "https://i.ebayimg.com/images/g/76EAAeSw8n5qMYAH/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Dark Wood Accent Chair w/ Carved Arms, Upholstered Geometric Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 17680.045
+  }
+}

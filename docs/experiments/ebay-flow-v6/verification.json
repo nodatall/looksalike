@@ -1,0 +1,36 @@
+{
+  "status": "offline_preflight_passed",
+  "frozen": true,
+  "historical_searches": 48,
+  "historical_vision_attempts": 7,
+  "cases": [
+    "ornate-sofa",
+    "modern-sofa",
+    "dining-chair",
+    "wood-table",
+    "dresser"
+  ],
+  "new_searches": 9,
+  "uploads": 5,
+  "vision_attempts": 4,
+  "vision_reserved_usd": 0.12,
+  "completed_cases": 5,
+  "scored_cases": 5,
+  "failed_cases": 1,
+  "incomplete_reservations": 0,
+  "searches_dispatched": 0,
+  "verified_at": "2026-09-29T23:50:28Z",
+  "manifest_sha256": "793070ebfed70c29023b910d9cd206029671c7c5c680b9e0900b320e2c9b18f8",
+  "frozen_files_verified": 144,
+  "source_snapshots_verified": 23,
+  "prior_tables_verified": 25,
+  "outcomes_and_judgments_match_ledger": true,
+  "configured_keys_absent": true,
+  "development_searches_total": 57,
+  "development_vision_attempts_total": 11,
+  "account_after": {
+    "checked_at": "2026-09-29T23:50:02Z",
+    "searches_at_check": 9,
+    "summary": "{\"account_status\":\"Active\",\"total_searches_left\":197,\"plan_searches_left\":197,\"extra_credits\":0,\"this_month_usage\":53,\"last_hour_searches\":0,\"account_rate_limit_per_hour\":250,\"plan_renewal_date\":\"2026-10-16\"}"
+  }
+}

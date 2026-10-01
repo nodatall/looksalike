@@ -1,0 +1,2092 @@
+{
+  "case_id": "ornate-sofa",
+  "manifest_sha256": "49427cda58d6263a0a2e6d32e6482a3074d65e939d63ddea1eb79d48dcd78ab6",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "antique sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 779.767
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 13277.212
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 2156.567
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/398401314915",
+        "thumbnail": "https://i.ebayimg.com/images/g/Qj8AAeSwlspqqshr/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian style sofa - gently used. Floral pattern.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398404835902",
+        "thumbnail": "https://i.ebayimg.com/images/g/yrUAAeSwIIxqrDe~/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Tufted Damask Fabric Sofa, Carved Wood Frame High Back 3-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/236311602453",
+        "thumbnail": "https://i.ebayimg.com/images/g/0NcAAeSwcdpoyfuq/s-l500.webp",
+        "sponsored": true,
+        "title": "Italian Provincial Carved Wood and Upholstery Sofa and Love Seat. Vintage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/287536128452",
+        "thumbnail": "https://i.ebayimg.com/images/g/3CcAAeSwYtNqhEFZ/s-l500.webp",
+        "sponsored": true,
+        "title": "french louis xv furniture hand carved armchairs by Century Furniture",
+        "subtitle": "Hand carved armchairs With Customization By Century",
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/188931188370",
+        "thumbnail": "https://i.ebayimg.com/images/g/xWcAAeSw2YZqqHXU/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Empire Style Sleigh Sofa with Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/287553158386",
+        "thumbnail": "https://i.ebayimg.com/images/g/vZkAAeSww-Fqk6uI/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Camelback tufted Leather chesterfield sofa in blue",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/236936100244",
+        "thumbnail": "https://i.ebayimg.com/images/g/~JkAAeSwRXVqVTcb/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian settee with Green Velvet Upholstery & Carved Wooden Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/267721484080",
+        "thumbnail": "https://i.ebayimg.com/images/g/hokAAeSwgQtqTp2V/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Carved Wood Sofa 3-Seater – Restoration Project – Pickup",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$20.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/298625349619",
+        "thumbnail": "https://i.ebayimg.com/images/g/y5QAAeSwpFBpyeqY/s-l500.webp",
+        "sponsored": false,
+        "title": "67490 Antique Empire Sofa with Red Velvet Upholstery and Carved Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$775.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/389915470300",
+        "thumbnail": "https://i.ebayimg.com/images/g/3RMAAeSwph5p5lVh/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Antique Tufted Velvet Chaise Longue Ornate Wood Frame Beige",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/168508788145",
+        "thumbnail": "https://i.ebayimg.com/images/g/N9kAAeSwSgNqRl~v/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Turquoise & Walnut Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/820148331380",
+        "thumbnail": "https://i.ebayimg.com/images/g/8DIAAeSwVCxqr0L1/s-l500.webp",
+        "sponsored": false,
+        "title": "HandCrafted Antique Looks, Wood Floral RedGold Floral Fabric Sofa, Rolled Arms.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$699.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/127991379117",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwj3FpHPJH/s-l500.webp",
+        "sponsored": false,
+        "title": "Southwood Chippendale Style Camel Back Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,395.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/286693235113",
+        "thumbnail": "https://i.ebayimg.com/images/g/pfUAAeSw50Zoa1k9/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Sofa, Detailed Wood Carving Intricate Details",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/358919107782",
+        "thumbnail": "https://i.ebayimg.com/images/g/aPAAAeSwvmNqfORh/s-l500.webp",
+        "sponsored": true,
+        "title": "1 of a kind Wood Frame Chaise Lounge,Brown Striped Fabric Upholstery,1Seat,1800s",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/147549276020",
+        "thumbnail": "https://i.ebayimg.com/images/g/JNkAAeSwDFZqmq9H/s-l500.webp",
+        "sponsored": true,
+        "title": "Cloud Sectional Couch with Shape Chaise,Modern Modular Sofa with Deep Seat, Up",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$380.58"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/168335564153",
+        "thumbnail": "https://i.ebayimg.com/images/g/A2UAAeSwJk1p70Wr/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Adrian Pearsall Sofa w/End Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206269709033",
+        "thumbnail": "https://i.ebayimg.com/images/g/UoQAAeSwf8FqAzGs/s-l500.webp",
+        "sponsored": false,
+        "title": "American Empire Mahogany Carved Sofa Damask Upholstery Lion Feet FREE DELIVERY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,621.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/257740790559",
+        "thumbnail": "https://i.ebayimg.com/images/g/0PEAAeSwnWRpqzHk/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Parlor Set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/147584149713",
+        "thumbnail": "https://i.ebayimg.com/images/g/XIIAAeSwzqVqOVmy/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Edward WORMLEY for DUNBAR Tête-à-Tête Sofa Couch Mid Century Modern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/187503499062",
+        "thumbnail": "https://i.ebayimg.com/images/g/lS0AAeSwBEtqbAn2/s-l500.webp",
+        "sponsored": false,
+        "title": "Pro Tall Eames Lounge Chair & Ottoman Footstool Genuine Leather Armchair Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$579.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/236867787906",
+        "thumbnail": "https://i.ebayimg.com/images/g/NV0AAOSwR3Jh9jji/s-l500.webp",
+        "sponsored": false,
+        "title": "Rare Antique Victorian Walnut Tufted Serpentine Parlor Corner Sofa Settee Couch",
+        "subtitle": null,
+        "condition": null,
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,543.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/407219755365",
+        "thumbnail": "https://i.ebayimg.com/images/g/1awAAeSwQkNqNfUP/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Danish Modern Teak Large Gondola Sofa DENMARK Adrian Pearsall Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$1,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/278391384018",
+        "thumbnail": "https://i.ebayimg.com/images/g/yWsAAeSw3bpp0CiL/s-l500.webp",
+        "sponsored": false,
+        "title": "62247 RARE Antique Victorian Settee Loveseat Couch Sofa Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$675.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/307005131921",
+        "thumbnail": "https://i.ebayimg.com/images/g/XXsAAeSweM5qMQS~/s-l500.webp",
+        "sponsored": false,
+        "title": "Early 20th C Antique Carved Rosewood French Baroque Rococo Revival 3-Piece Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,076.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/287089086625",
+        "thumbnail": "https://i.ebayimg.com/images/g/en0AAeSwPRFpb8ce/s-l500.webp",
+        "sponsored": false,
+        "title": "Walnut Victorian Carved Sofa circa 1910",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$950.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/227450775813",
+        "thumbnail": "https://i.ebayimg.com/images/g/sIkAAeSwfCxqZ5T8/s-l500.webp",
+        "sponsored": false,
+        "title": "Henredon French Provencial Sofa with matching side chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/287595597846",
+        "thumbnail": "https://i.ebayimg.com/images/g/UrYAAeSwuqxqrkIc/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Danish Modern Sofa Settee 2 Seater Tan Vante Leather Cognac Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,598.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/188348451814",
+        "thumbnail": "https://i.ebayimg.com/images/g/gL8AAeSwUbhp-ROk/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage LightBlue Patterned Sectional Sofa 100% Cotton detailed Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/285237413520",
+        "thumbnail": "https://i.ebayimg.com/images/g/9pkAAOSwzylhBNS2/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Victorian Golden Oak Parlor Settee Sofa Carved Light Pink Ornate",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$480.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/358858598021",
+        "thumbnail": "https://i.ebayimg.com/images/g/AfAAAeSwlktqai2o/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique French Mahogany Hand Carved Wood Harvest Cornucopia Red Brown Sofa Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,040.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/168537800024",
+        "thumbnail": "https://i.ebayimg.com/images/g/kt8AAeSwcGlqV5c0/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Loveseat Sofa Tufted Upholstery, Mahogany/Walnut Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/377454536603",
+        "thumbnail": "https://i.ebayimg.com/images/g/OKEAAeSwgqhqkgKm/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Heritage Curved Velvet Sofa – Tufted Mid-Century Hollywood regency couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,687.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336394122039",
+        "thumbnail": "https://i.ebayimg.com/images/g/26cAAeSwEYBpa8j2/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE VICTORIAN LOVESEAT",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/117236816342",
+        "thumbnail": "https://i.ebayimg.com/images/g/DCMAAeSwFkhqJes2/s-l500.webp",
+        "sponsored": false,
+        "title": "MCM Hollywood Regency style faux bamboo and cane settee loveseat 1970's–80's",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/137287806981",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wc0AAeSwn8tp-66z/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Hand Carved Cameo Sofa #22586",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$667.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/267771464514",
+        "thumbnail": "https://i.ebayimg.com/images/g/w94AAeSwuxVqlH5y/s-l500.webp",
+        "sponsored": false,
+        "title": "71851: Vintage French Louis XV Style Down Seat Chaise Lounge",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,436.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/278324721174",
+        "thumbnail": "https://i.ebayimg.com/images/g/tUkAAeSwpfdqMLiw/s-l500.webp",
+        "sponsored": false,
+        "title": "67850 Victorian Carved Wood Settee with Bird Motif and Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/128014929890",
+        "thumbnail": "https://i.ebayimg.com/images/g/AJ8AAOSwmgdn0L-y/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Federal Mahogany Sofa",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/326987448158",
+        "thumbnail": "https://i.ebayimg.com/images/g/te0AAeSwO0RphL8S/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Tufted Sofa mahogany comfy camel hair Seats Up to 3",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/147568945956",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ku4AAeSwr2Jqpb5~/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage French Style Tub Chair With Nailhead Trim And Velvet Upholstery",
+        "subtitle": null,
+        "condition": null,
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$680.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/257498363482",
+        "thumbnail": "https://i.ebayimg.com/images/g/PnsAAeSwSSBp0d2d/s-l500.webp",
+        "sponsored": false,
+        "title": "1946 Louis XV French Revival Ornate Carved Sofa & Armchair Living Room Suite",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,800.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/327218247061",
+        "thumbnail": "https://i.ebayimg.com/images/g/Gf0AAeSw4itpyT2w/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Louis XIV Style Settee With Down Filled Cushions C1910",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/178503625264",
+        "thumbnail": "https://i.ebayimg.com/images/g/f5wAAeSwD9VqJyC1/s-l500.webp",
+        "sponsored": false,
+        "title": "EASTLAKE VICTORIAN SOFA 1885",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$695.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/236914895801",
+        "thumbnail": "https://i.ebayimg.com/images/g/DUcAAeSwmoJqGehd/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE VICTORIAN EASTLAKE WALNUT MEDALLION BACK SOFA FRAME",
+        "subtitle": null,
+        "condition": "Parts Only",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/397124235659",
+        "thumbnail": "https://i.ebayimg.com/images/g/n3oAAeSw~ado4btB/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Chippendale Settee Mahogany",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/278341135342",
+        "thumbnail": "https://i.ebayimg.com/images/g/jfMAAeSwajlpywh9/s-l500.webp",
+        "sponsored": false,
+        "title": "67630 Vintage French Provincial Loveseat with Carved Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$725.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/168693533833",
+        "thumbnail": "https://i.ebayimg.com/images/g/uAsAAeSw69RqqsdG/s-l500.webp",
+        "sponsored": false,
+        "title": "Adrian Pearsall Wave Chaise Lounge Chair – Mid Century Modern Blue Bouclé",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$4,025.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/128025654851",
+        "thumbnail": "https://i.ebayimg.com/images/g/usMAAeSwBJRqfnRS/s-l500.webp",
+        "sponsored": false,
+        "title": "XL-Tall Walnut Retro Brown Lounge Chair and Ottoman Aniline Leather",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$839.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/266367525984",
+        "thumbnail": "https://i.ebayimg.com/images/g/~ZQAAOSwIx1k1Wu3/s-l500.webp",
+        "sponsored": false,
+        "title": "Federal period mahogany sofa, early 19th c., New York provenance",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/298665789860",
+        "thumbnail": "https://i.ebayimg.com/images/g/qwcAAeSwec5ooJd1/s-l500.webp",
+        "sponsored": false,
+        "title": "66809 Hepplewhite SAM MOORE Mahogany Loveseat Sofa Couch Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/187184968342",
+        "thumbnail": "https://i.ebayimg.com/images/g/2o8AAeSwNbFoEm5b/s-l500.webp",
+        "sponsored": false,
+        "title": "1910 Antique French Louis XV Mahogany Spring-seat Chaise lounge / Sofa",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,599.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/127969993583",
+        "thumbnail": "https://i.ebayimg.com/images/g/PaEAAeSwNRxqUsk1/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian-Era Sofa & Armchair Set, Rose Upholstery, Louisville KY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/147403555119",
+        "thumbnail": "https://i.ebayimg.com/images/g/JqUAAeSwcFZqQZcC/s-l500.webp",
+        "sponsored": false,
+        "title": "Duncan Phyfe Style Regency Sofa - Empire",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407208362404",
+        "thumbnail": "https://i.ebayimg.com/images/g/XIIAAeSwSeRqBMJC/s-l500.webp",
+        "sponsored": false,
+        "title": "67764 Victorian Carved Walnut Sofa with Cream Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$795.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/327329640364",
+        "thumbnail": "https://i.ebayimg.com/images/g/eJUAAeSwRqBqkMRG/s-l500.webp",
+        "sponsored": false,
+        "title": "F74478: MARTIN Custom Damask Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$595.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/298610834002",
+        "thumbnail": "https://i.ebayimg.com/images/g/yE4AAeSw8GlooJVp/s-l500.webp",
+        "sponsored": false,
+        "title": "65660 Mission Oak Loveseat Settee Sofa Arts Crafts",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/800662611019",
+        "thumbnail": "https://i.ebayimg.com/images/g/mCkAAeSwFbZqny1F/s-l500.webp",
+        "sponsored": true,
+        "title": "Unmarked Postmodern Italian Slouch Sofa/love In the Style of Nicoletti Salotti",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$550.00",
+          "to": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/377352100554",
+        "thumbnail": "https://i.ebayimg.com/images/g/jnwAAeSw7ehqW4mG/s-l500.webp",
+        "sponsored": true,
+        "title": "78\" Modern Modular Chenille Sofa Couch 2-Seater Antique Green w/ Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$459.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/398401314915",
+        "thumbnail": "https://i.ebayimg.com/images/g/Qj8AAeSwlspqqshr/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian style sofa - gently used. Floral pattern.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398404835902",
+        "thumbnail": "https://i.ebayimg.com/images/g/yrUAAeSwIIxqrDe~/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Tufted Damask Fabric Sofa, Carved Wood Frame High Back 3-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/236311602453",
+        "thumbnail": "https://i.ebayimg.com/images/g/0NcAAeSwcdpoyfuq/s-l500.webp",
+        "sponsored": true,
+        "title": "Italian Provincial Carved Wood and Upholstery Sofa and Love Seat. Vintage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/287536128452",
+        "thumbnail": "https://i.ebayimg.com/images/g/3CcAAeSwYtNqhEFZ/s-l500.webp",
+        "sponsored": true,
+        "title": "french louis xv furniture hand carved armchairs by Century Furniture",
+        "subtitle": "Hand carved armchairs With Customization By Century",
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/188931188370",
+        "thumbnail": "https://i.ebayimg.com/images/g/xWcAAeSw2YZqqHXU/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Empire Style Sleigh Sofa with Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/287553158386",
+        "thumbnail": "https://i.ebayimg.com/images/g/vZkAAeSww-Fqk6uI/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Camelback tufted Leather chesterfield sofa in blue",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,500.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6ab01a537af899d44220092d",
+        "status": "Success",
+        "created_at": "2026-09-20 17:39:31 UTC",
+        "processed_at": "2026-09-20 17:39:31 UTC",
+        "total_time_taken": 12.95
+      },
+      "ebay": {
+        "id": "6ab01a60a289713c84b0e38f",
+        "status": "Success",
+        "created_at": "2026-09-20 17:39:44 UTC",
+        "processed_at": "2026-09-20 17:39:44 UTC",
+        "total_time_taken": 1.78
+      }
+    },
+    "interpretation": "antique sofa",
+    "query_source": "visual_match_titles",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Antique Sofa Photos, Download The BEST Free Antique Sofa ...",
+        "Settees and Sofas — Evermore - Classic & Vintage Wedding Rentals",
+        "Rajmahal Sofa | Regal Arts & Export Inspired by timeless ...",
+        "Antique Walnut Sofa - Etsy UK",
+        "Retro Sofas - Designer Picks | Foter",
+        "Retro design is having a moment right now. With a nod to the ...",
+        "4,276+以上の無料ウェディングソファー画像",
+        "Antique Sofas & Settees | Vancouver Antiques & Vintage ..."
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "antique sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 59,
+      "not_explicit_us": 1
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/398401314915",
+        "thumbnail": "https://i.ebayimg.com/images/g/Qj8AAeSwlspqqshr/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian style sofa - gently used. Floral pattern.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398404835902",
+        "thumbnail": "https://i.ebayimg.com/images/g/yrUAAeSwIIxqrDe~/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Tufted Damask Fabric Sofa, Carved Wood Frame High Back 3-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/236311602453",
+        "thumbnail": "https://i.ebayimg.com/images/g/0NcAAeSwcdpoyfuq/s-l500.webp",
+        "sponsored": true,
+        "title": "Italian Provincial Carved Wood and Upholstery Sofa and Love Seat. Vintage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/287536128452",
+        "thumbnail": "https://i.ebayimg.com/images/g/3CcAAeSwYtNqhEFZ/s-l500.webp",
+        "sponsored": true,
+        "title": "french louis xv furniture hand carved armchairs by Century Furniture",
+        "subtitle": "Hand carved armchairs With Customization By Century",
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/188931188370",
+        "thumbnail": "https://i.ebayimg.com/images/g/xWcAAeSw2YZqqHXU/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Empire Style Sleigh Sofa with Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/287553158386",
+        "thumbnail": "https://i.ebayimg.com/images/g/vZkAAeSww-Fqk6uI/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Camelback tufted Leather chesterfield sofa in blue",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/236936100244",
+        "thumbnail": "https://i.ebayimg.com/images/g/~JkAAeSwRXVqVTcb/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian settee with Green Velvet Upholstery & Carved Wooden Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/267721484080",
+        "thumbnail": "https://i.ebayimg.com/images/g/hokAAeSwgQtqTp2V/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Carved Wood Sofa 3-Seater – Restoration Project – Pickup",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$20.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/298625349619",
+        "thumbnail": "https://i.ebayimg.com/images/g/y5QAAeSwpFBpyeqY/s-l500.webp",
+        "sponsored": false,
+        "title": "67490 Antique Empire Sofa with Red Velvet Upholstery and Carved Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$775.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/389915470300",
+        "thumbnail": "https://i.ebayimg.com/images/g/3RMAAeSwph5p5lVh/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Antique Tufted Velvet Chaise Longue Ornate Wood Frame Beige",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/168508788145",
+        "thumbnail": "https://i.ebayimg.com/images/g/N9kAAeSwSgNqRl~v/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Turquoise & Walnut Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/820148331380",
+        "thumbnail": "https://i.ebayimg.com/images/g/8DIAAeSwVCxqr0L1/s-l500.webp",
+        "sponsored": false,
+        "title": "HandCrafted Antique Looks, Wood Floral RedGold Floral Fabric Sofa, Rolled Arms.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$699.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/127991379117",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwj3FpHPJH/s-l500.webp",
+        "sponsored": false,
+        "title": "Southwood Chippendale Style Camel Back Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,395.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/286693235113",
+        "thumbnail": "https://i.ebayimg.com/images/g/pfUAAeSw50Zoa1k9/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Sofa, Detailed Wood Carving Intricate Details",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/358919107782",
+        "thumbnail": "https://i.ebayimg.com/images/g/aPAAAeSwvmNqfORh/s-l500.webp",
+        "sponsored": true,
+        "title": "1 of a kind Wood Frame Chaise Lounge,Brown Striped Fabric Upholstery,1Seat,1800s",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/147549276020",
+        "thumbnail": "https://i.ebayimg.com/images/g/JNkAAeSwDFZqmq9H/s-l500.webp",
+        "sponsored": true,
+        "title": "Cloud Sectional Couch with Shape Chaise,Modern Modular Sofa with Deep Seat, Up",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$380.58"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/168335564153",
+        "thumbnail": "https://i.ebayimg.com/images/g/A2UAAeSwJk1p70Wr/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Adrian Pearsall Sofa w/End Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206269709033",
+        "thumbnail": "https://i.ebayimg.com/images/g/UoQAAeSwf8FqAzGs/s-l500.webp",
+        "sponsored": false,
+        "title": "American Empire Mahogany Carved Sofa Damask Upholstery Lion Feet FREE DELIVERY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,621.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/257740790559",
+        "thumbnail": "https://i.ebayimg.com/images/g/0PEAAeSwnWRpqzHk/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Parlor Set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/147584149713",
+        "thumbnail": "https://i.ebayimg.com/images/g/XIIAAeSwzqVqOVmy/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Edward WORMLEY for DUNBAR Tête-à-Tête Sofa Couch Mid Century Modern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/187503499062",
+        "thumbnail": "https://i.ebayimg.com/images/g/lS0AAeSwBEtqbAn2/s-l500.webp",
+        "sponsored": false,
+        "title": "Pro Tall Eames Lounge Chair & Ottoman Footstool Genuine Leather Armchair Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$579.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/236867787906",
+        "thumbnail": "https://i.ebayimg.com/images/g/NV0AAOSwR3Jh9jji/s-l500.webp",
+        "sponsored": false,
+        "title": "Rare Antique Victorian Walnut Tufted Serpentine Parlor Corner Sofa Settee Couch",
+        "subtitle": null,
+        "condition": null,
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,543.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/407219755365",
+        "thumbnail": "https://i.ebayimg.com/images/g/1awAAeSwQkNqNfUP/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Danish Modern Teak Large Gondola Sofa DENMARK Adrian Pearsall Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$1,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/278391384018",
+        "thumbnail": "https://i.ebayimg.com/images/g/yWsAAeSw3bpp0CiL/s-l500.webp",
+        "sponsored": false,
+        "title": "62247 RARE Antique Victorian Settee Loveseat Couch Sofa Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$675.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/307005131921",
+        "thumbnail": "https://i.ebayimg.com/images/g/XXsAAeSweM5qMQS~/s-l500.webp",
+        "sponsored": false,
+        "title": "Early 20th C Antique Carved Rosewood French Baroque Rococo Revival 3-Piece Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,076.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/287089086625",
+        "thumbnail": "https://i.ebayimg.com/images/g/en0AAeSwPRFpb8ce/s-l500.webp",
+        "sponsored": false,
+        "title": "Walnut Victorian Carved Sofa circa 1910",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$950.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/227450775813",
+        "thumbnail": "https://i.ebayimg.com/images/g/sIkAAeSwfCxqZ5T8/s-l500.webp",
+        "sponsored": false,
+        "title": "Henredon French Provencial Sofa with matching side chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/287595597846",
+        "thumbnail": "https://i.ebayimg.com/images/g/UrYAAeSwuqxqrkIc/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Danish Modern Sofa Settee 2 Seater Tan Vante Leather Cognac Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,598.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/188348451814",
+        "thumbnail": "https://i.ebayimg.com/images/g/gL8AAeSwUbhp-ROk/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage LightBlue Patterned Sectional Sofa 100% Cotton detailed Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/285237413520",
+        "thumbnail": "https://i.ebayimg.com/images/g/9pkAAOSwzylhBNS2/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Victorian Golden Oak Parlor Settee Sofa Carved Light Pink Ornate",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$480.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/358858598021",
+        "thumbnail": "https://i.ebayimg.com/images/g/AfAAAeSwlktqai2o/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique French Mahogany Hand Carved Wood Harvest Cornucopia Red Brown Sofa Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,040.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/168537800024",
+        "thumbnail": "https://i.ebayimg.com/images/g/kt8AAeSwcGlqV5c0/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Loveseat Sofa Tufted Upholstery, Mahogany/Walnut Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/377454536603",
+        "thumbnail": "https://i.ebayimg.com/images/g/OKEAAeSwgqhqkgKm/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Heritage Curved Velvet Sofa – Tufted Mid-Century Hollywood regency couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,687.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336394122039",
+        "thumbnail": "https://i.ebayimg.com/images/g/26cAAeSwEYBpa8j2/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE VICTORIAN LOVESEAT",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/117236816342",
+        "thumbnail": "https://i.ebayimg.com/images/g/DCMAAeSwFkhqJes2/s-l500.webp",
+        "sponsored": false,
+        "title": "MCM Hollywood Regency style faux bamboo and cane settee loveseat 1970's–80's",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/137287806981",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wc0AAeSwn8tp-66z/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Hand Carved Cameo Sofa #22586",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$667.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/267771464514",
+        "thumbnail": "https://i.ebayimg.com/images/g/w94AAeSwuxVqlH5y/s-l500.webp",
+        "sponsored": false,
+        "title": "71851: Vintage French Louis XV Style Down Seat Chaise Lounge",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,436.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/278324721174",
+        "thumbnail": "https://i.ebayimg.com/images/g/tUkAAeSwpfdqMLiw/s-l500.webp",
+        "sponsored": false,
+        "title": "67850 Victorian Carved Wood Settee with Bird Motif and Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/128014929890",
+        "thumbnail": "https://i.ebayimg.com/images/g/AJ8AAOSwmgdn0L-y/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Federal Mahogany Sofa",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/326987448158",
+        "thumbnail": "https://i.ebayimg.com/images/g/te0AAeSwO0RphL8S/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Tufted Sofa mahogany comfy camel hair Seats Up to 3",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/147568945956",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ku4AAeSwr2Jqpb5~/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage French Style Tub Chair With Nailhead Trim And Velvet Upholstery",
+        "subtitle": null,
+        "condition": null,
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$680.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/257498363482",
+        "thumbnail": "https://i.ebayimg.com/images/g/PnsAAeSwSSBp0d2d/s-l500.webp",
+        "sponsored": false,
+        "title": "1946 Louis XV French Revival Ornate Carved Sofa & Armchair Living Room Suite",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,800.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/327218247061",
+        "thumbnail": "https://i.ebayimg.com/images/g/Gf0AAeSw4itpyT2w/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Louis XIV Style Settee With Down Filled Cushions C1910",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/178503625264",
+        "thumbnail": "https://i.ebayimg.com/images/g/f5wAAeSwD9VqJyC1/s-l500.webp",
+        "sponsored": false,
+        "title": "EASTLAKE VICTORIAN SOFA 1885",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$695.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/236914895801",
+        "thumbnail": "https://i.ebayimg.com/images/g/DUcAAeSwmoJqGehd/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE VICTORIAN EASTLAKE WALNUT MEDALLION BACK SOFA FRAME",
+        "subtitle": null,
+        "condition": "Parts Only",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/397124235659",
+        "thumbnail": "https://i.ebayimg.com/images/g/n3oAAeSw~ado4btB/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Chippendale Settee Mahogany",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/278341135342",
+        "thumbnail": "https://i.ebayimg.com/images/g/jfMAAeSwajlpywh9/s-l500.webp",
+        "sponsored": false,
+        "title": "67630 Vintage French Provincial Loveseat with Carved Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$725.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/376335737117",
+        "thumbnail": "https://i.ebayimg.com/images/g/898AAeSwkOBqcekH/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Corner Sofa Art Nouveau Mahogany Oak XIX Century Original",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in Italy",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,850.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/168693533833",
+        "thumbnail": "https://i.ebayimg.com/images/g/uAsAAeSw69RqqsdG/s-l500.webp",
+        "sponsored": false,
+        "title": "Adrian Pearsall Wave Chaise Lounge Chair – Mid Century Modern Blue Bouclé",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$4,025.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/128025654851",
+        "thumbnail": "https://i.ebayimg.com/images/g/usMAAeSwBJRqfnRS/s-l500.webp",
+        "sponsored": false,
+        "title": "XL-Tall Walnut Retro Brown Lounge Chair and Ottoman Aniline Leather",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$839.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/266367525984",
+        "thumbnail": "https://i.ebayimg.com/images/g/~ZQAAOSwIx1k1Wu3/s-l500.webp",
+        "sponsored": false,
+        "title": "Federal period mahogany sofa, early 19th c., New York provenance",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/298665789860",
+        "thumbnail": "https://i.ebayimg.com/images/g/qwcAAeSwec5ooJd1/s-l500.webp",
+        "sponsored": false,
+        "title": "66809 Hepplewhite SAM MOORE Mahogany Loveseat Sofa Couch Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/187184968342",
+        "thumbnail": "https://i.ebayimg.com/images/g/2o8AAeSwNbFoEm5b/s-l500.webp",
+        "sponsored": false,
+        "title": "1910 Antique French Louis XV Mahogany Spring-seat Chaise lounge / Sofa",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,599.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/127969993583",
+        "thumbnail": "https://i.ebayimg.com/images/g/PaEAAeSwNRxqUsk1/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian-Era Sofa & Armchair Set, Rose Upholstery, Louisville KY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/147403555119",
+        "thumbnail": "https://i.ebayimg.com/images/g/JqUAAeSwcFZqQZcC/s-l500.webp",
+        "sponsored": false,
+        "title": "Duncan Phyfe Style Regency Sofa - Empire",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407208362404",
+        "thumbnail": "https://i.ebayimg.com/images/g/XIIAAeSwSeRqBMJC/s-l500.webp",
+        "sponsored": false,
+        "title": "67764 Victorian Carved Walnut Sofa with Cream Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$795.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/327329640364",
+        "thumbnail": "https://i.ebayimg.com/images/g/eJUAAeSwRqBqkMRG/s-l500.webp",
+        "sponsored": false,
+        "title": "F74478: MARTIN Custom Damask Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$595.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/298610834002",
+        "thumbnail": "https://i.ebayimg.com/images/g/yE4AAeSw8GlooJVp/s-l500.webp",
+        "sponsored": false,
+        "title": "65660 Mission Oak Loveseat Settee Sofa Arts Crafts",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$575.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/800662611019",
+        "thumbnail": "https://i.ebayimg.com/images/g/mCkAAeSwFbZqny1F/s-l500.webp",
+        "sponsored": true,
+        "title": "Unmarked Postmodern Italian Slouch Sofa/love In the Style of Nicoletti Salotti",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$550.00",
+          "to": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/377352100554",
+        "thumbnail": "https://i.ebayimg.com/images/g/jnwAAeSw7ehqW4mG/s-l500.webp",
+        "sponsored": true,
+        "title": "78\" Modern Modular Chenille Sofa Couch 2-Seater Antique Green w/ Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$459.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 16260.009
+  }
+}

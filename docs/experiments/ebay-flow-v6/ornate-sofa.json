@@ -1,0 +1,92 @@
+{
+  "case_id": "ornate-sofa",
+  "manifest_sha256": "793070ebfed70c29023b910d9cd206029671c7c5c680b9e0900b320e2c9b18f8",
+  "outcome": {
+    "status": "timeout",
+    "parameters": [
+      {
+        "photo_sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 724.5
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 2831.442
+      },
+      {
+        "stage": "vision",
+        "status": "timeout",
+        "elapsed_ms": 14975.616
+      }
+    ],
+    "candidates": [],
+    "first_six": [],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abc4cd1c29c3d612b6d5af1",
+        "status": "Success",
+        "created_at": "2026-09-29 23:42:09 UTC",
+        "processed_at": "2026-09-29 23:42:09 UTC",
+        "total_time_taken": 2.53
+      }
+    },
+    "lens_interpretation": "vintage sofa",
+    "query_preparation": {
+      "status": "timeout",
+      "category": null,
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "sofa",
+        "fallback_reason": "no_concrete_trait",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "duration_ms": 15009
+      }
+    },
+    "vision_diagnostics": {},
+    "interpretation": null,
+    "category": null,
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Vintage Sofa Photos, Download The BEST Free Vintage Sofa ...",
+        "Settees and Sofas — Evermore - Classic & Vintage Wedding Rentals",
+        "4,276+以上の無料ウェディングソファー画像",
+        "Rajmahal Sofa | Regal Arts & Export Inspired by timeless ...",
+        "Designers say this once-old-fashioned couch style is making ...",
+        "French Style Two Seater Sofa - Etsy UK",
+        "Download Vintage Red Sofa Image - Vintage, Velvet, Sofa ...",
+        "Ornate couch Photos - Download Free High-Quality Pictures ..."
+      ]
+    },
+    "elapsed_ms": 18612.455
+  }
+}

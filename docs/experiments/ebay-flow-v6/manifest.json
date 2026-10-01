@@ -1,0 +1,442 @@
+{
+  "model_catalog": {
+    "id": "qwen3-vl-235b-a22b",
+    "context_length": 128000,
+    "max_completion_tokens": 16384,
+    "supports_vision": true,
+    "supports_response_schema": true,
+    "offline": false,
+    "input_usd_per_million_tokens": 0.21,
+    "output_usd_per_million_tokens": 1.9,
+    "catalog_sha256": "ad9b41dd9e3c5f2e0fd9672ddeebb648a301cdee67ea0a31646159b5465fdfd9",
+    "catalog_file_checked_at": "2026-09-29T23:40:20Z"
+  },
+  "account_before_freeze": {
+    "checked_at": "2026-09-29T23:41:48Z",
+    "searches_at_check": 0,
+    "historical_searches": 48,
+    "summary": {
+      "account_status": "Active",
+      "total_searches_left": 205,
+      "plan_searches_left": 205,
+      "extra_credits": 0,
+      "this_month_usage": 45,
+      "last_hour_searches": 0,
+      "account_rate_limit_per_hour": 250,
+      "plan_renewal_date": "2026-10-16"
+    }
+  },
+  "experiment": "ebay-flow-v6",
+  "frozen_at": "2026-09-29T23:41:55Z",
+  "cases": [
+    {
+      "id": "ornate-sofa",
+      "order": 1,
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg",
+        "bytes": 287591,
+        "sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2",
+        "content_type": "image/jpeg",
+        "width": 1067,
+        "height": 1600
+      }
+    },
+    {
+      "id": "modern-sofa",
+      "order": 2,
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/modern-sofa.jpg",
+        "bytes": 137444,
+        "sha256": "1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87",
+        "content_type": "image/jpeg",
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "dining-chair",
+      "order": 3,
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/dining-chair.jpg",
+        "bytes": 353078,
+        "sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da",
+        "content_type": "image/jpeg",
+        "width": 1067,
+        "height": 1600
+      }
+    },
+    {
+      "id": "wood-table",
+      "order": 4,
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/wood-table.jpg",
+        "bytes": 241167,
+        "sha256": "a31f83305e68e0ea1db2c02a14406f9b92169e1cc85c795e07c87a80b6d30ae6",
+        "content_type": "image/jpeg",
+        "width": 1600,
+        "height": 1067
+      }
+    },
+    {
+      "id": "dresser",
+      "order": 5,
+      "photo": {
+        "path": "docs/experiments/feasibility-v1/photos/dresser.jpg",
+        "bytes": 112541,
+        "sha256": "d3c6818dad37ef9ce4b44eefb03b87be57356bd6be048ff3307845e6a3dddfbd",
+        "content_type": "image/jpeg",
+        "width": 1600,
+        "height": 1067
+      }
+    }
+  ],
+  "reference_visual_expectations": {
+    "ornate-sofa": "Curved carved dark wood exposed frame, patterned upholstered seat and back.",
+    "modern-sofa": "Green velvet sofa, straight arms, two back cushions, raised wood legs.",
+    "dining-chair": "Brown wood ladder-back chair, turned front legs, short curved supports.",
+    "wood-table": "White rectangular farmhouse storage coffee table with sliding barn doors.",
+    "dresser": "Low wide pale gray or white eight-drawer modern dresser, flat fronts and recessed handles."
+  },
+  "requests": {
+    "upload": {
+      "method": "POST",
+      "endpoint": "https://serpapi.com/image",
+      "image": "validated prepared photo bytes"
+    },
+    "lens": {
+      "method": "GET",
+      "endpoint": "https://serpapi.com/search.json",
+      "parameters": {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      "runtime": "Private image_id from this upload; never recorded"
+    },
+    "vision": {
+      "method": "POST",
+      "endpoint": "https://api.venice.ai/api/v1/chat/completions",
+      "policy": {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      "runtime": "Validated JPEG inline; only when PhotoQuery.fallback?; 15 seconds with 10 seconds reserved for eBay; no web tools"
+    },
+    "ebay": {
+      "method": "GET",
+      "endpoint": "https://serpapi.com/search.json",
+      "parameters": {
+        "engine": "ebay",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      },
+      "runtime": "_nkw is unchanged EbayQueryPreparation.query; no ZIP, pickup or country filter"
+    }
+  },
+  "budget": {
+    "searches": 10,
+    "uploads": 5,
+    "vision_attempts": 5,
+    "vision_reserved_usd_per_attempt": 0.03,
+    "vision_reserved_usd_total": 0.15,
+    "separate_deployment_search_reserve": 2,
+    "historical_searches": 48,
+    "historical_vision_attempts": 7,
+    "retries": 0
+  },
+  "deadline_seconds": 55,
+  "criterion": "At least 4 of the 5 fixed photos must each show at least 3 of their original first 6 distinct eligible items relevant and accessible within 55 seconds. Same category and similar shape, material or style. No replacement or reranking.",
+  "stopping_rule": "Stop after 2 failed cases. Judge each completed case before dispatching the next. Later cases remain untested.",
+  "stages": [
+    "upload",
+    "lens",
+    "vision",
+    "ebay"
+  ],
+  "country": "Accept only explicit Located in United States response field; no request country filter.",
+  "query_version": "furniture-query-v3",
+  "photo_phrase_version": "photo-phrase-v1",
+  "vision_policy": {
+    "provider": "venice",
+    "model": "qwen3-vl-235b-a22b",
+    "transport_version": "venice-chat-v1",
+    "prompt_version": "furniture-photo-v2",
+    "schema_version": "furniture-photo-schema-v2",
+    "reserved_usd": "0.03"
+  },
+  "trigger_version": "photo-fallback-v2",
+  "listing_filter_version": "ebay-title-filter-v2",
+  "prior_tables": {
+    "identity": "5cde2e65f19a146d42c563585042427053c56cd343c6cf29bf144704404ebd3b",
+    "cases": "eea8e60984922c0eacf151998f9b7773fec9bd7bd1e91376a6ab9dd59a073551",
+    "attempts": "ddd830975c5374226e7680ed30236a2c82883cb122008048674f4f826cfe8f89",
+    "account_checks": "479dc0a061f0d802dd5c83b08a55a33dd22dfb4a5673b6ed7ccf42ea4f99dd4c",
+    "diagnostic_v1_attempts": "41c4ef8c94a25f3ac8216fc3b7d71ebc07146f80079a4ef58b45cc5de5465885",
+    "query_v2_attempts": "8efe19bf2697ee85c9b613fc7c2c77f59d27bdf3f6f3f24a4db6431aebbe4829",
+    "ebay_v1_attempts": "221002420712dad0a90dbecbd6f1edde13741af74b555cbd237cd29dfbf257d3",
+    "ebay_us_v1_attempts": "b9542c6838200b5888fe9afaaac6cb8bb2e024282ac1e549bb09dc9e06915b35",
+    "ebay_us_retry_v1_attempts": "bf6f7e8875f721e65ff8decb6434d450b9d151ca9ff1149b898db8f7ca176bf8",
+    "ebay_no_country_v1_attempts": "21ec10f70e93ac839dded8dc50a1a6d92947367c842654fe455ee8b84b92201a",
+    "ebay_flow_v1_cases": "095dffdd5639e54ed60a700d37d1a96a9363425f3ea6b613afa82e160d4fbb7b",
+    "ebay_flow_v1_attempts": "1ab732535998ceb8f22ce613cc09f80e0cf6069a819d5755c7c68baeb02d88a1",
+    "ebay_flow_v1_accounts": "0403573ec698dfa03947c1c1df22fbdbaf297804347ccab08459b754686711b6",
+    "ebay_flow_v2_cases": "eb115d815b1fe7900b133d537eb3a428656ad04741db98f860a9dca4d8b4731c",
+    "ebay_flow_v2_attempts": "99c7d864297bcda7d6ffe1823d21af3cfbbe1215deca7997a4037c6ee4222325",
+    "ebay_flow_v2_accounts": "3ad2a892e5bb52141e48ef79e8c1da19f8650cabd93fd96c5e292fe0dab42bbd",
+    "ebay_flow_v3_cases": "c48fe283b5c5f4ede2a747a9b1f7cababf3b8b438e4a66401d0f2f292d7dc76d",
+    "ebay_flow_v3_attempts": "3c8f389a9272796e69152475f1e121aeca159cb9d0169583d7005c0f65e6a971",
+    "ebay_flow_v3_accounts": "f885949f1d284e22c697ad352ad334003b54540e2106fb3c966390af34c26156",
+    "ebay_flow_v4_cases": "00f7d5e45786ca14f3b223695fbef8d5d010e3db64bd1ff064d1c3fe435efbdb",
+    "ebay_flow_v4_attempts": "a1635deac4d89082c3b5dd9a246ab2834ffc70364f7a9d195f28e959fee24bc8",
+    "ebay_flow_v4_accounts": "4d7ac2cb4ea235ecfb76e82a8fcf548341590e00949a4f0832e5931904199020",
+    "ebay_flow_v5_cases": "78b20326f5cbf38f00bc0d05f8f480a88d254a5d2b4d75b505e983b10670c67e",
+    "ebay_flow_v5_attempts": "1d2e047cb23c2af1a041a9adcb025e5cbc6884e2bb719c3d8d71b74a604a8cc0",
+    "ebay_flow_v5_accounts": "bd4f0eead6200dc2428175b4f4e681eb7e1025c53996b3b836e34ac8fce3d395"
+  },
+  "files": {
+    "agent-scratch/ebay-flow-v6.rb": "1ffe4b6a0e16c0eddef97f72a5f45e13807c780a96d2a969fa10e172bb6fc207",
+    "agent-scratch/ebay-flow-v6-offline.rb": "eec0004849d31ec5ad49fb5aa3b29f6bd2ebc1b43fd4f63775b6e091988421cf",
+    "agent-scratch/ebay-v1.rb": "fdda5a051d3dab3534706e50171b8fb0f033ef280822a7d6b1dfe0cc5811a16c",
+    "agent-scratch/query-v2.rb": "c6e81b7b572c835ce312bd934250172beb570c1e4a3702551348ad14435664b6",
+    "agent-scratch/diagnostic-v1.rb": "e6bb2dfcd1d4d0fff0488abc538fa981eb70c0d6c57bf7e00a16fa2cd5484b4e",
+    "docs/experiments/query-v3/search_query_v2.rb": "b6edcf88f82a8eb840702937344443389523bb52b1de25a88f8c64048cd6dc65",
+    "app/models/search_query.rb": "cae30156d348180a5a00e89624052117700b5c29da609e7b8a808cb8627930fe",
+    "app/services/photo_validator.rb": "dee4b8f265302f98bfb17ab162f85b009bb775d6b3ab945a68270ce7bf85d999",
+    "app/services/search_deadline.rb": "053cdae1f542c524d7e6e8fd4706f670fbcd68ecc08c1a87b957db8f49d8998e",
+    "app/services/serp_api/client.rb": "ece1b4bda3d2991a8207bccee879f6c7ccca4b4b15e017dea46cfad95bca9710",
+    "app/services/serp_api/http_transport.rb": "2e19e19b41a7f5716d595a712c0485dadc3c12f501e76e549c6d1a989e74b55a",
+    "app/models/photo_query.rb": "526fec6db9b71ccfd345af91a19895a27f8328f9b199d86ea424c57533e41ad6",
+    "app/services/ebay_query_preparation.rb": "939639c5d235f9a040eec77eff8c64790ec1dd5aafa3840e231d4cb7851a9dab",
+    "app/services/vision/client.rb": "2a426a8efc4e5c64e3b688eaa6c034e0daa03ff53b86dfc078a6f3e1c4e5517d",
+    "app/services/vision/http_transport.rb": "70b0dc5e738605a1fd8ebaa301546081f24828302aa14a338e741e8ed355909b",
+    "agent-scratch/ebay-flow-v2.rb": "2a8ea5805a25fbf0fdffbaa50754f6c46fc31ceeb798a9916f87368f7c6fb2a9",
+    "agent-scratch/ebay-flow-v2-offline.rb": "0c8156afb3fa82d58eb265ef2536bb8917baabb39572d2f8b16a7a501f8264b1",
+    "agent-scratch/ebay-flow-v3.rb": "b7809ae82de6af7cd1f6cc56489cd003efb70f46922995cfe45d8793a2263b95",
+    "agent-scratch/ebay-flow-v3-offline.rb": "1874b2b3f43e5fc56aee7c124dc3b53111aed6bfb8d5927373a3a9e9fb1a67f0",
+    "app/models/ebay_listing_filter.rb": "b1af11d0bb14eb2d788777990efbf2f88a1885ad238dc8c2ede77e1f728c6a61",
+    "test/models/photo_query_test.rb": "18257dafad44b74dcc0cd990c47e25aa9774f2a2e57d98e3cd7a9939f75cf95a",
+    "test/models/ebay_listing_filter_test.rb": "943058c6df46bf26ae90b8ad788057e22dd050c4e7e16d62e1252550cdcb59d0",
+    "test/services/ebay_query_preparation_test.rb": "0ac480973e140c376c5a3494241fd851a92826e78351d782bb0680d19626da56",
+    "docs/experiments/diagnostic-v1/README.md": "530eabd5c0803913b94dbd9ca6be57cbceb9af13d9b0e2389c0a8f9c2445eaf0",
+    "docs/experiments/diagnostic-v1/results.json": "288fa559b7df32ae1c8c36707428f74f278137610d1db41b30e13045ba1dc3e1",
+    "docs/experiments/ebay-flow-v1/README.md": "8ba0ee0f16ccf2cd630f7efbb268144f4e30d5bd7b1aebc27e771c6c2f7079db",
+    "docs/experiments/ebay-flow-v1/dining-chair-judgment.json": "8f76d6115538544b3f7e639074439d78d51928a58ed1f7a09952fd3a951adde9",
+    "docs/experiments/ebay-flow-v1/dining-chair.json": "471d1c9311ca3df81381c5adf137b444796857bbee8ebdfa6fe8b706db1cc365",
+    "docs/experiments/ebay-flow-v1/manifest.json": "49427cda58d6263a0a2e6d32e6482a3074d65e939d63ddea1eb79d48dcd78ab6",
+    "docs/experiments/ebay-flow-v1/manifest.sha256": "c6de22ff792c7db8da2f6fc5e2d6ed64e53ab930c013d8f4ab58c01211a0ca58",
+    "docs/experiments/ebay-flow-v1/modern-sofa-judgment.json": "68f1aa4d22b1bdd9a73ef16a66ba8d6b136157cfa47a767809336c3981e46496",
+    "docs/experiments/ebay-flow-v1/modern-sofa.json": "47543bc11b81de0ec20096ccf6068b6eef55d7c82aad3e7f1c0d6ca4620ecfdd",
+    "docs/experiments/ebay-flow-v1/ornate-sofa-judgment.json": "d5de70b314d4102b9441d44630f58f075d5f01c77d1a1a6e2f3c324799401762",
+    "docs/experiments/ebay-flow-v1/ornate-sofa.json": "cd673ecf13b8028b8675771cd81a3127e8977bef860717744eb80d7ba6ee9cda",
+    "docs/experiments/ebay-flow-v1/wood-table-judgment.json": "ce4a4d1e50d57e1a01eaa50eaf63ec7326f9cf825a5761751e85446748c9c7db",
+    "docs/experiments/ebay-flow-v1/wood-table.json": "c1b7eac19c8591e59046b6aa5f335730e174f9db9f25ec410247a7ee9f031c97",
+    "docs/experiments/ebay-flow-v2/README.md": "ca003ce587492e38a1fde7f180c07cee90a5e7f93e577e20e05b1763b65ee289",
+    "docs/experiments/ebay-flow-v2/dining-chair-judgment.json": "29497b5da8e8a7c17575d56bff4e22a8952ec7e4a1b3da58af3065962402468f",
+    "docs/experiments/ebay-flow-v2/dining-chair.json": "d7eb9de5b98fb3476567f9387a484313257578927ad1cc1c858dd4f266322ee0",
+    "docs/experiments/ebay-flow-v2/manifest.json": "05b6e8490cead9f642716fc151dca5d7a3665c0a1daefb140650355fe2e9efbc",
+    "docs/experiments/ebay-flow-v2/manifest.sha256": "8ea4dc6e057f8195da5bd24f2da5c3404953045daf6a521a0d51bfbb3193ee95",
+    "docs/experiments/ebay-flow-v2/modern-sofa-judgment.json": "cfa082c78601c865fe749b57a9b6360c4d2f4f726f753a1561a6d6fb90fd5a13",
+    "docs/experiments/ebay-flow-v2/modern-sofa.json": "a41c325f0f702f75f41b766badc6d0030305272f5d4a9c8cc4a31cdd5e545b3a",
+    "docs/experiments/ebay-flow-v2/ornate-sofa-judgment.json": "440e3b681bad5d9e99fd39cee72bb1af1e6e64fd149de56a42b12194be99dd29",
+    "docs/experiments/ebay-flow-v2/ornate-sofa.json": "db2e34bed4496bb30c101cf1bb7b05aa5cca2f839323a7d0e134261d16138070",
+    "docs/experiments/ebay-flow-v3/README.md": "5d329393267be156788a0e4b3361ba653caa0d9d131fa5bca891f76d2e79c924",
+    "docs/experiments/ebay-flow-v3/account-after.json": "c2e0cb02f2d68e98887f2580b30b9d7aecb54f13cd14fc008815137d42374736",
+    "docs/experiments/ebay-flow-v3/dining-chair-judgment.json": "556259a6d434b92ef1aa80b73f8a8cf3fd56ab6a50bae49268922677f02e08cc",
+    "docs/experiments/ebay-flow-v3/dining-chair.json": "90ca67a8c1b78701f08930782d6e4f87eb38c62e6c62f36cc34f6c81cc3233d2",
+    "docs/experiments/ebay-flow-v3/dresser-judgment.json": "a878f057df5157a536ed32a61b8e99c3ec6df14ae564eec324cff5544eccf28d",
+    "docs/experiments/ebay-flow-v3/dresser.json": "8864a92b9f19285ccfe884e9f3d976d28f73d320b10239219faba5e2b29d08ae",
+    "docs/experiments/ebay-flow-v3/manifest.json": "4bed77df7331e94845caa1871352f9a03f155e766f782c395837767eb5c5bebe",
+    "docs/experiments/ebay-flow-v3/manifest.sha256": "709821af33a1ee160fc86cbeac3e77d41e65a45a6fa41965fa32d41b395e34a7",
+    "docs/experiments/ebay-flow-v3/modern-sofa-judgment.json": "98a254d73a362eaa0bdb6d045c03294ef3ff70fa709e75cb03819be0893cf975",
+    "docs/experiments/ebay-flow-v3/modern-sofa.json": "cb5335d6bac4efebbfd87a1b018f145033b8bf8adc4e58f61154a0a3aa72a5a9",
+    "docs/experiments/ebay-flow-v3/ornate-sofa-judgment.json": "f25bb5144fda11fa085a029db0706aa0066bbcdf4fbd0674a7df9c3697f83a0c",
+    "docs/experiments/ebay-flow-v3/ornate-sofa.json": "5f19e65bd913c93b5e25b80be4a5d2adc6e9148d7187e88bf96e5f88a631f331",
+    "docs/experiments/ebay-flow-v3/wood-table-judgment.json": "94892f8151440e5a3fef8c0a537aa2858aecd7c408eac5ac04fe43a6d8f53080",
+    "docs/experiments/ebay-flow-v3/wood-table.json": "3e43da96c3674a8dbbd05e0c448745a0235ec8859c9b1ee6db1e190560f4dacb",
+    "docs/experiments/ebay-flow-v4/README.md": "5934308de4c2436085fb16e9fbd18b894259dd4fbe555bd85495f077e0d89322",
+    "docs/experiments/ebay-flow-v4/account-after.json": "f884483f829b03d2b1ec2ab1c33a142ef04668052ebc9f22fad3c85f032657cb",
+    "docs/experiments/ebay-flow-v4/manifest.json": "10736f6b7e9789dfbcc6deb5770d10554fac33f7db49f39578afc5cc51a59205",
+    "docs/experiments/ebay-flow-v4/manifest.sha256": "0321fc43faca9426b82be755081848c58b6cfb70af21f42b145e6be021e57c1a",
+    "docs/experiments/ebay-flow-v4/ornate-sofa-judgment.json": "11e6569fbace0e3e30ea7bd6f44ec20999ce0da31a19adb292bda3a423ffb09d",
+    "docs/experiments/ebay-flow-v4/ornate-sofa.json": "5ea3179e0b91d901aedff1aba5421d49d0083b0a8662e09e0a5dec946b0604e3",
+    "docs/experiments/ebay-flow-v4/saved-result-replay.json": "15d250972879bd37bfcbfe9a19c11e8d826b0059280e5e9c980d33d1d014689d",
+    "docs/experiments/ebay-flow-v4/verification.json": "98860fe7036b910b2cf54f9e8b15fb0b503a69af210603409c587c41bcd7cb8f",
+    "docs/experiments/ebay-flow-v5/README.md": "88f996d50c3450aef72aa4167568c274bb2902f261e02d0cba6ada891130402d",
+    "docs/experiments/ebay-flow-v5/account-after.json": "2ace266a0e428e773336ff51279b07aed682ae5942e3a4ce764c85ffc1bd4435",
+    "docs/experiments/ebay-flow-v5/dining-chair-judgment.json": "08474144ae27200c076109df7a1ef9aeeae580f2ec1432c67b7f1137418ec7d5",
+    "docs/experiments/ebay-flow-v5/dining-chair.json": "55c27506d48a7e03ef49b448358f9a76be2f990fa1926f66425fbcb08494647b",
+    "docs/experiments/ebay-flow-v5/manifest.json": "4f04920037460926e39e319ff7743755d170927945e2dc5e64d26233b3f85d99",
+    "docs/experiments/ebay-flow-v5/manifest.sha256": "1cc7b9cc4d04cd281b9be7b5438967bb5843d393043fba8081bd0720d5172a43",
+    "docs/experiments/ebay-flow-v5/modern-sofa-judgment.json": "b76b754b51c5aef3af4e2820a9d5291f4c2578a667a0a3be3c7d042a6b306705",
+    "docs/experiments/ebay-flow-v5/modern-sofa.json": "7cc1b14327944b10a83f35a84475727ec1f5941fa510ebdf29d36e40bed97098",
+    "docs/experiments/ebay-flow-v5/ornate-sofa-judgment.json": "7a49e0a6fed2c3f5f4480bc70e53f17d1191922a6ba28176d14b45d03d1d529d",
+    "docs/experiments/ebay-flow-v5/ornate-sofa.json": "0f83af70531875244c3035b65125b64ce6d7533387dcfbbee61cbba9a569e86a",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/diagnostic-v1.rb": "e6bb2dfcd1d4d0fff0488abc538fa981eb70c0d6c57bf7e00a16fa2cd5484b4e",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-flow-v2-offline.rb": "0c8156afb3fa82d58eb265ef2536bb8917baabb39572d2f8b16a7a501f8264b1",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-flow-v2.rb": "2a8ea5805a25fbf0fdffbaa50754f6c46fc31ceeb798a9916f87368f7c6fb2a9",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-flow-v3-offline.rb": "1874b2b3f43e5fc56aee7c124dc3b53111aed6bfb8d5927373a3a9e9fb1a67f0",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-flow-v3.rb": "b7809ae82de6af7cd1f6cc56489cd003efb70f46922995cfe45d8793a2263b95",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-flow-v5-offline.rb": "13e41ca5db8a5926a99ec2d3e51d1f0d52f9c7cfd6c0daf364051e665952b5bf",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-flow-v5.rb": "4a89804b350e6aa36f6d9d88214bb06ba246529f60e4fc907de7ebbf85213986",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/ebay-v1.rb": "fdda5a051d3dab3534706e50171b8fb0f033ef280822a7d6b1dfe0cc5811a16c",
+    "docs/experiments/ebay-flow-v5/source/agent-scratch/query-v2.rb": "c6e81b7b572c835ce312bd934250172beb570c1e4a3702551348ad14435664b6",
+    "docs/experiments/ebay-flow-v5/source/app/models/ebay_listing_filter.rb": "bfd5b7935d98affd0f5d68f426ada2e7ca630ad0d3b39e676eab4b7a9adc3b8d",
+    "docs/experiments/ebay-flow-v5/source/app/models/photo_query.rb": "526fec6db9b71ccfd345af91a19895a27f8328f9b199d86ea424c57533e41ad6",
+    "docs/experiments/ebay-flow-v5/source/app/models/search_query.rb": "cae30156d348180a5a00e89624052117700b5c29da609e7b8a808cb8627930fe",
+    "docs/experiments/ebay-flow-v5/source/app/services/ebay_query_preparation.rb": "939639c5d235f9a040eec77eff8c64790ec1dd5aafa3840e231d4cb7851a9dab",
+    "docs/experiments/ebay-flow-v5/source/app/services/photo_validator.rb": "dee4b8f265302f98bfb17ab162f85b009bb775d6b3ab945a68270ce7bf85d999",
+    "docs/experiments/ebay-flow-v5/source/app/services/search_deadline.rb": "053cdae1f542c524d7e6e8fd4706f670fbcd68ecc08c1a87b957db8f49d8998e",
+    "docs/experiments/ebay-flow-v5/source/app/services/serp_api/client.rb": "ece1b4bda3d2991a8207bccee879f6c7ccca4b4b15e017dea46cfad95bca9710",
+    "docs/experiments/ebay-flow-v5/source/app/services/serp_api/http_transport.rb": "2e19e19b41a7f5716d595a712c0485dadc3c12f501e76e549c6d1a989e74b55a",
+    "docs/experiments/ebay-flow-v5/source/app/services/vision/client.rb": "149a9085f9b42c8d2e5797d3c3b11420ac6b6be5705d76b429928b48e5530b72",
+    "docs/experiments/ebay-flow-v5/source/app/services/vision/http_transport.rb": "70b0dc5e738605a1fd8ebaa301546081f24828302aa14a338e741e8ed355909b",
+    "docs/experiments/ebay-flow-v5/source/docs/experiments/query-v3/search_query_v2.rb": "b6edcf88f82a8eb840702937344443389523bb52b1de25a88f8c64048cd6dc65",
+    "docs/experiments/ebay-flow-v5/source/test/models/ebay_listing_filter_test.rb": "94dd81f505ffe4f37d7ef388a9d40ad9146a9f25560bf6f1f0df059c835d79a9",
+    "docs/experiments/ebay-flow-v5/source/test/models/photo_query_test.rb": "18257dafad44b74dcc0cd990c47e25aa9774f2a2e57d98e3cd7a9939f75cf95a",
+    "docs/experiments/ebay-flow-v5/source/test/services/ebay_query_preparation_test.rb": "0ac480973e140c376c5a3494241fd851a92826e78351d782bb0680d19626da56",
+    "docs/experiments/ebay-flow-v5/verification.json": "6d356c651afe8812bdfbfb0107c6e126c8253693c33eb1bdf93859d2d3102fb8",
+    "docs/experiments/ebay-flow-v5/wood-table-judgment.json": "af2e2cef7fb9eddcc873f993b24c53d2ee165b6efa1e062e9312b88efe4f8ae5",
+    "docs/experiments/ebay-flow-v5/wood-table.json": "6183a311e8a2cef9c7d183d992c0b548858104896594699b0e12607225ca8e6f",
+    "docs/experiments/ebay-no-country-v1/README.md": "f44c834abaf16d31084b5315f32e814598ad7fb3f459fa91ccb32fbb7e7c85c0",
+    "docs/experiments/ebay-no-country-v1/account.json": "75bd00233a7be545df53f570466d1a2ea8cdd07cc74254cda03702245def53b7",
+    "docs/experiments/ebay-no-country-v1/manifest.json": "0935679510bea46d3f24034f6b3fb09709807774151d3f049a8ed2e080b518ed",
+    "docs/experiments/ebay-no-country-v1/manifest.sha256": "bce298abed60d414f38fd4c4cdf1e950940d0740aa25da4f4bc89d078f0c94f4",
+    "docs/experiments/ebay-no-country-v1/results.json": "cd719cb9ae34fc53a87b175c196416cbdf88fb18a68faece7237dc25688d50d1",
+    "docs/experiments/ebay-us-retry-v1/README.md": "03bbbef286d6b59b73d54b541c1547148dae91458c31832071b2b0be9e5af0ab",
+    "docs/experiments/ebay-us-retry-v1/account.json": "b548c9bedf184bca9ce4c0c418f5602dc5faefe562a40a9b93217c97118e4d3e",
+    "docs/experiments/ebay-us-retry-v1/manifest.json": "2a24c3f5f2a53d8baaf12f5da5e8049502bcae978d86bd4e93a8bb7c673d09cb",
+    "docs/experiments/ebay-us-retry-v1/manifest.sha256": "631cfd3a071442a7363cf1f1d1c17d6a838d960764ed4f41b7ccbec034bce69b",
+    "docs/experiments/ebay-us-retry-v1/results.json": "5aa0e1c891070abc2b89b0e876b5fa69f160384e9cf652c7ef4c2c6d295de5fc",
+    "docs/experiments/ebay-us-v1/README.md": "a388949b96bf81fff67ce50ed27ee4d6516691a9df702566cc49b9c33256f4cb",
+    "docs/experiments/ebay-us-v1/account.json": "a45253401fb5e00eec211743fe987af0920849b1453e24e8d5ed5789deae8f23",
+    "docs/experiments/ebay-us-v1/archive-diagnosis.json": "8c9721afb791131ed297f372489b4842ebbab54a891b10f2afdc953b48e06da2",
+    "docs/experiments/ebay-us-v1/manifest.json": "44b4686e7d8bd86124aee7580c7dc38ffe457b54df314d48b3b4f1a9f8695997",
+    "docs/experiments/ebay-us-v1/manifest.sha256": "2abd79558563b1478749ce0a697836552461cb93c85543a88a056aa36da64c5d",
+    "docs/experiments/ebay-us-v1/results.json": "5414eb2dd2a6b6be0160c300636bd99f5e5b6fb01485ac66030c9cd3d7ed736e",
+    "docs/experiments/ebay-v1/README.md": "e04b450594bca63c3bb7610e3d62037507bb10e2012939ed55e56ed73af98970",
+    "docs/experiments/ebay-v1/account.json": "a537c064b02e7fa949990f9bb28b607159541d94fdf07177f4502915c1758a02",
+    "docs/experiments/ebay-v1/amendment.json": "7fbbc4ba89b24b4aa92992284062b9505f39dea63d1d2816957ab3beed533e4f",
+    "docs/experiments/ebay-v1/manifest.json": "7e2a6a643fba9b4362aa6678306f505593b6070925e9204b87130cb29cf867f8",
+    "docs/experiments/ebay-v1/manifest.sha256": "efb820f368418c4ec998c22fe744122ca7179143de565b97e9c55cf3985f6fba",
+    "docs/experiments/ebay-v1/manual-checks.json": "de3edaf77b425693d151240ceb8ca2df6eaf270d56e15a2f252b1db43ae84d1e",
+    "docs/experiments/ebay-v1/modern-sofa.json": "d2dd9944fdc7a7d18ff7342ba0894c83f1aa053aa93d382c22969fb38ed255df",
+    "docs/experiments/ebay-v1/ornate-sofa.json": "1790389e3418d7db320d98008d080d350a1606df3ebfbb3d168b9790c1944640",
+    "docs/experiments/feasibility-v1/README.md": "92d341b279e99363209d0827119b90c0826c65926b6e5ac55a613346cbbcf8c5",
+    "docs/experiments/feasibility-v1/live-evidence.json": "8e775d7bb3490180a3787e0ebe1307a7660efb33c31bbfab258a469055857f99",
+    "docs/experiments/feasibility-v1/manifest.json": "2a3ee566c0c2a2c2d619f76999d6f15d9ec7fa9524ae34468a1480d385da53a8",
+    "docs/experiments/feasibility-v1/manifest.sha256": "edafb29612d13220e33f07a468ce29f0c1ba419cedd3c353657e7a80633d3629",
+    "docs/experiments/feasibility-v1/results.md": "4274e1a04069e75503ba216ca11b04838cd5f75c689b01311b4f2ef9b401da21",
+    "docs/experiments/feasibility-v1/rules.md": "a29ce0bd3cf29b9e94e67cf44d1cfb15e85cc0e24e3081543598f48fa7533828",
+    "docs/experiments/query-v2/README.md": "780b59704974255882a8fc1d00d225f52a8dcc661d77fcdbfc26f67c85c7161e",
+    "docs/experiments/query-v2/manifest.json": "2f427d08937dec8cc4d24ab4377b36e83f3e30b57a1967e03919ab968b29e280",
+    "docs/experiments/query-v2/manifest.sha256": "2619ca662934185c38471f52723f24fb6e934a1455e97df8af9ca7a40abd8cca",
+    "docs/experiments/query-v2/manual-checks.json": "ef5621c9fb9d682e4b66859312b61bc26ed6590a6e72a9fb1392658b9bee00b6",
+    "docs/experiments/query-v2/results.json": "50cd75700d79c6cc1e3df960325a87e04116a4c2fe144445066e60d07bcb2c92",
+    "docs/experiments/query-v2/search_query_v1.rb": "df0fe00b7fb0d2f27bc7b880c15d8ff73b2bd18085261eedff1800ef681add6c",
+    "docs/experiments/query-v3/README.md": "0b5719198d3b95cd416fdb0462e62a3d0fd8279a16902e244afb97b21584170e",
+    "docs/experiments/query-v3/replay.json": "f1b1845ec19b7f6adc2bb6288d837e630c33e544b963e3eefe83159429c75a33",
+    "docs/experiments/query-v4/README.md": "2573b0b359712831716d32653ee808bf96001cd70e5d907570e31985d7147b11",
+    "docs/experiments/query-v4/ebay_query_preparation_v1.rb": "fa6b4848f4d180f35485f867af8baf2e804abf6f761893d7591ea418c3a7195f",
+    "docs/experiments/query-v4/photo_query_v1.rb": "54f37c84fb0436d4fca76e892bb7ac57a251972a8be535a1ca144b1c5f983e27"
+  },
+  "git_head_at_freeze": "666e8a3bc8409946fe25fe62fd567ea67d7ec8e6",
+  "source_snapshots": {
+    "agent-scratch/ebay-flow-v6.rb": {
+      "path": "source/agent-scratch/ebay-flow-v6.rb",
+      "sha256": "1ffe4b6a0e16c0eddef97f72a5f45e13807c780a96d2a969fa10e172bb6fc207"
+    },
+    "agent-scratch/ebay-flow-v6-offline.rb": {
+      "path": "source/agent-scratch/ebay-flow-v6-offline.rb",
+      "sha256": "eec0004849d31ec5ad49fb5aa3b29f6bd2ebc1b43fd4f63775b6e091988421cf"
+    },
+    "agent-scratch/ebay-v1.rb": {
+      "path": "source/agent-scratch/ebay-v1.rb",
+      "sha256": "fdda5a051d3dab3534706e50171b8fb0f033ef280822a7d6b1dfe0cc5811a16c"
+    },
+    "agent-scratch/query-v2.rb": {
+      "path": "source/agent-scratch/query-v2.rb",
+      "sha256": "c6e81b7b572c835ce312bd934250172beb570c1e4a3702551348ad14435664b6"
+    },
+    "agent-scratch/diagnostic-v1.rb": {
+      "path": "source/agent-scratch/diagnostic-v1.rb",
+      "sha256": "e6bb2dfcd1d4d0fff0488abc538fa981eb70c0d6c57bf7e00a16fa2cd5484b4e"
+    },
+    "docs/experiments/query-v3/search_query_v2.rb": {
+      "path": "source/docs/experiments/query-v3/search_query_v2.rb",
+      "sha256": "b6edcf88f82a8eb840702937344443389523bb52b1de25a88f8c64048cd6dc65"
+    },
+    "app/models/search_query.rb": {
+      "path": "source/app/models/search_query.rb",
+      "sha256": "cae30156d348180a5a00e89624052117700b5c29da609e7b8a808cb8627930fe"
+    },
+    "app/services/photo_validator.rb": {
+      "path": "source/app/services/photo_validator.rb",
+      "sha256": "dee4b8f265302f98bfb17ab162f85b009bb775d6b3ab945a68270ce7bf85d999"
+    },
+    "app/services/search_deadline.rb": {
+      "path": "source/app/services/search_deadline.rb",
+      "sha256": "053cdae1f542c524d7e6e8fd4706f670fbcd68ecc08c1a87b957db8f49d8998e"
+    },
+    "app/services/serp_api/client.rb": {
+      "path": "source/app/services/serp_api/client.rb",
+      "sha256": "ece1b4bda3d2991a8207bccee879f6c7ccca4b4b15e017dea46cfad95bca9710"
+    },
+    "app/services/serp_api/http_transport.rb": {
+      "path": "source/app/services/serp_api/http_transport.rb",
+      "sha256": "2e19e19b41a7f5716d595a712c0485dadc3c12f501e76e549c6d1a989e74b55a"
+    },
+    "app/models/photo_query.rb": {
+      "path": "source/app/models/photo_query.rb",
+      "sha256": "526fec6db9b71ccfd345af91a19895a27f8328f9b199d86ea424c57533e41ad6"
+    },
+    "app/services/ebay_query_preparation.rb": {
+      "path": "source/app/services/ebay_query_preparation.rb",
+      "sha256": "939639c5d235f9a040eec77eff8c64790ec1dd5aafa3840e231d4cb7851a9dab"
+    },
+    "app/services/vision/client.rb": {
+      "path": "source/app/services/vision/client.rb",
+      "sha256": "2a426a8efc4e5c64e3b688eaa6c034e0daa03ff53b86dfc078a6f3e1c4e5517d"
+    },
+    "app/services/vision/http_transport.rb": {
+      "path": "source/app/services/vision/http_transport.rb",
+      "sha256": "70b0dc5e738605a1fd8ebaa301546081f24828302aa14a338e741e8ed355909b"
+    },
+    "agent-scratch/ebay-flow-v2.rb": {
+      "path": "source/agent-scratch/ebay-flow-v2.rb",
+      "sha256": "2a8ea5805a25fbf0fdffbaa50754f6c46fc31ceeb798a9916f87368f7c6fb2a9"
+    },
+    "agent-scratch/ebay-flow-v2-offline.rb": {
+      "path": "source/agent-scratch/ebay-flow-v2-offline.rb",
+      "sha256": "0c8156afb3fa82d58eb265ef2536bb8917baabb39572d2f8b16a7a501f8264b1"
+    },
+    "agent-scratch/ebay-flow-v3.rb": {
+      "path": "source/agent-scratch/ebay-flow-v3.rb",
+      "sha256": "b7809ae82de6af7cd1f6cc56489cd003efb70f46922995cfe45d8793a2263b95"
+    },
+    "agent-scratch/ebay-flow-v3-offline.rb": {
+      "path": "source/agent-scratch/ebay-flow-v3-offline.rb",
+      "sha256": "1874b2b3f43e5fc56aee7c124dc3b53111aed6bfb8d5927373a3a9e9fb1a67f0"
+    },
+    "app/models/ebay_listing_filter.rb": {
+      "path": "source/app/models/ebay_listing_filter.rb",
+      "sha256": "b1af11d0bb14eb2d788777990efbf2f88a1885ad238dc8c2ede77e1f728c6a61"
+    },
+    "test/models/photo_query_test.rb": {
+      "path": "source/test/models/photo_query_test.rb",
+      "sha256": "18257dafad44b74dcc0cd990c47e25aa9774f2a2e57d98e3cd7a9939f75cf95a"
+    },
+    "test/models/ebay_listing_filter_test.rb": {
+      "path": "source/test/models/ebay_listing_filter_test.rb",
+      "sha256": "943058c6df46bf26ae90b8ad788057e22dd050c4e7e16d62e1252550cdcb59d0"
+    },
+    "test/services/ebay_query_preparation_test.rb": {
+      "path": "source/test/services/ebay_query_preparation_test.rb",
+      "sha256": "0ac480973e140c376c5a3494241fd851a92826e78351d782bb0680d19626da56"
+    }
+  }
+}

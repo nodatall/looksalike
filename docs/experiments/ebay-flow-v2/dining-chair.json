@@ -1,0 +1,2112 @@
+{
+  "case_id": "dining-chair",
+  "manifest_sha256": "05b6e8490cead9f642716fc151dca5d7a3665c0a1daefb140650355fe2e9efbc",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "chair",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 1064.893
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 5366.601
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 3464.279
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/358473029798",
+        "thumbnail": "https://i.ebayimg.com/images/g/cIMAAeSw0F5p6EGS/s-l500.webp",
+        "sponsored": true,
+        "title": "Leather Computer Chair with Ergonomic Back Support, Big and Tall Office Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/356588209948",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lj0AAeSweM9p6EGH/s-l500.webp",
+        "sponsored": true,
+        "title": "Leather Computer Chair with Ergonomic Back Support, Big and Tall Office Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358865450240",
+        "thumbnail": "https://i.ebayimg.com/images/g/mn8AAeSwoUlozPr3/s-l500.webp",
+        "sponsored": true,
+        "title": "Executive Office Chair with Silent Wheels, Easy Assembly",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$165.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/398306635906",
+        "thumbnail": "https://i.ebayimg.com/images/g/WpAAAeSwjspqhoBS/s-l500.webp",
+        "sponsored": true,
+        "title": "LiberNovo Omni SE Dynamic Ergonomic Office Chair Five Recline for Back Comfort",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$788.00",
+          "to": "$862.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/135953899384",
+        "thumbnail": "https://i.ebayimg.com/images/g/mqEAAOSwVmNoRo3A/s-l500.webp",
+        "sponsored": false,
+        "title": "Home Office Chair Desk Computer Chair Adjustable Ergonomic with Lumbar Support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$38.94",
+          "to": "$42.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/126913846489",
+        "thumbnail": "https://i.ebayimg.com/images/g/4WcAAeSwR8JqiFPa/s-l500.webp",
+        "sponsored": false,
+        "title": "GTRACING GTWD-200-BLACK Ergonomic Gaming Chair with Adjustable Pillows and",
+        "subtitle": "Footrest, Black",
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$63.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/389193254232",
+        "thumbnail": "https://i.ebayimg.com/images/g/FRIAAeSwuxVqnnAK/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair Executive High Back with Armrest Swivel Computer Desk Chair Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/389150647964",
+        "thumbnail": "https://i.ebayimg.com/images/g/HD4AAeSwGMVo~z9p/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Computer Desk Chair Ergonomic Office Chair with Wheels Flip-Up Armrests",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/316118644695",
+        "thumbnail": "https://i.ebayimg.com/images/g/LBUAAOSw~2pmgnVn/s-l500.webp",
+        "sponsored": false,
+        "title": "Ergonomic Mesh Office Chair Desk Chair Computer Chair with Lumbar Support Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/226024136749",
+        "thumbnail": "https://i.ebayimg.com/images/g/qKcAAOSw5nJl4FcE/s-l500.webp",
+        "sponsored": false,
+        "title": "Home Office Computer Desk Chair Ergonomic High-Back Mesh Rolling Work Task Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$65.86",
+          "to": "$67.96"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/134005194351",
+        "thumbnail": "https://i.ebayimg.com/images/g/pzcAAeSw9zpp5l00/s-l500.webp",
+        "sponsored": false,
+        "title": "Steelcase Gesture Chair -FULLY LOADED -Refurbished Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 year Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/398431033429",
+        "thumbnail": "https://i.ebayimg.com/images/g/COEAAeSwKqZqtoXJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Lumbar Bonded Leather Manager Office Chair Gray Faux Leather FREE SHIP",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$109.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/137766754989",
+        "thumbnail": "https://i.ebayimg.com/images/g/ShUAAeSwmIRqs80D/s-l500.webp",
+        "sponsored": true,
+        "title": "USA Burgess Vario Allday Flex-Back Aluminum Banquet Chairs | 4,000+ Available",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/317996739152",
+        "thumbnail": "https://i.ebayimg.com/images/g/lO8AAeSwxxJps8Lk/s-l500.webp",
+        "sponsored": true,
+        "title": "Big and Tall Office Chair Reclining High Back Leather Computer Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$138.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/317631132330",
+        "thumbnail": "https://i.ebayimg.com/images/g/svsAAeSwTklpNDGO/s-l500.webp",
+        "sponsored": true,
+        "title": "Spandex Stretch Folding Chair Covers – Wedding Party Banquet Event Décor",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$13.99",
+          "to": "$247.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/335571733027",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWEAAOSwHIpm4q5I/s-l500.webp",
+        "sponsored": true,
+        "title": "Black Accent Chair Modern Soft Upholstered Arm Chair Living Room Accent Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/315395871620",
+        "thumbnail": "https://i.ebayimg.com/images/g/RFwAAOSwTJhc4lxb/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Computer Chair Ergonomic Cheap Desk Chair Adjustable Comfortable Mid Back",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$40.84",
+          "to": "$42.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/121905415783",
+        "thumbnail": "https://i.ebayimg.com/images/g/1QwAAOSwKtVWzy63/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Aeron Chair -Size B - Refurbished Approved By Madison Seating",
+        "subtitle": "20 Years in Biz - Fully Loaded - Posture Fit",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/136710356152",
+        "thumbnail": "https://i.ebayimg.com/images/g/KqMAAeSwGqxpDDi2/s-l500.webp",
+        "sponsored": false,
+        "title": "White Ergonomic Gaming Chair Coumputer Office Swivel Recliner Seat w/ Footrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/133925011807",
+        "thumbnail": "https://i.ebayimg.com/images/g/63IAAeSwuXtqqkru/s-l500.webp",
+        "sponsored": false,
+        "title": "ELECWISH Ergonomic Gaming Chair with Footrest Lumbar Support Recliner Office",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/307198386647",
+        "thumbnail": "https://i.ebayimg.com/images/g/q20AAeSwaSpqtk4E/s-l500.webp",
+        "sponsored": false,
+        "title": "Black & White High-Back Racing Style Gaming Chair w/ Armrests, Headrest",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$18.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/318326091218",
+        "thumbnail": "https://i.ebayimg.com/images/g/fDMAAeSwfMJqsz0p/s-l500.webp",
+        "sponsored": false,
+        "title": "400LBS Big and Tall Office Chair Heavy Duty Executive PU Leather Wide Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/127899052776",
+        "thumbnail": "https://i.ebayimg.com/images/g/FUQAAeSw7XdqHrR4/s-l500.webp",
+        "sponsored": false,
+        "title": "Adjustable Collapsible Floor Chair with Back Support, Removable Washable Cover",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/800672056115",
+        "thumbnail": "https://i.ebayimg.com/images/g/uUQAAeSwt3xqqthh/s-l500.webp",
+        "sponsored": false,
+        "title": "Luxury Ergonomic Desk Chair with Adjustable Footrest - Perfect for Gaming",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.96"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/120854222973",
+        "thumbnail": "https://i.ebayimg.com/images/g/grIAAOSwPRteoJgA/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Aeron Chair -Fully Loaded- Refurbished Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 years Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$574.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/158240299120",
+        "thumbnail": "https://i.ebayimg.com/images/g/XoUAAeSwHrZqlINP/s-l500.webp",
+        "sponsored": false,
+        "title": "Ozark Trail Basic Quad Folding Camp Chair with Cup Holder, Dark Blue, Adult NEW",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$6.34"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/395089805306",
+        "thumbnail": "https://i.ebayimg.com/images/g/xcoAAOSwzeRlHlzi/s-l500.webp",
+        "sponsored": false,
+        "title": "Big and Tall Office Chair 400lbs Wide Seat Ergonomic Desk Chair with Lumbar Arms",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$113.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/116101916468",
+        "thumbnail": "https://i.ebayimg.com/images/g/3XsAAOSwFEheCQzd/s-l500.webp",
+        "sponsored": false,
+        "title": "Amia Chair by Steelcase -Fully Loaded- Refurbished Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 years Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$379.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/306092662552",
+        "thumbnail": "https://i.ebayimg.com/images/g/g78AAOSwO6Bno9i7/s-l500.webp",
+        "sponsored": true,
+        "title": "smartphone Chair 3 pak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$24.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/800421179491",
+        "thumbnail": "https://i.ebayimg.com/images/g/2z4AAOSw0oVoVN3I/s-l500.webp",
+        "sponsored": true,
+        "title": "Dental Adjustable PU Leather Doctor Mobile Chair/Surgeon Chair with Armrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$71.45"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/297910196706",
+        "thumbnail": "https://i.ebayimg.com/images/g/aBQAAeSwY5dpXBpd/s-l500.webp",
+        "sponsored": true,
+        "title": "1, 2, 4, 8-Pack of Heavy Duty Foldable Plastic Chair for Events, Party, Weddings",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$29.99",
+          "to": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/317043765542",
+        "thumbnail": "https://i.ebayimg.com/images/g/SiAAAeSwD8NoYrXy/s-l500.webp",
+        "sponsored": true,
+        "title": "Hisho - SL Track Heated Deluxe Zero Gravity Massage Chair | Full Body Compressio",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,999.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/315873035918",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bf8AAeSw2Mxqac4F/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair Ergonomic Desk Chair with Flip-up Armrest Swivel Desk Chair 350lbs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/267721968509",
+        "thumbnail": "https://i.ebayimg.com/images/g/5AkAAeSwezVqTx2V/s-l500.webp",
+        "sponsored": false,
+        "title": "Steel Folding Chair-Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$20.22"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/406956835274",
+        "thumbnail": "https://i.ebayimg.com/images/g/iPsAAeSwtqBqRHTY/s-l500.webp",
+        "sponsored": false,
+        "title": "Ergonomic Mesh Office Chair with Adjustable Headrest Lumbar Support Desk Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/168717735710",
+        "thumbnail": "https://i.ebayimg.com/images/g/m9YAAeSwXNxqtW8y/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair Black Mesh Desk Computer Chair Adjustable Height Lumbar Support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$36.99",
+          "to": "$39.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/395425039170",
+        "thumbnail": "https://i.ebayimg.com/images/g/NyMAAOSwtFphgNNG/s-l500.webp",
+        "sponsored": false,
+        "title": "High Back Leather Office Chair Executive Office Desk Task Computer Chair",
+        "subtitle": "BLACK LEATHER",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$85.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/234639938035",
+        "thumbnail": "https://i.ebayimg.com/images/g/FywAAeSwtpFqsIQT/s-l500.webp",
+        "sponsored": false,
+        "title": "ELECWISH Gaming Chair Ergonomic Swivel Recliner Office Seat with Lumbar support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/358353510816",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ok4AAeSw3mtpvPgG/s-l500.webp",
+        "sponsored": true,
+        "title": "500lbs Ergonomic Chair, with Lumbar Support, Adjustable Height & Recline",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$162.14"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/137770238803",
+        "thumbnail": "https://i.ebayimg.com/images/g/Qu8AAeSwL6Nqspcy/s-l500.webp",
+        "sponsored": true,
+        "title": "Lot of 1000 USA Burgess Vario Allday Flex-Back Aluminum Banquet Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$42,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/134004247228",
+        "thumbnail": "https://i.ebayimg.com/images/g/RoQAAeSw~9Bp9NZr/s-l500.webp",
+        "sponsored": false,
+        "title": "Steelcase Leap V2 Chair -Fully Loaded- Aluminum Edition",
+        "subtitle": "10 Year Warranty with Madison Seating \"Free Return Ship",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$574.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/316261080661",
+        "thumbnail": "https://i.ebayimg.com/images/g/R3kAAeSwHjVqac~V/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Office Chair with Lumbar Support Ergonomic Computer Chair 350LBS",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/317892117764",
+        "thumbnail": "https://i.ebayimg.com/images/g/JRMAAeSwJZxplLvP/s-l500.webp",
+        "sponsored": false,
+        "title": "Ozark Trail Basic Quad Folding Camp Chair with Cup Holder, Dark Blue, Adult",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$7.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/386328756471",
+        "thumbnail": "https://i.ebayimg.com/images/g/7c4AAOSwi4NlTd0h/s-l500.webp",
+        "sponsored": false,
+        "title": "YODOLLA Ergonomic Reclining Office Chair Heat & Massage High Back Desk Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$119.99",
+          "to": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/318907014262",
+        "thumbnail": "https://i.ebayimg.com/images/g/yEUAAeSwBhxqs3eE/s-l500.webp",
+        "sponsored": false,
+        "title": "New Hydraulic Barber Chair Salon Chair with Footrest Swivel Styling Chair Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/820170954627",
+        "thumbnail": "https://i.ebayimg.com/images/g/c8wAAeSw1lFqtomj/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair High Back Computer Desk Chair, PU Leather Adjustable Height",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$83.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/317512461086",
+        "thumbnail": "https://i.ebayimg.com/images/g/IjkAAeSw7dJqnnIy/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclining Office Chair 400lbs Ergonomic PU Leather Computer Desk Chairs White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/800715590902",
+        "thumbnail": "https://i.ebayimg.com/images/g/0TIAAeSw-zpqttjW/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Equa Chair EN500PBF Purple W/ Arm Rests FREE SHIPPING",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$356.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/366361836026",
+        "thumbnail": "https://i.ebayimg.com/images/g/k~oAAeSwC1Zp6GDR/s-l500.webp",
+        "sponsored": false,
+        "title": "Canmov Soft Fabric Manual Recliner Chair with Vibration Massage & Lumbar Heating",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$197.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/357979321915",
+        "thumbnail": "https://i.ebayimg.com/images/g/brQAAeSwC9ppMHwc/s-l500.webp",
+        "sponsored": false,
+        "title": "Ozark Trail Basic Quad Folding Camp Chair with Cup Holder, Black .New",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7.30"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/147472187376",
+        "thumbnail": "https://i.ebayimg.com/images/g/nMYAAeSw1Klqa4DX/s-l500.webp",
+        "sponsored": false,
+        "title": "Dowinx Suede Gaming Chair with Silent Wheels, Lumbar Massage and Footrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.91"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/125295886055",
+        "thumbnail": "https://i.ebayimg.com/images/g/6E4AAeSwR-1qjGdO/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Cosm chair -Canyon Frame -Refurbished- Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 years Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/115200354365",
+        "thumbnail": "https://i.ebayimg.com/images/g/UNIAAOSwGkNhcF9S/s-l500.webp",
+        "sponsored": false,
+        "title": "Steelcase Leap V1 Chair, -Open Box- Fully Loaded Black Fabric",
+        "subtitle": "30 Day FREE return & 10 year warranty with our company",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/168538461037",
+        "thumbnail": "https://i.ebayimg.com/images/g/UaMAAeSwOPZqV~mF/s-l500.webp",
+        "sponsored": false,
+        "title": "Ergonomic Mesh Office Chair High Back Desk Chair, Lumbar Support, Adjustable Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$110.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/389150687753",
+        "thumbnail": "https://i.ebayimg.com/images/g/sJkAAeSw0odo~0MB/s-l500.webp",
+        "sponsored": false,
+        "title": "Computer Desk Chair Ergonomic Office Chair with Wheels Flip-Up Armrests Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/318790940274",
+        "thumbnail": "https://i.ebayimg.com/images/g/y0cAAeSwN55qpLHB/s-l500.webp",
+        "sponsored": false,
+        "title": "400LBS Big and Tall Heavy Duty Ergonomic Reclining Office Chair With Footrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/800332455892",
+        "thumbnail": "https://i.ebayimg.com/images/g/faEAAOSw1mllTd0k/s-l500.webp",
+        "sponsored": false,
+        "title": "YODOLLA Ergonomic Reclining Office Chair Heat & Massage High Back Desk Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$119.99",
+          "to": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/336782877641",
+        "thumbnail": "https://i.ebayimg.com/images/g/tDEAAeSwHO1qnnP8/s-l500.webp",
+        "sponsored": true,
+        "title": "US Woodpecker DTE Dental Ultrasonic Scaler LED N2/N3/V2/V3 For Dental Chair Unit",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$21.96",
+          "to": "$139.70"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/126410109248",
+        "thumbnail": "https://i.ebayimg.com/images/g/kRgAAOSwL8ZmDgvD/s-l500.webp",
+        "sponsored": true,
+        "title": "Replacement Pneumatic Cylinder For Herman Miller Remastered OEM Latest Black Rod",
+        "subtitle": "Heavy Duty Cylinder OEM. Removal Tools Included",
+        "condition": "New – Open box",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$55.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/358473029798",
+        "thumbnail": "https://i.ebayimg.com/images/g/cIMAAeSw0F5p6EGS/s-l500.webp",
+        "sponsored": true,
+        "title": "Leather Computer Chair with Ergonomic Back Support, Big and Tall Office Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/356588209948",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lj0AAeSweM9p6EGH/s-l500.webp",
+        "sponsored": true,
+        "title": "Leather Computer Chair with Ergonomic Back Support, Big and Tall Office Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358865450240",
+        "thumbnail": "https://i.ebayimg.com/images/g/mn8AAeSwoUlozPr3/s-l500.webp",
+        "sponsored": true,
+        "title": "Executive Office Chair with Silent Wheels, Easy Assembly",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$165.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/398306635906",
+        "thumbnail": "https://i.ebayimg.com/images/g/WpAAAeSwjspqhoBS/s-l500.webp",
+        "sponsored": true,
+        "title": "LiberNovo Omni SE Dynamic Ergonomic Office Chair Five Recline for Back Comfort",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$788.00",
+          "to": "$862.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/135953899384",
+        "thumbnail": "https://i.ebayimg.com/images/g/mqEAAOSwVmNoRo3A/s-l500.webp",
+        "sponsored": false,
+        "title": "Home Office Chair Desk Computer Chair Adjustable Ergonomic with Lumbar Support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$38.94",
+          "to": "$42.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/126913846489",
+        "thumbnail": "https://i.ebayimg.com/images/g/4WcAAeSwR8JqiFPa/s-l500.webp",
+        "sponsored": false,
+        "title": "GTRACING GTWD-200-BLACK Ergonomic Gaming Chair with Adjustable Pillows and",
+        "subtitle": "Footrest, Black",
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$63.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6ab6e99de9639b5718c389c4",
+        "status": "Success",
+        "created_at": "2026-09-25 21:37:33 UTC",
+        "processed_at": "2026-09-25 21:37:33 UTC",
+        "total_time_taken": 5.03
+      },
+      "ebay": {
+        "id": "6ab6e9a2dafa5f3c64f6e124",
+        "status": "Success",
+        "created_at": "2026-09-25 21:37:38 UTC",
+        "processed_at": "2026-09-25 21:37:38 UTC",
+        "total_time_taken": 3.08
+      }
+    },
+    "interpretation": "chair",
+    "query_source": "visual_match_titles",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Restoration & Finishing — Kramer Furniture and Cabinet ...",
+        "Modern Chairs, Back Style: Tight Back at ₹ 1000 in Noida ...",
+        "Understanding and using pronouns: 'he' and 'she' Share books ...",
+        "Connie Clark, Author at Collegeville Institute",
+        "Blog 3 — Husick Psychology",
+        "Gestalt Therapy and the Empty Chair Technique – Musings in ...",
+        "Antique Cane Chair Farm Home Primitives Furniture Wood Chair ...",
+        "Case Studies | openLCA.org"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "chair",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 59,
+      "not_explicit_us": 1
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/358473029798",
+        "thumbnail": "https://i.ebayimg.com/images/g/cIMAAeSw0F5p6EGS/s-l500.webp",
+        "sponsored": true,
+        "title": "Leather Computer Chair with Ergonomic Back Support, Big and Tall Office Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/356588209948",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lj0AAeSweM9p6EGH/s-l500.webp",
+        "sponsored": true,
+        "title": "Leather Computer Chair with Ergonomic Back Support, Big and Tall Office Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358865450240",
+        "thumbnail": "https://i.ebayimg.com/images/g/mn8AAeSwoUlozPr3/s-l500.webp",
+        "sponsored": true,
+        "title": "Executive Office Chair with Silent Wheels, Easy Assembly",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$165.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/398306635906",
+        "thumbnail": "https://i.ebayimg.com/images/g/WpAAAeSwjspqhoBS/s-l500.webp",
+        "sponsored": true,
+        "title": "LiberNovo Omni SE Dynamic Ergonomic Office Chair Five Recline for Back Comfort",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$788.00",
+          "to": "$862.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/135953899384",
+        "thumbnail": "https://i.ebayimg.com/images/g/mqEAAOSwVmNoRo3A/s-l500.webp",
+        "sponsored": false,
+        "title": "Home Office Chair Desk Computer Chair Adjustable Ergonomic with Lumbar Support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$38.94",
+          "to": "$42.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/126913846489",
+        "thumbnail": "https://i.ebayimg.com/images/g/4WcAAeSwR8JqiFPa/s-l500.webp",
+        "sponsored": false,
+        "title": "GTRACING GTWD-200-BLACK Ergonomic Gaming Chair with Adjustable Pillows and",
+        "subtitle": "Footrest, Black",
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$63.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/389193254232",
+        "thumbnail": "https://i.ebayimg.com/images/g/FRIAAeSwuxVqnnAK/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair Executive High Back with Armrest Swivel Computer Desk Chair Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/389150647964",
+        "thumbnail": "https://i.ebayimg.com/images/g/HD4AAeSwGMVo~z9p/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Computer Desk Chair Ergonomic Office Chair with Wheels Flip-Up Armrests",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/316118644695",
+        "thumbnail": "https://i.ebayimg.com/images/g/LBUAAOSw~2pmgnVn/s-l500.webp",
+        "sponsored": false,
+        "title": "Ergonomic Mesh Office Chair Desk Chair Computer Chair with Lumbar Support Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/226024136749",
+        "thumbnail": "https://i.ebayimg.com/images/g/qKcAAOSw5nJl4FcE/s-l500.webp",
+        "sponsored": false,
+        "title": "Home Office Computer Desk Chair Ergonomic High-Back Mesh Rolling Work Task Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$65.86",
+          "to": "$67.96"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/134005194351",
+        "thumbnail": "https://i.ebayimg.com/images/g/pzcAAeSw9zpp5l00/s-l500.webp",
+        "sponsored": false,
+        "title": "Steelcase Gesture Chair -FULLY LOADED -Refurbished Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 year Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/398431033429",
+        "thumbnail": "https://i.ebayimg.com/images/g/COEAAeSwKqZqtoXJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Lumbar Bonded Leather Manager Office Chair Gray Faux Leather FREE SHIP",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$109.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/137766754989",
+        "thumbnail": "https://i.ebayimg.com/images/g/ShUAAeSwmIRqs80D/s-l500.webp",
+        "sponsored": true,
+        "title": "USA Burgess Vario Allday Flex-Back Aluminum Banquet Chairs | 4,000+ Available",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/317996739152",
+        "thumbnail": "https://i.ebayimg.com/images/g/lO8AAeSwxxJps8Lk/s-l500.webp",
+        "sponsored": true,
+        "title": "Big and Tall Office Chair Reclining High Back Leather Computer Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$138.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/317631132330",
+        "thumbnail": "https://i.ebayimg.com/images/g/svsAAeSwTklpNDGO/s-l500.webp",
+        "sponsored": true,
+        "title": "Spandex Stretch Folding Chair Covers – Wedding Party Banquet Event Décor",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$13.99",
+          "to": "$247.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/335571733027",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWEAAOSwHIpm4q5I/s-l500.webp",
+        "sponsored": true,
+        "title": "Black Accent Chair Modern Soft Upholstered Arm Chair Living Room Accent Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/315395871620",
+        "thumbnail": "https://i.ebayimg.com/images/g/RFwAAOSwTJhc4lxb/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Computer Chair Ergonomic Cheap Desk Chair Adjustable Comfortable Mid Back",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$40.84",
+          "to": "$42.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/121905415783",
+        "thumbnail": "https://i.ebayimg.com/images/g/1QwAAOSwKtVWzy63/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Aeron Chair -Size B - Refurbished Approved By Madison Seating",
+        "subtitle": "20 Years in Biz - Fully Loaded - Posture Fit",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/136710356152",
+        "thumbnail": "https://i.ebayimg.com/images/g/KqMAAeSwGqxpDDi2/s-l500.webp",
+        "sponsored": false,
+        "title": "White Ergonomic Gaming Chair Coumputer Office Swivel Recliner Seat w/ Footrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/133925011807",
+        "thumbnail": "https://i.ebayimg.com/images/g/63IAAeSwuXtqqkru/s-l500.webp",
+        "sponsored": false,
+        "title": "ELECWISH Ergonomic Gaming Chair with Footrest Lumbar Support Recliner Office",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/307198386647",
+        "thumbnail": "https://i.ebayimg.com/images/g/q20AAeSwaSpqtk4E/s-l500.webp",
+        "sponsored": false,
+        "title": "Black & White High-Back Racing Style Gaming Chair w/ Armrests, Headrest",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$18.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/318326091218",
+        "thumbnail": "https://i.ebayimg.com/images/g/fDMAAeSwfMJqsz0p/s-l500.webp",
+        "sponsored": false,
+        "title": "400LBS Big and Tall Office Chair Heavy Duty Executive PU Leather Wide Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/127899052776",
+        "thumbnail": "https://i.ebayimg.com/images/g/FUQAAeSw7XdqHrR4/s-l500.webp",
+        "sponsored": false,
+        "title": "Adjustable Collapsible Floor Chair with Back Support, Removable Washable Cover",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/800672056115",
+        "thumbnail": "https://i.ebayimg.com/images/g/uUQAAeSwt3xqqthh/s-l500.webp",
+        "sponsored": false,
+        "title": "Luxury Ergonomic Desk Chair with Adjustable Footrest - Perfect for Gaming",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.96"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/120854222973",
+        "thumbnail": "https://i.ebayimg.com/images/g/grIAAOSwPRteoJgA/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Aeron Chair -Fully Loaded- Refurbished Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 years Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$574.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/158240299120",
+        "thumbnail": "https://i.ebayimg.com/images/g/XoUAAeSwHrZqlINP/s-l500.webp",
+        "sponsored": false,
+        "title": "Ozark Trail Basic Quad Folding Camp Chair with Cup Holder, Dark Blue, Adult NEW",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$6.34"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/395089805306",
+        "thumbnail": "https://i.ebayimg.com/images/g/xcoAAOSwzeRlHlzi/s-l500.webp",
+        "sponsored": false,
+        "title": "Big and Tall Office Chair 400lbs Wide Seat Ergonomic Desk Chair with Lumbar Arms",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$113.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/116101916468",
+        "thumbnail": "https://i.ebayimg.com/images/g/3XsAAOSwFEheCQzd/s-l500.webp",
+        "sponsored": false,
+        "title": "Amia Chair by Steelcase -Fully Loaded- Refurbished Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 years Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$379.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/306092662552",
+        "thumbnail": "https://i.ebayimg.com/images/g/g78AAOSwO6Bno9i7/s-l500.webp",
+        "sponsored": true,
+        "title": "smartphone Chair 3 pak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$24.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/800421179491",
+        "thumbnail": "https://i.ebayimg.com/images/g/2z4AAOSw0oVoVN3I/s-l500.webp",
+        "sponsored": true,
+        "title": "Dental Adjustable PU Leather Doctor Mobile Chair/Surgeon Chair with Armrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$71.45"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/297910196706",
+        "thumbnail": "https://i.ebayimg.com/images/g/aBQAAeSwY5dpXBpd/s-l500.webp",
+        "sponsored": true,
+        "title": "1, 2, 4, 8-Pack of Heavy Duty Foldable Plastic Chair for Events, Party, Weddings",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$29.99",
+          "to": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/317043765542",
+        "thumbnail": "https://i.ebayimg.com/images/g/SiAAAeSwD8NoYrXy/s-l500.webp",
+        "sponsored": true,
+        "title": "Hisho - SL Track Heated Deluxe Zero Gravity Massage Chair | Full Body Compressio",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,999.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/315873035918",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bf8AAeSw2Mxqac4F/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair Ergonomic Desk Chair with Flip-up Armrest Swivel Desk Chair 350lbs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/267721968509",
+        "thumbnail": "https://i.ebayimg.com/images/g/5AkAAeSwezVqTx2V/s-l500.webp",
+        "sponsored": false,
+        "title": "Steel Folding Chair-Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$20.22"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/406956835274",
+        "thumbnail": "https://i.ebayimg.com/images/g/iPsAAeSwtqBqRHTY/s-l500.webp",
+        "sponsored": false,
+        "title": "Ergonomic Mesh Office Chair with Adjustable Headrest Lumbar Support Desk Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/168717735710",
+        "thumbnail": "https://i.ebayimg.com/images/g/m9YAAeSwXNxqtW8y/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair Black Mesh Desk Computer Chair Adjustable Height Lumbar Support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$36.99",
+          "to": "$39.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/395425039170",
+        "thumbnail": "https://i.ebayimg.com/images/g/NyMAAOSwtFphgNNG/s-l500.webp",
+        "sponsored": false,
+        "title": "High Back Leather Office Chair Executive Office Desk Task Computer Chair",
+        "subtitle": "BLACK LEATHER",
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$85.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/234639938035",
+        "thumbnail": "https://i.ebayimg.com/images/g/FywAAeSwtpFqsIQT/s-l500.webp",
+        "sponsored": false,
+        "title": "ELECWISH Gaming Chair Ergonomic Swivel Recliner Office Seat with Lumbar support",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/358353510816",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ok4AAeSw3mtpvPgG/s-l500.webp",
+        "sponsored": true,
+        "title": "500lbs Ergonomic Chair, with Lumbar Support, Adjustable Height & Recline",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$162.14"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/137770238803",
+        "thumbnail": "https://i.ebayimg.com/images/g/Qu8AAeSwL6Nqspcy/s-l500.webp",
+        "sponsored": true,
+        "title": "Lot of 1000 USA Burgess Vario Allday Flex-Back Aluminum Banquet Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$42,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/134004247228",
+        "thumbnail": "https://i.ebayimg.com/images/g/RoQAAeSw~9Bp9NZr/s-l500.webp",
+        "sponsored": false,
+        "title": "Steelcase Leap V2 Chair -Fully Loaded- Aluminum Edition",
+        "subtitle": "10 Year Warranty with Madison Seating \"Free Return Ship",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$574.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/316261080661",
+        "thumbnail": "https://i.ebayimg.com/images/g/R3kAAeSwHjVqac~V/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Office Chair with Lumbar Support Ergonomic Computer Chair 350LBS",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/317892117764",
+        "thumbnail": "https://i.ebayimg.com/images/g/JRMAAeSwJZxplLvP/s-l500.webp",
+        "sponsored": false,
+        "title": "Ozark Trail Basic Quad Folding Camp Chair with Cup Holder, Dark Blue, Adult",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$7.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/386328756471",
+        "thumbnail": "https://i.ebayimg.com/images/g/7c4AAOSwi4NlTd0h/s-l500.webp",
+        "sponsored": false,
+        "title": "YODOLLA Ergonomic Reclining Office Chair Heat & Massage High Back Desk Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$119.99",
+          "to": "$159.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/318907014262",
+        "thumbnail": "https://i.ebayimg.com/images/g/yEUAAeSwBhxqs3eE/s-l500.webp",
+        "sponsored": false,
+        "title": "New Hydraulic Barber Chair Salon Chair with Footrest Swivel Styling Chair Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/820170954627",
+        "thumbnail": "https://i.ebayimg.com/images/g/c8wAAeSw1lFqtomj/s-l500.webp",
+        "sponsored": false,
+        "title": "Office Chair High Back Computer Desk Chair, PU Leather Adjustable Height",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$83.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/317512461086",
+        "thumbnail": "https://i.ebayimg.com/images/g/IjkAAeSw7dJqnnIy/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclining Office Chair 400lbs Ergonomic PU Leather Computer Desk Chairs White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/800715590902",
+        "thumbnail": "https://i.ebayimg.com/images/g/0TIAAeSw-zpqttjW/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Equa Chair EN500PBF Purple W/ Arm Rests FREE SHIPPING",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$356.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/366361836026",
+        "thumbnail": "https://i.ebayimg.com/images/g/k~oAAeSwC1Zp6GDR/s-l500.webp",
+        "sponsored": false,
+        "title": "Canmov Soft Fabric Manual Recliner Chair with Vibration Massage & Lumbar Heating",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$197.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/357979321915",
+        "thumbnail": "https://i.ebayimg.com/images/g/brQAAeSwC9ppMHwc/s-l500.webp",
+        "sponsored": false,
+        "title": "Ozark Trail Basic Quad Folding Camp Chair with Cup Holder, Black .New",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7.30"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/147472187376",
+        "thumbnail": "https://i.ebayimg.com/images/g/nMYAAeSw1Klqa4DX/s-l500.webp",
+        "sponsored": false,
+        "title": "Dowinx Suede Gaming Chair with Silent Wheels, Lumbar Massage and Footrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.91"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/125295886055",
+        "thumbnail": "https://i.ebayimg.com/images/g/6E4AAeSwR-1qjGdO/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Cosm chair -Canyon Frame -Refurbished- Approved By Madison Seating",
+        "subtitle": "30 Day FREE return - 10 years Wrty - 20 Years in Biz",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/115200354365",
+        "thumbnail": "https://i.ebayimg.com/images/g/UNIAAOSwGkNhcF9S/s-l500.webp",
+        "sponsored": false,
+        "title": "Steelcase Leap V1 Chair, -Open Box- Fully Loaded Black Fabric",
+        "subtitle": "30 Day FREE return & 10 year warranty with our company",
+        "condition": "Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.11"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/168538461037",
+        "thumbnail": "https://i.ebayimg.com/images/g/UaMAAeSwOPZqV~mF/s-l500.webp",
+        "sponsored": false,
+        "title": "Ergonomic Mesh Office Chair High Back Desk Chair, Lumbar Support, Adjustable Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$110.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/389150687753",
+        "thumbnail": "https://i.ebayimg.com/images/g/sJkAAeSw0odo~0MB/s-l500.webp",
+        "sponsored": false,
+        "title": "Computer Desk Chair Ergonomic Office Chair with Wheels Flip-Up Armrests Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407244797953",
+        "thumbnail": "https://i.ebayimg.com/images/g/18sAAeSwfc1qtmqE/s-l500.webp",
+        "sponsored": false,
+        "title": "High Back Gaming Chair with Massage Footrest Big & Tall Ergonomic Desk Office PC",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery Import fees due prior to delivery",
+        "location": "Located in Malta",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$58.49"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/318790940274",
+        "thumbnail": "https://i.ebayimg.com/images/g/y0cAAeSwN55qpLHB/s-l500.webp",
+        "sponsored": false,
+        "title": "400LBS Big and Tall Heavy Duty Ergonomic Reclining Office Chair With Footrest",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/800332455892",
+        "thumbnail": "https://i.ebayimg.com/images/g/faEAAOSw1mllTd0k/s-l500.webp",
+        "sponsored": false,
+        "title": "YODOLLA Ergonomic Reclining Office Chair Heat & Massage High Back Desk Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$119.99",
+          "to": "$149.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/336782877641",
+        "thumbnail": "https://i.ebayimg.com/images/g/tDEAAeSwHO1qnnP8/s-l500.webp",
+        "sponsored": true,
+        "title": "US Woodpecker DTE Dental Ultrasonic Scaler LED N2/N3/V2/V3 For Dental Chair Unit",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$21.96",
+          "to": "$139.70"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/126410109248",
+        "thumbnail": "https://i.ebayimg.com/images/g/kRgAAOSwL8ZmDgvD/s-l500.webp",
+        "sponsored": true,
+        "title": "Replacement Pneumatic Cylinder For Herman Miller Remastered OEM Latest Black Rod",
+        "subtitle": "Heavy Duty Cylinder OEM. Removal Tools Included",
+        "condition": "New – Open box",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$55.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 9930.391
+  }
+}

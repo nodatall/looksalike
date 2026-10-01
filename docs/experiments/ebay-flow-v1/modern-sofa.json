@@ -1,0 +1,2125 @@
+{
+  "case_id": "modern-sofa",
+  "manifest_sha256": "49427cda58d6263a0a2e6d32e6482a3074d65e939d63ddea1eb79d48dcd78ab6",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "green velvet sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 478.821
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 4847.314
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 2484.235
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/S28AAeSw2YpqmWSR/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/389300537759",
+        "thumbnail": "https://i.ebayimg.com/images/g/nk4AAOSwuQhoNA-w/s-l500.webp",
+        "sponsored": true,
+        "title": "3 in 1 Convertible Sleeper Sofa Bed, Velvet Pull Out Futon Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/800643869258",
+        "thumbnail": "https://i.ebayimg.com/images/g/kuMAAeSwFMVqo2f1/s-l500.webp",
+        "sponsored": true,
+        "title": "83\" Wide 3 Seater Sofa, Plush Fabric Overstuffed Couch with 2 Removable Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$246.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/366596554335",
+        "thumbnail": "https://i.ebayimg.com/images/g/wxYAAeSwt99qeZmb/s-l500.webp",
+        "sponsored": true,
+        "title": "Canmov Modular Sectional Couch, Convertible L Shaped Sofa,4 Seat Corduroy Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$495.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/376979008357",
+        "thumbnail": "https://i.ebayimg.com/images/g/aZcAAeSwLedpmLWp/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW 74\" Velvet Sofa Vintage Green, Comfy Padded Modern Living Room Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/376986798116",
+        "thumbnail": "https://i.ebayimg.com/images/g/-rgAAeSwN6dpnLD2/s-l500.webp",
+        "sponsored": false,
+        "title": "59 inch Green Velvet Sofa Couch for Living Room Office, Comfy Spring Seat Settee",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$279.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/407212442851",
+        "thumbnail": "https://i.ebayimg.com/images/g/964AAeSwSyBqpdic/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Style Red Velvet Tufted 3-Seat Sofa w/ Carved Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/147270054656",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$669.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/256137314911",
+        "thumbnail": "https://i.ebayimg.com/images/g/LiQAAOSwVblkrFx2/s-l500.webp",
+        "sponsored": false,
+        "title": "Brand New Emerald Green Couch Velvet Sofa Mid Century Modern Vintage Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/376979009677",
+        "thumbnail": "https://i.ebayimg.com/images/g/xwEAAeSwnPZpmLZ3/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW 74\" Velvet Sofa burnt orange, Comfy Padded Modern Living Room Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/227436871643",
+        "thumbnail": "https://i.ebayimg.com/images/g/KAEAAeSwZlJqWlKo/s-l500.webp",
+        "sponsored": false,
+        "title": "Custom Bellini 2 Seater Olive Green Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,999.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/158273191537",
+        "thumbnail": "https://i.ebayimg.com/images/g/2MsAAeSwB7Rqn869/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Armless Sofa, 29.92\" L x 38.18\" W x 31.10\" H, 1 Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/377283611149",
+        "thumbnail": "https://i.ebayimg.com/images/g/NEUAAeSwWtdqN1LI/s-l500.webp",
+        "sponsored": false,
+        "title": "58\" Sectional Loveseat Sofa Couch Mid Century Modern Small Space Mustard yellow",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/389079580674",
+        "thumbnail": "https://i.ebayimg.com/images/g/N9cAAeSwURJowmoc/s-l500.webp",
+        "sponsored": true,
+        "title": "55'' Convertible Futon Sofa Bed Loveseat Sleeper Sofa Couch w/Pull-Out Sofa Bed",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/389801461003",
+        "thumbnail": "https://i.ebayimg.com/images/g/29UAAeSw1VJqn77U/s-l500.webp",
+        "sponsored": true,
+        "title": "EBELLO 80.7\" Black Couch, 3 Seater Sofa with Thick Cushions for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$297.34"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/389075621266",
+        "thumbnail": "https://i.ebayimg.com/images/g/zzsAAOSwGeZn7i9S/s-l500.webp",
+        "sponsored": true,
+        "title": "Convertible Sofa Bed Sleeper Couch Pull Out Bed with Cup Holder & USB Interface",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$259.99",
+          "to": "$269.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/226634023505",
+        "thumbnail": "https://i.ebayimg.com/images/g/E74AAeSwWABnyodW/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern / Contemporary Velvet Convertible Sofa in Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$316.04"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/377297203216",
+        "thumbnail": "https://i.ebayimg.com/images/g/OfYAAeSwwfFqPmjC/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Style Velvet Loveseat Sofa Couch Wingback 2-Seater Couch Emerald Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$499.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/397005197597",
+        "thumbnail": "https://i.ebayimg.com/images/g/wHgAAOSwOmFoUnNH/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet Tufted Sofa Loveseat Upholstered Small Couch With Rolled Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$474.99",
+          "to": "$589.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/820138296007",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$549.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/128065729018",
+        "thumbnail": "https://i.ebayimg.com/images/g/71oAAeSwt3xqnaFO/s-l500.webp",
+        "sponsored": false,
+        "title": "U_Style Luxury living room double-needle cut velvet sofa,4-seater w/pure sponge",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$901.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/800567691210",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bt4AAeSwvFJqj0gy/s-l500.webp",
+        "sponsored": false,
+        "title": "Purple Velvet Tufted Convertible Sleeper Sofa, 3-Seat Track Arms Gold Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/236858894928",
+        "thumbnail": "https://i.ebayimg.com/images/g/ASwAAeSw2r9qIkcX/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Chesterfield Sofa, 82.5\" Tufted, 3-Seat with Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$522.21"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/147563344182",
+        "thumbnail": "https://i.ebayimg.com/images/g/lroAAeSwAkNqogxl/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Velvet 3-Seater Sofa Upholstered Couch With Channel Tufted Back Gold Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$689.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/377297257718",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhUAAeSwlmBqPmvF/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Style Velvet Loveseat Sofa Handcraft Wingback 2-Seater Couch Plum Purple",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$499.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/398403948251",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$649.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/147558784696",
+        "thumbnail": "https://i.ebayimg.com/images/g/q-AAAeSw-C9qn6l~/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet 3-Seater Sofa Channel Tufted Couch With Gold Trim Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$699.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/398414132574",
+        "thumbnail": "https://i.ebayimg.com/images/g/~W0AAeSw-TFqsAYL/s-l500.webp",
+        "sponsored": false,
+        "title": "ANPOO 81.3\" Boneless Loveseat Sofa Cloud Couch with Deep Seat, Modern Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/800544183435",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZLIAAeSwKVxqiAba/s-l500.webp",
+        "sponsored": true,
+        "title": "EBELLO Modular Sectional Sofa,Comfy Chenille Cloud Couch with 2 Storage Ottomans",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$689.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/389829875148",
+        "thumbnail": "https://i.ebayimg.com/images/g/16kAAeSwi5hpzMBj/s-l500.webp",
+        "sponsored": true,
+        "title": "EBELLO 57.1\" Chenille Loveseat Sofa, Modern Comfy 2-Seater Couch for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$242.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/407223770920",
+        "thumbnail": "https://i.ebayimg.com/images/g/AOQAAeSwmo9qTMVR/s-l500.webp",
+        "sponsored": true,
+        "title": "Loveseat Comfy 2 Seats Sofa With Soft Cushion Home Sofa Couch Clearance",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/389106567501",
+        "thumbnail": "https://i.ebayimg.com/images/g/-tkAAOSwPXZn7LNG/s-l500.webp",
+        "sponsored": true,
+        "title": "3 in 1 Convertible Sleeper Sofa Chair Bed Modern Velvet Pull Out Sofa Bed",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$199.99",
+          "to": "$209.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/820141001215",
+        "thumbnail": "https://i.ebayimg.com/images/g/hywAAeSwzkdqrMx9/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Velvet Chesterfield Sofa Tufted Button Rolled Arms 3 Seat Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$175.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/800678107610",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$649.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/397373389669",
+        "thumbnail": "https://i.ebayimg.com/images/g/dXUAAeSwsYppN-0A/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet Sofa Button Tufted Couch With Scroll Arms Gold Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$474.99",
+          "to": "$529.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/407219746957",
+        "thumbnail": "https://i.ebayimg.com/images/g/DZ8AAeSwahRqqeG-/s-l500.webp",
+        "sponsored": false,
+        "title": "Extra Wide 75\" - 100\", Reclining 2 Seater Sofa, Extra Wide Reclining Love Seat S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$88.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/147548863573",
+        "thumbnail": "https://i.ebayimg.com/images/g/XdsAAeSwau1qmmL9/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet 3-Seater Sofa Button Tufted Couch With Gold Trim Rolled Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$699.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/366297126035",
+        "thumbnail": "https://i.ebayimg.com/images/g/UXoAAeSwiYFpwOnN/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Velvet Loveseat Sofa Couch with Tray and Ergonomic Armrest for Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$149.99",
+          "to": "$165.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/287555306785",
+        "thumbnail": "https://i.ebayimg.com/images/g/8jYAAeSwXeFqmi1c/s-l500.webp",
+        "sponsored": true,
+        "title": "Modular 7‑Seat U‑Sofa‑Pull‑Out Bed, Velvet Upholstery, Ottoman, Charging & Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$812.71",
+          "to": "$813.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/147501544240",
+        "thumbnail": "https://i.ebayimg.com/images/g/r-0AAeSwMcpqfSQD/s-l500.webp",
+        "sponsored": true,
+        "title": "Chesterfield Faux Leather Sofa Handmade Button Tuft Modular Couch With Metal Leg",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$109.99",
+          "to": "$769.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/206180381707",
+        "thumbnail": "https://i.ebayimg.com/images/g/bKAAAeSw~rFpy~IO/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Velvet Loveseat Cream White, Small Sofa for Living Room Bedroom",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$347.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/128084252755",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$549.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/168634947388",
+        "thumbnail": "https://i.ebayimg.com/images/g/R-UAAeSwsFZqYb6O/s-l500.webp",
+        "sponsored": false,
+        "title": "57.9\" Velvet Loveseat Sofa Upholstered 2 Seater Couch Side Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$206.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/287488621479",
+        "thumbnail": "https://i.ebayimg.com/images/g/FOkAAeSwuZlqaBXQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Upholstered Modern Sofa Couch with Gold-tone Metal Arms and Legs for Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$198.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/366109640080",
+        "thumbnail": "https://i.ebayimg.com/images/g/CUYAAeSwNvdpX17S/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Velvet Chaise Lounge Chair Button Tufted Sofa Couch Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$209.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/168187861932",
+        "thumbnail": "https://i.ebayimg.com/images/g/-aEAAeSwmsdpn7Ok/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Contemporary Sofa with Gold Base, Removable Cushions, Seats 3",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/376986711027",
+        "thumbnail": "https://i.ebayimg.com/images/g/i7gAAeSwBWNpnKiv/s-l500.webp",
+        "sponsored": false,
+        "title": "59\" Mid-Century Modern Velvet Loveseat, Small Space Sofa w Solid Wood Legs Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/236186788345",
+        "thumbnail": "https://i.ebayimg.com/images/g/yzQAAeSwTmRobzRp/s-l500.webp",
+        "sponsored": false,
+        "title": "Oversized Chaise Lounge Sleeper Sofa Faux Fur Sofa Chair with 2 Lumbar Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$259.99",
+          "to": "$269.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/147232951446",
+        "thumbnail": "https://i.ebayimg.com/images/g/TV4AAeSwGnFpy43h/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch Fr Living Room Apartment",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$549.99",
+          "to": "$599.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/820127605204",
+        "thumbnail": "https://i.ebayimg.com/images/g/Yn8AAeSwFXJqqHHZ/s-l500.webp",
+        "sponsored": false,
+        "title": "3&1 Convertible Sleeper Sofa Bed Velvet Pull Out Couch Adjustable Loveseat 55\"",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$295.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/147187715099",
+        "thumbnail": "https://i.ebayimg.com/images/g/9AAAAeSwpZhpqk2D/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Seaters Velvet Sofa Button Tufted Couch With Rolled Arms Solid Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$489.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/137743150331",
+        "thumbnail": "https://i.ebayimg.com/images/g/KukAAeSw21dqqmdV/s-l500.webp",
+        "sponsored": false,
+        "title": "Extra Wide 75\" - 100\", Reclining 2 Seater Sofa, Extra Wide Reclining Love Seat S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$102.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/237056894266",
+        "thumbnail": "https://i.ebayimg.com/images/g/uVIAAeSwS0Rqn6w6/s-l500.webp",
+        "sponsored": false,
+        "title": "55\" Modern Velvet Sleeper Sofa Black 3-in-1 Pull-Out Loveseat Storage Apartment",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$218.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/377504456918",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$649.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/198399516389",
+        "thumbnail": "https://i.ebayimg.com/images/g/e5kAAeSw3ZZqIESz/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Velvet Tufted Sofa w/ Nailhead Trim Rolled Arms 68\"W Contemporary",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/318449296985",
+        "thumbnail": "https://i.ebayimg.com/images/g/nJgAAeSwQjhqLSJg/s-l500.webp",
+        "sponsored": false,
+        "title": "Mini Small Comfy Couch Armless Loveseat Sofa with USB Port Velvet Couches, Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$127.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/147060602958",
+        "thumbnail": "https://i.ebayimg.com/images/g/8lkAAeSwycRpUkgn/s-l500.webp",
+        "sponsored": false,
+        "title": "Stylish Mid Century Green Velvet Loveseat Sofa for Small Spaces",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$361.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/285676809284",
+        "thumbnail": "https://i.ebayimg.com/images/g/KFAAAeSwIAVopnYV/s-l500.webp",
+        "sponsored": false,
+        "title": "56.6 in W Modern Loveseat 2 Seater Sofa Luxurious Velvet Fabric Small Couch Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$139.99",
+          "to": "$142.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/388471267323",
+        "thumbnail": "https://i.ebayimg.com/images/g/WboAAOSwoI1oNBfZ/s-l500.webp",
+        "sponsored": true,
+        "title": "Sofa Bed Couch Sleeper Convertible Pull-Out Bed Couch With Side Pockets",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/389124526787",
+        "thumbnail": "https://i.ebayimg.com/images/g/TL0AAOSwTFNoLpT7/s-l500.webp",
+        "sponsored": true,
+        "title": "Modern Convertible Comfy Velvet Sleeper Sofa 3-in-1 Pull Out Bed Folding Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/S28AAeSw2YpqmWSR/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/389300537759",
+        "thumbnail": "https://i.ebayimg.com/images/g/nk4AAOSwuQhoNA-w/s-l500.webp",
+        "sponsored": true,
+        "title": "3 in 1 Convertible Sleeper Sofa Bed, Velvet Pull Out Futon Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/800643869258",
+        "thumbnail": "https://i.ebayimg.com/images/g/kuMAAeSwFMVqo2f1/s-l500.webp",
+        "sponsored": true,
+        "title": "83\" Wide 3 Seater Sofa, Plush Fabric Overstuffed Couch with 2 Removable Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$246.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/366596554335",
+        "thumbnail": "https://i.ebayimg.com/images/g/wxYAAeSwt99qeZmb/s-l500.webp",
+        "sponsored": true,
+        "title": "Canmov Modular Sectional Couch, Convertible L Shaped Sofa,4 Seat Corduroy Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$495.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/376979008357",
+        "thumbnail": "https://i.ebayimg.com/images/g/aZcAAeSwLedpmLWp/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW 74\" Velvet Sofa Vintage Green, Comfy Padded Modern Living Room Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/376986798116",
+        "thumbnail": "https://i.ebayimg.com/images/g/-rgAAeSwN6dpnLD2/s-l500.webp",
+        "sponsored": false,
+        "title": "59 inch Green Velvet Sofa Couch for Living Room Office, Comfy Spring Seat Settee",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$279.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6ab01acb73d175cd09958165",
+        "status": "Success",
+        "created_at": "2026-09-20 17:41:31 UTC",
+        "processed_at": "2026-09-20 17:41:31 UTC",
+        "total_time_taken": 4.54
+      },
+      "ebay": {
+        "id": "6ab01ad0d3c5126fc727d739",
+        "status": "Success",
+        "created_at": "2026-09-20 17:41:36 UTC",
+        "processed_at": "2026-09-20 17:41:36 UTC",
+        "total_time_taken": 2.14
+      }
+    },
+    "interpretation": "green velvet sofa",
+    "query_source": "visual_match_titles",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "west elm - Hyde Park",
+        "Sofas Available at Rufeners Furniture in Rittman, OH",
+        "MODWAY Valour 73 in. Green Velvet 3-Seater Tuxedo Sofa with ...",
+        "Amazon.com: OVVGVV Framed Banksy Wall Decor, Love Over Money ...",
+        "Five Things to Know About the Co-CEO Model - Steyer Associates",
+        "US Pride Furniture Civa 69.6 in. Green Velvet 3-Seater Sofa ...",
+        "Amazon.com: Modway EEI-3764-GRN Valour Performance Velvet ...",
+        "How to Give Your Home Furniture a Makeover - Smithe Blog ..."
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "green velvet sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 60
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/S28AAeSw2YpqmWSR/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/389300537759",
+        "thumbnail": "https://i.ebayimg.com/images/g/nk4AAOSwuQhoNA-w/s-l500.webp",
+        "sponsored": true,
+        "title": "3 in 1 Convertible Sleeper Sofa Bed, Velvet Pull Out Futon Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/800643869258",
+        "thumbnail": "https://i.ebayimg.com/images/g/kuMAAeSwFMVqo2f1/s-l500.webp",
+        "sponsored": true,
+        "title": "83\" Wide 3 Seater Sofa, Plush Fabric Overstuffed Couch with 2 Removable Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$246.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/366596554335",
+        "thumbnail": "https://i.ebayimg.com/images/g/wxYAAeSwt99qeZmb/s-l500.webp",
+        "sponsored": true,
+        "title": "Canmov Modular Sectional Couch, Convertible L Shaped Sofa,4 Seat Corduroy Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$495.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/376979008357",
+        "thumbnail": "https://i.ebayimg.com/images/g/aZcAAeSwLedpmLWp/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW 74\" Velvet Sofa Vintage Green, Comfy Padded Modern Living Room Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/376986798116",
+        "thumbnail": "https://i.ebayimg.com/images/g/-rgAAeSwN6dpnLD2/s-l500.webp",
+        "sponsored": false,
+        "title": "59 inch Green Velvet Sofa Couch for Living Room Office, Comfy Spring Seat Settee",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$279.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/407212442851",
+        "thumbnail": "https://i.ebayimg.com/images/g/964AAeSwSyBqpdic/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Style Red Velvet Tufted 3-Seat Sofa w/ Carved Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/147270054656",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$669.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/256137314911",
+        "thumbnail": "https://i.ebayimg.com/images/g/LiQAAOSwVblkrFx2/s-l500.webp",
+        "sponsored": false,
+        "title": "Brand New Emerald Green Couch Velvet Sofa Mid Century Modern Vintage Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/376979009677",
+        "thumbnail": "https://i.ebayimg.com/images/g/xwEAAeSwnPZpmLZ3/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW 74\" Velvet Sofa burnt orange, Comfy Padded Modern Living Room Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/227436871643",
+        "thumbnail": "https://i.ebayimg.com/images/g/KAEAAeSwZlJqWlKo/s-l500.webp",
+        "sponsored": false,
+        "title": "Custom Bellini 2 Seater Olive Green Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,999.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/158273191537",
+        "thumbnail": "https://i.ebayimg.com/images/g/2MsAAeSwB7Rqn869/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Armless Sofa, 29.92\" L x 38.18\" W x 31.10\" H, 1 Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/377283611149",
+        "thumbnail": "https://i.ebayimg.com/images/g/NEUAAeSwWtdqN1LI/s-l500.webp",
+        "sponsored": false,
+        "title": "58\" Sectional Loveseat Sofa Couch Mid Century Modern Small Space Mustard yellow",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/389079580674",
+        "thumbnail": "https://i.ebayimg.com/images/g/N9cAAeSwURJowmoc/s-l500.webp",
+        "sponsored": true,
+        "title": "55'' Convertible Futon Sofa Bed Loveseat Sleeper Sofa Couch w/Pull-Out Sofa Bed",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/389801461003",
+        "thumbnail": "https://i.ebayimg.com/images/g/29UAAeSw1VJqn77U/s-l500.webp",
+        "sponsored": true,
+        "title": "EBELLO 80.7\" Black Couch, 3 Seater Sofa with Thick Cushions for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$297.34"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/389075621266",
+        "thumbnail": "https://i.ebayimg.com/images/g/zzsAAOSwGeZn7i9S/s-l500.webp",
+        "sponsored": true,
+        "title": "Convertible Sofa Bed Sleeper Couch Pull Out Bed with Cup Holder & USB Interface",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$259.99",
+          "to": "$269.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/226634023505",
+        "thumbnail": "https://i.ebayimg.com/images/g/E74AAeSwWABnyodW/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern / Contemporary Velvet Convertible Sofa in Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$316.04"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/377297203216",
+        "thumbnail": "https://i.ebayimg.com/images/g/OfYAAeSwwfFqPmjC/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Style Velvet Loveseat Sofa Couch Wingback 2-Seater Couch Emerald Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$499.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/397005197597",
+        "thumbnail": "https://i.ebayimg.com/images/g/wHgAAOSwOmFoUnNH/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet Tufted Sofa Loveseat Upholstered Small Couch With Rolled Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$474.99",
+          "to": "$589.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/820138296007",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$549.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/128065729018",
+        "thumbnail": "https://i.ebayimg.com/images/g/71oAAeSwt3xqnaFO/s-l500.webp",
+        "sponsored": false,
+        "title": "U_Style Luxury living room double-needle cut velvet sofa,4-seater w/pure sponge",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$901.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/800567691210",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bt4AAeSwvFJqj0gy/s-l500.webp",
+        "sponsored": false,
+        "title": "Purple Velvet Tufted Convertible Sleeper Sofa, 3-Seat Track Arms Gold Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/236858894928",
+        "thumbnail": "https://i.ebayimg.com/images/g/ASwAAeSw2r9qIkcX/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Chesterfield Sofa, 82.5\" Tufted, 3-Seat with Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$522.21"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/147563344182",
+        "thumbnail": "https://i.ebayimg.com/images/g/lroAAeSwAkNqogxl/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Velvet 3-Seater Sofa Upholstered Couch With Channel Tufted Back Gold Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$689.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/377297257718",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhUAAeSwlmBqPmvF/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Style Velvet Loveseat Sofa Handcraft Wingback 2-Seater Couch Plum Purple",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$499.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/398403948251",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$649.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/147558784696",
+        "thumbnail": "https://i.ebayimg.com/images/g/q-AAAeSw-C9qn6l~/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet 3-Seater Sofa Channel Tufted Couch With Gold Trim Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$699.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/398414132574",
+        "thumbnail": "https://i.ebayimg.com/images/g/~W0AAeSw-TFqsAYL/s-l500.webp",
+        "sponsored": false,
+        "title": "ANPOO 81.3\" Boneless Loveseat Sofa Cloud Couch with Deep Seat, Modern Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/800544183435",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZLIAAeSwKVxqiAba/s-l500.webp",
+        "sponsored": true,
+        "title": "EBELLO Modular Sectional Sofa,Comfy Chenille Cloud Couch with 2 Storage Ottomans",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$689.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/389829875148",
+        "thumbnail": "https://i.ebayimg.com/images/g/16kAAeSwi5hpzMBj/s-l500.webp",
+        "sponsored": true,
+        "title": "EBELLO 57.1\" Chenille Loveseat Sofa, Modern Comfy 2-Seater Couch for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$242.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/407223770920",
+        "thumbnail": "https://i.ebayimg.com/images/g/AOQAAeSwmo9qTMVR/s-l500.webp",
+        "sponsored": true,
+        "title": "Loveseat Comfy 2 Seats Sofa With Soft Cushion Home Sofa Couch Clearance",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/389106567501",
+        "thumbnail": "https://i.ebayimg.com/images/g/-tkAAOSwPXZn7LNG/s-l500.webp",
+        "sponsored": true,
+        "title": "3 in 1 Convertible Sleeper Sofa Chair Bed Modern Velvet Pull Out Sofa Bed",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$199.99",
+          "to": "$209.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/820141001215",
+        "thumbnail": "https://i.ebayimg.com/images/g/hywAAeSwzkdqrMx9/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Velvet Chesterfield Sofa Tufted Button Rolled Arms 3 Seat Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$175.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/800678107610",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$649.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/397373389669",
+        "thumbnail": "https://i.ebayimg.com/images/g/dXUAAeSwsYppN-0A/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet Sofa Button Tufted Couch With Scroll Arms Gold Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$474.99",
+          "to": "$529.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/407219746957",
+        "thumbnail": "https://i.ebayimg.com/images/g/DZ8AAeSwahRqqeG-/s-l500.webp",
+        "sponsored": false,
+        "title": "Extra Wide 75\" - 100\", Reclining 2 Seater Sofa, Extra Wide Reclining Love Seat S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$88.09"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/147548863573",
+        "thumbnail": "https://i.ebayimg.com/images/g/XdsAAeSwau1qmmL9/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Velvet 3-Seater Sofa Button Tufted Couch With Gold Trim Rolled Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$699.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/366297126035",
+        "thumbnail": "https://i.ebayimg.com/images/g/UXoAAeSwiYFpwOnN/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Velvet Loveseat Sofa Couch with Tray and Ergonomic Armrest for Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$149.99",
+          "to": "$165.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/287555306785",
+        "thumbnail": "https://i.ebayimg.com/images/g/8jYAAeSwXeFqmi1c/s-l500.webp",
+        "sponsored": true,
+        "title": "Modular 7‑Seat U‑Sofa‑Pull‑Out Bed, Velvet Upholstery, Ottoman, Charging & Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$812.71",
+          "to": "$813.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/147501544240",
+        "thumbnail": "https://i.ebayimg.com/images/g/r-0AAeSwMcpqfSQD/s-l500.webp",
+        "sponsored": true,
+        "title": "Chesterfield Faux Leather Sofa Handmade Button Tuft Modular Couch With Metal Leg",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$109.99",
+          "to": "$769.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/206180381707",
+        "thumbnail": "https://i.ebayimg.com/images/g/bKAAAeSw~rFpy~IO/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Velvet Loveseat Cream White, Small Sofa for Living Room Bedroom",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$347.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/128084252755",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$549.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/168634947388",
+        "thumbnail": "https://i.ebayimg.com/images/g/R-UAAeSwsFZqYb6O/s-l500.webp",
+        "sponsored": false,
+        "title": "57.9\" Velvet Loveseat Sofa Upholstered 2 Seater Couch Side Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$206.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/287488621479",
+        "thumbnail": "https://i.ebayimg.com/images/g/FOkAAeSwuZlqaBXQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Upholstered Modern Sofa Couch with Gold-tone Metal Arms and Legs for Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$198.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/366109640080",
+        "thumbnail": "https://i.ebayimg.com/images/g/CUYAAeSwNvdpX17S/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Velvet Chaise Lounge Chair Button Tufted Sofa Couch Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$209.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/168187861932",
+        "thumbnail": "https://i.ebayimg.com/images/g/-aEAAeSwmsdpn7Ok/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Contemporary Sofa with Gold Base, Removable Cushions, Seats 3",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/376986711027",
+        "thumbnail": "https://i.ebayimg.com/images/g/i7gAAeSwBWNpnKiv/s-l500.webp",
+        "sponsored": false,
+        "title": "59\" Mid-Century Modern Velvet Loveseat, Small Space Sofa w Solid Wood Legs Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/236186788345",
+        "thumbnail": "https://i.ebayimg.com/images/g/yzQAAeSwTmRobzRp/s-l500.webp",
+        "sponsored": false,
+        "title": "Oversized Chaise Lounge Sleeper Sofa Faux Fur Sofa Chair with 2 Lumbar Pillows",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$259.99",
+          "to": "$269.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/147232951446",
+        "thumbnail": "https://i.ebayimg.com/images/g/TV4AAeSwGnFpy43h/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch Fr Living Room Apartment",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$549.99",
+          "to": "$599.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/820127605204",
+        "thumbnail": "https://i.ebayimg.com/images/g/Yn8AAeSwFXJqqHHZ/s-l500.webp",
+        "sponsored": false,
+        "title": "3&1 Convertible Sleeper Sofa Bed Velvet Pull Out Couch Adjustable Loveseat 55\"",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$295.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/147187715099",
+        "thumbnail": "https://i.ebayimg.com/images/g/9AAAAeSwpZhpqk2D/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Seaters Velvet Sofa Button Tufted Couch With Rolled Arms Solid Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$489.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/137743150331",
+        "thumbnail": "https://i.ebayimg.com/images/g/KukAAeSw21dqqmdV/s-l500.webp",
+        "sponsored": false,
+        "title": "Extra Wide 75\" - 100\", Reclining 2 Seater Sofa, Extra Wide Reclining Love Seat S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$102.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/237056894266",
+        "thumbnail": "https://i.ebayimg.com/images/g/uVIAAeSwS0Rqn6w6/s-l500.webp",
+        "sponsored": false,
+        "title": "55\" Modern Velvet Sleeper Sofa Black 3-in-1 Pull-Out Loveseat Storage Apartment",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$218.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/377504456918",
+        "thumbnail": "https://i.ebayimg.com/images/g/u2oAAeSwBeNp5yMu/s-l500.webp",
+        "sponsored": false,
+        "title": "Chesterfield Pull Out Convertible Sofa Bed Velvet Couch w/ Ottoman Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$649.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/198399516389",
+        "thumbnail": "https://i.ebayimg.com/images/g/e5kAAeSw3ZZqIESz/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Velvet Tufted Sofa w/ Nailhead Trim Rolled Arms 68\"W Contemporary",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/318449296985",
+        "thumbnail": "https://i.ebayimg.com/images/g/nJgAAeSwQjhqLSJg/s-l500.webp",
+        "sponsored": false,
+        "title": "Mini Small Comfy Couch Armless Loveseat Sofa with USB Port Velvet Couches, Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$127.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/147060602958",
+        "thumbnail": "https://i.ebayimg.com/images/g/8lkAAeSwycRpUkgn/s-l500.webp",
+        "sponsored": false,
+        "title": "Stylish Mid Century Green Velvet Loveseat Sofa for Small Spaces",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$361.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/285676809284",
+        "thumbnail": "https://i.ebayimg.com/images/g/KFAAAeSwIAVopnYV/s-l500.webp",
+        "sponsored": false,
+        "title": "56.6 in W Modern Loveseat 2 Seater Sofa Luxurious Velvet Fabric Small Couch Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$139.99",
+          "to": "$142.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/388471267323",
+        "thumbnail": "https://i.ebayimg.com/images/g/WboAAOSwoI1oNBfZ/s-l500.webp",
+        "sponsored": true,
+        "title": "Sofa Bed Couch Sleeper Convertible Pull-Out Bed Couch With Side Pockets",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/389124526787",
+        "thumbnail": "https://i.ebayimg.com/images/g/TL0AAOSwTFNoLpT7/s-l500.webp",
+        "sponsored": true,
+        "title": "Modern Convertible Comfy Velvet Sleeper Sofa 3-in-1 Pull Out Bed Folding Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 7844.27
+  }
+}

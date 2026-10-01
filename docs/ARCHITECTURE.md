@@ -2,57 +2,90 @@
 
 ## Purpose
 
-This is the proposed greenfield boundary contract for LooksAlike's Rails demonstration. The app is not implemented yet. Read this before adding routes, search policy, provider integration, or persistence; update it with the proven search route after the feasibility experiment.
+LooksAlike turns one furniture photo into up to six US-located eBay listings. This document records the implemented server, browser and container boundaries; [hosted deployment evidence](deployment.md) records the Railway checks and real public-photo search.
 
-## Current System Shape
+## Current system shape
 
-The current files contain planning documents and a standalone React/Material UI mockup. Intended runtime: one Rails web service on Railway, with an ERB page shell, a React/Material UI search screen, and SQLite under the mounted `/app/storage` directory. Build browser assets with esbuild through `jsbundling-rails`. Puma runs directly behind Railway HTTPS, with one worker and at least three threads; Thruster is omitted. The app handles one live furniture search at a time and returns up to six normalized listings from one US Craigslist area selected by ZIP code. No separate frontend, worker, or object-storage service is planned.
+Rails 8.1 on Ruby 3.4 serves an ERB shell and one bundled React/Material UI root. `POST /searches` runs the eBay flow and streams real progress. `SearchApp` reduces uploads, consumes that NDJSON contract, shows loading stages/eBay cards and restores valid current-tab results. `/up` remains a cheap health check. The standalone mockup imports shared app components; the app never imports `tasks/`.
 
-## Module Map
+The server validates the reduced JPEG, checks the cache, reserves allowance and the single live-search lease, uploads to SerpApi, searches Google Lens, asks Venice only when Lens lacks concrete details, searches eBay and filters listings. This flow has no ZIP, description field, arbitrary URL fetch, job queue or object storage. Live calls default to disabled; both provider keys and valid limits are required.
 
-| Path / entrypoint | Responsibility | May depend on | Must not own |
-| --- | --- | --- | --- |
-| `app/controllers/searches_controller.rb` / create | Validate request, call search flow, map outcomes to HTTP/UI | Rails, search flow | Provider parsing, ranking, quota policy |
-| `app/services/furniture_search.rb` / call | Coordinate upload, queries, normalization, timing, cache, reservations | Injected provider client and store; query/normalizer policy | HTML, browser state, arbitrary URL fetching |
-| `app/services/serp_api/client.rb` / upload, lens, images | Fixed SerpApi endpoints, credentials, remaining-deadline timeouts, retries disabled, provider errors | HTTP library and server configuration | Rails views, ranking, persistence policy |
-| `app/models/location_resolver.rb` and bundled location data / resolve | Validate ZIP, resolve representative coordinates, select one approved Craigslist area and canonical Images origin | Plain Ruby, versioned postal data, approved regional centers and overrides | Runtime geocoding calls, user-provided hostnames, listing-distance claims |
-| `app/models/search_query.rb` and `listing_normalizer.rb` / call | Small plain-Ruby query extraction, URL filtering, deduplication, ranking | Standard Ruby/data inputs | Network, credentials, ActiveRecord, UI |
-| `app/models/search_cache_entry.rb`, `usage_reservation.rb` / store operations | Persist normalized responses, expiry, reservations, and one global live-search lease | ActiveRecord/SQLite, clock | Provider calls inside DB transactions, uploaded image bytes |
-| `app/views/searches/`, `app/javascript/search/`, `app/javascript/search/theme.js` | ERB shell, React upload/ZIP/preview flow, Material UI theme and result presentation | React, Material UI/Emotion, public response contract, same-origin Rails requests | API keys, raw provider payloads, authority over validation or quotas |
-| `test/` and `docs/experiments/` | Offline contracts and bounded manual live evidence | Public component entrypoints, sanitized fixtures | Automatic billable traffic in normal CI |
+## Module map
 
-These are intended locations, not claims that these files exist. Keep orchestration in one meaningful flow rather than splitting each step into a pass-through service.
+| Module | Owns | Does not own |
+| --- | --- | --- |
+| `SearchesController` | CSRF, request-thread visitor identity, multipart input, NDJSON stream, disconnect cleanup | Query or quota policy |
+| `EbaySearch` | Sequential flow, shared deadline, real stages, sanitized response | HTTP implementation, database policy or browser state |
+| `PhotoValidator`, `SearchDeadline` | Bounded image decoding, upload cleanup, monotonic time budget | Search policy or credentials |
+| `SerpApi::Client`, `Vision::Client` and transports | Fixed endpoints, credentials, response bounds, no retries, safe errors | Persistence or presentation |
+| `SearchQuery`, `PhotoQuery`, `EbayQueryPreparation` | Lens phrase, fallback trigger and strict photo-description validation | Upload/eBay traffic or quotas |
+| `EbayListingNormalizer`, `EbayListingFilter` | URL/US eligibility, duplicates, complete-item checks, first-six provider order | Network access or visual ranking |
+| `SearchSettings`, `SearchStore` | Validated ceilings, versioned cache, allowance reservations and lease ownership | HTTP or stored photos |
+| `ProductionStorage`, production startup | Actual mount, resolved SQLite path, write access, ownership and preparation before serving | Provider calls or web-process health |
+| `SearchCacheEntry`, `SearchUsageReservation`, `SearchLease` | Concrete SQLite records | Provider calls |
+| `app/javascript/search/` | Photo reduction, NDJSON parsing, loading/results/explanation, versioned session restoration and licensed example-photo selection | Credentials or authority over limits |
+| `FurnitureSearch`, location/Craigslist policies, `Experiment*` | Existing historical workflows and their original interface | The public eBay route |
 
-## Dependency Rules
+## Dependency rules
 
-The controller calls the furniture-search flow. That flow resolves location before image upload or quota reservation, then calls the provider edge, policy objects, and persistence. Location resolution, query extraction, and listing normalization stay plain Ruby. The browser receives normalized outcomes, never provider credentials or raw upload IDs. Provider data is untrusted: validate HTTP(S) schemes, the exact selected and approved Craigslist hostname, and individual-listing paths; escape text when rendering.
+The controller composes the flow with real clients and the concrete store. The flow depends on pure policies and two edges: HTTP and persistence. Policies never connect to the network or start a database transaction. Every store transaction ends before provider traffic.
 
-ZIPs remain five-character strings. Location data uses dated GeoNames postal records and an app-maintained US regional catalog verified against Craigslist's directory, with separately sourced center coordinates and canonical SerpApi origins. Bundle this data on the server, outside browser assets. Explicit overrides take precedence over nearest-center selection; ties use hostname order. This selects an approximate search area, not a listing radius. Unknown or unresolved ZIPs return an error before provider traffic. Cache identity includes ZIP, selected host/origin, and mapping/query versions. Snapshots retain their original ZIP/area and cannot be relabeled for a different input.
+A public upload must be a still JPEG of at most 450 KB with neither edge above 1600 pixels. The server checks this before reserving allowance. Browser preprocessing continues to accept original JPEG, PNG and WebP photos and reduce them to JPEG. Uploaded files are transient request data and close on every exit. Photo bytes, raw responses, credentials and upload references never enter the public explanation or result database. Provider text is bounded and redacted; the browser must render it as text.
 
-The response records ZIP, selected area, route, nullable interpretation, actual parameters, executed stages, timestamps, counts, and attempted searches. Lens-only preserves provider order and does not require an inferred phrase. The two-search route uses the frozen extractor and deterministic keyword ordering. Listing links come from each result's `link`, not image fields. The probe freezes location mapping and five photo/ZIP pairs along with these rules before scoring, and keeps a pre-call attempt ledger independently of production accounting.
+The eBay request fixes `engine=ebay`, `ebay_domain=ebay.com` and `_ipg=25`. It omits postal, pickup and country filters. Cards need an individual-item HTTPS URL on `ebay.com` or `www.ebay.com`, a credential-free HTTPS thumbnail on `i.ebayimg.com`, a title and the exact returned location `Located in United States`. Canonical item IDs identify duplicates. Promoted rows follow identical rules. Only supplied price/range, condition and shipping text survives; missing values stay missing. There is no invented city, delivery coverage or similarity score.
 
-## Composition Roots And Runtime Entrypoints
+Venice uses the fixed `qwen3-vl-235b-a22b` model and versioned strict prompt/schema. It gets at most 15 seconds within the shared deadline, preserving 10 seconds for eBay, and runs at most once. Failed/unclear recognition skips eBay. The title filter checks complete furniture identity; it does not rank visual similarity. The historical Craigslist normalizer's fixed credential-parameter vocabulary is shared by the URL checks without changing historical behavior.
 
-Rails routes expose the home page, search POST, curated example, and health check. `FurnitureSearch` accepts injected provider/store collaborators with production defaults in the Rails wiring. Puma handles requests synchronously under one absolute deadline. CLI evidence recording is manual and separate from CI. Startup verifies the intended writable volume and prepares SQLite after mount; it cannot silently substitute ephemeral storage. The first deployment serves the genuine bundled snapshot with live calls disabled; timing stubs are removed/disabled before public live use.
+## Persistence and concurrency
 
-The page mounts one React root; React owns the interactive screen and lifecycle cleanup for selected images and requests. Submit same-origin requests with Rails CSRF protection. Esbuild bundles React, Material UI, and Emotion during Rails asset preparation; the Railway build includes Node and npm. No client router or frontend server is needed. The standalone mockup build stays under `tasks/mockup/` and does not call the backend.
+Three operational tables use the application's SQLite database. `search_cache_entries` stores sanitized success/empty responses with a unique `fingerprint` and expiry. Identity includes reduced-photo SHA-256, eBay/US rule, normalizer, title filter, Lens query, fallback/phrase policy and Venice model/prompt/schema versions. Success expires after 24 hours; empty results after one hour. Failures are never cached.
 
-React also saves the completed view in browser session storage: normalized results, ZIP/area, original retrieval date and result source, sanitized search details, a small reference thumbnail, and explanation state. Reload restores this view without another search. “Search again” clears it; unavailable or corrupt storage falls back to the upload screen. Original uploaded files and provider IDs are excluded. This client state cannot authorize requests or replace server validation, cache, or quotas. The explanation's diagram and details reflect the recorded route and counts.
+`search_usage_reservations` records two SerpApi search units before any provider traffic. Public ceilings are 10 units per UTC day and 180 per rolling 30 days. Session and IP each allow at most three fresh searches per hour; the database stores keyed digests, never their raw values. Venice gets a separate one-call/three-cent reservation immediately before dispatch, capped at five daily and 90 per rolling 30 days. Failures, lost responses, timeouts and restarts never refund allowance. Configuration can lower these positive ceilings; invalid values fail closed.
 
-## Shared Code Rules
+`search_leases` has one row. A short SQLite write transaction rechecks cache, lease and caps, then grants a random owner token for 75 seconds. SQLite's immediate write transaction serializes competing reservations. Expired leases recover without refunds; old owners cannot release or overwrite a newer lease. Cached responses need neither new allowance nor a lease. No database connection remains held during HTTP work.
 
-Use Rails conventions and small domain names. Introduce a shared helper only for multiple actual consumers. Use Material UI components with one shared theme for colors, typography, and control states; avoid parallel custom input/button implementations. No general integration framework, generic repository abstraction, dependency container, or bespoke component library is needed.
+## Composition roots and runtime entrypoints
 
-## Testing Boundaries
+Rails exposes home, health and the CSRF-protected multipart search POST. Puma caps the complete request body at 600,000 bytes before Rails buffering. `SearchesController` establishes the session visitor identity before ActionController::Live starts its stream thread. The flow is synchronous in the same Rails process, without a job service. A disconnect stops later stages and leaves committed allowance counted. Controller and flow ensure stream/upload cleanup. Each deadline owns one active timer per executing thread, so nested calls cannot raise duplicate timeout exceptions during recovery; shorter independent deadlines retain their own timer.
 
-Test pure location/query/normalizer behavior with small inputs; include leading-zero and unresolved ZIPs, rural and boundary cases, known overrides, state/DC coverage, Alaska/Hawaii, and audited territory coverage. Test the provider boundary with recorded sanitized JSON and HTTP stubs, including actual call count after transport failures and rejection of other regional hosts. Request integration exercises the real flow with a stubbed provider. Persistence tests exercise atomic caps, global lease ownership/expiry, conservative accounting, and cache separation after location changes. Verify two different uploads do not delay the example or health endpoint. Browser verification covers the user journey, ZIP editing, errors, layout, announcements, and fully bundled snapshot imagery with external requests blocked. Live quality/latency tests are manual, budgeted evidence and cannot be replaced by successful fixtures.
+The server budget is at most 55 seconds, including validation and provider calls. Every transport receives the remaining monotonic budget. Progress reports actual started/completed/failed stages; it never estimates percentage or time remaining.
 
-## Architecture Checks
+`Dockerfile` pins Ruby 3.4.10 and Node 22.22.3, installs libvips and precompiles the React/Propshaft assets without provider keys. The runtime starts Puma directly with `workers 0` (one process) and at least three request threads. It has no Thruster, frontend server or worker service. `railway.json` defaults to one service replica and `/up` health checks. A real `SECRET_KEY_BASE` is supplied at runtime. Railway checks confirmed a 34.45-second streamed result, a 55.31-second deadline, responsive health checks and mounted records surviving restart and deployment. See [deployment verification](deployment.md).
 
-Use normal Rails loading checks, tests, RuboCop, Brakeman, the JSX bundle build, and asset compilation. Review that only the provider client makes SerpApi network calls and that policy classes do not acquire IO dependencies. Verify Material UI keyboard focus and error states in the browser. No custom architecture-check framework is planned.
+Production SQLite is pinned by an explicit Rails URL to `/app/storage/production.sqlite3`. `DATABASE_URL` must be absent/empty or exactly `sqlite3:/app/storage/production.sqlite3`; alternative forms, options and external URLs are rejected even when Rails resolves its explicit configuration safely. `ProductionStorage` checks the resolved adapter/path, exact Railway mount environment, canonical directory, actual Linux `/proc/self/mountinfo` entry and real write access. It rejects database/WAL/SHM/journal symlinks. `SearchStore` calls this guard before obtaining its connection pool, so a failed check cannot create an ephemeral SQLite database or reset allowance.
 
-## Accepted Deviations
+The root entrypoint changes ownership only after verifying the actual mount, then uses `gosu` to drop to the `rails` user. The app user validates storage/configuration before `db:prepare`, preserving the seeded lease on repeat startup. Missing/wrong/unusable storage skips preparation, forces live search off and still starts the upload page, example-photo selection and health route. Submitting the example obeys the same disabled-search outcome as an upload. Failed preparation also disables live search. Startup never substitutes another database or creates a Docker volume implicitly. SQLite and its sidecars stay on the attached `/app/storage` volume. `/up` confirms HTTP responsiveness independently of storage/provider readiness.
 
-- September 10, 2026: SQLite for operational cache/quota state avoids another service for a single-instance demo; revisit only if multiple instances or measured lock contention require it.
-- September 10, 2026: synchronous search keeps the app small. Revisit only if the measured route cannot reliably finish within the chosen host/request budget; do not introduce a background queue just to animate stages.
-- Uploaded photos are transient server request data and are never stored in the server database. The browser keeps only a small reference thumbnail for the current tab's reload behavior and clears it with “Search again.” Example fixtures bundle deliberately selected reference/result imagery with provenance and a documented reuse basis. Temporary upload-ID expiry does not prove provider-side deletion.
+`.dockerignore` excludes secrets, databases, Git/private state, tests, tasks/scratch work and historical experiment media from the build context/runtime. The licensed reference image under `app/javascript/search/assets/` is permitted.
+
+Esbuild bundles React, Material UI and Emotion through `jsbundling-rails`. Dependencies/fonts remain local. No frontend server, client router or provider key belongs in browser assets.
+
+## Public response and browser boundary
+
+`POST /searches` accepts multipart `photo` and Rails CSRF. It returns `application/x-ndjson` with `no-store` and streaming headers. Each progress line has `type: stage`, `stage`, `status` and `duration_ms` only after the stage ends. Stage names are `upload`, `lens`, optional `vision`, `ebay` and `filter`. The last line has `type: result` and the `ebay-us-v1` result object.
+
+The result includes `status`, `source` (`live` or `cache`), `marketplace`, `scope`, `retrieved_at`, `query`, `category`, `listings`, `stages`, `query_preparation`, `attempts` and `original_attempts`. Cards contain `id`, `title`, `url`, `thumbnail`, `sponsored`, nullable `price`/`condition`/`shipping` and returned `location`. Price is a supplied `{raw, from, to}` subset; never calculated. Stage details include fixed safe request parameters, response excerpts/counts and measured durations. Lens's phrase remains in its own summary; a Venice phrase belongs to its stage and the final preparation.
+
+A normal fresh search reports `attempts: {uploads: 1, serpapi: 2, vision: 0}`; a fallback adds one vision attempt. Errors report only started attempts. These are attempts, not verified bills. `original_attempts` records the calls behind a saved result. Cache returns the original retrieval time, explanation and durations with zero new attempts. Cache/disabled/busy failures may return only the final line. Skipped Venice appears only in final metadata and never emits a loading event.
+
+Statuses include `success`, `empty`, `disabled`, `busy`, `quota_exceeded`, `visitor_limit`, `vision_limit`, `storage_unavailable`, `configuration_error`, `invalid_photo`, `unclear`, `not_furniture`, `insufficient_time`, `deadline`, `invalid_response` and `provider_unavailable`. Application outcomes use the result status/message; CSRF rejection remains a Rails HTTP error.
+
+The browser uses a 65-second abort and parses bounded NDJSON lines into loading stages and eBay results. Strict session state under `looksalike:ebay-us-v2` accepts only completed live or cache results and restores the current tab after reload without a new search. Invalid state, the old storage key and snapshot results cannot restore in production. The diagram and expandable explanation share the live result metadata. Browser state cannot authorize calls or replace server validation.
+
+Choosing the example prepares the bundled licensed green-sofa reference through the same JPEG preparation as an upload. Find similar items calls the same `submitPhoto` function, streaming actual server progress and preserving normal cache, deadline, cancellation, allowance and error handling. Example and uploaded photos show the same provider/privacy notice. Historical snapshots are not imported by the application entry point.
+
+The standalone mockup alone injects `previewSearch` and enables `preview` on the shared `SearchApp`. Only the explicitly chosen example may return its dated snapshot; other uploads model progress and return a preview-only error. Preview validation may accept `source=snapshot`, saved separately under `looksalike:mockup:ebay-us-v1`. Production protocol validation remains live/cache-only. The historical snapshot and experiment files stay unchanged; remote eBay thumbnails in that preview are unverified and have not been bundled.
+
+## Shared code and testing
+
+Keep concrete Rails/domain names. Do not add a provider framework, repository abstraction, dependency container or component library. Normal tests use explicit offline keys and block live network access. Policy tests use ordinary data; HTTP stubs verify actual parameters, optional-Venice ordering, recognition failures, no retries and sanitization. Real SQLite connections check atomic races, ceilings, expiry/version separation, lease recovery and conservative accounting. Request integration verifies real CSRF and NDJSON outcomes. Browser, hosted and paid quality evidence remain separate.
+
+Run `bin/check` for tests, Rails loading, RuboCop, Biome, Brakeman, audits and the JSX build. Frozen experiment source snapshots are research artifacts excluded from production lint. Preserve historical manifests, source copies, ledger rows and judgments.
+
+## Accepted deviations and historical evidence
+
+- SQLite and one live search keep this demo within one service. Revisit only for multiple instances or measured lock contention.
+- Synchronous calls keep the flow small; streaming reports real stages without a background queue.
+- Upload-reference expiry does not prove provider-side photo deletion.
+
+The historical manual ledger is `storage/feasibility-v1.sqlite3`, independent of Rails connections. Its CLI rejects external `DATABASE_URL` and non-development environments. Craigslist/location policies and earlier eBay manifests remain historical evidence. The current `docs/experiments/ebay-flow-v6/` comparison passed four of five fixed photos under filter v2/prompt v2; that scoring does not replace request, persistence or browser checks.

@@ -1,0 +1,19 @@
+{
+  "reason": "First request returned HTTP 400: Unsupported LH_PrefLoc Domestic. Remove only that optional parameter from the remaining ornate-sofa request.",
+  "manifest_sha256": "7e2a6a643fba9b4362aa6678306f505593b6070925e9204b87130cb29cf867f8",
+  "remaining_request": {
+    "case_id": "ornate-sofa",
+    "parameters": {
+      "engine": "ebay",
+      "_nkw": "antique sofa",
+      "ebay_domain": "ebay.com",
+      "_stpos": "10001",
+      "show_only": "LPickup",
+      "_ipg": "25"
+    }
+  },
+  "probe_sha256": "d5a36fbdd92cd5a065854460c1bb35bf29c80259001c87edaa2d04bfd83f644a",
+  "total_probe_attempt_cap": 2,
+  "combined_cap": 12,
+  "frozen_at": "2026-09-18T22:06:19Z"
+}

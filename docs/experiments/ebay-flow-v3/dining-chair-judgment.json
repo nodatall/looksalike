@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/164883687061",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. Replacement bun feet, not a complete chair."
+    },
+    {
+      "url": "https://www.ebay.com/itm/145232123462",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Wood-frame accent chair with turned bobbin supports; weaker construction/material match. Padded back, arms and white finish differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/307162866469",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Wood dining chairs with turned front legs; similar construction and proportions, with upholstered backs and a different finish."
+    },
+    {
+      "url": "https://www.ebay.com/itm/257592391004",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. Replacement legs, not a complete chair."
+    },
+    {
+      "url": "https://www.ebay.com/itm/206455223674",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Exposed wood-frame chair with turned legs; weaker material/construction match. Upholstered back, cushions and full arms differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/398432810148",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Natural wood dining chair; similar material and basic upright form. Back and legs lack the ladder-back and turned details."
+    }
+  ],
+  "relevant_accessible_count": 4,
+  "scored_at": "2026-09-28T20:29:39Z",
+  "passed": true
+}

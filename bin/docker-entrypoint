@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+cd /app
+
+# Railway mounts volumes as root. Only change ownership of a verified mount.
+if [ "$(id -u)" = "0" ]; then
+  if ruby -r ./lib/production_storage -e 'ProductionStorage.validate_mount!' 2>/dev/null; then
+    if ! chown -hR rails:rails /app/storage; then
+      echo "Storage ownership unavailable; live search disabled." >&2
+      export LIVE_SEARCH_ENABLED=false
+    fi
+  fi
+  exec gosu rails:rails /app/bin/production-start
+fi
+exec /app/bin/production-start

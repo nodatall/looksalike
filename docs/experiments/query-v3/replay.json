@@ -1,0 +1,74 @@
+{
+  "live_calls": 0,
+  "source": "Saved sanitized Lens excerpts; not a fresh quality comparison",
+  "cases": [
+    {
+      "case_id": "ornate-sofa",
+      "source": "docs/experiments/ebay-flow-v1/ornate-sofa.json",
+      "source_sha256": "cd673ecf13b8028b8675771cd81a3127e8977bef860717744eb80d7ba6ee9cda",
+      "old": {
+        "phrase": "antique sofa",
+        "category": "sofa",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v2"
+      },
+      "revised": {
+        "phrase": "antique sofa",
+        "category": "sofa",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v3"
+      }
+    },
+    {
+      "case_id": "modern-sofa",
+      "source": "docs/experiments/ebay-flow-v1/modern-sofa.json",
+      "source_sha256": "47543bc11b81de0ec20096ccf6068b6eef55d7c82aad3e7f1c0d6ca4620ecfdd",
+      "old": {
+        "phrase": "green velvet sofa",
+        "category": "sofa",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v2"
+      },
+      "revised": {
+        "phrase": "green velvet sofa",
+        "category": "sofa",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v3"
+      }
+    },
+    {
+      "case_id": "dining-chair",
+      "source": "docs/experiments/ebay-flow-v1/dining-chair.json",
+      "source_sha256": "471d1c9311ca3df81381c5adf137b444796857bbee8ebdfa6fe8b706db1cc365",
+      "old": {
+        "phrase": "cabinet",
+        "category": "cabinet",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v2"
+      },
+      "revised": {
+        "phrase": "chair",
+        "category": "chair",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v3"
+      }
+    },
+    {
+      "case_id": "wood-table",
+      "source": "docs/experiments/ebay-flow-v1/wood-table.json",
+      "source_sha256": "c1b7eac19c8591e59046b6aa5f335730e174f9db9f25ec410247a7ee9f031c97",
+      "old": {
+        "phrase": "white farmhouse table",
+        "category": "table",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v2"
+      },
+      "revised": {
+        "phrase": "farmhouse coffee table",
+        "category": "coffee table",
+        "source": "visual_match_titles",
+        "version": "furniture-query-v3"
+      }
+    }
+  ]
+}

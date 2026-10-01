@@ -1,18 +1,13 @@
 # Interactive mockup
 
-Edit `main.jsx`, then run:
+The [reviewed preview](../archive/2026-09-30-looksalike-demo/ui-mockup-looksalike-demo.html) is archived with the [completed plan](../archive/2026-09-30-looksalike-demo/execution-plan-looksalike-demo.md). Run `npm --prefix tasks/mockup run build` to create a fresh working preview at `tasks/ui-mockup-looksalike-demo.html`.
 
-```sh
-npm --prefix tasks/mockup ci
-npm --prefix tasks/mockup run build
-```
+The standalone HTML and Rails app share the photo upload, preparation, progress, eBay cards, saved-view validation, and explanation components under `app/javascript/search`. The app never imports from `tasks/`. The mockup injects `previewSearch` and explicitly enables the shared component’s `preview` option. It models progress with timers and makes no provider requests. Only an explicitly chosen example returns historical results; an uploaded image never receives them. The Rails app reads actual NDJSON events from `/searches`: choosing its example fills the photo preview, and submission runs the same search, cache and limits as an upload, with the same provider/privacy notice.
 
-The build writes `tasks/ui-mockup-looksalike-demo.html` as one self-contained file. Open it directly or through a local preview server. React, Material UI, and Emotion are bundled locally; the mockup makes no API, CDN, or font requests.
+The reference is Phillip Goldsberry's [green sofa on Unsplash](https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q), reused under the [Unsplash License](https://unsplash.com/license). The runtime copy is `app/javascript/search/assets/modern-sofa.jpg`, identical to the licensed research reference. Full source, license and hash evidence is in `docs/examples/modern-sofa-2026-09-28.json`. The earlier Pinterest photo is no longer used in this mockup.
 
-It demonstrates the upload, ZIP, preview, loading, and illustrative-results flow. It does not perform a live search or look up ZIP locations.
+The six actual eBay cards and sanitized explanation come from that September 28, 2026 snapshot. Listing availability has not been rechecked. Listing thumbnails load remotely from `i.ebayimg.com` and are not bundled. This preview needs a network connection to display them. React, Material UI, Emotion and the licensed reference are bundled locally; listing thumbnails are the only remote images.
 
-Completed results survive a reload in the same tab using session storage, including the ZIP, reference photo, and whether the walkthrough is open. Uploaded photos use a small local preview for restoration; image bytes are not sent anywhere. “Search again” clears the saved view.
+Production accepts only live/cache completed views under `looksalike:ebay-us-v2`; the old runtime key and snapshot records cannot restore there. This preview explicitly permits historical snapshots and saves them only under `looksalike:mockup:ebay-us-v1`. Completed success/empty views save a validated normalized result, an at-most-160px JPEG reference thumbnail, and explanation open state in this tab's versioned session storage. Reload makes zero upload/search calls. Unfinished work does not resume. Search again clears the saved view and photo. Invalid, legacy or unavailable storage returns a usable upload screen. Original uploaded bytes and provider photo references are never saved.
 
-`SearchWalkthrough.jsx` models one flow for the purple couch in ZIP 94103: upload, Lens, Images, and listing selection. `SearchFlowDiagram.jsx` shows a black-on-white architecture sketch above those details, with the browser, Rails, local ZIP/area files, and three SerpApi calls. The SVG is bundled locally and scrolls horizontally on narrow screens. Visitors do not choose a search approach. The UI uses completed-search wording to preview the finished design. Response excerpts and filtering counts are illustrative, not captured API results. No timings or provider calls are measured by this mockup.
-
-The user selected the example photo from [this Pinterest pin](https://www.pinterest.com/pin/victorian-purple-couch--563018694468707/) for the local mockup. The pin's [image URL](https://i.pinimg.com/736x/74/fd/ab/74fdab9ef5fd818bfdef7b7725248e9f.jpg) is saved as `assets/victorian-purple-couch.jpg` and embedded by esbuild as a data URL in the standalone HTML. Permission for public reuse has not been established.
+Use an approved browser surface for verification. Do not serve a blocked `file://` preview through another URL to bypass a browser denial.

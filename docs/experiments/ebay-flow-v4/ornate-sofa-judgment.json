@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/800178300673",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Close match: exposed carved brown wood frame, curved high back and arms, red floral upholstery. Listing page and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/377479915878",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Plain red straight-backed armless sofa. Lacks the carved frame, curved silhouette and patterned upholstery. Listing page and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/178536059984",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Partial match under the existing material/style criterion: ornate patterned upholstery and dark frame. Boxier straight back and cushion arms differ from the reference; not a close silhouette match. Listing page and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/398254415262",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Partial match under the existing material/style criterion: traditional red/beige damask upholstery and curved profile. Fully upholstered with fringe; no exposed carved frame. Listing page and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366424855907",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Close style/shape match: exposed wood frame, scroll arms and floral damask upholstery. Blue fabric differs from the reference color. Listing page and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/397975991247",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Casual wood/rattan-looking frame with loose green and beige cushions. No carved curved frame or similar ornate upholstery. Listing page and photo opened."
+    }
+  ],
+  "relevant_accessible_count": 4,
+  "scored_at": "2026-09-28T21:04:57Z",
+  "passed": true
+}

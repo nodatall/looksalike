@@ -1,0 +1,2837 @@
+{
+  "case_id": "ornate-sofa",
+  "manifest_sha256": "4f04920037460926e39e319ff7743755d170927945e2dc5e64d26233b3f85d99",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "ornate carved wood red floral upholstery sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 1004.699
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 2749.375
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 4878.969
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 3816.287
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/820148331380",
+        "thumbnail": "https://i.ebayimg.com/images/g/8DIAAeSwVCxqr0L1/s-l500.webp",
+        "sponsored": false,
+        "title": "HandCrafted Antique Looks, Wood Floral RedGold Floral Fabric Sofa, Rolled Arms.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$699.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398431364418",
+        "thumbnail": "https://i.ebayimg.com/images/g/xxQAAeSwo5Fqmvct/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Carved Wood Settee Paisley Upholstery Scroll Arms 72x30x42 2-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/314565171031",
+        "thumbnail": "https://i.ebayimg.com/images/g/UuIAAOSwsM1kUEiN/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Style Sofa/ Hand Carved Aged Wooden Frame/ Stressed Wood Finish /",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/127264249747",
+        "thumbnail": "https://i.ebayimg.com/images/g/wIUAAeSwJtpog7Lx/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Victorian-style couch with a carved wooden frame, floral upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$789.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/198625390979",
+        "thumbnail": "https://i.ebayimg.com/images/g/mOEAAeSwkg5qnu6-/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Sofa 92\" Traditional Damask Upholstery Dark Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$349.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/198625558948",
+        "thumbnail": "https://i.ebayimg.com/images/g/-1AAAeSw4I9qnw5h/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Loveseat 70\" Damask Upholstery Traditional Victorian Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$249.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/281483154974",
+        "thumbnail": "https://i.ebayimg.com/images/g/d~4AAOSwDN1UUrZa/s-l500.webp",
+        "sponsored": false,
+        "title": "Reduced $1000! Antique Carved Wood and red floral parlor sofa and matching roun",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$4,250.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/318681011698",
+        "thumbnail": "https://i.ebayimg.com/images/g/dPkAAeSwBEtqYHuv/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Carved Wood Sofa, Red/Gold Damask 100% Linen Rolled Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/298715620450",
+        "thumbnail": "https://i.ebayimg.com/images/g/y5QAAeSwpFBpyeqY/s-l500.webp",
+        "sponsored": false,
+        "title": "67490 Antique Empire Sofa with Red Velvet Upholstery and Carved Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$775.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/227427378148",
+        "thumbnail": "https://i.ebayimg.com/images/g/AN8AAeSwkAhqUuW7/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Beige Floral Fabric Sofa, Carved Brown Wood Frame, Rolled Arms 3-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/314565171159",
+        "thumbnail": "https://i.ebayimg.com/images/g/-k8AAOSwr9VkUEiY/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Style Sofa/Aged Gold Leaf Hand Carved Wood Frame /Tufted Coral Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/178196472983",
+        "thumbnail": "https://i.ebayimg.com/images/g/c88AAeSwLvNqI2eI/s-l500.webp",
+        "sponsored": true,
+        "title": "Luxury European Chaise Lounge – Ornately Carved Wood Frame & Floral Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,685.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/257517069718",
+        "thumbnail": "https://i.ebayimg.com/images/g/JPYAAeSwHQtquCSf/s-l500.webp",
+        "sponsored": false,
+        "title": "VTG 1946 Louis XV French Revival Ornate Carved Camelback Sofa w/ Cabriole Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,478.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/168660138612",
+        "thumbnail": "https://i.ebayimg.com/images/g/50oAAeSw72hqmSo5/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Traditional Camelback Sofa With Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,295.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/298699464104",
+        "thumbnail": "https://i.ebayimg.com/images/g/qhMAAeSwS0lqHfhN/s-l500.webp",
+        "sponsored": false,
+        "title": "67815 Victorian Style Carved Wood Settee with Caned Back and Red Cushion",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$675.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/156828182502",
+        "thumbnail": "https://i.ebayimg.com/images/g/kIAAAOSw6-tn3D10/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique French Louis XV Rococo Style Ornate Carved Walnut Settee Loveseat Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,200.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/236001880822",
+        "thumbnail": "https://i.ebayimg.com/images/g/TzcAAOSw3M5n0m3l/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Carved Spindle Back Carved Upholstered Settee",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,195.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/236003577889",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EsAAOSw-8ln05wI/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Carved Spindle Back Carved Upholstered Settee",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$895.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/820148331380",
+        "thumbnail": "https://i.ebayimg.com/images/g/8DIAAeSwVCxqr0L1/s-l500.webp",
+        "sponsored": false,
+        "title": "HandCrafted Antique Looks, Wood Floral RedGold Floral Fabric Sofa, Rolled Arms.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$699.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398431364418",
+        "thumbnail": "https://i.ebayimg.com/images/g/xxQAAeSwo5Fqmvct/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Carved Wood Settee Paisley Upholstery Scroll Arms 72x30x42 2-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/314565171031",
+        "thumbnail": "https://i.ebayimg.com/images/g/UuIAAOSwsM1kUEiN/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Style Sofa/ Hand Carved Aged Wooden Frame/ Stressed Wood Finish /",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/127264249747",
+        "thumbnail": "https://i.ebayimg.com/images/g/wIUAAeSwJtpog7Lx/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Victorian-style couch with a carved wooden frame, floral upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$789.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/198625390979",
+        "thumbnail": "https://i.ebayimg.com/images/g/mOEAAeSwkg5qnu6-/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Sofa 92\" Traditional Damask Upholstery Dark Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$349.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/198625558948",
+        "thumbnail": "https://i.ebayimg.com/images/g/-1AAAeSw4I9qnw5h/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Loveseat 70\" Damask Upholstery Traditional Victorian Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$249.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abc463aa204ab4d649f5c03",
+        "status": "Success",
+        "created_at": "2026-09-29 23:14:02 UTC",
+        "processed_at": "2026-09-29 23:14:02 UTC",
+        "total_time_taken": 2.11
+      },
+      "ebay": {
+        "id": "6abc4641fbbeb5dc007cf426",
+        "status": "Success",
+        "created_at": "2026-09-29 23:14:09 UTC",
+        "processed_at": "2026-09-29 23:14:09 UTC",
+        "total_time_taken": 3.2
+      }
+    },
+    "lens_interpretation": "vintage sofa",
+    "query_preparation": {
+      "status": "ready",
+      "category": "sofa",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "sofa",
+        "fallback_reason": "no_concrete_trait",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 38,
+          "total_tokens": 1859
+        },
+        "duration_ms": 4898,
+        "category": "sofa",
+        "traits": [
+          "ornate carved wood",
+          "red floral upholstery"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "ornate carved wood red floral upholstery sofa",
+    "category": "sofa",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Vintage Sofa Photos, Download The BEST Free Vintage Sofa ...",
+        "4,276+以上の無料ウェディングソファー画像",
+        "Designers say this once-old-fashioned couch style is making ...",
+        "Settees and Sofas — Evermore - Classic & Vintage Wedding Rentals",
+        "Premium Royal Carved Wooden Lounge Sofa Set | Crafty Bug",
+        "Victorian Sofa Design",
+        "Rajmahal Sofa | Regal Arts & Export Inspired by timeless ...",
+        "Retro Sofas - Designer Picks | Foter"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "ornate carved wood red floral upholstery sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 70,
+    "counts_before_title_filter": {
+      "accepted": 67,
+      "not_explicit_us": 3
+    },
+    "title_filter_counts": {
+      "different_item": 7,
+      "mixed_categories": 2,
+      "accessory_or_part": 7,
+      "wrong_category": 19,
+      "miniature": 1,
+      "missing_furniture_type": 12,
+      "accepted": 19
+    },
+    "listing_filter_version": "ebay-title-filter-v1",
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/820148331380",
+        "thumbnail": "https://i.ebayimg.com/images/g/8DIAAeSwVCxqr0L1/s-l500.webp",
+        "sponsored": false,
+        "title": "HandCrafted Antique Looks, Wood Floral RedGold Floral Fabric Sofa, Rolled Arms.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$699.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398431364418",
+        "thumbnail": "https://i.ebayimg.com/images/g/xxQAAeSwo5Fqmvct/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Carved Wood Settee Paisley Upholstery Scroll Arms 72x30x42 2-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/314565171031",
+        "thumbnail": "https://i.ebayimg.com/images/g/UuIAAOSwsM1kUEiN/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Style Sofa/ Hand Carved Aged Wooden Frame/ Stressed Wood Finish /",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/407072777892",
+        "thumbnail": "https://i.ebayimg.com/images/g/R~sAAeSw371qVnRo/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Floral Tapestry Upholstered Sofa, Carved Wood Frame, Scroll Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/127264249747",
+        "thumbnail": "https://i.ebayimg.com/images/g/wIUAAeSwJtpog7Lx/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Victorian-style couch with a carved wooden frame, floral upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$789.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/198625390979",
+        "thumbnail": "https://i.ebayimg.com/images/g/mOEAAeSwkg5qnu6-/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Sofa 92\" Traditional Damask Upholstery Dark Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$349.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/198625558948",
+        "thumbnail": "https://i.ebayimg.com/images/g/-1AAAeSw4I9qnw5h/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Loveseat 70\" Damask Upholstery Traditional Victorian Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$249.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/281483154974",
+        "thumbnail": "https://i.ebayimg.com/images/g/d~4AAOSwDN1UUrZa/s-l500.webp",
+        "sponsored": false,
+        "title": "Reduced $1000! Antique Carved Wood and red floral parlor sofa and matching roun",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$4,250.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/318681011698",
+        "thumbnail": "https://i.ebayimg.com/images/g/dPkAAeSwBEtqYHuv/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Carved Wood Sofa, Red/Gold Damask 100% Linen Rolled Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/298715620450",
+        "thumbnail": "https://i.ebayimg.com/images/g/y5QAAeSwpFBpyeqY/s-l500.webp",
+        "sponsored": false,
+        "title": "67490 Antique Empire Sofa with Red Velvet Upholstery and Carved Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$775.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/227427378148",
+        "thumbnail": "https://i.ebayimg.com/images/g/AN8AAeSwkAhqUuW7/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Beige Floral Fabric Sofa, Carved Brown Wood Frame, Rolled Arms 3-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/156394945055",
+        "thumbnail": "https://i.ebayimg.com/images/g/tLgAAOSw9stm2M5y/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Victorian Style Cherry Wood Floral Tapestry High Cameo Back Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,800.00"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/314565171159",
+        "thumbnail": "https://i.ebayimg.com/images/g/-k8AAOSwr9VkUEiY/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Style Sofa/Aged Gold Leaf Hand Carved Wood Frame /Tufted Coral Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/326940013261",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZZEAAeSw4jxoZs7j/s-l500.webp",
+        "sponsored": false,
+        "title": "Formal Traditional Livingroom Armchair Solid Wood Handcrafted Sofa Chair, Cherry",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,049.00"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/358055695969",
+        "thumbnail": "https://i.ebayimg.com/images/g/mwYAAeSwx1FpTXKe/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage sofa and chair. Extraordinarily rare, hand carved woodwork",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,350.00"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/198271802615",
+        "thumbnail": "https://i.ebayimg.com/images/g/zy4AAeSwpFxp2DG1/s-l500.webp",
+        "sponsored": true,
+        "title": "Retro Chair, Floral Upholstery Nailhead Trim Solid Wood Legs Farmhouse Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$202.88"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/366417077844",
+        "thumbnail": "https://i.ebayimg.com/images/g/9xQAAeSwrclqBsAR/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Chair Floral Upholstery Nailhead Trim Solid Wood Legs Farmhouse Style Red",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/178196472983",
+        "thumbnail": "https://i.ebayimg.com/images/g/c88AAeSwLvNqI2eI/s-l500.webp",
+        "sponsored": true,
+        "title": "Luxury European Chaise Lounge – Ornately Carved Wood Frame & Floral Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,685.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/377354494777",
+        "thumbnail": "https://i.ebayimg.com/images/g/-h8AAeSw2OhqXPYL/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage French Country Floral Accent Chair Upholstered Armchair Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/257517069718",
+        "thumbnail": "https://i.ebayimg.com/images/g/JPYAAeSwHQtquCSf/s-l500.webp",
+        "sponsored": false,
+        "title": "VTG 1946 Louis XV French Revival Ornate Carved Camelback Sofa w/ Cabriole Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,478.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/227544644127",
+        "thumbnail": "https://i.ebayimg.com/images/g/z1EAAeSwXvtqu88f/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Floral Fabric Scroll Arm High Back Armchair, Wood Frame, Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/398426911580",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWoAAeSwy5ZqtOU~/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Dark Wood Armchair, Upholstered High-Back Seat, Brown Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/257498362026",
+        "thumbnail": "https://i.ebayimg.com/images/g/fGoAAeSwf7Jp0ejR/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique 1800s European Ornate Carved BEDROOM SIDE CHAIR🆕Upholstery➕Pillow Shams",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,191.57"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/168660138612",
+        "thumbnail": "https://i.ebayimg.com/images/g/50oAAeSw72hqmSo5/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Traditional Camelback Sofa With Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,295.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/298699464104",
+        "thumbnail": "https://i.ebayimg.com/images/g/qhMAAeSwS0lqHfhN/s-l500.webp",
+        "sponsored": false,
+        "title": "67815 Victorian Style Carved Wood Settee with Caned Back and Red Cushion",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$675.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/398311867827",
+        "thumbnail": "https://i.ebayimg.com/images/g/sxAAAeSwaONqiGz8/s-l500.webp",
+        "sponsored": true,
+        "title": "Upholstered Wood Armchair w/ Arms, Red Floral Fabric, Dark Wood 28x30x24",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/237094807110",
+        "thumbnail": "https://i.ebayimg.com/images/g/clAAAeSwTTtqui9P/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Traditional Fabric Red Removable Cushion Deep Seat Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.81"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/406890726454",
+        "thumbnail": "https://i.ebayimg.com/images/g/zy4AAeSwpFxp2DG1/s-l500.webp",
+        "sponsored": true,
+        "title": "Retro Chair, Floral Upholstery Nailhead Trim Solid Wood Legs Farmhouse Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.79"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/377108934728",
+        "thumbnail": "https://i.ebayimg.com/images/g/QtgAAeSwf5Np3Bns/s-l500.webp",
+        "sponsored": false,
+        "title": "Dollhouse Miniature Vintage Bespaq Ornate Carved Red Chaise Lounge 1:12 Scale",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.00"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/336791133126",
+        "thumbnail": "https://i.ebayimg.com/images/g/hZsAAeSwQ59qpZGz/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Red Gold Accented Decorative Lidded Box Wood Resin Carved 4 Lb 12 Oz",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$39.98"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/135002922864",
+        "thumbnail": "https://i.ebayimg.com/images/g/QwIAAeSwTp9pEnr1/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate French Country Footstool – Carved Walnut and Red Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$725.00"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/800726576272",
+        "thumbnail": "https://i.ebayimg.com/images/g/kLIAAeSw~1tquehN/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Wood Traditional Armchair with Faux Leather Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/376976225030",
+        "thumbnail": "https://i.ebayimg.com/images/g/JzwAAeSwl~Zplz6G/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wingback Chair Floral Upholstery Carved Wood Claw Feet Red Beige",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/366245309323",
+        "thumbnail": "https://i.ebayimg.com/images/g/UPsAAeSw705pqCct/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Wood Side Chair Floral Tapestry Upholstery Dining Room",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/117375322379",
+        "thumbnail": "https://i.ebayimg.com/images/g/AoMAAOSwDqhnu5-l/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian 1888's Handmade Mahogany Red Wood Green Paisley Palor Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$19,999.70"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/127852840513",
+        "thumbnail": "https://i.ebayimg.com/images/g/JVMAAeSw8ohp~VCL/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Armchair Floral Tapestry Upholstery Ornate Wood Carvings",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.00"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/206287378560",
+        "thumbnail": "https://i.ebayimg.com/images/g/ofwAAeSwATdqDeAH/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa French Louis XVI Red Velvet Damask Gold Gilt Frame Vintage Settee Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in Netherlands",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,250.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/237094807263",
+        "thumbnail": "https://i.ebayimg.com/images/g/XzAAAeSwjEhqui9R/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Wood Red 11\" Frame Armless Indoor Seat Decor Seating",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$107.63"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/327379311531",
+        "thumbnail": "https://i.ebayimg.com/images/g/excAAeSwat1pfQ0G/s-l500.webp",
+        "sponsored": true,
+        "title": "VTG Vinyl Backed Upholstery Fabric MCM Burgundy Red French Damask Jacobean 9 Yd",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$375.16"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/237094807098",
+        "thumbnail": "https://i.ebayimg.com/images/g/fxMAAeSw2YBqui9N/s-l500.webp",
+        "sponsored": true,
+        "title": "Club Chair Traditional Fabric Padded Wood Frame Living Room Armchair Upholstered",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$290.93"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/237094807161",
+        "thumbnail": "https://i.ebayimg.com/images/g/PNEAAeSwaTFqui9Q/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Farmhouse Fabric Brown Living Room Upholstered Solid Indoor",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$366.59"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318615547817",
+        "thumbnail": "https://i.ebayimg.com/images/g/rLYAAeSwjF1qX46Z/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Carved Metal Footstool, Floral Tapestry Upholstery, Square",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/127717789691",
+        "thumbnail": "https://i.ebayimg.com/images/g/zcUAAeSwXJ1pp~2f/s-l500.webp",
+        "sponsored": false,
+        "title": "French Louis XV Style Ornate Chair - Carved Wood Details & Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$548.38"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/406479616483",
+        "thumbnail": "https://i.ebayimg.com/images/g/EVsAAeSwWvdpPt-l/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Hand Carved Wood Jewelry Box Floral Ornate Red Velvet India Keepsake",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$68.99"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/318060547538",
+        "thumbnail": "https://i.ebayimg.com/images/g/on0AAeSwaRppxJn4/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Armchair Ornate Carved Wood Floral Tapestry Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$160.99"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/820148321577",
+        "thumbnail": "https://i.ebayimg.com/images/g/QP0AAeSwEU5qrz-s/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Antique Empire Carved Wood Armchair, Red Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/188993457323",
+        "thumbnail": "https://i.ebayimg.com/images/g/hrMAAeSw9CdquNBj/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Mahogany Carved Side Chair With Floral Damask Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$349.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/189004080303",
+        "thumbnail": "https://i.ebayimg.com/images/g/xTgAAeSwa5lqumgg/s-l500.webp",
+        "sponsored": true,
+        "title": "SOFAS & STUFF CURTAIN/UPHOLSTERY FABRIC DESIGN Sussex Tile 4 METRES RED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United Kingdom",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$212.07"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/407253003342",
+        "thumbnail": "https://i.ebayimg.com/images/g/UdcAAeSwxTFqg23~/s-l500.webp",
+        "sponsored": true,
+        "title": "Traditional Carved Wood Armchair Brown Floral Tapestry Back Scroll Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$32.80"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/317390251002",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZzoAAeSwZaxo5z2H/s-l500.webp",
+        "sponsored": false,
+        "title": "Pair of Ornate Hand-Carved Wooden Wall Panels Plaques Burgundy Floral 15\" Square",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26.00"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/376208141266",
+        "thumbnail": "https://i.ebayimg.com/images/g/ceIAAOSw1-loEG0P/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Fine Lace Ribbon Ruffles 3-Layer Red Satin Fabric by the Yard 60\" Wide",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$24.00"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/137456388629",
+        "thumbnail": "https://i.ebayimg.com/images/g/ItsAAeSwg5NqPuyA/s-l500.webp",
+        "sponsored": false,
+        "title": "VNTG MCM Needlepoint Footstool Maroon Floral Handmade Ottoman Gerber Wood Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$29.49"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/156828182502",
+        "thumbnail": "https://i.ebayimg.com/images/g/kIAAAOSw6-tn3D10/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique French Louis XV Rococo Style Ornate Carved Walnut Settee Loveseat Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,200.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/285426390070",
+        "thumbnail": "https://i.ebayimg.com/images/g/BTUAAOSwcb5k1uty/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Wood Trinket Box Floral Design, Bottom Slide Opening Vintage EUC 6x4x2.5",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/365853432973",
+        "thumbnail": "https://i.ebayimg.com/images/g/3REAAeSwhkpp4AwH/s-l500.webp",
+        "sponsored": false,
+        "title": "French Louis XV Revival Carved Wood Foot Stool Ottoman Paisley Upholstered *read",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$187.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/236001880822",
+        "thumbnail": "https://i.ebayimg.com/images/g/TzcAAOSw3M5n0m3l/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Carved Spindle Back Carved Upholstered Settee",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,195.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/377516623320",
+        "thumbnail": "https://i.ebayimg.com/images/g/pnEAAeSwS8Fqs0KY/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Armchair Chair with Heart Cutout Back, Natural Finish, Single Unit",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/334297204153",
+        "thumbnail": "https://i.ebayimg.com/images/g/HPwAAOSwmS1h6AvF/s-l500.webp",
+        "sponsored": false,
+        "title": "French Floral Polyester Raschel Lace – 60” Wide | By The Yard for Sewing & Decor",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$4.99",
+          "to": "$29.99"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/166805481584",
+        "thumbnail": "https://i.ebayimg.com/images/g/7IoAAOSwQDtmYDnz/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Geor. Wide Seat Pair Of Carved Frame Custom Uphol. Armchairs With Ottoman",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,995.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/198234418440",
+        "thumbnail": "https://i.ebayimg.com/images/g/QokAAeSw9ChpyCRy/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Antique Parlor Chairs Set of 2 Ornate Wood Embroidered Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$180.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/257498358735",
+        "thumbnail": "https://i.ebayimg.com/images/g/uGoAAeSwtrFp0glv/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique ~1890s Victorian Re-Upholstered Folding Concert Campaign Portable Chair",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$525.48"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/232562168434",
+        "thumbnail": "https://i.ebayimg.com/images/g/jggAAOSw-dBTs3qi/s-l500.webp",
+        "sponsored": false,
+        "title": "BonEful FABRIC FQ Cotton Quilt Pink Blue Red Rainbow Yellow Flower Shabby Chic S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3.83"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/178496715492",
+        "thumbnail": "https://i.ebayimg.com/images/g/wEIAAeSweJZp3rWW/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Red Carved Wall Cross Rustic Scroll Floral Medallion Wall Art 19.5 x 15",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$7.70"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/236003577889",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EsAAOSw-8ln05wI/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Carved Spindle Back Carved Upholstered Settee",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$895.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/387284170782",
+        "thumbnail": "https://i.ebayimg.com/images/g/o1IAAMXQILVSKjGC/s-l500.webp",
+        "sponsored": false,
+        "title": "BonEful Fabric FQ Cotton Quilt Rainbow Orange Red Pink Paisley Flower Bohemian L",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4.59"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/147391965617",
+        "thumbnail": "https://i.ebayimg.com/images/g/ERoAAeSw-dNp96cC/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Ornate Victorian Oval Swivel Faux Carved Cherry Wood Picture Frame 14\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$34.99"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/164917408233",
+        "thumbnail": "https://i.ebayimg.com/images/g/QBgAAOSwSfJgyM9E/s-l500.webp",
+        "sponsored": false,
+        "title": "DIY Retro Floral Print Chenille Fabric Jacquard Cushion Sofa Chair Material Sew",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$23.75"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/237094806928",
+        "thumbnail": "https://i.ebayimg.com/images/g/PzAAAeSwShlqui9L/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Fabric Beige Curved Back Wood Arms Frame Reading Lounge Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$301.85"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/158219390033",
+        "thumbnail": "https://i.ebayimg.com/images/g/~qkAAeSwehZqjI6k/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Mahogany Wood Accent Quilted Upholstered Armchairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$280.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      }
+    ],
+    "eligible_before_title_filter": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/820148331380",
+        "thumbnail": "https://i.ebayimg.com/images/g/8DIAAeSwVCxqr0L1/s-l500.webp",
+        "sponsored": false,
+        "title": "HandCrafted Antique Looks, Wood Floral RedGold Floral Fabric Sofa, Rolled Arms.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$699.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/398431364418",
+        "thumbnail": "https://i.ebayimg.com/images/g/xxQAAeSwo5Fqmvct/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Carved Wood Settee Paisley Upholstery Scroll Arms 72x30x42 2-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/314565171031",
+        "thumbnail": "https://i.ebayimg.com/images/g/UuIAAOSwsM1kUEiN/s-l500.webp",
+        "sponsored": true,
+        "title": "Victorian Style Sofa/ Hand Carved Aged Wooden Frame/ Stressed Wood Finish /",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/407072777892",
+        "thumbnail": "https://i.ebayimg.com/images/g/R~sAAeSw371qVnRo/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Floral Tapestry Upholstered Sofa, Carved Wood Frame, Scroll Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/127264249747",
+        "thumbnail": "https://i.ebayimg.com/images/g/wIUAAeSwJtpog7Lx/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Victorian-style couch with a carved wooden frame, floral upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$789.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/198625390979",
+        "thumbnail": "https://i.ebayimg.com/images/g/mOEAAeSwkg5qnu6-/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Sofa 92\" Traditional Damask Upholstery Dark Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$349.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/198625558948",
+        "thumbnail": "https://i.ebayimg.com/images/g/-1AAAeSw4I9qnw5h/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Wood Loveseat 70\" Damask Upholstery Traditional Victorian Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$249.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/281483154974",
+        "thumbnail": "https://i.ebayimg.com/images/g/d~4AAOSwDN1UUrZa/s-l500.webp",
+        "sponsored": false,
+        "title": "Reduced $1000! Antique Carved Wood and red floral parlor sofa and matching roun",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$4,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/318681011698",
+        "thumbnail": "https://i.ebayimg.com/images/g/dPkAAeSwBEtqYHuv/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Carved Wood Sofa, Red/Gold Damask 100% Linen Rolled Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/298715620450",
+        "thumbnail": "https://i.ebayimg.com/images/g/y5QAAeSwpFBpyeqY/s-l500.webp",
+        "sponsored": false,
+        "title": "67490 Antique Empire Sofa with Red Velvet Upholstery and Carved Wood",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$775.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/227427378148",
+        "thumbnail": "https://i.ebayimg.com/images/g/AN8AAeSwkAhqUuW7/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Beige Floral Fabric Sofa, Carved Brown Wood Frame, Rolled Arms 3-Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/156394945055",
+        "thumbnail": "https://i.ebayimg.com/images/g/tLgAAOSw9stm2M5y/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Victorian Style Cherry Wood Floral Tapestry High Cameo Back Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/314565171159",
+        "thumbnail": "https://i.ebayimg.com/images/g/-k8AAOSwr9VkUEiY/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Style Sofa/Aged Gold Leaf Hand Carved Wood Frame /Tufted Coral Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,950.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/326940013261",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZZEAAeSw4jxoZs7j/s-l500.webp",
+        "sponsored": false,
+        "title": "Formal Traditional Livingroom Armchair Solid Wood Handcrafted Sofa Chair, Cherry",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,049.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/358055695969",
+        "thumbnail": "https://i.ebayimg.com/images/g/mwYAAeSwx1FpTXKe/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage sofa and chair. Extraordinarily rare, hand carved woodwork",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/198271802615",
+        "thumbnail": "https://i.ebayimg.com/images/g/zy4AAeSwpFxp2DG1/s-l500.webp",
+        "sponsored": true,
+        "title": "Retro Chair, Floral Upholstery Nailhead Trim Solid Wood Legs Farmhouse Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$202.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/366417077844",
+        "thumbnail": "https://i.ebayimg.com/images/g/9xQAAeSwrclqBsAR/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Chair Floral Upholstery Nailhead Trim Solid Wood Legs Farmhouse Style Red",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/178196472983",
+        "thumbnail": "https://i.ebayimg.com/images/g/c88AAeSwLvNqI2eI/s-l500.webp",
+        "sponsored": true,
+        "title": "Luxury European Chaise Lounge – Ornately Carved Wood Frame & Floral Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,685.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/377354494777",
+        "thumbnail": "https://i.ebayimg.com/images/g/-h8AAeSw2OhqXPYL/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage French Country Floral Accent Chair Upholstered Armchair Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/257517069718",
+        "thumbnail": "https://i.ebayimg.com/images/g/JPYAAeSwHQtquCSf/s-l500.webp",
+        "sponsored": false,
+        "title": "VTG 1946 Louis XV French Revival Ornate Carved Camelback Sofa w/ Cabriole Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,478.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/227544644127",
+        "thumbnail": "https://i.ebayimg.com/images/g/z1EAAeSwXvtqu88f/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Floral Fabric Scroll Arm High Back Armchair, Wood Frame, Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/398426911580",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWoAAeSwy5ZqtOU~/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Dark Wood Armchair, Upholstered High-Back Seat, Brown Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/257498362026",
+        "thumbnail": "https://i.ebayimg.com/images/g/fGoAAeSwf7Jp0ejR/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique 1800s European Ornate Carved BEDROOM SIDE CHAIR🆕Upholstery➕Pillow Shams",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,191.57"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/168660138612",
+        "thumbnail": "https://i.ebayimg.com/images/g/50oAAeSw72hqmSo5/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Traditional Camelback Sofa With Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,295.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/298699464104",
+        "thumbnail": "https://i.ebayimg.com/images/g/qhMAAeSwS0lqHfhN/s-l500.webp",
+        "sponsored": false,
+        "title": "67815 Victorian Style Carved Wood Settee with Caned Back and Red Cushion",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$675.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/398311867827",
+        "thumbnail": "https://i.ebayimg.com/images/g/sxAAAeSwaONqiGz8/s-l500.webp",
+        "sponsored": true,
+        "title": "Upholstered Wood Armchair w/ Arms, Red Floral Fabric, Dark Wood 28x30x24",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/237094807110",
+        "thumbnail": "https://i.ebayimg.com/images/g/clAAAeSwTTtqui9P/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Traditional Fabric Red Removable Cushion Deep Seat Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.81"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/406890726454",
+        "thumbnail": "https://i.ebayimg.com/images/g/zy4AAeSwpFxp2DG1/s-l500.webp",
+        "sponsored": true,
+        "title": "Retro Chair, Floral Upholstery Nailhead Trim Solid Wood Legs Farmhouse Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$159.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/377108934728",
+        "thumbnail": "https://i.ebayimg.com/images/g/QtgAAeSwf5Np3Bns/s-l500.webp",
+        "sponsored": false,
+        "title": "Dollhouse Miniature Vintage Bespaq Ornate Carved Red Chaise Lounge 1:12 Scale",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$99.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/336791133126",
+        "thumbnail": "https://i.ebayimg.com/images/g/hZsAAeSwQ59qpZGz/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Red Gold Accented Decorative Lidded Box Wood Resin Carved 4 Lb 12 Oz",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$39.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/135002922864",
+        "thumbnail": "https://i.ebayimg.com/images/g/QwIAAeSwTp9pEnr1/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate French Country Footstool – Carved Walnut and Red Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$725.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/800726576272",
+        "thumbnail": "https://i.ebayimg.com/images/g/kLIAAeSw~1tquehN/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Wood Traditional Armchair with Faux Leather Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/376976225030",
+        "thumbnail": "https://i.ebayimg.com/images/g/JzwAAeSwl~Zplz6G/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wingback Chair Floral Upholstery Carved Wood Claw Feet Red Beige",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/366245309323",
+        "thumbnail": "https://i.ebayimg.com/images/g/UPsAAeSw705pqCct/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Wood Side Chair Floral Tapestry Upholstery Dining Room",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/117375322379",
+        "thumbnail": "https://i.ebayimg.com/images/g/AoMAAOSwDqhnu5-l/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian 1888's Handmade Mahogany Red Wood Green Paisley Palor Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$19,999.70"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/127852840513",
+        "thumbnail": "https://i.ebayimg.com/images/g/JVMAAeSw8ohp~VCL/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Armchair Floral Tapestry Upholstery Ornate Wood Carvings",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/237094807263",
+        "thumbnail": "https://i.ebayimg.com/images/g/XzAAAeSwjEhqui9R/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Wood Red 11\" Frame Armless Indoor Seat Decor Seating",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$107.63"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/327379311531",
+        "thumbnail": "https://i.ebayimg.com/images/g/excAAeSwat1pfQ0G/s-l500.webp",
+        "sponsored": true,
+        "title": "VTG Vinyl Backed Upholstery Fabric MCM Burgundy Red French Damask Jacobean 9 Yd",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$375.16"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/237094807098",
+        "thumbnail": "https://i.ebayimg.com/images/g/fxMAAeSw2YBqui9N/s-l500.webp",
+        "sponsored": true,
+        "title": "Club Chair Traditional Fabric Padded Wood Frame Living Room Armchair Upholstered",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$290.93"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/237094807161",
+        "thumbnail": "https://i.ebayimg.com/images/g/PNEAAeSwaTFqui9Q/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Farmhouse Fabric Brown Living Room Upholstered Solid Indoor",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$366.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318615547817",
+        "thumbnail": "https://i.ebayimg.com/images/g/rLYAAeSwjF1qX46Z/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Ornate Carved Metal Footstool, Floral Tapestry Upholstery, Square",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/127717789691",
+        "thumbnail": "https://i.ebayimg.com/images/g/zcUAAeSwXJ1pp~2f/s-l500.webp",
+        "sponsored": false,
+        "title": "French Louis XV Style Ornate Chair - Carved Wood Details & Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$548.38"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/406479616483",
+        "thumbnail": "https://i.ebayimg.com/images/g/EVsAAeSwWvdpPt-l/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Hand Carved Wood Jewelry Box Floral Ornate Red Velvet India Keepsake",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$68.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/318060547538",
+        "thumbnail": "https://i.ebayimg.com/images/g/on0AAeSwaRppxJn4/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Armchair Ornate Carved Wood Floral Tapestry Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$160.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/820148321577",
+        "thumbnail": "https://i.ebayimg.com/images/g/QP0AAeSwEU5qrz-s/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Antique Empire Carved Wood Armchair, Red Floral Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/188993457323",
+        "thumbnail": "https://i.ebayimg.com/images/g/hrMAAeSw9CdquNBj/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Mahogany Carved Side Chair With Floral Damask Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$349.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/407253003342",
+        "thumbnail": "https://i.ebayimg.com/images/g/UdcAAeSwxTFqg23~/s-l500.webp",
+        "sponsored": true,
+        "title": "Traditional Carved Wood Armchair Brown Floral Tapestry Back Scroll Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$32.80"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/317390251002",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZzoAAeSwZaxo5z2H/s-l500.webp",
+        "sponsored": false,
+        "title": "Pair of Ornate Hand-Carved Wooden Wall Panels Plaques Burgundy Floral 15\" Square",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/376208141266",
+        "thumbnail": "https://i.ebayimg.com/images/g/ceIAAOSw1-loEG0P/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Fine Lace Ribbon Ruffles 3-Layer Red Satin Fabric by the Yard 60\" Wide",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$24.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/137456388629",
+        "thumbnail": "https://i.ebayimg.com/images/g/ItsAAeSwg5NqPuyA/s-l500.webp",
+        "sponsored": false,
+        "title": "VNTG MCM Needlepoint Footstool Maroon Floral Handmade Ottoman Gerber Wood Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$29.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/156828182502",
+        "thumbnail": "https://i.ebayimg.com/images/g/kIAAAOSw6-tn3D10/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique French Louis XV Rococo Style Ornate Carved Walnut Settee Loveseat Sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/285426390070",
+        "thumbnail": "https://i.ebayimg.com/images/g/BTUAAOSwcb5k1uty/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Wood Trinket Box Floral Design, Bottom Slide Opening Vintage EUC 6x4x2.5",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/365853432973",
+        "thumbnail": "https://i.ebayimg.com/images/g/3REAAeSwhkpp4AwH/s-l500.webp",
+        "sponsored": false,
+        "title": "French Louis XV Revival Carved Wood Foot Stool Ottoman Paisley Upholstered *read",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$187.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/236001880822",
+        "thumbnail": "https://i.ebayimg.com/images/g/TzcAAOSw3M5n0m3l/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Carved Spindle Back Carved Upholstered Settee",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,195.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/377516623320",
+        "thumbnail": "https://i.ebayimg.com/images/g/pnEAAeSwS8Fqs0KY/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Armchair Chair with Heart Cutout Back, Natural Finish, Single Unit",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/334297204153",
+        "thumbnail": "https://i.ebayimg.com/images/g/HPwAAOSwmS1h6AvF/s-l500.webp",
+        "sponsored": false,
+        "title": "French Floral Polyester Raschel Lace – 60” Wide | By The Yard for Sewing & Decor",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$4.99",
+          "to": "$29.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/166805481584",
+        "thumbnail": "https://i.ebayimg.com/images/g/7IoAAOSwQDtmYDnz/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Geor. Wide Seat Pair Of Carved Frame Custom Uphol. Armchairs With Ottoman",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,995.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/198234418440",
+        "thumbnail": "https://i.ebayimg.com/images/g/QokAAeSw9ChpyCRy/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Antique Parlor Chairs Set of 2 Ornate Wood Embroidered Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$180.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/257498358735",
+        "thumbnail": "https://i.ebayimg.com/images/g/uGoAAeSwtrFp0glv/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique ~1890s Victorian Re-Upholstered Folding Concert Campaign Portable Chair",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$525.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/232562168434",
+        "thumbnail": "https://i.ebayimg.com/images/g/jggAAOSw-dBTs3qi/s-l500.webp",
+        "sponsored": false,
+        "title": "BonEful FABRIC FQ Cotton Quilt Pink Blue Red Rainbow Yellow Flower Shabby Chic S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/178496715492",
+        "thumbnail": "https://i.ebayimg.com/images/g/wEIAAeSweJZp3rWW/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Red Carved Wall Cross Rustic Scroll Floral Medallion Wall Art 19.5 x 15",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$7.70"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/236003577889",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EsAAOSw-8ln05wI/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Carved Spindle Back Carved Upholstered Settee",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$895.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/387284170782",
+        "thumbnail": "https://i.ebayimg.com/images/g/o1IAAMXQILVSKjGC/s-l500.webp",
+        "sponsored": false,
+        "title": "BonEful Fabric FQ Cotton Quilt Rainbow Orange Red Pink Paisley Flower Bohemian L",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/147391965617",
+        "thumbnail": "https://i.ebayimg.com/images/g/ERoAAeSw-dNp96cC/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Ornate Victorian Oval Swivel Faux Carved Cherry Wood Picture Frame 14\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$34.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/237094806928",
+        "thumbnail": "https://i.ebayimg.com/images/g/PzAAAeSwShlqui9L/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Fabric Beige Curved Back Wood Arms Frame Reading Lounge Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$301.85"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/158219390033",
+        "thumbnail": "https://i.ebayimg.com/images/g/~qkAAeSwehZqjI6k/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Mahogany Wood Accent Quilted Upholstered Armchairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$280.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 12544.286
+  }
+}

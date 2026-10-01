@@ -1,0 +1,17 @@
+{
+  "experiment": "ebay-us-v1",
+  "parameters": {
+    "engine": "ebay",
+    "_nkw": "green velvet sofa",
+    "ebay_domain": "ebay.com",
+    "_salic": "1",
+    "_ipg": "25"
+  },
+  "reserved_at": "2026-09-19T05:15:26.193619Z",
+  "combined_attempts": 13,
+  "outcome": {
+    "classification": "request_or_processing_failed",
+    "error_class": "SearchDeadline::Exceeded",
+    "elapsed_ms": 55009.303
+  }
+}

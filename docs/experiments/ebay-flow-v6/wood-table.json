@@ -1,0 +1,3747 @@
+{
+  "case_id": "wood-table",
+  "manifest_sha256": "793070ebfed70c29023b910d9cd206029671c7c5c680b9e0900b320e2c9b18f8",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "a31f83305e68e0ea1db2c02a14406f9b92169e1cc85c795e07c87a80b6d30ae6"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "white wood barn door hardware coffee table",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 803.192
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 5538.922
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 5756.404
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 4217.217
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/167543162009",
+        "thumbnail": "https://i.ebayimg.com/images/g/kWMAAeSwTg5qTChF/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table with Fridge Included, Farmhouse Sliding Barn Door Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$112.50"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/178460986390",
+        "thumbnail": "https://i.ebayimg.com/images/g/gpwAAeSwJm1ql9er/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Bench and Sliding Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358791252838",
+        "thumbnail": "https://i.ebayimg.com/images/g/3ZoAAeSw6JVqVQay/s-l500.webp",
+        "sponsored": true,
+        "title": "48 Inch Lift Top Coffee Table Sliding Barn Door Rustic Wood Farmhouse Dark Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$335.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/196336381437",
+        "thumbnail": "https://i.ebayimg.com/images/g/BNQAAOSwkChmFOMs/s-l500.webp",
+        "sponsored": true,
+        "title": "Lift Top Coffee Table with Sliding Barn Door &Storage Shelf, Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/307160379158",
+        "thumbnail": "https://i.ebayimg.com/images/g/er0AAeSwFHNqmVkk/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors, Light Rustic Oak (Open Box)",
+        "subtitle": "**ITEM IS LIKE NEW**",
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$60.89"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398194388252",
+        "thumbnail": "https://i.ebayimg.com/images/g/fc4AAeSw9apqXcDe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table Wood Barn Door Center Table w/ Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$163.13"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/389584599986",
+        "thumbnail": "https://i.ebayimg.com/images/g/4zwAAeSwT-JphYza/s-l500.webp",
+        "sponsored": false,
+        "title": "48'' Coffee Table with Sliding Barn Doors, Rustic Center Table with 6 Large S...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$197.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/377194558354",
+        "thumbnail": "https://i.ebayimg.com/images/g/9ScAAeSwa2BqC-PP/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 39.4In Lift Top Coffee Table, Rustic Center Table with Barn Door & Hid",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$148.24"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/188870547911",
+        "thumbnail": "https://i.ebayimg.com/images/g/LT8AAeSw1nRqlruy/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Table Set of 3, Coffee Table with Sliding Barn Doors, End Tables Set o",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$592.22"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/355611672862",
+        "thumbnail": "https://i.ebayimg.com/images/g/zhQAAOSwlcVl~EsO/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors Barnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$369.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/178504832272",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhIAAeSwD91qq9aJ/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table Sliding Barn Door ReclaimedBarnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$334.79"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/267031892021",
+        "thumbnail": "https://i.ebayimg.com/images/g/gt4AAOSwQnZnERgs/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table, Custom Wood base. Hand Made. Salvaged, 3'' Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/146894496271",
+        "thumbnail": "https://i.ebayimg.com/images/g/OEwAAeSwEABo7bKm/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Barn Door Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$385.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/800670755917",
+        "thumbnail": "https://i.ebayimg.com/images/g/9E0AAeSwf8pqqoUN/s-l500.webp",
+        "sponsored": true,
+        "title": "48\" Farmhouse Coffee Table W/ Sliding Barn Doors Rustic White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$237.14"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/227287188071",
+        "thumbnail": "https://i.ebayimg.com/images/g/46QAAeSwQCpp0T89/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table with Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$289.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/398416100940",
+        "thumbnail": "https://i.ebayimg.com/images/g/wXAAAeSw~n5qsOLa/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Lift Top Coffee Table W/ Sliding Barn Door,Rustic Center Table Farmhouse",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$389.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206487676500",
+        "thumbnail": "https://i.ebayimg.com/images/g/IjQAAeSweEtqfZnV/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table Sliding Barn Door Dark Rustic Oak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$338.39"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/800351047668",
+        "thumbnail": "https://i.ebayimg.com/images/g/zOEAAeSw7ehqWIsE/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table W/ Sliding Barn Door,Rustic Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$362.69"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/374656684678",
+        "thumbnail": "https://i.ebayimg.com/images/g/droAAOSwDulkSBus/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table (CT296)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/800665451530",
+        "thumbnail": "https://i.ebayimg.com/images/g/vhEAAeSwy4NqqTON/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table W/ Sliding Barn Doors Antique White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/398101861763",
+        "thumbnail": "https://i.ebayimg.com/images/g/b0cAAeSwOfJqonp6/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table, Rectangle Coffee Table with 2 Sliding Barn Doors, 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$216.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/227528540044",
+        "thumbnail": "https://i.ebayimg.com/images/g/AH8AAeSwId5qrhJe/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Coffee Table with Sliding Barn Doors in Rustic Oak and Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$363.10"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/267320713422",
+        "thumbnail": "https://i.ebayimg.com/images/g/WCgAAeSwqYJpWajV/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table, Stee base, Hand Made, Salvaged, 2.5'' Top.",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/156827872040",
+        "thumbnail": "https://i.ebayimg.com/images/g/hz8AAOSwpKtn4aA~/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,499.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/173359610273",
+        "thumbnail": "https://i.ebayimg.com/images/g/b6QAAOSwBXhbHWXh/s-l500.webp",
+        "sponsored": false,
+        "title": "Amish Rustic Sliding Barn Door Track Accent Tables Set Solid Wood Coffee End",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$2,899.00",
+          "to": "$3,899.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/236993094138",
+        "thumbnail": "https://i.ebayimg.com/images/g/V70AAeSwiiFqdsJR/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table W/ Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$345.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226565433416",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lp8AAOSwMjhnlX8-/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Barn Door Coffee Table Dimensions 46x23x17",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/257002992092",
+        "thumbnail": "https://i.ebayimg.com/images/g/lAUAAeSwCdVoaGWX/s-l500.webp",
+        "sponsored": false,
+        "title": "48'' Farmhouse Coffee Table with Sliding Barn Doors, Rustic Center Table with 6",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336815721833",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DoAAeSwJ5VquVY3/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table 48 Farmhouse Sliding Barn Door Reclaimed Barnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$439.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/236993651470",
+        "thumbnail": "https://i.ebayimg.com/images/g/RYYAAeSwmE9qdym~/s-l500.webp",
+        "sponsored": true,
+        "title": "3 Piece Farmhouse Coffee Table Set Distressed White Barn Door Charging Station",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$356.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/168662068622",
+        "thumbnail": "https://i.ebayimg.com/images/g/QkcAAeSwuQVqmhpK/s-l500.webp",
+        "sponsored": true,
+        "title": "Rustic Coffee Bar Table with Buffet Stand and Four Barn Door Design - White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/167882862509",
+        "thumbnail": "https://i.ebayimg.com/images/g/JVEAAeSwX9xqB3Jh/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table w/ Storage Hidden Compartment Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/287579928654",
+        "thumbnail": "https://i.ebayimg.com/images/g/AEsAAeSwLDNqAbof/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$154.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/377311861049",
+        "thumbnail": "https://i.ebayimg.com/images/g/V1QAAeSwctdpKWhe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Style Living Room Coffee Table w/ Open Storage & Barn Door Refurbished",
+        "subtitle": null,
+        "condition": "Certified - Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.49"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/168619785629",
+        "thumbnail": "https://i.ebayimg.com/images/g/yv4AAeSwplVqM5nJ/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Sliding Barn Doors Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$202.49"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/286342779413",
+        "thumbnail": "https://i.ebayimg.com/images/g/c1MAAeSwYs9ntakN/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table 2-tier Rectangle Table with Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$135.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/358889658975",
+        "thumbnail": "https://i.ebayimg.com/images/g/hNYAAeSw6Xlqc-LE/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 3 Piece Coffee Table Set Charging Station Glass Barn Door Storage Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$571.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/186857390921",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ekAAOSw6kZnd0AZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 31.5/36/40/48\" Farmhouse Coffee Table Rectangle/Square Table Sliding Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$127.99",
+          "to": "$147.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/196336376973",
+        "thumbnail": "https://i.ebayimg.com/images/g/qSMAAOSwddpmFODD/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table, Small Farmhouse Coffee Table w/Sliding Barn Door &Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/168637513781",
+        "thumbnail": "https://i.ebayimg.com/images/g/xOAAAeSw7dJqjBBo/s-l500.webp",
+        "sponsored": false,
+        "title": "OROFULL Farmhouse Entryway Table w/ LED Light & Sliding Barn Door, Antique White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/398183847112",
+        "thumbnail": "https://i.ebayimg.com/images/g/6ZkAAeSwk8ZqWfEp/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 48\" Farmhouse Coffee Table 2-tier Rectangle Table with Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$147.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/227503848917",
+        "thumbnail": "https://i.ebayimg.com/images/g/q4sAAeSwFh9qmVxs/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Piece Living Room Table Set W/ Barn Door Distressed White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$310.19"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/398251368438",
+        "thumbnail": "https://i.ebayimg.com/images/g/2Y0AAeSw0ttqcq-n/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet3-Tier Coffee Bar Table with Barn Doors for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$158.29"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/227113953665",
+        "thumbnail": "https://i.ebayimg.com/images/g/VpYAAeSwSgppL-Sm/s-l500.webp",
+        "sponsored": false,
+        "title": "47.2\" Lift Top Coffee Table w/ Barn Door,Hidden Storage&Adjustable Shelf, Rustic",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$155.91",
+          "to": "$191.24"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/398144745806",
+        "thumbnail": "https://i.ebayimg.com/images/g/EDgAAeSwfwBqfA7C/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet4-Tier Coffee Bar Table with Barn Doors for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$166.59"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/800564524408",
+        "thumbnail": "https://i.ebayimg.com/images/g/P9kAAeSwsx9qjn-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table Lift Top with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$167.31"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 77,
+        "url": "https://www.ebay.com/itm/800004295339",
+        "thumbnail": "https://i.ebayimg.com/images/g/fxUAAeSw-BhqAboe/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$161.67"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 82,
+        "url": "https://www.ebay.com/itm/306975357523",
+        "thumbnail": "https://i.ebayimg.com/images/g/wOsAAeSwsvBqMRHn/s-l500.webp",
+        "sponsored": false,
+        "title": "48” Farmhouse Coffee Table w/Sliding Doors Adjustable Shelf Storage Compartments",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$104.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/167543162009",
+        "thumbnail": "https://i.ebayimg.com/images/g/kWMAAeSwTg5qTChF/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table with Fridge Included, Farmhouse Sliding Barn Door Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$112.50"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/178460986390",
+        "thumbnail": "https://i.ebayimg.com/images/g/gpwAAeSwJm1ql9er/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Bench and Sliding Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358791252838",
+        "thumbnail": "https://i.ebayimg.com/images/g/3ZoAAeSw6JVqVQay/s-l500.webp",
+        "sponsored": true,
+        "title": "48 Inch Lift Top Coffee Table Sliding Barn Door Rustic Wood Farmhouse Dark Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$335.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/196336381437",
+        "thumbnail": "https://i.ebayimg.com/images/g/BNQAAOSwkChmFOMs/s-l500.webp",
+        "sponsored": true,
+        "title": "Lift Top Coffee Table with Sliding Barn Door &Storage Shelf, Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/307160379158",
+        "thumbnail": "https://i.ebayimg.com/images/g/er0AAeSwFHNqmVkk/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors, Light Rustic Oak (Open Box)",
+        "subtitle": "**ITEM IS LIKE NEW**",
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$60.89"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398194388252",
+        "thumbnail": "https://i.ebayimg.com/images/g/fc4AAeSw9apqXcDe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table Wood Barn Door Center Table w/ Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$163.13"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abc4dd52c2bb473fa59465a",
+        "status": "Success",
+        "created_at": "2026-09-29 23:46:29 UTC",
+        "processed_at": "2026-09-29 23:46:29 UTC",
+        "total_time_taken": 5.24
+      },
+      "ebay": {
+        "id": "6abc4de0a973c46557ebcde7",
+        "status": "Success",
+        "created_at": "2026-09-29 23:46:40 UTC",
+        "processed_at": "2026-09-29 23:46:40 UTC",
+        "total_time_taken": 3.87
+      }
+    },
+    "lens_interpretation": "coffee table",
+    "query_preparation": {
+      "status": "ready",
+      "category": "coffee table",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "coffee table",
+        "fallback_reason": "bare_category",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1837,
+          "output_tokens": 37,
+          "total_tokens": 1874
+        },
+        "duration_ms": 5793,
+        "category": "coffee table",
+        "traits": [
+          "white wood",
+          "barn door hardware"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "white wood barn door hardware coffee table",
+    "category": "coffee table",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Amazon.com: Lativo White Wood Wallpaper Wood Grain Contact ...",
+        "Blog - Hightech Furniture Demo",
+        "OUTWEST FURNITURE - CLOSED - Updated September 2026 - 15 ...",
+        "Amazon.com: Lativo White Wood Wallpaper Wood Grain Contact ...",
+        "HUGE Deals to be made at our CAIT'S® Mokena Warehouse Estate ...",
+        "Montana White Storage Coffee Table | Bob's Discount ...",
+        "Laurel Foundry Modern Farmhouse® Lonan Coffee Table ...",
+        "Shop at McGinleys Furniture | humm Ireland"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "white wood barn door hardware coffee table",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 85,
+    "counts_before_title_filter": {
+      "accepted": 77,
+      "not_explicit_us": 8
+    },
+    "title_filter_counts": {
+      "wrong_category": 15,
+      "accessory_or_part": 4,
+      "mixed_categories": 5,
+      "missing_furniture_type": 5,
+      "accepted": 48
+    },
+    "listing_filter_version": "ebay-title-filter-v2",
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/167543162009",
+        "thumbnail": "https://i.ebayimg.com/images/g/kWMAAeSwTg5qTChF/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table with Fridge Included, Farmhouse Sliding Barn Door Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$112.50"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/178460986390",
+        "thumbnail": "https://i.ebayimg.com/images/g/gpwAAeSwJm1ql9er/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Bench and Sliding Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358791252838",
+        "thumbnail": "https://i.ebayimg.com/images/g/3ZoAAeSw6JVqVQay/s-l500.webp",
+        "sponsored": true,
+        "title": "48 Inch Lift Top Coffee Table Sliding Barn Door Rustic Wood Farmhouse Dark Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$335.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/196336381437",
+        "thumbnail": "https://i.ebayimg.com/images/g/BNQAAOSwkChmFOMs/s-l500.webp",
+        "sponsored": true,
+        "title": "Lift Top Coffee Table with Sliding Barn Door &Storage Shelf, Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/307160379158",
+        "thumbnail": "https://i.ebayimg.com/images/g/er0AAeSwFHNqmVkk/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors, Light Rustic Oak (Open Box)",
+        "subtitle": "**ITEM IS LIKE NEW**",
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$60.89"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398194388252",
+        "thumbnail": "https://i.ebayimg.com/images/g/fc4AAeSw9apqXcDe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table Wood Barn Door Center Table w/ Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$163.13"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/389584599986",
+        "thumbnail": "https://i.ebayimg.com/images/g/4zwAAeSwT-JphYza/s-l500.webp",
+        "sponsored": false,
+        "title": "48'' Coffee Table with Sliding Barn Doors, Rustic Center Table with 6 Large S...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$197.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/377194558354",
+        "thumbnail": "https://i.ebayimg.com/images/g/9ScAAeSwa2BqC-PP/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 39.4In Lift Top Coffee Table, Rustic Center Table with Barn Door & Hid",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$148.24"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/188870547911",
+        "thumbnail": "https://i.ebayimg.com/images/g/LT8AAeSw1nRqlruy/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Table Set of 3, Coffee Table with Sliding Barn Doors, End Tables Set o",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$592.22"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/355611672862",
+        "thumbnail": "https://i.ebayimg.com/images/g/zhQAAOSwlcVl~EsO/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors Barnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$369.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/178504832272",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhIAAeSwD91qq9aJ/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table Sliding Barn Door ReclaimedBarnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$334.79"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/267031892021",
+        "thumbnail": "https://i.ebayimg.com/images/g/gt4AAOSwQnZnERgs/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table, Custom Wood base. Hand Made. Salvaged, 3'' Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/146894496271",
+        "thumbnail": "https://i.ebayimg.com/images/g/OEwAAeSwEABo7bKm/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Barn Door Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$385.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/358891054990",
+        "thumbnail": "https://i.ebayimg.com/images/g/41sAAeSwRT9qdF-5/s-l500.webp",
+        "sponsored": true,
+        "title": "47.2 in Buffet Cabinet 3 Drawers 2 Barn Doors Power Outlet Adjustable Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$302.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/800670755917",
+        "thumbnail": "https://i.ebayimg.com/images/g/9E0AAeSwf8pqqoUN/s-l500.webp",
+        "sponsored": true,
+        "title": "48\" Farmhouse Coffee Table W/ Sliding Barn Doors Rustic White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$237.14"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/227287188071",
+        "thumbnail": "https://i.ebayimg.com/images/g/46QAAeSwQCpp0T89/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table with Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$289.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/398416100940",
+        "thumbnail": "https://i.ebayimg.com/images/g/wXAAAeSw~n5qsOLa/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Lift Top Coffee Table W/ Sliding Barn Door,Rustic Center Table Farmhouse",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$389.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206487676500",
+        "thumbnail": "https://i.ebayimg.com/images/g/IjQAAeSweEtqfZnV/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table Sliding Barn Door Dark Rustic Oak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$338.39"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/800351047668",
+        "thumbnail": "https://i.ebayimg.com/images/g/zOEAAeSw7ehqWIsE/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table W/ Sliding Barn Door,Rustic Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$362.69"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/374656684678",
+        "thumbnail": "https://i.ebayimg.com/images/g/droAAOSwDulkSBus/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table (CT296)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/800665451530",
+        "thumbnail": "https://i.ebayimg.com/images/g/vhEAAeSwy4NqqTON/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table W/ Sliding Barn Doors Antique White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/398101861763",
+        "thumbnail": "https://i.ebayimg.com/images/g/b0cAAeSwOfJqonp6/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table, Rectangle Coffee Table with 2 Sliding Barn Doors, 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$216.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/227528540044",
+        "thumbnail": "https://i.ebayimg.com/images/g/AH8AAeSwId5qrhJe/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Coffee Table with Sliding Barn Doors in Rustic Oak and Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$363.10"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/267320713422",
+        "thumbnail": "https://i.ebayimg.com/images/g/WCgAAeSwqYJpWajV/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table, Stee base, Hand Made, Salvaged, 2.5'' Top.",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/147176349928",
+        "thumbnail": "https://i.ebayimg.com/images/g/g88AAeSwBmFpok4o/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table, 39.4\", Farmhouse, Sliding Barn Doors, White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$142.99"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/156827872040",
+        "thumbnail": "https://i.ebayimg.com/images/g/hz8AAOSwpKtn4aA~/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,499.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/147300077460",
+        "thumbnail": "https://i.ebayimg.com/images/g/7nwAAeSwMc9p~GB5/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table with Storage Sliding Barn Door & Large Hidde",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$195.78"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/173359610273",
+        "thumbnail": "https://i.ebayimg.com/images/g/b6QAAOSwBXhbHWXh/s-l500.webp",
+        "sponsored": false,
+        "title": "Amish Rustic Sliding Barn Door Track Accent Tables Set Solid Wood Coffee End",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$2,899.00",
+          "to": "$3,899.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/147299687266",
+        "thumbnail": "https://i.ebayimg.com/images/g/l~EAAeSw7clp~GB2/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table with Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$197.97"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/236993094138",
+        "thumbnail": "https://i.ebayimg.com/images/g/V70AAeSwiiFqdsJR/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table W/ Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$345.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226565433416",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lp8AAOSwMjhnlX8-/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Barn Door Coffee Table Dimensions 46x23x17",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/257002992092",
+        "thumbnail": "https://i.ebayimg.com/images/g/lAUAAeSwCdVoaGWX/s-l500.webp",
+        "sponsored": false,
+        "title": "48'' Farmhouse Coffee Table with Sliding Barn Doors, Rustic Center Table with 6",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/397060525607",
+        "thumbnail": "https://i.ebayimg.com/images/g/uH8AAeSwH-FoyMVE/s-l500.webp",
+        "sponsored": false,
+        "title": "41.3 Inch Coffee Table With Storage And Sliding Wood Door, Farmhouse And Industr",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in China",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336815721833",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DoAAeSwJ5VquVY3/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table 48 Farmhouse Sliding Barn Door Reclaimed Barnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$439.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/407076951635",
+        "thumbnail": "https://i.ebayimg.com/images/g/vXAAAeSwzM5qWKhW/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Coffee Bar Cabinet with Sliding Barn Doors, Wine/Glass Rack&3 Drawers",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$196.79"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/236993651470",
+        "thumbnail": "https://i.ebayimg.com/images/g/RYYAAeSwmE9qdym~/s-l500.webp",
+        "sponsored": true,
+        "title": "3 Piece Farmhouse Coffee Table Set Distressed White Barn Door Charging Station",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$356.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/168662068622",
+        "thumbnail": "https://i.ebayimg.com/images/g/QkcAAeSwuQVqmhpK/s-l500.webp",
+        "sponsored": true,
+        "title": "Rustic Coffee Bar Table with Buffet Stand and Four Barn Door Design - White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/167882862509",
+        "thumbnail": "https://i.ebayimg.com/images/g/JVEAAeSwX9xqB3Jh/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table w/ Storage Hidden Compartment Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/407255303570",
+        "thumbnail": "https://i.ebayimg.com/images/g/jkEAAeSwdNVqu~3x/s-l500.webp",
+        "sponsored": false,
+        "title": "Large Farmhouse Coffee Bar Cabinet with Sliding Barn Door - Space-Saving Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$141.88"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/318932841195",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 72\" Bar Cabinet Sliding Barn Door, Coffee Station with Charging & LED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$270.86"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/287579928654",
+        "thumbnail": "https://i.ebayimg.com/images/g/AEsAAeSwLDNqAbof/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$154.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/377311861049",
+        "thumbnail": "https://i.ebayimg.com/images/g/V1QAAeSwctdpKWhe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Style Living Room Coffee Table w/ Open Storage & Barn Door Refurbished",
+        "subtitle": null,
+        "condition": "Certified - Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.49"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/227435610142",
+        "thumbnail": "https://i.ebayimg.com/images/g/tKkAAeSwvw1qWnWe/s-l500.webp",
+        "sponsored": true,
+        "title": "59\" Farmhouse Buffet Cabinet with Sliding Barn Doors White Coffee Bar Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$262.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/168619785629",
+        "thumbnail": "https://i.ebayimg.com/images/g/yv4AAeSwplVqM5nJ/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Sliding Barn Doors Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$202.49"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/389211496321",
+        "thumbnail": "https://i.ebayimg.com/images/g/fKIAAeSwMDlpEYVb/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse LED Coffee Bar Cabinet Barn Door Sideboard Buffet with Power Outlet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/222553171276",
+        "thumbnail": "https://i.ebayimg.com/images/g/TfsAAOSwA3dYcIl0/s-l500.webp",
+        "sponsored": true,
+        "title": "Sliding Barn Wood Door Hardware Black & Brown (Coffee) Steel Kit Track Closet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/286342779413",
+        "thumbnail": "https://i.ebayimg.com/images/g/c1MAAeSwYs9ntakN/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table 2-tier Rectangle Table with Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$135.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/358889658975",
+        "thumbnail": "https://i.ebayimg.com/images/g/hNYAAeSw6Xlqc-LE/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 3 Piece Coffee Table Set Charging Station Glass Barn Door Storage Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$571.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/186857390921",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ekAAOSw6kZnd0AZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 31.5/36/40/48\" Farmhouse Coffee Table Rectangle/Square Table Sliding Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$127.99",
+          "to": "$147.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/227514926936",
+        "thumbnail": "https://i.ebayimg.com/images/g/knYAAeSwBJhqok2m/s-l500.webp",
+        "sponsored": false,
+        "title": "ALLSTAND 48\" Farmhouse Lift Top Coffee Table with Storage Sliding Barn Door & La",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$176.16"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/366696680986",
+        "thumbnail": "https://i.ebayimg.com/images/g/99IAAeSwJLxqugNQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Large Farmhouse Coffee Bar Cabinet with Sliding Barn Door - Space-Saving Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$137.95"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/196336376973",
+        "thumbnail": "https://i.ebayimg.com/images/g/qSMAAOSwddpmFODD/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table, Small Farmhouse Coffee Table w/Sliding Barn Door &Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/168637513781",
+        "thumbnail": "https://i.ebayimg.com/images/g/xOAAAeSw7dJqjBBo/s-l500.webp",
+        "sponsored": false,
+        "title": "OROFULL Farmhouse Entryway Table w/ LED Light & Sliding Barn Door, Antique White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/257262895424",
+        "thumbnail": "https://i.ebayimg.com/images/g/ITgAAeSwKcVpQjCC/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Coffee Bar Cabinet Farmhouse Buffet Table with Drawer & 4 Barn Doors White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.90"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/398183847112",
+        "thumbnail": "https://i.ebayimg.com/images/g/6ZkAAeSwk8ZqWfEp/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 48\" Farmhouse Coffee Table 2-tier Rectangle Table with Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$147.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/137792518055",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": true,
+        "title": "72\" Sliding Barn Door Farmhouse Bar Cabinet, Coffee Station with Charging LED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$266.44"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/820035546590",
+        "thumbnail": "https://i.ebayimg.com/images/g/Q18AAeSwsIxqa3LX/s-l500.webp",
+        "sponsored": true,
+        "title": "37.4\" Coffee Bar Mini Fridge Stand Barn Door Built-in Outlet Storage Organizer",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$218.99"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/236697537051",
+        "thumbnail": "https://i.ebayimg.com/images/g/i0wAAeSw5jFputRa/s-l500.webp",
+        "sponsored": true,
+        "title": "Easelife 32 X 84 Inch White Barn Door with 5.5FT Sliding Door Hardware Kit Inclu",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$219.19"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/358476567650",
+        "thumbnail": "https://i.ebayimg.com/images/g/lBQAAeSw7LZp6YJe/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Kitchen Island with Storage, Sliding Barn Door & Metal Grid Side Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$339.00"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/227503848917",
+        "thumbnail": "https://i.ebayimg.com/images/g/q4sAAeSwFh9qmVxs/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Piece Living Room Table Set W/ Barn Door Distressed White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$310.19"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/198514937276",
+        "thumbnail": "https://i.ebayimg.com/images/g/ItkAAeSw1bNqYBW0/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Barn Door and Hardware Kit 30\" x 84\" Wood and Glass Sliding Barn Door Kit",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$165.86"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/407153996733",
+        "thumbnail": "https://i.ebayimg.com/images/g/-7MAAeSwS7ZqhJeZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Bar, 42\" Coffee Bar Cabinet with Sliding Barn Doors and Adjustable Shelf,",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$152.70"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/398251368438",
+        "thumbnail": "https://i.ebayimg.com/images/g/2Y0AAeSw0ttqcq-n/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet3-Tier Coffee Bar Table with Barn Doors for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$158.29"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/178268464204",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": false,
+        "title": "72\" Farmhouse Bar Cabinet Sliding Barn Door, Coffee Station w/ Charging & LED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$280.85"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/800559845711",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": false,
+        "title": "72 Inch Farmhouse Wine Bar Cabinet w/ Sliding Barn Door, Coffee Storage Hutch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$274.06"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/307143036610",
+        "thumbnail": "https://i.ebayimg.com/images/g/SEYAAeSwv9Nqi74o/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Storage Cabinet with Doors & Shelves, Kitchen Barn Door Sideboard, Cof",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$151.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/322561874313",
+        "thumbnail": "https://i.ebayimg.com/images/g/4ksAAOSwIZBZxFLz/s-l500.webp",
+        "sponsored": true,
+        "title": "Sliding Barn Wood Door Hardware Black & Brown (Coffee) Steel Track Closet Set",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/227113953665",
+        "thumbnail": "https://i.ebayimg.com/images/g/VpYAAeSwSgppL-Sm/s-l500.webp",
+        "sponsored": false,
+        "title": "47.2\" Lift Top Coffee Table w/ Barn Door,Hidden Storage&Adjustable Shelf, Rustic",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$155.91",
+          "to": "$191.24"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/188816157852",
+        "thumbnail": "https://i.ebayimg.com/images/g/kw0AAeSwx6lqpWmy/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Farmhouse Coffee Bar Cabinet with Sliding Barn Door Buffet Wine Bar Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$170.99",
+          "to": "$173.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/398144745806",
+        "thumbnail": "https://i.ebayimg.com/images/g/EDgAAeSwfwBqfA7C/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet4-Tier Coffee Bar Table with Barn Doors for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$166.59"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/800564524408",
+        "thumbnail": "https://i.ebayimg.com/images/g/P9kAAeSwsx9qjn-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table Lift Top with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$167.31"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 72,
+        "url": "https://www.ebay.com/itm/267587264713",
+        "thumbnail": "https://i.ebayimg.com/images/g/BiIAAeSwREFpoA3N/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Coffee Bar Cabinet 4-Tier Farmhouse Sideboard Buffet Table with Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.90"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 73,
+        "url": "https://www.ebay.com/itm/366688327344",
+        "thumbnail": "https://i.ebayimg.com/images/g/TeIAAeSwTD9qtJg8/s-l500.webp",
+        "sponsored": false,
+        "title": "53.7\" Farmhouse Kitchen Island w/ Power Outlet, 2 Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$327.60"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 74,
+        "url": "https://www.ebay.com/itm/227305570531",
+        "thumbnail": "https://i.ebayimg.com/images/g/RJoAAeSwmR5p4q8i/s-l500.webp",
+        "sponsored": false,
+        "title": "White Coffee Bar Cabinet with Storage, Farmhouse Coffee Bar Cabinet, Coffee Bar",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$109.23"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 75,
+        "url": "https://www.ebay.com/itm/398373199783",
+        "thumbnail": "https://i.ebayimg.com/images/g/SigAAeSwPMBqoAAn/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse End Table with Charging Station, 24\" Large Sofa Table with Barn Door,",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$178.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 76,
+        "url": "https://www.ebay.com/itm/186947780251",
+        "thumbnail": "https://i.ebayimg.com/images/g/JeAAAeSwFRZnrGVN/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet 3-Tier Farmhouse Sideboard Buffet Table Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$158.29"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 77,
+        "url": "https://www.ebay.com/itm/800004295339",
+        "thumbnail": "https://i.ebayimg.com/images/g/fxUAAeSw-BhqAboe/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$161.67"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 78,
+        "url": "https://www.ebay.com/itm/176840734280",
+        "thumbnail": "https://i.ebayimg.com/images/g/2nUAAeSwKwdnrGWO/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet 4-Tier Farmhouse Sideboard Buffet Table with Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$166.59"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 79,
+        "url": "https://www.ebay.com/itm/236860084303",
+        "thumbnail": "https://i.ebayimg.com/images/g/VzUAAeSwcQ9qIvxO/s-l500.webp",
+        "sponsored": false,
+        "title": "ALLSTAND 48\" Farmhouse Lift Top Coffee Table with Storage Sliding Barn Door & La",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$178.09"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 80,
+        "url": "https://www.ebay.com/itm/317273717108",
+        "thumbnail": "https://i.ebayimg.com/images/g/CbQAAeSwBktow9-G/s-l500.webp",
+        "sponsored": false,
+        "title": "65\" TV Stand w/ Storage Cabinet&Sliding Barn Door,Media Console Table Open Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.83"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 81,
+        "url": "https://www.ebay.com/itm/178501760266",
+        "thumbnail": "https://i.ebayimg.com/images/g/vicAAeSwqmVqqmBM/s-l500.webp",
+        "sponsored": false,
+        "title": "Matte White 180 Degree Barn Door Lock,Flip Gate Latches Hardware",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$20.40"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 82,
+        "url": "https://www.ebay.com/itm/306975357523",
+        "thumbnail": "https://i.ebayimg.com/images/g/wOsAAeSwsvBqMRHn/s-l500.webp",
+        "sponsored": false,
+        "title": "48” Farmhouse Coffee Table w/Sliding Doors Adjustable Shelf Storage Compartments",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$104.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 83,
+        "url": "https://www.ebay.com/itm/365882830849",
+        "thumbnail": "https://i.ebayimg.com/images/g/PH0AAeSww8Fo1Ogl/s-l500.webp",
+        "sponsored": false,
+        "title": "30'' W Farmhouse Wine Bar Cabinet with Barn Door & Charging Station & LED Lights",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 84,
+        "url": "https://www.ebay.com/itm/178317101007",
+        "thumbnail": "https://i.ebayimg.com/images/g/b6gAAeSwizZqWVjD/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Coffee Bar Cabinet, Coffee Bar Table with Sliding Barn Door, Kitche...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$122.21"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 85,
+        "url": "https://www.ebay.com/itm/168551196378",
+        "thumbnail": "https://i.ebayimg.com/images/g/WoQAAeSwD-BqXulE/s-l500.webp",
+        "sponsored": true,
+        "title": "55\" Farmhouse Bar Cabinet, LED Wine Coffee Bar With Barn Door & Racks",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      }
+    ],
+    "eligible_before_title_filter": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/167543162009",
+        "thumbnail": "https://i.ebayimg.com/images/g/kWMAAeSwTg5qTChF/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table with Fridge Included, Farmhouse Sliding Barn Door Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$112.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/178460986390",
+        "thumbnail": "https://i.ebayimg.com/images/g/gpwAAeSwJm1ql9er/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Bench and Sliding Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$199.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/358791252838",
+        "thumbnail": "https://i.ebayimg.com/images/g/3ZoAAeSw6JVqVQay/s-l500.webp",
+        "sponsored": true,
+        "title": "48 Inch Lift Top Coffee Table Sliding Barn Door Rustic Wood Farmhouse Dark Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$335.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/196336381437",
+        "thumbnail": "https://i.ebayimg.com/images/g/BNQAAOSwkChmFOMs/s-l500.webp",
+        "sponsored": true,
+        "title": "Lift Top Coffee Table with Sliding Barn Door &Storage Shelf, Square Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/307160379158",
+        "thumbnail": "https://i.ebayimg.com/images/g/er0AAeSwFHNqmVkk/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors, Light Rustic Oak (Open Box)",
+        "subtitle": "**ITEM IS LIKE NEW**",
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$60.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398194388252",
+        "thumbnail": "https://i.ebayimg.com/images/g/fc4AAeSw9apqXcDe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Lift Top Coffee Table Wood Barn Door Center Table w/ Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$163.13"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/389584599986",
+        "thumbnail": "https://i.ebayimg.com/images/g/4zwAAeSwT-JphYza/s-l500.webp",
+        "sponsored": false,
+        "title": "48'' Coffee Table with Sliding Barn Doors, Rustic Center Table with 6 Large S...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$197.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/377194558354",
+        "thumbnail": "https://i.ebayimg.com/images/g/9ScAAeSwa2BqC-PP/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 39.4In Lift Top Coffee Table, Rustic Center Table with Barn Door & Hid",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$148.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/188870547911",
+        "thumbnail": "https://i.ebayimg.com/images/g/LT8AAeSw1nRqlruy/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Table Set of 3, Coffee Table with Sliding Barn Doors, End Tables Set o",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$592.22"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/355611672862",
+        "thumbnail": "https://i.ebayimg.com/images/g/zhQAAOSwlcVl~EsO/s-l500.webp",
+        "sponsored": false,
+        "title": "48 Inch Coffee Table with Sliding Barn Doors Barnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$369.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/178504832272",
+        "thumbnail": "https://i.ebayimg.com/images/g/MhIAAeSwD91qq9aJ/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table Sliding Barn Door ReclaimedBarnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$334.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/267031892021",
+        "thumbnail": "https://i.ebayimg.com/images/g/gt4AAOSwQnZnERgs/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table, Custom Wood base. Hand Made. Salvaged, 3'' Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/146894496271",
+        "thumbnail": "https://i.ebayimg.com/images/g/OEwAAeSwEABo7bKm/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Barn Door Coffee Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$385.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/358891054990",
+        "thumbnail": "https://i.ebayimg.com/images/g/41sAAeSwRT9qdF-5/s-l500.webp",
+        "sponsored": true,
+        "title": "47.2 in Buffet Cabinet 3 Drawers 2 Barn Doors Power Outlet Adjustable Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$302.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/800670755917",
+        "thumbnail": "https://i.ebayimg.com/images/g/9E0AAeSwf8pqqoUN/s-l500.webp",
+        "sponsored": true,
+        "title": "48\" Farmhouse Coffee Table W/ Sliding Barn Doors Rustic White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$237.14"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/227287188071",
+        "thumbnail": "https://i.ebayimg.com/images/g/46QAAeSwQCpp0T89/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table with Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$289.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/398416100940",
+        "thumbnail": "https://i.ebayimg.com/images/g/wXAAAeSw~n5qsOLa/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Lift Top Coffee Table W/ Sliding Barn Door,Rustic Center Table Farmhouse",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$389.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206487676500",
+        "thumbnail": "https://i.ebayimg.com/images/g/IjQAAeSweEtqfZnV/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table Sliding Barn Door Dark Rustic Oak",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$338.39"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/800351047668",
+        "thumbnail": "https://i.ebayimg.com/images/g/zOEAAeSw7ehqWIsE/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table W/ Sliding Barn Door,Rustic Center Table",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$362.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/374656684678",
+        "thumbnail": "https://i.ebayimg.com/images/g/droAAOSwDulkSBus/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table (CT296)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/800665451530",
+        "thumbnail": "https://i.ebayimg.com/images/g/vhEAAeSwy4NqqTON/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table W/ Sliding Barn Doors Antique White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/398101861763",
+        "thumbnail": "https://i.ebayimg.com/images/g/b0cAAeSwOfJqonp6/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table, Rectangle Coffee Table with 2 Sliding Barn Doors, 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$216.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/227528540044",
+        "thumbnail": "https://i.ebayimg.com/images/g/AH8AAeSwId5qrhJe/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Coffee Table with Sliding Barn Doors in Rustic Oak and Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$363.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/267320713422",
+        "thumbnail": "https://i.ebayimg.com/images/g/WCgAAeSwqYJpWajV/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table, Stee base, Hand Made, Salvaged, 2.5'' Top.",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$499.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/156827872040",
+        "thumbnail": "https://i.ebayimg.com/images/g/hz8AAOSwpKtn4aA~/s-l500.webp",
+        "sponsored": false,
+        "title": "Reclaimed Barn Wood Coffee Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,499.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/173359610273",
+        "thumbnail": "https://i.ebayimg.com/images/g/b6QAAOSwBXhbHWXh/s-l500.webp",
+        "sponsored": false,
+        "title": "Amish Rustic Sliding Barn Door Track Accent Tables Set Solid Wood Coffee End",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$2,899.00",
+          "to": "$3,899.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/236993094138",
+        "thumbnail": "https://i.ebayimg.com/images/g/V70AAeSwiiFqdsJR/s-l500.webp",
+        "sponsored": true,
+        "title": "40\" Farmhouse Lift Top Coffee Table W/ Sliding Barn Door,4 in 1 Multi-Function",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$345.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226565433416",
+        "thumbnail": "https://i.ebayimg.com/images/g/Lp8AAOSwMjhnlX8-/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Barn Door Coffee Table Dimensions 46x23x17",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/257002992092",
+        "thumbnail": "https://i.ebayimg.com/images/g/lAUAAeSwCdVoaGWX/s-l500.webp",
+        "sponsored": false,
+        "title": "48'' Farmhouse Coffee Table with Sliding Barn Doors, Rustic Center Table with 6",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336815721833",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DoAAeSwJ5VquVY3/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table 48 Farmhouse Sliding Barn Door Reclaimed Barnwood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-3 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$439.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/407076951635",
+        "thumbnail": "https://i.ebayimg.com/images/g/vXAAAeSwzM5qWKhW/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Coffee Bar Cabinet with Sliding Barn Doors, Wine/Glass Rack&3 Drawers",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$196.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/236993651470",
+        "thumbnail": "https://i.ebayimg.com/images/g/RYYAAeSwmE9qdym~/s-l500.webp",
+        "sponsored": true,
+        "title": "3 Piece Farmhouse Coffee Table Set Distressed White Barn Door Charging Station",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$356.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/168662068622",
+        "thumbnail": "https://i.ebayimg.com/images/g/QkcAAeSwuQVqmhpK/s-l500.webp",
+        "sponsored": true,
+        "title": "Rustic Coffee Bar Table with Buffet Stand and Four Barn Door Design - White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/167882862509",
+        "thumbnail": "https://i.ebayimg.com/images/g/JVEAAeSwX9xqB3Jh/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Lift Top Coffee Table w/ Storage Hidden Compartment Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/407255303570",
+        "thumbnail": "https://i.ebayimg.com/images/g/jkEAAeSwdNVqu~3x/s-l500.webp",
+        "sponsored": false,
+        "title": "Large Farmhouse Coffee Bar Cabinet with Sliding Barn Door - Space-Saving Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$141.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/318932841195",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 72\" Bar Cabinet Sliding Barn Door, Coffee Station with Charging & LED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$270.86"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/287579928654",
+        "thumbnail": "https://i.ebayimg.com/images/g/AEsAAeSwLDNqAbof/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$154.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/377311861049",
+        "thumbnail": "https://i.ebayimg.com/images/g/V1QAAeSwctdpKWhe/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Style Living Room Coffee Table w/ Open Storage & Barn Door Refurbished",
+        "subtitle": null,
+        "condition": "Certified - Refurbished",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$139.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/227435610142",
+        "thumbnail": "https://i.ebayimg.com/images/g/tKkAAeSwvw1qWnWe/s-l500.webp",
+        "sponsored": true,
+        "title": "59\" Farmhouse Buffet Cabinet with Sliding Barn Doors White Coffee Bar Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$262.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/168619785629",
+        "thumbnail": "https://i.ebayimg.com/images/g/yv4AAeSwplVqM5nJ/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Lift Top Coffee Table with Storage Sliding Barn Doors Hidden Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$202.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/389211496321",
+        "thumbnail": "https://i.ebayimg.com/images/g/fKIAAeSwMDlpEYVb/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse LED Coffee Bar Cabinet Barn Door Sideboard Buffet with Power Outlet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$170.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/222553171276",
+        "thumbnail": "https://i.ebayimg.com/images/g/TfsAAOSwA3dYcIl0/s-l500.webp",
+        "sponsored": true,
+        "title": "Sliding Barn Wood Door Hardware Black & Brown (Coffee) Steel Kit Track Closet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/286342779413",
+        "thumbnail": "https://i.ebayimg.com/images/g/c1MAAeSwYs9ntakN/s-l500.webp",
+        "sponsored": false,
+        "title": "48\" Farmhouse Coffee Table 2-tier Rectangle Table with Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$135.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/358889658975",
+        "thumbnail": "https://i.ebayimg.com/images/g/hNYAAeSw6Xlqc-LE/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse 3 Piece Coffee Table Set Charging Station Glass Barn Door Storage Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$571.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/186857390921",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ekAAOSw6kZnd0AZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 31.5/36/40/48\" Farmhouse Coffee Table Rectangle/Square Table Sliding Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$127.99",
+          "to": "$147.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/366696680986",
+        "thumbnail": "https://i.ebayimg.com/images/g/99IAAeSwJLxqugNQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Large Farmhouse Coffee Bar Cabinet with Sliding Barn Door - Space-Saving Style",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$137.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/196336376973",
+        "thumbnail": "https://i.ebayimg.com/images/g/qSMAAOSwddpmFODD/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table, Small Farmhouse Coffee Table w/Sliding Barn Door &Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$159.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/168637513781",
+        "thumbnail": "https://i.ebayimg.com/images/g/xOAAAeSw7dJqjBBo/s-l500.webp",
+        "sponsored": false,
+        "title": "OROFULL Farmhouse Entryway Table w/ LED Light & Sliding Barn Door, Antique White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/257262895424",
+        "thumbnail": "https://i.ebayimg.com/images/g/ITgAAeSwKcVpQjCC/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Coffee Bar Cabinet Farmhouse Buffet Table with Drawer & 4 Barn Doors White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/398183847112",
+        "thumbnail": "https://i.ebayimg.com/images/g/6ZkAAeSwk8ZqWfEp/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso 48\" Farmhouse Coffee Table 2-tier Rectangle Table with Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$147.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/137792518055",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": true,
+        "title": "72\" Sliding Barn Door Farmhouse Bar Cabinet, Coffee Station with Charging LED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$266.44"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/820035546590",
+        "thumbnail": "https://i.ebayimg.com/images/g/Q18AAeSwsIxqa3LX/s-l500.webp",
+        "sponsored": true,
+        "title": "37.4\" Coffee Bar Mini Fridge Stand Barn Door Built-in Outlet Storage Organizer",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$218.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/358476567650",
+        "thumbnail": "https://i.ebayimg.com/images/g/lBQAAeSw7LZp6YJe/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Kitchen Island with Storage, Sliding Barn Door & Metal Grid Side Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$339.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/227503848917",
+        "thumbnail": "https://i.ebayimg.com/images/g/q4sAAeSwFh9qmVxs/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Piece Living Room Table Set W/ Barn Door Distressed White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$310.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/198514937276",
+        "thumbnail": "https://i.ebayimg.com/images/g/ItkAAeSw1bNqYBW0/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Barn Door and Hardware Kit 30\" x 84\" Wood and Glass Sliding Barn Door Kit",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$165.86"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/398251368438",
+        "thumbnail": "https://i.ebayimg.com/images/g/2Y0AAeSw0ttqcq-n/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet3-Tier Coffee Bar Table with Barn Doors for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$158.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/178268464204",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": false,
+        "title": "72\" Farmhouse Bar Cabinet Sliding Barn Door, Coffee Station w/ Charging & LED",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$280.85"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/800559845711",
+        "thumbnail": "https://i.ebayimg.com/images/g/j8kAAeSwmRNqQ1FU/s-l500.webp",
+        "sponsored": false,
+        "title": "72 Inch Farmhouse Wine Bar Cabinet w/ Sliding Barn Door, Coffee Storage Hutch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$274.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/307143036610",
+        "thumbnail": "https://i.ebayimg.com/images/g/SEYAAeSwv9Nqi74o/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Storage Cabinet with Doors & Shelves, Kitchen Barn Door Sideboard, Cof",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$151.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/322561874313",
+        "thumbnail": "https://i.ebayimg.com/images/g/4ksAAOSwIZBZxFLz/s-l500.webp",
+        "sponsored": true,
+        "title": "Sliding Barn Wood Door Hardware Black & Brown (Coffee) Steel Track Closet Set",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/227113953665",
+        "thumbnail": "https://i.ebayimg.com/images/g/VpYAAeSwSgppL-Sm/s-l500.webp",
+        "sponsored": false,
+        "title": "47.2\" Lift Top Coffee Table w/ Barn Door,Hidden Storage&Adjustable Shelf, Rustic",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$155.91",
+          "to": "$191.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/188816157852",
+        "thumbnail": "https://i.ebayimg.com/images/g/kw0AAeSwx6lqpWmy/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Farmhouse Coffee Bar Cabinet with Sliding Barn Door Buffet Wine Bar Cabinet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$170.99",
+          "to": "$173.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/398144745806",
+        "thumbnail": "https://i.ebayimg.com/images/g/EDgAAeSwfwBqfA7C/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet4-Tier Coffee Bar Table with Barn Doors for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$166.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/800564524408",
+        "thumbnail": "https://i.ebayimg.com/images/g/P9kAAeSwsx9qjn-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Coffee Table Lift Top with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$167.31"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 72,
+        "url": "https://www.ebay.com/itm/267587264713",
+        "thumbnail": "https://i.ebayimg.com/images/g/BiIAAeSwREFpoA3N/s-l500.webp",
+        "sponsored": false,
+        "title": "VEVOR Coffee Bar Cabinet 4-Tier Farmhouse Sideboard Buffet Table with Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$149.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 73,
+        "url": "https://www.ebay.com/itm/366688327344",
+        "thumbnail": "https://i.ebayimg.com/images/g/TeIAAeSwTD9qtJg8/s-l500.webp",
+        "sponsored": false,
+        "title": "53.7\" Farmhouse Kitchen Island w/ Power Outlet, 2 Sliding Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$327.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 74,
+        "url": "https://www.ebay.com/itm/227305570531",
+        "thumbnail": "https://i.ebayimg.com/images/g/RJoAAeSwmR5p4q8i/s-l500.webp",
+        "sponsored": false,
+        "title": "White Coffee Bar Cabinet with Storage, Farmhouse Coffee Bar Cabinet, Coffee Bar",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$109.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 75,
+        "url": "https://www.ebay.com/itm/398373199783",
+        "thumbnail": "https://i.ebayimg.com/images/g/SigAAeSwPMBqoAAn/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse End Table with Charging Station, 24\" Large Sofa Table with Barn Door,",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$178.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 76,
+        "url": "https://www.ebay.com/itm/186947780251",
+        "thumbnail": "https://i.ebayimg.com/images/g/JeAAAeSwFRZnrGVN/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet 3-Tier Farmhouse Sideboard Buffet Table Barn Doors",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$158.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 77,
+        "url": "https://www.ebay.com/itm/800004295339",
+        "thumbnail": "https://i.ebayimg.com/images/g/fxUAAeSw-BhqAboe/s-l500.webp",
+        "sponsored": false,
+        "title": "Lift Top Coffee Table with Sliding Barn Door Hidden Storage Lifting Table Top",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$161.67"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 78,
+        "url": "https://www.ebay.com/itm/176840734280",
+        "thumbnail": "https://i.ebayimg.com/images/g/2nUAAeSwKwdnrGWO/s-l500.webp",
+        "sponsored": false,
+        "title": "Uimoso Coffee Bar Cabinet 4-Tier Farmhouse Sideboard Buffet Table with Barn Door",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$166.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 80,
+        "url": "https://www.ebay.com/itm/317273717108",
+        "thumbnail": "https://i.ebayimg.com/images/g/CbQAAeSwBktow9-G/s-l500.webp",
+        "sponsored": false,
+        "title": "65\" TV Stand w/ Storage Cabinet&Sliding Barn Door,Media Console Table Open Shelf",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 81,
+        "url": "https://www.ebay.com/itm/178501760266",
+        "thumbnail": "https://i.ebayimg.com/images/g/vicAAeSwqmVqqmBM/s-l500.webp",
+        "sponsored": false,
+        "title": "Matte White 180 Degree Barn Door Lock,Flip Gate Latches Hardware",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$20.40"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 82,
+        "url": "https://www.ebay.com/itm/306975357523",
+        "thumbnail": "https://i.ebayimg.com/images/g/wOsAAeSwsvBqMRHn/s-l500.webp",
+        "sponsored": false,
+        "title": "48” Farmhouse Coffee Table w/Sliding Doors Adjustable Shelf Storage Compartments",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$104.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 83,
+        "url": "https://www.ebay.com/itm/365882830849",
+        "thumbnail": "https://i.ebayimg.com/images/g/PH0AAeSww8Fo1Ogl/s-l500.webp",
+        "sponsored": false,
+        "title": "30'' W Farmhouse Wine Bar Cabinet with Barn Door & Charging Station & LED Lights",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 84,
+        "url": "https://www.ebay.com/itm/178317101007",
+        "thumbnail": "https://i.ebayimg.com/images/g/b6gAAeSwizZqWVjD/s-l500.webp",
+        "sponsored": true,
+        "title": "Farmhouse Coffee Bar Cabinet, Coffee Bar Table with Sliding Barn Door, Kitche...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$122.21"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 85,
+        "url": "https://www.ebay.com/itm/168551196378",
+        "thumbnail": "https://i.ebayimg.com/images/g/WoQAAeSwD-BqXulE/s-l500.webp",
+        "sponsored": true,
+        "title": "55\" Farmhouse Bar Cabinet, LED Wine Coffee Bar With Barn Door & Racks",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 16452.679
+  }
+}

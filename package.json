@@ -1,0 +1,28 @@
+{
+  "name": "looksalike",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node esbuild.config.mjs",
+    "check": "biome check --error-on-warnings app/javascript script/*.mjs test/javascript/*.mjs esbuild.config.mjs package.json biome.json",
+    "format": "biome format --write app/javascript script/*.mjs test/javascript/*.mjs esbuild.config.mjs package.json biome.json",
+    "test": "node --test test/javascript/*.test.mjs",
+    "prepare:photos": "node script/prepare_photos.mjs"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "9.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "esbuild": "0.28.2",
+    "playwright": "1.63.0"
+  },
+  "engines": {
+    "node": ">=22 <23"
+  }
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+$stdout.sync = true
+
+Dir.chdir(File.expand_path("..", __dir__)) do
+  steps = [
+    [ "Ruby dependencies", [ "bundle", "install" ] ],
+    [ "JavaScript dependencies", [ "npm", "ci" ] ],
+    [ "JavaScript build", [ "npm", "run", "build" ] ],
+    [ "Database", [ "bin/rails", "db:prepare" ] ]
+  ]
+
+  steps.each do |name, command|
+    puts "\n== #{name} =="
+    abort "Failed: #{name}" unless system(*command)
+  end
+
+  unless ARGV.include?("--skip-server")
+    puts "\n== Starting development server =="
+    exec "bin/dev"
+  end
+end

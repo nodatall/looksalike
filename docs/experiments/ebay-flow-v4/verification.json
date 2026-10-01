@@ -1,0 +1,18 @@
+{
+  "manifest_sha256": "10736f6b7e9789dfbcc6deb5770d10554fac33f7db49f39578afc5cc51a59205",
+  "frozen_files_verified": 99,
+  "historical_tables_unchanged": 19,
+  "outcome_and_judgment_match_ledger": true,
+  "stages": [
+    "upload",
+    "lens",
+    "vision",
+    "ebay"
+  ],
+  "new_serpapi_searches": 2,
+  "historical_plus_new_serpapi_searches": 41,
+  "uploads": 1,
+  "venice_calls": 1,
+  "credential_scan": "no configured keys found",
+  "checked_at": "2026-09-28T21:05:38Z"
+}

@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/147547024855",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page/photo opened. Black floor-level L-shaped sectional with corduroy-like texture; different silhouette and material from the raised green straight sofa."
+    },
+    {
+      "url": "https://www.ebay.com/itm/389300537759",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Item page/photo opened. Velvet sofa with straight arms; same category and velvet material. Weaker match: black color, tufting and pull-out sleeper form differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/800643869258",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page/photo opened. Light-green overstuffed sofa has rounded padded arms and textured fabric; color alone is insufficient under the shape/material/style criterion."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366596554335",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Item page/photo opened. Gray corduroy modular L-shaped sectional; different shape and upholstery."
+    },
+    {
+      "url": "https://www.ebay.com/itm/376979008357",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Item page/photo opened. Green velvet straight-arm sofa with raised base and simple rectangular silhouette; strong material/style match."
+    },
+    {
+      "url": "https://www.ebay.com/itm/376986798116",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Item page/photo opened. Green velvet sofa with two back cushions, narrow straight arms and bolster; very close to reference shape and material."
+    }
+  ],
+  "relevant_accessible_count": 3,
+  "scored_at": "2026-09-20T17:51:04Z",
+  "passed": true
+}

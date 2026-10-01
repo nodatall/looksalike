@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/366667704399",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Cream corduroy modular loveseat and ottoman with chunky arms and short feet. Different material, proportions and silhouette. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/147117474946",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Brown faux-leather Chesterfield with rolled arms and tufted back; different material and silhouette. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/147319743132",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Partial shape/style match under the existing criterion: long straight-backed modern sofa, narrow square arms and raised legs. Brown faux leather and tufted cushions differ; not a close material/color match. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/168187861932",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Green velvet, narrow straight arms and modern three-seat profile. Channel back and gold base differ. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/376979009677",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Velvet modern sofa with narrow straight arms, rectangular back and raised feet; orange rather than green fabric. Listing and photo opened."
+    },
+    {
+      "url": "https://www.ebay.com/itm/137732394716",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Partial material match: green velvet loveseat; rolled arms and tufted Chesterfield silhouette differ from reference. Listing and photo opened."
+    }
+  ],
+  "relevant_accessible_count": 4,
+  "scored_at": "2026-09-29T23:17:06Z",
+  "passed": true
+}

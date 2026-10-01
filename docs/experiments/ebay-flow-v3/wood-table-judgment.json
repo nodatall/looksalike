@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/398420076250",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. Black round fluted pedestal table; different shape, finish and construction from the rectangular white storage table."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366685864202",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Rectangular farmhouse coffee table with white crossed supports and lower storage shelf; related shape and style, without cabinet doors."
+    },
+    {
+      "url": "https://www.ebay.com/itm/176801745601",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Rectangular farmhouse lift-top storage table; similar boxy storage form, different dark finish and opening mechanism."
+    },
+    {
+      "url": "https://www.ebay.com/itm/318045789307",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Rectangular wood coffee table with thick slab supports; similar proportions/material, different finish and open base."
+    },
+    {
+      "url": "https://www.ebay.com/itm/237095661762",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Rectangular grey wood-look coffee table with cross braces and shelf; weaker shape/style match with metal supports."
+    },
+    {
+      "url": "https://www.ebay.com/itm/237095661783",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. White paneled farmhouse storage coffee table with cross trim and brown top; similar style and storage form, square footprint and lift top differ."
+    }
+  ],
+  "relevant_accessible_count": 5,
+  "scored_at": "2026-09-28T20:30:44Z",
+  "passed": true
+}

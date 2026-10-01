@@ -1,0 +1,319 @@
+{
+  "manifest_sha256": "2a3ee566c0c2a2c2d619f76999d6f15d9ec7fa9524ae34468a1480d385da53a8",
+  "search_attempts": 6,
+  "comparison_cap": 15,
+  "upload_attempts": 4,
+  "attempt_semantics": "Reserved before dispatch; an interrupted request may have an uncertain outcome.",
+  "attempts": [
+    {
+      "route": "lens_only",
+      "case_id": "ornate-sofa",
+      "stage": "upload",
+      "reserved_at": "2026-09-17T22:22:44.478247Z"
+    },
+    {
+      "route": "lens_only",
+      "case_id": "ornate-sofa",
+      "stage": "lens",
+      "reserved_at": "2026-09-17T22:22:45.146325Z"
+    },
+    {
+      "route": "lens_only",
+      "case_id": "modern-sofa",
+      "stage": "upload",
+      "reserved_at": "2026-09-17T22:23:17.734853Z"
+    },
+    {
+      "route": "lens_only",
+      "case_id": "modern-sofa",
+      "stage": "lens",
+      "reserved_at": "2026-09-17T22:23:18.222864Z"
+    },
+    {
+      "route": "lens_then_images",
+      "case_id": "ornate-sofa",
+      "stage": "upload",
+      "reserved_at": "2026-09-17T22:24:08.317935Z"
+    },
+    {
+      "route": "lens_then_images",
+      "case_id": "ornate-sofa",
+      "stage": "lens",
+      "reserved_at": "2026-09-17T22:24:09.031661Z"
+    },
+    {
+      "route": "lens_then_images",
+      "case_id": "ornate-sofa",
+      "stage": "images",
+      "reserved_at": "2026-09-17T22:24:15.828934Z"
+    },
+    {
+      "route": "lens_then_images",
+      "case_id": "modern-sofa",
+      "stage": "upload",
+      "reserved_at": "2026-09-17T22:25:07.368979Z"
+    },
+    {
+      "route": "lens_then_images",
+      "case_id": "modern-sofa",
+      "stage": "lens",
+      "reserved_at": "2026-09-17T22:25:08.013908Z"
+    },
+    {
+      "route": "lens_then_images",
+      "case_id": "modern-sofa",
+      "stage": "images",
+      "reserved_at": "2026-09-17T22:25:17.933406Z"
+    }
+  ],
+  "routes": {
+    "lens_only": {
+      "cases": [
+        {
+          "route": "lens_only",
+          "case_id": "ornate-sofa",
+          "started_at": "2026-09-17T22:22:44.468925Z",
+          "finished_at": "2026-09-17T22:22:54.355736Z",
+          "outcome": {
+            "status": "success",
+            "listings": [],
+            "counts": {
+              "input": 60,
+              "rejected_url": 60,
+              "missing_metadata": 0,
+              "duplicates": 0,
+              "eligible": 0,
+              "limited": 0,
+              "displayed": 0
+            },
+            "interpretation": null,
+            "stages": [
+              {
+                "stage": "upload",
+                "elapsed_ms": 666.485,
+                "status": "success"
+              },
+              {
+                "stage": "lens",
+                "elapsed_ms": 9183.067,
+                "status": "success"
+              }
+            ],
+            "parameters": [
+              {
+                "engine": "google_lens",
+                "type": "visual_matches",
+                "country": "us",
+                "hl": "en",
+                "q": "site:newyork.craigslist.org"
+              }
+            ],
+            "excerpts": {
+              "visual_match_titles": [
+                "Antique Sofa Photos, Download The BEST Free Antique Sofa Stock Photos & HD Images",
+                "southwest MI furniture for sale \"couch\" - craigslist",
+                "Everything must go! Moving sale - furniture - by owner - craigslist",
+                "brooklyn for sale \"sofa\" - craigslist",
+                "dallas for sale \"couch\" - craigslist",
+                "buffalo furniture for sale \"couches\" - craigslist",
+                "✨ Classic Comfort, Timeless Style ✨ Add a touch of elegance to your living space with this beautifully crafted luxury wooden sofa. Designed with intricate carvings and premium upholstery, it perfectly blends",
+                "Romero European-style Living Room Carved Sofa. 92.5 Rolled Arm | Wayfair"
+              ],
+              "related_queries": []
+            },
+            "elapsed_ms": 10091.432
+          },
+          "judgment": {
+            "reason": "Failed: Lens returned 60 matches in 10.09 seconds, but all 60 failed the frozen exact-area individual-listing URL checks. No displayable cards remained; the minimum is three. No substitutions or retry were made.",
+            "cards": [],
+            "passing_cards": 0,
+            "passed": false,
+            "judged_at": "2026-09-17T22:23:07.861951Z"
+          }
+        },
+        {
+          "route": "lens_only",
+          "case_id": "modern-sofa",
+          "started_at": "2026-09-17T22:23:17.725154Z",
+          "finished_at": "2026-09-17T22:23:24.413173Z",
+          "outcome": {
+            "status": "failed",
+            "listings": [],
+            "counts": {},
+            "stages": [
+              {
+                "stage": "upload",
+                "elapsed_ms": 485.213,
+                "status": "success"
+              },
+              {
+                "stage": "lens",
+                "elapsed_ms": 6186.699,
+                "status": "failed"
+              }
+            ],
+            "parameters": [
+              {
+                "engine": "google_lens",
+                "type": "visual_matches",
+                "country": "us",
+                "hl": "en",
+                "q": "site:sfbay.craigslist.org"
+              }
+            ],
+            "elapsed_ms": 6889.16
+          },
+          "judgment": {
+            "reason": "Failed: upload succeeded, but the Lens stage failed after 6.19 seconds. Total elapsed time was 6.89 seconds, with no returned cards. The sanitized record does not retain a more specific provider error. The attempt remains counted and was not retried.",
+            "cards": [],
+            "passing_cards": 0,
+            "passed": false,
+            "judged_at": "2026-09-17T22:23:58.560177Z"
+          }
+        }
+      ],
+      "passed": false,
+      "stopped": true,
+      "untested": [
+        "dining-chair",
+        "wood-table",
+        "dresser"
+      ]
+    },
+    "lens_then_images": {
+      "cases": [
+        {
+          "route": "lens_then_images",
+          "case_id": "ornate-sofa",
+          "started_at": "2026-09-17T22:24:08.307626Z",
+          "finished_at": "2026-09-17T22:24:17.776594Z",
+          "outcome": {
+            "status": "failed",
+            "listings": [],
+            "counts": {},
+            "stages": [
+              {
+                "stage": "upload",
+                "elapsed_ms": 712.188,
+                "status": "success"
+              },
+              {
+                "stage": "lens",
+                "elapsed_ms": 6777.983,
+                "status": "success"
+              },
+              {
+                "stage": "images",
+                "elapsed_ms": 1945.608,
+                "status": "failed"
+              }
+            ],
+            "parameters": [
+              {
+                "engine": "google_lens",
+                "type": "all",
+                "country": "us",
+                "hl": "en"
+              },
+              {
+                "engine": "google_images",
+                "q": "sofa antique photos download free settees vintage site:newyork.craigslist.org",
+                "location": "New York,New York,United States",
+                "gl": "us",
+                "hl": "en"
+              }
+            ],
+            "elapsed_ms": 9650.052
+          },
+          "judgment": {
+            "reason": "Failed: upload and Lens succeeded, but Google Images failed after 1.95 seconds, leaving no cards. Total elapsed time was 9.65 seconds. The generated query included photo-site terms such as photos, download and free. The record does not identify the exact Images failure; no retry or query change was made.",
+            "cards": [],
+            "passing_cards": 0,
+            "passed": false,
+            "judged_at": "2026-09-17T22:24:58.392602Z"
+          }
+        },
+        {
+          "route": "lens_then_images",
+          "case_id": "modern-sofa",
+          "started_at": "2026-09-17T22:25:07.358963Z",
+          "finished_at": "2026-09-17T22:25:21.777182Z",
+          "outcome": {
+            "status": "success",
+            "listings": [],
+            "counts": {
+              "input": 100,
+              "rejected_url": 100,
+              "missing_metadata": 0,
+              "duplicates": 0,
+              "eligible": 0,
+              "limited": 0,
+              "displayed": 0
+            },
+            "interpretation": "sofa green velvet seater",
+            "stages": [
+              {
+                "stage": "upload",
+                "elapsed_ms": 643.599,
+                "status": "success"
+              },
+              {
+                "stage": "lens",
+                "elapsed_ms": 9891.911,
+                "status": "success"
+              },
+              {
+                "stage": "images",
+                "elapsed_ms": 3839.771,
+                "status": "success"
+              }
+            ],
+            "parameters": [
+              {
+                "engine": "google_lens",
+                "type": "all",
+                "country": "us",
+                "hl": "en"
+              },
+              {
+                "engine": "google_images",
+                "q": "sofa green velvet seater site:sfbay.craigslist.org",
+                "location": "San Francisco,California,United States",
+                "gl": "us",
+                "hl": "en"
+              }
+            ],
+            "excerpts": {
+              "visual_match_titles": [
+                "west elm - Hyde Park",
+                "Sofas Available at Rufeners Furniture in Rittman, OH",
+                "MODWAY Valour 73 in. Green Velvet 3-Seater Tuxedo Sofa with ...",
+                "Amazon.com: OVVGVV Framed Banksy Wall Decor, Love Over Money ...",
+                "الرئيسية - baytakm",
+                "Five Things to Know About the Co-CEO Model - Steyer Associates",
+                "US Pride Furniture Civa 69.6 in. Green Velvet 3-Seater Sofa ...",
+                "Jessica Ribeiro, PhD | Eating Disorder & OCD Specialist in ..."
+              ],
+              "related_queries": []
+            },
+            "elapsed_ms": 14605.992
+          },
+          "judgment": {
+            "reason": "Failed: both search calls succeeded in 14.61 seconds and extracted sofa green velvet seater, but all 100 Images results failed the frozen exact-area individual-listing URL checks. No displayable cards remained. No substitutions, query edits or retries were made.",
+            "cards": [],
+            "passing_cards": 0,
+            "passed": false,
+            "judged_at": "2026-09-17T22:25:51.430771Z"
+          }
+        }
+      ],
+      "passed": false,
+      "stopped": true,
+      "untested": [
+        "dining-chair",
+        "wood-table",
+        "dresser"
+      ]
+    }
+  }
+}

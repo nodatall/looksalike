@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= content_for(:title) || "LooksAlike" %></title>
+    <link rel="icon" href="data:,">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= yield :head %>
+    <%= stylesheet_link_tag :app %>
+    <%= javascript_include_tag "application", type: "module" %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
