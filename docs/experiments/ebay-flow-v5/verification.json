@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-09-29T23:23:14Z",
+  "manifest_sha256": "4f04920037460926e39e319ff7743755d170927945e2dc5e64d26233b3f85d99",
+  "frozen_files_verified": 108,
+  "source_snapshots_verified": 23,
+  "prior_tables_verified": 22,
+  "outcomes_and_judgments_match_ledger": true,
+  "incomplete_attempts": 0,
+  "configured_keys_found": false,
+  "development_search_attempts": 48,
+  "totals": {
+    "new_searches": 7,
+    "uploads": 4,
+    "vision_attempts": 3,
+    "vision_reserved_usd": 0.09,
+    "completed_cases": 4,
+    "scored_cases": 4,
+    "failed_cases": 2
+  },
+  "stopped_after_two_failures": true,
+  "untested": [
+    "dresser"
+  ],
+  "deployment_search_reserve": 2
+}

@@ -1,0 +1,4164 @@
+{
+  "case_id": "dining-chair",
+  "manifest_sha256": "4f04920037460926e39e319ff7743755d170927945e2dc5e64d26233b3f85d99",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "light wood finish turned spindle legs chair",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 953.849
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 3814.798
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 3444.149
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 3148.791
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/256989060337",
+        "thumbnail": "https://i.ebayimg.com/images/g/P8cAAOSw0CtiUtfm/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Wood Turned Spindle For Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/377465218906",
+        "thumbnail": "https://i.ebayimg.com/images/g/ut8AAeSwdJ9pzq9o/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique 1890s Victorian Turned Wood Chair Spindles – Set of 6 – Original",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/285424436241",
+        "thumbnail": "https://i.ebayimg.com/images/g/mmEAAOSwlt1kleSK/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique 1874 Chair 19th Century Wooden Turned C Turned Spindle Bow Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$74.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/317435155242",
+        "thumbnail": "https://i.ebayimg.com/images/g/048AAeSwwwJoxSTp/s-l500.webp",
+        "sponsored": false,
+        "title": "Unfinished Oak Spindle for Chair | Unstained Wood Spindle, Unpainted Wooden Spin",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$21.55"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/137190252376",
+        "thumbnail": "https://i.ebayimg.com/images/g/aA0AAeSwMihpznBu/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Slatback Dining Side Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$314.55"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/197457285906",
+        "thumbnail": "https://i.ebayimg.com/images/g/g-IAAeSwZRtoVGNv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Worn Set Of Three Wooden Chair Spindles For Crafts Decor 13”",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/365977115208",
+        "thumbnail": "https://i.ebayimg.com/images/g/oAUAAeSwa2dpEllX/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Spindle Rocking Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/227213809918",
+        "thumbnail": "https://i.ebayimg.com/images/g/Oy0AAeSw87xqVb49/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Traditional Spindle Chair Weathered Chestnut finish (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$322.53"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/145408147102",
+        "thumbnail": "https://i.ebayimg.com/images/g/UDgAAeSwO1poJB5S/s-l500.webp",
+        "sponsored": false,
+        "title": "Fletcher Spindle Chair in Fog Brown Fabric with Rustic Brown Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$395.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/178517214023",
+        "thumbnail": "https://i.ebayimg.com/images/g/V0oAAeSwf9tqsWmk/s-l500.webp",
+        "sponsored": false,
+        "title": "VTG Farmhouse spindle/fiddle back wood stained chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/188501647807",
+        "thumbnail": "https://i.ebayimg.com/images/g/YRkAAeSwPYBqK~qC/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Solid Wood Spindle Back Dining Chair With Turned Legs And Rustic Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/318916959005",
+        "thumbnail": "https://i.ebayimg.com/images/g/s98AAeSwaGNqiGgF/s-l500.webp",
+        "sponsored": true,
+        "title": "Brown Wooden Spindle Back Dining Chair Varnished Finish 22x21x12 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$30.00",
+          "to": "$42.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/137222804385",
+        "thumbnail": "https://i.ebayimg.com/images/g/pTcAAeSwLEppb6r3/s-l500.webp",
+        "sponsored": true,
+        "title": "Two (2) Antique Matching Spindle Farmhouse Side Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/125871770677",
+        "thumbnail": "https://i.ebayimg.com/images/g/hnwAAOSwcYFj3mrt/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wooden Chair - Spindle Back - Painted. NO SHIPPING.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$17.79"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/373831183560",
+        "thumbnail": "https://i.ebayimg.com/images/g/YX4AAOSwjVVVmekY/s-l500.webp",
+        "sponsored": false,
+        "title": "Walnut Carved Spindle Armchair / Chair (AC163)",
+        "subtitle": null,
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,499.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/236604370478",
+        "thumbnail": "https://i.ebayimg.com/images/g/om8AAeSwalhpeR4w/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE PLANK SEAT HALF SPINDLE BACK MAPLE COUNTRY FARMHOUSE ACCENT CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/389034647851",
+        "thumbnail": "https://i.ebayimg.com/images/g/5AwAAOSwb2xnmWEE/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Spindles Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/287295852415",
+        "thumbnail": "https://i.ebayimg.com/images/g/lesAAeSw-H1p7mCM/s-l500.webp",
+        "sponsored": false,
+        "title": "19th Century Beech Spindleback Chair--Shipping Available, 4 Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/174671620344",
+        "thumbnail": "https://i.ebayimg.com/images/g/~lEAAOSwUuRgRVzS/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Antique Three Spindle Backed Wooden Chair in Very Good Condition",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$60.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/318789395143",
+        "thumbnail": "https://i.ebayimg.com/images/g/IkgAAeSwXm5qkOjp/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Wooden Spindle Armchair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/358463192752",
+        "thumbnail": "https://i.ebayimg.com/images/g/MC4AAeSwxIZpHwbO/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 14 Vintage Turned Wood Spindles Colonial Revival Furniture Chair Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/178111362688",
+        "thumbnail": "https://i.ebayimg.com/images/g/VZMAAeSw-jZp-6HM/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Spindleback Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/257291417390",
+        "thumbnail": "https://i.ebayimg.com/images/g/D0MAAeSwoAVpWWVX/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wooden Dining Chairs Pair, Spindle Back, Distressed Finish, Brown Black",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$400.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/395104192283",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EcAAOSwKZFlW6Vh/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Spindle Back Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/177425794956",
+        "thumbnail": "https://i.ebayimg.com/images/g/cH8AAeSw96do02MR/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Oak Turned Spindle 41 inch Back Classic Dining Chair With Handle On Top",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$200.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/257525662562",
+        "thumbnail": "https://i.ebayimg.com/images/g/dD8AAeSwtz5qFDsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Bow Back Solid Oak Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$52.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/257534547695",
+        "thumbnail": "https://i.ebayimg.com/images/g/iqQAAeSw2ItqGaIT/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Bow Back Solid Oak Wood \"Short\" Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$49.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/304911069210",
+        "thumbnail": "https://i.ebayimg.com/images/g/eI8AAOSwroRkSSYv/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Solid Wooden Side Chair Embossed Cardboard Seat 33\" Tall Turned Spindle",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$39.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/198661364958",
+        "thumbnail": "https://i.ebayimg.com/images/g/jw0AAeSw2t5qs4tY/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row 18\" Spindle Back Wood Dining Side Chair in Light Ash",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$273.78"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/168514859771",
+        "thumbnail": "https://i.ebayimg.com/images/g/sRMAAeSw18BqSe57/s-l500.webp",
+        "sponsored": false,
+        "title": "(2) White Antique Painted Wood Spindle Back Chair 19 x 16 x 37 in, Solid",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$60.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/145232123462",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZskAAeSwPqFps5Sf/s-l500.webp",
+        "sponsored": true,
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$432.41"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/285155026832",
+        "thumbnail": "https://i.ebayimg.com/images/g/e7UAAeSwav5qKwnC/s-l500.webp",
+        "sponsored": true,
+        "title": "Set of 4 Dining Chair Kitchen Spindle Back Side Chair w/ Solid Rubber Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/318654277086",
+        "thumbnail": "https://i.ebayimg.com/images/g/QUcAAeSw7pFqA-jZ/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Dining Chair Kitchen Room Side Chair Spindle Backrest W/Solid Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/236884933879",
+        "thumbnail": "https://i.ebayimg.com/images/g/TdoAAeSw4BZqNEtY/s-l500.webp",
+        "sponsored": true,
+        "title": "StyleWell White Wood Windsor Dining Chair (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$139.91"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/358887624372",
+        "thumbnail": "https://i.ebayimg.com/images/g/-koAAeSwa3tqczsH/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Spindle-Back Dining Chair Antique Copper Metal White Washed Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$166.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/800717376138",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZU4AAeSwUv5qFKWv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Wooden Heart Back Chair Plant Stand Doll Chair Display Cottage Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/358181193495",
+        "thumbnail": "https://i.ebayimg.com/images/g/gJsAAeSw1u1pgGik/s-l500.webp",
+        "sponsored": true,
+        "title": "Alwynn Contemporary Wooden Spindle Back Dining Chairs, Windsor Chairs, Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$211.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/358861135465",
+        "thumbnail": "https://i.ebayimg.com/images/g/95wAAeSwDgxp5ZrU/s-l500.webp",
+        "sponsored": true,
+        "title": "4 Pieces of Dining Chair Kitchen Houme Spindle Back Side Chair with Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/800168110026",
+        "thumbnail": "https://i.ebayimg.com/images/g/23QAAeSwvTFqLGAq/s-l500.webp",
+        "sponsored": true,
+        "title": "DUHOME Linen Fabric Spindle Accent Chairs Set of 2,Bobbin Chair with High Resili",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$722.39"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/318654483759",
+        "thumbnail": "https://i.ebayimg.com/images/g/QvAAAeSwSx9p8dig/s-l500.webp",
+        "sponsored": true,
+        "title": "Set of 2 Vintage Windsor Dining Side Chair Wood Spindle Back Kitchen Natural",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/287137287556",
+        "thumbnail": "https://i.ebayimg.com/images/g/oNwAAeSwyMZp-a7B/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Dining Chair Kitchen Spindle Back Side Chair w/Solid Wooden Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$114.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/318769405142",
+        "thumbnail": "https://i.ebayimg.com/images/g/aIQAAeSwpN5qi1A9/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Spindle-back Chair - N, HO, S and O Scales",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$7.95",
+          "to": "$11.45"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/136338272745",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8gAAeSwgxVopCGb/s-l500.webp",
+        "sponsored": true,
+        "title": "Parker Spindle Windsor Set of 2 Dining Chair 17 Black US ONLY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$213.60"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/145287254984",
+        "thumbnail": "https://i.ebayimg.com/images/g/FD0AAeSwOvlpjWcd/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberly Row Modern / Contemporary Wood Windsor Chair in Antique Black Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$161.94"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 73,
+        "url": "https://www.ebay.com/itm/298403074578",
+        "thumbnail": "https://i.ebayimg.com/images/g/Q8IAAeSwo25qKZG2/s-l500.webp",
+        "sponsored": false,
+        "title": "Primitive American Rod Back Windsor Chair ca 1800-1830",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 74,
+        "url": "https://www.ebay.com/itm/307162874897",
+        "thumbnail": "https://i.ebayimg.com/images/g/GiEAAeSwMk1qmuis/s-l500.webp",
+        "sponsored": false,
+        "title": "PAIR Thumb Back/Arrow Back Chairs Grain Painted & Decorated Original Paint 19thc",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$337.50"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 75,
+        "url": "https://www.ebay.com/itm/287418115691",
+        "thumbnail": "https://i.ebayimg.com/images/g/6bkAAeSwTLhqPSSl/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Cane Seat Bow Back Windsor Style Side Chair Solid Wood Farmhouse Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 78,
+        "url": "https://www.ebay.com/itm/284570565094",
+        "thumbnail": "https://i.ebayimg.com/images/g/kzgAAeSwiY5p-a7U/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 4 Dining Chair Kitchen Spindle Back Side Chair w/Solid Wooden Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 79,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 82,
+        "url": "https://www.ebay.com/itm/377173218004",
+        "thumbnail": "https://i.ebayimg.com/images/g/lQ0AAeSwNw1p~6De/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Windsor Style Spindle Back Wooden 15\" x 9.5\" Brown Black Arm Chair*READ*",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$17.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 83,
+        "url": "https://www.ebay.com/itm/137111890129",
+        "thumbnail": "https://i.ebayimg.com/images/g/RboAAeSw1JFpr1v0/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Set Of 4 Rush Seat Windsor Chairs Woven Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,500.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 84,
+        "url": "https://www.ebay.com/itm/227504743083",
+        "thumbnail": "https://i.ebayimg.com/images/g/pHUAAeSw-MtqmeLl/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 10 Vintage English Windsor Arm Chairs Pierced Splat Crinoline Stretcher",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 85,
+        "url": "https://www.ebay.com/itm/318654339062",
+        "thumbnail": "https://i.ebayimg.com/images/g/mEQAAeSwO2VprLrG/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 4 Vintage Windsor Dining Side Chair Wood Spindle Back Kitchen Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 89,
+        "url": "https://www.ebay.com/itm/188716413678",
+        "thumbnail": "https://i.ebayimg.com/images/g/EMAAAeSwdJBp5ZtP/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Dining Chair House Kitchen Spindle Back Side Chair W/ Solid Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 90,
+        "url": "https://www.ebay.com/itm/145774947993",
+        "thumbnail": "https://i.ebayimg.com/images/g/NjMAAOSw5z1nWnW0/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberly Row Dining Chair with Arms Light Oak Solid Wood Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$341.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/256989060337",
+        "thumbnail": "https://i.ebayimg.com/images/g/P8cAAOSw0CtiUtfm/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Wood Turned Spindle For Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/377465218906",
+        "thumbnail": "https://i.ebayimg.com/images/g/ut8AAeSwdJ9pzq9o/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique 1890s Victorian Turned Wood Chair Spindles – Set of 6 – Original",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/285424436241",
+        "thumbnail": "https://i.ebayimg.com/images/g/mmEAAOSwlt1kleSK/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique 1874 Chair 19th Century Wooden Turned C Turned Spindle Bow Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$74.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/317435155242",
+        "thumbnail": "https://i.ebayimg.com/images/g/048AAeSwwwJoxSTp/s-l500.webp",
+        "sponsored": false,
+        "title": "Unfinished Oak Spindle for Chair | Unstained Wood Spindle, Unpainted Wooden Spin",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$21.55"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/137190252376",
+        "thumbnail": "https://i.ebayimg.com/images/g/aA0AAeSwMihpznBu/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Slatback Dining Side Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$314.55"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/197457285906",
+        "thumbnail": "https://i.ebayimg.com/images/g/g-IAAeSwZRtoVGNv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Worn Set Of Three Wooden Chair Spindles For Crafts Decor 13”",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abc47041de064ce2af24249",
+        "status": "Success",
+        "created_at": "2026-09-29 23:17:24 UTC",
+        "processed_at": "2026-09-29 23:17:24 UTC",
+        "total_time_taken": 3.24
+      },
+      "ebay": {
+        "id": "6abc470c28b27bb60451a3ac",
+        "status": "Success",
+        "created_at": "2026-09-29 23:17:32 UTC",
+        "processed_at": "2026-09-29 23:17:32 UTC",
+        "total_time_taken": 2.46
+      }
+    },
+    "lens_interpretation": "chair",
+    "query_preparation": {
+      "status": "ready",
+      "category": "chair",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "chair",
+        "fallback_reason": "bare_category",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 36,
+          "total_tokens": 1857
+        },
+        "duration_ms": 3463,
+        "category": "chair",
+        "traits": [
+          "light wood finish",
+          "turned spindle legs"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "light wood finish turned spindle legs chair",
+    "category": "chair",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Restoration & Finishing — Kramer Furniture and Cabinet ...",
+        "Modern Chairs, Back Style: Tight Back at ₹ 1000 in Noida ...",
+        "Understanding and using pronouns: 'he' and 'she' Share books ...",
+        "Connie Clark, Author at Collegeville Institute",
+        "Blog 3 — Husick Psychology",
+        "Gestalt Therapy and the Empty Chair Technique – Musings in ...",
+        "Case Studies | openLCA.org",
+        "Senior Advisory Commission — City of Rogers, MN"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "light wood finish turned spindle legs chair",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 90,
+    "counts_before_title_filter": {
+      "accepted": 89,
+      "not_explicit_us": 1
+    },
+    "title_filter_counts": {
+      "accessory_or_part": 24,
+      "miniature": 7,
+      "wrong_category": 1,
+      "missing_furniture_type": 1,
+      "accepted": 56
+    },
+    "listing_filter_version": "ebay-title-filter-v1",
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/256989060337",
+        "thumbnail": "https://i.ebayimg.com/images/g/P8cAAOSw0CtiUtfm/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Wood Turned Spindle For Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/377465218906",
+        "thumbnail": "https://i.ebayimg.com/images/g/ut8AAeSwdJ9pzq9o/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique 1890s Victorian Turned Wood Chair Spindles – Set of 6 – Original",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/227541676090",
+        "thumbnail": "https://i.ebayimg.com/images/g/8XQAAeSwFd5qF0-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Spindle-Back Dining Chair, Turned Legs, Brown Solid, Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$165.50"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/285424436241",
+        "thumbnail": "https://i.ebayimg.com/images/g/mmEAAOSwlt1kleSK/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique 1874 Chair 19th Century Wooden Turned C Turned Spindle Bow Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$74.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/317435155242",
+        "thumbnail": "https://i.ebayimg.com/images/g/048AAeSwwwJoxSTp/s-l500.webp",
+        "sponsored": false,
+        "title": "Unfinished Oak Spindle for Chair | Unstained Wood Spindle, Unpainted Wooden Spin",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$21.55"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/137190252376",
+        "thumbnail": "https://i.ebayimg.com/images/g/aA0AAeSwMihpznBu/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Slatback Dining Side Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$314.55"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/197457285906",
+        "thumbnail": "https://i.ebayimg.com/images/g/g-IAAeSwZRtoVGNv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Worn Set Of Three Wooden Chair Spindles For Crafts Decor 13”",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/306904787296",
+        "thumbnail": "https://i.ebayimg.com/images/g/9moAAeSwX9xp723z/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Spindle Back Dining Chair - Traditional Turned Legs - Ships from EU",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in Portugal",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/365977115208",
+        "thumbnail": "https://i.ebayimg.com/images/g/oAUAAeSwa2dpEllX/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Spindle Rocking Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/227213809918",
+        "thumbnail": "https://i.ebayimg.com/images/g/Oy0AAeSw87xqVb49/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Traditional Spindle Chair Weathered Chestnut finish (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$322.53"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/145408147102",
+        "thumbnail": "https://i.ebayimg.com/images/g/UDgAAeSwO1poJB5S/s-l500.webp",
+        "sponsored": false,
+        "title": "Fletcher Spindle Chair in Fog Brown Fabric with Rustic Brown Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$395.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/178517214023",
+        "thumbnail": "https://i.ebayimg.com/images/g/V0oAAeSwf9tqsWmk/s-l500.webp",
+        "sponsored": false,
+        "title": "VTG Farmhouse spindle/fiddle back wood stained chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/188501647807",
+        "thumbnail": "https://i.ebayimg.com/images/g/YRkAAeSwPYBqK~qC/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Solid Wood Spindle Back Dining Chair With Turned Legs And Rustic Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/318761136324",
+        "thumbnail": "https://i.ebayimg.com/images/g/H50AAeSwvSNqh5vP/s-l500.webp",
+        "sponsored": true,
+        "title": "Brown Wooden Windsor Chair Spindle-Back Turned Legs 36in H 30x30in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/318916959005",
+        "thumbnail": "https://i.ebayimg.com/images/g/s98AAeSwaGNqiGgF/s-l500.webp",
+        "sponsored": true,
+        "title": "Brown Wooden Spindle Back Dining Chair Varnished Finish 22x21x12 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$30.00",
+          "to": "$42.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/137222804385",
+        "thumbnail": "https://i.ebayimg.com/images/g/pTcAAeSwLEppb6r3/s-l500.webp",
+        "sponsored": true,
+        "title": "Two (2) Antique Matching Spindle Farmhouse Side Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/125871770677",
+        "thumbnail": "https://i.ebayimg.com/images/g/hnwAAOSwcYFj3mrt/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wooden Chair - Spindle Back - Painted. NO SHIPPING.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$17.79"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/373831183560",
+        "thumbnail": "https://i.ebayimg.com/images/g/YX4AAOSwjVVVmekY/s-l500.webp",
+        "sponsored": false,
+        "title": "Walnut Carved Spindle Armchair / Chair (AC163)",
+        "subtitle": null,
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,499.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/236604370478",
+        "thumbnail": "https://i.ebayimg.com/images/g/om8AAeSwalhpeR4w/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE PLANK SEAT HALF SPINDLE BACK MAPLE COUNTRY FARMHOUSE ACCENT CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/389034647851",
+        "thumbnail": "https://i.ebayimg.com/images/g/5AwAAOSwb2xnmWEE/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Spindles Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/287295852415",
+        "thumbnail": "https://i.ebayimg.com/images/g/lesAAeSw-H1p7mCM/s-l500.webp",
+        "sponsored": false,
+        "title": "19th Century Beech Spindleback Chair--Shipping Available, 4 Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/174671620344",
+        "thumbnail": "https://i.ebayimg.com/images/g/~lEAAOSwUuRgRVzS/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Antique Three Spindle Backed Wooden Chair in Very Good Condition",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$60.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/318789395143",
+        "thumbnail": "https://i.ebayimg.com/images/g/IkgAAeSwXm5qkOjp/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Wooden Spindle Armchair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/358463192752",
+        "thumbnail": "https://i.ebayimg.com/images/g/MC4AAeSwxIZpHwbO/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 14 Vintage Turned Wood Spindles Colonial Revival Furniture Chair Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/178111362688",
+        "thumbnail": "https://i.ebayimg.com/images/g/VZMAAeSw-jZp-6HM/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Spindleback Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/257291417390",
+        "thumbnail": "https://i.ebayimg.com/images/g/D0MAAeSwoAVpWWVX/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wooden Dining Chairs Pair, Spindle Back, Distressed Finish, Brown Black",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$400.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/395104192283",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EcAAOSwKZFlW6Vh/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Spindle Back Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/235864488836",
+        "thumbnail": "https://i.ebayimg.com/images/g/5hoAAOSweTdnVyuy/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Antique Carved Back Solid Wood Chair Spindle Legs NJ NY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$339.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/177425794956",
+        "thumbnail": "https://i.ebayimg.com/images/g/cH8AAeSw96do02MR/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Oak Turned Spindle 41 inch Back Classic Dining Chair With Handle On Top",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$200.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/257525662562",
+        "thumbnail": "https://i.ebayimg.com/images/g/dD8AAeSwtz5qFDsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Bow Back Solid Oak Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$52.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/257534547695",
+        "thumbnail": "https://i.ebayimg.com/images/g/iqQAAeSw2ItqGaIT/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Bow Back Solid Oak Wood \"Short\" Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$49.98"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/304911069210",
+        "thumbnail": "https://i.ebayimg.com/images/g/eI8AAOSwroRkSSYv/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Solid Wooden Side Chair Embossed Cardboard Seat 33\" Tall Turned Spindle",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$39.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/198661364958",
+        "thumbnail": "https://i.ebayimg.com/images/g/jw0AAeSw2t5qs4tY/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row 18\" Spindle Back Wood Dining Side Chair in Light Ash",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$273.78"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/168514859771",
+        "thumbnail": "https://i.ebayimg.com/images/g/sRMAAeSw18BqSe57/s-l500.webp",
+        "sponsored": false,
+        "title": "(2) White Antique Painted Wood Spindle Back Chair 19 x 16 x 37 in, Solid",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$60.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/407245844174",
+        "thumbnail": "https://i.ebayimg.com/images/g/J3EAAeSw02JqiNhp/s-l500.webp",
+        "sponsored": true,
+        "title": "Murphy Brown Wood Spindle-Back Dining Chair Turned Legs Original Finish 37x21",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$180.00",
+          "to": "$450.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/145232123462",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZskAAeSwPqFps5Sf/s-l500.webp",
+        "sponsored": true,
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$432.41"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/167074595239",
+        "thumbnail": "https://i.ebayimg.com/images/g/QEYAAOSwrOpnLkZc/s-l500.webp",
+        "sponsored": true,
+        "title": "5\" Antique Walnut Finish Solid Wood Turned Leg (22173) Sofa Chair -Set of 4 Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$24.97"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/285155026832",
+        "thumbnail": "https://i.ebayimg.com/images/g/e7UAAeSwav5qKwnC/s-l500.webp",
+        "sponsored": true,
+        "title": "Set of 4 Dining Chair Kitchen Spindle Back Side Chair w/ Solid Rubber Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/398381802239",
+        "thumbnail": "https://i.ebayimg.com/images/g/kAUAAeSw7BNqovEl/s-l500.webp",
+        "sponsored": false,
+        "title": "5 Vintage brown spindle Chair furniture legs mid century square turned 14” EUC",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/398381773461",
+        "thumbnail": "https://i.ebayimg.com/images/g/BGEAAeSwMfVqncN5/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Spanish Unfinished Spindle table Chair legs mid century square turned 14”",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/405786538870",
+        "thumbnail": "https://i.ebayimg.com/images/g/X~IAAOSw0ydoA7gi/s-l500.webp",
+        "sponsored": false,
+        "title": "RARE Antique WOOD SADDLE BENCH Footstool Chair Spindle Bobbin Legs Brass Nails",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.20"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/366692303401",
+        "thumbnail": "https://i.ebayimg.com/images/g/0LgAAeSwy3xoiTE3/s-l500.webp",
+        "sponsored": false,
+        "title": "6 Light Oak Turned Bun Style Replacement Furniture Leg Sofa Chair Feet Round",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$21.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": false,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/318654277086",
+        "thumbnail": "https://i.ebayimg.com/images/g/QUcAAeSw7pFqA-jZ/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Dining Chair Kitchen Room Side Chair Spindle Backrest W/Solid Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/205104851141",
+        "thumbnail": "https://i.ebayimg.com/images/g/zoIAAOSwkbVnNn~y/s-l500.webp",
+        "sponsored": true,
+        "title": "7.50\" Turned Sofa/ Chair/ Ottoman Wood Furniture Leg Espresso Finish - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/236884933879",
+        "thumbnail": "https://i.ebayimg.com/images/g/TdoAAeSw4BZqNEtY/s-l500.webp",
+        "sponsored": true,
+        "title": "StyleWell White Wood Windsor Dining Chair (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$139.91"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/164928928538",
+        "thumbnail": "https://i.ebayimg.com/images/g/RfEAAOSwsURg1N51/s-l500.webp",
+        "sponsored": true,
+        "title": "3 1/2\" High Pecan Finish Turned Wood Furniture Legs (4100) Sofa Chair - 4 Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$23.97"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/358887624372",
+        "thumbnail": "https://i.ebayimg.com/images/g/-koAAeSwa3tqczsH/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Spindle-Back Dining Chair Antique Copper Metal White Washed Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$166.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/186381366447",
+        "thumbnail": "https://i.ebayimg.com/images/g/BS0AAOSwEAhmEx6o/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Hand Carved Salvaged Wood Wooden Chair Legs Spindles Swirl Barley Twist",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$45.88"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/306690309686",
+        "thumbnail": "https://i.ebayimg.com/images/g/FPYAAeSwsGFpWAU1/s-l500.webp",
+        "sponsored": false,
+        "title": "8\" Wood Sofa/Couch/Chair/Ottoman Dark Brown Finish Furniture Legs - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$28.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/165198804267",
+        "thumbnail": "https://i.ebayimg.com/images/g/qtgAAOSwXXJhnVGP/s-l500.webp",
+        "sponsored": false,
+        "title": "3\" Light Walnut Finish Pyramid Furniture Legs (0841) Sofa Chair Ottoman Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$21.87"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/227529645766",
+        "thumbnail": "https://i.ebayimg.com/images/g/DMsAAeSwShxqrsVn/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage MCM Caster Glide for Tubular Spindle Table Chair Legs Adjustable Leveler",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/266923137632",
+        "thumbnail": "https://i.ebayimg.com/images/g/xroAAOSwSUBmo~0e/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Wooden Stair Chair Spindle Legs W/ Hardware Lot Of 4",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$36.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/163770737697",
+        "thumbnail": "https://i.ebayimg.com/images/g/B2wAAOSwblZZFiCb/s-l500.webp",
+        "sponsored": false,
+        "title": "5\" Dark Walnut Finish Wood Turned Leg 1820 Sofa Chair Loveseat Ottoman (2 Legs)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$18.79"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/227514946076",
+        "thumbnail": "https://i.ebayimg.com/images/g/H4IAAeSwpPFqogE9/s-l500.webp",
+        "sponsored": false,
+        "title": "1:12 Miniature Reminiscence Dining Table Barley Twist Legs & Spindle Chairs Set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$132.84"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/318850367787",
+        "thumbnail": "https://i.ebayimg.com/images/g/HOoAAeSwjWtqoevy/s-l500.webp",
+        "sponsored": false,
+        "title": "Vtg Oak Milking Stool with Turned Spindle Legs Tole Hand Painted Signed",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.95"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/267770103628",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZAYAAeSwOp9orL3f/s-l500.webp",
+        "sponsored": false,
+        "title": "Turned Wood Table Leg Replacement Spindle 14\" Height Unfinished Natural Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$18.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/800717376138",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZU4AAeSwUv5qFKWv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Wooden Heart Back Chair Plant Stand Doll Chair Display Cottage Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/358181193495",
+        "thumbnail": "https://i.ebayimg.com/images/g/gJsAAeSw1u1pgGik/s-l500.webp",
+        "sponsored": true,
+        "title": "Alwynn Contemporary Wooden Spindle Back Dining Chairs, Windsor Chairs, Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$211.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/358861135465",
+        "thumbnail": "https://i.ebayimg.com/images/g/95wAAeSwDgxp5ZrU/s-l500.webp",
+        "sponsored": true,
+        "title": "4 Pieces of Dining Chair Kitchen Houme Spindle Back Side Chair with Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/800168110026",
+        "thumbnail": "https://i.ebayimg.com/images/g/23QAAeSwvTFqLGAq/s-l500.webp",
+        "sponsored": true,
+        "title": "DUHOME Linen Fabric Spindle Accent Chairs Set of 2,Bobbin Chair with High Resili",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$722.39"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/318654483759",
+        "thumbnail": "https://i.ebayimg.com/images/g/QvAAAeSwSx9p8dig/s-l500.webp",
+        "sponsored": true,
+        "title": "Set of 2 Vintage Windsor Dining Side Chair Wood Spindle Back Kitchen Natural",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/287137287556",
+        "thumbnail": "https://i.ebayimg.com/images/g/oNwAAeSwyMZp-a7B/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Dining Chair Kitchen Spindle Back Side Chair w/Solid Wooden Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$114.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/327366201661",
+        "thumbnail": "https://i.ebayimg.com/images/g/JfEAAeSwmXNqr4ks/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Miniature Windsor Style 15\" Dining Arm Chair Wood Spindle Back Doll Size",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$39.74"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/366042065769",
+        "thumbnail": "https://i.ebayimg.com/images/g/PmcAAOSwJ45laTBw/s-l500.webp",
+        "sponsored": false,
+        "title": "VINTAGE HEI Painted WOODEN HINGED TRAY TURNED SPINDLE LEGS BABY DOLL HIGH CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$64.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/318769405142",
+        "thumbnail": "https://i.ebayimg.com/images/g/aIQAAeSwpN5qi1A9/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Spindle-back Chair - N, HO, S and O Scales",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$7.95",
+          "to": "$11.45"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/256708181506",
+        "thumbnail": "https://i.ebayimg.com/images/g/L-0AAOSwBANnLneJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Dollhouse Wood Dining Chair Spindle Back 1:12 Scale - 5 Available",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$30.00"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/136338272745",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8gAAeSwgxVopCGb/s-l500.webp",
+        "sponsored": true,
+        "title": "Parker Spindle Windsor Set of 2 Dining Chair 17 Black US ONLY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$213.60"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/145287254984",
+        "thumbnail": "https://i.ebayimg.com/images/g/FD0AAeSwOvlpjWcd/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberly Row Modern / Contemporary Wood Windsor Chair in Antique Black Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$161.94"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 72,
+        "url": "https://www.ebay.com/itm/257723370045",
+        "thumbnail": "https://i.ebayimg.com/images/g/UrAAAeSw4QFqmvbB/s-l500.webp",
+        "sponsored": false,
+        "title": "Vtg Miniature Wooden Rocking Chair light maple Spindle Back Doll Furniture Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 73,
+        "url": "https://www.ebay.com/itm/298403074578",
+        "thumbnail": "https://i.ebayimg.com/images/g/Q8IAAeSwo25qKZG2/s-l500.webp",
+        "sponsored": false,
+        "title": "Primitive American Rod Back Windsor Chair ca 1800-1830",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 74,
+        "url": "https://www.ebay.com/itm/307162874897",
+        "thumbnail": "https://i.ebayimg.com/images/g/GiEAAeSwMk1qmuis/s-l500.webp",
+        "sponsored": false,
+        "title": "PAIR Thumb Back/Arrow Back Chairs Grain Painted & Decorated Original Paint 19thc",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$337.50"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 75,
+        "url": "https://www.ebay.com/itm/287418115691",
+        "thumbnail": "https://i.ebayimg.com/images/g/6bkAAeSwTLhqPSSl/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Cane Seat Bow Back Windsor Style Side Chair Solid Wood Farmhouse Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 76,
+        "url": "https://www.ebay.com/itm/127302525792",
+        "thumbnail": "https://i.ebayimg.com/images/g/NowAAeSw8WBomgw9/s-l500.webp",
+        "sponsored": false,
+        "title": "102 Furniture Feet Chair Ottoman Cabinet Sofa Turned Maple Finish 3\" tall 4 legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$19.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 77,
+        "url": "https://www.ebay.com/itm/127302525794",
+        "thumbnail": "https://i.ebayimg.com/images/g/dQ0AAeSwAU9omgw9/s-l500.webp",
+        "sponsored": false,
+        "title": "102 Furniture Feet Chair Ottoman Cabinet Sofa Turned Maple Finish 3\" tall 2 legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$11.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 78,
+        "url": "https://www.ebay.com/itm/284570565094",
+        "thumbnail": "https://i.ebayimg.com/images/g/kzgAAeSwiY5p-a7U/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 4 Dining Chair Kitchen Spindle Back Side Chair w/Solid Wooden Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 79,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 80,
+        "url": "https://www.ebay.com/itm/336769668921",
+        "thumbnail": "https://i.ebayimg.com/images/g/VsQAAeSwKs5qV~lA/s-l500.webp",
+        "sponsored": false,
+        "title": "Lovely Ladderback Blond Wood Arm Chair w/ Ivory Fabric Seat Dollhouse Miniature",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$24.29"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 81,
+        "url": "https://www.ebay.com/itm/336696920346",
+        "thumbnail": "https://i.ebayimg.com/images/g/JaIAAeSw8KJqV~aR/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Golden Oak Spindle-Back Side Chair - Dollhouse Miniature",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$15.29"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 82,
+        "url": "https://www.ebay.com/itm/377173218004",
+        "thumbnail": "https://i.ebayimg.com/images/g/lQ0AAeSwNw1p~6De/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Windsor Style Spindle Back Wooden 15\" x 9.5\" Brown Black Arm Chair*READ*",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$17.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 83,
+        "url": "https://www.ebay.com/itm/137111890129",
+        "thumbnail": "https://i.ebayimg.com/images/g/RboAAeSw1JFpr1v0/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Set Of 4 Rush Seat Windsor Chairs Woven Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,500.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 84,
+        "url": "https://www.ebay.com/itm/227504743083",
+        "thumbnail": "https://i.ebayimg.com/images/g/pHUAAeSw-MtqmeLl/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 10 Vintage English Windsor Arm Chairs Pierced Splat Crinoline Stretcher",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 85,
+        "url": "https://www.ebay.com/itm/318654339062",
+        "thumbnail": "https://i.ebayimg.com/images/g/mEQAAeSwO2VprLrG/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 4 Vintage Windsor Dining Side Chair Wood Spindle Back Kitchen Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 86,
+        "url": "https://www.ebay.com/itm/127617803027",
+        "thumbnail": "https://i.ebayimg.com/images/g/ykQAAeSwSOJpZCjU/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Child Windsor Rocking Chair Maple Wood Spindle Back Turned Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$129.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 87,
+        "url": "https://www.ebay.com/itm/128060422340",
+        "thumbnail": "https://i.ebayimg.com/images/g/JUIAAeSwRXVqZ8X6/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Miniature Wooden Rocking Chair Dollhouse Doll Furniture Windsor Spindle",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$31.99"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 88,
+        "url": "https://www.ebay.com/itm/267694735955",
+        "thumbnail": "https://i.ebayimg.com/images/g/JboAAeSwijhqKH5~/s-l500.webp",
+        "sponsored": false,
+        "title": "Early 20th Century Fan Back with Brace Back Windsor Arm Chair Benchmade",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$599.00"
+        },
+        "filter": "accepted",
+        "title_filter": "missing_furniture_type"
+      },
+      {
+        "position": 89,
+        "url": "https://www.ebay.com/itm/188716413678",
+        "thumbnail": "https://i.ebayimg.com/images/g/EMAAAeSwdJBp5ZtP/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Dining Chair House Kitchen Spindle Back Side Chair W/ Solid Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 90,
+        "url": "https://www.ebay.com/itm/145774947993",
+        "thumbnail": "https://i.ebayimg.com/images/g/NjMAAOSw5z1nWnW0/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberly Row Dining Chair with Arms Light Oak Solid Wood Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$341.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "eligible_before_title_filter": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/256989060337",
+        "thumbnail": "https://i.ebayimg.com/images/g/P8cAAOSw0CtiUtfm/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Wood Turned Spindle For Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/377465218906",
+        "thumbnail": "https://i.ebayimg.com/images/g/ut8AAeSwdJ9pzq9o/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique 1890s Victorian Turned Wood Chair Spindles – Set of 6 – Original",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/227541676090",
+        "thumbnail": "https://i.ebayimg.com/images/g/8XQAAeSwFd5qF0-T/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Spindle-Back Dining Chair, Turned Legs, Brown Solid, Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$165.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/285424436241",
+        "thumbnail": "https://i.ebayimg.com/images/g/mmEAAOSwlt1kleSK/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique 1874 Chair 19th Century Wooden Turned C Turned Spindle Bow Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$74.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/317435155242",
+        "thumbnail": "https://i.ebayimg.com/images/g/048AAeSwwwJoxSTp/s-l500.webp",
+        "sponsored": false,
+        "title": "Unfinished Oak Spindle for Chair | Unstained Wood Spindle, Unpainted Wooden Spin",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$21.55"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/137190252376",
+        "thumbnail": "https://i.ebayimg.com/images/g/aA0AAeSwMihpznBu/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Slatback Dining Side Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$314.55"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/197457285906",
+        "thumbnail": "https://i.ebayimg.com/images/g/g-IAAeSwZRtoVGNv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Worn Set Of Three Wooden Chair Spindles For Crafts Decor 13”",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/365977115208",
+        "thumbnail": "https://i.ebayimg.com/images/g/oAUAAeSwa2dpEllX/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Spindle Rocking Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/227213809918",
+        "thumbnail": "https://i.ebayimg.com/images/g/Oy0AAeSw87xqVb49/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Traditional Spindle Chair Weathered Chestnut finish (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$322.53"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/145408147102",
+        "thumbnail": "https://i.ebayimg.com/images/g/UDgAAeSwO1poJB5S/s-l500.webp",
+        "sponsored": false,
+        "title": "Fletcher Spindle Chair in Fog Brown Fabric with Rustic Brown Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$395.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/178517214023",
+        "thumbnail": "https://i.ebayimg.com/images/g/V0oAAeSwf9tqsWmk/s-l500.webp",
+        "sponsored": false,
+        "title": "VTG Farmhouse spindle/fiddle back wood stained chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/188501647807",
+        "thumbnail": "https://i.ebayimg.com/images/g/YRkAAeSwPYBqK~qC/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Solid Wood Spindle Back Dining Chair With Turned Legs And Rustic Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/318761136324",
+        "thumbnail": "https://i.ebayimg.com/images/g/H50AAeSwvSNqh5vP/s-l500.webp",
+        "sponsored": true,
+        "title": "Brown Wooden Windsor Chair Spindle-Back Turned Legs 36in H 30x30in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/318916959005",
+        "thumbnail": "https://i.ebayimg.com/images/g/s98AAeSwaGNqiGgF/s-l500.webp",
+        "sponsored": true,
+        "title": "Brown Wooden Spindle Back Dining Chair Varnished Finish 22x21x12 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$30.00",
+          "to": "$42.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/137222804385",
+        "thumbnail": "https://i.ebayimg.com/images/g/pTcAAeSwLEppb6r3/s-l500.webp",
+        "sponsored": true,
+        "title": "Two (2) Antique Matching Spindle Farmhouse Side Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/125871770677",
+        "thumbnail": "https://i.ebayimg.com/images/g/hnwAAOSwcYFj3mrt/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wooden Chair - Spindle Back - Painted. NO SHIPPING.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$17.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/373831183560",
+        "thumbnail": "https://i.ebayimg.com/images/g/YX4AAOSwjVVVmekY/s-l500.webp",
+        "sponsored": false,
+        "title": "Walnut Carved Spindle Armchair / Chair (AC163)",
+        "subtitle": null,
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,499.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/236604370478",
+        "thumbnail": "https://i.ebayimg.com/images/g/om8AAeSwalhpeR4w/s-l500.webp",
+        "sponsored": false,
+        "title": "ANTIQUE PLANK SEAT HALF SPINDLE BACK MAPLE COUNTRY FARMHOUSE ACCENT CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/389034647851",
+        "thumbnail": "https://i.ebayimg.com/images/g/5AwAAOSwb2xnmWEE/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Spindles Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/287295852415",
+        "thumbnail": "https://i.ebayimg.com/images/g/lesAAeSw-H1p7mCM/s-l500.webp",
+        "sponsored": false,
+        "title": "19th Century Beech Spindleback Chair--Shipping Available, 4 Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/174671620344",
+        "thumbnail": "https://i.ebayimg.com/images/g/~lEAAOSwUuRgRVzS/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Antique Three Spindle Backed Wooden Chair in Very Good Condition",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$60.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/318789395143",
+        "thumbnail": "https://i.ebayimg.com/images/g/IkgAAeSwXm5qkOjp/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Wooden Spindle Armchair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/358463192752",
+        "thumbnail": "https://i.ebayimg.com/images/g/MC4AAeSwxIZpHwbO/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 14 Vintage Turned Wood Spindles Colonial Revival Furniture Chair Back",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$79.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/178111362688",
+        "thumbnail": "https://i.ebayimg.com/images/g/VZMAAeSw-jZp-6HM/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Solid Wood Spindleback Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$45.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/257291417390",
+        "thumbnail": "https://i.ebayimg.com/images/g/D0MAAeSwoAVpWWVX/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wooden Dining Chairs Pair, Spindle Back, Distressed Finish, Brown Black",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$400.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/395104192283",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EcAAOSwKZFlW6Vh/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Spindle Back Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/235864488836",
+        "thumbnail": "https://i.ebayimg.com/images/g/5hoAAOSweTdnVyuy/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Antique Carved Back Solid Wood Chair Spindle Legs NJ NY",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$339.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/177425794956",
+        "thumbnail": "https://i.ebayimg.com/images/g/cH8AAeSw96do02MR/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Oak Turned Spindle 41 inch Back Classic Dining Chair With Handle On Top",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$200.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/257525662562",
+        "thumbnail": "https://i.ebayimg.com/images/g/dD8AAeSwtz5qFDsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Bow Back Solid Oak Wood Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$52.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/257534547695",
+        "thumbnail": "https://i.ebayimg.com/images/g/iqQAAeSw2ItqGaIT/s-l500.webp",
+        "sponsored": false,
+        "title": "Spindle Bow Back Solid Oak Wood \"Short\" Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$49.98"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/304911069210",
+        "thumbnail": "https://i.ebayimg.com/images/g/eI8AAOSwroRkSSYv/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Solid Wooden Side Chair Embossed Cardboard Seat 33\" Tall Turned Spindle",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$39.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/198661364958",
+        "thumbnail": "https://i.ebayimg.com/images/g/jw0AAeSw2t5qs4tY/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row 18\" Spindle Back Wood Dining Side Chair in Light Ash",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$273.78"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/168514859771",
+        "thumbnail": "https://i.ebayimg.com/images/g/sRMAAeSw18BqSe57/s-l500.webp",
+        "sponsored": false,
+        "title": "(2) White Antique Painted Wood Spindle Back Chair 19 x 16 x 37 in, Solid",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$60.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/407245844174",
+        "thumbnail": "https://i.ebayimg.com/images/g/J3EAAeSw02JqiNhp/s-l500.webp",
+        "sponsored": true,
+        "title": "Murphy Brown Wood Spindle-Back Dining Chair Turned Legs Original Finish 37x21",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$180.00",
+          "to": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/145232123462",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZskAAeSwPqFps5Sf/s-l500.webp",
+        "sponsored": true,
+        "title": "Blanchett Upholstered Bobbin Accent Chair Turned Wood Frame White and Navy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$432.41"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/167074595239",
+        "thumbnail": "https://i.ebayimg.com/images/g/QEYAAOSwrOpnLkZc/s-l500.webp",
+        "sponsored": true,
+        "title": "5\" Antique Walnut Finish Solid Wood Turned Leg (22173) Sofa Chair -Set of 4 Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$24.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/285155026832",
+        "thumbnail": "https://i.ebayimg.com/images/g/e7UAAeSwav5qKwnC/s-l500.webp",
+        "sponsored": true,
+        "title": "Set of 4 Dining Chair Kitchen Spindle Back Side Chair w/ Solid Rubber Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/398381802239",
+        "thumbnail": "https://i.ebayimg.com/images/g/kAUAAeSw7BNqovEl/s-l500.webp",
+        "sponsored": false,
+        "title": "5 Vintage brown spindle Chair furniture legs mid century square turned 14” EUC",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/398381773461",
+        "thumbnail": "https://i.ebayimg.com/images/g/BGEAAeSwMfVqncN5/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Spanish Unfinished Spindle table Chair legs mid century square turned 14”",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/405786538870",
+        "thumbnail": "https://i.ebayimg.com/images/g/X~IAAOSw0ydoA7gi/s-l500.webp",
+        "sponsored": false,
+        "title": "RARE Antique WOOD SADDLE BENCH Footstool Chair Spindle Bobbin Legs Brass Nails",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.20"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/366692303401",
+        "thumbnail": "https://i.ebayimg.com/images/g/0LgAAeSwy3xoiTE3/s-l500.webp",
+        "sponsored": false,
+        "title": "6 Light Oak Turned Bun Style Replacement Furniture Leg Sofa Chair Feet Round",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$21.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": false,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/318654277086",
+        "thumbnail": "https://i.ebayimg.com/images/g/QUcAAeSw7pFqA-jZ/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Dining Chair Kitchen Room Side Chair Spindle Backrest W/Solid Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/205104851141",
+        "thumbnail": "https://i.ebayimg.com/images/g/zoIAAOSwkbVnNn~y/s-l500.webp",
+        "sponsored": true,
+        "title": "7.50\" Turned Sofa/ Chair/ Ottoman Wood Furniture Leg Espresso Finish - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/236884933879",
+        "thumbnail": "https://i.ebayimg.com/images/g/TdoAAeSw4BZqNEtY/s-l500.webp",
+        "sponsored": true,
+        "title": "StyleWell White Wood Windsor Dining Chair (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$139.91"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/164928928538",
+        "thumbnail": "https://i.ebayimg.com/images/g/RfEAAOSwsURg1N51/s-l500.webp",
+        "sponsored": true,
+        "title": "3 1/2\" High Pecan Finish Turned Wood Furniture Legs (4100) Sofa Chair - 4 Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$23.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/358887624372",
+        "thumbnail": "https://i.ebayimg.com/images/g/-koAAeSwa3tqczsH/s-l500.webp",
+        "sponsored": false,
+        "title": "Farmhouse Spindle-Back Dining Chair Antique Copper Metal White Washed Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$166.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/186381366447",
+        "thumbnail": "https://i.ebayimg.com/images/g/BS0AAOSwEAhmEx6o/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Hand Carved Salvaged Wood Wooden Chair Legs Spindles Swirl Barley Twist",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$45.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/306690309686",
+        "thumbnail": "https://i.ebayimg.com/images/g/FPYAAeSwsGFpWAU1/s-l500.webp",
+        "sponsored": false,
+        "title": "8\" Wood Sofa/Couch/Chair/Ottoman Dark Brown Finish Furniture Legs - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$28.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/165198804267",
+        "thumbnail": "https://i.ebayimg.com/images/g/qtgAAOSwXXJhnVGP/s-l500.webp",
+        "sponsored": false,
+        "title": "3\" Light Walnut Finish Pyramid Furniture Legs (0841) Sofa Chair Ottoman Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$21.87"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/227529645766",
+        "thumbnail": "https://i.ebayimg.com/images/g/DMsAAeSwShxqrsVn/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage MCM Caster Glide for Tubular Spindle Table Chair Legs Adjustable Leveler",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/266923137632",
+        "thumbnail": "https://i.ebayimg.com/images/g/xroAAOSwSUBmo~0e/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Wooden Stair Chair Spindle Legs W/ Hardware Lot Of 4",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$36.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/163770737697",
+        "thumbnail": "https://i.ebayimg.com/images/g/B2wAAOSwblZZFiCb/s-l500.webp",
+        "sponsored": false,
+        "title": "5\" Dark Walnut Finish Wood Turned Leg 1820 Sofa Chair Loveseat Ottoman (2 Legs)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$18.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/227514946076",
+        "thumbnail": "https://i.ebayimg.com/images/g/H4IAAeSwpPFqogE9/s-l500.webp",
+        "sponsored": false,
+        "title": "1:12 Miniature Reminiscence Dining Table Barley Twist Legs & Spindle Chairs Set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$132.84"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/318850367787",
+        "thumbnail": "https://i.ebayimg.com/images/g/HOoAAeSwjWtqoevy/s-l500.webp",
+        "sponsored": false,
+        "title": "Vtg Oak Milking Stool with Turned Spindle Legs Tole Hand Painted Signed",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$49.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/267770103628",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZAYAAeSwOp9orL3f/s-l500.webp",
+        "sponsored": false,
+        "title": "Turned Wood Table Leg Replacement Spindle 14\" Height Unfinished Natural Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$18.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/800717376138",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZU4AAeSwUv5qFKWv/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Wooden Heart Back Chair Plant Stand Doll Chair Display Cottage Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/358181193495",
+        "thumbnail": "https://i.ebayimg.com/images/g/gJsAAeSw1u1pgGik/s-l500.webp",
+        "sponsored": true,
+        "title": "Alwynn Contemporary Wooden Spindle Back Dining Chairs, Windsor Chairs, Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$211.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/358861135465",
+        "thumbnail": "https://i.ebayimg.com/images/g/95wAAeSwDgxp5ZrU/s-l500.webp",
+        "sponsored": true,
+        "title": "4 Pieces of Dining Chair Kitchen Houme Spindle Back Side Chair with Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/800168110026",
+        "thumbnail": "https://i.ebayimg.com/images/g/23QAAeSwvTFqLGAq/s-l500.webp",
+        "sponsored": true,
+        "title": "DUHOME Linen Fabric Spindle Accent Chairs Set of 2,Bobbin Chair with High Resili",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$722.39"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/318654483759",
+        "thumbnail": "https://i.ebayimg.com/images/g/QvAAAeSwSx9p8dig/s-l500.webp",
+        "sponsored": true,
+        "title": "Set of 2 Vintage Windsor Dining Side Chair Wood Spindle Back Kitchen Natural",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$129.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/287137287556",
+        "thumbnail": "https://i.ebayimg.com/images/g/oNwAAeSwyMZp-a7B/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Dining Chair Kitchen Spindle Back Side Chair w/Solid Wooden Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$114.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/327366201661",
+        "thumbnail": "https://i.ebayimg.com/images/g/JfEAAeSwmXNqr4ks/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Miniature Windsor Style 15\" Dining Arm Chair Wood Spindle Back Doll Size",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$39.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/366042065769",
+        "thumbnail": "https://i.ebayimg.com/images/g/PmcAAOSwJ45laTBw/s-l500.webp",
+        "sponsored": false,
+        "title": "VINTAGE HEI Painted WOODEN HINGED TRAY TURNED SPINDLE LEGS BABY DOLL HIGH CHAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$64.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/318769405142",
+        "thumbnail": "https://i.ebayimg.com/images/g/aIQAAeSwpN5qi1A9/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Spindle-back Chair - N, HO, S and O Scales",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$7.95",
+          "to": "$11.45"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/256708181506",
+        "thumbnail": "https://i.ebayimg.com/images/g/L-0AAOSwBANnLneJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Dollhouse Wood Dining Chair Spindle Back 1:12 Scale - 5 Available",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$30.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/136338272745",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8gAAeSwgxVopCGb/s-l500.webp",
+        "sponsored": true,
+        "title": "Parker Spindle Windsor Set of 2 Dining Chair 17 Black US ONLY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$213.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/145287254984",
+        "thumbnail": "https://i.ebayimg.com/images/g/FD0AAeSwOvlpjWcd/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberly Row Modern / Contemporary Wood Windsor Chair in Antique Black Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$161.94"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 72,
+        "url": "https://www.ebay.com/itm/257723370045",
+        "thumbnail": "https://i.ebayimg.com/images/g/UrAAAeSw4QFqmvbB/s-l500.webp",
+        "sponsored": false,
+        "title": "Vtg Miniature Wooden Rocking Chair light maple Spindle Back Doll Furniture Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 73,
+        "url": "https://www.ebay.com/itm/298403074578",
+        "thumbnail": "https://i.ebayimg.com/images/g/Q8IAAeSwo25qKZG2/s-l500.webp",
+        "sponsored": false,
+        "title": "Primitive American Rod Back Windsor Chair ca 1800-1830",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$140.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 74,
+        "url": "https://www.ebay.com/itm/307162874897",
+        "thumbnail": "https://i.ebayimg.com/images/g/GiEAAeSwMk1qmuis/s-l500.webp",
+        "sponsored": false,
+        "title": "PAIR Thumb Back/Arrow Back Chairs Grain Painted & Decorated Original Paint 19thc",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$337.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 75,
+        "url": "https://www.ebay.com/itm/287418115691",
+        "thumbnail": "https://i.ebayimg.com/images/g/6bkAAeSwTLhqPSSl/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Cane Seat Bow Back Windsor Style Side Chair Solid Wood Farmhouse Decor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 76,
+        "url": "https://www.ebay.com/itm/127302525792",
+        "thumbnail": "https://i.ebayimg.com/images/g/NowAAeSw8WBomgw9/s-l500.webp",
+        "sponsored": false,
+        "title": "102 Furniture Feet Chair Ottoman Cabinet Sofa Turned Maple Finish 3\" tall 4 legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$19.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 77,
+        "url": "https://www.ebay.com/itm/127302525794",
+        "thumbnail": "https://i.ebayimg.com/images/g/dQ0AAeSwAU9omgw9/s-l500.webp",
+        "sponsored": false,
+        "title": "102 Furniture Feet Chair Ottoman Cabinet Sofa Turned Maple Finish 3\" tall 2 legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$11.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 78,
+        "url": "https://www.ebay.com/itm/284570565094",
+        "thumbnail": "https://i.ebayimg.com/images/g/kzgAAeSwiY5p-a7U/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 4 Dining Chair Kitchen Spindle Back Side Chair w/Solid Wooden Legs Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 79,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 80,
+        "url": "https://www.ebay.com/itm/336769668921",
+        "thumbnail": "https://i.ebayimg.com/images/g/VsQAAeSwKs5qV~lA/s-l500.webp",
+        "sponsored": false,
+        "title": "Lovely Ladderback Blond Wood Arm Chair w/ Ivory Fabric Seat Dollhouse Miniature",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$24.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 81,
+        "url": "https://www.ebay.com/itm/336696920346",
+        "thumbnail": "https://i.ebayimg.com/images/g/JaIAAeSw8KJqV~aR/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Golden Oak Spindle-Back Side Chair - Dollhouse Miniature",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$15.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 82,
+        "url": "https://www.ebay.com/itm/377173218004",
+        "thumbnail": "https://i.ebayimg.com/images/g/lQ0AAeSwNw1p~6De/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Windsor Style Spindle Back Wooden 15\" x 9.5\" Brown Black Arm Chair*READ*",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$17.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 83,
+        "url": "https://www.ebay.com/itm/137111890129",
+        "thumbnail": "https://i.ebayimg.com/images/g/RboAAeSw1JFpr1v0/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Set Of 4 Rush Seat Windsor Chairs Woven Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 84,
+        "url": "https://www.ebay.com/itm/227504743083",
+        "thumbnail": "https://i.ebayimg.com/images/g/pHUAAeSw-MtqmeLl/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 10 Vintage English Windsor Arm Chairs Pierced Splat Crinoline Stretcher",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 85,
+        "url": "https://www.ebay.com/itm/318654339062",
+        "thumbnail": "https://i.ebayimg.com/images/g/mEQAAeSwO2VprLrG/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 4 Vintage Windsor Dining Side Chair Wood Spindle Back Kitchen Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 86,
+        "url": "https://www.ebay.com/itm/127617803027",
+        "thumbnail": "https://i.ebayimg.com/images/g/ykQAAeSwSOJpZCjU/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Child Windsor Rocking Chair Maple Wood Spindle Back Turned Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$129.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 87,
+        "url": "https://www.ebay.com/itm/128060422340",
+        "thumbnail": "https://i.ebayimg.com/images/g/JUIAAeSwRXVqZ8X6/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Miniature Wooden Rocking Chair Dollhouse Doll Furniture Windsor Spindle",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$31.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 88,
+        "url": "https://www.ebay.com/itm/267694735955",
+        "thumbnail": "https://i.ebayimg.com/images/g/JboAAeSwijhqKH5~/s-l500.webp",
+        "sponsored": false,
+        "title": "Early 20th Century Fan Back with Brace Back Windsor Arm Chair Benchmade",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$599.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 89,
+        "url": "https://www.ebay.com/itm/188716413678",
+        "thumbnail": "https://i.ebayimg.com/images/g/EMAAAeSwdJBp5ZtP/s-l500.webp",
+        "sponsored": true,
+        "title": "4 PCS Dining Chair House Kitchen Spindle Back Side Chair W/ Solid Wooden Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$219.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 90,
+        "url": "https://www.ebay.com/itm/145774947993",
+        "thumbnail": "https://i.ebayimg.com/images/g/NjMAAOSw5z1nWnW0/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberly Row Dining Chair with Arms Light Oak Solid Wood Armchair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$341.48"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 11492.303
+  }
+}

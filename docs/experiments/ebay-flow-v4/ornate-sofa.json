@@ -1,0 +1,2851 @@
+{
+  "case_id": "ornate-sofa",
+  "manifest_sha256": "10736f6b7e9789dfbcc6deb5770d10554fac33f7db49f39578afc5cc51a59205",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "dark wood frame red patterned upholstery sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 639.459
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 4350.027
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 4100.125
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 3652.903
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/377479915878",
+        "thumbnail": "https://i.ebayimg.com/images/g/PcAAAeSwB1dqn1FS/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Solid Fabric Upholstered Sofa, Wood Frame, Adults, 35+ in H & L",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/178536059984",
+        "thumbnail": "https://i.ebayimg.com/images/g/qRcAAeSwEcNqulfq/s-l500.webp",
+        "sponsored": false,
+        "title": "Patterned Fabric Upholstered Sofa, Wood Frame, Multicolor, 3-Seat Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/398254415262",
+        "thumbnail": "https://i.ebayimg.com/images/g/N-UAAeSwcXdqc70D/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Fabric Sofa, Red/Beige Damask, 2-Seat Wood Frame, Cushions, Fringe",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/366424855907",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8QAAeSwyFxqD1r1/s-l500.webp",
+        "sponsored": false,
+        "title": "Blue Floral Damask 3-Seat Sofa Wood Frame Scroll Arms w/ Cushions 32x32x33",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/397975991247",
+        "thumbnail": "https://i.ebayimg.com/images/g/LKIAAeSwSptqD8ko/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Frame 3-Seat Fabric Sofa, Green Cushions w/ Beige Back Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.25"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/227416700767",
+        "thumbnail": "https://i.ebayimg.com/images/g/aO8AAeSw0TVqSXEW/s-l500.webp",
+        "sponsored": false,
+        "title": "Red 3-Seat Traditional Sofa Polyester Upholstery w/ Cushions Solid Pattern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/227336828491",
+        "thumbnail": "https://i.ebayimg.com/images/g/ARsAAeSwNBlp~zTd/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Contemporary Sofa, Polyester Upholstery, Cushions, Metal/Wood Frame, 44x31…",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$85.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/406883941058",
+        "thumbnail": "https://i.ebayimg.com/images/g/ydUAAeSwhPFp7CBa/s-l500.webp",
+        "sponsored": false,
+        "title": "Dark Gray Contemporary Sofa, Fabric Upholstery, Removable Cushions, 75\" x 32.5\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/287476542956",
+        "thumbnail": "https://i.ebayimg.com/images/g/ESoAAeSwxhdqX9zC/s-l500.webp",
+        "sponsored": true,
+        "title": "Curved Red Leather Sofa, Solid Upholstery, Wood Frame, Living Room Adults",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/147187715099",
+        "thumbnail": "https://i.ebayimg.com/images/g/9AAAAeSwpZhpqk2D/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Seaters Velvet Sofa Button Tufted Couch With Rolled Arms Solid Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$489.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/358432528052",
+        "thumbnail": "https://i.ebayimg.com/images/g/YpgAAeSwamJp2QOn/s-l500.webp",
+        "sponsored": false,
+        "title": "Dark Blue Three-Piece Sofa Set, Contemporary Fabric Upholstery, Wooden Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$352.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/278283199029",
+        "thumbnail": "https://i.ebayimg.com/images/g/SFMAAeSwli9qgH7w/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wood Frame Gold Upholstered 2-Seat Settee Loveseat Sofa, Solid Pattern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/164380861094",
+        "thumbnail": "https://i.ebayimg.com/images/g/pAUAAOSwbkVfcS~l/s-l500.webp",
+        "sponsored": false,
+        "title": "*PRICE DROP* Black Red Leather 3PC Sofa Couch Set Contemporary Modern Furniture",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,179.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/406224299460",
+        "thumbnail": "https://i.ebayimg.com/images/g/39IAAeSwRzZozJcY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa Set Dark Green Velvet, Foam, Wood, Plastic 2 Piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$453.23"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/377479915878",
+        "thumbnail": "https://i.ebayimg.com/images/g/PcAAAeSwB1dqn1FS/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Solid Fabric Upholstered Sofa, Wood Frame, Adults, 35+ in H & L",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/178536059984",
+        "thumbnail": "https://i.ebayimg.com/images/g/qRcAAeSwEcNqulfq/s-l500.webp",
+        "sponsored": false,
+        "title": "Patterned Fabric Upholstered Sofa, Wood Frame, Multicolor, 3-Seat Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/398254415262",
+        "thumbnail": "https://i.ebayimg.com/images/g/N-UAAeSwcXdqc70D/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Fabric Sofa, Red/Beige Damask, 2-Seat Wood Frame, Cushions, Fringe",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/366424855907",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8QAAeSwyFxqD1r1/s-l500.webp",
+        "sponsored": false,
+        "title": "Blue Floral Damask 3-Seat Sofa Wood Frame Scroll Arms w/ Cushions 32x32x33",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/397975991247",
+        "thumbnail": "https://i.ebayimg.com/images/g/LKIAAeSwSptqD8ko/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Frame 3-Seat Fabric Sofa, Green Cushions w/ Beige Back Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.25"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abad61831aafe4ac96714d5",
+        "status": "Success",
+        "created_at": "2026-09-28 21:03:20 UTC",
+        "processed_at": "2026-09-28 21:03:20 UTC",
+        "total_time_taken": 3.99
+      },
+      "ebay": {
+        "id": "6abad620f6d5eef48ecbb5d0",
+        "status": "Success",
+        "created_at": "2026-09-28 21:03:28 UTC",
+        "processed_at": "2026-09-28 21:03:28 UTC",
+        "total_time_taken": 3.3
+      }
+    },
+    "lens_interpretation": "sofa",
+    "query_preparation": {
+      "status": "ready",
+      "category": "sofa",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "sofa",
+        "fallback_reason": "bare_category",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 38,
+          "total_tokens": 1859
+        },
+        "duration_ms": 4117,
+        "category": "sofa",
+        "traits": [
+          "dark wood frame",
+          "red patterned upholstery"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "dark wood frame red patterned upholstery sofa",
+    "category": "sofa",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Classic Sofa Photos, Download The BEST Free Classic Sofa ...",
+        "Settees and Sofas — Evermore - Classic & Vintage Wedding Rentals",
+        "4,276+以上の無料ウェディングソファー画像",
+        "Rajmahal Sofa | Regal Arts & Export Inspired by timeless ...",
+        "Designers say this once-old-fashioned couch style is making ...",
+        "Premium Royal Carved Wooden Lounge Sofa Set | Crafty Bug",
+        "Retro Sofas - Designer Picks | Foter",
+        "French Style Two Seater Sofa - Etsy UK"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "dark wood frame red patterned upholstery sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 72,
+    "counts_before_title_filter": {
+      "accepted": 70,
+      "not_explicit_us": 2
+    },
+    "title_filter_counts": {
+      "accessory_or_part": 7,
+      "different_item": 1,
+      "wrong_category": 43,
+      "miniature": 1,
+      "mixed_categories": 3,
+      "accepted": 15
+    },
+    "listing_filter_version": "ebay-title-filter-v1",
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/168703838644",
+        "thumbnail": "https://i.ebayimg.com/images/g/rNIAAeSwCZ5qsKMz/s-l500.webp",
+        "sponsored": true,
+        "title": "25\" Wood Frame Accent Armchair PU Upholstery Tufted Back Solid Cedar Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/168201179298",
+        "thumbnail": "https://i.ebayimg.com/images/g/FkIAAeSwA3xpU3ai/s-l500.webp",
+        "sponsored": true,
+        "title": "25\" Wood Frame Accent Armchair PU Upholstery Tufted Back Solid Cedar Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$110.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/389712292179",
+        "thumbnail": "https://i.ebayimg.com/images/g/FkIAAeSwA3xpU3ai/s-l500.webp",
+        "sponsored": true,
+        "title": "25\" Wood Frame Accent Armchair PU Upholstery Tufted Back Solid Cedar Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$110.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/377479915878",
+        "thumbnail": "https://i.ebayimg.com/images/g/PcAAAeSwB1dqn1FS/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Solid Fabric Upholstered Sofa, Wood Frame, Adults, 35+ in H & L",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/178536059984",
+        "thumbnail": "https://i.ebayimg.com/images/g/qRcAAeSwEcNqulfq/s-l500.webp",
+        "sponsored": false,
+        "title": "Patterned Fabric Upholstered Sofa, Wood Frame, Multicolor, 3-Seat Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/287366112538",
+        "thumbnail": "https://i.ebayimg.com/images/g/aIcAAeSw-~RqHMa8/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seat Abstract Print Fabric Sofa, Rolled Arms, Cushioned Back, Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.00"
+        },
+        "filter": "accepted",
+        "title_filter": "different_item"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/398254415262",
+        "thumbnail": "https://i.ebayimg.com/images/g/N-UAAeSwcXdqc70D/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Fabric Sofa, Red/Beige Damask, 2-Seat Wood Frame, Cushions, Fringe",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/366424855907",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8QAAeSwyFxqD1r1/s-l500.webp",
+        "sponsored": false,
+        "title": "Blue Floral Damask 3-Seat Sofa Wood Frame Scroll Arms w/ Cushions 32x32x33",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/397975991247",
+        "thumbnail": "https://i.ebayimg.com/images/g/LKIAAeSwSptqD8ko/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Frame 3-Seat Fabric Sofa, Green Cushions w/ Beige Back Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.25"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/366621844566",
+        "thumbnail": "https://i.ebayimg.com/images/g/OWIAAeSwzMRqiU5r/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Armchair, Dark Gray Linen Tufted, Red Wood Frame 300 LBS",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$109.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/127737147535",
+        "thumbnail": "https://i.ebayimg.com/images/g/EngAAeSwXVxpszNi/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wood Armchair with new Burgundy Fabric Upholstery, Medium Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/227416700767",
+        "thumbnail": "https://i.ebayimg.com/images/g/aO8AAeSw0TVqSXEW/s-l500.webp",
+        "sponsored": false,
+        "title": "Red 3-Seat Traditional Sofa Polyester Upholstery w/ Cushions Solid Pattern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/227336828491",
+        "thumbnail": "https://i.ebayimg.com/images/g/ARsAAeSwNBlp~zTd/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Contemporary Sofa, Polyester Upholstery, Cushions, Metal/Wood Frame, 44x31…",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$85.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/406883941058",
+        "thumbnail": "https://i.ebayimg.com/images/g/ydUAAeSwhPFp7CBa/s-l500.webp",
+        "sponsored": false,
+        "title": "Dark Gray Contemporary Sofa, Fabric Upholstery, Removable Cushions, 75\" x 32.5\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/287476542956",
+        "thumbnail": "https://i.ebayimg.com/images/g/ESoAAeSwxhdqX9zC/s-l500.webp",
+        "sponsored": true,
+        "title": "Curved Red Leather Sofa, Solid Upholstery, Wood Frame, Living Room Adults",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/237094608061",
+        "thumbnail": "https://i.ebayimg.com/images/g/bu8AAeSwaSpqug-u/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Chair Cloud Chenille Solid Wood Pillow Modern Living Room Bedroom Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$250.39"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/237094807110",
+        "thumbnail": "https://i.ebayimg.com/images/g/clAAAeSwTTtqui9P/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Traditional Fabric Red Removable Cushion Deep Seat Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.81"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/237094807104",
+        "thumbnail": "https://i.ebayimg.com/images/g/hQkAAeSwylhqui9O/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Linen Beige 46\" Wood Frame Living Room Lounge Chair Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$280.79"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/318906293004",
+        "thumbnail": "https://i.ebayimg.com/images/g/fmIAAeSwAbVqszyQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Modern Accent Chair, Upholstered Comfy Armchair with Lumbar Pillow",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/318906197367",
+        "thumbnail": "https://i.ebayimg.com/images/g/768AAeSwyLRqszbe/s-l500.webp",
+        "sponsored": false,
+        "title": "Mainstays Wood Arm Accent Chair, Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$118.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/227534059142",
+        "thumbnail": "https://i.ebayimg.com/images/g/KUMAAeSwgZhqsnDK/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Wood Accent Chair with Backrest and Armrest, Modern Upholstered",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/318904546098",
+        "thumbnail": "https://i.ebayimg.com/images/g/v-8AAeSw-F1qsrU3/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage 1:12 scale dollhouse Rococo-style parlor sofa mahogany wood finish and a",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$35.00"
+        },
+        "filter": "accepted",
+        "title_filter": "miniature"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/158358211116",
+        "thumbnail": "https://i.ebayimg.com/images/g/3qcAAeSwJOtquqxy/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Frame Lounge Chair Gray Upholstered Bridge Arm Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/377524795696",
+        "thumbnail": "https://i.ebayimg.com/images/g/1BwAAeSwj-tqt-vC/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Upholstered Accent Chair with Arms, Solid, Living Room, Single Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/298698500487",
+        "thumbnail": "https://i.ebayimg.com/images/g/vhQAAeSwg1xqsrwX/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Style Red Upholstered Fabric Floral Accent Chair, Wood Frame Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$85.63"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/407249842785",
+        "thumbnail": "https://i.ebayimg.com/images/g/A7EAAeSwZD1quTgH/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wood Accent Chair w/ Arms, Slatted Sides, Carved Back, 30x25x20",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/237094806812",
+        "thumbnail": "https://i.ebayimg.com/images/g/PQoAAeSwX6dqui9N/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Velvet Brown 35\" Wood Frame Living Room Lounge Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$276.89"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/237094806787",
+        "thumbnail": "https://i.ebayimg.com/images/g/tn4AAeSwpT5qui9L/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Beige Wood Frame Tapered Legs Living Room Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$294.83"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/237094807213",
+        "thumbnail": "https://i.ebayimg.com/images/g/CoYAAeSwhodqui9V/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Beige 31\" Padded Removable Cushion Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$261.29"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/237094807320",
+        "thumbnail": "https://i.ebayimg.com/images/g/MbAAAeSwkVVqui9O/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Microfiber Gray Tufted Wood Frame Oversized Living Room Lounge",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$334.61"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/398433196617",
+        "thumbnail": "https://i.ebayimg.com/images/g/wHMAAeSwTy1qt2j8/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Accent Chair, Contemporary Boucle Fabric Accent Armchair Comfy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/800729843500",
+        "thumbnail": "https://i.ebayimg.com/images/g/WNYAAeSwMXhqurGT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Upholstered Armchair with Carved Wood Frame and Yellow Velvet Fabric",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/800726576272",
+        "thumbnail": "https://i.ebayimg.com/images/g/kLIAAeSw~1tquehN/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Wood Traditional Armchair with Faux Leather Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/398426911580",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWoAAeSwy5ZqtOU~/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Dark Wood Armchair, Upholstered High-Back Seat, Brown Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/237088943770",
+        "thumbnail": "https://i.ebayimg.com/images/g/y~8AAeSwv91qtZDB/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique (1880's)Armchair, Red Upholstered Padded Seat, With Arms, 24x22x36",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/147187715099",
+        "thumbnail": "https://i.ebayimg.com/images/g/9AAAAeSwpZhpqk2D/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Seaters Velvet Sofa Button Tufted Couch With Rolled Arms Solid Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$489.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/398434538625",
+        "thumbnail": "https://i.ebayimg.com/images/g/slIAAeSwabxqt~VM/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Style Carved Wood Armchair Floral Needlepoint Seat Casters",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$345.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/336807680780",
+        "thumbnail": "https://i.ebayimg.com/images/g/NDkAAeSwNJxqsspU/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wood Chair Brown Heart Cutout Back Indoor Fully Assembled 13.5x16x22",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/198658701072",
+        "thumbnail": "https://i.ebayimg.com/images/g/gxQAAeSwfBJqsf8H/s-l500.webp",
+        "sponsored": false,
+        "title": "Armless Accent Chair for Living Room, Upholstered Tufted Side Chair, Mid Century",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.69"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/820158802639",
+        "thumbnail": "https://i.ebayimg.com/images/g/BqIAAeSwnkxqsqRL/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Accent Chair, Red Upholstered Seat, Varnished Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/287611340988",
+        "thumbnail": "https://i.ebayimg.com/images/g/rn0AAeSw15tquI22/s-l500.webp",
+        "sponsored": false,
+        "title": "2-Pack Dining Chairs, Rubber Wood Frame, PU Foam Seat, Beige & Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$335.89"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/117427372075",
+        "thumbnail": "https://i.ebayimg.com/images/g/gooAAeSwhxNqs~BZ/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Acacia Wood Armchair Traditional Carved Upholstered Accent Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery Import fees due prior to delivery",
+        "location": "Located in India",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,625.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/237094807001",
+        "thumbnail": "https://i.ebayimg.com/images/g/LsAAAeSwnTpqui9P/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Blue 24\" Wood Frame Living Room Upholstered Plush",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$154.43"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/237094807044",
+        "thumbnail": "https://i.ebayimg.com/images/g/WzUAAeSwZ-Rqui9L/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Gray 28\" Removable Cushion Wood Frame Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$278.45"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/237094807027",
+        "thumbnail": "https://i.ebayimg.com/images/g/6sIAAeSwLmFqui9M/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Chenille Gray 32\" Ottoman Padded Wood Frame Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$357.23"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/237094608013",
+        "thumbnail": "https://i.ebayimg.com/images/g/rxsAAeSwuyVqug-u/s-l500.webp",
+        "sponsored": true,
+        "title": "Lounge Chair Curved Corduroy Gray Fabric Solid Wood Armless Living Room Bedroom",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$298.39"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/358432528052",
+        "thumbnail": "https://i.ebayimg.com/images/g/YpgAAeSwamJp2QOn/s-l500.webp",
+        "sponsored": false,
+        "title": "Dark Blue Three-Piece Sofa Set, Contemporary Fabric Upholstery, Wooden Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$352.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/318876386317",
+        "thumbnail": "https://i.ebayimg.com/images/g/yPsAAeSwYjtqqfQx/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Oak Accent Chair Linen Cotton Dark Gray Upholstered Lounge Comfy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$147.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/278283199029",
+        "thumbnail": "https://i.ebayimg.com/images/g/SFMAAeSwli9qgH7w/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wood Frame Gold Upholstered 2-Seat Settee Loveseat Sofa, Solid Pattern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/377516623320",
+        "thumbnail": "https://i.ebayimg.com/images/g/pnEAAeSwS8Fqs0KY/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Armchair Chair with Heart Cutout Back, Natural Finish, Single Unit",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/167325898086",
+        "thumbnail": "https://i.ebayimg.com/images/g/ajMAAOSw9NNns~mA/s-l500.webp",
+        "sponsored": false,
+        "title": "2XUpholstered Accent Chair Armchair w/Pillow Fabric Single Sofa Chair w/Wood Leg",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.37"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/128094885529",
+        "thumbnail": "https://i.ebayimg.com/images/g/60QAAeSwvbtqs~is/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Acacia Wood Armchair Floral Upholstered Carved Wooden Accent Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery Import fees due prior to delivery",
+        "location": "Located in India",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,937.23"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/237094608104",
+        "thumbnail": "https://i.ebayimg.com/images/g/OjsAAeSwuiRqug-v/s-l500.webp",
+        "sponsored": true,
+        "title": "Lounge Chair Curved Beige Corduroy Solid Wood Upholstered Rocking Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/237094806807",
+        "thumbnail": "https://i.ebayimg.com/images/g/PnUAAeSwJ4Zqui9K/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Mid Century Corduroy Beige 33\" Removable Cushion Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$173.93"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/198660137733",
+        "thumbnail": "https://i.ebayimg.com/images/g/FicAAeSwhbBqssnw/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Windsor Style Brown Wooden Armchairs w/ Armrests Set of 2",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$440.00"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/164380861094",
+        "thumbnail": "https://i.ebayimg.com/images/g/pAUAAOSwbkVfcS~l/s-l500.webp",
+        "sponsored": false,
+        "title": "*PRICE DROP* Black Red Leather 3PC Sofa Couch Set Contemporary Modern Furniture",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,179.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/406224299460",
+        "thumbnail": "https://i.ebayimg.com/images/g/39IAAeSwRzZozJcY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa Set Dark Green Velvet, Foam, Wood, Plastic 2 Piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$453.23"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/820061822089",
+        "thumbnail": "https://i.ebayimg.com/images/g/UOoAAeSwEFxqQ8zn/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Accent Armchair w/Wood Legs,Microsuede Lounge Chair, Supports 250 lbs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$229.79"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/407168686183",
+        "thumbnail": "https://i.ebayimg.com/images/g/m4kAAOSwYFhhoI4W/s-l500.webp",
+        "sponsored": false,
+        "title": "Living Room Armchair+Ottoman Modern Accent Single Sofa Linen Fabric Club Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$145.99"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/820113275095",
+        "thumbnail": "https://i.ebayimg.com/images/g/kX4AAeSwGk9qo5xY/s-l500.webp",
+        "sponsored": false,
+        "title": "8 COLORS Comfy Accent Chair, Upholstered Armchair, Comfy Single Sofa Chair, Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$94.59",
+          "to": "$99.99"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/800688801933",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bx0AAeSwG9FqmXzZ/s-l500.webp",
+        "sponsored": false,
+        "title": "27.25\" Modern Boucle Lounge Chair w/ Solid Wood Frame, Rolled Backrest, Almond",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$259.69"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/206490987166",
+        "thumbnail": "https://i.ebayimg.com/images/g/jU4AAeSwazxqfzsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Accent Chair with Solid Wood Frame & Chenille Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$151.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/178514905768",
+        "thumbnail": "https://i.ebayimg.com/images/g/ANUAAeSwDaxqsKen/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Linen Accent Chair Upholstered Armchair with Side Pocket",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$179.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/166612763875",
+        "thumbnail": "https://i.ebayimg.com/images/g/-WoAAOSwpE5flFWp/s-l500.webp",
+        "sponsored": false,
+        "title": "*SALE* Red Black 3PC Sofa Loveseat Chair Set",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,179.99"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/800680258013",
+        "thumbnail": "https://i.ebayimg.com/images/g/jU4AAeSwazxqfzsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Accent Chair with Solid Wood Frame & Chenille Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/820155634595",
+        "thumbnail": "https://i.ebayimg.com/images/g/5~wAAeSwYexqV7kC/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Accent Chair Corduroy Chenille Upholstery Wood Frame Lumbar Pillow",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$268.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/398422583219",
+        "thumbnail": "https://i.ebayimg.com/images/g/dxcAAeSwPhtqszwS/s-l500.webp",
+        "sponsored": false,
+        "title": "Gewnee 25.39\"Accent Armchair,Modern Upholstered Armchair with Solid Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$56.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/158225349611",
+        "thumbnail": "https://i.ebayimg.com/images/g/56YAAeSw2DJqjq5J/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Accent Chair, Beige Armchair Living Room Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$93.49"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/206130840222",
+        "thumbnail": "https://i.ebayimg.com/images/g/jQIAAeSwZ35psppY/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Lounge Chair Chenille Armchair with Lumbar Pillow & Solid Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$109.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/237094608012",
+        "thumbnail": "https://i.ebayimg.com/images/g/irEAAeSwoZtqug-x/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Chair Modern Beige Solid Wood Armrests Upholstered Cushioned Seat Reading",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.59"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 72,
+        "url": "https://www.ebay.com/itm/237094806856",
+        "thumbnail": "https://i.ebayimg.com/images/g/iYsAAeSwv8xqui9R/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Boucle Brown 30\" Wood Frame Living Room Lounge Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$303.41"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      }
+    ],
+    "eligible_before_title_filter": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/800178300673",
+        "thumbnail": "https://i.ebayimg.com/images/g/NFkAAeSwWtdqLsfw/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Floral Fabric Upholstered High Back Sofa, Carved Brown Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/168703838644",
+        "thumbnail": "https://i.ebayimg.com/images/g/rNIAAeSwCZ5qsKMz/s-l500.webp",
+        "sponsored": true,
+        "title": "25\" Wood Frame Accent Armchair PU Upholstery Tufted Back Solid Cedar Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/168201179298",
+        "thumbnail": "https://i.ebayimg.com/images/g/FkIAAeSwA3xpU3ai/s-l500.webp",
+        "sponsored": true,
+        "title": "25\" Wood Frame Accent Armchair PU Upholstery Tufted Back Solid Cedar Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$110.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/389712292179",
+        "thumbnail": "https://i.ebayimg.com/images/g/FkIAAeSwA3xpU3ai/s-l500.webp",
+        "sponsored": true,
+        "title": "25\" Wood Frame Accent Armchair PU Upholstery Tufted Back Solid Cedar Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$110.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/377479915878",
+        "thumbnail": "https://i.ebayimg.com/images/g/PcAAAeSwB1dqn1FS/s-l500.webp",
+        "sponsored": false,
+        "title": "Red Solid Fabric Upholstered Sofa, Wood Frame, Adults, 35+ in H & L",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/178536059984",
+        "thumbnail": "https://i.ebayimg.com/images/g/qRcAAeSwEcNqulfq/s-l500.webp",
+        "sponsored": false,
+        "title": "Patterned Fabric Upholstered Sofa, Wood Frame, Multicolor, 3-Seat Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/287366112538",
+        "thumbnail": "https://i.ebayimg.com/images/g/aIcAAeSw-~RqHMa8/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seat Abstract Print Fabric Sofa, Rolled Arms, Cushioned Back, Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$75.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/398254415262",
+        "thumbnail": "https://i.ebayimg.com/images/g/N-UAAeSwcXdqc70D/s-l500.webp",
+        "sponsored": false,
+        "title": "Traditional Fabric Sofa, Red/Beige Damask, 2-Seat Wood Frame, Cushions, Fringe",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$80.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/366424855907",
+        "thumbnail": "https://i.ebayimg.com/images/g/X8QAAeSwyFxqD1r1/s-l500.webp",
+        "sponsored": false,
+        "title": "Blue Floral Damask 3-Seat Sofa Wood Frame Scroll Arms w/ Cushions 32x32x33",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/397975991247",
+        "thumbnail": "https://i.ebayimg.com/images/g/LKIAAeSwSptqD8ko/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Frame 3-Seat Fabric Sofa, Green Cushions w/ Beige Back Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$125.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/366621844566",
+        "thumbnail": "https://i.ebayimg.com/images/g/OWIAAeSwzMRqiU5r/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Armchair, Dark Gray Linen Tufted, Red Wood Frame 300 LBS",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$109.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/127737147535",
+        "thumbnail": "https://i.ebayimg.com/images/g/EngAAeSwXVxpszNi/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wood Armchair with new Burgundy Fabric Upholstery, Medium Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$50.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/227416700767",
+        "thumbnail": "https://i.ebayimg.com/images/g/aO8AAeSw0TVqSXEW/s-l500.webp",
+        "sponsored": false,
+        "title": "Red 3-Seat Traditional Sofa Polyester Upholstery w/ Cushions Solid Pattern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/227336828491",
+        "thumbnail": "https://i.ebayimg.com/images/g/ARsAAeSwNBlp~zTd/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Contemporary Sofa, Polyester Upholstery, Cushions, Metal/Wood Frame, 44x31…",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$85.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/406883941058",
+        "thumbnail": "https://i.ebayimg.com/images/g/ydUAAeSwhPFp7CBa/s-l500.webp",
+        "sponsored": false,
+        "title": "Dark Gray Contemporary Sofa, Fabric Upholstery, Removable Cushions, 75\" x 32.5\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/287476542956",
+        "thumbnail": "https://i.ebayimg.com/images/g/ESoAAeSwxhdqX9zC/s-l500.webp",
+        "sponsored": true,
+        "title": "Curved Red Leather Sofa, Solid Upholstery, Wood Frame, Living Room Adults",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/237094608061",
+        "thumbnail": "https://i.ebayimg.com/images/g/bu8AAeSwaSpqug-u/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Chair Cloud Chenille Solid Wood Pillow Modern Living Room Bedroom Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$250.39"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/237094807110",
+        "thumbnail": "https://i.ebayimg.com/images/g/clAAAeSwTTtqui9P/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Traditional Fabric Red Removable Cushion Deep Seat Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.81"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/237094807104",
+        "thumbnail": "https://i.ebayimg.com/images/g/hQkAAeSwylhqui9O/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Linen Beige 46\" Wood Frame Living Room Lounge Chair Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$280.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/318906293004",
+        "thumbnail": "https://i.ebayimg.com/images/g/fmIAAeSwAbVqszyQ/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Modern Accent Chair, Upholstered Comfy Armchair with Lumbar Pillow",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$89.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/318906197367",
+        "thumbnail": "https://i.ebayimg.com/images/g/768AAeSwyLRqszbe/s-l500.webp",
+        "sponsored": false,
+        "title": "Mainstays Wood Arm Accent Chair, Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$118.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/227534059142",
+        "thumbnail": "https://i.ebayimg.com/images/g/KUMAAeSwgZhqsnDK/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Wood Accent Chair with Backrest and Armrest, Modern Upholstered",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$69.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/318904546098",
+        "thumbnail": "https://i.ebayimg.com/images/g/v-8AAeSw-F1qsrU3/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage 1:12 scale dollhouse Rococo-style parlor sofa mahogany wood finish and a",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$35.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/158358211116",
+        "thumbnail": "https://i.ebayimg.com/images/g/3qcAAeSwJOtquqxy/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak Frame Lounge Chair Gray Upholstered Bridge Arm Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/377524795696",
+        "thumbnail": "https://i.ebayimg.com/images/g/1BwAAeSwj-tqt-vC/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Upholstered Accent Chair with Arms, Solid, Living Room, Single Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$40.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/298698500487",
+        "thumbnail": "https://i.ebayimg.com/images/g/vhQAAeSwg1xqsrwX/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Style Red Upholstered Fabric Floral Accent Chair, Wood Frame Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$85.63"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/407249842785",
+        "thumbnail": "https://i.ebayimg.com/images/g/A7EAAeSwZD1quTgH/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wood Accent Chair w/ Arms, Slatted Sides, Carved Back, 30x25x20",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/237094806812",
+        "thumbnail": "https://i.ebayimg.com/images/g/PQoAAeSwX6dqui9N/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Velvet Brown 35\" Wood Frame Living Room Lounge Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$276.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/237094806787",
+        "thumbnail": "https://i.ebayimg.com/images/g/tn4AAeSwpT5qui9L/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Beige Wood Frame Tapered Legs Living Room Home",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$294.83"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/237094807213",
+        "thumbnail": "https://i.ebayimg.com/images/g/CoYAAeSwhodqui9V/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Beige 31\" Padded Removable Cushion Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$261.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/237094807320",
+        "thumbnail": "https://i.ebayimg.com/images/g/MbAAAeSwkVVqui9O/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Microfiber Gray Tufted Wood Frame Oversized Living Room Lounge",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$334.61"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/398433196617",
+        "thumbnail": "https://i.ebayimg.com/images/g/wHMAAeSwTy1qt2j8/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Accent Chair, Contemporary Boucle Fabric Accent Armchair Comfy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/800729843500",
+        "thumbnail": "https://i.ebayimg.com/images/g/WNYAAeSwMXhqurGT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Upholstered Armchair with Carved Wood Frame and Yellow Velvet Fabric",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/800726576272",
+        "thumbnail": "https://i.ebayimg.com/images/g/kLIAAeSw~1tquehN/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Wood Traditional Armchair with Faux Leather Upholstery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/398426911580",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWoAAeSwy5ZqtOU~/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Carved Dark Wood Armchair, Upholstered High-Back Seat, Brown Indoor",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/237088943770",
+        "thumbnail": "https://i.ebayimg.com/images/g/y~8AAeSwv91qtZDB/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique (1880's)Armchair, Red Upholstered Padded Seat, With Arms, 24x22x36",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/147187715099",
+        "thumbnail": "https://i.ebayimg.com/images/g/9AAAAeSwpZhpqk2D/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Seaters Velvet Sofa Button Tufted Couch With Rolled Arms Solid Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$489.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/398434538625",
+        "thumbnail": "https://i.ebayimg.com/images/g/slIAAeSwabxqt~VM/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Victorian Style Carved Wood Armchair Floral Needlepoint Seat Casters",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$345.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/336807680780",
+        "thumbnail": "https://i.ebayimg.com/images/g/NDkAAeSwNJxqsspU/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Wood Chair Brown Heart Cutout Back Indoor Fully Assembled 13.5x16x22",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/198658701072",
+        "thumbnail": "https://i.ebayimg.com/images/g/gxQAAeSwfBJqsf8H/s-l500.webp",
+        "sponsored": false,
+        "title": "Armless Accent Chair for Living Room, Upholstered Tufted Side Chair, Mid Century",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/820158802639",
+        "thumbnail": "https://i.ebayimg.com/images/g/BqIAAeSwnkxqsqRL/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Dark Wood Accent Chair, Red Upholstered Seat, Varnished Finish",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/287611340988",
+        "thumbnail": "https://i.ebayimg.com/images/g/rn0AAeSw15tquI22/s-l500.webp",
+        "sponsored": false,
+        "title": "2-Pack Dining Chairs, Rubber Wood Frame, PU Foam Seat, Beige & Walnut",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$335.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/237094807001",
+        "thumbnail": "https://i.ebayimg.com/images/g/LsAAAeSwnTpqui9P/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Blue 24\" Wood Frame Living Room Upholstered Plush",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$154.43"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/237094807044",
+        "thumbnail": "https://i.ebayimg.com/images/g/WzUAAeSwZ-Rqui9L/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Fabric Gray 28\" Removable Cushion Wood Frame Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$278.45"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/237094807027",
+        "thumbnail": "https://i.ebayimg.com/images/g/6sIAAeSwLmFqui9M/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Chenille Gray 32\" Ottoman Padded Wood Frame Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$357.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/237094608013",
+        "thumbnail": "https://i.ebayimg.com/images/g/rxsAAeSwuyVqug-u/s-l500.webp",
+        "sponsored": true,
+        "title": "Lounge Chair Curved Corduroy Gray Fabric Solid Wood Armless Living Room Bedroom",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$298.39"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/358432528052",
+        "thumbnail": "https://i.ebayimg.com/images/g/YpgAAeSwamJp2QOn/s-l500.webp",
+        "sponsored": false,
+        "title": "Dark Blue Three-Piece Sofa Set, Contemporary Fabric Upholstery, Wooden Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$352.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/318876386317",
+        "thumbnail": "https://i.ebayimg.com/images/g/yPsAAeSwYjtqqfQx/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Oak Accent Chair Linen Cotton Dark Gray Upholstered Lounge Comfy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$147.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/278283199029",
+        "thumbnail": "https://i.ebayimg.com/images/g/SFMAAeSwli9qgH7w/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Wood Frame Gold Upholstered 2-Seat Settee Loveseat Sofa, Solid Pattern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/377516623320",
+        "thumbnail": "https://i.ebayimg.com/images/g/pnEAAeSwS8Fqs0KY/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Armchair Chair with Heart Cutout Back, Natural Finish, Single Unit",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$25.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/167325898086",
+        "thumbnail": "https://i.ebayimg.com/images/g/ajMAAOSw9NNns~mA/s-l500.webp",
+        "sponsored": false,
+        "title": "2XUpholstered Accent Chair Armchair w/Pillow Fabric Single Sofa Chair w/Wood Leg",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$209.37"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/237094608104",
+        "thumbnail": "https://i.ebayimg.com/images/g/OjsAAeSwuiRqug-v/s-l500.webp",
+        "sponsored": true,
+        "title": "Lounge Chair Curved Beige Corduroy Solid Wood Upholstered Rocking Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/237094806807",
+        "thumbnail": "https://i.ebayimg.com/images/g/PnUAAeSwJ4Zqui9K/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Mid Century Corduroy Beige 33\" Removable Cushion Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$173.93"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/198660137733",
+        "thumbnail": "https://i.ebayimg.com/images/g/FicAAeSwhbBqssnw/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Windsor Style Brown Wooden Armchairs w/ Armrests Set of 2",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$440.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/164380861094",
+        "thumbnail": "https://i.ebayimg.com/images/g/pAUAAOSwbkVfcS~l/s-l500.webp",
+        "sponsored": false,
+        "title": "*PRICE DROP* Black Red Leather 3PC Sofa Couch Set Contemporary Modern Furniture",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,179.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/406224299460",
+        "thumbnail": "https://i.ebayimg.com/images/g/39IAAeSwRzZozJcY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa Set Dark Green Velvet, Foam, Wood, Plastic 2 Piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$453.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/820061822089",
+        "thumbnail": "https://i.ebayimg.com/images/g/UOoAAeSwEFxqQ8zn/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Accent Armchair w/Wood Legs,Microsuede Lounge Chair, Supports 250 lbs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$229.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/407168686183",
+        "thumbnail": "https://i.ebayimg.com/images/g/m4kAAOSwYFhhoI4W/s-l500.webp",
+        "sponsored": false,
+        "title": "Living Room Armchair+Ottoman Modern Accent Single Sofa Linen Fabric Club Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$145.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 61,
+        "url": "https://www.ebay.com/itm/820113275095",
+        "thumbnail": "https://i.ebayimg.com/images/g/kX4AAeSwGk9qo5xY/s-l500.webp",
+        "sponsored": false,
+        "title": "8 COLORS Comfy Accent Chair, Upholstered Armchair, Comfy Single Sofa Chair, Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$94.59",
+          "to": "$99.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 62,
+        "url": "https://www.ebay.com/itm/800688801933",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bx0AAeSwG9FqmXzZ/s-l500.webp",
+        "sponsored": false,
+        "title": "27.25\" Modern Boucle Lounge Chair w/ Solid Wood Frame, Rolled Backrest, Almond",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$259.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 63,
+        "url": "https://www.ebay.com/itm/206490987166",
+        "thumbnail": "https://i.ebayimg.com/images/g/jU4AAeSwazxqfzsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Accent Chair with Solid Wood Frame & Chenille Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$151.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 64,
+        "url": "https://www.ebay.com/itm/178514905768",
+        "thumbnail": "https://i.ebayimg.com/images/g/ANUAAeSwDaxqsKen/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Linen Accent Chair Upholstered Armchair with Side Pocket",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$179.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 65,
+        "url": "https://www.ebay.com/itm/166612763875",
+        "thumbnail": "https://i.ebayimg.com/images/g/-WoAAOSwpE5flFWp/s-l500.webp",
+        "sponsored": false,
+        "title": "*SALE* Red Black 3PC Sofa Loveseat Chair Set",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,179.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 66,
+        "url": "https://www.ebay.com/itm/800680258013",
+        "thumbnail": "https://i.ebayimg.com/images/g/jU4AAeSwazxqfzsJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Accent Chair with Solid Wood Frame & Chenille Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$169.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 67,
+        "url": "https://www.ebay.com/itm/820155634595",
+        "thumbnail": "https://i.ebayimg.com/images/g/5~wAAeSwYexqV7kC/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Accent Chair Corduroy Chenille Upholstery Wood Frame Lumbar Pillow",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$268.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 68,
+        "url": "https://www.ebay.com/itm/398422583219",
+        "thumbnail": "https://i.ebayimg.com/images/g/dxcAAeSwPhtqszwS/s-l500.webp",
+        "sponsored": false,
+        "title": "Gewnee 25.39\"Accent Armchair,Modern Upholstered Armchair with Solid Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$56.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 69,
+        "url": "https://www.ebay.com/itm/158225349611",
+        "thumbnail": "https://i.ebayimg.com/images/g/56YAAeSw2DJqjq5J/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Accent Chair, Beige Armchair Living Room Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$93.49"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 70,
+        "url": "https://www.ebay.com/itm/206130840222",
+        "thumbnail": "https://i.ebayimg.com/images/g/jQIAAeSwZ35psppY/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Lounge Chair Chenille Armchair with Lumbar Pillow & Solid Wood Frame",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$109.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 71,
+        "url": "https://www.ebay.com/itm/237094608012",
+        "thumbnail": "https://i.ebayimg.com/images/g/irEAAeSwoZtqug-x/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Chair Modern Beige Solid Wood Armrests Upholstered Cushioned Seat Reading",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$169.59"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 72,
+        "url": "https://www.ebay.com/itm/237094806856",
+        "thumbnail": "https://i.ebayimg.com/images/g/iYsAAeSwv8xqui9R/s-l500.webp",
+        "sponsored": true,
+        "title": "Accent Armchair Modern Boucle Brown 30\" Wood Frame Living Room Lounge Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$303.41"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 12810.323
+  }
+}

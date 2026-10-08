@@ -1,0 +1,2 @@
+class SearchCacheEntry < ApplicationRecord
+end

@@ -1,0 +1,15 @@
+{
+  "zip_overrides": {},
+  "country_overrides": {
+    "GU": "micronesia.craigslist.org",
+    "PR": "puertorico.craigslist.org",
+    "VI": "virgin.craigslist.org"
+  },
+  "origin_overrides": {
+    "sfbay": "San Francisco",
+    "newyork": "New York",
+    "chicago": "Chicago",
+    "boston": "Boston",
+    "seattle": "Seattle"
+  }
+}

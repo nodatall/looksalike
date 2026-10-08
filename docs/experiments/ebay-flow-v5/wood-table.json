@@ -1,0 +1,101 @@
+{
+  "case_id": "wood-table",
+  "manifest_sha256": "4f04920037460926e39e319ff7743755d170927945e2dc5e64d26233b3f85d99",
+  "outcome": {
+    "status": "not_furniture",
+    "parameters": [
+      {
+        "photo_sha256": "a31f83305e68e0ea1db2c02a14406f9b92169e1cc85c795e07c87a80b6d30ae6"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 1579.602
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 3794.586
+      },
+      {
+        "stage": "vision",
+        "status": "not_furniture",
+        "elapsed_ms": 6413.407
+      }
+    ],
+    "candidates": [],
+    "first_six": [],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abc479db9dbc403d532591d",
+        "status": "Success",
+        "created_at": "2026-09-29 23:19:57 UTC",
+        "processed_at": "2026-09-29 23:19:57 UTC",
+        "total_time_taken": 3.18
+      }
+    },
+    "lens_interpretation": "farmhouse coffee table",
+    "query_preparation": {
+      "status": "not_furniture",
+      "category": null,
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "coffee table",
+        "fallback_reason": "no_concrete_trait",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 23,
+          "total_tokens": 1844
+        },
+        "duration_ms": 6436
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": null,
+    "category": null,
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "OUTWEST FURNITURE - CLOSED - Updated September 2026 - 15 ...",
+        "Amazon.com: Lativo White Wood Wallpaper Wood Grain Contact ...",
+        "Shop at McGinleys Furniture | humm Ireland",
+        "Wood Coffee Tables for sale in Ashland, Virginia | Facebook ...",
+        "Laurel Foundry Modern Farmhouse® Lonan Coffee Table ...",
+        "Montana White Storage Coffee Table | Bob's Discount ...",
+        "Amazon.com: Lativo White Wood Wallpaper Wood Grain Contact ...",
+        "Farmhouse Coffee Table with Sliding Barn Doors & Storage ..."
+      ]
+    },
+    "elapsed_ms": 11852.314
+  }
+}

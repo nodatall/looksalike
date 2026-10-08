@@ -1,0 +1,2115 @@
+{
+  "case_id": "ornate-sofa",
+  "manifest_sha256": "4bed77df7331e94845caa1871352f9a03f155e766f782c395837767eb5c5bebe",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "vintage sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 622.874
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 4295.941
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 2945.157
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/NVwAAeSwS3BqmWQy/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/206564197453",
+        "thumbnail": "https://i.ebayimg.com/images/g/McYAAeSwr9JqrIMG/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Baker Furniture Faux Bamboo Cane Console Server Sideboard Sofa Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,099.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/256884158923",
+        "thumbnail": "https://i.ebayimg.com/images/g/PIEAAeSwcqxn8l76/s-l500.webp",
+        "sponsored": true,
+        "title": "Hand-Knotted Floral 100% Silk Vegetable Dye Vintage Hereke Turkish Rug 3x5 Ft",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,741.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/405093057104",
+        "thumbnail": "https://i.ebayimg.com/images/g/2PAAAOSwYR9lpX6Z/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Hand-Knotted Semi-Antique Keshan Area Rug | 9'7\" x 12'9\" | 100% Wool",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,349.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/168720978721",
+        "thumbnail": "https://i.ebayimg.com/images/g/dTkAAeSwtExqtue4/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Floral Fabric Upholstered Sofa Carved Wood Frame Camelback Rolled",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/318930273005",
+        "thumbnail": "https://i.ebayimg.com/images/g/CDUAAeSwpG5quqeP/s-l500.webp",
+        "sponsored": false,
+        "title": "Hollywood Regency Vintage Ornate Sectional",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/137775103516",
+        "thumbnail": "https://i.ebayimg.com/images/g/YeIAAeSw19FqtVxF/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Leather Chesterfield Classic English Tufting by St. Timothy Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,395.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/257759062632",
+        "thumbnail": "https://i.ebayimg.com/images/g/QCUAAeSwlyxqsroY/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Upholstered Accent Chair w/ Arms, Red Floral, Dark Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/287606137866",
+        "thumbnail": "https://i.ebayimg.com/images/g/eB4AAeSwVD9qtWOK/s-l500.webp",
+        "sponsored": false,
+        "title": "Ralph Lauren Henredon Chesterfield Tufted Leather Sofa Rare Vintage (Set of 2)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26,550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/257764114892",
+        "thumbnail": "https://i.ebayimg.com/images/g/L0EAAeSwxmBqtqO6/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage double sided Leather Chesterfield Sofa by ￼ Old Hickory Tannery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$12,750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/398434946111",
+        "thumbnail": "https://i.ebayimg.com/images/g/JTkAAeSw3cFquCb7/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Eames Lounge Chair & Ottoman 670/671 . 1975-83",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,985.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/800729843500",
+        "thumbnail": "https://i.ebayimg.com/images/g/WNYAAeSwMXhqurGT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Upholstered Armchair with Carved Wood Frame and Yellow Velvet Fabric",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/387325991175",
+        "thumbnail": "https://i.ebayimg.com/images/g/yeAAAOSw4tdmyfG1/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Blue Vegetable Dye Heriiz Serapi Hand-made Room Size Antique Rug 7x10",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,614.54"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/800207881519",
+        "thumbnail": "https://i.ebayimg.com/images/g/TT8AAeSwBpdqNT3c/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Red 3x10 Hand-Knotted Runner Rug with Geometric Motifs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$760.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/386822030885",
+        "thumbnail": "https://i.ebayimg.com/images/g/S~QAAOSwb~tl4BrI/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Vegetable Dye Tebriz Haj jalili Hand-made Dining Room Antique Rug 9x13",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$5,583.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/386869771968",
+        "thumbnail": "https://i.ebayimg.com/images/g/xKIAAOSwqFZh-ZoG/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Antique Kirman Lavar 10'x13' Large Area Rug Vegetable Dye Hand-knotted",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$5,863.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/188981317729",
+        "thumbnail": "https://i.ebayimg.com/images/g/ffgAAeSwgI1qtgEB/s-l500.webp",
+        "sponsored": false,
+        "title": "1970s Chrome Low Sling Lounge Chair - Mid Century Modern MCM Vintage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/336807518718",
+        "thumbnail": "https://i.ebayimg.com/images/g/qKwAAeSwBSZqsq5i/s-l500.webp",
+        "sponsored": false,
+        "title": "Rustic 2-Tier Vintage Sofa Console Table for Living Room Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$181.45"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/820170730766",
+        "thumbnail": "https://i.ebayimg.com/images/g/oOEAAeSwTx1qtnbW/s-l500.webp",
+        "sponsored": false,
+        "title": "Century Furniture Upholstered Accent Chair & Ottoman -Wood Legs w/ Casters",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/800716424904",
+        "thumbnail": "https://i.ebayimg.com/images/g/TWwAAeSwU2Fqtx-r/s-l500.webp",
+        "sponsored": false,
+        "title": "4 vintage Swiss leather lounge chairs with two ottomans",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/318930226491",
+        "thumbnail": "https://i.ebayimg.com/images/g/1h4AAeSwO9VquqWJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Hollywood Regency Round Glass Top Coffee Table Carved Base Gold/Brown",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$318.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/366683726554",
+        "thumbnail": "https://i.ebayimg.com/images/g/C0AAAeSwnLRqsd8J/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian 3-Piece Sofa Set Floral Fabric Upholstery Beige Gold Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/377522409270",
+        "thumbnail": "https://i.ebayimg.com/images/g/IfYAAeSwtR1qto87/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Iron Settee Antique Style Tufted Upholstered Seat. 41-23",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/188978317977",
+        "thumbnail": "https://i.ebayimg.com/images/g/PSIAAeSwzftqtSfP/s-l500.webp",
+        "sponsored": false,
+        "title": "White & Gold Baroque/Rococo Tufted Upholstered High Back Throne Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/800720634209",
+        "thumbnail": "https://i.ebayimg.com/images/g/5wIAAeSwx8NquGJr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Block Island John Hutton rattan/ wicker sofa and chair set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/267796536349",
+        "thumbnail": "https://i.ebayimg.com/images/g/bRgAAeSwmIRquBIm/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Demilune Console Table With Cane & Glass Top",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/298714024145",
+        "thumbnail": "https://i.ebayimg.com/images/g/uhAAAeSw7bpquplf/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Hand Painted Austrian Enamel Salon Miniature Furniture Set of Six Pieces",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$655.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/198662088981",
+        "thumbnail": "https://i.ebayimg.com/images/g/wK0AAeSwj-tqs~Gr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Thames Japan Porcelain Ballerinas On Sofa Bone China Lace and hand-paint",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$0.01"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/386901231301",
+        "thumbnail": "https://i.ebayimg.com/images/g/QPQAAOSwzxFmC45s/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Vegetable Dye Karabagh Oriental Rug 4x6 Russian Hand-made Wool Carpet",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,383.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/387102075670",
+        "thumbnail": "https://i.ebayimg.com/images/g/2fQAAOSwnnBjemN9/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Antique Ivory Bakhtiari Vegetable Dye Handmade Palace Size Rug 11x18 ft",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,106.85"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/386631667454",
+        "thumbnail": "https://i.ebayimg.com/images/g/NK4AAOSwwM1lozsu/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Vegetable Dye Ivory Nain Isffahhan Area Rug 4x6 100% Silk Hand-made Rug",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$8,356.62"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/168110929841",
+        "thumbnail": "https://i.ebayimg.com/images/g/KVIAAeSwz0Npdqow/s-l500.webp",
+        "sponsored": true,
+        "title": "LE CORBUSIER CHAISE Ltd Ed 8/20 Vintage Giacometti MADE IN ITALY for PALAZZETTI",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/298698461478",
+        "thumbnail": "https://i.ebayimg.com/images/g/yyAAAeSw7b5qsrfN/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Rectangular Dark Brown Wood Console/Sofa Table w/ Open Shelf Apron",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/168724988033",
+        "thumbnail": "https://i.ebayimg.com/images/g/d7cAAeSw6Ilqt--g/s-l500.webp",
+        "sponsored": false,
+        "title": "mcm grete jalk danish coffee table / side table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/227535813404",
+        "thumbnail": "https://i.ebayimg.com/images/g/7JUAAeSwX6dqs-Uc/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Mid-Century Carved Wood Camelback Sofa Floral Brocade Beige 70\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/398432508370",
+        "thumbnail": "https://i.ebayimg.com/images/g/dywAAeSwuyVqtxYt/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern \"Z-chair\" style lounge armchair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$525.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/257764977892",
+        "thumbnail": "https://i.ebayimg.com/images/g/WjwAAeSw8sxqtnJO/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage tufted leather English Chesterfield sofa in olive green ￼",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$6,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/147594635022",
+        "thumbnail": "https://i.ebayimg.com/images/g/K0QAAeSwtyZqtEkx/s-l500.webp",
+        "sponsored": false,
+        "title": "vintage wiggles kids couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$295.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/358692960720",
+        "thumbnail": "https://i.ebayimg.com/images/g/U-UAAeSw-~tqMye3/s-l500.webp",
+        "sponsored": true,
+        "title": "Fine Vintage 3x5 Hand-Knotted Wool Geometric Rust & Ivory Tones",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,183.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/356701037324",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wq4AAeSwWytn3-rF/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Kazak Vegetable Dye Accent Rug Wool Hand-made Foyer Antique Carpet 3x5",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,029.92"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/168709063203",
+        "thumbnail": "https://i.ebayimg.com/images/g/f2oAAeSwCOVqsqzD/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Woodard Briarwood Wrought Iron High Back Spring Patio Lounge Chairs PAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/407241489344",
+        "thumbnail": "https://i.ebayimg.com/images/g/lxkAAeSwGABqtQ0j/s-l500.webp",
+        "sponsored": false,
+        "title": "Pottery Barn Leather Sofa Webster Roll Arm LeatherSofa 86\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318918422496",
+        "thumbnail": "https://i.ebayimg.com/images/g/tokAAeSwr2Vqtvtl/s-l500.webp",
+        "sponsored": false,
+        "title": "Round Marble Top French Side/End Table, Antique Finish, Carved Legs 16in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$225.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/237095563848",
+        "thumbnail": "https://i.ebayimg.com/images/g/IhcAAeSwSihquqq-/s-l500.webp",
+        "sponsored": false,
+        "title": "Turn of the century 3 bay, tiger oak, claw footed china closet. All original.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/377521771689",
+        "thumbnail": "https://i.ebayimg.com/images/g/O9sAAeSwghxqtkLm/s-l500.webp",
+        "sponsored": false,
+        "title": "70s Vintage Telephone Table “gossip bench”",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/137744635975",
+        "thumbnail": "https://i.ebayimg.com/images/g/H64AAeSwKjZqquGr/s-l500.webp",
+        "sponsored": false,
+        "title": "antique lounge bench iron paw feet Paramount theatre Plainfield N.J.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/377520645960",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EcAAeSwZHxqtZIJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Vintage French Provincial Louis XVI Style Oval Back Armchairs Sage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$749.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/407252129947",
+        "thumbnail": "https://i.ebayimg.com/images/g/my0AAeSwj5Zqul1Z/s-l500.webp",
+        "sponsored": false,
+        "title": "Floral Tufted 3-Seat Sofa Fabric Upholstery Wood Frame Pad Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/318903098877",
+        "thumbnail": "https://i.ebayimg.com/images/g/S3IAAeSwCGhqskeM/s-l500.webp",
+        "sponsored": false,
+        "title": "Hancock and Moore custom designed couch. Well kept, original owner.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$9,999.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/198671082436",
+        "thumbnail": "https://i.ebayimg.com/images/g/Y7MAAeSwnulquUJi/s-l500.webp",
+        "sponsored": false,
+        "title": "Early 20th c. Greek Key Queen Anne Walnut Foot Stools Benches Ottomans - A Pair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/168721507701",
+        "thumbnail": "https://i.ebayimg.com/images/g/hw8AAeSwLQtqtzZv/s-l500.webp",
+        "sponsored": false,
+        "title": "Artex Danish Modern Teak Side Table Hans C. Andersen Design",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/407245327102",
+        "thumbnail": "https://i.ebayimg.com/images/g/vAMAAeSwWV5qtqvD/s-l500.webp",
+        "sponsored": false,
+        "title": "Pottery Barn Chesterfield Roll Arm Leather Tufted 3-Seat Sofa Black 96\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/398421880555",
+        "thumbnail": "https://i.ebayimg.com/images/g/EeIAAeSwYTFqsvUd/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Italian Piece Of Furniture",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": "Shipping not specified",
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/128092051906",
+        "thumbnail": "https://i.ebayimg.com/images/g/FssAAeSwqR1qsPfr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Brown Jordan Patio Set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,295.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/327374012912",
+        "thumbnail": "https://i.ebayimg.com/images/g/LqEAAeSw4cdqtnDx/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Cream/Peach Floral 3-Seat Sofa, Chesterfield Back, Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407245320471",
+        "thumbnail": "https://i.ebayimg.com/images/g/j30AAeSw3CxqtqlT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Tomlinson / Erwin-Lambeth Luxury Leather Lounge Chair & Ottoman",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/198658747016",
+        "thumbnail": "https://i.ebayimg.com/images/g/ftUAAeSwXUJqsgcb/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Accent Chair - Faux Leather Cushion, Solid Wood Frame, Lounge",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$113.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/307197035868",
+        "thumbnail": "https://i.ebayimg.com/images/g/2UYAAeSwrgBqtWvO/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Antique Louis XVI Damask Upholstered Sofa Set, Carved Wood 91in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/356702158943",
+        "thumbnail": "https://i.ebayimg.com/images/g/2i8AAeSw3sxn4JcI/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Antique Shirvan Vegetable Dye Navy Blue Wool Hand-knotted Rug 4x5",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$5,070.15"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/355484531903",
+        "thumbnail": "https://i.ebayimg.com/images/g/ufsAAOSw0Hll14iq/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Vegetable Dye Heriz Serapi Antique Rug 11x18 Palace Size Handmade Rug",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$19,742.46"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/NVwAAeSwS3BqmWQy/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/206564197453",
+        "thumbnail": "https://i.ebayimg.com/images/g/McYAAeSwr9JqrIMG/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Baker Furniture Faux Bamboo Cane Console Server Sideboard Sofa Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,099.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/256884158923",
+        "thumbnail": "https://i.ebayimg.com/images/g/PIEAAeSwcqxn8l76/s-l500.webp",
+        "sponsored": true,
+        "title": "Hand-Knotted Floral 100% Silk Vegetable Dye Vintage Hereke Turkish Rug 3x5 Ft",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,741.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/405093057104",
+        "thumbnail": "https://i.ebayimg.com/images/g/2PAAAOSwYR9lpX6Z/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Hand-Knotted Semi-Antique Keshan Area Rug | 9'7\" x 12'9\" | 100% Wool",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,349.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/168720978721",
+        "thumbnail": "https://i.ebayimg.com/images/g/dTkAAeSwtExqtue4/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Floral Fabric Upholstered Sofa Carved Wood Frame Camelback Rolled",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/318930273005",
+        "thumbnail": "https://i.ebayimg.com/images/g/CDUAAeSwpG5quqeP/s-l500.webp",
+        "sponsored": false,
+        "title": "Hollywood Regency Vintage Ornate Sectional",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abacd3b14537be5026602a6",
+        "status": "Success",
+        "created_at": "2026-09-28 20:25:31 UTC",
+        "processed_at": "2026-09-28 20:25:31 UTC",
+        "total_time_taken": 3.97
+      },
+      "ebay": {
+        "id": "6abacd3fc986af7776a20843",
+        "status": "Success",
+        "created_at": "2026-09-28 20:25:35 UTC",
+        "processed_at": "2026-09-28 20:25:35 UTC",
+        "total_time_taken": 2.59
+      }
+    },
+    "lens_interpretation": "vintage sofa",
+    "query_preparation": {
+      "status": "ready",
+      "source": "lens",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v1",
+        "phrase_version": "photo-phrase-v1"
+      }
+    },
+    "interpretation": "vintage sofa",
+    "query_source": "lens",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Classic Sofa Photos, Download The BEST Free Classic Sofa ...",
+        "Settees and Sofas — Evermore - Classic & Vintage Wedding Rentals",
+        "4,276+以上の無料ウェディングソファー画像",
+        "Designers say this once-old-fashioned couch style is making ...",
+        "Rajmahal Sofa | Regal Arts & Export Inspired by timeless ...",
+        "Premium Royal Carved Wooden Lounge Sofa Set | Crafty Bug",
+        "Retro Sofas - Designer Picks | Foter",
+        "Download Vintage Red Sofa Image - Vintage, Velvet, Sofa ..."
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "vintage sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 60
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/NVwAAeSwS3BqmWQy/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/206564197453",
+        "thumbnail": "https://i.ebayimg.com/images/g/McYAAeSwr9JqrIMG/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Baker Furniture Faux Bamboo Cane Console Server Sideboard Sofa Table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,099.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/256884158923",
+        "thumbnail": "https://i.ebayimg.com/images/g/PIEAAeSwcqxn8l76/s-l500.webp",
+        "sponsored": true,
+        "title": "Hand-Knotted Floral 100% Silk Vegetable Dye Vintage Hereke Turkish Rug 3x5 Ft",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,741.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/405093057104",
+        "thumbnail": "https://i.ebayimg.com/images/g/2PAAAOSwYR9lpX6Z/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Hand-Knotted Semi-Antique Keshan Area Rug | 9'7\" x 12'9\" | 100% Wool",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,349.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/168720978721",
+        "thumbnail": "https://i.ebayimg.com/images/g/dTkAAeSwtExqtue4/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Floral Fabric Upholstered Sofa Carved Wood Frame Camelback Rolled",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/318930273005",
+        "thumbnail": "https://i.ebayimg.com/images/g/CDUAAeSwpG5quqeP/s-l500.webp",
+        "sponsored": false,
+        "title": "Hollywood Regency Vintage Ornate Sectional",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/137775103516",
+        "thumbnail": "https://i.ebayimg.com/images/g/YeIAAeSw19FqtVxF/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Leather Chesterfield Classic English Tufting by St. Timothy Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,395.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/257759062632",
+        "thumbnail": "https://i.ebayimg.com/images/g/QCUAAeSwlyxqsroY/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian Upholstered Accent Chair w/ Arms, Red Floral, Dark Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/287606137866",
+        "thumbnail": "https://i.ebayimg.com/images/g/eB4AAeSwVD9qtWOK/s-l500.webp",
+        "sponsored": false,
+        "title": "Ralph Lauren Henredon Chesterfield Tufted Leather Sofa Rare Vintage (Set of 2)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26,550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/257764114892",
+        "thumbnail": "https://i.ebayimg.com/images/g/L0EAAeSwxmBqtqO6/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage double sided Leather Chesterfield Sofa by ￼ Old Hickory Tannery",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$12,750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/398434946111",
+        "thumbnail": "https://i.ebayimg.com/images/g/JTkAAeSw3cFquCb7/s-l500.webp",
+        "sponsored": false,
+        "title": "Herman Miller Eames Lounge Chair & Ottoman 670/671 . 1975-83",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,985.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/800729843500",
+        "thumbnail": "https://i.ebayimg.com/images/g/WNYAAeSwMXhqurGT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Upholstered Armchair with Carved Wood Frame and Yellow Velvet Fabric",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/387325991175",
+        "thumbnail": "https://i.ebayimg.com/images/g/yeAAAOSw4tdmyfG1/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Blue Vegetable Dye Heriiz Serapi Hand-made Room Size Antique Rug 7x10",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,614.54"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/800207881519",
+        "thumbnail": "https://i.ebayimg.com/images/g/TT8AAeSwBpdqNT3c/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Red 3x10 Hand-Knotted Runner Rug with Geometric Motifs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$760.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/386822030885",
+        "thumbnail": "https://i.ebayimg.com/images/g/S~QAAOSwb~tl4BrI/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Vegetable Dye Tebriz Haj jalili Hand-made Dining Room Antique Rug 9x13",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$5,583.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/386869771968",
+        "thumbnail": "https://i.ebayimg.com/images/g/xKIAAOSwqFZh-ZoG/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Antique Kirman Lavar 10'x13' Large Area Rug Vegetable Dye Hand-knotted",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$5,863.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/188981317729",
+        "thumbnail": "https://i.ebayimg.com/images/g/ffgAAeSwgI1qtgEB/s-l500.webp",
+        "sponsored": false,
+        "title": "1970s Chrome Low Sling Lounge Chair - Mid Century Modern MCM Vintage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/336807518718",
+        "thumbnail": "https://i.ebayimg.com/images/g/qKwAAeSwBSZqsq5i/s-l500.webp",
+        "sponsored": false,
+        "title": "Rustic 2-Tier Vintage Sofa Console Table for Living Room Storage",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$181.45"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/820170730766",
+        "thumbnail": "https://i.ebayimg.com/images/g/oOEAAeSwTx1qtnbW/s-l500.webp",
+        "sponsored": false,
+        "title": "Century Furniture Upholstered Accent Chair & Ottoman -Wood Legs w/ Casters",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$95.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/800716424904",
+        "thumbnail": "https://i.ebayimg.com/images/g/TWwAAeSwU2Fqtx-r/s-l500.webp",
+        "sponsored": false,
+        "title": "4 vintage Swiss leather lounge chairs with two ottomans",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/318930226491",
+        "thumbnail": "https://i.ebayimg.com/images/g/1h4AAeSwO9VquqWJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Hollywood Regency Round Glass Top Coffee Table Carved Base Gold/Brown",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$318.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/366683726554",
+        "thumbnail": "https://i.ebayimg.com/images/g/C0AAAeSwnLRqsd8J/s-l500.webp",
+        "sponsored": false,
+        "title": "Victorian 3-Piece Sofa Set Floral Fabric Upholstery Beige Gold Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$900.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/377522409270",
+        "thumbnail": "https://i.ebayimg.com/images/g/IfYAAeSwtR1qto87/s-l500.webp",
+        "sponsored": false,
+        "title": "Ornate Iron Settee Antique Style Tufted Upholstered Seat. 41-23",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$195.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/188978317977",
+        "thumbnail": "https://i.ebayimg.com/images/g/PSIAAeSwzftqtSfP/s-l500.webp",
+        "sponsored": false,
+        "title": "White & Gold Baroque/Rococo Tufted Upholstered High Back Throne Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/800720634209",
+        "thumbnail": "https://i.ebayimg.com/images/g/5wIAAeSwx8NquGJr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Block Island John Hutton rattan/ wicker sofa and chair set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/267796536349",
+        "thumbnail": "https://i.ebayimg.com/images/g/bRgAAeSwmIRquBIm/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Demilune Console Table With Cane & Glass Top",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/298714024145",
+        "thumbnail": "https://i.ebayimg.com/images/g/uhAAAeSw7bpquplf/s-l500.webp",
+        "sponsored": false,
+        "title": "Antique Hand Painted Austrian Enamel Salon Miniature Furniture Set of Six Pieces",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$655.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/198662088981",
+        "thumbnail": "https://i.ebayimg.com/images/g/wK0AAeSwj-tqs~Gr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Thames Japan Porcelain Ballerinas On Sofa Bone China Lace and hand-paint",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$0.01"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/386901231301",
+        "thumbnail": "https://i.ebayimg.com/images/g/QPQAAOSwzxFmC45s/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Vegetable Dye Karabagh Oriental Rug 4x6 Russian Hand-made Wool Carpet",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$3,383.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/387102075670",
+        "thumbnail": "https://i.ebayimg.com/images/g/2fQAAOSwnnBjemN9/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Antique Ivory Bakhtiari Vegetable Dye Handmade Palace Size Rug 11x18 ft",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$7,106.85"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/386631667454",
+        "thumbnail": "https://i.ebayimg.com/images/g/NK4AAOSwwM1lozsu/s-l500.webp",
+        "sponsored": true,
+        "title": "Antique Vegetable Dye Ivory Nain Isffahhan Area Rug 4x6 100% Silk Hand-made Rug",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$8,356.62"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/168110929841",
+        "thumbnail": "https://i.ebayimg.com/images/g/KVIAAeSwz0Npdqow/s-l500.webp",
+        "sponsored": true,
+        "title": "LE CORBUSIER CHAISE Ltd Ed 8/20 Vintage Giacometti MADE IN ITALY for PALAZZETTI",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/298698461478",
+        "thumbnail": "https://i.ebayimg.com/images/g/yyAAAeSw7b5qsrfN/s-l500.webp",
+        "sponsored": false,
+        "title": "Carved Rectangular Dark Brown Wood Console/Sofa Table w/ Open Shelf Apron",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$600.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/168724988033",
+        "thumbnail": "https://i.ebayimg.com/images/g/d7cAAeSw6Ilqt--g/s-l500.webp",
+        "sponsored": false,
+        "title": "mcm grete jalk danish coffee table / side table",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/227535813404",
+        "thumbnail": "https://i.ebayimg.com/images/g/7JUAAeSwX6dqs-Uc/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Mid-Century Carved Wood Camelback Sofa Floral Brocade Beige 70\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/398432508370",
+        "thumbnail": "https://i.ebayimg.com/images/g/dywAAeSwuyVqtxYt/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern \"Z-chair\" style lounge armchair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$525.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/257764977892",
+        "thumbnail": "https://i.ebayimg.com/images/g/WjwAAeSw8sxqtnJO/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage tufted leather English Chesterfield sofa in olive green ￼",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$6,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/147594635022",
+        "thumbnail": "https://i.ebayimg.com/images/g/K0QAAeSwtyZqtEkx/s-l500.webp",
+        "sponsored": false,
+        "title": "vintage wiggles kids couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$295.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/358692960720",
+        "thumbnail": "https://i.ebayimg.com/images/g/U-UAAeSw-~tqMye3/s-l500.webp",
+        "sponsored": true,
+        "title": "Fine Vintage 3x5 Hand-Knotted Wool Geometric Rust & Ivory Tones",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,183.77"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/356701037324",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wq4AAeSwWytn3-rF/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Kazak Vegetable Dye Accent Rug Wool Hand-made Foyer Antique Carpet 3x5",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,029.92"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/168709063203",
+        "thumbnail": "https://i.ebayimg.com/images/g/f2oAAeSwCOVqsqzD/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Woodard Briarwood Wrought Iron High Back Spring Patio Lounge Chairs PAIR",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/407241489344",
+        "thumbnail": "https://i.ebayimg.com/images/g/lxkAAeSwGABqtQ0j/s-l500.webp",
+        "sponsored": false,
+        "title": "Pottery Barn Leather Sofa Webster Roll Arm LeatherSofa 86\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318918422496",
+        "thumbnail": "https://i.ebayimg.com/images/g/tokAAeSwr2Vqtvtl/s-l500.webp",
+        "sponsored": false,
+        "title": "Round Marble Top French Side/End Table, Antique Finish, Carved Legs 16in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$225.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/237095563848",
+        "thumbnail": "https://i.ebayimg.com/images/g/IhcAAeSwSihquqq-/s-l500.webp",
+        "sponsored": false,
+        "title": "Turn of the century 3 bay, tiger oak, claw footed china closet. All original.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/377521771689",
+        "thumbnail": "https://i.ebayimg.com/images/g/O9sAAeSwghxqtkLm/s-l500.webp",
+        "sponsored": false,
+        "title": "70s Vintage Telephone Table “gossip bench”",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/137744635975",
+        "thumbnail": "https://i.ebayimg.com/images/g/H64AAeSwKjZqquGr/s-l500.webp",
+        "sponsored": false,
+        "title": "antique lounge bench iron paw feet Paramount theatre Plainfield N.J.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$275.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/377520645960",
+        "thumbnail": "https://i.ebayimg.com/images/g/3EcAAeSwZHxqtZIJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Vintage French Provincial Louis XVI Style Oval Back Armchairs Sage",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$749.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/407252129947",
+        "thumbnail": "https://i.ebayimg.com/images/g/my0AAeSwj5Zqul1Z/s-l500.webp",
+        "sponsored": false,
+        "title": "Floral Tufted 3-Seat Sofa Fabric Upholstery Wood Frame Pad Arms",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/318903098877",
+        "thumbnail": "https://i.ebayimg.com/images/g/S3IAAeSwCGhqskeM/s-l500.webp",
+        "sponsored": false,
+        "title": "Hancock and Moore custom designed couch. Well kept, original owner.",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$9,999.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/198671082436",
+        "thumbnail": "https://i.ebayimg.com/images/g/Y7MAAeSwnulquUJi/s-l500.webp",
+        "sponsored": false,
+        "title": "Early 20th c. Greek Key Queen Anne Walnut Foot Stools Benches Ottomans - A Pair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$750.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/168721507701",
+        "thumbnail": "https://i.ebayimg.com/images/g/hw8AAeSwLQtqtzZv/s-l500.webp",
+        "sponsored": false,
+        "title": "Artex Danish Modern Teak Side Table Hans C. Andersen Design",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$375.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/407245327102",
+        "thumbnail": "https://i.ebayimg.com/images/g/vAMAAeSwWV5qtqvD/s-l500.webp",
+        "sponsored": false,
+        "title": "Pottery Barn Chesterfield Roll Arm Leather Tufted 3-Seat Sofa Black 96\"",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/398421880555",
+        "thumbnail": "https://i.ebayimg.com/images/g/EeIAAeSwYTFqsvUd/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Italian Piece Of Furniture",
+        "subtitle": null,
+        "condition": "Refurbished",
+        "shipping": "Shipping not specified",
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/128092051906",
+        "thumbnail": "https://i.ebayimg.com/images/g/FssAAeSwqR1qsPfr/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Brown Jordan Patio Set",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,295.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/327374012912",
+        "thumbnail": "https://i.ebayimg.com/images/g/LqEAAeSw4cdqtnDx/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Cream/Peach Floral 3-Seat Sofa, Chesterfield Back, Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407245320471",
+        "thumbnail": "https://i.ebayimg.com/images/g/j30AAeSw3CxqtqlT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Tomlinson / Erwin-Lambeth Luxury Leather Lounge Chair & Ottoman",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/198658747016",
+        "thumbnail": "https://i.ebayimg.com/images/g/ftUAAeSwXUJqsgcb/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid-Century Modern Accent Chair - Faux Leather Cushion, Solid Wood Frame, Lounge",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$113.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/307197035868",
+        "thumbnail": "https://i.ebayimg.com/images/g/2UYAAeSwrgBqtWvO/s-l500.webp",
+        "sponsored": false,
+        "title": "Handmade Antique Louis XVI Damask Upholstered Sofa Set, Carved Wood 91in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$5,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/356702158943",
+        "thumbnail": "https://i.ebayimg.com/images/g/2i8AAeSw3sxn4JcI/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Antique Shirvan Vegetable Dye Navy Blue Wool Hand-knotted Rug 4x5",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$5,070.15"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/355484531903",
+        "thumbnail": "https://i.ebayimg.com/images/g/ufsAAOSw0Hll14iq/s-l500.webp",
+        "sponsored": true,
+        "title": "Pre-1900 Vegetable Dye Heriz Serapi Antique Rug 11x18 Palace Size Handmade Rug",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$19,742.46"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 7905.534
+  }
+}

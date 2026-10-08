@@ -1,0 +1,244 @@
+{
+  "version": "ebay-us-v1",
+  "status": "success",
+  "source": "snapshot",
+  "marketplace": "ebay.com",
+  "scope": "us",
+  "message": null,
+  "retrieved_at": "2026-09-28T20:27:20Z",
+  "query": "teal velvet tapered legs sofa",
+  "category": "sofa",
+  "query_preparation": {
+    "lens_version": "furniture-query-v3",
+    "trigger_version": "photo-fallback-v1",
+    "phrase_version": "photo-phrase-v1",
+    "provider": "venice",
+    "model": "qwen3-vl-235b-a22b",
+    "prompt_version": "furniture-photo-v1",
+    "schema_version": "furniture-photo-schema-v2",
+    "duration_ms": 3931,
+    "usage": {
+      "input_tokens": 1821,
+      "output_tokens": 32,
+      "total_tokens": 1853
+    },
+    "traits": ["teal velvet", "tapered legs"],
+    "status": "ready",
+    "source": "vision",
+    "query": "teal velvet tapered legs sofa",
+    "category": "sofa",
+    "lens_query": null
+  },
+  "listings": [
+    {
+      "id": "336737755519",
+      "title": "Casey Tufted Back Teal Velvet Upholstered Sofa",
+      "url": "https://www.ebay.com/itm/336737755519",
+      "thumbnail": "https://i.ebayimg.com/images/g/E70AAeSwAVhqe57C/s-l500.webp",
+      "sponsored": false,
+      "price": {
+        "raw": "$1,649.00"
+      },
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States"
+    },
+    {
+      "id": "147581888427",
+      "title": "82.6\"Upholstered Velvet Sofa with Nailhead Trim and Rolled Armrests,Mid-Centur",
+      "url": "https://www.ebay.com/itm/147581888427",
+      "thumbnail": "https://i.ebayimg.com/images/g/jZIAAeSw4ptqrRk-/s-l500.webp",
+      "sponsored": true,
+      "price": {
+        "raw": "$643.88"
+      },
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States"
+    },
+    {
+      "id": "227467714530",
+      "title": "Velvet 3-Seater Sofa Tufted Back & Nailhead Trim Modern Vintage 2 Pillows Cream",
+      "url": "https://www.ebay.com/itm/227467714530",
+      "thumbnail": "https://i.ebayimg.com/images/g/at4AAeSw4oNqWPuC/s-l500.webp",
+      "sponsored": true,
+      "price": {
+        "raw": "$671.99"
+      },
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States"
+    },
+    {
+      "id": "800570913237",
+      "title": "140''Soft Velvet Fabric,Boneless Sofa With Tufted,32D High Density Sponge,Ergon",
+      "url": "https://www.ebay.com/itm/800570913237",
+      "thumbnail": "https://i.ebayimg.com/images/g/mU0AAeSwhFRqkCME/s-l500.webp",
+      "sponsored": true,
+      "price": {
+        "raw": "$812.10"
+      },
+      "condition": "Brand New",
+      "shipping": "Free delivery in 2-4 days",
+      "location": "Located in United States"
+    },
+    {
+      "id": "168507903691",
+      "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+      "url": "https://www.ebay.com/itm/168507903691",
+      "thumbnail": "https://i.ebayimg.com/images/g/efkAAeSwgbhqKNnK/s-l500.webp",
+      "sponsored": false,
+      "price": {
+        "raw": "$614.99"
+      },
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States"
+    },
+    {
+      "id": "146930161561",
+      "title": "Pemberly Row Modern Style Performance Velvet Sofa in Teal Finish",
+      "url": "https://www.ebay.com/itm/146930161561",
+      "thumbnail": "https://i.ebayimg.com/images/g/oSIAAeSwCkVqVGut/s-l500.webp",
+      "sponsored": false,
+      "price": {
+        "raw": "$576.32"
+      },
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "upload",
+      "status": "complete",
+      "duration_ms": 501.648,
+      "request": {
+        "provider": "serpapi",
+        "endpoint": "/image",
+        "parameters": {
+          "format": "image/jpeg",
+          "bytes": 137444
+        }
+      },
+      "summary": {
+        "photo_reference_received": true
+      }
+    },
+    {
+      "stage": "lens",
+      "status": "complete",
+      "duration_ms": 3203.909,
+      "request": {
+        "provider": "serpapi",
+        "endpoint": "/search.json",
+        "parameters": {
+          "engine": "google_lens",
+          "type": "all",
+          "country": "us",
+          "hl": "en"
+        }
+      },
+      "summary": {
+        "query": null,
+        "titles": [
+          "west elm - Hyde Park",
+          "Loveseats Available at Rufeners Furniture in Rittman, OH",
+          "Amazon.com: OVVGVV Framed Banksy Wall Decor, Love Over Money ...",
+          "How to Give Your Home Furniture a Makeover - Smithe Blog ...",
+          "US Pride Furniture Civa 69.6 in. Green Velvet 3-Seater Sofa ...",
+          "Amazon.com: Modway EEI-3764-GRN Valour Performance Velvet ...",
+          "Jessica Ribeiro, PhD | Eating Disorder & OCD Specialist in ...",
+          "Home - Furniture Shop \u2022 Shopkeeper & Elementor Importable Demo"
+        ],
+        "note": "Lens phrase was not usable; no usable phrase was recorded."
+      }
+    },
+    {
+      "stage": "vision",
+      "status": "complete",
+      "duration_ms": 3910.336,
+      "request": {
+        "provider": "venice",
+        "endpoint": "/api/v1/chat/completions",
+        "parameters": {
+          "provider": "venice",
+          "model": "qwen3-vl-235b-a22b",
+          "transport_version": "venice-chat-v1",
+          "prompt_version": "furniture-photo-v1",
+          "schema_version": "furniture-photo-schema-v2"
+        }
+      },
+      "summary": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v1",
+        "phrase_version": "photo-phrase-v1",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "duration_ms": 3931,
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 32,
+          "total_tokens": 1853
+        },
+        "traits": ["teal velvet", "tapered legs"],
+        "status": "ready",
+        "source": "vision",
+        "query": "teal velvet tapered legs sofa",
+        "category": "sofa",
+        "lens_query": null
+      }
+    },
+    {
+      "stage": "ebay",
+      "status": "complete",
+      "duration_ms": 3378.239,
+      "request": {
+        "provider": "serpapi",
+        "endpoint": "/search.json",
+        "parameters": {
+          "engine": "ebay",
+          "_nkw": "teal velvet tapered legs sofa",
+          "ebay_domain": "ebay.com",
+          "_ipg": "25"
+        }
+      },
+      "summary": {
+        "returned": 60,
+        "titles": [
+          "Casey Tufted Back Teal Velvet Upholstered Sofa",
+          "82.6\"Upholstered Velvet Sofa with Nailhead Trim and Rolled Armrests,Mid-Centur",
+          "Velvet 3-Seater Sofa Tufted Back & Nailhead Trim Modern Vintage 2 Pillows Cream",
+          "140''Soft Velvet Fabric,Boneless Sofa With Tufted,32D High Density Sponge,Ergon",
+          "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+          "Pemberly Row Modern Style Performance Velvet Sofa in Teal Finish"
+        ]
+      }
+    },
+    {
+      "stage": "filter",
+      "status": "complete",
+      "request": {
+        "provider": "local",
+        "parameters": {}
+      },
+      "summary": {
+        "accepted": 60,
+        "note": "Historical recorded selection. Detailed local rejection counts and duration were not recorded."
+      }
+    }
+  ],
+  "attempts": {
+    "uploads": 0,
+    "serpapi": 0,
+    "vision": 0
+  },
+  "original_attempts": {
+    "uploads": 1,
+    "serpapi": 2,
+    "vision": 1
+  }
+}

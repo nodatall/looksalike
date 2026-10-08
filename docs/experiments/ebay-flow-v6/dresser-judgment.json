@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/820187203429",
+      "accessible": true,
+      "relevant": false,
+      "notes": "Page and photo accessible. White eight-bin storage unit on an exposed frame; the bin construction and proportions differ from the low solid-front reference dresser. Not relevant."
+    },
+    {
+      "url": "https://www.ebay.com/itm/237067281960",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Low wide white dresser with two columns of flat horizontal drawers; similar modern shape/style, six drawers and protruding handles differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/237067282061",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Gray variant of the preceding low wide six-drawer design; distinct listing ID and similar horizontal shape/style, different finish and handles."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366615013013",
+      "accessible": true,
+      "relevant": true,
+      "notes": "Page and photo accessible. Wide pale six-drawer cabinet with long horizontal drawer fronts; partial modern shape/style match, wood texture and framed fronts differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/315700146220",
+      "accessible": true,
+      "relevant": false,
+      "notes": "Page and photo accessible. Tall gray fabric-bin storage tower on a black frame; different proportions and construction. Not relevant."
+    },
+    {
+      "url": "https://www.ebay.com/itm/158309622086",
+      "accessible": true,
+      "relevant": false,
+      "notes": "Page and photo accessible. Narrow tall cream fabric-bin storage tower with exposed frame; different shape and construction. Not relevant."
+    }
+  ],
+  "relevant_accessible_count": 3,
+  "scored_at": "2026-09-29T23:49:41Z",
+  "passed": true
+}

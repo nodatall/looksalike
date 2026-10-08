@@ -1,0 +1,2097 @@
+{
+  "case_id": "ornate-sofa",
+  "manifest_sha256": "05b6e8490cead9f642716fc151dca5d7a3665c0a1daefb140650355fe2e9efbc",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "10af35cc41dfa9affd8f8c725cee11aca04b0bae50fe70fee249133513883db2"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 628.941
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 6009.297
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 2706.67
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/NVwAAeSwS3BqmWQy/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/237003043496",
+        "thumbnail": "https://i.ebayimg.com/images/g/rFgAAeSw5UJqfYFD/s-l500.webp",
+        "sponsored": true,
+        "title": "XUEGW Bean Bag Chair Memory Foam Lazy Floor Sofa Adults Kids Bedroom Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$189.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/147319743132",
+        "thumbnail": "https://i.ebayimg.com/images/g/5iAAAeSwhANqDSaD/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Convertible Pull Out Sofa Bed Tufted Sleeper Couch With Square Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/147117474946",
+        "thumbnail": "https://i.ebayimg.com/images/g/3qoAAeSwxFVqmOGC/s-l500.webp",
+        "sponsored": true,
+        "title": "Chesterfield 3 Seats Faux Leather Sofa Button Tufted Couch With Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$289.99",
+          "to": "$1,259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/128097783708",
+        "thumbnail": "https://i.ebayimg.com/images/g/TlgAAeSwi8lqq4h-/s-l500.webp",
+        "sponsored": false,
+        "title": "Cassina MEX CUBE White Sofa Black Frame Made in Italy V9296.0030 27116000",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$8,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398414132574",
+        "thumbnail": "https://i.ebayimg.com/images/g/~W0AAeSw-TFqsAYL/s-l500.webp",
+        "sponsored": false,
+        "title": "ANPOO 81.3\" Boneless Loveseat Sofa Cloud Couch with Deep Seat, Modern Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/377519995907",
+        "thumbnail": "https://i.ebayimg.com/images/g/yX4AAeSwyWFqWlHp/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Fabric Modular Sectional Sofa with Deep Seat & Pillows for Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$429.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/366680188500",
+        "thumbnail": "https://i.ebayimg.com/images/g/zM8AAeSwbLhqq7Wt/s-l500.webp",
+        "sponsored": false,
+        "title": "Boneless Modular Sectional Sofa Reversible Chaise 3 Seater White Sherpa Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$509.99",
+          "to": "$759.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/178511420606",
+        "thumbnail": "https://i.ebayimg.com/images/g/398AAeSw2aZqryb8/s-l500.webp",
+        "sponsored": false,
+        "title": "🛋️ 3-Piece Couch — Great Condition — Hardware Included Selling this 3-piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$265.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/327374012912",
+        "thumbnail": "https://i.ebayimg.com/images/g/LqEAAeSw4cdqtnDx/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Cream/Peach Floral 3-Seat Sofa, Chesterfield Back, Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/198666754269",
+        "thumbnail": "https://i.ebayimg.com/images/g/-EYAAeSwtUBqtpwf/s-l500.webp",
+        "sponsored": false,
+        "title": "Poly & Bark Napa 88.5” Leather Sofa Midnight Blue – New in Box",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/283894076009",
+        "thumbnail": "https://i.ebayimg.com/images/g/tWYAAeSw-15qQy6P/s-l500.webp",
+        "sponsored": true,
+        "title": "Recliner Chair Leather Modern Single Reclining Sofa Home Theater Seating Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$138.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/158302845416",
+        "thumbnail": "https://i.ebayimg.com/images/g/ogkAAOSwLC9gX1oD/s-l500.webp",
+        "sponsored": true,
+        "title": "Le Corbusier LC4 Chaise Lounge MADE IN ITALY for PALAZZETTI",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,890.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/147473322431",
+        "thumbnail": "https://i.ebayimg.com/images/g/CxwAAeSw1KlqcUxG/s-l500.webp",
+        "sponsored": true,
+        "title": "Modern Faux Leather 3 Seater Sofa Button Tufted Couch With 2 Pillows Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/285667759559",
+        "thumbnail": "https://i.ebayimg.com/images/g/IDoAAOSwNB1lsMsh/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Sofa Bed Convertible Futon Sofa with 2 Throw Pillows Cup Holders",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$169.99",
+          "to": "$206.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/168718514976",
+        "thumbnail": "https://i.ebayimg.com/images/g/nQwAAeSwCbVqtdyz/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Leather 3-Seat Sofa, Pad Arms, Cushion Back, Wood Frame, Modern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/128098631743",
+        "thumbnail": "https://i.ebayimg.com/images/g/aygAAeSwStVqtrfP/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seat Reclining Sofa, Gray Solid Fabric, Pillow Top Arms, Pillow Back",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$329.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/287606137866",
+        "thumbnail": "https://i.ebayimg.com/images/g/eB4AAeSwVD9qtWOK/s-l500.webp",
+        "sponsored": false,
+        "title": "Ralph Lauren Leather Chesterfield Sofa Pair Vintage Rare 2 Sofas",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26,550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/377522577075",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ya8AAeSwEb1qtqi1/s-l500.webp",
+        "sponsored": false,
+        "title": "Yellow 2-Seater Sofa Curved Back Modern Track Arm Polyester Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/287597477776",
+        "thumbnail": "https://i.ebayimg.com/images/g/DC8AAeSwLgNqr4j8/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Left Chaise L-Shaped Corduroy Sectional Sofa Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/800688544731",
+        "thumbnail": "https://i.ebayimg.com/images/g/TNsAAeSw6Lpqr3Ez/s-l500.webp",
+        "sponsored": false,
+        "title": "96\" Black Corduroy Cloud Couch L-Shaped Boneless Sectional Sofa with Chaise",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$480.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/168720806557",
+        "thumbnail": "https://i.ebayimg.com/images/g/f8IAAeSwmIRqtsyb/s-l500.webp",
+        "sponsored": false,
+        "title": "Ashley Furniture Faux Leather Recliner Black Rolled Arm Nailhead Cushion Back",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/198666851791",
+        "thumbnail": "https://i.ebayimg.com/images/g/QfEAAeSwY5Bqtq7S/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Leather Sofa 79” L x 35 1/2” W x 36” H, 3-Seater – New",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/366688415081",
+        "thumbnail": "https://i.ebayimg.com/images/g/lSAAAeSwiYhqtKRX/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Leather Sectional Reclining Sofa w/ Padded Arms, 6-Seat Modern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/336812942095",
+        "thumbnail": "https://i.ebayimg.com/images/g/oO0AAeSwJh9qts55/s-l500.webp",
+        "sponsored": false,
+        "title": "YUEANG Recliner Sofa Covers Sectional Couch Cover Reclining Couch 3 Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$100.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/820148424501",
+        "thumbnail": "https://i.ebayimg.com/images/g/H7gAAeSwtMVqr0oN/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Fabric Upholstered 2-Seat Sofa Couch, Track Arms, With Cushions also bed",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$325.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/366685983257",
+        "thumbnail": "https://i.ebayimg.com/images/g/z8oAAeSwfAZqsxhq/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Gray Faux Suede Sofa Couch, Nailhead Trim, Solid Wood Frame, 3 Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/168110929841",
+        "thumbnail": "https://i.ebayimg.com/images/g/KVIAAeSwz0Npdqow/s-l500.webp",
+        "sponsored": true,
+        "title": "LE CORBUSIER CHAISE Ltd Ed 8/20 Vintage Giacometti MADE IN ITALY for PALAZZETTI",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/178522954619",
+        "thumbnail": "https://i.ebayimg.com/images/g/uzAAAeSwS5VqtFug/s-l500.webp",
+        "sponsored": true,
+        "title": "Bassett Gray Fabric Sofa Rolled Arms Modern Solid, Seats 4, 96 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/147579507632",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DQAAeSwiHtqp8QL/s-l500.webp",
+        "sponsored": true,
+        "title": "131\" U-Shaped Modular Sectional Sofa, Oversized Cloud Couch with Plush Corduroy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$367.54"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/800711018539",
+        "thumbnail": "https://i.ebayimg.com/images/g/IFMAAeSwYxRqtYSH/s-l500.webp",
+        "sponsored": true,
+        "title": "Upholstered Sofa, Silver Gray, Performances",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$429.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/820144632124",
+        "thumbnail": "https://i.ebayimg.com/images/g/7d4AAeSwgQNqrfAi/s-l500.webp",
+        "sponsored": false,
+        "title": "3‑in‑1 Convertible Teddy Fleece Fold Out Sofa,Metal Frame Vacuum Compressed",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$204.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/287597252142",
+        "thumbnail": "https://i.ebayimg.com/images/g/bloAAeSwQ59qr17L/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Right Chaise L-Shaped Cloud Sectional Sofa, Corduroy, Deep Seat, Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/178509503940",
+        "thumbnail": "https://i.ebayimg.com/images/g/xooAAeSwYHhqri8t/s-l500.webp",
+        "sponsored": false,
+        "title": "Furmax 3-in-1 Futon Sofa Bed Convertible Couch – Faux Leather Recliner with Cup",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/257763360587",
+        "thumbnail": "https://i.ebayimg.com/images/g/qJYAAeSwEhhqtWfV/s-l500.webp",
+        "sponsored": false,
+        "title": "roche bobois leather sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$11,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/366687513416",
+        "thumbnail": "https://i.ebayimg.com/images/g/NcEAAeSwe9dqtBVo/s-l500.webp",
+        "sponsored": false,
+        "title": "73\" Modern Modular Sectional Sofa Loveseat, 2 Seater Tufted Comfy Cloud Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$369.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/318899800980",
+        "thumbnail": "https://i.ebayimg.com/images/g/IcEAAeSwDZhqsT8I/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Velvet Tufted Loveseat Sofa 65in Nailhead Trim Modern 2-Seat 34x30",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/147579504771",
+        "thumbnail": "https://i.ebayimg.com/images/g/BhoAAeSw6N9qp6p0/s-l500.webp",
+        "sponsored": true,
+        "title": "131\" U-Shaped Modular Sectional Sofa, Oversized Cloud Couch with Plush Corduroy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$367.54"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/147579507908",
+        "thumbnail": "https://i.ebayimg.com/images/g/MyQAAeSw2YZqqLgj/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.46"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/287598294430",
+        "thumbnail": "https://i.ebayimg.com/images/g/2B8AAeSwN1lqsByl/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Oversized Sofa Chair And A Half With Ottoman Set Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$307.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/168718321293",
+        "thumbnail": "https://i.ebayimg.com/images/g/FesAAeSw0PxqtcBi/s-l500.webp",
+        "sponsored": false,
+        "title": "Signature Design by Ashley Power Recline Loveseat Headrest Cup/Storage Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/168718323232",
+        "thumbnail": "https://i.ebayimg.com/images/g/ERcAAeSwoLZqtcA5/s-l500.webp",
+        "sponsored": false,
+        "title": "CR Laine Custom 3-Seat Sofa with Rolled Arms, Cushioned Back, Throw Pillows",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/407243361226",
+        "thumbnail": "https://i.ebayimg.com/images/g/lMYAAeSwM5Rqtano/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seat Floral Fabric Upholstered Sofa w/ English Roll Arms & Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/287597927474",
+        "thumbnail": "https://i.ebayimg.com/images/g/JWUAAeSwquFqr91b/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Right Chaise L-Shaped Cloud Sectional Sofa, Corduroy, Deep Seat, Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/307193195613",
+        "thumbnail": "https://i.ebayimg.com/images/g/Z18AAeSwJc9qsqs5/s-l500.webp",
+        "sponsored": false,
+        "title": "Leather armchair, Cassina, Frank Lloyd Wright for Imperial Hotel Tokyo, 1923",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/237087168432",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWIAAeSwgmlqtHiW/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Sofa Pull-Out Bed Rolled (message 4 loc)",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/366683329068",
+        "thumbnail": "https://i.ebayimg.com/images/g/awIAAeSwQbJqsZ4B/s-l500.webp",
+        "sponsored": false,
+        "title": "roche bobois leather sofa (sectional)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$8,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/137775103516",
+        "thumbnail": "https://i.ebayimg.com/images/g/YeIAAeSw19FqtVxF/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Leather Chesterfield Classic English Tufting by St. Timothy Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,395.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/407245320471",
+        "thumbnail": "https://i.ebayimg.com/images/g/j30AAeSw3CxqtqlT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Tomlinson / Erwin-Lambeth Luxury Leather Lounge Chair & Ottoman",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/287594898426",
+        "thumbnail": "https://i.ebayimg.com/images/g/KooAAeSwGdhqrbjs/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Left Chaise L-Shaped Sectional Sofa Corduroy Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/407240264538",
+        "thumbnail": "https://i.ebayimg.com/images/g/XukAAeSwaSpqtG3-/s-l500.webp",
+        "sponsored": false,
+        "title": "Convertible Lotus Compression Bean Bag Sofa for Living Room & Bedroom",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$221.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/407235088447",
+        "thumbnail": "https://i.ebayimg.com/images/g/gw0AAeSwSmdqsZOM/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Chenille Sofa with Rolled Arms, 30in W x 15in L x 34in H",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/318917118938",
+        "thumbnail": "https://i.ebayimg.com/images/g/ChcAAeSw8MFqtpiN/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Floral Upholstered 3-Seat Sofa, Rolled Arms, Cushion Back, Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/287602674734",
+        "thumbnail": "https://i.ebayimg.com/images/g/EdwAAeSwxblqsx2F/s-l500.webp",
+        "sponsored": false,
+        "title": "107\" Modular Cloud Sofa, L-Shaped Recliner Sleeper, Black, No Assembly Required",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$155.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/398418275861",
+        "thumbnail": "https://i.ebayimg.com/images/g/pv4AAeSwSg9qsapY/s-l500.webp",
+        "sponsored": false,
+        "title": "🚚 **Free Delivery** Restoration Hardware Lancaster Luxe 8’ sofa🚚",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/287595191927",
+        "thumbnail": "https://i.ebayimg.com/images/g/KUsAAeSwsyZqrfg1/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Oversized Sofa Chair & Ottoman Set Deep Seat Beige Fleece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$307.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/117392980264",
+        "thumbnail": "https://i.ebayimg.com/images/g/f-0AAeSwxxxqtWLh/s-l500.webp",
+        "sponsored": false,
+        "title": "Patbrela Sectional Sofa, L-Shaped Deep Seat, Modular Cloud Couch, Brown PU",
+        "subtitle": "Leather, Left Facing Chaise",
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$279.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/128077141621",
+        "thumbnail": "https://i.ebayimg.com/images/g/VxoAAeSw4ptqpoJ6/s-l500.webp",
+        "sponsored": true,
+        "title": "Neche SC002 87-Inch Corduroy Sofa, 3-Seater with Extra Deep Seats, Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$261.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/147579506444",
+        "thumbnail": "https://i.ebayimg.com/images/g/TSoAAeSwZ6Vqp6~6/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.46"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/NVwAAeSwS3BqmWQy/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/237003043496",
+        "thumbnail": "https://i.ebayimg.com/images/g/rFgAAeSw5UJqfYFD/s-l500.webp",
+        "sponsored": true,
+        "title": "XUEGW Bean Bag Chair Memory Foam Lazy Floor Sofa Adults Kids Bedroom Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$189.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/147319743132",
+        "thumbnail": "https://i.ebayimg.com/images/g/5iAAAeSwhANqDSaD/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Convertible Pull Out Sofa Bed Tufted Sleeper Couch With Square Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/147117474946",
+        "thumbnail": "https://i.ebayimg.com/images/g/3qoAAeSwxFVqmOGC/s-l500.webp",
+        "sponsored": true,
+        "title": "Chesterfield 3 Seats Faux Leather Sofa Button Tufted Couch With Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$289.99",
+          "to": "$1,259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/128097783708",
+        "thumbnail": "https://i.ebayimg.com/images/g/TlgAAeSwi8lqq4h-/s-l500.webp",
+        "sponsored": false,
+        "title": "Cassina MEX CUBE White Sofa Black Frame Made in Italy V9296.0030 27116000",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$8,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398414132574",
+        "thumbnail": "https://i.ebayimg.com/images/g/~W0AAeSw-TFqsAYL/s-l500.webp",
+        "sponsored": false,
+        "title": "ANPOO 81.3\" Boneless Loveseat Sofa Cloud Couch with Deep Seat, Modern Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6ab6e8b62b15b9842d2a276e",
+        "status": "Success",
+        "created_at": "2026-09-25 21:33:42 UTC",
+        "processed_at": "2026-09-25 21:33:42 UTC",
+        "total_time_taken": 5.61
+      },
+      "ebay": {
+        "id": "6ab6e8bc5fda0b3ea3f5d075",
+        "status": "Success",
+        "created_at": "2026-09-25 21:33:48 UTC",
+        "processed_at": "2026-09-25 21:33:48 UTC",
+        "total_time_taken": 2.28
+      }
+    },
+    "interpretation": "sofa",
+    "query_source": "visual_match_titles",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Classic Sofa Photos, Download The BEST Free Classic Sofa ...",
+        "Settees and Sofas — Evermore - Classic & Vintage Wedding Rentals",
+        "4,276+以上の無料ウェディングソファー画像",
+        "Rajmahal Sofa | Regal Arts & Export Inspired by timeless ...",
+        "Designers say this once-old-fashioned couch style is making ...",
+        "French Style Two Seater Sofa - Etsy UK",
+        "Premium Royal Carved Wooden Lounge Sofa Set | Crafty Bug",
+        "Ornate couch Photos - Download Free High-Quality Pictures ..."
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 59,
+      "not_explicit_us": 1
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/147547024855",
+        "thumbnail": "https://i.ebayimg.com/images/g/NVwAAeSwS3BqmWQy/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$251.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/237003043496",
+        "thumbnail": "https://i.ebayimg.com/images/g/rFgAAeSw5UJqfYFD/s-l500.webp",
+        "sponsored": true,
+        "title": "XUEGW Bean Bag Chair Memory Foam Lazy Floor Sofa Adults Kids Bedroom Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$189.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/147319743132",
+        "thumbnail": "https://i.ebayimg.com/images/g/5iAAAeSwhANqDSaD/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Convertible Pull Out Sofa Bed Tufted Sleeper Couch With Square Arm",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$599.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/147117474946",
+        "thumbnail": "https://i.ebayimg.com/images/g/3qoAAeSwxFVqmOGC/s-l500.webp",
+        "sponsored": true,
+        "title": "Chesterfield 3 Seats Faux Leather Sofa Button Tufted Couch With Nailhead Trim",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$289.99",
+          "to": "$1,259.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/128097783708",
+        "thumbnail": "https://i.ebayimg.com/images/g/TlgAAeSwi8lqq4h-/s-l500.webp",
+        "sponsored": false,
+        "title": "Cassina MEX CUBE White Sofa Black Frame Made in Italy V9296.0030 27116000",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$8,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/398414132574",
+        "thumbnail": "https://i.ebayimg.com/images/g/~W0AAeSw-TFqsAYL/s-l500.webp",
+        "sponsored": false,
+        "title": "ANPOO 81.3\" Boneless Loveseat Sofa Cloud Couch with Deep Seat, Modern Oversized",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$299.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/377519995907",
+        "thumbnail": "https://i.ebayimg.com/images/g/yX4AAeSwyWFqWlHp/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Fabric Modular Sectional Sofa with Deep Seat & Pillows for Small Space",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$429.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/366680188500",
+        "thumbnail": "https://i.ebayimg.com/images/g/zM8AAeSwbLhqq7Wt/s-l500.webp",
+        "sponsored": false,
+        "title": "Boneless Modular Sectional Sofa Reversible Chaise 3 Seater White Sherpa Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$509.99",
+          "to": "$759.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/178511420606",
+        "thumbnail": "https://i.ebayimg.com/images/g/398AAeSw2aZqryb8/s-l500.webp",
+        "sponsored": false,
+        "title": "🛋️ 3-Piece Couch — Great Condition — Hardware Included Selling this 3-piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$265.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/327374012912",
+        "thumbnail": "https://i.ebayimg.com/images/g/LqEAAeSw4cdqtnDx/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Cream/Peach Floral 3-Seat Sofa, Chesterfield Back, Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/198666754269",
+        "thumbnail": "https://i.ebayimg.com/images/g/-EYAAeSwtUBqtpwf/s-l500.webp",
+        "sponsored": false,
+        "title": "Poly & Bark Napa 88.5” Leather Sofa Midnight Blue – New in Box",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/188983869633",
+        "thumbnail": "https://i.ebayimg.com/images/g/T4wAAeSwZHxqtqOe/s-l500.webp",
+        "sponsored": false,
+        "title": "Foldable Sofa Bed | Single-Seat Corduroy Convertible Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery Import fees due prior to delivery",
+        "location": "Located in Pakistan",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$99.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/283894076009",
+        "thumbnail": "https://i.ebayimg.com/images/g/tWYAAeSw-15qQy6P/s-l500.webp",
+        "sponsored": true,
+        "title": "Recliner Chair Leather Modern Single Reclining Sofa Home Theater Seating Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$138.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/158302845416",
+        "thumbnail": "https://i.ebayimg.com/images/g/ogkAAOSwLC9gX1oD/s-l500.webp",
+        "sponsored": true,
+        "title": "Le Corbusier LC4 Chaise Lounge MADE IN ITALY for PALAZZETTI",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,890.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/147473322431",
+        "thumbnail": "https://i.ebayimg.com/images/g/CxwAAeSw1KlqcUxG/s-l500.webp",
+        "sponsored": true,
+        "title": "Modern Faux Leather 3 Seater Sofa Button Tufted Couch With 2 Pillows Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$399.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/285667759559",
+        "thumbnail": "https://i.ebayimg.com/images/g/IDoAAOSwNB1lsMsh/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Sofa Bed Convertible Futon Sofa with 2 Throw Pillows Cup Holders",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$169.99",
+          "to": "$206.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/168718514976",
+        "thumbnail": "https://i.ebayimg.com/images/g/nQwAAeSwCbVqtdyz/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Leather 3-Seat Sofa, Pad Arms, Cushion Back, Wood Frame, Modern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/128098631743",
+        "thumbnail": "https://i.ebayimg.com/images/g/aygAAeSwStVqtrfP/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seat Reclining Sofa, Gray Solid Fabric, Pillow Top Arms, Pillow Back",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$329.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/287606137866",
+        "thumbnail": "https://i.ebayimg.com/images/g/eB4AAeSwVD9qtWOK/s-l500.webp",
+        "sponsored": false,
+        "title": "Ralph Lauren Leather Chesterfield Sofa Pair Vintage Rare 2 Sofas",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$26,550.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/377522577075",
+        "thumbnail": "https://i.ebayimg.com/images/g/Ya8AAeSwEb1qtqi1/s-l500.webp",
+        "sponsored": false,
+        "title": "Yellow 2-Seater Sofa Curved Back Modern Track Arm Polyester Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$220.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/287597477776",
+        "thumbnail": "https://i.ebayimg.com/images/g/DC8AAeSwLgNqr4j8/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Left Chaise L-Shaped Corduroy Sectional Sofa Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.79"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/800688544731",
+        "thumbnail": "https://i.ebayimg.com/images/g/TNsAAeSw6Lpqr3Ez/s-l500.webp",
+        "sponsored": false,
+        "title": "96\" Black Corduroy Cloud Couch L-Shaped Boneless Sectional Sofa with Chaise",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$480.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/168720806557",
+        "thumbnail": "https://i.ebayimg.com/images/g/f8IAAeSwmIRqtsyb/s-l500.webp",
+        "sponsored": false,
+        "title": "Ashley Furniture Faux Leather Recliner Black Rolled Arm Nailhead Cushion Back",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/198666851791",
+        "thumbnail": "https://i.ebayimg.com/images/g/QfEAAeSwY5Bqtq7S/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Leather Sofa 79” L x 35 1/2” W x 36” H, 3-Seater – New",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$450.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/366688415081",
+        "thumbnail": "https://i.ebayimg.com/images/g/lSAAAeSwiYhqtKRX/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Leather Sectional Reclining Sofa w/ Padded Arms, 6-Seat Modern",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/336812942095",
+        "thumbnail": "https://i.ebayimg.com/images/g/oO0AAeSwJh9qts55/s-l500.webp",
+        "sponsored": false,
+        "title": "YUEANG Recliner Sofa Covers Sectional Couch Cover Reclining Couch 3 Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$100.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/820148424501",
+        "thumbnail": "https://i.ebayimg.com/images/g/H7gAAeSwtMVqr0oN/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Fabric Upholstered 2-Seat Sofa Couch, Track Arms, With Cushions also bed",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$325.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/366685983257",
+        "thumbnail": "https://i.ebayimg.com/images/g/z8oAAeSwfAZqsxhq/s-l500.webp",
+        "sponsored": false,
+        "title": "Tufted Gray Faux Suede Sofa Couch, Nailhead Trim, Solid Wood Frame, 3 Seat",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$350.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/168110929841",
+        "thumbnail": "https://i.ebayimg.com/images/g/KVIAAeSwz0Npdqow/s-l500.webp",
+        "sponsored": true,
+        "title": "LE CORBUSIER CHAISE Ltd Ed 8/20 Vintage Giacometti MADE IN ITALY for PALAZZETTI",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,800.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/178522954619",
+        "thumbnail": "https://i.ebayimg.com/images/g/uzAAAeSwS5VqtFug/s-l500.webp",
+        "sponsored": true,
+        "title": "Bassett Gray Fabric Sofa Rolled Arms Modern Solid, Seats 4, 96 in",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/147579507632",
+        "thumbnail": "https://i.ebayimg.com/images/g/9DQAAeSwiHtqp8QL/s-l500.webp",
+        "sponsored": true,
+        "title": "131\" U-Shaped Modular Sectional Sofa, Oversized Cloud Couch with Plush Corduroy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$367.54"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/800711018539",
+        "thumbnail": "https://i.ebayimg.com/images/g/IFMAAeSwYxRqtYSH/s-l500.webp",
+        "sponsored": true,
+        "title": "Upholstered Sofa, Silver Gray, Performances",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$429.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/820144632124",
+        "thumbnail": "https://i.ebayimg.com/images/g/7d4AAeSwgQNqrfAi/s-l500.webp",
+        "sponsored": false,
+        "title": "3‑in‑1 Convertible Teddy Fleece Fold Out Sofa,Metal Frame Vacuum Compressed",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$204.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/287597252142",
+        "thumbnail": "https://i.ebayimg.com/images/g/bloAAeSwQ59qr17L/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Right Chaise L-Shaped Cloud Sectional Sofa, Corduroy, Deep Seat, Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/178509503940",
+        "thumbnail": "https://i.ebayimg.com/images/g/xooAAeSwYHhqri8t/s-l500.webp",
+        "sponsored": false,
+        "title": "Furmax 3-in-1 Futon Sofa Bed Convertible Couch – Faux Leather Recliner with Cup",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/257763360587",
+        "thumbnail": "https://i.ebayimg.com/images/g/qJYAAeSwEhhqtWfV/s-l500.webp",
+        "sponsored": false,
+        "title": "roche bobois leather sofa",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$11,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/366687513416",
+        "thumbnail": "https://i.ebayimg.com/images/g/NcEAAeSwe9dqtBVo/s-l500.webp",
+        "sponsored": false,
+        "title": "73\" Modern Modular Sectional Sofa Loveseat, 2 Seater Tufted Comfy Cloud Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$369.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/318899800980",
+        "thumbnail": "https://i.ebayimg.com/images/g/IcEAAeSwDZhqsT8I/s-l500.webp",
+        "sponsored": false,
+        "title": "Gray Velvet Tufted Loveseat Sofa 65in Nailhead Trim Modern 2-Seat 34x30",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/147579504771",
+        "thumbnail": "https://i.ebayimg.com/images/g/BhoAAeSw6N9qp6p0/s-l500.webp",
+        "sponsored": true,
+        "title": "131\" U-Shaped Modular Sectional Sofa, Oversized Cloud Couch with Plush Corduroy",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$367.54"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/147579507908",
+        "thumbnail": "https://i.ebayimg.com/images/g/MyQAAeSw2YZqqLgj/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.46"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/287598294430",
+        "thumbnail": "https://i.ebayimg.com/images/g/2B8AAeSwN1lqsByl/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Oversized Sofa Chair And A Half With Ottoman Set Grey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$307.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/168718321293",
+        "thumbnail": "https://i.ebayimg.com/images/g/FesAAeSw0PxqtcBi/s-l500.webp",
+        "sponsored": false,
+        "title": "Signature Design by Ashley Power Recline Loveseat Headrest Cup/Storage Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/168718323232",
+        "thumbnail": "https://i.ebayimg.com/images/g/ERcAAeSwoLZqtcA5/s-l500.webp",
+        "sponsored": false,
+        "title": "CR Laine Custom 3-Seat Sofa with Rolled Arms, Cushioned Back, Throw Pillows",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/407243361226",
+        "thumbnail": "https://i.ebayimg.com/images/g/lMYAAeSwM5Rqtano/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seat Floral Fabric Upholstered Sofa w/ English Roll Arms & Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/287597927474",
+        "thumbnail": "https://i.ebayimg.com/images/g/JWUAAeSwquFqr91b/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Right Chaise L-Shaped Cloud Sectional Sofa, Corduroy, Deep Seat, Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/307193195613",
+        "thumbnail": "https://i.ebayimg.com/images/g/Z18AAeSwJc9qsqs5/s-l500.webp",
+        "sponsored": false,
+        "title": "Leather armchair, Cassina, Frank Lloyd Wright for Imperial Hotel Tokyo, 1923",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$4,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/237087168432",
+        "thumbnail": "https://i.ebayimg.com/images/g/YWIAAeSwgmlqtHiW/s-l500.webp",
+        "sponsored": false,
+        "title": "Brown Sofa Pull-Out Bed Rolled (message 4 loc)",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$199.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/366683329068",
+        "thumbnail": "https://i.ebayimg.com/images/g/awIAAeSwQbJqsZ4B/s-l500.webp",
+        "sponsored": false,
+        "title": "roche bobois leather sofa (sectional)",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$8,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/137775103516",
+        "thumbnail": "https://i.ebayimg.com/images/g/YeIAAeSw19FqtVxF/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Leather Chesterfield Classic English Tufting by St. Timothy Chair",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$2,395.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/407245320471",
+        "thumbnail": "https://i.ebayimg.com/images/g/j30AAeSw3CxqtqlT/s-l500.webp",
+        "sponsored": false,
+        "title": "Vintage Tomlinson / Erwin-Lambeth Luxury Leather Lounge Chair & Ottoman",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,500.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/287594898426",
+        "thumbnail": "https://i.ebayimg.com/images/g/KooAAeSwGdhqrbjs/s-l500.webp",
+        "sponsored": false,
+        "title": "94.06\" Left Chaise L-Shaped Sectional Sofa Corduroy Gray",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$348.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/407240264538",
+        "thumbnail": "https://i.ebayimg.com/images/g/XukAAeSwaSpqtG3-/s-l500.webp",
+        "sponsored": false,
+        "title": "Convertible Lotus Compression Bean Bag Sofa for Living Room & Bedroom",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$221.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/407235088447",
+        "thumbnail": "https://i.ebayimg.com/images/g/gw0AAeSwSmdqsZOM/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Chenille Sofa with Rolled Arms, 30in W x 15in L x 34in H",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "auction",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/318917118938",
+        "thumbnail": "https://i.ebayimg.com/images/g/ChcAAeSw8MFqtpiN/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Floral Upholstered 3-Seat Sofa, Rolled Arms, Cushion Back, Cushions",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/287602674734",
+        "thumbnail": "https://i.ebayimg.com/images/g/EdwAAeSwxblqsx2F/s-l500.webp",
+        "sponsored": false,
+        "title": "107\" Modular Cloud Sofa, L-Shaped Recliner Sleeper, Black, No Assembly Required",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$155.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/398418275861",
+        "thumbnail": "https://i.ebayimg.com/images/g/pv4AAeSwSg9qsapY/s-l500.webp",
+        "sponsored": false,
+        "title": "🚚 **Free Delivery** Restoration Hardware Lancaster Luxe 8’ sofa🚚",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$3,250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/287595191927",
+        "thumbnail": "https://i.ebayimg.com/images/g/KUsAAeSwsyZqrfg1/s-l500.webp",
+        "sponsored": false,
+        "title": "47\" Oversized Sofa Chair & Ottoman Set Deep Seat Beige Fleece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$307.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/117392980264",
+        "thumbnail": "https://i.ebayimg.com/images/g/f-0AAeSwxxxqtWLh/s-l500.webp",
+        "sponsored": false,
+        "title": "Patbrela Sectional Sofa, L-Shaped Deep Seat, Modular Cloud Couch, Brown PU",
+        "subtitle": "Leather, Left Facing Chaise",
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$279.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/128077141621",
+        "thumbnail": "https://i.ebayimg.com/images/g/VxoAAeSw4ptqpoJ6/s-l500.webp",
+        "sponsored": true,
+        "title": "Neche SC002 87-Inch Corduroy Sofa, 3-Seater with Extra Deep Seats, Black",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$261.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/147579506444",
+        "thumbnail": "https://i.ebayimg.com/images/g/TSoAAeSwZ6Vqp6~6/s-l500.webp",
+        "sponsored": true,
+        "title": "96\" Boneless Couch Right Chaise L Shape Sectional Cloud Sofa Set for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$269.46"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 9388.902
+  }
+}

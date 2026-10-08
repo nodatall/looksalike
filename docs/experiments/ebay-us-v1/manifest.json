@@ -1,0 +1,41 @@
+{
+  "experiment": "ebay-us-v1",
+  "frozen_at": "2026-09-19T05:14:45Z",
+  "parameters": {
+    "engine": "ebay",
+    "_nkw": "green velvet sofa",
+    "ebay_domain": "ebay.com",
+    "_salic": "1",
+    "_ipg": "25"
+  },
+  "baseline_search_attempts": 12,
+  "max_new_attempts": 1,
+  "combined_ceiling": 13,
+  "comparison_ceiling": 15,
+  "additional_uploads": 0,
+  "deadline_seconds": 55,
+  "retries": 0,
+  "prior_tables": {
+    "identity": "5cde2e65f19a146d42c563585042427053c56cd343c6cf29bf144704404ebd3b",
+    "cases": "eea8e60984922c0eacf151998f9b7773fec9bd7bd1e91376a6ab9dd59a073551",
+    "attempts": "ddd830975c5374226e7680ed30236a2c82883cb122008048674f4f826cfe8f89",
+    "account_checks": "479dc0a061f0d802dd5c83b08a55a33dd22dfb4a5673b6ed7ccf42ea4f99dd4c",
+    "diagnostic_v1_attempts": "41c4ef8c94a25f3ac8216fc3b7d71ebc07146f80079a4ef58b45cc5de5465885",
+    "query_v2_attempts": "8efe19bf2697ee85c9b613fc7c2c77f59d27bdf3f6f3f24a4db6431aebbe4829",
+    "ebay_v1_attempts": "221002420712dad0a90dbecbd6f1edde13741af74b555cbd237cd29dfbf257d3"
+  },
+  "files": {
+    "agent-scratch/ebay-us-v1.rb": "d7e596dc11d6644d9b6e44ca3d9c85378595899ab8ea2e4c78b86b6563a245a7",
+    "agent-scratch/ebay-v1.rb": "fdda5a051d3dab3534706e50171b8fb0f033ef280822a7d6b1dfe0cc5811a16c",
+    "agent-scratch/diagnostic-v1.rb": "e6bb2dfcd1d4d0fff0488abc538fa981eb70c0d6c57bf7e00a16fa2cd5484b4e",
+    "docs/experiments/ebay-v1/README.md": "e04b450594bca63c3bb7610e3d62037507bb10e2012939ed55e56ed73af98970",
+    "docs/experiments/ebay-v1/account.json": "a537c064b02e7fa949990f9bb28b607159541d94fdf07177f4502915c1758a02",
+    "docs/experiments/ebay-v1/amendment.json": "7fbbc4ba89b24b4aa92992284062b9505f39dea63d1d2816957ab3beed533e4f",
+    "docs/experiments/ebay-v1/manifest.json": "7e2a6a643fba9b4362aa6678306f505593b6070925e9204b87130cb29cf867f8",
+    "docs/experiments/ebay-v1/manifest.sha256": "efb820f368418c4ec998c22fe744122ca7179143de565b97e9c55cf3985f6fba",
+    "docs/experiments/ebay-v1/manual-checks.json": "de3edaf77b425693d151240ceb8ca2df6eaf270d56e15a2f252b1db43ae84d1e",
+    "docs/experiments/ebay-v1/modern-sofa.json": "d2dd9944fdc7a7d18ff7342ba0894c83f1aa053aa93d382c22969fb38ed255df",
+    "docs/experiments/ebay-v1/ornate-sofa.json": "1790389e3418d7db320d98008d080d350a1606df3ebfbb3d168b9790c1944640"
+  },
+  "review": "Inspect the first six distinct US-located item listings in provider order. Compare photos with the modern-sofa reference. Record price and shipping or pickup when supplied. No ZIP, pickup-only filter, pagination, Lens call, or upload."
+}

@@ -1,0 +1,17 @@
+# Live example photo
+
+The example is Phillip Goldsberry's [green sofa on Unsplash](https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q), reused under the [Unsplash License](https://unsplash.com/license). The bundled reference is `app/javascript/search/assets/modern-sofa.jpg`. Source, license and checksum evidence remains in `docs/examples/modern-sofa-2026-09-28.json`.
+
+Choosing the example only prepares its preview with the normal JPEG recipe. Find similar items submits that prepared photo through the same search function as an uploaded photo. It uses actual server progress, cancellation and deadlines, the same provider/privacy notice, normal server caching and the same service and spending limits. A cache miss performs live recognition and eBay search; a cache hit preserves its original retrieval date and makes zero new provider calls. Errors keep the prepared photo available. No snapshot or forced cache bypass is used.
+
+The browser accepts and saves completed success/empty results only from `source=live` or `source=cache`, under `looksalike:ebay-us-v2`. The previous `looksalike:ebay-us-v1` key and snapshot results cannot restore in production. Saved data retains the strict field whitelist, US/eBay/version/date/URL validation and a JPEG reference bounded to 160px. It contains no original upload bytes, provider ID or raw response. Reload restores the view and explanation state with zero new calls; unfinished requests never resume. Search again clears the saved view. Storage failures do not prevent using the app.
+
+The September 28 snapshot in `docs/examples/modern-sofa-2026-09-28.json` and its sanitized adapter `app/javascript/search/modernSofa.json` remain frozen historical evidence. Only the standalone design mockup imports the adapter, explicitly enables preview snapshot validation and uses separate session storage (`looksalike:mockup:ebay-us-v1`). Its injected preview search returns historical cards only for the explicitly selected example, never an unrelated uploaded image. Historical listing availability is unverified; remote eBay thumbnails are not downloaded or bundled. The app's live results load listing photos from eBay as other uploaded-photo results do.
+
+## Local verification
+
+On September 30, 2026, the actual example button submitted the prepared JPEG to Rails. A fresh search produced `green velvet sofa` and six current eBay cards. Upload took 0.62 seconds, Lens 3.89 seconds, eBay 2.97 seconds and local checks 0.02 seconds. The database reserved two SerpApi units, with no Venice call, and released the search lease. Reload restored the result and open explanation without another call. Keyboard submission of the same example returned a labeled cache result with the same retrieval date and zero new provider calls. These checks verify runtime wiring, not a new five-photo quality score.
+
+The current automated check passed 113 Ruby tests and 20 JavaScript tests, plus style, build, security and dependency checks. Existing state tables cover live/cache acceptance, runtime snapshot rejection, old-key rejection and isolated preview storage.
+
+An isolated server with an empty database and live search disabled returned the actual unavailable-search message while retaining the example preview. Narrow-screen checks found no horizontal overflow in results or that error view. The bundled photo uses a build-time data URL, not an external image request. The separate two-search public deployment reserve was not used.

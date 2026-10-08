@@ -1,0 +1,14 @@
+inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+
+AllCops:
+  CacheRootDirectory: tmp/rubocop_cache
+  Exclude:
+    - "tasks/**/*"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+    - "tmp/**/*"
+    - "storage/**/*"
+    - "public/assets/**/*"
+    - "app/assets/builds/**/*"
+    - "agent-scratch/**/*"
+    - "docs/experiments/**/source/**/*"

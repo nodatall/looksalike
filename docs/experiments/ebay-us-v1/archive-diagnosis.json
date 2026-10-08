@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-19T05:47:06Z",
+  "source": "SerpApi Search Archive API; existing request only",
+  "http_status": 503,
+  "search_metadata": {
+    "id": "6aae1a6ef73581db8f46c7d2",
+    "status": "Error",
+    "created_at": "2026-09-19 05:15:26 UTC",
+    "processed_at": "2026-09-19 05:15:26 UTC",
+    "total_time_taken": 90.11
+  },
+  "search_parameters": {
+    "engine": "ebay",
+    "_nkw": "green velvet sofa",
+    "_ipg": "25",
+    "_salic": "1",
+    "ebay_domain": "ebay.com"
+  },
+  "error": "We couldn't get valid results for this search. Please try again later.",
+  "organic_results_count": 0,
+  "first_six": []
+}

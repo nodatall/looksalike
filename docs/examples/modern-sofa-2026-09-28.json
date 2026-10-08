@@ -1,0 +1,202 @@
+{
+  "status": "prepared_data_only",
+  "label": "Demo snapshot",
+  "retrieved_at": "2026-09-28 20:27:20 UTC",
+  "marketplace": "ebay.com",
+  "scope": "US-located listings",
+  "availability": "unverified_after_retrieval",
+  "source_experiment": "docs/experiments/ebay-flow-v3/modern-sofa.json",
+  "reference": {
+    "photo": {
+      "path": "docs/experiments/feasibility-v1/photos/modern-sofa.jpg",
+      "bytes": 137444,
+      "sha256": "1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87",
+      "content_type": "image/jpeg",
+      "width": 1600,
+      "height": 1067
+    },
+    "source": {
+      "creator": "Phillip Goldsberry",
+      "platform": "Unsplash",
+      "page": "https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q",
+      "download_url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.1.0&q=85&fm=jpg&cs=srgb&w=2400",
+      "bytes": 340773,
+      "sha256": "1eaa2ae5c211ee5e06a9eaf5f8b4ce1aefdc9f027957c248a760d55b49f8e5ee",
+      "width": 2400,
+      "height": 1600,
+      "source_sizing": "Same licensed photo fetched at w=2400, q=85, fm=jpg, cs=srgb (2400x1600); original download exceeded 20MP and was not admitted to preprocessing.",
+      "license": {
+        "name": "Unsplash License",
+        "url": "https://unsplash.com/license",
+        "reviewed_on": "2026-09-17",
+        "evidence": "Session source review: individual page identified the named creator and a regular free image, without a premium license label.",
+        "reuse_basis": "Free license permits downloading, modifying and using the photo, including this attributed furniture-search research reference; no claim of public-domain status or rights to later listing thumbnails."
+      },
+      "discovery_page": "https://unsplash.com/photos/green-fabric-sofa-fZuleEfeA1Q"
+    }
+  },
+  "cards": [
+    {
+      "position": 1,
+      "url": "https://www.ebay.com/itm/336737755519",
+      "thumbnail": "https://i.ebayimg.com/images/g/E70AAeSwAVhqe57C/s-l500.webp",
+      "sponsored": false,
+      "title": "Casey Tufted Back Teal Velvet Upholstered Sofa",
+      "subtitle": null,
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States",
+      "buying_format": "buy_it_now",
+      "price": {
+        "raw": "$1,649.00"
+      },
+      "filter": "accepted"
+    },
+    {
+      "position": 2,
+      "url": "https://www.ebay.com/itm/147581888427",
+      "thumbnail": "https://i.ebayimg.com/images/g/jZIAAeSw4ptqrRk-/s-l500.webp",
+      "sponsored": true,
+      "title": "82.6\"Upholstered Velvet Sofa with Nailhead Trim and Rolled Armrests,Mid-Centur",
+      "subtitle": null,
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States",
+      "buying_format": "buy_it_now",
+      "price": {
+        "raw": "$643.88"
+      },
+      "filter": "accepted"
+    },
+    {
+      "position": 3,
+      "url": "https://www.ebay.com/itm/227467714530",
+      "thumbnail": "https://i.ebayimg.com/images/g/at4AAeSw4oNqWPuC/s-l500.webp",
+      "sponsored": true,
+      "title": "Velvet 3-Seater Sofa Tufted Back & Nailhead Trim Modern Vintage 2 Pillows Cream",
+      "subtitle": null,
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States",
+      "buying_format": "buy_it_now",
+      "price": {
+        "raw": "$671.99"
+      },
+      "filter": "accepted"
+    },
+    {
+      "position": 4,
+      "url": "https://www.ebay.com/itm/800570913237",
+      "thumbnail": "https://i.ebayimg.com/images/g/mU0AAeSwhFRqkCME/s-l500.webp",
+      "sponsored": true,
+      "title": "140''Soft Velvet Fabric,Boneless Sofa With Tufted,32D High Density Sponge,Ergon",
+      "subtitle": null,
+      "condition": "Brand New",
+      "shipping": "Free delivery in 2-4 days",
+      "location": "Located in United States",
+      "buying_format": "accepts_offers",
+      "price": {
+        "raw": "$812.10"
+      },
+      "filter": "accepted"
+    },
+    {
+      "position": 5,
+      "url": "https://www.ebay.com/itm/168507903691",
+      "thumbnail": "https://i.ebayimg.com/images/g/efkAAeSwgbhqKNnK/s-l500.webp",
+      "sponsored": false,
+      "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+      "subtitle": null,
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States",
+      "buying_format": "buy_it_now",
+      "price": {
+        "raw": "$614.99"
+      },
+      "filter": "accepted"
+    },
+    {
+      "position": 6,
+      "url": "https://www.ebay.com/itm/146930161561",
+      "thumbnail": "https://i.ebayimg.com/images/g/oSIAAeSwCkVqVGut/s-l500.webp",
+      "sponsored": false,
+      "title": "Pemberly Row Modern Style Performance Velvet Sofa in Teal Finish",
+      "subtitle": null,
+      "condition": "Brand New",
+      "shipping": "Free delivery",
+      "location": "Located in United States",
+      "buying_format": "buy_it_now",
+      "price": {
+        "raw": "$576.32"
+      },
+      "filter": "accepted"
+    }
+  ],
+  "search_details": {
+    "interpretation": "teal velvet tapered legs sofa",
+    "query_source": "vision",
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 501.648
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 3203.909
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 3910.336
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 3378.239
+      }
+    ],
+    "query_preparation": {
+      "status": "ready",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v1",
+        "phrase_version": "photo-phrase-v1",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 32,
+          "total_tokens": 1853
+        },
+        "duration_ms": 3931,
+        "category": "sofa",
+        "traits": [
+          "teal velvet",
+          "tapered legs"
+        ]
+      }
+    },
+    "counts": {
+      "accepted": 60
+    },
+    "elapsed_ms": 11072.091
+  },
+  "new_calls_when_replayed": {
+    "uploads": 0,
+    "serpapi_searches": 0,
+    "vision_calls": 0
+  },
+  "listing_image_reuse": {
+    "status": "unverified",
+    "bundled": false,
+    "required": "Document permission to bundle the actual listing images before publishing the offline example."
+  }
+}

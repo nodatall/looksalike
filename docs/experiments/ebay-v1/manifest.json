@@ -1,0 +1,54 @@
+{
+  "experiment": "ebay-v1",
+  "frozen_at": "2026-09-18T22:04:27Z",
+  "authorization": "User approved trying the two existing sofa queries on eBay.",
+  "baseline_search_attempts": 10,
+  "max_new_attempts": 2,
+  "combined_ceiling": 12,
+  "comparison_ceiling": 15,
+  "additional_uploads": 0,
+  "retries": 0,
+  "deadline_seconds": 55,
+  "cases": [
+    {
+      "case_id": "modern-sofa",
+      "parameters": {
+        "engine": "ebay",
+        "_nkw": "green velvet sofa",
+        "ebay_domain": "ebay.com",
+        "_stpos": "94103",
+        "show_only": "LPickup",
+        "LH_PrefLoc": "Domestic",
+        "_ipg": "25"
+      }
+    },
+    {
+      "case_id": "ornate-sofa",
+      "parameters": {
+        "engine": "ebay",
+        "_nkw": "antique sofa",
+        "ebay_domain": "ebay.com",
+        "_stpos": "10001",
+        "show_only": "LPickup",
+        "LH_PrefLoc": "Domestic",
+        "_ipg": "25"
+      }
+    }
+  ],
+  "prior_tables": {
+    "identity": "5cde2e65f19a146d42c563585042427053c56cd343c6cf29bf144704404ebd3b",
+    "cases": "eea8e60984922c0eacf151998f9b7773fec9bd7bd1e91376a6ab9dd59a073551",
+    "attempts": "ddd830975c5374226e7680ed30236a2c82883cb122008048674f4f826cfe8f89",
+    "account_checks": "479dc0a061f0d802dd5c83b08a55a33dd22dfb4a5673b6ed7ccf42ea4f99dd4c",
+    "diagnostic_v1_attempts": "41c4ef8c94a25f3ac8216fc3b7d71ebc07146f80079a4ef58b45cc5de5465885",
+    "query_v2_attempts": "8efe19bf2697ee85c9b613fc7c2c77f59d27bdf3f6f3f24a4db6431aebbe4829"
+  },
+  "files": {
+    "agent-scratch/ebay-v1.rb": "fdda5a051d3dab3534706e50171b8fb0f033ef280822a7d6b1dfe0cc5811a16c",
+    "agent-scratch/query-v2.rb": "c6e81b7b572c835ce312bd934250172beb570c1e4a3702551348ad14435664b6",
+    "agent-scratch/diagnostic-v1.rb": "e6bb2dfcd1d4d0fff0488abc538fa981eb70c0d6c57bf7e00a16fa2cd5484b4e",
+    "docs/experiments/query-v2/manifest.json": "2f427d08937dec8cc4d24ab4377b36e83f3e30b57a1967e03919ab968b29e280",
+    "docs/experiments/query-v2/results.json": "50cd75700d79c6cc1e3df960325a87e04116a4c2fe144445066e60d07bcb2c92"
+  },
+  "review": "Inspect the first six distinct item links in provider order, their photos, prices, shipping and locations. Postal-code and pickup filters do not establish a distance guarantee. This is not a full photo-to-listings validation."
+}

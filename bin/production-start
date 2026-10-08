@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+ENV["RAILS_ENV"] = "production"
+ENV["LIVE_SEARCH_ENABLED"] ||= "false"
+require_relative "../config/environment"
+
+begin
+  ProductionStorage.validate!(config: ApplicationRecord.connection_db_config)
+  # Preparation happens only in the app user, after mounting and validation.
+  unless system("bin/rails", "db:prepare")
+    ENV["LIVE_SEARCH_ENABLED"] = "false"
+    warn "Database preparation failed; live search disabled."
+  end
+rescue ProductionStorage::Unavailable
+  ENV["LIVE_SEARCH_ENABLED"] = "false"
+  warn "Persistent search storage unavailable; skipping database preparation and disabling live search."
+end
+
+# Puma owns PID 1 and receives shutdown signals directly. No proxy or job worker.
+exec "bundle", "exec", "puma", "-C", "config/puma.rb"

@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/188978218754",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. Small pastel drawer unit with exposed frame and bright contrasting fronts; different construction and appearance from the wide modern dresser."
+    },
+    {
+      "url": "https://www.ebay.com/itm/237067281960",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. White horizontal dresser with flat drawer fronts; similar rectangular form and modern style, different handles and drawer count."
+    },
+    {
+      "url": "https://www.ebay.com/itm/800639044916",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. White wide dresser with flat horizontal fronts and recessed pulls; close shape/style match."
+    },
+    {
+      "url": "https://www.ebay.com/itm/128097217066",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Black tall glossy dresser with flat fronts; weaker modern-style match. Vertical proportions, black finish and LED shelf differ."
+    },
+    {
+      "url": "https://www.ebay.com/itm/137487425758",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Wide pale dresser with flat horizontal fronts and recessed pulls; similar form and finish, different drawer count."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366409823064",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. Tall white chest with traditional molding, feet and round knobs; different proportions and style."
+    }
+  ],
+  "relevant_accessible_count": 4,
+  "scored_at": "2026-09-28T20:32:11Z",
+  "passed": true
+}

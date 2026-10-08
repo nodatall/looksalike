@@ -1,0 +1,2150 @@
+{
+  "case_id": "modern-sofa",
+  "manifest_sha256": "4bed77df7331e94845caa1871352f9a03f155e766f782c395837767eb5c5bebe",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "1e5e32b77ec1b9aa816ca05765b6e6ff9e421bfa60d18c838c58f190bff05c87"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "teal velvet tapered legs sofa",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 501.648
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 3203.909
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 3910.336
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 3378.239
+      }
+    ],
+    "candidates": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/336737755519",
+        "thumbnail": "https://i.ebayimg.com/images/g/E70AAeSwAVhqe57C/s-l500.webp",
+        "sponsored": false,
+        "title": "Casey Tufted Back Teal Velvet Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,649.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/147581888427",
+        "thumbnail": "https://i.ebayimg.com/images/g/jZIAAeSw4ptqrRk-/s-l500.webp",
+        "sponsored": true,
+        "title": "82.6\"Upholstered Velvet Sofa with Nailhead Trim and Rolled Armrests,Mid-Centur",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$643.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/227467714530",
+        "thumbnail": "https://i.ebayimg.com/images/g/at4AAeSw4oNqWPuC/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet 3-Seater Sofa Tufted Back & Nailhead Trim Modern Vintage 2 Pillows Cream",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$671.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/800570913237",
+        "thumbnail": "https://i.ebayimg.com/images/g/mU0AAeSwhFRqkCME/s-l500.webp",
+        "sponsored": true,
+        "title": "140''Soft Velvet Fabric,Boneless Sofa With Tufted,32D High Density Sponge,Ergon",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$812.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/168507903691",
+        "thumbnail": "https://i.ebayimg.com/images/g/efkAAeSwgbhqKNnK/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/146930161561",
+        "thumbnail": "https://i.ebayimg.com/images/g/oSIAAeSwCkVqVGut/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern Style Performance Velvet Sofa in Teal Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$576.32"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/227423532657",
+        "thumbnail": "https://i.ebayimg.com/images/g/hQwAAeSwA65qKNm2/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/188728050170",
+        "thumbnail": "https://i.ebayimg.com/images/g/BtsAAeSwZB9qbhEQ/s-l500.webp",
+        "sponsored": false,
+        "title": "EEI-4444-DUS Exalt Tufted Performance Velvet Sofa, Dusty Rose",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$551.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/188871167932",
+        "thumbnail": "https://i.ebayimg.com/images/g/aQEAAeSweAVqlsAp/s-l500.webp",
+        "sponsored": false,
+        "title": "85\" Velvet Sofa, Deep Seat Curved 3 Seat Couch Gold Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,368.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/168322919694",
+        "thumbnail": "https://i.ebayimg.com/images/g/FyMAAeSwYbhp57XH/s-l500.webp",
+        "sponsored": false,
+        "title": "Generic Green Tufted Velvet 3-Seat Sofa with Wooden Legs, Contemporary Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/137686827131",
+        "thumbnail": "https://i.ebayimg.com/images/g/Br8AAeSwa1BqlvmP/s-l500.webp",
+        "sponsored": false,
+        "title": "58\" 2 Seat Sofa with Plush Green Velvet Upholstery, Cup Holder",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$217.78"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/188871332224",
+        "thumbnail": "https://i.ebayimg.com/images/g/8I8AAeSwFLNqlr9m/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Home Collection Winford Giotto Dark Green Olive Velvet Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,050.47"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/314646831447",
+        "thumbnail": "https://i.ebayimg.com/images/g/nIcAAOSw2ntnrzs8/s-l500.webp",
+        "sponsored": false,
+        "title": "Modway Valour Performance Velvet Upholstered Tufted Sofa In Teal",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$582.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/800060173956",
+        "thumbnail": "https://i.ebayimg.com/images/g/GqsAAeSwUg1qEjsJ/s-l500.webp",
+        "sponsored": true,
+        "title": "Traditional Brown Velvet Damask Tufted Rolled Arm Sofa, Carved Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/365386088476",
+        "thumbnail": "https://i.ebayimg.com/images/g/yuIAAOSwqCNnp4dC/s-l500.webp",
+        "sponsored": true,
+        "title": "AnyBody Rib Velour Pull-On Tapered-Leg Pants - Women's Plus 2X - Deep Teal",
+        "subtitle": "AnyBody",
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$12.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/197121186498",
+        "thumbnail": "https://i.ebayimg.com/images/g/UawAAeSwy4tqCUUB/s-l500.webp",
+        "sponsored": true,
+        "title": "Bowery Hill Velvet Blue Convertible Sofa Rectangular Multi-Position 76\" x 32\"...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$407.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/206550037436",
+        "thumbnail": "https://i.ebayimg.com/images/g/7dwAAeSwpCRqo~rD/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Tufted Velvet Sofa 87.4\" Light Grey Flared Arms 3-Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$826.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206548190435",
+        "thumbnail": "https://i.ebayimg.com/images/g/EsYAAeSwA-NqopV~/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Tufted Velvet Sofa 87.4\" Light Grey Flared Arm Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$826.78"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/188727495078",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ZMAAeSw-ABqbg5V/s-l500.webp",
+        "sponsored": false,
+        "title": "84\" Velvet Deep Channel Tufted Sofa with Back Cushions and Rolled Arms, Modern S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,167.84"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/800152888762",
+        "thumbnail": "https://i.ebayimg.com/images/g/hQwAAeSwA65qKNm2/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/168187861932",
+        "thumbnail": "https://i.ebayimg.com/images/g/-aEAAeSwmsdpn7Ok/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Contemporary Sofa with Gold Base, Removable Cushions, Seats 3",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/188871232461",
+        "thumbnail": "https://i.ebayimg.com/images/g/njUAAeSwKVxqlrq9/s-l500.webp",
+        "sponsored": false,
+        "title": "Jennifer Taylor Home Mamba 28\" Patchwork Accent Chair Teal-Blue Purple Velvet &",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$776.86"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/237073875479",
+        "thumbnail": "https://i.ebayimg.com/images/g/jcsAAeSwXS5qrAvw/s-l500.webp",
+        "sponsored": false,
+        "title": "Armless Sofa in Light Camel Velvet, 38\" W x 30\" H x 30\" L",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/406224990787",
+        "thumbnail": "https://i.ebayimg.com/images/g/G5YAAeSwpAFozOlN/s-l500.webp",
+        "sponsored": false,
+        "title": "2-Seater Sofa Light Gray 55.1\" Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$287.21"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/226634023505",
+        "thumbnail": "https://i.ebayimg.com/images/g/E74AAeSwWABnyodW/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern / Contemporary Velvet Convertible Sofa in Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$325.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/406841476768",
+        "thumbnail": "https://i.ebayimg.com/images/g/4YcAAeSwkJNp3UMY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 2-Seater Dark Green Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$266.91"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/188727670403",
+        "thumbnail": "https://i.ebayimg.com/images/g/TsYAAeSwkOBqbg4K/s-l500.webp",
+        "sponsored": false,
+        "title": "84\" Velvet Deep Channel Tufted Sofa with Back Cushions and Rolled Arms, Modern S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,280.15"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/198008333813",
+        "thumbnail": "https://i.ebayimg.com/images/g/QJUAAeSwt25qVb3i/s-l500.webp",
+        "sponsored": false,
+        "title": "Maklaine Curved Performance Velvet Stainless Steel Sofa in Teal",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,773.38"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/117150042523",
+        "thumbnail": "https://i.ebayimg.com/images/g/z4EAAeSwf8Fp47yw/s-l500.webp",
+        "sponsored": true,
+        "title": "Luxury 84\" tufted Velvet Sofa. Teal. custom made",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/198432640165",
+        "thumbnail": "https://i.ebayimg.com/images/g/0oIAAeSwGN5qMfCH/s-l500.webp",
+        "sponsored": true,
+        "title": "Gray Velvet Traditional Sofa w/ Pad Arms Seats 4 58\"W x 35\"L x 37\"H",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226917957079",
+        "thumbnail": "https://i.ebayimg.com/images/g/FBgAAeSwBe1qD91v/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberley Row Velvet Gray Sofa Button-Tufted 85\"W x 34\"D x 33\"H",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$589.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/405292844678",
+        "thumbnail": "https://i.ebayimg.com/images/g/97gAAOSwTG5nEVmR/s-l500.webp",
+        "sponsored": true,
+        "title": "Blue Crushed Velvet Sofa Navy",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/306766967996",
+        "thumbnail": "https://i.ebayimg.com/images/g/2zAAAeSwWpdpkFc7/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa 3-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$341.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336721636864",
+        "thumbnail": "https://i.ebayimg.com/images/g/-OEAAeSwf4Jqb0vx/s-l500.webp",
+        "sponsored": false,
+        "title": "Casey Tufted Back Olive Green Velvet Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,749.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/227511402042",
+        "thumbnail": "https://i.ebayimg.com/images/g/FcUAAeSwTMBqn5Bz/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Curved Velvet Stainless Steel Sofa in Teal Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,792.01"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/188871314097",
+        "thumbnail": "https://i.ebayimg.com/images/g/eMIAAeSwhPJqlsAR/s-l500.webp",
+        "sponsored": false,
+        "title": "Raisa Velvet Upholstered Sofa in Navy Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$965.62"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/198628959866",
+        "thumbnail": "https://i.ebayimg.com/images/g/R3cAAeSwDWdqoOMK/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern Velvet Sofa in Dusty Rose with Walnut Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$572.71"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/800596000482",
+        "thumbnail": "https://i.ebayimg.com/images/g/LN0AAeSwGEZqlryL/s-l500.webp",
+        "sponsored": false,
+        "title": "Armless Velvet Sofa Green 29.92\"L x 38.18\"W x 31.10\"H",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$162.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/358590817644",
+        "thumbnail": "https://i.ebayimg.com/images/g/CrgAAeSwzRxqEhEk/s-l500.webp",
+        "sponsored": true,
+        "title": "Dolonm Modern Velvet 84 Inches Long Tufted Couch Upholstered Sofa - Used",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/128059575183",
+        "thumbnail": "https://i.ebayimg.com/images/g/zlkAAeSwVppqmW9T/s-l500.webp",
+        "sponsored": true,
+        "title": "41.3\"Upholstered Velvet Sofa w/Nailhead Trim and Rolled Armrests,Mid-Century M",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$421.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/406224299460",
+        "thumbnail": "https://i.ebayimg.com/images/g/39IAAeSwRzZozJcY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa Set Dark Green Velvet, Foam, Wood, Plastic 2 Piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$453.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/406970124855",
+        "thumbnail": "https://i.ebayimg.com/images/g/9JEAAeSw8uFqJIH6/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 2-Seater Black Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$346.53"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/198399516389",
+        "thumbnail": "https://i.ebayimg.com/images/g/e5kAAeSw3ZZqIESz/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Velvet Tufted Sofa w/ Nailhead Trim Rolled Arms 68\"W Contemporary",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/227196415783",
+        "thumbnail": "https://i.ebayimg.com/images/g/DnIAAeSwNphn47El/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Contemporary Velvet Convertible Sofa in Army Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/358825217742",
+        "thumbnail": "https://i.ebayimg.com/images/g/evEAAeSwms5qX1YJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Velvet Green Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/406511143904",
+        "thumbnail": "https://i.ebayimg.com/images/g/bH4AAeSwiK9pV-26/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seater Sofa Dark Grey 180 cm Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$363.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/226729821042",
+        "thumbnail": "https://i.ebayimg.com/images/g/vncAAeSw8QJqVGy6/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Performance Velvet Sofa with Metal Leg in Sea Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$725.71"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/158273191537",
+        "thumbnail": "https://i.ebayimg.com/images/g/2MsAAeSwB7Rqn869/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Armless Sofa, 29.92\" L x 38.18\" W x 31.10\" H, 1 Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/187720192703",
+        "thumbnail": "https://i.ebayimg.com/images/g/TLAAAOSwzktn7pbk/s-l500.webp",
+        "sponsored": false,
+        "title": "CAMEL COLORED TEXTURED VELVET SOFA STYLISH BRASS RING LEGS LIVING ROOM FURNITURE",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,099.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/334757476565",
+        "thumbnail": "https://i.ebayimg.com/images/g/6x0AAOSwMRhj9E3D/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Velvet Couch/sofa, Adjustable, Gold Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$849.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/128059968717",
+        "thumbnail": "https://i.ebayimg.com/images/g/H6IAAeSw3EVqmaa3/s-l500.webp",
+        "sponsored": false,
+        "title": "55 \"green velvet sofa,elegant w/convenient pockets,clever interpretation of the",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$528.40"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/406225036641",
+        "thumbnail": "https://i.ebayimg.com/images/g/lQIAAeSwwV9ozO-v/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 3-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$316.86"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/188871294740",
+        "thumbnail": "https://i.ebayimg.com/images/g/OUkAAeSwwTlqlr2u/s-l500.webp",
+        "sponsored": false,
+        "title": "Yara 90.6\" Beige Pleated Performance Velvet Sofa -",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,355.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/327367601852",
+        "thumbnail": "https://i.ebayimg.com/images/g/XQwAAeSwvd5qsNyj/s-l500.webp",
+        "sponsored": false,
+        "title": "Velvet Sofa Lilac 54\"",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$353.14"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/389988352165",
+        "thumbnail": "https://i.ebayimg.com/images/g/ogUAAeSwQdhp~KC6/s-l500.webp",
+        "sponsored": false,
+        "title": "Performance Velvet Sofa 75\" Wide, Burnt Orange, Reversible Cushions, Easy Clean",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,222.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/406919912393",
+        "thumbnail": "https://i.ebayimg.com/images/g/CjsAAeSw8K9qB1QD/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa 2-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$315.31"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/197056255711",
+        "thumbnail": "https://i.ebayimg.com/images/g/dNgAAeSw~mRqtfmI/s-l500.webp",
+        "sponsored": false,
+        "title": "Hybition Velvet Sofa Modern Couch with Button-Tufted Metal Legs Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$563.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/406225035992",
+        "thumbnail": "https://i.ebayimg.com/images/g/4ooAAeSwtoVozO-V/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 2-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$329.35"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/128059387638",
+        "thumbnail": "https://i.ebayimg.com/images/g/hPkAAeSwRUZqmVn0/s-l500.webp",
+        "sponsored": true,
+        "title": "41.3\"Upholstered Velvet Sofa w/Nailhead Trim and Rolled Armrests,Mid-Century Mo",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$421.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/317169065907",
+        "thumbnail": "https://i.ebayimg.com/images/g/b0oAAeSwIZhomomQ/s-l500.webp",
+        "sponsored": true,
+        "title": "Elegant Black Velvet Tufted Sofa with Nailhead Trim And 3 Tables",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/336737755519",
+        "thumbnail": "https://i.ebayimg.com/images/g/E70AAeSwAVhqe57C/s-l500.webp",
+        "sponsored": false,
+        "title": "Casey Tufted Back Teal Velvet Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,649.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/147581888427",
+        "thumbnail": "https://i.ebayimg.com/images/g/jZIAAeSw4ptqrRk-/s-l500.webp",
+        "sponsored": true,
+        "title": "82.6\"Upholstered Velvet Sofa with Nailhead Trim and Rolled Armrests,Mid-Centur",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$643.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/227467714530",
+        "thumbnail": "https://i.ebayimg.com/images/g/at4AAeSw4oNqWPuC/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet 3-Seater Sofa Tufted Back & Nailhead Trim Modern Vintage 2 Pillows Cream",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$671.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/800570913237",
+        "thumbnail": "https://i.ebayimg.com/images/g/mU0AAeSwhFRqkCME/s-l500.webp",
+        "sponsored": true,
+        "title": "140''Soft Velvet Fabric,Boneless Sofa With Tufted,32D High Density Sponge,Ergon",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$812.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/168507903691",
+        "thumbnail": "https://i.ebayimg.com/images/g/efkAAeSwgbhqKNnK/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/146930161561",
+        "thumbnail": "https://i.ebayimg.com/images/g/oSIAAeSwCkVqVGut/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern Style Performance Velvet Sofa in Teal Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$576.32"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abacda1d3c5122ab494e4af",
+        "status": "Success",
+        "created_at": "2026-09-28 20:27:13 UTC",
+        "processed_at": "2026-09-28 20:27:13 UTC",
+        "total_time_taken": 2.92
+      },
+      "ebay": {
+        "id": "6abacda8bd1c2054bd4db59d",
+        "status": "Success",
+        "created_at": "2026-09-28 20:27:20 UTC",
+        "processed_at": "2026-09-28 20:27:20 UTC",
+        "total_time_taken": 3.08
+      }
+    },
+    "lens_interpretation": null,
+    "query_preparation": {
+      "status": "ready",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v1",
+        "phrase_version": "photo-phrase-v1",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v1",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1821,
+          "output_tokens": 32,
+          "total_tokens": 1853
+        },
+        "duration_ms": 3931,
+        "category": "sofa",
+        "traits": [
+          "teal velvet",
+          "tapered legs"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "teal velvet tapered legs sofa",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "west elm - Hyde Park",
+        "Loveseats Available at Rufeners Furniture in Rittman, OH",
+        "Amazon.com: OVVGVV Framed Banksy Wall Decor, Love Over Money ...",
+        "How to Give Your Home Furniture a Makeover - Smithe Blog ...",
+        "US Pride Furniture Civa 69.6 in. Green Velvet 3-Seater Sofa ...",
+        "Amazon.com: Modway EEI-3764-GRN Valour Performance Velvet ...",
+        "Jessica Ribeiro, PhD | Eating Disorder & OCD Specialist in ...",
+        "Home - Furniture Shop • Shopkeeper & Elementor Importable Demo"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "teal velvet tapered legs sofa",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts": {
+      "accepted": 60
+    },
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/336737755519",
+        "thumbnail": "https://i.ebayimg.com/images/g/E70AAeSwAVhqe57C/s-l500.webp",
+        "sponsored": false,
+        "title": "Casey Tufted Back Teal Velvet Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,649.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/147581888427",
+        "thumbnail": "https://i.ebayimg.com/images/g/jZIAAeSw4ptqrRk-/s-l500.webp",
+        "sponsored": true,
+        "title": "82.6\"Upholstered Velvet Sofa with Nailhead Trim and Rolled Armrests,Mid-Centur",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$643.88"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/227467714530",
+        "thumbnail": "https://i.ebayimg.com/images/g/at4AAeSw4oNqWPuC/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet 3-Seater Sofa Tufted Back & Nailhead Trim Modern Vintage 2 Pillows Cream",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$671.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/800570913237",
+        "thumbnail": "https://i.ebayimg.com/images/g/mU0AAeSwhFRqkCME/s-l500.webp",
+        "sponsored": true,
+        "title": "140''Soft Velvet Fabric,Boneless Sofa With Tufted,32D High Density Sponge,Ergon",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$812.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/168507903691",
+        "thumbnail": "https://i.ebayimg.com/images/g/efkAAeSwgbhqKNnK/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/146930161561",
+        "thumbnail": "https://i.ebayimg.com/images/g/oSIAAeSwCkVqVGut/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern Style Performance Velvet Sofa in Teal Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$576.32"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/227423532657",
+        "thumbnail": "https://i.ebayimg.com/images/g/hQwAAeSwA65qKNm2/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/188728050170",
+        "thumbnail": "https://i.ebayimg.com/images/g/BtsAAeSwZB9qbhEQ/s-l500.webp",
+        "sponsored": false,
+        "title": "EEI-4444-DUS Exalt Tufted Performance Velvet Sofa, Dusty Rose",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$551.50"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/188871167932",
+        "thumbnail": "https://i.ebayimg.com/images/g/aQEAAeSweAVqlsAp/s-l500.webp",
+        "sponsored": false,
+        "title": "85\" Velvet Sofa, Deep Seat Curved 3 Seat Couch Gold Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,368.24"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/168322919694",
+        "thumbnail": "https://i.ebayimg.com/images/g/FyMAAeSwYbhp57XH/s-l500.webp",
+        "sponsored": false,
+        "title": "Generic Green Tufted Velvet 3-Seat Sofa with Wooden Legs, Contemporary Style",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/137686827131",
+        "thumbnail": "https://i.ebayimg.com/images/g/Br8AAeSwa1BqlvmP/s-l500.webp",
+        "sponsored": false,
+        "title": "58\" 2 Seat Sofa with Plush Green Velvet Upholstery, Cup Holder",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$217.78"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/188871332224",
+        "thumbnail": "https://i.ebayimg.com/images/g/8I8AAeSwFLNqlr9m/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Home Collection Winford Giotto Dark Green Olive Velvet Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,050.47"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/314646831447",
+        "thumbnail": "https://i.ebayimg.com/images/g/nIcAAOSw2ntnrzs8/s-l500.webp",
+        "sponsored": false,
+        "title": "Modway Valour Performance Velvet Upholstered Tufted Sofa In Teal",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$582.25"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/800060173956",
+        "thumbnail": "https://i.ebayimg.com/images/g/GqsAAeSwUg1qEjsJ/s-l500.webp",
+        "sponsored": true,
+        "title": "Traditional Brown Velvet Damask Tufted Rolled Arm Sofa, Carved Wood Frame",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/365386088476",
+        "thumbnail": "https://i.ebayimg.com/images/g/yuIAAOSwqCNnp4dC/s-l500.webp",
+        "sponsored": true,
+        "title": "AnyBody Rib Velour Pull-On Tapered-Leg Pants - Women's Plus 2X - Deep Teal",
+        "subtitle": "AnyBody",
+        "condition": "New (Other)",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$12.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/197121186498",
+        "thumbnail": "https://i.ebayimg.com/images/g/UawAAeSwy4tqCUUB/s-l500.webp",
+        "sponsored": true,
+        "title": "Bowery Hill Velvet Blue Convertible Sofa Rectangular Multi-Position 76\" x 32\"...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$407.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/206550037436",
+        "thumbnail": "https://i.ebayimg.com/images/g/7dwAAeSwpCRqo~rD/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Tufted Velvet Sofa 87.4\" Light Grey Flared Arms 3-Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$826.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206548190435",
+        "thumbnail": "https://i.ebayimg.com/images/g/EsYAAeSwA-NqopV~/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Tufted Velvet Sofa 87.4\" Light Grey Flared Arm Couch",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$826.78"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/188727495078",
+        "thumbnail": "https://i.ebayimg.com/images/g/8ZMAAeSw-ABqbg5V/s-l500.webp",
+        "sponsored": false,
+        "title": "84\" Velvet Deep Channel Tufted Sofa with Back Cushions and Rolled Arms, Modern S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,167.84"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/800152888762",
+        "thumbnail": "https://i.ebayimg.com/images/g/hQwAAeSwA65qKNm2/s-l500.webp",
+        "sponsored": false,
+        "title": "Modern Beige Velvet Sofa 80.5\" Tufted Button Square Arm Couch w/Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$614.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/168187861932",
+        "thumbnail": "https://i.ebayimg.com/images/g/-aEAAeSwmsdpn7Ok/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Contemporary Sofa with Gold Base, Removable Cushions, Seats 3",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/188871232461",
+        "thumbnail": "https://i.ebayimg.com/images/g/njUAAeSwKVxqlrq9/s-l500.webp",
+        "sponsored": false,
+        "title": "Jennifer Taylor Home Mamba 28\" Patchwork Accent Chair Teal-Blue Purple Velvet &",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$776.86"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/237073875479",
+        "thumbnail": "https://i.ebayimg.com/images/g/jcsAAeSwXS5qrAvw/s-l500.webp",
+        "sponsored": false,
+        "title": "Armless Sofa in Light Camel Velvet, 38\" W x 30\" H x 30\" L",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.74"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/406224990787",
+        "thumbnail": "https://i.ebayimg.com/images/g/G5YAAeSwpAFozOlN/s-l500.webp",
+        "sponsored": false,
+        "title": "2-Seater Sofa Light Gray 55.1\" Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$287.21"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/226634023505",
+        "thumbnail": "https://i.ebayimg.com/images/g/E74AAeSwWABnyodW/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern / Contemporary Velvet Convertible Sofa in Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$325.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/406841476768",
+        "thumbnail": "https://i.ebayimg.com/images/g/4YcAAeSwkJNp3UMY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 2-Seater Dark Green Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$266.91"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/188727670403",
+        "thumbnail": "https://i.ebayimg.com/images/g/TsYAAeSwkOBqbg4K/s-l500.webp",
+        "sponsored": false,
+        "title": "84\" Velvet Deep Channel Tufted Sofa with Back Cushions and Rolled Arms, Modern S",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,280.15"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/198008333813",
+        "thumbnail": "https://i.ebayimg.com/images/g/QJUAAeSwt25qVb3i/s-l500.webp",
+        "sponsored": false,
+        "title": "Maklaine Curved Performance Velvet Stainless Steel Sofa in Teal",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,773.38"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/117150042523",
+        "thumbnail": "https://i.ebayimg.com/images/g/z4EAAeSwf8Fp47yw/s-l500.webp",
+        "sponsored": true,
+        "title": "Luxury 84\" tufted Velvet Sofa. Teal. custom made",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$850.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/198432640165",
+        "thumbnail": "https://i.ebayimg.com/images/g/0oIAAeSwGN5qMfCH/s-l500.webp",
+        "sponsored": true,
+        "title": "Gray Velvet Traditional Sofa w/ Pad Arms Seats 4 58\"W x 35\"L x 37\"H",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$700.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/226917957079",
+        "thumbnail": "https://i.ebayimg.com/images/g/FBgAAeSwBe1qD91v/s-l500.webp",
+        "sponsored": true,
+        "title": "Pemberley Row Velvet Gray Sofa Button-Tufted 85\"W x 34\"D x 33\"H",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$589.19"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/405292844678",
+        "thumbnail": "https://i.ebayimg.com/images/g/97gAAOSwTG5nEVmR/s-l500.webp",
+        "sponsored": true,
+        "title": "Blue Crushed Velvet Sofa Navy",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,000.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/306766967996",
+        "thumbnail": "https://i.ebayimg.com/images/g/2zAAAeSwWpdpkFc7/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa 3-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$341.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/336721636864",
+        "thumbnail": "https://i.ebayimg.com/images/g/-OEAAeSwf4Jqb0vx/s-l500.webp",
+        "sponsored": false,
+        "title": "Casey Tufted Back Olive Green Velvet Upholstered Sofa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,749.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/227511402042",
+        "thumbnail": "https://i.ebayimg.com/images/g/FcUAAeSwTMBqn5Bz/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Curved Velvet Stainless Steel Sofa in Teal Upholstery",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,792.01"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/188871314097",
+        "thumbnail": "https://i.ebayimg.com/images/g/eMIAAeSwhPJqlsAR/s-l500.webp",
+        "sponsored": false,
+        "title": "Raisa Velvet Upholstered Sofa in Navy Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$965.62"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/198628959866",
+        "thumbnail": "https://i.ebayimg.com/images/g/R3cAAeSwDWdqoOMK/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Modern Velvet Sofa in Dusty Rose with Walnut Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$572.71"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/800596000482",
+        "thumbnail": "https://i.ebayimg.com/images/g/LN0AAeSwGEZqlryL/s-l500.webp",
+        "sponsored": false,
+        "title": "Armless Velvet Sofa Green 29.92\"L x 38.18\"W x 31.10\"H",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$162.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/358590817644",
+        "thumbnail": "https://i.ebayimg.com/images/g/CrgAAeSwzRxqEhEk/s-l500.webp",
+        "sponsored": true,
+        "title": "Dolonm Modern Velvet 84 Inches Long Tufted Couch Upholstered Sofa - Used",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$200.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/128059575183",
+        "thumbnail": "https://i.ebayimg.com/images/g/zlkAAeSwVppqmW9T/s-l500.webp",
+        "sponsored": true,
+        "title": "41.3\"Upholstered Velvet Sofa w/Nailhead Trim and Rolled Armrests,Mid-Century M",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$421.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/406224299460",
+        "thumbnail": "https://i.ebayimg.com/images/g/39IAAeSwRzZozJcY/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa Set Dark Green Velvet, Foam, Wood, Plastic 2 Piece",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$453.23"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/406970124855",
+        "thumbnail": "https://i.ebayimg.com/images/g/9JEAAeSw8uFqJIH6/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 2-Seater Black Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$346.53"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/198399516389",
+        "thumbnail": "https://i.ebayimg.com/images/g/e5kAAeSw3ZZqIESz/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Velvet Tufted Sofa w/ Nailhead Trim Rolled Arms 68\"W Contemporary",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$150.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/227196415783",
+        "thumbnail": "https://i.ebayimg.com/images/g/DnIAAeSwNphn47El/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Contemporary Velvet Convertible Sofa in Army Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.06"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/358825217742",
+        "thumbnail": "https://i.ebayimg.com/images/g/evEAAeSwms5qX1YJ/s-l500.webp",
+        "sponsored": false,
+        "title": "Velvet Green Couch",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$250.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/406511143904",
+        "thumbnail": "https://i.ebayimg.com/images/g/bH4AAeSwiK9pV-26/s-l500.webp",
+        "sponsored": false,
+        "title": "3-Seater Sofa Dark Grey 180 cm Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$363.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/226729821042",
+        "thumbnail": "https://i.ebayimg.com/images/g/vncAAeSw8QJqVGy6/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Performance Velvet Sofa with Metal Leg in Sea Blue",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$725.71"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/158273191537",
+        "thumbnail": "https://i.ebayimg.com/images/g/2MsAAeSwB7Rqn869/s-l500.webp",
+        "sponsored": false,
+        "title": "Green Velvet Armless Sofa, 29.92\" L x 38.18\" W x 31.10\" H, 1 Seat",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$93.75"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/187720192703",
+        "thumbnail": "https://i.ebayimg.com/images/g/TLAAAOSwzktn7pbk/s-l500.webp",
+        "sponsored": false,
+        "title": "CAMEL COLORED TEXTURED VELVET SOFA STYLISH BRASS RING LEGS LIVING ROOM FURNITURE",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,099.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/334757476565",
+        "thumbnail": "https://i.ebayimg.com/images/g/6x0AAOSwMRhj9E3D/s-l500.webp",
+        "sponsored": false,
+        "title": "Black Velvet Couch/sofa, Adjustable, Gold Metal Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$849.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/128059968717",
+        "thumbnail": "https://i.ebayimg.com/images/g/H6IAAeSw3EVqmaa3/s-l500.webp",
+        "sponsored": false,
+        "title": "55 \"green velvet sofa,elegant w/convenient pockets,clever interpretation of the",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$528.40"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/406225036641",
+        "thumbnail": "https://i.ebayimg.com/images/g/lQIAAeSwwV9ozO-v/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 3-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$316.86"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/188871294740",
+        "thumbnail": "https://i.ebayimg.com/images/g/OUkAAeSwwTlqlr2u/s-l500.webp",
+        "sponsored": false,
+        "title": "Yara 90.6\" Beige Pleated Performance Velvet Sofa -",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$2,355.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/327367601852",
+        "thumbnail": "https://i.ebayimg.com/images/g/XQwAAeSwvd5qsNyj/s-l500.webp",
+        "sponsored": false,
+        "title": "Velvet Sofa Lilac 54\"",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$353.14"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/389988352165",
+        "thumbnail": "https://i.ebayimg.com/images/g/ogUAAeSwQdhp~KC6/s-l500.webp",
+        "sponsored": false,
+        "title": "Performance Velvet Sofa 75\" Wide, Burnt Orange, Reversible Cushions, Easy Clean",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,222.69"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/406919912393",
+        "thumbnail": "https://i.ebayimg.com/images/g/CjsAAeSw8K9qB1QD/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa 2-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$315.31"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/197056255711",
+        "thumbnail": "https://i.ebayimg.com/images/g/dNgAAeSw~mRqtfmI/s-l500.webp",
+        "sponsored": false,
+        "title": "Hybition Velvet Sofa Modern Couch with Button-Tufted Metal Legs Green",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$563.29"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/406225035992",
+        "thumbnail": "https://i.ebayimg.com/images/g/4ooAAeSwtoVozO-V/s-l500.webp",
+        "sponsored": false,
+        "title": "Sofa with Cushions 2-Seater Dark Gray Velvet",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$329.35"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/128059387638",
+        "thumbnail": "https://i.ebayimg.com/images/g/hPkAAeSwRUZqmVn0/s-l500.webp",
+        "sponsored": true,
+        "title": "41.3\"Upholstered Velvet Sofa w/Nailhead Trim and Rolled Armrests,Mid-Century Mo",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$421.60"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/317169065907",
+        "thumbnail": "https://i.ebayimg.com/images/g/b0oAAeSwIZhomomQ/s-l500.webp",
+        "sponsored": true,
+        "title": "Elegant Black Velvet Tufted Sofa with Nailhead Trim And 3 Tables",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$800.00"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 11072.091
+  }
+}

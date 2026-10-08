@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-09-18T21:06:04.281352+00:00",
+  "method": "Read-only browser inspection of both original listing URLs, visible descriptions and photos; compared with frozen ornate-sofa reference.",
+  "reference": "docs/experiments/feasibility-v1/photos/ornate-sofa.jpg",
+  "checks": [
+    {
+      "listing_id": "7952004554",
+      "url": "https://newyork.craigslist.org/brk/atq/7952004554.html",
+      "accessible": true,
+      "selected_area_confirmed": true,
+      "relevant": false,
+      "reason": "Mixed antiques listing includes plain black leather sofas. Their material, shape and style do not match the carved wooden frame and patterned upholstery in the reference.",
+      "redirect_hostname": "www.craigslist.org",
+      "redirect_path_shape": "/view/d/<slug>/<opaque-id>"
+    },
+    {
+      "listing_id": "7949332929",
+      "url": "https://newyork.craigslist.org/mnh/fuo/7949332929.html",
+      "accessible": true,
+      "selected_area_confirmed": true,
+      "relevant": false,
+      "reason": "White sculptural lounge chair, not a sofa matching the reference. Description includes a long furniture keyword list.",
+      "redirect_hostname": "www.craigslist.org",
+      "redirect_path_shape": "/view/d/<slug>/<opaque-id>"
+    }
+  ],
+  "relevant_candidates": 0,
+  "availability": "Pages opened; seller availability was not independently confirmed."
+}

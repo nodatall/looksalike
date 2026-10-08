@@ -1,0 +1,2749 @@
+{
+  "case_id": "dining-chair",
+  "manifest_sha256": "793070ebfed70c29023b910d9cd206029671c7c5c680b9e0900b320e2c9b18f8",
+  "outcome": {
+    "status": "success",
+    "parameters": [
+      {
+        "photo_sha256": "c1d7126943304e2b1ea7a9f6e0b2d5b3c256359cd28ed8b0af51a393683452da"
+      },
+      {
+        "engine": "google_lens",
+        "type": "all",
+        "country": "us",
+        "hl": "en"
+      },
+      {
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03"
+      },
+      {
+        "engine": "ebay",
+        "_nkw": "light wood turned legs chair",
+        "ebay_domain": "ebay.com",
+        "_ipg": "25"
+      }
+    ],
+    "stages": [
+      {
+        "stage": "upload",
+        "status": "success",
+        "elapsed_ms": 1422.541
+      },
+      {
+        "stage": "lens",
+        "status": "success",
+        "elapsed_ms": 4224.467
+      },
+      {
+        "stage": "vision",
+        "status": "ready",
+        "elapsed_ms": 8045.673
+      },
+      {
+        "stage": "ebay",
+        "status": "success",
+        "elapsed_ms": 19946.539
+      }
+    ],
+    "candidates": [
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/392723353445",
+        "thumbnail": "https://i.ebayimg.com/images/g/9REAAOSwlD5eaTpI/s-l500.webp",
+        "sponsored": true,
+        "title": "Reclaimed Gray Gabrian Fabric Padded Seat & Back Dining Armless Chair Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$295.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/198150783542",
+        "thumbnail": "https://i.ebayimg.com/images/g/85UAAeSwc~ppzLvL/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 4 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$237.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/800623956903",
+        "thumbnail": "https://i.ebayimg.com/images/g/bK0AAeSwXr1qnh6w/s-l500.webp",
+        "sponsored": false,
+        "title": "Blanchett Upholstered Bobbin Accent Chair White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$414.32"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/168015006758",
+        "thumbnail": "https://i.ebayimg.com/images/g/WOcAAeSwZ3lpRR8S/s-l500.webp",
+        "sponsored": true,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/317240113016",
+        "thumbnail": "https://i.ebayimg.com/images/g/nn4AAeSw1e5ouTSm/s-l500.webp",
+        "sponsored": true,
+        "title": "Glider Rocking Chair w/Adjustable Footrest, Teddy Fleece/PU, Wood Leg Options",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$284.99",
+          "to": "$303.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/376045260402",
+        "thumbnail": "https://i.ebayimg.com/images/g/AjwAAeSwtwVqjS~~/s-l500.webp",
+        "sponsored": true,
+        "title": "Air Leather Manual Recliner with Swivel Wood Base, Cream White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$244.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/358069714953",
+        "thumbnail": "https://i.ebayimg.com/images/g/fwwAAeSwAF5pVOP4/s-l500.webp",
+        "sponsored": false,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/145232090532",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZwAAAOSwJwNk0e-5/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Bandelier Arm Chair, Reduced Price 2172720365 FOX1003A",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$223.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/286721172528",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "KA Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/205627462756",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "AS Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/144830930592",
+        "thumbnail": "https://i.ebayimg.com/images/g/TSYAAOSw0uBjhKGd/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Bandelier Arm Chair, Reduced Price 2172713602 FOX1003A",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$309.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/224958519099",
+        "thumbnail": "https://i.ebayimg.com/images/g/GowAAeSwIjBoLqn2/s-l500.webp",
+        "sponsored": true,
+        "title": "Baxton Studio Lucie Wood Dining Chair in Sand and Espresso - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$287.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/144394390825",
+        "thumbnail": "https://i.ebayimg.com/images/g/J8oAAeSwnUZp-sTh/s-l500.webp",
+        "sponsored": true,
+        "title": "Linon Avalon Oak Wood Oval Back Set of Two Upholstered Dining Chairs in Natural",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$523.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/278194131670",
+        "thumbnail": "https://i.ebayimg.com/images/g/DAgAAeSwhZ9qW3ZU/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Gold Metal Legs, Vanity Chair for Makeup Room, Upholste",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$197.67",
+          "to": "$215.37"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/188871224101",
+        "thumbnail": "https://i.ebayimg.com/images/g/l6cAAeSwL3Vqlr~S/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Couture Collection Dilan White and Light Brown Leather Safari Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,114.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/128007821503",
+        "thumbnail": "https://i.ebayimg.com/images/g/WxAAAeSwzF9qu7sj/s-l500.webp",
+        "sponsored": false,
+        "title": "Cassie Antique White Wood Side Chairs Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/188727483101",
+        "thumbnail": "https://i.ebayimg.com/images/g/Vo0AAeSwUFpqbg21/s-l500.webp",
+        "sponsored": false,
+        "title": "SAFAVIEH Home Collection Hazina Light Blue Geometric Ogee Club Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$814.64"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/188870704185",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wh4AAeSwSUNqlr3M/s-l500.webp",
+        "sponsored": false,
+        "title": "Tahoe Acacia Wood Outdoor Patio Chair in Natural Light Gray with Weather-Resista",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$633.35"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198365634484",
+        "thumbnail": "https://i.ebayimg.com/images/g/cgYAAeSwcWdqDBZn/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Set of 2 Linen Dining Chairs with Turned Legs in Light Gray & White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$764.81"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/356603310321",
+        "thumbnail": "https://i.ebayimg.com/images/g/gUcAAeSwHtppH-14/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Manual Recliner with Swivel Wood Base, White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$244.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/287257211704",
+        "thumbnail": "https://i.ebayimg.com/images/g/yukAAeSw4itp1AQS/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Wood Cane Seat Side Chair Farmhouse",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/198365634485",
+        "thumbnail": "https://i.ebayimg.com/images/g/ctoAAeSwv2hqDBXL/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row 2Pc Linen Dining Armchairs with Turned Legs in Light Gray & White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$732.94"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318807121494",
+        "thumbnail": "https://i.ebayimg.com/images/g/E10AAeSwqn9qlje8/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Dining Chairs Set of 2, Solid Rubberwood Kitchen & Dining Room Chairs, Fa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$225.96",
+          "to": "$596.08"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/198634790729",
+        "thumbnail": "https://i.ebayimg.com/images/g/sDAAAeSw~dBqpEha/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Transitional Wooden Fabric Arm Chair in Sea Oat Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$440.18"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/227112135857",
+        "thumbnail": "https://i.ebayimg.com/images/g/59EAAeSwwZhp2dBb/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Wood Dining Arm Chair with Upholstered Seat and Back (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$755.07"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/277850193112",
+        "thumbnail": "https://i.ebayimg.com/images/g/hSwAAeSwT1BpyzAF/s-l500.webp",
+        "sponsored": false,
+        "title": "Pioneer Woman Willa Rounded Back Armless Dining Chair Heirloom Wheat (Set Of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$298.93"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/407225266003",
+        "thumbnail": "https://i.ebayimg.com/images/g/16AAAeSwu7ZqkpqJ/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Vintage Oak Windsor style Dining Chairs, Armless Spindle Back with Turned Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$225.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/166111256649",
+        "thumbnail": "https://i.ebayimg.com/images/g/ouoAAOSw1bZjaoOv/s-l500.webp",
+        "sponsored": false,
+        "title": "English 19th Century Set of 2 Oak Windsor Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,175.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/316015983407",
+        "thumbnail": "https://i.ebayimg.com/images/g/b-MAAOSwLrhnTDKD/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak armrests single lounge chair oak soft cushion indoor lounge chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/398006501323",
+        "thumbnail": "https://i.ebayimg.com/images/g/6-EAAeSwUHJqGrDi/s-l500.webp",
+        "sponsored": true,
+        "title": "Kids' Recliners，Rocker and Stationary Options, Sensory Rocking Chair for Kids &",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$162.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "first_six": [
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/392723353445",
+        "thumbnail": "https://i.ebayimg.com/images/g/9REAAOSwlD5eaTpI/s-l500.webp",
+        "sponsored": true,
+        "title": "Reclaimed Gray Gabrian Fabric Padded Seat & Back Dining Armless Chair Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$295.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/198150783542",
+        "thumbnail": "https://i.ebayimg.com/images/g/85UAAeSwc~ppzLvL/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 4 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$237.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/800623956903",
+        "thumbnail": "https://i.ebayimg.com/images/g/bK0AAeSwXr1qnh6w/s-l500.webp",
+        "sponsored": false,
+        "title": "Blanchett Upholstered Bobbin Accent Chair White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$414.32"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/168015006758",
+        "thumbnail": "https://i.ebayimg.com/images/g/WOcAAeSwZ3lpRR8S/s-l500.webp",
+        "sponsored": true,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "provider_metadata": {
+      "lens": {
+        "id": "6abc4d513f79f59509a62851",
+        "status": "Success",
+        "created_at": "2026-09-29 23:44:17 UTC",
+        "processed_at": "2026-09-29 23:44:17 UTC",
+        "total_time_taken": 3.93
+      },
+      "ebay": {
+        "id": "6abc4d5d49579a882a141cf5",
+        "status": "Success",
+        "created_at": "2026-09-29 23:44:29 UTC",
+        "processed_at": "2026-09-29 23:44:29 UTC",
+        "total_time_taken": 19.62
+      }
+    },
+    "lens_interpretation": "chair",
+    "query_preparation": {
+      "status": "ready",
+      "category": "chair",
+      "source": "vision",
+      "metadata": {
+        "lens_version": "furniture-query-v3",
+        "trigger_version": "photo-fallback-v2",
+        "phrase_version": "photo-phrase-v1",
+        "lens_category": "chair",
+        "fallback_reason": "bare_category",
+        "provider": "venice",
+        "model": "qwen3-vl-235b-a22b",
+        "transport_version": "venice-chat-v1",
+        "prompt_version": "furniture-photo-v2",
+        "schema_version": "furniture-photo-schema-v2",
+        "reserved_usd": "0.03",
+        "usage": {
+          "input_tokens": 1837,
+          "output_tokens": 34,
+          "total_tokens": 1871
+        },
+        "duration_ms": 8079,
+        "category": "chair",
+        "traits": [
+          "light wood",
+          "turned legs"
+        ]
+      }
+    },
+    "vision_diagnostics": {
+      "http_status": 200,
+      "model": "qwen3-vl-235b-a22b",
+      "finish_reason": "stop"
+    },
+    "interpretation": "light wood turned legs chair",
+    "category": "chair",
+    "query_source": "vision",
+    "excerpts": {
+      "related_queries": [],
+      "visual_match_titles": [
+        "Restoration & Finishing — Kramer Furniture and Cabinet ...",
+        "Modern Chairs, Back Style: Tight Back at ₹ 1000 in Noida ...",
+        "Understanding and using pronouns: 'he' and 'she' Share books ...",
+        "Connie Clark, Author at Collegeville Institute",
+        "Blog 3 — Husick Psychology",
+        "Brown wooden chair on grass covered plain - Free Photo on ...",
+        "Gestalt Therapy and the Empty Chair Technique – Musings in ...",
+        "Case Studies | openLCA.org"
+      ]
+    },
+    "ebay_parameters_echo": {
+      "engine": "ebay",
+      "_nkw": "light wood turned legs chair",
+      "ebay_domain": "ebay.com",
+      "_ipg": "25"
+    },
+    "returned_items": 60,
+    "counts_before_title_filter": {
+      "accepted": 58,
+      "not_explicit_us": 2
+    },
+    "title_filter_counts": {
+      "accessory_or_part": 18,
+      "mixed_categories": 2,
+      "wrong_category": 6,
+      "accepted": 32
+    },
+    "listing_filter_version": "ebay-title-filter-v2",
+    "provider_rows": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": true,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/392723353445",
+        "thumbnail": "https://i.ebayimg.com/images/g/9REAAOSwlD5eaTpI/s-l500.webp",
+        "sponsored": true,
+        "title": "Reclaimed Gray Gabrian Fabric Padded Seat & Back Dining Armless Chair Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$295.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/317911498667",
+        "thumbnail": "https://i.ebayimg.com/images/g/MjEAAeSwVptpmxkN/s-l500.webp",
+        "sponsored": false,
+        "title": "6\" Tall Solid Wood Furniture Legs, Turned Feet - Pack Of 4 Light Honey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$27.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/366692303401",
+        "thumbnail": "https://i.ebayimg.com/images/g/0LgAAeSwy3xoiTE3/s-l500.webp",
+        "sponsored": false,
+        "title": "6 Light Oak Turned Bun Style Replacement Furniture Leg Sofa Chair Feet Round",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$21.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/285932666533",
+        "thumbnail": "https://i.ebayimg.com/images/g/s1EAAOSwM0JmfQsy/s-l500.webp",
+        "sponsored": false,
+        "title": "2X Luxury Italian Leather Dining Chairs Antioxidant Metal Legs Restaurant Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.92"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/187520405206",
+        "thumbnail": "https://i.ebayimg.com/images/g/jksAAeSw4iBorghH/s-l500.webp",
+        "sponsored": false,
+        "title": "Furniture Legs 4\" Unfinished Solid Wood Bun Feet Set of Four Sofa Chair Ottoman",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$28.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/198150783542",
+        "thumbnail": "https://i.ebayimg.com/images/g/85UAAeSwc~ppzLvL/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 4 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$237.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/800623956903",
+        "thumbnail": "https://i.ebayimg.com/images/g/bK0AAeSwXr1qnh6w/s-l500.webp",
+        "sponsored": false,
+        "title": "Blanchett Upholstered Bobbin Accent Chair White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$414.32"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/256005041681",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bh0AAeSwYFFo3CRP/s-l500.webp",
+        "sponsored": false,
+        "title": "Decorative Wood Turned Leg With No Finish for Chairs and Sofas Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$33.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 13,
+        "url": "https://www.ebay.com/itm/306904787296",
+        "thumbnail": "https://i.ebayimg.com/images/g/9moAAeSwX9xp723z/s-l500.webp",
+        "sponsored": false,
+        "title": "Solid Wood Spindle Back Dining Chair - Traditional Turned Legs - Ships from EU",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in Portugal",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$100.00"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/168015006758",
+        "thumbnail": "https://i.ebayimg.com/images/g/WOcAAeSwZ3lpRR8S/s-l500.webp",
+        "sponsored": true,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/317240113016",
+        "thumbnail": "https://i.ebayimg.com/images/g/nn4AAeSw1e5ouTSm/s-l500.webp",
+        "sponsored": true,
+        "title": "Glider Rocking Chair w/Adjustable Footrest, Teddy Fleece/PU, Wood Leg Options",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$284.99",
+          "to": "$303.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/376045260402",
+        "thumbnail": "https://i.ebayimg.com/images/g/AjwAAeSwtwVqjS~~/s-l500.webp",
+        "sponsored": true,
+        "title": "Air Leather Manual Recliner with Swivel Wood Base, Cream White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$244.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 17,
+        "url": "https://www.ebay.com/itm/326696460285",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "PA Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in China",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "not_explicit_us"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206500678740",
+        "thumbnail": "https://i.ebayimg.com/images/g/CiQAAeSw-95qhGz7/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Modern Dining Chairs Set of 2, White Fabric & Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$203.10"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/358069714953",
+        "thumbnail": "https://i.ebayimg.com/images/g/fwwAAeSwAF5pVOP4/s-l500.webp",
+        "sponsored": false,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/145232090532",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZwAAAOSwJwNk0e-5/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Bandelier Arm Chair, Reduced Price 2172720365 FOX1003A",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$223.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/144167373606",
+        "thumbnail": "https://i.ebayimg.com/images/g/vqwAAOSweIphI0I2/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Abbott parsons kitchen dining chairs beige fabric and off-white legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$145.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/227349733338",
+        "thumbnail": "https://i.ebayimg.com/images/g/wykAAeSwXCBqDBZn/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Dining Side Chair Set of 2 Turned Legs in Light Brown Solid Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$383.73"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/366013314745",
+        "thumbnail": "https://i.ebayimg.com/images/g/q1gAAeSwRJ9pIsZR/s-l500.webp",
+        "sponsored": false,
+        "title": "Saddle Cushion Vanity Stool Chair, Foot Rest Stool with Solid Wood Legs, Mode...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$51.44"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/286721172528",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "KA Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/205627462756",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "AS Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/144830930592",
+        "thumbnail": "https://i.ebayimg.com/images/g/TSYAAOSw0uBjhKGd/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Bandelier Arm Chair, Reduced Price 2172713602 FOX1003A",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$309.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/334304153636",
+        "thumbnail": "https://i.ebayimg.com/images/g/rvkAAOSwQv1iXfES/s-l500.webp",
+        "sponsored": false,
+        "title": "Shabby Chic Wood Sofa Couch Chair Furniture Leg 5\" Tall 4 Legs light distress",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/395401024914",
+        "thumbnail": "https://i.ebayimg.com/images/g/xT0AAeSw~SVoiblF/s-l500.webp",
+        "sponsored": false,
+        "title": "2PCS Kitchen Dining Chairs Upholstered Thick Leather Metal Legs for Dining Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.93"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/306879629064",
+        "thumbnail": "https://i.ebayimg.com/images/g/K9UAAeSwzp1p3gYF/s-l500.webp",
+        "sponsored": true,
+        "title": "Set Of 4 Furniture Feet Turned Legs Unfinished",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$32.89"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/224958519099",
+        "thumbnail": "https://i.ebayimg.com/images/g/GowAAeSwIjBoLqn2/s-l500.webp",
+        "sponsored": true,
+        "title": "Baxton Studio Lucie Wood Dining Chair in Sand and Espresso - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$287.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/144394390825",
+        "thumbnail": "https://i.ebayimg.com/images/g/J8oAAeSwnUZp-sTh/s-l500.webp",
+        "sponsored": true,
+        "title": "Linon Avalon Oak Wood Oval Back Set of Two Upholstered Dining Chairs in Natural",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$523.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/278194131670",
+        "thumbnail": "https://i.ebayimg.com/images/g/DAgAAeSwhZ9qW3ZU/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Gold Metal Legs, Vanity Chair for Makeup Room, Upholste",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$197.67",
+          "to": "$215.37"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/197782152342",
+        "thumbnail": "https://i.ebayimg.com/images/g/O2UAAeSwoO5o8xn8/s-l500.webp",
+        "sponsored": false,
+        "title": "Cherie Dining Side Chair Set of 2-Turned Legs-Light Brown Solid Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$339.39"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/188871224101",
+        "thumbnail": "https://i.ebayimg.com/images/g/l6cAAeSwL3Vqlr~S/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Couture Collection Dilan White and Light Brown Leather Safari Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,114.48"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/128007821503",
+        "thumbnail": "https://i.ebayimg.com/images/g/WxAAAeSwzF9qu7sj/s-l500.webp",
+        "sponsored": false,
+        "title": "Cassie Antique White Wood Side Chairs Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.95"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/188727483101",
+        "thumbnail": "https://i.ebayimg.com/images/g/Vo0AAeSwUFpqbg21/s-l500.webp",
+        "sponsored": false,
+        "title": "SAFAVIEH Home Collection Hazina Light Blue Geometric Ogee Club Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$814.64"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/188870704185",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wh4AAeSwSUNqlr3M/s-l500.webp",
+        "sponsored": false,
+        "title": "Tahoe Acacia Wood Outdoor Patio Chair in Natural Light Gray with Weather-Resista",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$633.35"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198365634484",
+        "thumbnail": "https://i.ebayimg.com/images/g/cgYAAeSwcWdqDBZn/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Set of 2 Linen Dining Chairs with Turned Legs in Light Gray & White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$764.81"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/356603310321",
+        "thumbnail": "https://i.ebayimg.com/images/g/gUcAAeSwHtppH-14/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Manual Recliner with Swivel Wood Base, White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$244.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/287257211704",
+        "thumbnail": "https://i.ebayimg.com/images/g/yukAAeSw4itp1AQS/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Wood Cane Seat Side Chair Farmhouse",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/198365634485",
+        "thumbnail": "https://i.ebayimg.com/images/g/ctoAAeSwv2hqDBXL/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row 2Pc Linen Dining Armchairs with Turned Legs in Light Gray & White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$732.94"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/173847092425",
+        "thumbnail": "https://i.ebayimg.com/images/g/nmQAAMXQ-BZQ-7Qu/s-l500.webp",
+        "sponsored": false,
+        "title": "French Painted Living Room Side Desk Chair 2361",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$245.00"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318807121494",
+        "thumbnail": "https://i.ebayimg.com/images/g/E10AAeSwqn9qlje8/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Dining Chairs Set of 2, Solid Rubberwood Kitchen & Dining Room Chairs, Fa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$225.96",
+          "to": "$596.08"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/198634790729",
+        "thumbnail": "https://i.ebayimg.com/images/g/sDAAAeSw~dBqpEha/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Transitional Wooden Fabric Arm Chair in Sea Oat Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$440.18"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/227112135857",
+        "thumbnail": "https://i.ebayimg.com/images/g/59EAAeSwwZhp2dBb/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Wood Dining Arm Chair with Upholstered Seat and Back (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$755.07"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/277850193112",
+        "thumbnail": "https://i.ebayimg.com/images/g/hSwAAeSwT1BpyzAF/s-l500.webp",
+        "sponsored": false,
+        "title": "Pioneer Woman Willa Rounded Back Armless Dining Chair Heirloom Wheat (Set Of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$298.93"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/407225266003",
+        "thumbnail": "https://i.ebayimg.com/images/g/16AAAeSwu7ZqkpqJ/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Vintage Oak Windsor style Dining Chairs, Armless Spindle Back with Turned Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$225.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/166111256649",
+        "thumbnail": "https://i.ebayimg.com/images/g/ouoAAOSw1bZjaoOv/s-l500.webp",
+        "sponsored": false,
+        "title": "English 19th Century Set of 2 Oak Windsor Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,175.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/227431380029",
+        "thumbnail": "https://i.ebayimg.com/images/g/E2QAAOSwkXdnNps8/s-l500.webp",
+        "sponsored": false,
+        "title": "6\" Furniture Legs Bowling Pin Light Wood Ash Beechwood Set Of 4",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$14.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/332048226002",
+        "thumbnail": "https://i.ebayimg.com/images/g/pioAAOSwwfFcBMS5/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Sofa Couch Chair Furniture Leg Feet, 5\" Tall 4 Legs Chic light distress sty",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$20.00"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/188727516984",
+        "thumbnail": "https://i.ebayimg.com/images/g/z3wAAeSwrndqbhBH/s-l500.webp",
+        "sponsored": false,
+        "title": "SAFAVIEH Home Collection Attwell Cream Boucle/Natural Solid Wood Legs Accent Cha",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$797.40"
+        },
+        "filter": "accepted",
+        "title_filter": "accessory_or_part"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/398216388224",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/316015983407",
+        "thumbnail": "https://i.ebayimg.com/images/g/b-MAAOSwLrhnTDKD/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak armrests single lounge chair oak soft cushion indoor lounge chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/398220132823",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/366566451230",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407106180662",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/358849972385",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/405501336066",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted",
+        "title_filter": "wrong_category"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/318893142344",
+        "thumbnail": "https://i.ebayimg.com/images/g/UccAAeSwollqr09~/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Bernhardt Wood Dining Set: Table, 2 Leaves, 8 Chairs, China Cabinet",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,300.00"
+        },
+        "filter": "accepted",
+        "title_filter": "mixed_categories"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/398006501323",
+        "thumbnail": "https://i.ebayimg.com/images/g/6-EAAeSwUHJqGrDi/s-l500.webp",
+        "sponsored": true,
+        "title": "Kids' Recliners，Rocker and Stationary Options, Sensory Rocking Chair for Kids &",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$162.99"
+        },
+        "filter": "accepted",
+        "title_filter": "accepted"
+      }
+    ],
+    "eligible_before_title_filter": [
+      {
+        "position": 1,
+        "url": "https://www.ebay.com/itm/257592391004",
+        "thumbnail": "https://i.ebayimg.com/images/g/qfMAAOSwb5pmRELv/s-l500.webp",
+        "sponsored": false,
+        "title": "NEW - SET OF 4 - Wood Turned Legs Light Tan Satin Finish Chair Sofa Ottoman 8\" T",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$79.90"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 2,
+        "url": "https://www.ebay.com/itm/164883687061",
+        "thumbnail": "https://i.ebayimg.com/images/g/mv4AAOSw5htgrUgd/s-l500.webp",
+        "sponsored": true,
+        "title": "Light Pecan Finish Solid Wood Bun Furniture Leg|332|2 3/4\"H 6\"W Sofa Chair 4Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$29.97"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 3,
+        "url": "https://www.ebay.com/itm/392723353445",
+        "thumbnail": "https://i.ebayimg.com/images/g/9REAAOSwlD5eaTpI/s-l500.webp",
+        "sponsored": true,
+        "title": "Reclaimed Gray Gabrian Fabric Padded Seat & Back Dining Armless Chair Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$295.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 4,
+        "url": "https://www.ebay.com/itm/317911498667",
+        "thumbnail": "https://i.ebayimg.com/images/g/MjEAAeSwVptpmxkN/s-l500.webp",
+        "sponsored": false,
+        "title": "6\" Tall Solid Wood Furniture Legs, Turned Feet - Pack Of 4 Light Honey",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$27.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 5,
+        "url": "https://www.ebay.com/itm/366692303401",
+        "thumbnail": "https://i.ebayimg.com/images/g/0LgAAeSwy3xoiTE3/s-l500.webp",
+        "sponsored": false,
+        "title": "6 Light Oak Turned Bun Style Replacement Furniture Leg Sofa Chair Feet Round",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$21.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 6,
+        "url": "https://www.ebay.com/itm/206455223674",
+        "thumbnail": "https://i.ebayimg.com/images/g/tjgAAeSwVktqbK33/s-l500.webp",
+        "sponsored": false,
+        "title": "Beige Accent Chair with Turned Legs and Brown Oak Finish",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$469.68"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 7,
+        "url": "https://www.ebay.com/itm/285932666533",
+        "thumbnail": "https://i.ebayimg.com/images/g/s1EAAOSwM0JmfQsy/s-l500.webp",
+        "sponsored": false,
+        "title": "2X Luxury Italian Leather Dining Chairs Antioxidant Metal Legs Restaurant Chairs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.92"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 8,
+        "url": "https://www.ebay.com/itm/187520405206",
+        "thumbnail": "https://i.ebayimg.com/images/g/jksAAeSw4iBorghH/s-l500.webp",
+        "sponsored": false,
+        "title": "Furniture Legs 4\" Unfinished Solid Wood Bun Feet Set of Four Sofa Chair Ottoman",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$28.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 9,
+        "url": "https://www.ebay.com/itm/198150783503",
+        "thumbnail": "https://i.ebayimg.com/images/g/lEoAAeSwxGxpzLsc/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 2 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$124.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 10,
+        "url": "https://www.ebay.com/itm/198150783542",
+        "thumbnail": "https://i.ebayimg.com/images/g/85UAAeSwc~ppzLvL/s-l500.webp",
+        "sponsored": false,
+        "title": "Windsor Dining Chairs Set of 4 w/Turned Legs Curved Spindle Back for Living Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$237.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 11,
+        "url": "https://www.ebay.com/itm/800623956903",
+        "thumbnail": "https://i.ebayimg.com/images/g/bK0AAeSwXr1qnh6w/s-l500.webp",
+        "sponsored": false,
+        "title": "Blanchett Upholstered Bobbin Accent Chair White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$414.32"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 12,
+        "url": "https://www.ebay.com/itm/256005041681",
+        "thumbnail": "https://i.ebayimg.com/images/g/Bh0AAeSwYFFo3CRP/s-l500.webp",
+        "sponsored": false,
+        "title": "Decorative Wood Turned Leg With No Finish for Chairs and Sofas Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$33.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 14,
+        "url": "https://www.ebay.com/itm/168015006758",
+        "thumbnail": "https://i.ebayimg.com/images/g/WOcAAeSwZ3lpRR8S/s-l500.webp",
+        "sponsored": true,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 15,
+        "url": "https://www.ebay.com/itm/317240113016",
+        "thumbnail": "https://i.ebayimg.com/images/g/nn4AAeSw1e5ouTSm/s-l500.webp",
+        "sponsored": true,
+        "title": "Glider Rocking Chair w/Adjustable Footrest, Teddy Fleece/PU, Wood Leg Options",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$284.99",
+          "to": "$303.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 16,
+        "url": "https://www.ebay.com/itm/376045260402",
+        "thumbnail": "https://i.ebayimg.com/images/g/AjwAAeSwtwVqjS~~/s-l500.webp",
+        "sponsored": true,
+        "title": "Air Leather Manual Recliner with Swivel Wood Base, Cream White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$244.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 18,
+        "url": "https://www.ebay.com/itm/206500678740",
+        "thumbnail": "https://i.ebayimg.com/images/g/CiQAAeSw-95qhGz7/s-l500.webp",
+        "sponsored": false,
+        "title": "Mid Century Modern Dining Chairs Set of 2, White Fabric & Wood Legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$203.10"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 19,
+        "url": "https://www.ebay.com/itm/358069714953",
+        "thumbnail": "https://i.ebayimg.com/images/g/fwwAAeSwAF5pVOP4/s-l500.webp",
+        "sponsored": false,
+        "title": "Weathered Oak Turned Leg Dining Chair Set of 2, Rustic Farmhouse Kitchen Side",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$229.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 20,
+        "url": "https://www.ebay.com/itm/145232090532",
+        "thumbnail": "https://i.ebayimg.com/images/g/ZwAAAOSwJwNk0e-5/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Bandelier Arm Chair, Reduced Price 2172720365 FOX1003A",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$223.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 21,
+        "url": "https://www.ebay.com/itm/144167373606",
+        "thumbnail": "https://i.ebayimg.com/images/g/vqwAAOSweIphI0I2/s-l500.webp",
+        "sponsored": false,
+        "title": "Set of 2 Abbott parsons kitchen dining chairs beige fabric and off-white legs",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$145.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 22,
+        "url": "https://www.ebay.com/itm/227349733338",
+        "thumbnail": "https://i.ebayimg.com/images/g/wykAAeSwXCBqDBZn/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Dining Side Chair Set of 2 Turned Legs in Light Brown Solid Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$383.73"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 23,
+        "url": "https://www.ebay.com/itm/366013314745",
+        "thumbnail": "https://i.ebayimg.com/images/g/q1gAAeSwRJ9pIsZR/s-l500.webp",
+        "sponsored": false,
+        "title": "Saddle Cushion Vanity Stool Chair, Foot Rest Stool with Solid Wood Legs, Mode...",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$51.44"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 24,
+        "url": "https://www.ebay.com/itm/286721172528",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "KA Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 25,
+        "url": "https://www.ebay.com/itm/205627462756",
+        "thumbnail": "https://i.ebayimg.com/images/g/kHkAAeSwnU1ofdnk/s-l500.webp",
+        "sponsored": false,
+        "title": "AS Upholstered Dining Chair with Turned Wood Legs Set of 2 LIGHT GREY",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$378.66"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 26,
+        "url": "https://www.ebay.com/itm/144830930592",
+        "thumbnail": "https://i.ebayimg.com/images/g/TSYAAOSw0uBjhKGd/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Bandelier Arm Chair, Reduced Price 2172713602 FOX1003A",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$309.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 27,
+        "url": "https://www.ebay.com/itm/334304153636",
+        "thumbnail": "https://i.ebayimg.com/images/g/rvkAAOSwQv1iXfES/s-l500.webp",
+        "sponsored": false,
+        "title": "Shabby Chic Wood Sofa Couch Chair Furniture Leg 5\" Tall 4 Legs light distress",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$22.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 28,
+        "url": "https://www.ebay.com/itm/395401024914",
+        "thumbnail": "https://i.ebayimg.com/images/g/xT0AAeSw~SVoiblF/s-l500.webp",
+        "sponsored": false,
+        "title": "2PCS Kitchen Dining Chairs Upholstered Thick Leather Metal Legs for Dining Room",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.93"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 29,
+        "url": "https://www.ebay.com/itm/306879629064",
+        "thumbnail": "https://i.ebayimg.com/images/g/K9UAAeSwzp1p3gYF/s-l500.webp",
+        "sponsored": true,
+        "title": "Set Of 4 Furniture Feet Turned Legs Unfinished",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$32.89"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 30,
+        "url": "https://www.ebay.com/itm/224958519099",
+        "thumbnail": "https://i.ebayimg.com/images/g/GowAAeSwIjBoLqn2/s-l500.webp",
+        "sponsored": true,
+        "title": "Baxton Studio Lucie Wood Dining Chair in Sand and Espresso - Set of 4",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$287.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 31,
+        "url": "https://www.ebay.com/itm/144394390825",
+        "thumbnail": "https://i.ebayimg.com/images/g/J8oAAeSwnUZp-sTh/s-l500.webp",
+        "sponsored": true,
+        "title": "Linon Avalon Oak Wood Oval Back Set of Two Upholstered Dining Chairs in Natural",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$523.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 32,
+        "url": "https://www.ebay.com/itm/278194131670",
+        "thumbnail": "https://i.ebayimg.com/images/g/DAgAAeSwhZ9qW3ZU/s-l500.webp",
+        "sponsored": true,
+        "title": "Velvet Accent Chair with Gold Metal Legs, Vanity Chair for Makeup Room, Upholste",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$197.67",
+          "to": "$215.37"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 33,
+        "url": "https://www.ebay.com/itm/197782152342",
+        "thumbnail": "https://i.ebayimg.com/images/g/O2UAAeSwoO5o8xn8/s-l500.webp",
+        "sponsored": false,
+        "title": "Cherie Dining Side Chair Set of 2-Turned Legs-Light Brown Solid Wood",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$339.39"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 34,
+        "url": "https://www.ebay.com/itm/188871224101",
+        "thumbnail": "https://i.ebayimg.com/images/g/l6cAAeSwL3Vqlr~S/s-l500.webp",
+        "sponsored": false,
+        "title": "Safavieh Couture Collection Dilan White and Light Brown Leather Safari Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$1,114.48"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 35,
+        "url": "https://www.ebay.com/itm/128007821503",
+        "thumbnail": "https://i.ebayimg.com/images/g/WxAAAeSwzF9qu7sj/s-l500.webp",
+        "sponsored": false,
+        "title": "Cassie Antique White Wood Side Chairs Set of 2",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$319.95"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 36,
+        "url": "https://www.ebay.com/itm/188727483101",
+        "thumbnail": "https://i.ebayimg.com/images/g/Vo0AAeSwUFpqbg21/s-l500.webp",
+        "sponsored": false,
+        "title": "SAFAVIEH Home Collection Hazina Light Blue Geometric Ogee Club Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$814.64"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 37,
+        "url": "https://www.ebay.com/itm/188870704185",
+        "thumbnail": "https://i.ebayimg.com/images/g/Wh4AAeSwSUNqlr3M/s-l500.webp",
+        "sponsored": false,
+        "title": "Tahoe Acacia Wood Outdoor Patio Chair in Natural Light Gray with Weather-Resista",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$633.35"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 38,
+        "url": "https://www.ebay.com/itm/198365634484",
+        "thumbnail": "https://i.ebayimg.com/images/g/cgYAAeSwcWdqDBZn/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row Set of 2 Linen Dining Chairs with Turned Legs in Light Gray & White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$764.81"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 39,
+        "url": "https://www.ebay.com/itm/356603310321",
+        "thumbnail": "https://i.ebayimg.com/images/g/gUcAAeSwHtppH-14/s-l500.webp",
+        "sponsored": true,
+        "title": "Faux Leather Manual Recliner with Swivel Wood Base, White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$244.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 40,
+        "url": "https://www.ebay.com/itm/287257211704",
+        "thumbnail": "https://i.ebayimg.com/images/g/yukAAeSw4itp1AQS/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Wood Cane Seat Side Chair Farmhouse",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$15.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 41,
+        "url": "https://www.ebay.com/itm/198365634485",
+        "thumbnail": "https://i.ebayimg.com/images/g/ctoAAeSwv2hqDBXL/s-l500.webp",
+        "sponsored": false,
+        "title": "Pemberly Row 2Pc Linen Dining Armchairs with Turned Legs in Light Gray & White",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$732.94"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 42,
+        "url": "https://www.ebay.com/itm/173847092425",
+        "thumbnail": "https://i.ebayimg.com/images/g/nmQAAMXQ-BZQ-7Qu/s-l500.webp",
+        "sponsored": false,
+        "title": "French Painted Living Room Side Desk Chair 2361",
+        "subtitle": null,
+        "condition": null,
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$245.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 43,
+        "url": "https://www.ebay.com/itm/318807121494",
+        "thumbnail": "https://i.ebayimg.com/images/g/E10AAeSwqn9qlje8/s-l500.webp",
+        "sponsored": false,
+        "title": "Wooden Dining Chairs Set of 2, Solid Rubberwood Kitchen & Dining Room Chairs, Fa",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "from": "$225.96",
+          "to": "$596.08"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 44,
+        "url": "https://www.ebay.com/itm/198634790729",
+        "thumbnail": "https://i.ebayimg.com/images/g/sDAAAeSw~dBqpEha/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Transitional Wooden Fabric Arm Chair in Sea Oat Beige",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$440.18"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 45,
+        "url": "https://www.ebay.com/itm/227112135857",
+        "thumbnail": "https://i.ebayimg.com/images/g/59EAAeSwwZhp2dBb/s-l500.webp",
+        "sponsored": false,
+        "title": "Bowery Hill Wood Dining Arm Chair with Upholstered Seat and Back (Set of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$755.07"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 46,
+        "url": "https://www.ebay.com/itm/277850193112",
+        "thumbnail": "https://i.ebayimg.com/images/g/hSwAAeSwT1BpyzAF/s-l500.webp",
+        "sponsored": false,
+        "title": "Pioneer Woman Willa Rounded Back Armless Dining Chair Heirloom Wheat (Set Of 2)",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$298.93"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 47,
+        "url": "https://www.ebay.com/itm/407225266003",
+        "thumbnail": "https://i.ebayimg.com/images/g/16AAAeSwu7ZqkpqJ/s-l500.webp",
+        "sponsored": false,
+        "title": "3 Vintage Oak Windsor style Dining Chairs, Armless Spindle Back with Turned Legs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$225.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 48,
+        "url": "https://www.ebay.com/itm/166111256649",
+        "thumbnail": "https://i.ebayimg.com/images/g/ouoAAOSw1bZjaoOv/s-l500.webp",
+        "sponsored": false,
+        "title": "English 19th Century Set of 2 Oak Windsor Chairs",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,175.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 49,
+        "url": "https://www.ebay.com/itm/227431380029",
+        "thumbnail": "https://i.ebayimg.com/images/g/E2QAAOSwkXdnNps8/s-l500.webp",
+        "sponsored": false,
+        "title": "6\" Furniture Legs Bowling Pin Light Wood Ash Beechwood Set Of 4",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$14.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 50,
+        "url": "https://www.ebay.com/itm/332048226002",
+        "thumbnail": "https://i.ebayimg.com/images/g/pioAAOSwwfFcBMS5/s-l500.webp",
+        "sponsored": false,
+        "title": "Wood Sofa Couch Chair Furniture Leg Feet, 5\" Tall 4 Legs Chic light distress sty",
+        "subtitle": null,
+        "condition": "Open Box",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$20.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 51,
+        "url": "https://www.ebay.com/itm/188727516984",
+        "thumbnail": "https://i.ebayimg.com/images/g/z3wAAeSwrndqbhBH/s-l500.webp",
+        "sponsored": false,
+        "title": "SAFAVIEH Home Collection Attwell Cream Boucle/Natural Solid Wood Legs Accent Cha",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$797.40"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 52,
+        "url": "https://www.ebay.com/itm/398216388224",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 53,
+        "url": "https://www.ebay.com/itm/316015983407",
+        "thumbnail": "https://i.ebayimg.com/images/g/b-MAAOSwLrhnTDKD/s-l500.webp",
+        "sponsored": false,
+        "title": "Oak armrests single lounge chair oak soft cushion indoor lounge chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$239.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 54,
+        "url": "https://www.ebay.com/itm/398220132823",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 55,
+        "url": "https://www.ebay.com/itm/366566451230",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 56,
+        "url": "https://www.ebay.com/itm/407106180662",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 57,
+        "url": "https://www.ebay.com/itm/358849972385",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 58,
+        "url": "https://www.ebay.com/itm/405501336066",
+        "thumbnail": "https://i.ebayimg.com/images/g/LcMAAOSw6NRnX-uw/s-l500.webp",
+        "sponsored": false,
+        "title": "Chaise Lounge w/Storage, Modern Upholstered Nailhead Velvet Couch Sleeper Chair",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery in 2-4 days",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$235.99"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 59,
+        "url": "https://www.ebay.com/itm/318893142344",
+        "thumbnail": "https://i.ebayimg.com/images/g/UccAAeSwollqr09~/s-l500.webp",
+        "sponsored": true,
+        "title": "Vintage Bernhardt Wood Dining Set: Table, 2 Leaves, 8 Chairs, China Cabinet",
+        "subtitle": null,
+        "condition": "Pre-Owned",
+        "shipping": null,
+        "location": "Located in United States",
+        "buying_format": "accepts_offers",
+        "price": {
+          "raw": "$1,300.00"
+        },
+        "filter": "accepted"
+      },
+      {
+        "position": 60,
+        "url": "https://www.ebay.com/itm/398006501323",
+        "thumbnail": "https://i.ebayimg.com/images/g/6-EAAeSwUHJqGrDi/s-l500.webp",
+        "sponsored": true,
+        "title": "Kids' Recliners，Rocker and Stationary Options, Sensory Rocking Chair for Kids &",
+        "subtitle": null,
+        "condition": "Brand New",
+        "shipping": "Free delivery",
+        "location": "Located in United States",
+        "buying_format": "buy_it_now",
+        "price": {
+          "raw": "$162.99"
+        },
+        "filter": "accepted"
+      }
+    ],
+    "elapsed_ms": 33787.844
+  }
+}

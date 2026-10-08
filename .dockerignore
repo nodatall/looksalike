@@ -1,0 +1,26 @@
+.git
+.github
+.agents
+.codex
+.aws
+.bundle
+.env*
+**/.env*
+config/master.key
+config/credentials*
+**/*.key
+**/*.pem
+**/.DS_Store
+node_modules
+vendor
+storage
+log
+tmp
+coverage
+tasks
+agent-scratch
+test
+docs/experiments
+app/assets/builds
+public/assets
+# The licensed app/javascript/search/assets reference image stays in the build.

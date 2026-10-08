@@ -1,0 +1,43 @@
+{
+  "items": [
+    {
+      "url": "https://www.ebay.com/itm/287555903744",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. Cream floor-level oversized corduroy chaise; different proportions, upholstery and silhouette."
+    },
+    {
+      "url": "https://www.ebay.com/itm/366667704399",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Page and photo opened. White ribbed modular loveseat with separate ottoman and chunky low base; different upholstery and proportions."
+    },
+    {
+      "url": "https://www.ebay.com/itm/376986798116",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Green velvet sofa with two back cushions, narrow arms, bolsters and raised wood legs; close shape and material match."
+    },
+    {
+      "url": "https://www.ebay.com/itm/376979009677",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Orange velvet straight-arm sofa on raised legs; similar rectangular form and material, with a different color."
+    },
+    {
+      "url": "https://www.ebay.com/itm/398414132574",
+      "relevant": false,
+      "accessible": true,
+      "notes": "Same listing page and photo opened during preceding case in this batch. Gray cloud loveseat with rounded padded arms and floor-level base; different texture and silhouette."
+    },
+    {
+      "url": "https://www.ebay.com/itm/318899800980",
+      "relevant": true,
+      "accessible": true,
+      "notes": "Page and photo opened. Gray velvet two-seat sofa; weaker material-only match. Curved tufted back, nailheads and color differ. Counted under unchanged same-category plus similar-material criterion."
+    }
+  ],
+  "relevant_accessible_count": 3,
+  "scored_at": "2026-09-25T21:37:22Z",
+  "passed": true
+}

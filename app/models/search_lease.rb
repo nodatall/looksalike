@@ -1,0 +1,2 @@
+class SearchLease < ApplicationRecord
+end
