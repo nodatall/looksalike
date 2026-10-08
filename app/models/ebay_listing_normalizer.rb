@@ -2,7 +2,7 @@ require "uri"
 
 # Validate item identity and location, then apply the title policy in provider order.
 class EbayListingNormalizer
-  VERSION = "ebay-listings-v3"
+  VERSION = "ebay-listings-v7"
   US_RULE = "explicit-us-v1"
   CREDENTIAL_PARAMETERS = ListingNormalizer::CREDENTIAL_PARAMETERS
   Result = Data.define(:listings, :counts, :version)
@@ -37,14 +37,14 @@ class EbayListingNormalizer
       seen[id] = true
       { "id" => id, "title" => title, "url" => url, "thumbnail" => thumbnail,
         "sponsored" => row["sponsored"] == true, "price" => price(row["price"], redact),
-        "condition" => text(row["condition"], 100, redact), "shipping" => text(row["shipping"], 200, redact),
+        "condition" => text(row["condition"], 100, redact), "shipping" => shipping(row["shipping"], redact),
         "location" => "Located in United States" }
     end
     filtered = EbayListingFilter.call(rows: eligible, category: category)
     counts.merge!("eligible" => eligible.length, "title_rejected" => filtered.rejected.length,
       "title_rejection_reasons" => filtered.counts.except("accepted"), "accepted" => filtered.accepted.length,
       "displayed" => [ filtered.accepted.length, 6 ].min)
-    Result.new(listings: filtered.accepted.first(6), counts: counts, version: VERSION)
+    Result.new(listings: filtered.accepted, counts: counts, version: VERSION)
   end
 
   def self.safe_uri(value)
@@ -83,6 +83,12 @@ class EbayListingNormalizer
     value if !value.empty? && units <= length && !value.match?(/[[:cntrl:]]/)
   end
   private_class_method :text
+
+  def self.shipping(value, redact)
+    supplied = value.is_a?(Hash) ? value["raw"] : value
+    text(supplied, 200, redact)
+  end
+  private_class_method :shipping
 
   def self.price(value, redact)
     return unless value.is_a?(Hash)

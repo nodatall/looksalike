@@ -2,7 +2,7 @@
 
 ## Purpose
 
-LooksAlike turns one furniture photo into up to six US-located eBay listings. This document records the implemented server, browser and container boundaries; [hosted deployment evidence](deployment.md) records the Railway checks and real public-photo search.
+LooksAlike turns one furniture photo into US-located eBay listings, shown six per page. This document records the implemented server, browser and container boundaries; [hosted deployment evidence](deployment.md) records the Railway checks and real public-photo search.
 
 ## Current system shape
 
@@ -19,7 +19,7 @@ The server validates the reduced JPEG, checks the cache, reserves allowance and 
 | `PhotoValidator`, `SearchDeadline` | Bounded image decoding, upload cleanup, monotonic time budget | Search policy or credentials |
 | `SerpApi::Client`, `Vision::Client` and transports | Fixed endpoints, credentials, response bounds, no retries, safe errors | Persistence or presentation |
 | `SearchQuery`, `PhotoQuery`, `EbayQueryPreparation` | Lens phrase, fallback trigger and strict photo-description validation | Upload/eBay traffic or quotas |
-| `EbayListingNormalizer`, `EbayListingFilter` | URL/US eligibility, duplicates, complete-item checks, first-six provider order | Network access or visual ranking |
+| `EbayListingNormalizer`, `EbayListingFilter` | URL/US eligibility, duplicates, complete-item checks, all accepted listings in provider order | Network access or visual ranking |
 | `SearchSettings`, `SearchStore` | Validated ceilings, versioned cache, allowance reservations and lease ownership | HTTP or stored photos |
 | `ProductionStorage`, production startup | Actual mount, resolved SQLite path, write access, ownership and preparation before serving | Provider calls or web-process health |
 | `SearchCacheEntry`, `SearchUsageReservation`, `SearchLease` | Concrete SQLite records | Provider calls |
@@ -38,9 +38,9 @@ Venice uses the fixed `qwen3-vl-235b-a22b` model and versioned strict prompt/sch
 
 ## Persistence and concurrency
 
-Three operational tables use the application's SQLite database. `search_cache_entries` stores sanitized success/empty responses with a unique `fingerprint` and expiry. Identity includes reduced-photo SHA-256, eBay/US rule, normalizer, title filter, Lens query, fallback/phrase policy and Venice model/prompt/schema versions. Success expires after 24 hours; empty results after one hour. Failures are never cached.
+Three operational tables use the application's SQLite database. `search_cache_entries` stores sanitized success/empty responses with a unique `fingerprint` and expiry. Identity includes reduced-photo SHA-256, eBay/US rule, normalizer, title filter, Lens query, fallback/phrase policy and Venice model/prompt/schema versions. Successful and empty results expire after one hour; the lookup also rejects older entries written under the previous 24-hour policy. Failures are never cached.
 
-`search_usage_reservations` records two SerpApi search units before any provider traffic. Public ceilings are 10 units per UTC day and 180 per rolling 30 days. Session and IP each allow at most three fresh searches per hour; the database stores keyed digests, never their raw values. Venice gets a separate one-call/three-cent reservation immediately before dispatch, capped at five daily and 90 per rolling 30 days. Failures, lost responses, timeouts and restarts never refund allowance. Configuration can lower these positive ceilings; invalid values fail closed.
+`search_usage_reservations` records two SerpApi search units before any provider traffic. Public ceilings are 10 units per UTC day and 180 per rolling 30 days. There is no hourly search limit. The database stores keyed session and IP digests, never their raw values. Venice gets a separate one-call/three-cent reservation immediately before dispatch, capped at five daily and 90 per rolling 30 days. Failures, lost responses, timeouts and restarts never refund allowance. Configuration can lower these positive ceilings; invalid values fail closed.
 
 `search_leases` has one row. A short SQLite write transaction rechecks cache, lease and caps, then grants a random owner token for 75 seconds. SQLite's immediate write transaction serializes competing reservations. Expired leases recover without refunds; old owners cannot release or overwrite a newer lease. Cached responses need neither new allowance nor a lease. No database connection remains held during HTTP work.
 
@@ -68,9 +68,9 @@ The result includes `status`, `source` (`live` or `cache`), `marketplace`, `scop
 
 A normal fresh search reports `attempts: {uploads: 1, serpapi: 2, vision: 0}`; a fallback adds one vision attempt. Errors report only started attempts. These are attempts, not verified bills. `original_attempts` records the calls behind a saved result. Cache returns the original retrieval time, explanation and durations with zero new attempts. Cache/disabled/busy failures may return only the final line. Skipped Venice appears only in final metadata and never emits a loading event.
 
-Statuses include `success`, `empty`, `disabled`, `busy`, `quota_exceeded`, `visitor_limit`, `vision_limit`, `storage_unavailable`, `configuration_error`, `invalid_photo`, `unclear`, `not_furniture`, `insufficient_time`, `deadline`, `invalid_response` and `provider_unavailable`. Application outcomes use the result status/message; CSRF rejection remains a Rails HTTP error.
+Statuses include `success`, `empty`, `disabled`, `busy`, `quota_exceeded`, `vision_limit`, `storage_unavailable`, `configuration_error`, `invalid_photo`, `unclear`, `not_furniture`, `insufficient_time`, `deadline`, `invalid_response` and `provider_unavailable`. Application outcomes use the result status/message; CSRF rejection remains a Rails HTTP error.
 
-The browser uses a 65-second abort and parses bounded NDJSON lines into loading stages and eBay results. Strict session state under `looksalike:ebay-us-v2` accepts only completed live or cache results and restores the current tab after reload without a new search. Invalid state, the old storage key and snapshot results cannot restore in production. The diagram and expandable explanation share the live result metadata. Browser state cannot authorize calls or replace server validation.
+The browser uses a 65-second abort and parses at most 1 MB of NDJSON into loading stages and eBay results. The server returns all accepted listings from its bounded set of at most 100 provider rows. The browser shows six cards per page; previous/next arrows only change the local page and make no search requests. Strict session state under `looksalike:ebay-us-v2` accepts only completed live or cache results, at most 500,000 characters, and restores the cards and current page after reload without a new search. Earlier saved views without a page restore on page one. Invalid state, the old storage key and snapshot results cannot restore in production. The expandable explanation uses the live result metadata. Browser state cannot authorize calls or replace server validation.
 
 Choosing the example prepares the bundled licensed green-sofa reference through the same JPEG preparation as an upload. Find similar items calls the same `submitPhoto` function, streaming actual server progress and preserving normal cache, deadline, cancellation, allowance and error handling. Example and uploaded photos show the same provider/privacy notice. Historical snapshots are not imported by the application entry point.
 

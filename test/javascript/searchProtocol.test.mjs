@@ -48,6 +48,23 @@ test("split NDJSON chunks deliver actual events before the final result", async 
   assert.deepEqual(completed, result);
 });
 
+test("a bounded full listing set streams successfully while oversized responses are rejected", async () => {
+  const result = structuredClone(snapshot);
+  result.listings = Array.from({ length: 100 }, (_, index) => ({
+    ...result.listings[0],
+    id: String(index + 1),
+    url: `https://www.ebay.com/itm/${index + 1}`,
+    thumbnail: `https://i.ebayimg.com/images/${"x".repeat(1200)}${index}.jpg`,
+  }));
+  const text = line({ type: "result", result });
+  assert.ok(new TextEncoder().encode(text).length > 100_000);
+  assert.deepEqual(await readSearchResponse(response(text, 1024)), result);
+  await assert.rejects(
+    readSearchResponse(response(" ".repeat(1_000_001), 1_000_001)),
+    SearchResponseError,
+  );
+});
+
 test("malformed, truncated and invalid stage/result boundaries reject the response", async () => {
   for (const text of [
     "{\n",

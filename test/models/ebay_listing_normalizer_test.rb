@@ -35,13 +35,21 @@ class EbayListingNormalizerTest < ActiveSupport::TestCase
       row("2", location: "Located in Canada"), row("3", location: nil), row("4", title: "Loose chair spindles", sponsored: true),
       row("5", thumbnail: nil), row("6", title: nil) ] + (7..14).map { |id| row(id.to_s) }
     result = normalize(rows)
-    assert_equal %w[1 7 8 9 10 11], result.listings.map { |item| item["id"] }
+    assert_equal %w[1 7 8 9 10 11 12 13 14], result.listings.map { |item| item["id"] }
     assert_equal true, result.listings.first["sponsored"]
     assert_equal 2, result.counts["not_explicit_us"]
     assert_equal 1, result.counts["duplicate"]
     assert_equal 2, result.counts["missing_metadata"]
     assert_equal 1, result.counts["title_rejected"]
     assert_equal 9, result.counts["accepted"]
+    assert_equal 6, result.counts["displayed"]
+  end
+
+  test "retains the complete bounded result set for browser pagination" do
+    rows = (1..100).map { |id| row(id.to_s) }
+    result = normalize(rows)
+    assert_equal rows.map { |item| item["link"].split("/").last }, result.listings.map { |item| item["id"] }
+    assert_equal 100, result.counts["accepted"]
     assert_equal 6, result.counts["displayed"]
   end
 
@@ -78,5 +86,21 @@ class EbayListingNormalizerTest < ActiveSupport::TestCase
     end
     assert_empty normalize([]).listings
     assert_raises(ArgumentError) { normalize(Array.new(101) { row }) }
+  end
+
+  test "preserves shipping quotes in either provider format without inventing missing costs" do
+    [ "+$6.35", "+$125.00 shipping", "Free delivery", "Free delivery Import fees due prior to delivery", "Local pickup only" ].each do |quote|
+      [ quote, { "raw" => quote, "extracted" => 6.35 } ].each do |shipping|
+        assert_equal quote, normalize([ row(shipping: shipping) ]).listings.first["shipping"]
+      end
+    end
+    [ nil, 6.35, [], {}, { "extracted" => 6.35 }, { "raw" => 6.35 }, { "raw" => "" }, { "raw" => "x" * 201 } ].each do |shipping|
+      assert_nil normalize([ row(shipping: shipping) ]).listings.first["shipping"]
+    end
+    listing = normalize([ row(shipping: { "raw" => "+$6.35 https://example.test/private" }) ]).listings.first
+    assert_equal "+$6.35 [URL omitted]", listing["shipping"]
+    result = EbayListingNormalizer.call(response: { "organic_results" => [ row(shipping: { "raw" => "+$6.35 private" }) ] },
+      category: "chair", redact: ->(value) { value.gsub("private", "[redacted]") })
+    assert_equal "+$6.35 [redacted]", result.listings.first["shipping"]
   end
 end

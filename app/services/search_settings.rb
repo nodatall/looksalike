@@ -1,7 +1,7 @@
 class SearchSettings
   LIMITS = {
     daily: [ "SEARCH_DAILY_ATTEMPT_LIMIT", 10 ], rolling: [ "SEARCH_ROLLING_30_DAY_ATTEMPT_LIMIT", 180 ],
-    visitor: [ "SEARCH_VISITOR_HOURLY_LIMIT", 3 ], vision_daily: [ "VISION_DAILY_ATTEMPT_LIMIT", 5 ],
+    vision_daily: [ "VISION_DAILY_ATTEMPT_LIMIT", 5 ],
     vision_rolling: [ "VISION_ROLLING_30_DAY_ATTEMPT_LIMIT", 90 ]
   }.freeze
   attr_reader :limits, :deadline_seconds

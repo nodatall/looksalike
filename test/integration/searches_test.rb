@@ -68,7 +68,7 @@ class SearchesTest < ActionDispatch::IntegrationTest
     result = events.last.fetch("result")
     assert_equal "success", result["status"]
     assert_equal EbaySearch::VERSION, result["version"]
-    assert_equal 6, result["listings"].length
+    assert_equal 7, result["listings"].length
     assert_equal({ "uploads" => 1, "serpapi" => 2, "vision" => 0 }, result["attempts"])
     assert_equal %w[upload upload lens lens ebay ebay filter filter], events[0...-1].map { |event| event["stage"] }
     assert_equal %w[started complete] * 4, events[0...-1].map { |event| event["status"] }
@@ -77,7 +77,7 @@ class SearchesTest < ActionDispatch::IntegrationTest
     %w[lens ebay].each do |name|
       assert_equal Array.new(6, "Green velvet sofa [URL omitted]"), result["stages"].find { |stage| stage["stage"] == name }.dig("summary", "titles")
     end
-    assert_equal Array.new(6, "Green velvet sofa [URL omitted]"), result["listings"].map { |listing| listing["title"] }
+    assert_equal Array.new(6, "Green velvet sofa [URL omitted]") + [ "Green velvet sofa" ], result["listings"].map { |listing| listing["title"] }
     refute_match(/offline-serp-key|offline-vision-key|private-photo-reference|image_id|search_metadata/, response.body)
     assert_equal 2, SearchUsageReservation.where(kind: "serpapi").sum(:units)
     submit
@@ -85,6 +85,7 @@ class SearchesTest < ActionDispatch::IntegrationTest
     assert_equal 1, events.length
     assert_equal "cache", cached["source"]
     assert_equal result["retrieved_at"], cached["retrieved_at"]
+    assert_equal result["listings"], cached["listings"]
     assert_equal({ "uploads" => 0, "serpapi" => 0, "vision" => 0 }, cached["attempts"])
     assert_equal result["attempts"], cached["original_attempts"]
     [ upload, lens, ebay ].each { |request| assert_requested request, times: 1 }

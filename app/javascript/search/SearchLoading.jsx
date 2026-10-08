@@ -2,10 +2,17 @@ import { Box, Button, CircularProgress, Typography, useMediaQuery } from "@mui/m
 
 export const STAGE_LABELS = {
   upload: "Uploading photo",
-  lens: "Identifying furniture",
-  vision: "Checking photo details",
+  lens: "Searching Google Lens",
+  vision: "Describing the photo with AI",
   ebay: "Searching eBay",
   filter: "Checking matches",
+};
+const STAGE_DETAILS = {
+  upload: "Your photo goes to SerpApi for visual search.",
+  lens: "Google Lens finds visual matches through SerpApi.",
+  vision: "We ask a vision model to describe the furniture when Lens gives us too little detail.",
+  ebay: "SerpApi searches eBay with the furniture description.",
+  filter: "We keep US listings and remove duplicates.",
 };
 export default function SearchLoading({ photo, events, headingRef, onBack }) {
   const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
@@ -49,7 +56,9 @@ export default function SearchLoading({ photo, events, headingRef, onBack }) {
           clipPath: "inset(50%)",
         }}
       >
-        {current ? STAGE_LABELS[current] : "Waiting for search response"}
+        {current
+          ? `${STAGE_LABELS[current]}. ${STAGE_DETAILS[current]}`
+          : "Waiting for search response"}
       </Box>
       <Box component="ol" aria-label="Search progress" sx={{ listStyle: "none", p: 0, m: 0 }}>
         {steps.map((stage) => {
@@ -66,7 +75,8 @@ export default function SearchLoading({ photo, events, headingRef, onBack }) {
                 display: "flex",
                 gap: 2,
                 alignItems: "center",
-                minHeight: 54,
+                minHeight: 72,
+                py: 1,
                 color: event ? "text.primary" : "text.secondary",
               }}
             >
@@ -88,31 +98,36 @@ export default function SearchLoading({ photo, events, headingRef, onBack }) {
                   "○"
                 )}
               </Box>
-              <Typography sx={{ fontSize: 15, fontWeight: running ? 600 : 400 }}>
-                {STAGE_LABELS[stage]}
-                {failed ? " — failed" : ""}
-                {complete && event.duration_ms !== undefined
-                  ? ` · ${(event.duration_ms / 1000).toFixed(1)}s`
-                  : ""}
-                <Box
-                  component="span"
-                  sx={{
-                    position: "absolute",
-                    width: "1px",
-                    height: "1px",
-                    overflow: "hidden",
-                    clipPath: "inset(50%)",
-                  }}
-                >
-                  {complete
-                    ? " complete"
-                    : running
-                      ? " in progress"
-                      : failed
-                        ? " failed"
-                        : " waiting"}
-                </Box>
-              </Typography>
+              <Box sx={{ minWidth: 0 }}>
+                <Typography sx={{ fontSize: 15, fontWeight: running ? 600 : 400 }}>
+                  {STAGE_LABELS[stage]}
+                  {failed ? " — failed" : ""}
+                  {complete && event.duration_ms !== undefined
+                    ? ` · ${(event.duration_ms / 1000).toFixed(1)}s`
+                    : ""}
+                  <Box
+                    component="span"
+                    sx={{
+                      position: "absolute",
+                      width: "1px",
+                      height: "1px",
+                      overflow: "hidden",
+                      clipPath: "inset(50%)",
+                    }}
+                  >
+                    {complete
+                      ? " complete"
+                      : running
+                        ? " in progress"
+                        : failed
+                          ? " failed"
+                          : " waiting"}
+                  </Box>
+                </Typography>
+                <Typography sx={{ mt: 0.25, fontSize: 13, lineHeight: 1.5 }} color="text.secondary">
+                  {STAGE_DETAILS[stage]}
+                </Typography>
+              </Box>
             </Box>
           );
         })}

@@ -40,7 +40,7 @@ class SearchStoreTest < ActiveSupport::TestCase
   test "cache hits preserve retrieval and original calls without allowance or lease and expire independently" do
     token = acquire.token
     @store.finish(token: token, key: "photo", result: completed)
-    @now += 23.hours
+    @now += 59.minutes
     fresh_store = store
     cached = acquire(fresh_store)
     assert_equal "cache", cached.status
@@ -49,15 +49,18 @@ class SearchStoreTest < ActiveSupport::TestCase
     assert_equal 2, cached.cached_result["original_attempts"]["serpapi"]
     assert_equal Time.utc(2026, 9, 29, 12).iso8601, cached.cached_result["retrieved_at"]
     assert_equal 1, SearchUsageReservation.count
-    @now += 1.hour
+    @now += 1.minute
     assert_nil fresh_store.lookup("photo")
     token = acquire(fresh_store, key: "empty").token
     fresh_store.finish(token: token, key: "empty", result: completed("empty"))
     @now += 1.hour
     assert_nil fresh_store.lookup("empty")
+    SearchCacheEntry.create!(fingerprint: "old-policy", payload: JSON.generate(completed), expires_at: @now + 23.hours)
+    @now += 1.hour
+    assert_nil fresh_store.lookup("old-policy")
     assert_not_equal SearchStore.cache_key("photo1"), SearchStore.cache_key("photo2")
     original = SearchStore.cache_key("photo1")
-    %w[ebay-listings-v1 ebay-listings-v2].each do |version|
+    %w[ebay-listings-v1 ebay-listings-v2 ebay-listings-v3 ebay-listings-v4 ebay-listings-v5 ebay-listings-v6].each do |version|
       stub_const(EbayListingNormalizer, :VERSION, version) { assert_not_equal original, SearchStore.cache_key("photo1") }
     end
     stub_const(EbayListingFilter, :VERSION, "test-next-filter") { assert_not_equal original, SearchStore.cache_key("photo1") }
@@ -97,18 +100,21 @@ class SearchStoreTest < ActiveSupport::TestCase
     assert_equal 1, SearchUsageReservation.count
   end
 
-  test "session and IP each cap fresh requests and failures are not refunded or cached" do
-    token = acquire(store(visitor: 1)).token
-    @store.finish(token: token, key: "photo", result: completed("provider_unavailable"))
-    assert_nil @store.lookup("photo")
-    assert_equal "visitor_limit", acquire(store(visitor: 1), key: "other", session: "another").status
-    assert_equal "visitor_limit", acquire(store(visitor: 1), key: "other", ip: "127.0.0.2").status
+  test "fresh requests have no hourly session or IP cap and still consume the shared daily allowance" do
+    visitors = [ [ "visitor", "127.0.0.1" ] ] * 3 + [ [ "another", "127.0.0.1" ], [ "visitor", "127.0.0.2" ] ]
+    visitors.each_with_index do |(session, ip), index|
+      key = "photo#{index}"
+      grant = acquire(store, key: key, session: session, ip: ip)
+      assert_equal "live", grant.status
+      @store.finish(token: grant.token, key: key, result: completed("provider_unavailable"))
+      assert_nil @store.lookup(key)
+    end
+    assert_equal 10, SearchUsageReservation.where(kind: "serpapi").sum(:units)
+    assert_equal "quota_exceeded", acquire(store, key: "other").status
     row = SearchUsageReservation.first
     refute_equal "visitor", row.session_digest
     refute_equal "127.0.0.1", row.ip_digest
     assert_equal 64, row.ip_digest.length
-    @now += 1.hour + 1
-    assert_equal "live", acquire(store(visitor: 1), key: "other").status
   end
 
   test "rolling and daily vision caps reserve once at three cents and never refund" do

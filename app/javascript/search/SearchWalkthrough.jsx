@@ -1,12 +1,20 @@
 import { Box, Typography } from "@mui/material";
-import SearchFlowDiagram from "./SearchFlowDiagram";
+import { supportingLensTitles } from "./lensTitleEvidence";
 
 const labels = {
   upload: "Upload the photo",
   lens: "Identify the furniture with Lens",
-  vision: "Describe the photo with Venice",
+  vision: "Fallback LLM description",
   ebay: "Search eBay",
   filter: "Check the listings locally",
+};
+const visionReasons = {
+  missing_phrase: "Lens did not provide a usable search phrase, so the LLM examined the photo.",
+  bare_category:
+    "Lens identified only the furniture type, so the LLM examined the photo for more detail.",
+  no_concrete_trait:
+    "Lens's search phrase had no recognized color or material, so the LLM examined the photo for more detail.",
+  lens_has_concrete_trait: "Lens found a usable color or material, so the LLM was not needed.",
 };
 function excerpts(titles) {
   return titles
@@ -21,7 +29,6 @@ function stageDetails(stage, preparation) {
   if (stage.stage === "upload") {
     if (p.format)
       rows.push(`JPEG${p.bytes !== undefined ? ` · ${(p.bytes / 1000).toFixed(0)} kB` : ""}`);
-    if (s.photo_reference_received) rows.push("Photo reference received; its value is omitted.");
   } else if (stage.stage === "lens") {
     const parameters = [
       p.engine,
@@ -31,39 +38,42 @@ function stageDetails(stage, preparation) {
     ].filter(Boolean);
     if (parameters.length) rows.push(parameters.join(" · "));
     if (s.visual_matches !== undefined) rows.push(`${s.visual_matches} visual matches returned.`);
-    rows.push(`Lens phrase: ${s.query || preparation?.lens_query || "No usable phrase recorded"}.`);
-    if (s.titles?.length) rows.push(`Title excerpts: ${excerpts(s.titles)}`);
+    const query = s.query || preparation?.lens_query;
+    rows.push(`Lens phrase: ${query || "No usable phrase recorded"}.`);
+    const titles = supportingLensTitles({
+      titles: s.titles,
+      query,
+      category: s.category || preparation?.lens_category,
+    });
+    if (titles.length) rows.push(`Supporting titles: ${excerpts(titles)}`);
   } else if (stage.stage === "vision") {
     const model = p.model || s.model;
     if (model) rows.push(`Model: ${model}`);
     const reason = s.fallback_reason || s.reason;
-    if (reason) rows.push(`Reason: ${reason.replaceAll("_", " ")}`);
-    if (stage.status !== "skipped") rows.push(`Venice phrase: ${s.query || "No phrase returned"}.`);
+    if (reason)
+      rows.push(
+        visionReasons[reason] ||
+          (stage.status === "skipped"
+            ? "The LLM was not needed for this search."
+            : "The LLM examined the photo for more detail."),
+      );
+    if (stage.status !== "skipped")
+      rows.push(`LLM description: ${s.query || "No usable description returned"}.`);
   } else if (stage.stage === "ebay") {
     if (p._nkw) rows.push(`Phrase: ${p._nkw}`);
     if (p.ebay_domain)
       rows.push(`Marketplace: ${p.ebay_domain}${p._ipg ? ` · requested page size ${p._ipg}` : ""}`);
     if (s.returned !== undefined) rows.push(`${s.returned} listings returned.`);
-    if (s.titles?.length) rows.push(`Title excerpts: ${excerpts(s.titles)}`);
   } else if (stage.stage === "filter") {
     const counts = ["returned", "eligible", "accepted", "displayed"]
       .filter((key) => s[key] !== undefined)
       .map((key) => `${key[0].toUpperCase()}${key.slice(1)} ${s[key]}`);
-    if (counts.length) rows.push(counts.join(" · "));
-    const rejected = [
-      "invalid_url",
-      "missing_metadata",
-      "not_explicit_us",
-      "duplicate",
-      "title_rejected",
-    ]
-      .filter((key) => s[key] > 0)
-      .map((key) => `${key.replaceAll("_", " ")}: ${s[key]}`);
-    if (rejected.length) rows.push(`Rejected: ${rejected.join(" · ")}`);
-    const reasons = Object.entries(s.title_rejection_reasons || {})
-      .filter(([, count]) => count > 0)
-      .map(([reason, count]) => `${reason.replaceAll("_", " ")}: ${count}`);
-    if (reasons.length) rows.push(`Title checks: ${reasons.join(" · ")}`);
+    if (counts.length) {
+      rows.push(counts.join(" · "));
+      rows.push(
+        "Eligible listings have a valid eBay item link, title, image, explicit U.S. location, and unique item ID; accepted listings also pass a title check that removes accessories, parts, miniatures, and mismatched furniture types.",
+      );
+    }
   }
   if (s.note) rows.push(s.note);
   if (!rows.length)
@@ -74,32 +84,21 @@ function stageDetails(stage, preparation) {
     );
   return rows;
 }
-function CallCounts({ label, counts }) {
+function CallCounts({ counts }) {
   if (!counts) return null;
   return (
     <Typography sx={{ fontSize: 13, mb: 1 }}>
-      {label}: {counts.uploads} image uploads, {counts.serpapi} SerpApi searches, {counts.vision}{" "}
-      Venice attempts.
+      {counts.uploads} image uploads, {counts.serpapi} SerpApi searches, {counts.vision} LLM
+      attempts.
     </Typography>
   );
 }
 export default function SearchWalkthrough({ result, restored = false }) {
   let call = 0;
-  const saved = restored || ["cache", "snapshot"].includes(result.source);
   const stages = result.stages || [];
   return (
     <Box>
-      <SearchFlowDiagram stages={stages} />
-      <CallCounts
-        label={saved ? "New calls for this view" : "Calls for this search"}
-        counts={saved ? { uploads: 0, serpapi: 0, vision: 0 } : result.attempts}
-      />
-      {saved && <CallCounts label="Original search" counts={result.original_attempts} />}
-      {result.retrieved_at && (
-        <Typography sx={{ fontSize: 12, mb: 3 }} color="text.secondary">
-          Retrieved {new Date(result.retrieved_at).toUTCString()}.
-        </Typography>
-      )}
+      <CallCounts counts={result.original_attempts || result.attempts} />
       <Box sx={{ mb: 3, mt: 3 }}>
         <Typography sx={{ fontWeight: 600, fontSize: 15 }}>Browser → Rails</Typography>
         <Typography sx={{ fontSize: 13 }}>

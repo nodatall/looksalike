@@ -99,6 +99,52 @@ test("saved success and empty views replay without requests and preserve the ori
   }
 });
 
+test("historical sponsored rejection counts remain readable in saved results", () => {
+  const result = copy();
+  const summary = result.stages.find((stage) => stage.stage === "filter").summary;
+  summary.sponsored = 3;
+  assert.deepEqual(validateCompletedResult(result), result);
+  const store = storage();
+  assert.equal(saveView(store, { result, reference: null, explanationOpen: false }), true);
+  assert.equal(
+    readSavedView(store).result.stages.find((stage) => stage.stage === "filter").summary.sponsored,
+    3,
+  );
+  for (const invalid of [-1, 101, "3"]) {
+    summary.sponsored = invalid;
+    assert.equal(validateCompletedResult(result), null);
+  }
+});
+
+test("all accepted listings and the current page survive reload without another search", () => {
+  const result = copy();
+  result.listings = Array.from({ length: 100 }, (_, index) => ({
+    ...result.listings[0],
+    id: String(index + 1),
+    url: `https://www.ebay.com/itm/${index + 1}`,
+    thumbnail: `https://i.ebayimg.com/images/${"x".repeat(1200)}${index}.jpg`,
+  }));
+  const view = { result, reference: null, explanationOpen: false, page: 16 };
+  assert.ok(JSON.stringify(view).length > 100_000);
+  const store = storage();
+  const previous = globalThis.fetch;
+  globalThis.fetch = () => assert.fail("pagination and reload must never search again");
+  try {
+    assert.equal(saveView(store, view), true);
+    assert.deepEqual(readSavedView(store), view);
+    for (const page of [-1, 17, 0.5, null, "1"]) {
+      const invalid = { ...view, page };
+      assert.equal(saveView(store, invalid), false);
+      store.setItem(STORAGE_KEY, JSON.stringify({ version: "ebay-us-v1", ...invalid }));
+      assert.equal(readSavedView(store), null);
+    }
+  } finally {
+    globalThis.fetch = previous;
+  }
+  result.listings.push({ ...result.listings[0], id: "101", url: "https://www.ebay.com/itm/101" });
+  assert.equal(validateCompletedResult(result), null);
+});
+
 test("corrupt, legacy and unsafe completed records cannot be restored", () => {
   const changes = [
     (result) => {

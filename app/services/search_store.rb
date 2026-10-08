@@ -39,8 +39,6 @@ class SearchStore
           Grant.new(status: "busy", token: nil, cached_result: nil)
         elsif usage("serpapi", now.beginning_of_day) + 2 > @limits.fetch(:daily) || usage("serpapi", now - 30.days) + 2 > @limits.fetch(:rolling)
           Grant.new(status: "quota_exceeded", token: nil, cached_result: nil)
-        elsif visitor_count(:session_digest, session_digest, now) >= @limits.fetch(:visitor) || visitor_count(:ip_digest, ip_digest, now) >= @limits.fetch(:visitor)
-          Grant.new(status: "visitor_limit", token: nil, cached_result: nil)
         else
           token = SecureRandom.uuid
           SearchUsageReservation.create!(owner_token: token, kind: "serpapi", units: 2,
@@ -73,9 +71,8 @@ class SearchStore
         now = @now.call
         raise Error unless owned?(lease, token, now)
         if %w[success empty].include?(result.fetch("status"))
-          ttl = result.fetch("status") == "success" ? 24.hours : 1.hour
           entry = SearchCacheEntry.find_or_initialize_by(fingerprint: key)
-          entry.update!(payload: JSON.generate(result), expires_at: now + ttl)
+          entry.update!(payload: JSON.generate(result), expires_at: now + 1.hour)
         end
         lease.update!(owner_token: nil, expires_at: nil)
       end
@@ -115,10 +112,6 @@ class SearchStore
       SearchUsageReservation.where(kind: kind).where("created_at >= ?", since).sum(:units)
     end
 
-    def visitor_count(column, digest, now)
-      SearchUsageReservation.where(kind: "serpapi", column => digest).where("created_at >= ?", now - 1.hour).count
-    end
-
     def visitor_digest(kind, value)
       raise Error unless value.is_a?(String) && value.bytesize.between?(1, 512)
       OpenSSL::HMAC.hexdigest("SHA256", Rails.application.secret_key_base, "search-#{kind}:#{value}")
@@ -129,6 +122,8 @@ class SearchStore
       return unless entry && entry.expires_at > now
       result = JSON.parse(entry.payload)
       raise Error unless result.is_a?(Hash) && result["version"] == "ebay-us-v1" && %w[success empty].include?(result["status"])
+      # Enforce the shorter policy for entries written with the former 24-hour TTL.
+      return if Time.iso8601(result.fetch("retrieved_at")) <= now - 1.hour
       result.merge("source" => "cache", "attempts" => { "uploads" => 0, "serpapi" => 0, "vision" => 0 })
     end
 end

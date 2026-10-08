@@ -8,7 +8,6 @@ class EbaySearch
     "disabled" => "Live search is unavailable. Please try again later.",
     "busy" => "Another search is running. Please try again shortly.",
     "quota_exceeded" => "The demo has reached its search allowance. Please try again later.",
-    "visitor_limit" => "You have reached the hourly search limit. Please try again later.",
     "vision_limit" => "Photo recognition has reached its allowance. Please try again later.",
     "storage_unavailable" => "Search storage is unavailable. Please try again later.",
     "configuration_error" => "Live search is unavailable. Please try again later.",

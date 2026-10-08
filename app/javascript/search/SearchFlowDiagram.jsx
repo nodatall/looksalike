@@ -35,7 +35,7 @@ export default function SearchFlowDiagram({ stages = [] }) {
     },
     {
       stage: "vision",
-      name: "Venice (optional)",
+      name: "LLM (optional)",
       detail: "photo description",
       input: "photo, if needed",
       output: "description",
@@ -79,7 +79,7 @@ export default function SearchFlowDiagram({ stages = [] }) {
           }}
         >
           <title id={`${marker}-title`}>
-            The browser sends a photo to Rails. Rails calls Image upload, Lens, optional Venice and
+            The browser sends a photo to Rails. Rails calls Image upload, Lens, an optional LLM and
             eBay, then checks the listings locally. Solid arrows are requests and dashed arrows are
             responses. Only dispatched external calls are numbered.
           </title>

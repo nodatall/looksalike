@@ -7,9 +7,11 @@ import {
   Button,
   Card,
   CardContent,
+  IconButton,
   Typography,
 } from "@mui/material";
 import SearchWalkthrough from "./SearchWalkthrough";
+import { listingPage } from "./listingPages";
 
 function ListingImage({ listing }) {
   const [broken, setBroken] = useState(false);
@@ -17,6 +19,7 @@ function ListingImage({ listing }) {
     <Box
       sx={{
         height: { xs: 160, sm: 215 },
+        flexShrink: 0,
         minHeight: 0,
         minWidth: 0,
         overflow: "hidden",
@@ -59,6 +62,16 @@ export function listingPrice(price) {
   if (price.to) return `Up to ${price.to}`;
   return price.raw || null;
 }
+export function listingShipping(shipping) {
+  if (!shipping) return null;
+  const quote = shipping
+    .trim()
+    .replace(/^\+\s*/, "")
+    .replace(/\bprior to delivery\b/gi, "before arrival")
+    .replace(/\bdelivery\b/gi, "shipping");
+  if (!quote) return null;
+  return /\b(?:shipping|pickup)\b/i.test(quote) ? quote : `${quote} shipping`;
+}
 export default function SearchResults({
   result,
   reference,
@@ -68,8 +81,12 @@ export default function SearchResults({
   onAgain,
   headingRef,
   storageAvailable,
+  page = 0,
+  onPageChange,
 }) {
   const saved = restored || result.source === "cache";
+  const listings = result.listings;
+  const current = listingPage(listings, page);
   return (
     <Box component="section" sx={{ width: "min(100%, 1030px)", mx: "auto", py: { xs: 4, sm: 7 } }}>
       <Box sx={{ display: "flex", alignItems: "center", gap: { xs: 1, sm: 2 }, mb: 3 }}>
@@ -115,8 +132,7 @@ export default function SearchResults({
             day: "numeric",
             year: "numeric",
             timeZone: "UTC",
-          })}{" "}
-          · Availability unverified
+          })}
         </Typography>
       )}
       {!storageAvailable && (
@@ -124,7 +140,7 @@ export default function SearchResults({
           This browser could not save the result for reload.
         </Typography>
       )}
-      {result.status === "empty" ? (
+      {listings.length === 0 ? (
         <Box sx={{ bgcolor: "background.paper", p: 4, borderRadius: 2, mb: 4 }}>
           <Typography component="h2" sx={{ fontSize: 20, mb: 1 }}>
             No matches found
@@ -137,16 +153,25 @@ export default function SearchResults({
       ) : (
         <Box
           sx={{
+            "--listing-card-height": { xs: "360px", sm: "415px" },
             display: "grid",
             gridTemplateColumns: {
               xs: "repeat(2, minmax(0, 1fr))",
               md: "repeat(3, minmax(0, 1fr))",
             },
+            gridAutoRows: "var(--listing-card-height)",
+            gridTemplateRows:
+              current.pageCount > 1
+                ? {
+                    xs: "repeat(3, var(--listing-card-height))",
+                    md: "repeat(2, var(--listing-card-height))",
+                  }
+                : undefined,
             gap: { xs: 1.5, sm: 3 },
-            mb: 5,
+            mb: current.pageCount > 1 ? 3 : 5,
           }}
         >
-          {result.listings.map((listing) => (
+          {current.listings.map((listing) => (
             <Card
               key={listing.id}
               variant="outlined"
@@ -163,7 +188,8 @@ export default function SearchResults({
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
-                  display: "block",
+                  display: "flex",
+                  flexDirection: "column",
                   color: "inherit",
                   textDecoration: "none",
                   height: "100%",
@@ -172,42 +198,140 @@ export default function SearchResults({
                 }}
               >
                 <ListingImage listing={listing} />
-                <CardContent sx={{ px: { xs: 1.5, sm: 2 }, pt: 2 }}>
+                <CardContent
+                  sx={{
+                    px: { xs: 1.5, sm: 2 },
+                    pt: 2,
+                    "&:last-child": { pb: 2 },
+                    flexGrow: 1,
+                    minHeight: 0,
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
                   <Typography
                     component="h2"
                     sx={{
                       fontSize: { xs: 14, sm: 16 },
                       fontWeight: 550,
                       lineHeight: 1.4,
-                      mb: 1.5,
+                      mb: 1,
+                      minHeight: "4.2em",
                       overflowWrap: "anywhere",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      overflow: "hidden",
                     }}
                   >
                     {listing.title}
                   </Typography>
                   {listingPrice(listing.price) && (
-                    <Typography sx={{ fontWeight: 650, fontSize: 16, mb: 1 }}>
+                    <Typography
+                      sx={{
+                        fontWeight: 650,
+                        fontSize: 16,
+                        lineHeight: 1.4,
+                        mb: 0.75,
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }}
+                    >
                       {listingPrice(listing.price)}
                     </Typography>
                   )}
-                  {[listing.condition, listing.shipping, listing.location]
-                    .filter(Boolean)
-                    .map((detail) => (
-                      <Typography
-                        key={detail}
-                        sx={{ fontSize: 12, lineHeight: 1.6 }}
-                        color="text.secondary"
-                      >
-                        {detail}
-                      </Typography>
-                    ))}
-                  <Typography sx={{ fontSize: 12, mt: 1.5, color: "primary.main" }}>
-                    View on eBay ↗{listing.sponsored ? " · Sponsored" : ""}
-                  </Typography>
+                  {listingShipping(listing.shipping) && (
+                    <Typography
+                      sx={{
+                        fontSize: 12,
+                        lineHeight: 1.6,
+                        display: "-webkit-box",
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: "vertical",
+                        overflow: "hidden",
+                      }}
+                      color="text.secondary"
+                    >
+                      {listingShipping(listing.shipping)}
+                    </Typography>
+                  )}
                 </CardContent>
               </Box>
             </Card>
           ))}
+        </Box>
+      )}
+      {current.pageCount > 1 && (
+        <Box
+          component="nav"
+          aria-label="Result pages"
+          sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, mb: 5 }}
+        >
+          <IconButton
+            aria-label="Previous page"
+            disableRipple
+            disabled={current.page === 0}
+            onClick={() => onPageChange(current.page - 1)}
+            sx={{
+              width: 40,
+              height: 40,
+              "&:hover": { bgcolor: "transparent", color: "primary.main" },
+              "&.Mui-focusVisible": { outline: "2px solid #36563d", outlineOffset: 2 },
+            }}
+          >
+            <Box
+              component="svg"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              sx={{ width: 24, height: 24 }}
+            >
+              <path
+                d="m14 6-6 6 6 6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </Box>
+          </IconButton>
+          <Typography
+            aria-live="polite"
+            aria-atomic="true"
+            sx={{ fontSize: 14, minWidth: 80, textAlign: "center" }}
+          >
+            {current.page + 1} / {current.pageCount}
+          </Typography>
+          <IconButton
+            aria-label="Next page"
+            disableRipple
+            disabled={current.page === current.pageCount - 1}
+            onClick={() => onPageChange(current.page + 1)}
+            sx={{
+              width: 40,
+              height: 40,
+              "&:hover": { bgcolor: "transparent", color: "primary.main" },
+              "&.Mui-focusVisible": { outline: "2px solid #36563d", outlineOffset: 2 },
+            }}
+          >
+            <Box
+              component="svg"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              sx={{ width: 24, height: 24 }}
+            >
+              <path
+                d="m10 6 6 6-6 6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </Box>
+          </IconButton>
         </Box>
       )}
       <Accordion
@@ -232,7 +356,7 @@ export default function SearchResults({
           id="search-explanation-heading"
           sx={{ px: 0 }}
         >
-          <Typography sx={{ fontSize: 14 }}>How this search worked</Typography>
+          <Typography sx={{ fontSize: 14, fontWeight: 700 }}>How this search worked</Typography>
         </AccordionSummary>
         <AccordionDetails id="search-explanation" sx={{ px: 0, pt: 2 }}>
           <SearchWalkthrough result={result} restored={restored} />

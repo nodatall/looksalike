@@ -1,7 +1,9 @@
 import { inspectPhoto } from "./preparePhoto.js";
+import { LISTINGS_PER_PAGE, MAX_LISTINGS } from "./listingPages.js";
 
 export const STORAGE_KEY = "looksalike:ebay-us-v2";
 const PREVIEW_STORAGE_KEY = "looksalike:mockup:ebay-us-v1";
+const MAX_SAVED_VIEW_LENGTH = 500_000;
 export const STAGES = ["upload", "lens", "vision", "ebay", "filter"];
 const record = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
 export const safeText = (max) => (value) =>
@@ -72,12 +74,13 @@ const summary = shape({
   invalid_url: number(100),
   missing_metadata: number(100),
   not_explicit_us: number(100),
+  sponsored: number(100), // Preserve saved results from the previous filtering policy.
   duplicate: number(100),
   eligible: number(100),
   title_rejected: number(100),
   title_rejection_reasons: reasons,
   accepted: number(100),
-  displayed: number(6),
+  displayed: number(LISTINGS_PER_PAGE),
   reason: text(100),
   note: text(300),
 });
@@ -168,7 +171,7 @@ const resultFields = {
   query: text(90),
   category: text(40),
   query_preparation: shape(preparationFields),
-  listings: list(validCard, 6),
+  listings: list(validCard, MAX_LISTINGS),
   stages: list(validStage, 5),
   attempts: validCounters,
   original_attempts: validCounters,
@@ -239,7 +242,7 @@ export function safeReference(value) {
 export function readSavedView(storage, { preview = false } = {}) {
   try {
     const raw = storage.getItem(preview ? PREVIEW_STORAGE_KEY : STORAGE_KEY);
-    if (!raw || raw.length > 100_000) return null;
+    if (!raw || raw.length > MAX_SAVED_VIEW_LENGTH) return null;
     const value = JSON.parse(raw);
     if (
       !shape({
@@ -247,15 +250,22 @@ export function readSavedView(storage, { preview = false } = {}) {
         result: completedRule(preview),
         reference: safeReference,
         explanationOpen: bool,
+        page: number(),
       })(value) ||
       value.version !== "ebay-us-v1" ||
       !safeReference(value.reference) ||
-      typeof value.explanationOpen !== "boolean"
+      typeof value.explanationOpen !== "boolean" ||
+      !validSavedPage(value)
     )
       return null;
     const result = validateCompletedResult(value.result, { preview });
     return result
-      ? { result, reference: value.reference, explanationOpen: value.explanationOpen }
+      ? {
+          result,
+          reference: value.reference,
+          explanationOpen: value.explanationOpen,
+          ...(value.page === undefined ? {} : { page: value.page }),
+        }
       : null;
   } catch {
     return null;
@@ -271,22 +281,34 @@ export function clearSavedView(storage, { preview = false } = {}) {
 export function saveView(storage, view, { preview = false } = {}) {
   try {
     if (
-      !shape({ result: completedRule(preview), reference: safeReference, explanationOpen: bool })(
-        view,
-      ) ||
+      !shape({
+        result: completedRule(preview),
+        reference: safeReference,
+        explanationOpen: bool,
+        page: number(),
+      })(view) ||
       !validateCompletedResult(view.result, { preview }) ||
       !safeReference(view.reference) ||
-      typeof view.explanationOpen !== "boolean"
+      typeof view.explanationOpen !== "boolean" ||
+      !validSavedPage(view)
     )
       return false;
-    storage.setItem(
-      preview ? PREVIEW_STORAGE_KEY : STORAGE_KEY,
-      JSON.stringify({ version: "ebay-us-v1", ...view }),
-    );
+    const raw = JSON.stringify({ version: "ebay-us-v1", ...view });
+    if (raw.length > MAX_SAVED_VIEW_LENGTH) return false;
+    storage.setItem(preview ? PREVIEW_STORAGE_KEY : STORAGE_KEY, raw);
     return true;
   } catch {
     return false;
   }
+}
+
+function validSavedPage(view) {
+  return (
+    view.page === undefined ||
+    (Number.isInteger(view.page) &&
+      view.page >= 0 &&
+      view.page < Math.max(1, Math.ceil(view.result.listings.length / LISTINGS_PER_PAGE)))
+  );
 }
 
 export async function referenceThumbnail(blob, signal) {

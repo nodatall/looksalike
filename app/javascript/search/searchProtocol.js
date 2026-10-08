@@ -31,7 +31,7 @@ export async function readSearchResponse(response, { signal, onStage = () => {} 
       signal?.throwIfAborted();
       if (done) break;
       bytes += value.length;
-      if (bytes > 100_000) throw new SearchResponseError();
+      if (bytes > 1_000_000) throw new SearchResponseError();
       pending += decoder.decode(value, { stream: true });
       while (pending.includes("\n")) {
         const end = pending.indexOf("\n");
