@@ -1,6 +1,14 @@
 # Deployment verification
 
-The [Railway app](https://web-production-1e238.up.railway.app/) uses one Rails/Puma process and a volume at `/app/storage`. The public [source branch](https://github.com/nodatall/looksalike/tree/deliver/looksalike-demo) passed [GitHub checks](https://github.com/nodatall/looksalike/actions/runs/36792146985).
+The [live app](https://looksalike.xyz/) runs on Railway with one Rails/Puma process and the existing volume at `/app/storage`. The public source is on [main](https://github.com/nodatall/looksalike/tree/main). The [Railway hostname](https://web-production-1e238.up.railway.app/) also serves the app.
+
+## Release checks on October 8, 2026
+
+[PR #1](https://github.com/nodatall/looksalike/pull/1) merged as `90934bf` after both PR checks passed. The [main check](https://github.com/nodatall/looksalike/actions/runs/37853129343) also passed. Railway deployment `744784f1-e5a3-4941-bc85-41e9f865c387` used an exact tracked-file snapshot of that commit and reached `SUCCESS`.
+
+Porkbun's root ALIAS record points to Railway, and its TXT record verifies domain ownership. Railway issued the HTTPS certificate. The custom domain routes to the app's verified port, 8080. The home page and `/up` returned HTTP 200; both favicon files matched the release files by SHA-256. The page loaded the new `application-d78296b7.js` bundle.
+
+The bundled example made one image upload and two SerpApi searches, with no LLM call. It returned 51 accepted listings across nine pages. Browser checks confirmed six cards of equal height, working page arrows, and page two restoring after reload. This verifies the deployed flow, not the relevance or availability of every listing.
 
 ## Hosted checks on September 30, 2026
 
