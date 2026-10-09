@@ -210,7 +210,6 @@ export default function SearchApp({ search = submitPhoto, preview = false }) {
     const updated = { ...view, page };
     setView(updated);
     setStorageAvailable(saveView(sessionStore(), updated, { preview }));
-    heading.current?.scrollIntoView({ block: "start", behavior: "instant" });
   }
   return (
     <Box component="main" sx={{ minHeight: "100svh", minWidth: 0, px: { xs: 2, sm: 3 } }}>
